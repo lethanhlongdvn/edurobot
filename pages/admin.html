@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản trị - EduRobot</title>
+    <meta name="description" content="Trang quản trị EduRobot - Duyệt tài khoản người dùng mới.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <style>
+        * { font-family: 'Nunito', sans-serif; }
+        body { background: linear-gradient(135deg, #0f172a 0%, #1e293b 40%, #0f172a 100%); min-height: 100vh; }
+        .glass-card { background: rgba(255,255,255,0.03); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.08); }
+        .user-row { transition: all 0.3s ease; }
+        .user-row:hover { background: rgba(255,255,255,0.05); }
+        .btn-approve { background: linear-gradient(135deg, #10b981 0%, #059669 100%); transition: all 0.2s; }
+        .btn-approve:hover { transform: translateY(-1px); box-shadow: 0 6px 15px rgba(16,185,129,0.3); }
+        .btn-reject { background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); transition: all 0.2s; }
+        .btn-reject:hover { transform: translateY(-1px); box-shadow: 0 6px 15px rgba(239,68,68,0.3); }
+        .badge-pending { background: #fbbf24; color: #78350f; }
+        .badge-approved { background: #34d399; color: #064e3b; }
+        .badge-student { background: #818cf8; color: #312e81; }
+        .badge-teacher { background: #f472b6; color: #831843; }
+        .tab-active { background: rgba(59,130,246,0.2); color: #60a5fa; border-color: #3b82f6; }
+        .tab-inactive { color: #64748b; border-color: transparent; }
+        .tab-inactive:hover { color: #94a3b8; }
+    </style>
+</head>
+
+<body class="p-4 md:p-8">
+    <!-- Header -->
+    <div class="max-w-6xl mx-auto mb-8">
+        <div class="flex items-center justify-between flex-wrap gap-4">
+            <div class="flex items-center gap-4">
+                <a href="../index.html" class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center text-white font-black text-xl shadow-lg shadow-blue-600/30 hover:scale-110 transition-transform">E</a>
+                <div>
+                    <h1 class="text-2xl font-black text-white">Quản trị hệ thống</h1>
+                    <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">Admin Dashboard</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <span id="admin-name" class="text-sm font-bold text-slate-400"></span>
+                <a href="lop5-chon.html"
+                    class="bg-yellow-500/20 text-yellow-400 font-bold px-4 py-2 rounded-xl border border-yellow-500/30 hover:bg-yellow-500/30 transition-all text-sm flex items-center gap-2">
+                    ⭐ Lớp 5 Chọn
+                </a>
+                <a href="import-students.html"
+                    class="bg-blue-500/20 text-blue-400 font-bold px-4 py-2 rounded-xl border border-blue-500/30 hover:bg-blue-500/30 transition-all text-sm flex items-center gap-2">
+                    🎒 Nhập Học Sinh
+                </a>
+                <button onclick="handleAdminLogout()" class="bg-red-500/10 text-red-400 font-bold px-4 py-2 rounded-xl border border-red-500/20 hover:bg-red-500/20 transition-all text-sm">Đăng xuất</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        <div class="glass-card rounded-2xl p-5 text-center">
+            <div class="text-3xl font-black text-white" id="stat-total">0</div>
+            <div class="text-[10px] font-black text-slate-500 uppercase tracking-widest mt-1">Tổng tài khoản</div>
+        </div>
+        <div class="glass-card rounded-2xl p-5 text-center">
+            <div class="text-3xl font-black text-amber-400" id="stat-pending">0</div>
+            <div class="text-[10px] font-black text-slate-500 uppercase tracking-widest mt-1">Chờ duyệt</div>
+        </div>
+        <div class="glass-card rounded-2xl p-5 text-center">
+            <div class="text-3xl font-black text-emerald-400" id="stat-approved">0</div>
+            <div class="text-[10px] font-black text-slate-500 uppercase tracking-widest mt-1">Đã duyệt</div>
+        </div>
+        <div class="glass-card rounded-2xl p-5 text-center">
+            <div class="text-3xl font-black text-indigo-400" id="stat-students">0</div>
+            <div class="text-[10px] font-black text-slate-500 uppercase tracking-widest mt-1">Học sinh</div>
+        </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="max-w-6xl mx-auto mb-6 flex gap-2">
+        <button id="tab-pending" onclick="filterUsers('pending')" class="px-5 py-2.5 rounded-xl font-black text-sm border-2 transition-all tab-active">⏳ Chờ duyệt</button>
+        <button id="tab-approved" onclick="filterUsers('approved')" class="px-5 py-2.5 rounded-xl font-black text-sm border-2 transition-all tab-inactive">✅ Đã duyệt</button>
+        <button id="tab-all" onclick="filterUsers('all')" class="px-5 py-2.5 rounded-xl font-black text-sm border-2 transition-all tab-inactive">📋 Tất cả</button>
+        <button id="tab-content" onclick="showContentTab()" class="px-5 py-2.5 rounded-xl font-black text-sm border-2 transition-all tab-inactive">📚 Nội dung</button>
+    </div>
+
+    <!-- User List Container -->
+    <div id="user-management-container" class="max-w-6xl mx-auto">
+        <div class="glass-card rounded-3xl overflow-hidden">
+            <!-- Table Header -->
+            <div class="hidden md:grid grid-cols-12 gap-4 px-6 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest border-b border-white/5">
+                <div class="col-span-3">Họ tên</div>
+                <div class="col-span-2">Email</div>
+                <div class="col-span-1">Vai trò</div>
+                <div class="col-span-2">Trường / Lớp</div>
+                <div class="col-span-1">Trạng thái</div>
+                <div class="col-span-1">Ngày ĐK</div>
+                <div class="col-span-2 text-right">Hành động</div>
+            </div>
+            <!-- User Rows -->
+            <div id="user-list" class="divide-y divide-white/5">
+                <div class="text-center py-16 text-slate-500">
+                    <div class="text-4xl mb-3">⏳</div>
+                    <p class="font-bold text-sm">Đang tải danh sách...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Management Container -->
+    <div id="content-management-container" class="max-w-6xl mx-auto hidden">
+        <div class="glass-card rounded-3xl p-8">
+            <div class="flex items-center justify-between mb-8">
+                <div>
+                    <h2 class="text-2xl font-black text-white">Quản lý khóa nội dung</h2>
+                    <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mt-1">Bật/tắt trạng thái khóa môn học và bài học</p>
+                </div>
+                <button onclick="saveAllLocks()" class="bg-blue-600 hover:bg-blue-700 text-white font-black px-6 py-3 rounded-2xl shadow-lg shadow-blue-600/20 transition-all active:scale-95">
+                    💾 Lưu thay đổi
+                </button>
+            </div>
+            
+            <div id="subjects-lock-list" class="space-y-6">
+                <div class="text-center py-12 text-slate-500">
+                    <div class="animate-spin w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full mx-auto mb-4"></div>
+                    <p class="font-bold">Đang tải dữ liệu nội dung...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast-container" class="fixed top-6 right-6 z-50 space-y-3"></div>
+
+    <script type="module">
+        import { subjects, lessons } from '../js/data.js';
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyC6zlWn8BKYU7P6A2-PYq6IIWOzaqJWFhc",
+            authDomain: "gamhoctap.firebaseapp.com",
+            projectId: "gamhoctap",
+            storageBucket: "gamhoctap.firebasestorage.app",
+            messagingSenderId: "833329613932",
+            appId: "1:833329613932:web:0d8574827bcfe50b535c49"
+        };
+
+        if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+
+        let allUsers = [];
+        let currentFilter = 'pending';
+        let contentLocks = { subjects: {}, lessons: {} };
+
+        // Expose functions to global scope for onclick attributes
+        window.filterUsers = filterUsers;
+        window.showContentTab = showContentTab;
+        window.approveUser = approveUser;
+        window.rejectUser = rejectUser;
+        window.revokeUser = revokeUser;
+        window.handleAdminLogout = handleAdminLogout;
+        window.toggleSubjectLock = toggleSubjectLock;
+        window.toggleLessonLock = toggleLessonLock;
+        window.saveAllLocks = saveAllLocks;
+
+        // ====== Auth Guard: Chỉ Admin mới vào được ======
+        auth.onAuthStateChanged(async (user) => {
+            if (!user) {
+                window.location.href = 'auth.html';
+                return;
+            }
+            try {
+                const doc = await db.collection('users').doc(user.uid).get();
+                if (!doc.exists || doc.data().role !== 'admin') {
+                    alert('Bạn không có quyền truy cập trang này.');
+                    window.location.href = 'index.html';
+                    return;
+                }
+                document.getElementById('admin-name').textContent = `👑 ${doc.data().displayName || 'Admin'}`;
+                loadUsers();
+            } catch (e) {
+                console.error('Lỗi xác thực admin:', e);
+                window.location.href = 'auth.html';
+            }
+        });
+
+        // ====== Load Users ======
+        async function loadUsers() {
+            try {
+                const snapshot = await db.collection('users').orderBy('createdAt', 'desc').get();
+                allUsers = [];
+                snapshot.forEach(doc => {
+                    allUsers.push({ id: doc.id, ...doc.data() });
+                });
+                updateStats();
+                renderUsers();
+            } catch (e) {
+                console.error('Lỗi tải danh sách:', e);
+            }
+        }
+
+        // ====== Stats ======
+        function updateStats() {
+            const total = allUsers.length;
+            const pending = allUsers.filter(u => !u.approved).length;
+            const approved = allUsers.filter(u => u.approved).length;
+            const students = allUsers.filter(u => u.role === 'student').length;
+
+            document.getElementById('stat-total').textContent = total;
+            document.getElementById('stat-pending').textContent = pending;
+            document.getElementById('stat-approved').textContent = approved;
+            document.getElementById('stat-students').textContent = students;
+        }
+
+        // ====== Filter & Render ======
+        function filterUsers(filter) {
+            currentFilter = filter;
+            document.getElementById('user-management-container').classList.remove('hidden');
+            document.getElementById('content-management-container').classList.add('hidden');
+
+            // Update tab styles
+            ['pending', 'approved', 'all', 'content'].forEach(f => {
+                const tab = document.getElementById(`tab-${f}`);
+                if (!tab) return;
+                if (f === filter) {
+                    tab.className = 'px-5 py-2.5 rounded-xl font-black text-sm border-2 transition-all tab-active';
+                } else {
+                    tab.className = 'px-5 py-2.5 rounded-xl font-black text-sm border-2 transition-all tab-inactive';
+                }
+            });
+            renderUsers();
+        }
+
+        async function showContentTab() {
+            document.getElementById('user-management-container').classList.add('hidden');
+            document.getElementById('content-management-container').classList.remove('hidden');
+
+            // Update tab styles
+            ['pending', 'approved', 'all', 'content'].forEach(f => {
+                const tab = document.getElementById(`tab-${f}`);
+                if (!tab) return;
+                if (f === 'content') {
+                    tab.className = 'px-5 py-2.5 rounded-xl font-black text-sm border-2 transition-all tab-active';
+                } else {
+                    tab.className = 'px-5 py-2.5 rounded-xl font-black text-sm border-2 transition-all tab-inactive';
+                }
+            });
+
+            await loadContentLocks();
+            renderContentManagement();
+        }
+
+        async function loadContentLocks() {
+            try {
+                const doc = await db.collection('app_settings').doc('content_locks').get();
+                if (doc.exists) {
+                    contentLocks = doc.data();
+                } else {
+                    // Initialize if not exists
+                    contentLocks = { subjects: {}, lessons: {} };
+                }
+            } catch (e) {
+                console.error('Lỗi tải khóa nội dung:', e);
+            }
+        }
+
+        function renderContentManagement() {
+            const container = document.getElementById('subjects-lock-list');
+            
+            let html = subjects.map(sub => {
+                const isLocked = contentLocks.subjects[sub.id] || false;
+                const subLessons = lessons[sub.id] || [];
+                
+                return `
+                    <div class="border border-white/10 rounded-2xl overflow-hidden bg-white/5">
+                        <div class="p-4 flex items-center justify-between bg-white/5">
+                            <div class="flex items-center gap-3">
+                                <span class="text-2xl">${sub.icon}</span>
+                                <div>
+                                    <h3 class="font-black text-white text-sm">${sub.name}</h3>
+                                    <p class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">${sub.id}</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <span class="text-[10px] font-black uppercase tracking-widest ${isLocked ? 'text-red-400' : 'text-emerald-400'}">
+                                    ${isLocked ? '🔒 Đã khóa' : '🔓 Đang mở'}
+                                </span>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" value="" class="sr-only peer" ${isLocked ? 'checked' : ''} onchange="toggleSubjectLock('${sub.id}', this.checked)">
+                                    <div class="w-11 h-6 bg-slate-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-red-600"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                            ${subLessons.map(l => {
+                                const lessonId = `${sub.id}_${l.period}`;
+                                const isLessonLocked = contentLocks.lessons[lessonId] || false;
+                                return `
+                                    <div class="p-3 rounded-xl border border-white/5 bg-white/5 flex items-center justify-between group hover:border-white/20 transition-all">
+                                        <div class="overflow-hidden">
+                                            <div class="text-[10px] font-black text-slate-500">Tiết ${l.period}</div>
+                                            <div class="text-[11px] font-bold text-slate-300 truncate" title="${l.title}">${l.title}</div>
+                                        </div>
+                                        <button onclick="toggleLessonLock('${lessonId}')" class="shrink-0 w-8 h-8 rounded-lg flex items-center justify-center transition-all ${isLessonLocked ? 'bg-red-500/20 text-red-400' : 'bg-slate-800 text-slate-500 hover:text-emerald-400'}">
+                                            ${isLessonLocked ? '🔒' : '🔓'}
+                                        </button>
+                                    </div>
+                                `;
+                            }).join('')}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            container.innerHTML = html;
+        }
+
+        function toggleSubjectLock(subId, checked) {
+            contentLocks.subjects[subId] = checked;
+            renderContentManagement();
+        }
+
+        function toggleLessonLock(lessonId) {
+            contentLocks.lessons[lessonId] = !contentLocks.lessons[lessonId];
+            renderContentManagement();
+        }
+
+        async function saveAllLocks() {
+            try {
+                await db.collection('app_settings').doc('content_locks').set(contentLocks);
+                showToast('✅ Đã lưu cấu hình khóa nội dung!');
+            } catch (e) {
+                console.error('Lỗi lưu cấu hình:', e);
+                showToast('❌ Không thể lưu cấu hình.');
+            }
+        }
+
+        function renderUsers() {
+            const container = document.getElementById('user-list');
+            let filtered = allUsers;
+
+            if (currentFilter === 'pending') {
+                filtered = allUsers.filter(u => !u.approved);
+            } else if (currentFilter === 'approved') {
+                filtered = allUsers.filter(u => u.approved);
+            }
+
+            if (filtered.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-16 text-slate-500">
+                        <div class="text-4xl mb-3">${currentFilter === 'pending' ? '🎉' : '📭'}</div>
+                        <p class="font-bold text-sm">${currentFilter === 'pending' ? 'Không có tài khoản nào chờ duyệt!' : 'Không có dữ liệu.'}</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = filtered.map(user => {
+                const isVirtualEmail = user.email && user.email.endsWith('@edurobot.app');
+                const usernamePrefix = user.email ? user.email.split('@')[0] : '—';
+                const emailDisplay = isVirtualEmail 
+                    ? `<span class="text-blue-400 font-mono text-[10px]">${usernamePrefix}</span>` 
+                    : user.email;
+
+                const roleBadge = user.role === 'teacher'
+                    ? '<span class="badge-teacher px-2 py-0.5 rounded-lg text-[10px] font-black uppercase">Giáo viên</span>'
+                    : user.role === 'admin'
+                    ? '<span class="px-2 py-0.5 rounded-lg text-[10px] font-black uppercase bg-amber-400 text-amber-900">Admin</span>'
+                    : `<span class="badge-student px-2 py-0.5 rounded-lg text-[10px] font-black uppercase">${isVirtualEmail ? '👤 Học sinh' : '🎒 Học sinh'}</span>`;
+
+
+                const statusBadge = user.approved
+                    ? '<span class="badge-approved px-2 py-0.5 rounded-lg text-[10px] font-black uppercase">Đã duyệt</span>'
+                    : '<span class="badge-pending px-2 py-0.5 rounded-lg text-[10px] font-black uppercase">Chờ duyệt</span>';
+
+                const createdAt = user.createdAt?.toDate ? user.createdAt.toDate().toLocaleDateString('vi-VN') : '—';
+
+                const actions = !user.approved
+                    ? `<button onclick="approveUser('${user.id}')" class="btn-approve px-3 py-1.5 rounded-xl text-white font-bold text-xs">✓ Duyệt</button>
+                       <button onclick="rejectUser('${user.id}')" class="btn-reject px-3 py-1.5 rounded-xl text-white font-bold text-xs">✕ Từ chối</button>`
+                    : user.role !== 'admin'
+                    ? `<button onclick="revokeUser('${user.id}')" class="bg-slate-700 hover:bg-slate-600 px-3 py-1.5 rounded-xl text-slate-300 font-bold text-xs transition-all">Thu hồi</button>`
+                    : '<span class="text-xs font-bold text-slate-600">—</span>';
+
+                return `
+                    <div class="user-row px-6 py-4 grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 items-center">
+                        <div class="col-span-3">
+                            <div class="font-black text-white text-sm">${user.displayName || '—'}</div>
+                        </div>
+                        <div class="col-span-2 text-xs font-bold text-slate-400 truncate flex items-center gap-1">
+                            ${emailDisplay}
+                            ${isVirtualEmail ? '<span title="Tài khoản nội bộ (không cần email)" class="text-[8px] bg-white/10 px-1 rounded text-slate-500">V</span>' : ''}
+                        </div>
+                        <div class="col-span-1">${roleBadge}</div>
+                        <div class="col-span-2 text-xs font-bold text-slate-500">${user.school || '—'} ${user.studentClass ? '/ ' + user.studentClass : ''}</div>
+                        <div class="col-span-1">${statusBadge}</div>
+                        <div class="col-span-1 text-xs font-bold text-slate-600">${createdAt}</div>
+                        <div class="col-span-2 flex gap-2 justify-end">${actions}</div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // ====== Actions ======
+        async function approveUser(uid) {
+            try {
+                await db.collection('users').doc(uid).update({ approved: true });
+                showToast('✅ Đã duyệt tài khoản thành công!');
+                loadUsers();
+            } catch (e) {
+                console.error('Lỗi duyệt:', e);
+                showToast('❌ Có lỗi xảy ra khi duyệt.');
+            }
+        }
+
+        async function rejectUser(uid) {
+            if (!confirm('Bạn có chắc muốn từ chối và xóa tài khoản này?')) return;
+            try {
+                await db.collection('users').doc(uid).delete();
+                showToast('🗑️ Đã từ chối và xóa tài khoản.');
+                loadUsers();
+            } catch (e) {
+                console.error('Lỗi từ chối:', e);
+                showToast('❌ Có lỗi xảy ra.');
+            }
+        }
+
+        async function revokeUser(uid) {
+            if (!confirm('Thu hồi quyền truy cập của tài khoản này?')) return;
+            try {
+                await db.collection('users').doc(uid).update({ approved: false });
+                showToast('🔒 Đã thu hồi quyền truy cập.');
+                loadUsers();
+            } catch (e) {
+                console.error('Lỗi thu hồi:', e);
+            }
+        }
+
+        async function resetPassword(uid) {
+            if (!confirm('Bạn có muốn đặt lại mật khẩu cho học sinh này về mặc định "123456"?')) return;
+            try {
+                if (!window.resetStudentPasswordHint) {
+                    throw new Error("Hệ thống chưa sẵn sàng. Hãy tải lại trang.");
+                }
+                await window.resetStudentPasswordHint(uid);
+                showToast('✅ Đã đặt lại mật khẩu về 123456 (Xin lưu ý: HS cần dùng mật khẩu này để đăng nhập lại).');
+                loadUsers();
+            } catch (e) {
+                console.error('Lỗi reset:', e);
+                showToast('❌ Có lỗi xảy ra khi reset mật khẩu.');
+            }
+        }
+
+        // ====== Logout ======
+        function handleAdminLogout() {
+            if (confirm('Đăng xuất khỏi tài khoản Admin?')) {
+                localStorage.removeItem('userRole');
+                localStorage.removeItem('teacherName');
+                localStorage.removeItem('userApproved');
+                auth.signOut().then(() => {
+                    window.location.href = 'auth.html';
+                });
+            }
+        }
+
+        // ====== Toast ======
+        function showToast(message) {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = 'bg-slate-800 border border-slate-700 text-white px-6 py-3 rounded-2xl font-bold text-sm shadow-xl';
+            toast.textContent = message;
+            container.appendChild(toast);
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transition = 'opacity 0.5s';
+                setTimeout(() => toast.remove(), 500);
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>
+

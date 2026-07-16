@@ -1,0 +1,7 @@
+# 🛡️ Báo cáo Kiểm duyệt Nội dung EduRobot
+
+ Tổng cộng: 1 lỗi.
+
+## 📄 js\data\math\175\index.js
+- ❌ Thiếu class responsive (md:text-...). Cần đảm bảo: 3xl trên TV (Rõ nét) và nhỏ gọn, co giãn linh hoạt không tràn trên điện thoại.: 'class="w-60 p-3 border-2 border-blue-500 rounded-2xl text-center text-3xl font-bold outline-none shadow-md"'
+

@@ -1,0 +1,216 @@
+// js/components/common.js - Tiện ích và UI chung
+export const common = {
+    // Màu sắc Tailwind tương ứng
+    // CSS Utilities from TC style
+    injectTCStyles() {
+        if (document.getElementById('tc-styles')) return;
+        const style = document.createElement('style');
+        style.id = 'tc-styles';
+        style.textContent = `
+            .vertical-text {
+                writing-mode: vertical-rl;
+                text-orientation: mixed;
+                transform: rotate(180deg);
+            }
+            .custom-scrollbar::-webkit-scrollbar {
+                width: 5px;
+            }
+            .custom-scrollbar::-webkit-scrollbar-track {
+                background: transparent;
+            }
+            .custom-scrollbar::-webkit-scrollbar-thumb {
+                background: #cbd5e1;
+                border-radius: 10px;
+            }
+            .timeline-line {
+                position: absolute;
+                left: 50%;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background: repeating-linear-gradient(
+                    to bottom,
+                    #3D38FF,
+                    #3D38FF 4px,
+                    transparent 4px,
+                    transparent 8px
+                );
+                transform: translateX(-50%);
+                z-index: 0;
+                opacity: 0.1;
+            }
+            .week-card.active {
+                background: #3D38FF !important;
+                color: white !important;
+                border-color: #3D38FF !important;
+            }
+            .week-card.active * {
+                color: white !important;
+            }
+            /* Toast Notification Styles */
+            .toast-container {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 10000;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+                pointer-events: none;
+            }
+            .toast-item {
+                background: white;
+                padding: 20px 40px;
+                border-radius: 32px;
+                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                animate: toast-in 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+                border: 4px solid white;
+                min-width: 320px;
+                pointer-events: auto;
+            }
+            .toast-success {
+                background: linear-gradient(135deg, #10b981, #059669);
+                color: white;
+                border-color: #34d399;
+            }
+            .toast-error {
+                background: linear-gradient(135deg, #ef4444, #dc2626);
+                color: white;
+                border-color: #f87171;
+            }
+            .toast-icon {
+                font-size: 32px;
+            }
+            .toast-text {
+                font-size: 20px;
+                font-weight: 900;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+            @keyframes toast-in {
+                0% { opacity: 0; transform: scale(0.5) translateY(100px); }
+                100% { opacity: 1; transform: scale(1) translateY(0); }
+            }
+            @keyframes toast-out {
+                0% { opacity: 1; transform: scale(1) translateY(0); }
+                100% { opacity: 0; transform: scale(0.8) translateY(-50px); }
+            }
+        `;
+        document.head.appendChild(style);
+    },
+
+    showToast(message, type = 'success', duration = 2000) {
+        let container = document.querySelector('.toast-container');
+        if (!container) {
+            container = document.createElement('div');
+            container.className = 'toast-container';
+            document.body.appendChild(container);
+        }
+
+        const toast = document.createElement('div');
+        const isSuccess = type === 'success';
+        toast.className = `toast-item ${isSuccess ? 'toast-success' : 'toast-error'}`;
+
+        toast.innerHTML = `
+            <div class="w-12 h-12 ${isSuccess ? 'bg-[#10b981] text-white' : 'bg-rose-500 text-white'} rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg shrink-0 leading-none">
+                ${isSuccess ?
+                '<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>' :
+                'E'}
+            </div>
+            <span class="toast-text">${message}</span>
+        `;
+
+        container.appendChild(toast);
+
+        // Auto remove
+        setTimeout(() => {
+            toast.style.animation = 'toast-out 0.5s ease forwards';
+            setTimeout(() => {
+                toast.remove();
+                if (container.children.length === 0) container.remove();
+            }, 500);
+        }, duration);
+    },
+
+    getColorClasses(color) {
+        const classes = {
+            blue: {
+                bg: 'bg-blue-600',
+                text: 'text-blue-600 dark:text-blue-400',
+                light: 'bg-blue-50 dark:bg-blue-900/20',
+                border: 'border-blue-600',
+                shadow: 'shadow-blue-200 dark:shadow-blue-900/20',
+                hover: 'hover:border-blue-200 dark:hover:border-blue-800',
+                hoverText: 'group-hover:text-blue-600'
+            },
+            pink: {
+                bg: 'bg-pink-600',
+                text: 'text-pink-600 dark:text-pink-400',
+                light: 'bg-pink-50 dark:bg-pink-900/20',
+                border: 'border-pink-600',
+                shadow: 'shadow-pink-200 dark:shadow-pink-900/20',
+                hover: 'hover:border-pink-200 dark:hover:border-pink-800',
+                hoverText: 'group-hover:text-pink-600'
+            },
+            emerald: {
+                bg: 'bg-emerald-600',
+                text: 'text-emerald-600 dark:text-emerald-400',
+                light: 'bg-emerald-50 dark:bg-emerald-900/20',
+                border: 'border-emerald-600',
+                shadow: 'shadow-emerald-200 dark:shadow-emerald-900/20',
+                hover: 'hover:border-emerald-200 dark:hover:border-emerald-800',
+                hoverText: 'group-hover:text-emerald-600'
+            },
+            amber: {
+                bg: 'bg-amber-600',
+                text: 'text-amber-600 dark:text-amber-400',
+                light: 'bg-amber-50 dark:bg-amber-900/20',
+                border: 'border-amber-600',
+                shadow: 'shadow-amber-200 dark:shadow-amber-900/20',
+                hover: 'hover:border-amber-200 dark:hover:border-amber-800',
+                hoverText: 'group-hover:text-amber-600'
+            },
+            orange: {
+                bg: 'bg-orange-600',
+                text: 'text-orange-600 dark:text-orange-400',
+                light: 'bg-orange-50 dark:bg-orange-900/20',
+                border: 'border-orange-600',
+                shadow: 'shadow-orange-200 dark:shadow-orange-900/20',
+                hover: 'hover:border-orange-200 dark:hover:border-orange-800',
+                hoverText: 'group-hover:text-orange-600'
+            },
+            indigo: {
+                bg: 'bg-indigo-600',
+                text: 'text-indigo-600 dark:text-indigo-400',
+                light: 'bg-indigo-50 dark:bg-indigo-900/20',
+                border: 'border-indigo-600',
+                shadow: 'shadow-indigo-200 dark:shadow-indigo-900/20',
+                hover: 'hover:border-indigo-200 dark:hover:border-indigo-800',
+                hoverText: 'group-hover:text-indigo-600'
+            },
+            violet: {
+                bg: 'bg-violet-600',
+                text: 'text-violet-600 dark:text-violet-400',
+                light: 'bg-violet-50 dark:bg-violet-900/20',
+                border: 'border-violet-600',
+                shadow: 'shadow-violet-200 dark:shadow-violet-900/20',
+                hover: 'hover:border-violet-200 dark:hover:border-violet-800',
+                hoverText: 'group-hover:text-violet-600'
+            }
+        };
+        return classes[color] || classes.blue;
+    },
+
+    renderEmptyState() {
+        return `
+            <div class="py-24 text-center">
+                <p class="text-gray-400 font-bold uppercase tracking-widest">Đang cập nhật dữ liệu...</p>
+            </div>
+        `;
+    }
+};

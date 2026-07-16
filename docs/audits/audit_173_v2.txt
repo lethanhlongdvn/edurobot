@@ -1,0 +1,12 @@
+# 🛡️ Báo cáo Kiểm duyệt Nội dung EduRobot
+
+ Tổng cộng: 6 lỗi.
+
+## 📄 js\data\math\173\index.js
+- ❌ Lệnh cấm màu Tím/Violet (Purple Ban): Tìm thấy '('border', 'violet', '500')'
+- ❌ Lệnh cấm màu Tím/Violet (Purple Ban): Tìm thấy 'violet'
+- ❌ Thiếu class responsive (md:text-...). Cần đảm bảo: 3xl trên TV (Rõ nét) và nhỏ gọn, co giãn linh hoạt không tràn trên điện thoại.: 'class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-2xl text-2xl font-black shadow-xl transition-all active:scale-95 flex items-center gap-3"'
+- ❌ Thiếu class responsive (md:text-...). Cần đảm bảo: 3xl trên TV (Rõ nét) và nhỏ gọn, co giãn linh hoạt không tràn trên điện thoại.: 'class="bg-emerald-600 hover:bg-emerald-700 text-white px-10 py-4 rounded-2xl text-2xl font-black shadow-xl transition-all active:scale-95 flex items-center gap-3"'
+- ❌ Thiếu class responsive (md:text-...). Cần đảm bảo: 3xl trên TV (Rõ nét) và nhỏ gọn, co giãn linh hoạt không tràn trên điện thoại.: 'class="bg-orange-600 hover:bg-orange-700 text-white px-10 py-4 rounded-2xl text-2xl font-black shadow-xl transition-all active:scale-95 flex items-center gap-3"'
+- ❌ Thiếu class responsive (md:text-...). Cần đảm bảo: 3xl trên TV (Rõ nét) và nhỏ gọn, co giãn linh hoạt không tràn trên điện thoại.: 'class="bg-rose-600 hover:bg-rose-700 text-white px-10 py-4 rounded-2xl text-2xl font-black shadow-xl transition-all active:scale-95 flex items-center gap-3"'
+

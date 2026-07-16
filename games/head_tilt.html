@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nghiêng Đầu Chọn Đúng - EduRobot</title>
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Firebase SDK (v8) -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    
+    <!-- MediaPipe scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
+
+    <!-- Initialize Firebase for standalone mode (same config as firebase-logic.js) -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyC6zlWn8BKYU7P6A2-PYq6IIWOzaqJWFhc",
+            authDomain: "gamhoctap.firebaseapp.com",
+            projectId: "gamhoctap",
+            storageBucket: "gamhoctap.firebasestorage.app",
+            messagingSenderId: "833329613932",
+            appId: "1:833329613932:web:0d8574827bcfe50b535c49"
+        };
+        try {
+            if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
+            window.db = firebase.firestore();
+        } catch(e) { console.warn('Firebase init failed:', e); }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            margin: 0;
+            overflow: hidden;
+            background: #0f172a;
+        }
+        #game-container {
+            width: 100vw;
+            height: 100vh;
+        }
+        .close-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 999999;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="game-container"></div>
+
+    <script type="module">
+        import { HeadTiltGame } from '../js/components/games/HeadTiltGame.js';
+        import { QuestionBankManager } from '../js/services/QuestionBankManager.js';
+
+        // Make QBM available globally for HeadTiltGame.loadFromCungCo()
+        window.QuestionBankManager = QuestionBankManager;
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Pre-load question bank
+            await QuestionBankManager.init();
+
+            const gameDataRaw = localStorage.getItem('edurobot_current_game_data');
+            if (!gameDataRaw) {
+                alert('Không tìm thấy dữ liệu trò chơi!');
+                window.close();
+                return;
+            }
+
+            const gameData = JSON.parse(gameDataRaw);
+            
+            // GIẢ LẬP BIẾN MÔI TRƯỜNG ĐỂ CÁC GAME NHẬN ĐÚNG TIẾT
+            window.router = { currentLessonPeriod: gameData.lessonId };
+            window.currentLessonData = { period: gameData.lessonId, id: gameData.lessonId, title: "Tiết " + gameData.lessonId };
+
+            const container = document.getElementById('game-container');
+
+            // Initialize HeadTiltGame
+            HeadTiltGame.start(container, gameData.questions, () => window.close());
+        });
+    </script>
+</body>
+</html>
+

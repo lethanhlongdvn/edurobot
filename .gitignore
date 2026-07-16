@@ -1,0 +1,123 @@
+# IDE and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.cursor/
+.clj-kondo/
+.lsp/
+.qodo/
+.vibecheck/
+.islstudio/
+
+# OS Files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Node.js
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# EduRobot Logs and Reports
+audit_*.md
+report_*.json
+report_*.md
+audit_report.md
+audit_report.txt
+audit_output.txt
+debug.log
+syntax_errors.log
+error.txt
+__temp_*
+temp_*
+tmp_*
+*.bak
+*.fix
+
+
+# Build and Test
+dist/
+build/
+playwright-report/
+test-results/
+.agent/scratch/
+.agent/logs/
+.agent/brain/*/audit_*.md
+.agent/brain/*/report_*.json
+
+# Temporary Scripts and Tools
+create_*.py
+fix_*.py
+debug_*.js
+debug_*.py
+extract_*.py
+extract_*.ps1
+find_*.txt
+find_*.py
+generate_*.py
+repair_*.py
+rebuild_*.js
+rebuild_*.mjs
+surgical_*.py
+test.js
+test.mjs
+update_scores.js
+convert_*.js
+build_*.py
+patch_*.cjs
+analyze_*.cjs
+check_*.cjs
+
+# Temporary Data and Docs
+nhatky_*.txt
+prompt.txt
+docx_content.txt
+error.txt
+questions_*.md
+report.md
+full_math_text.txt
+__temp_*
+
+# Office documents
+*.doc
+*.docx
+
+# Archive (local-only backup files)
+_archive/
+
+# Agent config (local-only)
+.agent/
+
+
+# Temporary scripts
+js/data/math/extract.js
+
+# Backup files
+*.bak
+*.bak.js
+*.fix.js
+*.old.js
+
+# Scratch/temp scripts
+scratch/
+
+# IDE/Agent configs (not needed in repo)
+.clj-kondo/
+.islstudio/
+.lsp/
+.qodo/
+.claude/
+.cursor/
+.kilocode/
+.vibecheck/
+
+# Temp data files
+__temp_*
+
+# Firebase credentials (DO NOT COMMIT!)
+serviceAccount.json
+students_import.json
+.env
+

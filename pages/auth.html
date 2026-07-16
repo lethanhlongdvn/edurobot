@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập - EduRobot</title>
+    <meta name="description" content="Đăng nhập hoặc đăng ký tài khoản EduRobot để học tập và quản lý lớp học.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="../js/core/firebase-logic.js"></script>
+    <style>
+        * { font-family: 'Nunito', sans-serif; }
+
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 40%, #0f172a 100%);
+            min-height: 100vh;
+        }
+
+        .auth-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .input-field {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(255, 255, 255, 0.08);
+            color: #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        .input-field:focus {
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.05);
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+        }
+
+        .input-field::placeholder { color: #475569; }
+
+        .role-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .role-card:hover { border-color: rgba(255, 255, 255, 0.2); transform: translateY(-2px); }
+        .role-card.active { border-color: #3b82f6; background: rgba(59, 130, 246, 0.1); }
+        .role-card.active .role-icon { background: #3b82f6; color: white; }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 10px 25px rgba(59, 130, 246, 0.35); }
+        .btn-primary:active { transform: scale(0.98); }
+        .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; transform: none; box-shadow: none; }
+
+        .floating-shapes {
+            position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 0;
+        }
+
+        .floating-shapes div {
+            position: absolute; border-radius: 50%;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.08), transparent);
+            animation: float 20s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            33% { transform: translateY(-30px) rotate(120deg); }
+            66% { transform: translateY(20px) rotate(240deg); }
+        }
+
+        .tab-switch { position: relative; }
+        .tab-switch .tab-indicator {
+            position: absolute; bottom: 0; height: 3px; background: #3b82f6;
+            border-radius: 9999px; transition: all 0.3s ease;
+        }
+
+        .error-msg { color: #f87171; font-size: 0.75rem; font-weight: 700; margin-top: 0.25rem; display: none; }
+        .error-msg.show { display: block; }
+
+        .success-toast {
+            animation: slideIn 0.5s ease, fadeOut 0.5s ease 2.5s forwards;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+        .success-toast {
+            animation: slideInRight 0.3s ease-out, fadeOut 0.3s ease-in 2.7s forwards;
+        }
+
+        @keyframes slideInRight {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+    </style>
+</head>
+
+<body class="flex items-center justify-center p-4">
+    <!-- Floating background shapes -->
+    <div class="floating-shapes">
+        <div style="width: 400px; height: 400px; top: -100px; left: -100px;"></div>
+        <div style="width: 300px; height: 300px; bottom: -50px; right: -50px; animation-delay: -7s;"></div>
+        <div style="width: 200px; height: 200px; top: 50%; left: 60%; animation-delay: -14s;"></div>
+    </div>
+
+    <!-- Toast container -->
+    <div id="toast-container" class="fixed top-6 right-6 z-[100] flex flex-col gap-3 pointer-events-none"></div>
+
+    <!-- Main Auth Card -->
+    <div class="auth-card rounded-[40px] w-full max-w-md p-8 sm:p-10 relative z-10 shadow-2xl shadow-black/30">
+        <!-- Logo -->
+
+        <div class="text-center mb-8">
+            <a href="../index.html" class="inline-flex items-center gap-3 group">
+                <div class="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center text-white font-black text-2xl shadow-lg shadow-blue-600/30 group-hover:scale-110 transition-transform">E</div>
+                <div class="text-left">
+                    <span class="text-2xl font-black text-white leading-none block">EduRobot</span>
+                    <span class="text-[10px] font-bold text-slate-500 uppercase tracking-[0.3em]">Hệ thống học tập</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- Tab Switch: Đăng nhập / Đăng ký -->
+        <div class="tab-switch flex justify-center gap-2 mb-8 bg-white/5 rounded-2xl p-1">
+            <button id="tab-login" onclick="switchAuthTab('login')"
+                class="flex-1 py-3 rounded-xl text-sm font-black uppercase tracking-wider transition-all text-white bg-blue-600/80">
+                Đăng nhập
+            </button>
+            <button id="tab-register" onclick="switchAuthTab('register')"
+                class="flex-1 py-3 rounded-xl text-sm font-black uppercase tracking-wider transition-all text-slate-400 hover:text-white">
+                Đăng ký
+            </button>
+        </div>
+
+        <!-- ========== ĐĂNG NHẬP ========== -->
+        <form id="form-login" class="space-y-5" onsubmit="handleLogin(event)">
+            <!-- Toggle: Học sinh / Giáo viên -->
+            <div>
+                <label class="block text-[10px] font-black text-slate-500 uppercase tracking-widest mb-3 ml-1">Đăng nhập với tư cách</label>
+                <div class="grid grid-cols-2 gap-2">
+                    <button type="button" id="login-mode-student" onclick="switchLoginMode('student')" class="py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all text-white bg-blue-600/80">🎒 Học sinh</button>
+                    <button type="button" id="login-mode-teacher" onclick="switchLoginMode('teacher')" class="py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all text-slate-400 hover:text-white">👩‍🏫 Giáo viên / Admin</button>
+                </div>
+            </div>
+
+            <!-- Đăng nhập Học sinh: Tên đăng nhập -->
+            <div id="login-student-fields">
+                <div class="mb-4">
+                    <label class="block text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2 ml-1">Tên đăng nhập (viết liền không dấu)</label>
+                    <input type="text" id="login-student-username" placeholder="VD: nguyenvanan51"
+                        class="input-field w-full px-5 py-4 rounded-2xl outline-none font-bold text-sm">
+                </div>
+            </div>
+
+            <!-- Đăng nhập GV: Email -->
+            <div id="login-teacher-fields" class="hidden">
+                <label class="block text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2 ml-1">Email</label>
+                <input type="email" id="login-email" placeholder="email@example.com"
+                    class="input-field w-full px-5 py-4 rounded-2xl outline-none font-bold text-sm">
+                <p id="login-email-error" class="error-msg"></p>
+            </div>
+
+            <div>
+                <label class="block text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2 ml-1">Mật khẩu</label>
+                <div class="relative">
+                    <input type="password" id="login-password" placeholder="Nhập mật khẩu..." required minlength="6"
+                        class="input-field w-full px-5 py-4 rounded-2xl outline-none font-bold text-sm pr-12">
+                    <button type="button" title="Hiện/ẩn mật khẩu" onclick="togglePasswordVisibility('login-password', this)"
+                        class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                    </button>
+                </div>
+                <p id="login-password-error" class="error-msg"></p>
+            </div>
+
+            <div id="login-forgot-row" class="flex justify-end hidden">
+                <button type="button" onclick="handleForgotPassword()" class="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors">Quên mật khẩu?</button>
+            </div>
+
+            <button type="submit" id="btn-login" class="btn-primary w-full py-4 rounded-2xl text-white font-black text-sm uppercase tracking-widest shadow-lg">
+                Đăng nhập
+            </button>
+
+            <p id="login-general-error" class="error-msg text-center"></p>
+        </form>
+
+        <!-- ========== ĐĂNG KÝ ========== -->
+        <form id="form-register" class="space-y-5 hidden" onsubmit="handleRegister(event)">
+            <!-- Chọn vai trò -->
+            <div>
+                <label class="block text-[10px] font-black text-slate-500 uppercase tracking-widest mb-3 ml-1">Bạn là ai?</label>
+                <div class="grid grid-cols-2 gap-3">
+                    <div id="role-student" class="role-card rounded-2xl p-4 text-center active" onclick="selectRole('student')">
+                        <div class="role-icon w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-2xl mx-auto mb-2 transition-all">🎒</div>
+                        <span class="text-sm font-black text-white">Học sinh</span>
+                    </div>
+                    <div id="role-teacher" class="role-card rounded-2xl p-4 text-center" onclick="selectRole('teacher')">
+                        <div class="role-icon w-12 h-12 bg-slate-700 text-slate-400 rounded-xl flex items-center justify-center text-2xl mx-auto mb-2 transition-all">👩‍🏫</div>
+                        <span class="text-sm font-black text-white">Giáo viên</span>
+                    </div>
+                </div>
+                <input type="hidden" id="register-role" value="student">
+            </div>
+
+            <div>
+                <label class="block text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2 ml-1">Họ và Tên</label>
+                <input type="text" id="register-name" placeholder="VD: Nguyễn Văn A" required
+                    class="input-field w-full px-5 py-4 rounded-2xl outline-none font-bold text-sm">
+            </div>
+
+            <!-- Email chỉ hiện cho Giáo viên -->
+            <div id="register-email-field">
+                <label class="block text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2 ml-1">Email</label>
+                <input type="email" id="register-email" placeholder="email@example.com"
+                    class="input-field w-full px-5 py-4 rounded-2xl outline-none font-bold text-sm">
+                <p id="register-email-error" class="error-msg"></p>
+            </div>
+
+            <div>
+                <label class="block text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2 ml-1">Mật khẩu (ít nhất 6 ký tự)</label>
+                <div class="relative">
+                    <input type="password" id="register-password" placeholder="Tạo mật khẩu..." required minlength="6"
+                        class="input-field w-full px-5 py-4 rounded-2xl outline-none font-bold text-sm pr-12">
+                    <button type="button" onclick="togglePasswordVisibility('register-password', this)"
+                        class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                    </button>
+                </div>
+                <p id="register-password-error" class="error-msg"></p>
+            </div>
+
+            <!-- Trường dành cho Học sinh -->
+            <div id="student-fields" class="space-y-4">
+                <div>
+                    <label class="block text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2 ml-1">Tên đăng nhập (viết liền không dấu)</label>
+                    <input type="text" id="register-username" placeholder="VD: nguyenvanan51"
+                        class="input-field w-full px-5 py-4 rounded-2xl outline-none font-bold text-sm">
+                </div>
+                <div>
+                    <label class="block text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2 ml-1">Trường</label>
+                    <select id="register-school"
+                        class="input-field w-full px-5 py-4 rounded-2xl outline-none font-bold text-sm appearance-none">
+                        <option value="">-- Chọn trường --</option>
+                        <option value="Tiểu học Đỗ Văn Nại">Tiểu học Đỗ Văn Nại</option>
+                        <option value="Khác">Trường Khác...</option>
+                    </select>
+                </div>
+                <div id="register-other-school-container" class="hidden">
+                    <input type="text" id="register-other-school" placeholder="Nhập tên trường..."
+                        class="input-field w-full px-5 py-4 rounded-2xl outline-none font-bold text-sm">
+                </div>
+                <div>
+                    <label class="block text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2 ml-1">Lớp</label>
+                    <select id="register-class"
+                        class="input-field w-full px-5 py-4 rounded-2xl outline-none font-bold text-sm appearance-none">
+                        <option value="">-- Chọn lớp --</option>
+                        <option value="5/1">Lớp 5/1</option>
+                        <option value="5/2">Lớp 5/2</option>
+                        <option value="5/3">Lớp 5/3</option>
+                        <option value="5/4">Lớp 5/4</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" id="btn-register" class="btn-primary w-full py-4 rounded-2xl text-white font-black text-sm uppercase tracking-widest shadow-lg">
+                Tạo tài khoản
+            </button>
+
+            <p id="register-general-error" class="error-msg text-center"></p>
+        </form>
+
+        <!-- Footer -->
+        <div class="text-center mt-8 pt-6 border-t border-white/5">
+            <a href="../index.html" class="text-xs font-bold text-slate-500 hover:text-blue-400 transition-colors uppercase tracking-widest">
+                ← Quay lại trang chủ
+            </a>
+        </div>
+    </div>
+
+    <!-- ========== ĐỔI MẬT KHẨU MODAL ========== -->
+    <div id="modal-change-password" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/60 backdrop-blur-sm">
+        <div class="auth-card rounded-[40px] w-full max-w-md p-8 sm:p-10 relative shadow-2xl scale-95 transition-transform duration-300 transform-gpu" id="modal-change-password-content">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-xl font-black text-white uppercase tracking-widest">Đổi mật khẩu</h3>
+                <button onclick="closeChangePasswordModal()" class="text-slate-400 hover:text-white transition-colors">✕</button>
+            </div>
+            
+            <form id="form-change-password" class="space-y-5" onsubmit="handleChangePassword(event)">
+                <div>
+                    <label class="block text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2 ml-1">Mật khẩu hiện tại</label>
+                    <input type="password" id="cp-current-password" placeholder="••••••••" required
+                        class="input-field w-full px-5 py-4 rounded-2xl outline-none font-bold text-sm">
+                </div>
+                <div>
+                    <label class="block text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2 ml-1">Mật khẩu mới</label>
+                    <input type="password" id="cp-new-password" placeholder="Tối thiểu 6 ký tự" required minlength="6"
+                        class="input-field w-full px-5 py-4 rounded-2xl outline-none font-bold text-sm">
+                </div>
+                <div>
+                    <label class="block text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2 ml-1">Xác nhận mật khẩu mới</label>
+                    <input type="password" id="cp-confirm-password" placeholder="Nhập lại mật khẩu mới" required
+                        class="input-field w-full px-5 py-4 rounded-2xl outline-none font-bold text-sm">
+                </div>
+                
+                <button type="submit" id="btn-change-password" class="btn-primary w-full py-4 rounded-2xl text-white font-black text-sm uppercase tracking-widest shadow-lg mt-4">
+                    Xác nhận đổi
+                </button>
+                <p id="cp-error" class="error-msg text-center"></p>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="../js/dashboard/auth-ui.js"></script>
+
+</body>
+
+</html>
+
+

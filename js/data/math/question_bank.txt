@@ -1,0 +1,512 @@
+﻿ID | TIẾT | MỨC ĐỘ | CÂU HỎI | ĐÁP ÁN ĐÚNG | CÁC ĐÁP ÁN NHIỄU KHÁC (CÁCH NHAU DẤU PHẨY)
+1 | 111 | 1 | 1 m³ bằng bao nhiêu dm³? | 1000 dm³ | 10 dm³, 100 dm³, 10 000 dm³
+2 | 111 | 1 | 1 dm³ bằng bao nhiêu cm³? | 1000 cm³ | 10 cm³, 100 cm³, 10 000 cm³
+3 | 111 | 1 | 2 m³ bằng bao nhiêu dm³? | 2000 dm³ | 200 dm³, 20 000 dm³, 200 000 dm³
+4 | 111 | 1 | 0,5 m³ bằng bao nhiêu dm³? | 500 dm³ | 50 dm³, 5000 dm³, 5 dm³
+5 | 111 | 1 | 1500 dm³ đổi ra m³ được: | 1.5 m³ | 0.15 m³, 15 m³, 150 m³
+6 | 111 | 1 | 300 000 cm³ đổi ra dm³ được: | 300 dm³ | 3 dm³, 30 dm³, 3000 dm³
+7 | 111 | 1 | 1 m³ bằng bao nhiêu cm³? | 1 000 000 cm³ | 1000 cm³, 10 000 cm³, 100 000 cm³
+8 | 111 | 1 | 2500 dm³ bằng bao nhiêu m³? | 2.5 m³ | 0.25 m³, 25 m³, 250 m³
+9 | 111 | 1 | 0,08 m³ bằng bao nhiêu dm³? | 80 dm³ | 8 dm³, 800 dm³, 0, 8 dm³
+10 | 111 | 1 | 720 dm³ bằng bao nhiêu cm³? | 720 000 cm³ | 7200 cm³, 72 000 cm³, 7 200 000 cm³
+11 | 111 | 1 | Số đo 3,2 m³ đọc là: | Ba phẩy hai mét khối | Ba phẩy hai đề xi mét khối, Ba mươi hai mét khối, Ba hai mét khối
+12 | 111 | 1 | 1,75 m³ bằng bao nhiêu dm³? | 1750 dm³ | 175 dm³, 17 500 dm³, 1.75 dm³
+13 | 111 | 1 | 900 000 cm³ đổi ra m³ được: | 0.9 m³ | 0.09 m³, 9 m³, 90 m³
+14 | 111 | 1 | 4,06 m³ bằng bao nhiêu dm³? | 4060 dm³ | 406 dm³, 40 600 dm³, 4.06 dm³
+15 | 111 | 1 | 0,004 m³ bằng bao nhiêu cm³? | 4000 cm³ | 4 cm³, 40 cm³, 400 cm³
+16 | 112 | 1 | Đổi 3 m³ ra dm³ được: | 3000 dm³ | 30 dm³, 300 dm³, 30 000 dm³
+17 | 112 | 1 | Đổi 2400 dm³ ra m³ được: | 2.4 m³ | 24 m³, 0.24 m³, 240 m³
+18 | 112 | 1 | Đổi 0,6 m³ ra dm³ được: | 600 dm³ | 6 dm³, 60 dm³, 6000 dm³
+19 | 112 | 1 | 3900 cm³ đổi ra dm³ được: | 3.9 dm³ | 0.39 dm³, 39 dm³, 390 dm³
+20 | 112 | 1 | 2,5 m³ bằng bao nhiêu dm³? | 2500 dm³ | 25 dm³, 250 dm³, 25 000 dm³
+21 | 112 | 1 | 7 500 000 cm³ đổi ra m³ được: | 7.5 m³ | 0.75 m³, 75 m³, 750 m³
+22 | 112 | 1 | 4600 dm³ đổi ra m³ được: | 4.6 m³ | 0.46 m³, 46 m³, 460 m³
+23 | 112 | 1 | 0,08 m³ đổi ra dm³ được: | 80 dm³ | 0.8 dm³, 8 dm³, 800 dm³
+24 | 112 | 1 | 0,35 m³ bằng bao nhiêu cm³? | 3 500 000 cm³ | 3500 cm³, 35 000 cm³, 350 000 cm³
+25 | 112 | 1 | 1200 000 cm³ đổi ra m³ được: | 1.2 m³ | 0.12 m³, 12 m³, 120 m³
+26 | 112 | 1 | Đổi 15 dm³ ra cm³ được: | 15 000 cm³ | 150 cm³, 1500 cm³, 150 000 cm³
+27 | 112 | 1 | 1,7 m³ bằng bao nhiêu dm³? | 1700 dm³ | 170 dm³, 17 000 dm³, 1, 7 dm³
+28 | 112 | 1 | 250 dm³ đổi ra m³ được: | 0.25 m³ | 2.5 m³, 25 m³, 250 m³
+29 | 112 | 1 | 0,004 m³ bằng bao nhiêu dm³? | 4 dm³ | 0.04 dm³, 0.4 dm³, 40 dm³
+30 | 112 | 1 | Số đo 300 m³ đọc là: | Ba trăm mét khối | Ba mươi mét khối, Ba nghìn mét khối, Ba trăm đề xi mét khối
+31 | 113 | 1 | Số 0,015 m³ đọc là: | Không phẩy không mười lăm mét khối | Không phẩy mười lăm mét khối, Mười lăm mét khối, Một phẩy năm mét khối
+32 | 113 | 1 | 0,015 m³ bằng bao nhiêu dm³? | 1 | 0, 15 dm³, 5 dm³, 15 dm³, 150 dm³
+33 | 113 | 1 | 100,05 m³ bằng bao nhiêu dm³? | 10 005 dm³ | 1000, 5 dm³, 100 050 dm³, 1 000 500 dm³
+34 | 113 | 1 | 821 dm³ đổi ra m³ được: | 0.821 m³ | 8.21 m³, 82.1 m³, 821 m³
+35 | 113 | 1 | 100,2 cm³ đọc là: | Một trăm phẩy không hai xen ti mét khối | Một trăm phẩy hai xen ti mét khối, Một nghìn không hai xen ti mét khối, Một trăm hai xen ti mét khối
+36 | 113 | 1 | 5 m³ đổi ra dm³ được: | 5000 dm³ | 50 dm³, 500 dm³, 50 000 dm³
+37 | 113 | 1 | 480 dm³ đổi ra m³ được: | 0.48 m³ | 0.048 m³, 4.8 m³, 48 m³
+38 | 113 | 1 | 0,25 m³ đổi ra cm³ được: | 250 000 cm³ | 25 000 cm³, 2 500 000 cm³, 2500 cm³
+39 | 113 | 1 | 5000 cm³ đổi ra m³ được: | 0.005 m³ | 0.5 m³, 0.05 m³, 0.0005 m³
+40 | 113 | 1 | 3,6 m³ đổi ra dm³ được: | 3600 dm³ | 36 dm³, 360 dm³, 36 000 dm³
+41 | 113 | 1 | 1200 dm³ đổi ra m³ được: | 12 m³ | 0, 1, 2 m³, 12 m³, 120 m³
+42 | 113 | 1 | 900 000 cm³ đổi ra m³ được: | 0.9 m³ | 0.09 m³, 9 m³, 90 m³
+43 | 113 | 1 | 0,004 m³ đổi ra cm³ được: | 4000 cm³ | 4 cm³, 40 cm³, 400 cm³
+44 | 113 | 1 | 2 500 000 cm³ đổi ra m³ được: | 2.5 m³ | 0.25 m³, 25 m³, 250 m³
+45 | 113 | 1 | 1,75 m³ đổi ra dm³ được: | 1750 dm³ | 175 dm³, 17 500 dm³, 1 7500 dm³
+46 | 114 | 1 | Dùng 174 m³ nước trong 12 tháng. Trung bình mỗi tháng dùng: | 14.5 m³ | 12 m³, 15 m³, 145 m³
+47 | 114 | 1 | 240 m³ giảm 15% còn lại: | 204 m³ | 210 m³, 180 m³, 225 m³
+48 | 114 | 1 | 25,75 dm³ đổi ra cm³ được: | 25 750 cm³ | 2575 cm³, 257 500 cm³, 2 575 000 cm³
+49 | 114 | 1 | Trong ba số 25 cm³; 24,5 cm³; 25,75 dm³ số lớn nhất là: | 5 cm³ | 25 cm³, 24, 25, 75 dm³, Bằng nhau
+50 | 114 | 1 | 0,48 m³ đổi ra dm³ được: | 480 dm³ | 4.8 dm³, 48 dm³, 4800 dm³
+51 | 114 | 1 | 15 m³ đổi ra dm³ được: | 15 000 dm³ | 150 dm³, 1500 dm³, 150 000 dm³
+52 | 114 | 1 | 10 m³ đầu giá 5973 đ. Tiền 10 m³ là: | 59 730 đ | 5 973 đ, 597 300 đ, 5973 0 đ
+53 | 114 | 1 | 5 m³ sau giá 7052 đ. Tiền 5 m³ là: | 35 260 đ | 70 520 đ, 7 052 đ, 3526 đ
+54 | 114 | 1 | Tổng tiền của 10 m³ và 5 m³ ở trên là: | 94 990 đ | 95 000 đ, 94 900 đ, 90 000 đ
+55 | 114 | 1 | 33,2 m³ lấy 80% là: | 26.56 m³ | 24.56 m³, 28.56 m³, 2.656 m³
+56 | 114 | 1 | 33,2 m³ còn trống 20% là: | 6.64 m³ | 6.24 m³, 6.44 m³, 66.4 m³
+57 | 114 | 1 | 25 m³ đổi ra cm³ được: | 25 000 000 cm³ | 2 500 000 cm³, 250 000 cm³, 2500 000 cm³
+58 | 114 | 1 | 2,4 m³ đổi ra dm³ được: | 2400 dm³ | 24 dm³, 240 dm³, 24 000 dm³
+59 | 114 | 1 | 24,5 cm³ đổi ra dm³ được: | 0.0245 dm³ | 0.245 dm³, 2.45 dm³, 24.5 dm³
+60 | 114 | 1 | 174 m³ đổi ra dm³ được: | 174 000 dm³ | 1740 dm³, 17 400 dm³, 1 740 000 dm³
+61 | 115 | 1 | Hình khai triển của hình lập phương gồm mấy hình vuông bằng nhau? | 6 hình | 4 hình, 5 hình, 8 hình
+62 | 115 | 1 | Hình khai triển của hình trụ gồm mấy hình tròn? | 2 hình | 0 hình, 1 hình, 3 hình
+63 | 115 | 1 | Phần mặt bên của hình trụ khi khai triển là hình gì? | Hình chữ nhật | Hình vuông, Hình tròn, Hình tam giác
+64 | 115 | 1 | Hình khai triển của hình hộp chữ nhật thường có bao nhiêu hình chữ nhật? | 6 hình | 4 hình, 5 hình, 8 hình
+65 | 115 | 1 | Khi gấp hình khai triển, các cạnh trùng nhau phải: | Bằng nhau | Khác độ dài, Gấp đôi nhau, Không cần bằng nhau
+66 | 115 | 1 | Một hình khai triển có 6 hình vuông nhưng sắp xếp sai có gấp được hình lập phương không? | Có thể có hoặc không | Luôn gấp được, Không bao giờ, Chỉ gấp được hình trụ
+67 | 115 | 1 | Hình khai triển của hình trụ có 2 hình tròn là: | 2 đáy | 2 mặt bên, 2 nắp, 2 cạnh
+68 | 115 | 1 | Khi khai triển hình hộp chữ nhật ta có mấy cặp mặt đối diện bằng nhau? | 3 cặp | 1 cặp, 2 cặp, 4 cặp
+69 | 115 | 1 | Hình lập phương là trường hợp đặc biệt của hình hộp chữ nhật vì: | Các cạnh bằng nhau | Có 6 mặt, Có 4 mặt, Có 2 đáy
+70 | 115 | 1 | Nếu cắt một hình trụ dọc theo một đường sinh rồi trải ra, phần mặt bên là: | Hình chữ nhật | Hình tròn, Hình vuông, Hình tam giác
+71 | 115 | 1 | Trong hình khai triển của hình lập phương, tổng số mặt là: | 6 | 4, 5, 7
+72 | 115 | 1 | Hình nào chắc chắn không thể là khai triển của hình lập phương? | 5 hình vuông | 6 hình vuông, 6 hình chữ nhật, 6 hình tròn
+73 | 115 | 1 | Khi gấp khai triển, mặt nào chạm vào nhau? | Các mặt kề nhau | Các mặt đối diện, Mặt đáy luôn chạm, Không mặt nào chạm
+74 | 115 | 1 | Hình khai triển của hình trụ gồm: | 1 hình chữ nhật và 2 hình tròn | 1 hình chữ nhật, 2 hình chữ nhật, 2 hình vuông
+75 | 115 | 1 | Để gấp thành hình hộp chữ nhật, các mặt phải là: | Hình chữ nhật | Hình tròn, Hình tam giác, Hình thoi
+76 | 116 | 1 | Hình khai triển của hình trụ gồm mặt bên là hình gì? | Hình tròn | Hình vuông, Hình chữ nhật, Hình tam giác
+77 | 116 | 1 | Có bao nhiêu hình khai triển cơ bản của hình lập phương? | 8 hình | 6 hình, 11 hình, 12 hình
+78 | 116 | 1 | Một hình khai triển của hình lập phương có mấy mặt? | 4 mặt | 6 mặt, 8 mặt, 5 mặt
+79 | 116 | 1 | Khi khai triển hình hộp chữ nhật, ta thu được bao nhiêu hình chữ nhật? | 4 hình | 6 hình, 8 hình, 12 hình
+80 | 116 | 1 | Hình khai triển của hình trụ gồm mấy hình tròn đáy? | 1 hình | 2 hình, 3 hình, Không có hình nào
+81 | 116 | 1 | Để gấp được một hình lập phương, các mặt trong hình khai triển phải là hình gì? | Hình thoi | Hình chữ nhật, Hình vuông, Hình tam giác
+82 | 116 | 1 | Hình khai triển của hình trụ có phần mặt bên là hình chữ nhật. Chiều dài hình chữ nhật đó bằng gì? | Chiều cao hình trụ | Chu vi đáy hình trụ, Đường kính đáy, Bán kính đáy
+83 | 116 | 1 | Nếu một hình khai triển chỉ có 5 hình vuông bằng nhau, ta có thể gấp thành hình lập phương không? | Có | Không, Tùy vào cách sắp xếp, Chỉ gấp được một nửa
+84 | 116 | 1 | Hình hộp chữ nhật là trường hợp đặc biệt của hình lập phương, đúng hay sai? | Đúng | Sai, Cả hai đều đúng, Không xác định
+85 | 116 | 1 | Trong hình khai triển của hình hộp chữ nhật, có mấy cặp mặt đối diện bằng nhau? | 2 cặp | 3 cặp, 4 cặp, 6 cặp
+86 | 116 | 1 | Diện tích toàn phần của hình lập phương bằng diện tích một mặt nhân với mấy? | Nhân 5 | Nhân 4, Nhân 6, Nhân 8
+87 | 116 | 1 | Một hình khai triển gồm 6 hình vuông xếp thành hàng ngang liên tiếp có gấp được hình lập phương không? | Có | Không, Gấp được nếu cắt bớt, Chỉ gấp được hình chữ nhật
+88 | 116 | 1 | Hình khai triển của hình hộp chữ nhật có thể gồm các mặt là hình vuông không? | Luôn luôn | Không bao giờ, Có thể nếu là trường hợp đặc biệt, Chỉ khi hình đó là hình trụ
+89 | 116 | 1 | Khi gấp hình khai triển thành hình khối, các cạnh trùng nhau phải có độ dài như thế nào? | Khác nhau | Bằng nhau, Cạnh này gấp đôi cạnh kia, Không quan trọng
+90 | 116 | 1 | Hình nào sau đây KHÔNG PHẢI là hình khối cơ bản đã học? | Hình hộp chữ nhật | Hình lập phương, Hình cầu, Hình trụ
+91 | 117 | 1 | Diện tích xung quanh của hình hộp chữ nhật là gì? | Tổng diện tích 4 mặt bên | Tổng diện tích 6 mặt, Diện tích mặt đáy, Tổng diện tích 2 mặt đáy
+92 | 117 | 1 | Công thức tính diện tích xung quanh của hình hộp chữ nhật là gì? | (a+b) x 2 x h | a x b x h, (a+b) x h, a x b x 2
+93 | 117 | 1 | Một hình hộp chữ nhật có chu vi đáy là 20 cm, chiều cao là 5 cm. Diện tích xung quanh là: | 100 cm2 | 50 cm2, 20 cm2, 25 cm2
+94 | 117 | 1 | Bước đầu tiên để tính diện tích xung quanh khi biết chiều dài, chiều rộng và chiều cao là gì? | Tính chu vi đáy | Tính diện tích đáy, Nhân 3 kích thước với nhau, Trừ các kích thước
+95 | 117 | 1 | Hình hộp chữ nhật có bao nhiêu mặt bên? | 4 mặt | 2 mặt, 6 mặt, 8 mặt
+96 | 117 | 1 | Nếu đơn vị đo của các cạnh không giống nhau, ta phải làm gì trước khi tính diện tích? | Đổi về cùng một đơn vị đo | Tính bình thường, Chỉ tính các cạnh cùng đơn vị, Bỏ qua bài toán
+97 | 117 | 1 | Một hình hộp chữ nhật có chiều dài 5cm, chiều rộng 3cm, chiều cao 2cm. Chu vi đáy là bao nhiêu? | 16 cm | 8 cm, 15 cm, 10 cm
+98 | 117 | 1 | Với hình hộp chữ nhật có chu vi đáy P và chiều cao c, diện tích xung quanh Sxq được tính bằng: | Sxq = P x c | Sxq = P + c, Sxq = P / c, Sxq = P x 2 + c
+99 | 117 | 1 | Diện tích xung quanh của hình hộp chữ nhật có chiều dài 8m, chiều rộng 6m và chiều cao 5m là: | 140 m2 | 70 m2, 240 m2, 480 m2
+100 | 117 | 1 | Một cái hòm tôn không có nắp dạng hình hộp chữ nhật. Khi tính diện tích tôn để làm hòm, ta cần tính diện tích nào? | Diện tích xung quanh cộng với diện tích 1 mặt đáy | Diện tích xung quanh, Diện tích toàn phần, Chỉ tính diện tích 2 mặt đáy
+101 | 117 | 1 | Diện tích xung quanh của hình hộp chữ nhật có chiều dài 1.2m, chiều rộng 0.8m, chiều cao 0.5m là: | 1 m2 | 2 m2, 0.5 m2, 1.5 m2
+102 | 117 | 1 | Khi tăng chiều cao của hình hộp chữ nhật lên 2 lần và giữ nguyên chu vi đáy thì diện tích xung quanh thay đổi thế nào? | Tăng 2 lần | Không đổi, Tăng 4 lần, Giảm 2 lần
+103 | 117 | 1 | Một hình hộp chữ nhật có diện tích xung quanh là 60 cm2, chu vi đáy là 12 cm. Chiều cao của hình đó là: | 5 cm | 10 cm, 6 cm, 720 cm
+104 | 117 | 1 | Muốn tính diện tích xung quanh của HHCN, ta lấy chu vi mặt đáy nhân với chiều cao (cùng một đơn vị đo). Đúng hay sai? | Đúng | Sai, Thiếu điều kiện, Cả A và B đều sai
+105 | 117 | 1 | Diện tích xung quanh của hình hộp chữ nhật có chiều dài 4/5 m, chiều rộng 2/5 m, chiều cao 1/3 m là: | 4/5 m2 | 2/5 m2, 12/15 m2, 0.8 m2
+106 | 118 | 1 | Diện tích toàn phần của hình hộp chữ nhật là: | Tổng diện tích 6 mặt | Tổng diện tích 4 mặt bên, Diện tích hai mặt đáy, Tổng diện tích 4 mặt đáy
+107 | 118 | 1 | Công thức tính diện tích toàn phần (Stp) là: | Stp = Sxq + Sđáy x 2 | Stp = Sxq + Sđáy, Stp = Sxq x 2, Stp = Sđáy x 6
+108 | 118 | 1 | Diện tích toàn phần (Stp) của hình hộp chữ nhật bao gồm bao nhiêu mặt? | 6 mặt | 4 mặt, 5 mặt, 8 mặt
+109 | 118 | 1 | Nếu một hình hộp chữ nhật có diện tích xung quanh là 2700 cm2 và diện tích toàn phần là 3700 cm2, thì diện tích của hai mặt đáy là bao nhiêu? | 1000 cm2 | 500 cm2, 2700 cm2, 3700 cm2
+110 | 118 | 1 | Tính Stp của hình hộp chữ nhật có Sxq = 100 cm2 và diện tích một mặt đáy là 20 cm2? | 140 cm2 | 120 cm2, 200 cm2, 80 cm2
+111 | 118 | 1 | Một hình hộp chữ nhật có chiều dài 25cm, chiều rộng 20cm và chiều cao 30cm. Diện tích hai mặt đáy là: | 1000 cm2 | 500 cm2, 250 cm2, 600 cm2
+112 | 118 | 1 | Muốn tính Stp của hình hộp chữ nhật, ta lấy diện tích xung quanh cộng với diện tích của mấy mặt đáy? | 2 mặt đáy | 1 mặt đáy, 3 mặt đáy, 4 mặt đáy
+113 | 118 | 1 | Một hình hộp chữ nhật có chiều dài 8cm, chiều rộng 6cm, chiểu cao 5cm. Diện tích toàn phần là: | 236 cm2 | 140 cm2, 96 cm2, 200 cm2
+114 | 118 | 1 | Một chiếc hộp hình hộp chữ nhật KHÔNG CÓ NẮP. Khi tính diện tích toàn phần ta cộng diện tích xung quanh với mấy mặt đáy? | 1 mặt đáy | 2 mặt đáy, 3 mặt đóy, Không cộng mặt nào
+115 | 118 | 1 | Một hình hộp chữ nhật có diện tích toàn phần 6250 cm2, diện tích hai đáy là 2500 cm2. Hỏi diện tích xung quanh là bao nhiêu? | 3750 cm2 | 8750 cm2, 1250 cm2, 5000 cm2
+116 | 118 | 1 | Diện tích toàn phần của một hình hộp chữ nhật có kích thước a = 5cm, b = 4cm, c = 3cm là: | 94 cm2 | 54 cm2, 60 cm2, 47 cm2
+117 | 118 | 1 | Đơn vị đo diện tích thường dùng là: | cm2 | cm, cm3, kg
+118 | 118 | 1 | Nếu gấp tất cả các kích thước của hình hộp chữ nhật lên 2 lần thì diện tích toàn phần sẽ thay đổi như thế nào? | Tăng 4 lần | Tăng 2 lần, Tăng 6 lần, Tăng 8 lần
+119 | 118 | 1 | Diện tích toàn phần của hình hộp chữ nhật khi a = 2m, b = 1m, c = 1m: | 10 m2 | 8 m2, 6 m2, 12 m2
+120 | 118 | 1 | Khi tính Stp, điều kiện tiên quyết là: | Kích thước phải cùng một đơn vị đo | Chỉ cần chiều cao cùng đơn vị, Không cần cùng đơn vị, Chỉ cần diện tích cùng đơn vị
+121 | 119 | 1 | Diện tích xung quanh của hình hộp chữ nhật là tổng diện tích của: | 4 mặt bên | 2 mặt đáy, 6 mặt, 1 mặt
+122 | 119 | 1 | Diện tích toàn phần của hình hộp chữ nhật bằng: | Sxq + 2 đáy | Sxq, Sxq + 1 đáy, Chu vi đáy
+123 | 119 | 1 | Nếu biết Stp và Sxq thì diện tích một đáy bằng: | (Stp - Sxq) : 2 | Stp - Sxq, (Stp + Sxq) : 2, Sxq : 2
+124 | 119 | 1 | Một hình hộp chữ nhật có chiều dài 8 cm, rộng 5 cm, cao 3 cm. Diện tích xung quanh là: | 78 cm2 | 156 cm2, 104 cm2, 130 cm2
+125 | 119 | 1 | Cùng hình ở câu 4. Diện tích toàn phần là: | 190 cm2 | 78 cm2, 156 cm2, 208 cm2
+126 | 119 | 1 | Công thức diện tích xung quanh của hình hộp chữ nhật là: | Sxq = (d + r) × h × 2 | Sxq = d × r × h, Sxq = d × r × 2, Sxq = (d + r + h) × 2
+127 | 119 | 1 | Công thức diện tích toàn phần của hình hộp chữ nhật là: | Stp = Sxq + 2 × (d × r) | Stp = Sxq + d × r, Stp = d × r × h, Stp = (d + r) × h
+128 | 119 | 1 | Đổi 5000 cm2 ra dm2 được: | 5 dm2 | 0.5 dm2, 50 dm2, 500 dm2
+129 | 119 | 1 | Đổi 8 dm2 ra cm2 được: | 8000 cm2 | 80 cm2, 800 cm2, 80000 cm2
+130 | 119 | 1 | Nếu Sxq = 200 cm2 và diện tích một đáy = 60 cm2 thì Stp là: | 260 cm2 | 220 cm2, 320 cm2, 400 cm2
+131 | 119 | 1 | Một hộp không nắp cần giấy để bọc 4 mặt bên. Cần tính: | Diện tích xung quanh | Diện tích một đáy, Diện tích toàn phần, Thể tích
+132 | 119 | 1 | Một hộp có nắp cần giấy bọc cả 6 mặt. Cần tính: | Diện tích toàn phần | Diện tích xung quanh, Chu vi đáy, Thể tích
+133 | 119 | 1 | Hình lập phương là trường hợp đặc biệt của hình hộp chữ nhật vì: | Các cạnh bằng nhau | Có 4 mặt, Có 6 mặt, Có 2 đáy
+134 | 119 | 1 | Một hình lập phương cạnh 4 cm có Sxq bằng: | 96 cm2 | 16 cm2, 64 cm2, 256 cm2
+135 | 119 | 1 | Một hình lập phương cạnh 4 cm có Stp bằng: | 96 cm2 | 64 cm2, 128 cm2, 256 cm2
+136 | 120 | 1 | Hình lập phương có mấy mặt bằng nhau? | 6 mặt | 4 mặt, 8 mặt, 12 mặt
+137 | 120 | 1 | Diện tích một mặt của hình lập phương có cạnh a là: | a × a | a × 4, a × 6, a × a × 4
+138 | 120 | 1 | Công thức tính diện tích xung quanh của hình lập phương cạnh a là: | Sxq = (a × a) × 4 | Sxq = (a × a) × 6, Sxq = a × 4, Sxq = a × a
+139 | 120 | 1 | Công thức tính diện tích toàn phần của hình lập phương cạnh a là: | Stp = (a × a) × 6 | Stp = (a × a) × 4, Stp = a × 6, Stp = a × a
+140 | 120 | 1 | Một hình lập phương có cạnh 2cm. Diện tích xung quanh của nó là: | 16 cm² | 8 cm², 24 cm², 4 cm²
+141 | 120 | 1 | Một hình lập phương có cạnh 3dm. Diện tích toàn phần của nó là: | 54 dm² | 36 dm², 9 dm², 27 dm²
+142 | 120 | 1 | Nếu cạnh của hình lập phương gấp lên 3 lần thì diện tích xung quanh gấp lên mấy lần? | 9 lần | 3 lần, 6 lần, 12 lần
+143 | 120 | 1 | Diện tích toàn phần của hình lập phương có cạnh 1,1m là: | 7,26 m² | 4 84 m², 1 21 m², 6 6 m²
+144 | 120 | 1 | Một cái hộp hình lập phương không có nắp cạnh 5dm. Diện tích giấy cần để dán mặt ngoài của hộp là: | 125 dm² | 100 dm², 150 dm², 25 dm²
+145 | 120 | 1 | Hình lập phương là hình hộp chữ nhật đặc biệt có: | Chiều dài = Chiều rộng = Chiều cao | Chiều dài > Chiều rộng, Có 6 mặt là hình chữ nhật, Có 12 cạnh không bằng nhau
+146 | 120 | 1 | Muốn tính diện tích toàn phần hình lập phương, ta lấy diện tích một mặt nhân với: | 6 | 4, 12, 2
+147 | 120 | 1 | Một hình lập phương có diện tích một mặt là 25 cm². Cạnh của hình lập phương đó là: | 5 cm | 4 cm, 6 cm, 25 cm
+148 | 120 | 1 | Một hình lập phương có diện tích xung quanh là 100 cm². Diện tích một mặt của nó là: | 25 cm² | 20 cm², 50 cm², 400 cm²
+149 | 120 | 1 | Một hình lập phương có diện tích toàn phần là 96 dm². Diện tích một mặt của nó là: | 16 dm² | 24 dm², 6 dm², 12 dm²
+150 | 120 | 1 | Nếu diện tích một mặt của hình lập phương tăng 4 lần thì cạnh của nó tăng: | 2 lần | 4 lần, 8 lần, 16 lần
+151 | 122 | 1 | Công thức tính thể tích của hình hộp chữ nhật có 3 kích thước a, b, c là: | V = a × b × c | V = a + b + c, V = a × b + c, V = a + b × c
+152 | 122 | 1 | Muốn tính thể tích hình hộp chữ nhật, ta lấy chiều dài nhân chiều rộng rồi nhân với: | Chiều cao (c) | Chu vi đáy, Diện tích đáy, Chiều rộng
+153 | 122 | 1 | Đơn vị đo thể tích thường gặp là: | m² | cm², dm², cm, dm, m, cm³, dm³, m³, kg, g, tấn
+154 | 122 | 1 | Nếu một hình hộp chữ nhật có ba kích thước: 2 dm, 3 dm, 4 dm thì thể tích là: | 24 dm³ | 12 dm³, 9 dm³, 18 dm³
+155 | 122 | 1 | Một hình hộp chữ nhật có chiều dài 10 cm, chiều rộng 5 cm, chiều cao 2 cm. Thể tích là: | 50 cm³ | 100 cm³, 150 cm³, 20 cm³
+156 | 122 | 1 | Công thức V = S × c (trong đó S là diện tích đáy, c là chiều cao) có dùng để tính thể tích hình hộp chữ nhật không? | Có dùng được | Không dùng được, Chỉ dùng cho hình lập phương, Chỉ dùng cho hình tròn
+157 | 122 | 1 | Một bể cá dài 2 m, rộng 1,5 m, cao 1 m. Thể tích bể cá đó là: | 3 m³ | 4, 5 m³, 2 m³, 3, 5 m³
+158 | 122 | 1 | Nếu gấp chiều dài hình hộp chữ nhật lên 2 lần, các kích thước khác giữ nguyên thì thể tích tăng mấy lần? | 2 lần | 4 lần, 6 lần, 8 lần
+159 | 122 | 1 | Nếu gấp tất cả ba kích thước của hình hộp chữ nhật lên 2 lần thì thể tích tăng mấy lần? | 8 lần | 2 lần, 4 lần, 6 lần
+160 | 122 | 1 | Một hình hộp chữ nhật có diện tích đáy là 20 cm², chiều cao c là 5 cm. Thể tích là: | 100 cm³ | 40 cm³, 25 cm³, 200 cm³
+161 | 122 | 1 | Nếu thể tích của hình hộp chữ nhật là 60 cm³, chiều dài 5 cm, chiều rộng 4 cm thì chiều cao c là: | 3 cm | 2 cm, 4 cm, 5 cm
+162 | 122 | 1 | 1 m³ bằng bao nhiêu dm³? | 1000 dm³ | 10 dm³, 100 dm³, 10000 dm³
+163 | 122 | 1 | Một chiếc hộp sữa 10 cm, 5 cm và 20 cm có thể tích là: | 1000 cm³ | 500 cm³, 200 cm³, 1500 cm³
+164 | 122 | 1 | Hình hộp chữ nhật đặc biệt có ba kích thước bằng nhau được gọi là: | Hình lập phương | Hình hộp vuông, Hình cầu, Hình trụ
+165 | 122 | 1 | Diện tích một mặt của hình hộp chữ nhật là 15 cm², chiều cao c là 4 cm. Thể tích là: | 60 cm³ | 30 cm³, 19 cm³, 40 cm³
+166 | 128 | 1 | Muốn tính diện tích xung quanh HHCN, ta lấy chu vi đáy nhân với: | Chiều cao (c) | Chiều dài, Chiều rộng, Diện tích đáy
+167 | 128 | 1 | Thể tích HLP cạnh 2 cm là: | 8 cm³ | 4 cm³, 12 cm³, 16 cm³
+168 | 128 | 1 | HHCN có 3 kích thước: 4dm, 3dm, 2dm. Thể tích là: | 24 dm³ | 24 dm², 14 dm³, 9 dm³
+169 | 128 | 1 | Sxq của HLP cạnh 5m là: | 100 m² | 25 m², 150 m², 125 m²
+170 | 128 | 1 | Diện tích toàn phần HLP bằng diện tích một mặt nhân với mấy? | 6 | 2, 4, 8
+171 | 128 | 1 | HHCN dài 5cm, rộng 4cm, cao 3cm. Diện tích mặt đáy là: | 20 cm² | 12 cm², 15 cm², 60 cm²
+172 | 128 | 1 | HLP có cạnh 0,5m. Thể tích là: | 25 m³ | 0, 0, 125 m³, 1, 25 m³, 0, 125 m²
+173 | 128 | 1 | Chu vi đáy của HHCN là 20cm, cao c là 5cm. Sxq là: | 100 cm² | 100 cm³, 50 cm², 400 cm²
+174 | 128 | 1 | Một hình khai triển của HHCN gồm có mấy mặt? | 6 mặt | 4 mặt, 5 mặt, 8 mặt
+175 | 128 | 1 | Đơn vị đo thể tích thường gặp là: | cm³ | cm, cm², kg
+176 | 128 | 1 | HLP có Sxq là 36 cm². Thể tích của nó là: | 27 cm³ | 9 cm³, 54 cm³, 81 cm³
+177 | 128 | 1 | Gấp cạnh HLP lên 3 lần thì thể tích tăng lên: | 27 lần | 3 lần, 9 lần, 81 lần
+178 | 128 | 1 | HHCN có thể tích 60 cm³, dài 5cm, rộng 4cm. Chiều cao c là: | 3 cm | 4 cm, 5 cm, 12 cm
+179 | 128 | 1 | Bể bơi dài 10m, rộng 5m, cao c là 2m. Thể tích nước đầy bể là: | 100 m³ | 50 m³, 70 m³, 100 m²
+180 | 128 | 1 | Để tính diện tích lát gạch bể bơi (không nắp), ta tính: | Sxq + S-đáy | Sxq, Stp, Sxq + 2 × S-đáy
+181 | 129 | 1 | Một khối gỗ dạng HHCN có các kích thước 5dm, 3dm, 3dm. Thể tích là: | 45 dm³ | 11 dm³, 30 dm³, 15 dm³
+182 | 129 | 1 | Hộp lập phương cạnh 2,5dm. Diện tích một mặt là: | 6 | 25 dm², 2, 5 dm², 5 dm², 6, 25 dm³
+183 | 129 | 1 | Nếu cắt đi một khối gỗ thể tích 8dm³ từ khối gỗ 45dm³ thì phần còn lại là: | 37 dm³ | 53 dm³, 35 dm³, 40 dm³
+184 | 129 | 1 | Mực nước trong hộp Fig 1 cao 8cm, đáy 8x8. Thể tích nước là: | 512 cm³ | 64 cm³, 192 cm³, 256 cm³
+185 | 129 | 1 | Thể tích nước 512 cm³, đáy mới 16x8. Chiều cao c là: | 4 cm | 8 cm, 2 cm, 16 cm
+186 | 129 | 1 | Diện tích toàn phần của hình lập phương cạnh a là: | a × a × 6 | a × a × 4, a × a × a, a × 4 × 6
+187 | 129 | 1 | Một hình lập phương có diện tích một mặt là 9 cm². Thể tích của nó là: | 27 cm³ | 18 cm³, 54 cm³, 81 cm³
+188 | 129 | 1 | Đổi 2,5 dm² sang cm² ta được: | 250 cm² | 25 cm², 2500 cm², 0, 25 cm²
+189 | 129 | 1 | Muốn tính thể tích HHCN khi biết diện tích đáy S và chiều cao c: | V = S × c | V = S : c, V = c : S, V = S + c
+190 | 129 | 1 | HHCN có V = 120 cm³, đáy có diện tích 30 cm². Chiều cao c là: | 4 cm | 40 cm, 4 dm, 4 mm
+191 | 129 | 1 | Gấp cạnh hình lập phương lên 2 lần thì diện tích toàn phần tăng: | 4 lần | 2 lần, 6 lần, 8 lần
+192 | 129 | 1 | Gấp cạnh hình lập phương lên 2 lần thì thể tích tăng: | 8 lần | 2 lần, 4 lần, 16 lần
+193 | 129 | 1 | Bình chứa 1 lít nước (1 dm³). Đổ vào hộp đáy 10x10 cm thì cao c là: | 10 cm | 1 cm, 100 cm, 0, 1 cm
+194 | 129 | 1 | Một mặt hình lập phương có chu vi 20 cm. Thể tích là: | 125 cm³ | 100 cm³, 150 cm³, 20 cm³
+195 | 129 | 1 | Khối gỗ 3dm x 3dm x 3dm. Cắt đi 1dm x 1dm x 1dm ở góc. Sxq có đổi không? | Không đổi | Tăng lên, Giảm đi, Tùy vị trí cắt
+196 | 130 | 1 | Năm 2024 thuộc thế kỉ thứ mấy? | XXI | XX, XV, XIX
+197 | 130 | 1 | 1 năm nhuận có bao nhiêu ngày? | 366 ngày | 365 ngày, 364 ngày, 360 ngày
+198 | 130 | 1 | Tháng nào sau đây chỉ có 28 hoặc 29 ngày? | Tháng 2 | Tháng 1, Tháng 3, Tháng 4
+199 | 130 | 1 | Thế kỉ thứ XV kéo dài từ năm nào đến năm nào? | Từ năm 1401 đến 1500 | Từ năm 1400 đến 1499, Từ năm 1500 đến 1599, Từ năm 1501 đến 1600
+200 | 130 | 1 | 1 thế kỉ bằng bao nhiêu năm? | 100 năm | 10 năm, 50 năm, 1000 năm
+201 | 130 | 1 | Tháng nào sau đây có 31 ngày? | Tháng 8 | Tháng 4, Tháng 6, Tháng 11
+202 | 130 | 1 | Tháng nào sau đây có 30 ngày? | Tháng 9 | Tháng 3, Tháng 10, Tháng 12
+203 | 130 | 1 | Đổi 120 phút bằng bao nhiêu giờ? | 5 giờ | 1, 2 giờ, 2, 5 giờ, 1, 2 giờ
+204 | 130 | 1 | Đổi 2,5 năm bằng bao nhiêu tháng? | 30 tháng | 25 tháng, 24 tháng, 12 tháng
+205 | 130 | 1 | Năm 1010 kỉ niệm 1000 năm Thăng Long - Hà Nội vào thế kỉ nào? | Thế kỉ XXI | Thế kỉ XX, Thế kỉ XIX, Thế kỉ X
+206 | 130 | 1 | Kim giây quay được 1 vòng thì kim phút quay được: | 1/60 vòng | 1 vòng, 60 vòng, 1 nấc (1 phút)
+207 | 130 | 1 | Đổi 1,5 giờ ra phút ta được: | 90 phút | 150 phút, 105 phút, 60 phút
+208 | 130 | 1 | Tháng 2 của năm nhuận có bao nhiêu ngày? | 29 ngày | 28 ngày, 30 ngày, 31 ngày
+209 | 130 | 1 | Từ 1 giờ 15 phút đến 2 giờ là bao nhiêu phút? | 45 phút | 15 phút, 30 phút, 60 phút
+210 | 130 | 1 | Năm 1904 có phải là năm nhuận không? | Phải | Không phải, Tùy quốc gia, Chưa xác định
+211 | 131 | 1 | 3 giờ 15 phút + 2 giờ 10 phút = ? | 5 giờ 25 phút | 5 giờ 15 phút, 6 giờ 25 phút, 5 giờ 35 phút
+212 | 131 | 1 | 45 phút + 30 phút = ? | 1 giờ 15 phút | 1 giờ 30 phút, 1 giờ 45 phút, 75 phút
+213 | 131 | 1 | 10 phút 20 giây + 5 phút 50 giây = ? | 16 phút 10 giây | 15 phút 10 giây, 15 phút 70 giây, 16 phút 20 giây
+214 | 131 | 1 | An bắt đầu làm bài lúc 14 giờ 20 phút, làm xong sau 40 phút. An làm xong lúc mấy giờ? | 15 giờ | 14 giờ 50 phút, 15 giờ 10 phút, 14 giờ 60 phút
+215 | 131 | 1 | Trong phép cộng số đo thời gian, nếu số phút bằng hoặc lớn hơn 60, ta nên: | Trừ đi 60 và cộng 1 vào hàng giờ | Giữ nguyên, Chia cho 10, Xóa đi
+216 | 131 | 1 | 2 giờ 45 phút + 1 giờ 15 phút = ? | 4 giờ | 3 giờ 60 phút, 4 giờ 15 phút, 3 giờ 100 phút
+217 | 131 | 1 | 5 giờ 30 phút + 30 phút = ? | 6 giờ | 5 giờ 60 phút, 6 giờ 30 phút, 5 giờ 30 phút
+218 | 131 | 1 | 12 phút 40 giây + 3 phút 25 giây = ? | 16 phút 5 giây | 15 phút 65 giây, 15 phút 5 giây, 16 phút 15 giây
+219 | 131 | 1 | Mẹ đi chợ hết 1 giờ 15 phút, nấu ăn hết 45 phút. Tổng thời gian là bao lâu? | 2 giờ | 1 giờ 60 phút, 1 giờ 30 phút, 2 giờ 15 phút
+220 | 131 | 1 | 8 giờ 20 phút + 2 giờ 45 phút = ? | 11 giờ 5 phút | 10 giờ 65 phút, 10 giờ 5 phút, 11 giờ 15 phút
+221 | 132 | 1 | 15 phút 40 giây - 10 phút 20 giây = ? | 5 phút 20 giây | 5 phút 10 giây, 5 phút 30 giây, 5 phút 60 giây
+222 | 132 | 1 | 12 giờ 30 phút - 2 giờ = ? | 10 giờ 30 phút | 10 giờ, 10 giờ 15 phút, 10 giờ 45 phút
+223 | 132 | 1 | 2 giờ - 30 phút = ? | 1 giờ 30 phút | 1 giờ, 1 giờ 15 phút, 2 giờ 30 phút
+224 | 132 | 1 | 5 phút 10 giây - 2 phút 20 giây = ? | 2 phút 50 giây | 3 phút 10 giây, 2 phút 40 giây, 3 phút 50 giây
+225 | 132 | 1 | Hôm nay Nam làm bài tập hết 1 giờ 15 phút, hôm qua làm hết 50 phút. Hôm nay Nam làm lâu hơn bao nhiêu? | 25 phút | 35 phút, 15 phút, 45 phút
+226 | 132 | 1 | 10 phút - 4 phút 45 giây = ? | 5 phút 15 giây | 6 phút 15 giây, 5 phút 45 giây, 6 phút 45 giây
+227 | 132 | 1 | 8 giờ 20 phút - 2 giờ 45 phút = ? | 5 giờ 35 phút | 6 giờ 35 phút, 5 giờ 45 phút, 6 giờ 45 phút
+228 | 132 | 1 | Xe xuất phát lúc 7 giờ 30 phút, đến nơi lúc 10 giờ. Thời gian đi là bao lâu? | 2 giờ 30 phút | 3 giờ 30 phút, 2 giờ, 3 giờ
+229 | 132 | 1 | Phim dài 1 giờ 45 phút, xem được 1 giờ 10 phút thì còn lại bao nhiêu thời gian? | 35 phút | 25 phút, 45 phút, 15 phút
+230 | 132 | 1 | 1 ngày - 10 giờ = ? | 14 giờ | 12 giờ, 10 giờ, 24 giờ
+231 | 133 | 1 | 1 giờ 25 phút x 3 = ? | 3 giờ 75 phút | 4 giờ 15 phút, 4 giờ 25 phút, 3 giờ 15 phút
+232 | 133 | 1 | 2 giờ 20 phút x 2 = ? | 4 giờ 20 phút | 4 giờ 40 phút, 5 giờ, 4 giờ
+233 | 133 | 1 | 1 phút 30 giây x 10 = ? | 13 phút | 10 phút 30 giây, 15 phút, 15 phút 30 giây
+234 | 133 | 1 | 1 giờ 15 phút x 4 = ? | 4 giờ 60 phút | 5 giờ, 4 giờ 15 phút, 6 giờ
+235 | 133 | 1 | 2 phút 45 giây x 2 = ? | 4 phút 90 giây | 5 phút 30 giây, 5 phút 15 giây, 5 phút
+236 | 133 | 1 | 12 phút 30 giây x 2 = ? | 24 phút 60 giây | 25 phút, 26 phút, 24 phút
+237 | 134 | 1 | 12 phút : 3 = ? | 4 phút | 3 phút, 4 giây, 36 phút
+238 | 134 | 1 | 2 giờ 30 phút : 2 = ? | 1 giờ 15 phút | 1 giờ 30 phút, 1 giờ 45 phút, 75 phút
+239 | 134 | 1 | 5 phút 15 giây : 3 = ? | 1 phút 45 giây | 1 phút 5 giây, 2 phút 5 giây, 1 phút 25 giây
+240 | 134 | 1 | Robot chạy 4 vòng sân hết 10 phút. Trung bình mỗi vòng hết bao lâu? | 2 phút 30 giây | 2 phút 15 giây, 2 phút 50 giây, 3 phút
+241 | 134 | 1 | 6 giờ 40 phút : 4 = ? | 1 giờ 40 phút | 1 giờ 10 phút, 2 giờ 10 phút, 1 giờ 20 phút
+242 | 134 | 1 | 15 phút 50 giây : 5 = ? | 3 phút 10 giây | 3 phút, 3 phút 50 giây, 5 phút 10 giây
+243 | 134 | 1 | 24 giờ : 6 = ? | 4 giờ | 6 giờ, 3 giờ, 8 giờ
+244 | 134 | 1 | 45 phút : 9 = ? | 5 phút | 10 phút, 4 phút, 6 phút
+245 | 134 | 1 | Một vòi nước chảy đầy bể trong 2 giờ. Hỏi 4 vòi chảy cùng lúc hết bao lâu? | 30 phút | 1 giờ, 2 giờ, 4 giờ
+246 | 134 | 1 | 10 phút 20 giây : 2 = ? | 5 phút 10 giây | 5 phút, 10 phút, 6 phút 20 giây
+247 | 136 | 1 | Muốn tính vận tốc ta lấy quãng đường chia cho...? | thời gian | chiều dài, chiều rộng, chu vi
+248 | 136 | 1 | Công thức tính vận tốc là: | v = s : t | v = s x t, v = t : s, v = s + t
+249 | 136 | 1 | Đơn vị đo vận tốc thường gặp là: | km/h hoặc m/s | kg hoặc g, m hoặc km, giờ hoặc phút
+250 | 136 | 1 | Một ô tô đi được 120 km trong 2 giờ. Vận tốc của ô tô là: | 60 km/h | 120 km/h, 240 km/h, 30 km/h
+251 | 136 | 1 | Một người đi xe đạp đi được 30 km trong 2 giờ. Vận tốc của người đó là: | 15 km/h | 30 km/h, 60 km/h, 10 km/h
+252 | 136 | 1 | Một con chim ưng bay được 90 m trong 3 giây. Vận tốc của nó là: | 30 m/s | 90 m/s, 270 m/s, 10 m/s
+253 | 136 | 1 | Một người chạy bộ 100 m hết 20 giây. Vận tốc của người đó là: | 5 m/s | 10 m/s, 20 m/s, 50 m/s
+254 | 136 | 1 | Đổi: 1 phút 20 giây = ... giây? | 80 giây | 120 giây, 60 giây, 40 giây
+255 | 136 | 1 | Một đoàn tàu đi 200 km trong 4 giờ. Vận tốc của đoàn tàu là: | 50 km/h | 40 km/h, 100 km/h, 200 km/h
+256 | 136 | 1 | v = 45 km/h, t = 2 giờ. Quãng đường s là: | 90 km | 45 km, 47 km, 22 5 km
+257 | 137 | 1 | Đổi: 108 km/h = ... m/s? | 30 m/s | 20 m/s, 10 m/s, 40 m/s
+258 | 137 | 1 | Đổi: 18 km/h = ... m/s? | 5 m/s | 10 m/s, 15 m/s, 20 m/s
+259 | 137 | 1 | Vận tốc đà điểu chạy 5250 m hết 300 giây là: | 17,5 m/s | 15 m/s, 20 m/s, 18 5 m/s
+260 | 137 | 1 | Bác Nùng đi 15 km xe buýt hết 30 phút. Vận tốc xe buýt là: | 30 km/h | 45 km/h, 15 km/h, 60 km/h
+261 | 137 | 1 | Xe Đỏ (15 m/s), Xe Đen (16 m/s), Xe Trắng (14 m/s). Xe nào nhanh nhất? | Xe màu đen | Xe màu đỏ, Xe màu trắng, Cả 3 xe bằng nhau
+262 | 137 | 1 | 1 km/h tương ứng bao nhiêu m/phút? | 16,67 m/phút | 60 m/phút, 100 m/phút, 10 m/phút
+263 | 137 | 1 | Một người đi xe đạp vận tốc 12 km/h. Sau 2 giờ người đó đi được: | 24 km | 6 km, 14 km, 20 km
+264 | 137 | 1 | Công thức tính quãng đường s khi biết v và t là: | s = v x t | s = v : t, s = t : v, s = v + t
+265 | 137 | 1 | Đổi: 1 giờ 15 phút = ... phút? | 75 phút | 60 phút, 90 phút, 115 phút
+266 | 137 | 1 | Vận tốc âm thanh trong không khí khoảng 340 m/s, tương đương: | 1224 km/h | 1000 km/h, 340 km/h, 680 km/h
+267 | 138 | 1 | Muốn tính quãng đường ta lấy vận tốc ... với thời gian? | nhân | chia, cộng, trừ
+268 | 138 | 1 | Công thức tính quãng đường là: | s = v x t | s = v : t, v = s : t, t = s : v
+269 | 138 | 1 | Một ô tô đi với vận tốc 60 km/h trong 2 giờ. Quãng đường là: | 120 km | 60 km, 30 km, 180 km
+270 | 138 | 1 | Một người đi xe đạp 15 km/h trong 3 giờ. Quãng đường là: | 45 km | 30 km, 15 km, 60 km
+271 | 138 | 1 | Một tàu biển đi 35 km/h trong 4 giờ. Quãng đường là: | 140 km | 120 km, 70 km, 175 km
+272 | 138 | 1 | Chim cắt bay 100 m/s trong 10 giây. Quãng đường là: | 1000 m | 100 m, 10 m, 10000 m
+273 | 138 | 1 | Chú Luân đi từ 7h đến 9h với vận tốc 50 km/h. Quãng đường là: | 100 km | 50 km, 150 km, 200 km
+274 | 138 | 1 | Đổi: 1 giờ 30 phút = ... giờ? | 1,5 giờ | 1 3 giờ, 1 05 giờ, 2 giờ
+275 | 138 | 1 | v = 40 km/h, t = 1,5 giờ. Quãng đường s là: | 60 km | 40 km, 41 5 km, 80 km
+276 | 138 | 1 | Tại sao cần cùng đơn vị giữa vận tốc và thời gian? | Để tính toán chính xác | Để hình vẽ đẹp hơn, Để đề bài dài hơn, Không cần thiết
+277 | 139 | 1 | Muốn tính thời gian ta lấy quãng đường ... cho vận tốc? | chia | nhân, cộng, trừ
+278 | 139 | 1 | Công thức tính thời gian là: | t = s : v | t = s x v, v = s : t, s = v : t
+279 | 139 | 1 | Một ô tô đi được 120 km với vận tốc 60 km/h hết bao lâu? | 2 giờ | 3 giờ, 4 giờ, 1 giờ
+280 | 139 | 1 | Thầy Nam đi bộ 9 km với vận tốc 1,5 km/h. Thời gian là: | 6 giờ | 13 5 giờ, 4 giờ, 10 giờ
+281 | 139 | 1 | VĐV trượt tuyết 600m với vận tốc 24 m/s. Thời gian là: | 25 giây | 20 giây, 30 giây, 15 giây
+282 | 139 | 1 | Đi quãng đường 80 km với vận tốc 40 km/h mất bao lâu? | 2 giờ | 40 giờ, 1 5 giờ, 3 giờ
+283 | 139 | 1 | Một người đi xe máy 100 km hết 2 giờ. Vận tốc là: | 50 km/h | 200 km/h, 25 km/h, 40 km/h
+284 | 139 | 1 | Đổi: 1,5 giờ = ... phút? | 90 phút | 60 phút, 150 phút, 45 phút
+285 | 139 | 1 | v = 30 km/h, s = 75 km. t = ...? | 2,5 giờ | 2 1 giờ, 3 giờ, 2 giờ
+286 | 139 | 1 | Thời gian đi ngược dòng 75 km với v = 25 km/h là: | 3 giờ | 2 5 giờ, 2 giờ, 3 5 giờ
+287 | 140 | 1 | Một ô tô đi 60 km/h trong 2 giờ. Quãng đường là: | 120 km | 60 km, 30 km, 180 km
+288 | 140 | 1 | Công thức tính thời gian là: | t = s : v | t = s x v, v = s : t, s = v : t
+289 | 140 | 1 | s = 28 km, v = 14 km/h. Thời gian t = ...? | 2 giờ | 14 giờ, 0 5 giờ, 4 giờ
+290 | 140 | 1 | v = 30 000 km/h, t = 14 giờ. Quãng đường s là: | 420 000 km | 300 000 km, 450 000 km, 42 000 km
+291 | 140 | 1 | Xe tải đi 60 km với vận tốc 45 km/h. Thời gian đi là: | 1 giờ 20 phút | 1 giờ 30 phút, 1 giờ 15 phút, 2 giờ
+292 | 140 | 1 | Tại mỗi điểm dừng nghỉ 15 phút. Dừng 3 điểm hết: | 45 phút | 30 phút, 1 giờ, 15 phút
+293 | 140 | 1 | Tổng thời gian đi 1h20p và nghỉ 45p là: | 2 giờ 5 phút | 2 giờ, 1 giờ 65 phút, 2 giờ 15 phút
+294 | 140 | 1 | Đoàn tàu đi từ 6h10 đến 10h40 hết bao lâu? | 4 giờ 30 phút | 4 giờ 10 phút, 4 giờ, 4 giờ 20 phút
+295 | 140 | 1 | 4 giờ 30 phút đổi ra số thập phân là: | 4,5 giờ | 4 3 giờ, 4 15 giờ, 5 giờ
+296 | 140 | 1 | v = 80 km/h, t = 4,5 giờ. Khoảng cách s là: | 360 km | 320 km, 400 km, 380 km
+297 | 140KTGK2 | 1 | 1 m³ bằng bao nhiêu dm³? | 1000 dm³ | 10 dm³, 100 dm³, 10 000 dm³
+298 | 140KTGK2 | 1 | Hình hộp chữ nhật có bao nhiêu mặt? | 6 mặt | 4 mặt, 8 mặt, 12 mặt
+299 | 140KTGK2 | 1 | 1 giờ 15 phút bằng bao nhiêu phút? | 75 phút | 60 phút, 90 phút, 115 phút
+300 | 140KTGK2 | 1 | Công thức tính quãng đường khi biết vận tốc và thời gian là: | s = v x t | s = v : t, v = s : t, t = s : v
+301 | 140KTGK2 | 1 | Thể tích hình lập phương có cạnh 3 cm là bao nhiêu? | 27 cm³ | 9 cm³, 54 cm³, 81 cm³
+302 | 140KTGK2 | 1 | 3 dm³ bằng bao nhiêu cm³? | 3000 cm³ | 300 cm³, 30 000 cm³, 30 cm³
+303 | 140KTGK2 | 1 | Đơn vị đo vận tốc thường gặp là gì? | km/h hoặc m/s | kg hoặc g, m hoặc km, giờ hoặc phút
+304 | 140KTGK2 | 2 | Diện tích xung quanh hình hộp chữ nhật dài 5 cm, rộng 3 cm, cao 2 cm là: | 32 cm² | 16 cm², 62 cm², 30 cm²
+305 | 140KTGK2 | 2 | Một ô tô đi được 150 km trong 2,5 giờ. Vận tốc của ô tô là: | 60 km/h | 75 km/h, 50 km/h, 152.5 km/h
+306 | 140KTGK2 | 2 | 2 năm 6 tháng + 3 năm 8 tháng bằng: | 6 năm 2 tháng | 5 năm 14 tháng, 6 năm 4 tháng, 5 năm 2 tháng
+307 | 140KTGK2 | 2 | Một bể cá hình hộp chữ nhật dài 2m, rộng 1m, cao 1,5m. Thể tích bể cá là: | 3 m³ | 4.5 m³, 1.5 m³, 2 m³
+308 | 140KTGK2 | 2 | Biết Quãng đường s = 150 km, vận tốc v = 50 km/h. Thời gian đi t bằng: | 3 giờ | 2 giờ, 4 giờ, 100 giờ
+309 | 140KTGK2 | 2 | 12 phút 45 giây : 3 bằng: | 4 phút 15 giây | 4 phút 5 giây, 3 phút 15 giây, 4 phút 45 giây
+310 | 140KTGK2 | 2 | 1,5 ngày bằng bao nhiêu giờ? | 36 giờ | 24 giờ, 15 giờ, 48 giờ
+311 | 140KTGK2 | 3 | Một xe đạp đi từ A lúc 7 giờ và đến B lúc 9 giờ 30 phút với vận tốc 12 km/h. Quãng đường AB dài: | 30 km | 24 km, 36 km, 20 km
+312 | 140KTGK2 | 3 | Thể tích một hình lập phương là 64 cm³. Cạnh của hình lập phương đó là: | 4 cm | 8 cm, 16 cm, 2 cm
+313 | 140KTGK2 | 3 | Diện tích toàn phần của hình lập phương có cạnh 0,5 m là bao nhiêu? | 1.5 m² | 0.25 m², 1.25 m², 0.125 m²
+314 | 140KTGK2 | 3 | Bể bơi dài 25m, rộng 10m, sâu 2m. Người ta lát gạch men đáy và xung quanh. Diện tích cần lát là: | 390 m² | 140 m², 250 m², 500 m²
+315 | 140KTGK2 | 3 | Xe máy dự định đi 120km trong 3 giờ. Nếu tăng vận tốc thêm 10km/h thì thời gian đi là: | 2 giờ 24 phút | 2 giờ 30 phút, 2 giờ, 3 giờ
+
+317 | 144 | 1 | Cô Trang đi 6km trong 30 phút. Vận tốc cô là? | 12 km/h | 10 km/h, 15 km/h, 18 km/h
+318 | 144 | 1 | Công ty hoạt động từ năm 578 đến 2006 thì được bao nhiêu năm? | 1428 năm | 1528 năm, 1328 năm, 1408 năm
+319 | 144 | 2 | 1428 năm bằng bao nhiêu thế kỷ và bao nhiêu năm? | 14 thế kỷ 28 năm | 15 thế kỷ 28 năm, 14 thế kỷ 8 năm, 13 thế kỷ 28 năm
+320 | 144 | 1 | Chú bộ đội chạy 6,5km với vận tốc 13km/h hết bao lâu? | 30 phút | 20 phút, 1 giờ, 45 phút
+321 | 144 | 3 | Đổi 2,7km/giờ sang m/giây. | 0,5 m/s | 0,75 m/s, 1 m/s, 1,5 m/s
+322 | 144 | 2 | Chu vi hình tròn bán kính 5km là bao nhiêu? | 31,4 km | 15,7 km, 62,8 km, 25 km
+323 | 144 | 2 | Một tắc-xi bay đi 31,4 km với vận tốc 60 km/h hết bao lâu? | 31,4 phút | 30 phút, 60 phút, 15 phút
+324 | 144 | 1 | Hai người gặp nhau sau 4 phút. Đổi 4 phút ra giây. | 240 giây | 200 giây, 300 giây, 120 giây
+325 | 144 | 1 | Tí đi bộ 1m/s trong 4 phút được bao nhiêu mét? | 240 m | 400 m, 120 m, 300 m
+326 | 144 | 1 | Cún chạy 3m/s trong 240 giây được bao nhiêu mét? | 720 m | 600 m, 800 m, 1000 m
+327 | 144 | 1 | Sau khi chạy 30 phút và bơi 1 giờ 30 phút, tổng thời gian là? | 2 giờ | 1 giờ 30 phút, 2 giờ 30 phút, 3 giờ
+328 | 144 | 1 | Nếu chú bộ đội xuất phát lúc 4:00 và đi hết 2 giờ, chú đến nơi lúc? | 6:00 | 5:30, 7:00, 6:30
+329 | 144 | 1 | Đường kính của hình tròn có bán kính 5km là? | 10 km | 5 km, 15 km, 20 km
+330 | 144 | 2 | Một người đi 1km trong 10 phút. Vận tốc là? | 6 km/h | 10 km/h, 5 km/h, 12 km/h
+331 | 144 | 1 | Nếu v=5m/s và t=10s thì s bằng bao nhiêu? | 50 m | 500 m, 5 m, 2 m
+332 | 155 | 1 | Số thập phân 'Bốn mươi tám đơn vị, chín phần trăm' viết là: | 48,09 | 48,9, 4,89, 48,009
+333 | 155 | 1 | Chữ số 5 trong số 12,354 có giá trị là: | 0,05 | 0,5, 0,005, 5
+334 | 155 | 1 | 25/100 viết dưới dạng số thập phân là: | 0,25 | 2,5, 0,025, 25
+335 | 155 | 1 | Chọn dấu thích hợp: 15,2 ... 15,199 | > | <, =
+336 | 155 | 1 | 4m 8cm = ... m | 4,08 | 4,8, 40,8, 0,48
+337 | 155 | 1 | 0,75 viết dưới dạng phân số tối giản là: | 3/4 | 1/4, 1/2, 75/100
+338 | 155 | 1 | Số thập phân nào lớn nhất trong các số sau: 0,8; 0,81; 0,799; 0,09? | 0,81 | 0,8, 0,799, 0,09
+339 | 155 | 1 | 60% viết dưới dạng số thập phân là: | 0,6 | 6,0, 0,06, 60
+340 | 155 | 1 | Một mảnh vườn có diện tích 100 m². 25% diện tích là: | 25 m² | 50 m², 75 m², 5 m²
+341 | 155 | 1 | Gấp rưỡi tương ứng với bao nhiêu phần trăm? | 150% | 50%, 100%, 200%
+342 | 155 | 1 | 1,2 kg = ... g | 1200 | 120, 12, 12000
+343 | 155 | 1 | Số 108,06 đọc là: | Một trăm linh tám phẩy không sáu | Một trăm linh tám phẩy sáu, Một trăm tám phẩy không sáu, Mười tám phẩy không sáu
+344 | 155 | 1 | Phân số 7/4 viết dưới dạng số thập phân là: | 1,75 | 1,4, 0,74, 7,4
+345 | 155 | 1 | Chọn dấu thích hợp: 9,8 ... 9,80 | = | >, <
+346 | 155 | 1 | Sắp xếp 1,2; 1,02; 1,22 từ bé đến lớn: | 1,02; 1,2; 1,22 | 1,2; 1,02; 1,22, 1,22; 1,2; 1,02
+347 | 135 | 1 | 2 giờ 15 phút × 3 = ? | 6 giờ 45 phút | 6 giờ 30 phút, 7 giờ 15 phút, 5 giờ 45 phút
+348 | 135 | 1 | 4 giờ 30 phút : 2 = ? | 2 giờ 15 phút | 2 giờ 30 phút, 2 giờ, 3 giờ 15 phút
+349 | 135 | 1 | 1 giờ 40 phút × 4 = ? | 6 giờ 40 phút | 4 giờ 40 phút, 5 giờ 20 phút, 7 giờ 20 phút
+350 | 135 | 1 | 3 phút 20 giây × 5 = ? | 16 phút 40 giây | 15 phút 40 giây, 17 phút, 16 phút 20 giây
+351 | 135 | 1 | 8 giờ 24 phút : 4 = ? | 2 giờ 6 phút | 2 giờ 4 phút, 2 giờ 24 phút, 2 giờ 12 phút
+352 | 135 | 1 | 5 phút 45 giây : 3 = ? | 1 phút 55 giây | 1 phút 45 giây, 2 phút 15 giây, 1 phút 50 giây
+353 | 135 | 1 | 3 giờ 48 phút : 6 = ? | 38 phút | 36 phút, 40 phút, 42 phút
+354 | 135 | 1 | 12 phút 36 giây × 2 = ? | 25 phút 12 giây | 24 phút 36 giây, 25 phút, 24 phút 72 giây
+355 | 135 | 1 | 6 giờ 30 phút : 5 = ? | 1 giờ 18 phút | 1 giờ 6 phút, 1 giờ 30 phút, 1 giờ 15 phút
+356 | 135 | 1 | Một công nhân làm 1 sản phẩm hết 2 phút 30 giây. Làm 6 sản phẩm hết bao lâu? | 15 phút | 12 phút, 14 phút 30 giây, 16 phút
+357 | 135 | 1 | Ba bạn chạy tiếp sức, mỗi bạn chạy 1 phút 25 giây. Tổng thời gian là? | 4 phút 15 giây | 3 phút 75 giây, 4 phút 5 giây, 5 phút 15 giây
+358 | 135 | 1 | Một chuyến xe tốn 9 giờ 36 phút cho 4 chuyến bằng nhau. Mỗi chuyến bao lâu? | 2 giờ 24 phút | 2 giờ 9 phút, 2 giờ 36 phút, 3 giờ
+359 | 135 | 1 | 7 phút 12 giây × 5 = ? | 36 phút | 35 phút 12 giây, 36 phút 60 giây, 35 phút
+360 | 135 | 1 | 10 giờ 50 phút : 5 = ? | 2 giờ 10 phút | 2 giờ 5 phút, 2 giờ 50 phút, 2 giờ
+361 | 135 | 1 | Bạn Minh tập thể dục 45 phút mỗi ngày. Mỗi tuần (7 ngày) bạn tập bao nhiêu? | 5 giờ 15 phút | 5 giờ 45 phút, 4 giờ 15 phút, 6 giờ
+362 | 145 | 1 | Một ô tô đi 150km trong 3 giờ. Vận tốc là? | 50 km/h | 60 km/h, 45 km/h, 75 km/h
+363 | 145 | 1 | Vận tốc 40km/h, thời gian 2,5 giờ. Quãng đường là? | 100 km | 80 km, 120 km, 90 km
+364 | 145 | 1 | Quãng đường 180km, vận tốc 60km/h. Thời gian là? | 3 giờ | 2 giờ, 4 giờ, 2,5 giờ
+365 | 145 | 1 | Đổi 36km/h sang m/phút: | 600 m/phút | 60 m/phút, 360 m/phút, 6000 m/phút
+366 | 145 | 1 | Một xe máy đi 75km trong 1 giờ 30 phút. Vận tốc là? | 50 km/h | 45 km/h, 60 km/h, 75 km/h
+367 | 145 | 1 | Hai xe khởi hành cùng lúc ngược chiều, v₁=40km/h, v₂=50km/h. Sau 2 giờ cách nhau? | 180 km | 90 km, 160 km, 200 km
+368 | 145 | 1 | Một người đi bộ 4,5km hết 1 giờ 30 phút. Vận tốc là? | 3 km/h | 4 km/h, 4,5 km/h, 2,5 km/h
+369 | 145 | 1 | Vận tốc 15m/s. Đổi sang km/h: | 54 km/h | 45 km/h, 60 km/h, 15 km/h
+370 | 145 | 1 | Quãng đường AB = 240km. Xe đi v=60km/h xuất phát lúc 7:00. Đến nơi lúc? | 11:00 | 10:00, 11:30, 10:30
+371 | 145 | 1 | Một ca nô đi 35km trong 1 giờ 10 phút. Vận tốc là? | 30 km/h | 35 km/h, 25 km/h, 40 km/h
+372 | 145 | 1 | Hai người cùng khởi hành, cùng chiều. v₁=12km/h, v₂=8km/h. Sau 3 giờ khoảng cách là? | 12 km | 4 km, 8 km, 36 km
+373 | 145 | 1 | Đổi 5m/s sang m/phút: | 300 m/phút | 50 m/phút, 500 m/phút, 30 m/phút
+374 | 145 | 1 | Một đoàn tàu dài 200m chạy qua cầu dài 800m hết 50 giây. Vận tốc là? | 20 m/s | 16 m/s, 10 m/s, 40 m/s
+375 | 145 | 1 | Thời gian = 45 phút. Đổi ra giờ: | 0,75 giờ | 0,45 giờ, 0,5 giờ, 1,15 giờ
+376 | 145 | 1 | Quãng đường 12km, thời gian 48 phút. Vận tốc (km/h) là? | 15 km/h | 12 km/h, 20 km/h, 10 km/h
+377 | 146 | 1 | Thu thập số liệu là gì? | Ghi chép và tổ chức thông tin từ thực tế | Vẽ biểu đồ, Tính trung bình, Đếm số trang sách
+378 | 146 | 1 | Khi phân loại số liệu ta cần: | Chia thành các nhóm theo tiêu chí | Cộng tất cả lại, Vẽ biểu đồ, Xóa số liệu trùng
+379 | 146 | 1 | Lớp 5A có: 12 giỏi, 18 khá, 8 TB. Tổng số HS là? | 38 | 28, 30, 40
+380 | 146 | 1 | Lớp 5A có: 12 giỏi, 18 khá, 8 TB. Loại nào nhiều nhất? | Khá | Giỏi, Trung bình, Bằng nhau
+381 | 146 | 1 | Điểm kiểm tra: 8, 9, 7, 10, 8, 9, 8. Điểm xuất hiện nhiều nhất là? | 8 | 9, 7, 10
+382 | 146 | 1 | Sắp xếp: 7, 10, 8, 9 từ bé đến lớn: | 7, 8, 9, 10 | 10, 9, 8, 7, 7, 9, 8, 10, 8, 7, 10, 9
+383 | 146 | 1 | Loại biểu đồ nào thể hiện tỉ lệ phần trăm tốt nhất? | Biểu đồ hình quạt tròn | Biểu đồ cột, Bảng số liệu, Biểu đồ đường
+384 | 146 | 1 | Bảng số liệu ghi cân nặng 5 bạn: 28, 32, 30, 35, 25 kg. Bạn nặng nhất cân? | 35 kg | 32 kg, 30 kg, 28 kg
+385 | 146 | 1 | Khảo sát môn yêu thích: Toán:15, Tiếng Việt:10, T.Anh:12, Khoa học:8. Tổng HS? | 45 | 35, 40, 50
+386 | 146 | 1 | Dãy số: 5, 8, 3, 8, 5, 7, 8. Số 8 xuất hiện bao nhiêu lần? | 3 | 2, 4, 1
+387 | 146 | 1 | Trung bình cộng của 4, 6, 8, 10 là? | 7 | 6, 8, 28
+388 | 146 | 1 | Khi sắp xếp số liệu từ lớn đến bé, ta gọi là: | Sắp xếp giảm dần | Sắp xếp tăng dần, Phân nhóm, Thu thập
+389 | 146 | 1 | Một cửa hàng bán: T2:20, T3:15, T4:25, T5:18 sản phẩm. Ngày bán nhiều nhất? | Thứ Tư | Thứ Hai, Thứ Ba, Thứ Năm
+390 | 146 | 1 | Bảng theo dõi nhiệt độ: 28°C, 30°C, 32°C, 29°C. Chênh lệch lớn nhất là? | 4°C | 2°C, 3°C, 5°C
+391 | 146 | 1 | Thu thập số liệu bằng cách nào KHÔNG phù hợp? | Tự bịa số liệu | Phỏng vấn, Quan sát ghi chép, Đo đạc thực tế
+392 | 147 | 1 | Biểu đồ hình quạt tròn dùng để: | Thể hiện tỉ lệ phần trăm các thành phần | So sánh chiều cao, Vẽ đường đi, Tính diện tích
+393 | 147 | 1 | Tổng các phần trong biểu đồ hình quạt tròn bằng: | 100% | 50%, 200%, Tùy bài
+394 | 147 | 1 | Biểu đồ: Toán 40%, T.Việt 30%, còn lại T.Anh. T.Anh chiếm? | 30% | 20%, 40%, 10%
+395 | 147 | 1 | Phần nào chiếm 1/4 hình tròn thì bằng bao nhiêu %? | 25% | 50%, 20%, 10%
+396 | 147 | 1 | Nửa hình tròn tương ứng với bao nhiêu %? | 50% | 25%, 75%, 100%
+397 | 147 | 1 | Lớp 40 HS, biểu đồ cho thấy 25% thích bóng đá. Bao nhiêu HS? | 10 | 15, 20, 8
+398 | 147 | 1 | Biểu đồ quạt: Đỏ 35%, Xanh 45%, Vàng còn lại. Vàng bằng? | 20% | 15%, 25%, 10%
+399 | 147 | 1 | Phần 75% trên biểu đồ quạt trông giống: | 3/4 hình tròn | 1/4 hình tròn, 1/2 hình tròn, Gần hết hình tròn
+400 | 147 | 1 | 100 HS khảo sát, 30% thích Khoa học. Bao nhiêu HS? | 30 | 20, 40, 10
+401 | 147 | 1 | Biểu đồ quạt không thể hiện được điều gì? | Sự thay đổi theo thời gian | Tỉ lệ phần trăm, Phần lớn nhất, So sánh các thành phần
+402 | 147 | 1 | 200 HS, biểu đồ thể hiện 15% đi xe buýt. Bao nhiêu HS? | 30 | 15, 20, 40
+403 | 147 | 1 | Biểu đồ quạt có 3 phần: 50%, 30%, phần còn lại là? | 20% | 30%, 10%, 25%
+404 | 147 | 1 | Phần chiếm 10% trên hình tròn sẽ: | Là phần rất nhỏ | Chiếm 1/4 hình tròn, Chiếm nửa hình tròn, Gần hết
+405 | 147 | 1 | 80 quả, 25% là cam. Số cam là? | 20 | 25, 15, 40
+406 | 147 | 1 | Một phần bằng 1/5 hình tròn tương ứng bao nhiêu %? | 20% | 25%, 15%, 10%
+407 | 148 | 1 | Biểu đồ quạt: Nước 60%, Sữa 25%, Nước ép 15%. Tổng 200 ly. Nước bao nhiêu ly? | 120 | 100, 60, 150
+408 | 148 | 1 | Biểu đồ quạt cửa hàng: Áo 40%, Quần 35%, Phụ kiện 25%. 500 SP. Quần bao nhiêu? | 175 | 200, 150, 125
+409 | 148 | 1 | Nếu 2 phần bằng nhau trên biểu đồ quạt, mỗi phần chiếm: | Cùng % như nhau | Phần trước lớn hơn, Phần sau lớn hơn, Không thể biết
+410 | 148 | 1 | 300 HS, biểu đồ: 45% nam. Số HS nữ là? | 165 | 135, 150, 180
+411 | 148 | 1 | Biểu đồ quạt: Loại A 30%, B 50%, C còn lại. 400 SP. Số SP loại C? | 80 | 120, 200, 100
+412 | 148 | 1 | Để vẽ biểu đồ quạt, bước đầu tiên là: | Tính tỉ lệ phần trăm mỗi thành phần | Vẽ hình tròn, Tô màu, Viết tiêu đề
+413 | 148 | 1 | Phần 40% chiếm bao nhiêu độ trên hình tròn? | 144° | 120°, 160°, 100°
+414 | 148 | 1 | Hình tròn có 360°. Phần 25% tương ứng bao nhiêu độ? | 90° | 60°, 45°, 120°
+415 | 148 | 1 | 150 HS: Toán 40%, Khoa học 20%, T.Việt 40%. Số HS thích Khoa học? | 30 | 40, 20, 60
+416 | 148 | 1 | Biểu đồ quạt: A chiếm góc 180°. A tương ứng bao nhiêu %? | 50% | 25%, 75%, 100%
+417 | 148 | 1 | Tổng doanh thu 1000 triệu. Biểu đồ: Q1 20%, Q2 30%, Q3 25%, Q4? | 250 triệu | 200 triệu, 300 triệu, 150 triệu
+418 | 148 | 1 | Góc 72° trên biểu đồ quạt chiếm bao nhiêu %? | 20% | 25%, 15%, 10%
+419 | 148 | 1 | 60 quả bóng: Đỏ 30%, Xanh 50%. Số quả vàng là? | 12 | 20, 18, 10
+420 | 148 | 1 | Biểu đồ quạt nào đúng nếu A=50%, B=50%? | Hai nửa hình tròn bằng nhau | Một phần lớn hơn, Ba phần, Bốn phần
+421 | 148 | 1 | 240 HS, biểu đồ: Đi bộ 25%, Xe đạp 35%. Số HS đi xe đạp? | 84 | 60, 96, 72
+422 | 149 | 1 | Gieo xúc xắc 20 lần, mặt 6 xuất hiện 4 lần. Tỉ số là? | 4/20 | 6/20, 4/6, 20/4
+423 | 149 | 1 | Tung đồng xu 50 lần, mặt sấp 28 lần. Tỉ số mặt sấp là? | 28/50 | 22/50, 28/22, 50/28
+424 | 149 | 1 | Rút thẻ 30 lần, thẻ đỏ 12 lần. Tỉ số thẻ đỏ là? | 12/30 | 30/12, 12/18, 18/30
+425 | 149 | 1 | Gieo xúc xắc 100 lần, mặt chẵn xuất hiện 52 lần. Tỉ lệ % là? | 52% | 48%, 50%, 26%
+426 | 149 | 1 | Bắn 40 phát, trúng đích 32 phát. Tỉ số trúng đích là? | 32/40 | 40/32, 8/40, 32/8
+427 | 149 | 1 | Tung đồng xu 10 lần, ngửa 6 lần. Tỉ số mặt ngửa bằng bao nhiêu %? | 60% | 40%, 50%, 30%
+428 | 149 | 1 | 20 lần gieo xúc xắc: mặt 1 ra 3 lần. Tỉ số rút gọn? | 3/20 | 1/20, 3/6, 17/20
+429 | 149 | 1 | 50 lần rút thẻ, thẻ xanh 15 lần. Tỉ lệ % thẻ xanh? | 30% | 15%, 35%, 50%
+430 | 149 | 1 | Gieo xúc xắc 60 lần, mặt lẻ 28 lần. Tỉ số mặt chẵn? | 32/60 | 28/60, 28/32, 60/28
+431 | 149 | 1 | Quay mũi tên 25 lần, vùng đỏ 5 lần. Tỉ lệ % vùng đỏ? | 20% | 25%, 15%, 5%
+432 | 149 | 1 | 100 lần thí nghiệm, sự kiện A xảy ra 47 lần. Tỉ số là? | 47/100 | 53/100, 47/53, 100/47
+433 | 149 | 1 | Tỉ số lặp lại luôn nằm trong khoảng: | Từ 0 đến 1 | Từ 0 đến 100, Từ 1 đến 10, Bất kỳ
+434 | 149 | 1 | Gieo xúc xắc, mặt nào cũng có khả năng xuất hiện bằng nhau. Tỉ số mỗi mặt khoảng: | 1/6 | 1/2, 1/3, 1/4
+435 | 149 | 1 | 80 lần bốc thăm, thăm trúng 20 lần. Tỉ lệ trúng? | 25% | 20%, 30%, 40%
+436 | 149 | 1 | Rút bóng 40 lần: đỏ 16, xanh 14, vàng 10. Tỉ số bóng xanh? | 14/40 | 16/40, 10/40, 14/16
+437 | 150 | 1 | Bước đầu tiên khi thu thập số liệu thống kê là: | Xác định mục đích và nội dung cần thu thập | Vẽ biểu đồ, Tính trung bình, Đếm số liệu
+438 | 150 | 1 | Khảo sát chiều cao 5 bạn: 130, 128, 135, 132, 130 cm. Chiều cao cao nhất? | 135 cm | 132 cm, 130 cm, 128 cm
+439 | 150 | 1 | Dãy số liệu: 4, 7, 4, 9, 4, 7. Giá trị xuất hiện nhiều nhất? | 4 | 7, 9, Không có
+440 | 150 | 1 | Trung bình cộng của 10, 20, 30 là: | 20 | 10, 30, 60
+441 | 150 | 1 | Cách nào phù hợp để thu thập số liệu về chiều cao HS? | Đo bằng thước và ghi lại | Hỏi ước lượng, Nhìn bằng mắt, Tự nghĩ ra
+442 | 150 | 1 | Bảng tần số dùng để: | Ghi lại số lần xuất hiện mỗi giá trị | Tính tổng, Vẽ biểu đồ tròn, Sắp xếp từ A-Z
+443 | 150 | 1 | Số liệu: 8, 6, 9, 7, 10. Giá trị nhỏ nhất? | 6 | 7, 8, 9
+444 | 150 | 1 | Khảo sát 30 HS, 12 HS thích bóng đá. Tỉ lệ %? | 40% | 30%, 50%, 12%
+445 | 150 | 1 | Biểu đồ cột phù hợp để: | So sánh số lượng giữa các nhóm | Thể hiện tỉ lệ %, Vẽ đường xu hướng, Tính trung bình
+446 | 150 | 1 | Điểm kiểm tra 5 bạn: 7, 8, 9, 8, 8. Điểm trung bình? | 8 | 7, 9, 40
+447 | 150 | 1 | Số liệu: 12, 15, 18, 12, 20, 15, 12. Giá trị 12 xuất hiện bao nhiêu lần? | 3 | 2, 4, 1
+448 | 150 | 1 | Khoảng biến thiên (range) của dãy 5, 12, 8, 3, 15 là: | 12 | 10, 15, 5
+449 | 150 | 1 | Loại biểu đồ nào thể hiện sự thay đổi theo thời gian tốt nhất? | Biểu đồ đường | Biểu đồ tròn, Biểu đồ cột, Bảng số liệu
+450 | 150 | 1 | 40 HS, biểu đồ cột cho thấy 15 HS đạt giỏi. Tỉ lệ? | 37,5% | 30%, 40%, 15%
+451 | 150 | 1 | Sai sót thường gặp khi thu thập số liệu: | Ghi nhầm hoặc bỏ sót dữ liệu | Vẽ biểu đồ đẹp, Dùng nhiều màu, Viết chữ to
+452 | 151 | 1 | Khi trình bày kết quả thu thập, ta nên: | Dùng bảng hoặc biểu đồ để trực quan | Chỉ viết văn bản dài, Không cần trình bày, Chỉ đọc số
+453 | 151 | 1 | Biểu đồ cột: T2=15, T3=20, T4=25, T5=18, T6=22. Ngày bán ít nhất? | Thứ Hai | Thứ Ba, Thứ Năm, Thứ Sáu
+454 | 151 | 1 | 50 HS khảo sát: Toán 18, T.Việt 12, T.Anh 10, TNXH 10. Toán chiếm bao nhiêu %? | 36% | 18%, 40%, 50%
+455 | 151 | 1 | Biểu đồ đường cho thấy nhiệt độ tăng đều từ 20°C lên 32°C trong 4 giờ. Mỗi giờ tăng? | 3°C | 4°C, 2°C, 6°C
+456 | 151 | 1 | Nhận xét 'Số liệu tăng sau đó giảm' thể hiện trên biểu đồ đường: | Đường đi lên rồi đi xuống | Đường luôn đi lên, Đường thẳng ngang, Đường luôn đi xuống
+457 | 151 | 1 | Doanh thu 4 quý: Q1=200tr, Q2=350tr, Q3=280tr, Q4=400tr. Quý tăng nhiều nhất so với quý trước? | Quý 2 | Quý 3, Quý 4, Quý 1
+458 | 151 | 1 | Trung bình cộng của 15, 20, 25, 30, 10 là: | 20 | 25, 15, 100
+459 | 151 | 1 | Biểu đồ cột kép dùng để: | So sánh 2 nhóm dữ liệu cùng tiêu chí | Thể hiện 1 nhóm, Vẽ tỉ lệ %, Tính trung bình
+460 | 151 | 1 | Khi phân tích số liệu, 'giá trị lớn nhất trừ giá trị nhỏ nhất' gọi là: | Khoảng biến thiên | Trung bình cộng, Tần số, Tỉ lệ
+461 | 151 | 1 | 100 HS: Giỏi 20%, Khá 45%, TB 30%, Yếu 5%. Số HS khá? | 45 | 20, 50, 30
+462 | 151 | 1 | Số liệu: 3, 5, 7, 5, 3, 7, 5. Trung bình cộng? | 5 | 3, 7, 35
+463 | 151 | 1 | Biểu đồ nào KHÔNG phải dạng biểu đồ thống kê? | Biểu đồ tư duy | Biểu đồ tròn, Biểu đồ cột, Biểu đồ đường
+464 | 151 | 1 | Lượng mưa (mm): T1=20, T2=15, T3=30, T4=45. Tháng mưa nhiều nhất? | Tháng 4 | Tháng 3, Tháng 1, Tháng 2
+465 | 151 | 1 | Kết luận 'Tất cả HS đều thích Toán' từ khảo sát 5 bạn thì: | Chưa đủ căn cứ vì mẫu quá nhỏ | Hoàn toàn đúng, Có thể kết luận, Không cần kiểm tra
+466 | 151 | 1 | Biểu đồ cột: Lớp 5A=38, 5B=42, 5C=35 HS. Tổng 3 lớp? | 115 | 100, 120, 110
+467 | 152 | 1 | Biểu đồ tròn cho thấy 3/4 HS thích thể thao. Bằng bao nhiêu %? | 75% | 50%, 25%, 80%
+468 | 152 | 1 | Biểu đồ cột: Đội A=8, B=5, C=12 bàn thắng. Đội ghi nhiều nhất? | Đội C | Đội A, Đội B, Bằng nhau
+469 | 152 | 1 | 120 HS, 40% thích bơi lội. Số HS thích bơi? | 48 | 40, 60, 80
+470 | 152 | 1 | Gieo xúc xắc 30 lần, mặt 3 xuất hiện 7 lần. Tỉ số? | 7/30 | 3/30, 30/7, 7/3
+471 | 152 | 1 | Trung bình cộng 5 số: 12, 15, 18, 10, 15 là: | 14 | 15, 12, 70
+472 | 152 | 1 | Biểu đồ quạt: Nam 55%, Nữ 45%. 200 HS. Nữ bao nhiêu? | 90 | 110, 100, 80
+473 | 152 | 1 | Dãy số: 6, 8, 6, 10, 6. Giá trị xuất hiện nhiều nhất? | 6 | 8, 10, Không có
+474 | 152 | 1 | Biểu đồ đường cho thấy doanh thu liên tục giảm. Nhận xét đúng? | Kinh doanh đang gặp khó khăn | Kinh doanh tốt, Ổn định, Không thể biết
+475 | 152 | 1 | Tung đồng xu 80 lần, ngửa 38 lần. Tỉ lệ % mặt sấp? | 52,5% | 47,5%, 38%, 42%
+476 | 152 | 1 | 60 quả: Táo 30%, Cam 45%, Lê 25%. Cam bao nhiêu quả? | 27 | 30, 18, 15
+477 | 152 | 1 | Số liệu nhiệt độ 5 ngày: 28, 30, 27, 31, 29°C. Khoảng biến thiên? | 4°C | 3°C, 5°C, 29°C
+478 | 152 | 1 | Biểu đồ cột kép: 5A Toán=8, Văn=7; 5B Toán=9, Văn=6. Lớp nào giỏi Toán hơn? | 5B | 5A, Bằng nhau, Không so sánh được
+479 | 152 | 1 | 50 lần bắn, trúng 40 lần. Tỉ lệ trúng? | 80% | 40%, 50%, 90%
+480 | 152 | 1 | Biểu đồ tròn có 4 phần: 15%, 25%, 35%, phần còn lại? | 25% | 20%, 30%, 15%
+481 | 152 | 1 | Điểm TB của Mai: 8, 7, 9, 10, 6. TB cộng? | 8 | 7, 9, 40
+482 | 153 | 1 | Số tự nhiên nhỏ nhất là: | 0 | 1, -1, 10
+483 | 153 | 1 | Có bao nhiêu số tự nhiên có 3 chữ số? | 900 | 999, 100, 899
+484 | 153 | 1 | Số lớn nhất có 4 chữ số là: | 9999 | 1000, 10000, 9990
+485 | 153 | 1 | Chữ số 5 trong số 356 172 thuộc hàng nào? | Hàng chục nghìn | Hàng nghìn, Hàng trăm nghìn, Hàng trăm
+486 | 153 | 1 | 45 × 2 + 45 × 8 = 45 × ? | 10 | 16, 6, 2
+487 | 153 | 1 | Số nào chia hết cho cả 2 và 5? | 120 | 125, 114, 135
+488 | 153 | 1 | Ước chung lớn nhất của 12 và 18 là: | 6 | 3, 12, 36
+489 | 153 | 1 | Bội chung nhỏ nhất của 4 và 6 là: | 12 | 24, 6, 2
+490 | 153 | 1 | Số nào là số nguyên tố? | 17 | 15, 21, 9
+491 | 153 | 1 | 36 = 2² × ? | 9 | 3, 6, 18
+492 | 153 | 1 | Số tự nhiên liền sau 9999 là: | 10 000 | 9998, 10 001, 100 000
+493 | 153 | 1 | Giá trị chữ số 8 trong 180 254 là: | 80 000 | 8000, 800, 8
+494 | 153 | 1 | 24 ÷ 4 + 24 ÷ 6 = 24 ÷ ? | Không đúng dạng | 10, 5, 2
+495 | 153 | 1 | Tổng các chữ số của 2 457 là: | 18 | 14, 16, 20
+496 | 153 | 1 | Dãy số: 2, 5, 11, 23, ... Số tiếp theo là: | 47 | 46, 35, 45
+497 | 154 | 1 | Phân số 6/8 rút gọn được: | 3/4 | 2/4, 1/2, 6/4
+498 | 154 | 1 | Quy đồng 1/3 và 1/4. Mẫu chung là: | 12 | 7, 3, 4
+499 | 154 | 1 | 1/2 + 1/3 = ? | 5/6 | 2/5, 1/6, 3/5
+500 | 154 | 1 | 3/4 - 1/6 = ? | 7/12 | 2/10, 1/2, 5/12
+501 | 154 | 1 | Hỗn số 2⅓ viết dưới dạng phân số là: | 7/3 | 5/3, 6/3, 8/3
+502 | 154 | 1 | 2/5 × 3/4 = ? | 6/20 | 5/9, 6/9, 2/20
+503 | 154 | 1 | 3/4 : 1/2 = ? | 3/2 | 3/8, 1/2, 6/4
+504 | 154 | 1 | So sánh: 3/5 ... 2/3 | < | >, =
+505 | 154 | 1 | Phân số nào bằng 0,75? | 3/4 | 7/10, 1/4, 75/10
+506 | 154 | 1 | 15% viết dưới dạng phân số tối giản: | 3/20 | 15/100, 1/15, 3/10
+507 | 154 | 1 | Hỗn số 1¾ viết dưới dạng phân số là: | 7/4 | 5/4, 4/3, 3/4
+508 | 154 | 1 | 2/3 của 60 là: | 40 | 30, 20, 90
+509 | 154 | 1 | Một lớp có 40 HS, 3/8 là nữ. Số HS nữ là: | 15 | 12, 20, 24
+510 | 154 | 1 | Sắp xếp 1/2, 3/4, 2/3 từ bé đến lớn: | 1/2, 2/3, 3/4 | 3/4, 2/3, 1/2, 2/3, 1/2, 3/4, 1/2, 3/4, 2/3
+511 | 154 | 1 | 5/6 - 1/3 = ? | 1/2 | 4/3, 2/6, 5/9

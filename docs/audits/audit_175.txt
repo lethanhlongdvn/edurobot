@@ -1,0 +1,11 @@
+# 🛡️ Báo cáo Kiểm duyệt Nội dung EduRobot
+
+ Tổng cộng: 5 lỗi.
+
+## 📄 js\data\math\175\index.js
+- ❌ Thiếu class responsive (md:text-...). Cần đảm bảo: 3xl trên TV (Rõ nét) và nhỏ gọn, co giãn linh hoạt không tràn trên điện thoại.: 'class="px-10 py-4 bg-blue-600 text-white rounded-2xl text-2xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200"'
+- ❌ Thiếu class responsive (md:text-...). Cần đảm bảo: 3xl trên TV (Rõ nét) và nhỏ gọn, co giãn linh hoạt không tràn trên điện thoại.: 'class="px-10 py-4 bg-blue-600 text-white rounded-xl text-2xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200"'
+- ❌ Thiếu class responsive (md:text-...). Cần đảm bảo: 3xl trên TV (Rõ nét) và nhỏ gọn, co giãn linh hoạt không tràn trên điện thoại.: 'class="px-10 py-4 bg-blue-600 text-white rounded-xl text-2xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200"'
+- ❌ Thiếu class responsive (md:text-...). Cần đảm bảo: 3xl trên TV (Rõ nét) và nhỏ gọn, co giãn linh hoạt không tràn trên điện thoại.: 'class="w-60 p-3 border-2 border-blue-500 rounded-2xl text-center text-3xl font-bold outline-none shadow-md"'
+- ❌ Thiếu class responsive (md:text-...). Cần đảm bảo: 3xl trên TV (Rõ nét) và nhỏ gọn, co giãn linh hoạt không tràn trên điện thoại.: 'class="px-10 py-4 bg-blue-600 text-white rounded-xl text-2xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200"'
+
