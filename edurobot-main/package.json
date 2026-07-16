@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node copy-static-assets.js",
     "prepreview": "vite build",
     "preview": "vite preview --strictPort",
     "serve:static": "serve -l 5173 .",
