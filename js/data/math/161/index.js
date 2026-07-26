@@ -35,7 +35,7 @@ export const lesson161 = {
             <div id="lesson161_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">1</div>
-                    <h4 class="text-2xl md:text-3xl font-black text-blue-700 uppercase tracking-wide">Tìm tỉ số phần trăm thích hợp</h4>
+                    <h3 class="text-2xl md:text-3xl font-black text-blue-700 uppercase tracking-wide">Bài 1. Tìm tỉ số phần trăm thích hợp</h3>
                 </div>
                 
                 <div class="p-8 bg-blue-50 rounded-[2.5rem] border-4 border-blue-200 mb-10">
@@ -80,7 +80,7 @@ export const lesson161 = {
             <div id="lesson161_b2" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-orange-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-16 h-16 bg-orange-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">2</div>
-                    <h4 class="text-2xl md:text-3xl font-black text-orange-700 uppercase tracking-wide">Giải bài toán</h4>
+                    <h3 class="text-2xl md:text-3xl font-black text-orange-700 uppercase tracking-wide">Bài 2. Giải bài toán</h3>
                 </div>
                 
                 <div class="space-y-8">
@@ -89,7 +89,7 @@ export const lesson161 = {
                     </p>
                     
                     <div class="flex justify-center">
-                        <img src="assets/images/toan/toan_tap_2/161/161-2.png" alt="Hồng treo gió" class="max-w-full h-auto rounded-3xl shadow-lg border-4 border-orange-100">
+                        <img src="assets/images/toan/toan_tap_2/99/" alt="Hồng treo gió" class="max-w-full h-auto rounded-3xl shadow-lg border-4 border-orange-100">
                     </div>
 
                     <div class="flex flex-col items-center gap-4 p-8 bg-orange-50 rounded-[2.5rem] border-4 border-orange-200">
@@ -110,7 +110,7 @@ export const lesson161 = {
             <div id="lesson161_b3" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-green-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">3</div>
-                    <h4 class="text-2xl md:text-3xl font-black text-green-700 uppercase tracking-wide">Giải bài toán</h4>
+                    <h3 class="text-2xl md:text-3xl font-black text-green-700 uppercase tracking-wide">Bài 3. Giải bài toán</h3>
                 </div>
                 
                 <div class="space-y-8">
@@ -136,7 +136,7 @@ export const lesson161 = {
             <div id="lesson161_b4" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-cyan-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-16 h-16 bg-cyan-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">4</div>
-                    <h4 class="text-2xl md:text-3xl font-black text-cyan-700 uppercase tracking-wide">Chọn câu trả lời đúng</h4>
+                    <h3 class="text-2xl md:text-3xl font-black text-cyan-700 uppercase tracking-wide">Bài 4. Chọn câu trả lời đúng</h3>
                 </div>
                 
                 <div class="p-8 bg-cyan-50 rounded-[2.5rem] border-4 border-cyan-200 space-y-8">

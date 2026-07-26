@@ -93,19 +93,7 @@ export const lesson55 = {
                     <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
                         <div class="space-y-6">
                             <!-- Banner chính -->
-                            <div class="p-8 rounded-[2.5rem] bg-gradient-to-br from-blue-700 to-sky-600 shadow-2xl relative overflow-hidden text-white">
-                                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-                                <div class="absolute bottom-0 left-0 w-48 h-48 bg-sky-500/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-                                <div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-                                    <div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30 shrink-0 text-5xl">
-                                        🧠
-                                    </div>
-                                    <div class="text-center md:text-left">
-                                        <h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">LUYỆN TẬP CHUNG</h2>
-                                        <p class="text-sky-100 text-lg md:text-2xl font-medium opacity-90">Tổng hợp kiến thức: Tìm số, bảng số liệu, chu vi, diện tích và giải toán thực tế!</p>
-                                    </div>
-                                </div>
-                            </div>
+                            
 
                             <!-- Khối Lý thuyết bổ trợ -->
                             <div class="p-8 rounded-[2.5rem] bg-white border-2 border-blue-700 relative overflow-hidden shadow-none">
@@ -152,7 +140,7 @@ export const lesson55 = {
                         <div class="p-6 rounded-[2.5rem] bg-white shadow-none border-none relative overflow-hidden space-y-6 w-full">
                             <div class="flex items-center gap-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 1: Số ?</h3>
+                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 1. Số ?</h3>
                             </div>
 
                             <div class="flex flex-col gap-6 w-full">
@@ -163,7 +151,7 @@ export const lesson55 = {
                                     </p>
                                     <div class="flex items-center gap-4 flex-nowrap whitespace-nowrap overflow-x-auto font-black w-full">
                                         <span class="text-xl md:text-3xl text-slate-800">Số cần tìm =</span>
-                                        <input type="text" id="ans-55-bt1-a" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-55-bt1-a" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                     </div>
                                 </div>
 
@@ -174,7 +162,7 @@ export const lesson55 = {
                                     </p>
                                     <div class="flex items-center gap-4 flex-nowrap whitespace-nowrap overflow-x-auto font-black w-full">
                                         <span class="text-xl md:text-3xl text-slate-800">Số cần tìm =</span>
-                                        <input type="text" id="ans-55-bt1-b" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-55-bt1-b" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                     </div>
                                 </div>
                             </div>
@@ -190,7 +178,7 @@ export const lesson55 = {
                         <div class="p-6 rounded-[2.5rem] bg-white shadow-none border-none relative overflow-hidden space-y-6 w-full">
                             <div class="flex items-center gap-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 2: Hoàn thành bảng số liệu</h3>
+                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 2. Hoàn thành bảng số liệu</h3>
                             </div>
 
                             <div class="overflow-x-auto rounded-3xl border-2 border-slate-200 w-full">
@@ -219,7 +207,7 @@ export const lesson55 = {
                                             <td class="px-4 py-4 text-center border-l border-slate-200">12,3 mm</td>
                                             <td class="px-4 py-4 text-center border-l border-slate-200">
                                                 <div class="flex items-center justify-center gap-2 flex-nowrap whitespace-nowrap">
-                                                    <input type="text" id="ans-55-bt2-t2" class="w-24 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                                    <input type="text" id="ans-55-bt2-t2" class="w-24 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                                     <span class="text-base md:text-xl text-slate-800">mm</span>
                                                 </div>
                                             </td>
@@ -231,7 +219,7 @@ export const lesson55 = {
                                             <td class="px-4 py-4 text-center border-l border-slate-200">21,8 mm</td>
                                             <td class="px-4 py-4 text-center border-l border-slate-200">
                                                 <div class="flex items-center justify-center gap-2 flex-nowrap whitespace-nowrap">
-                                                    <input type="text" id="ans-55-bt2-t3" class="w-24 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                                    <input type="text" id="ans-55-bt2-t3" class="w-24 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                                     <span class="text-base md:text-xl text-slate-800">mm</span>
                                                 </div>
                                             </td>
@@ -252,7 +240,7 @@ export const lesson55 = {
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">3</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 3: Chu vi khu vườn</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 3. Chu vi khu vườn</h3>
                                 </div>
                                 <button id="btn-toggle-55-3" onclick="window.toggle_55_3_sol()" class="bg-amber-500 text-white text-base md:text-lg font-black px-4 py-2 rounded-2xl hover:bg-amber-600 transition-all shadow-md">Hiện bài giải</button>
                             </div>
@@ -275,13 +263,13 @@ export const lesson55 = {
                                 <div class="space-y-4">
                                     <div class="flex items-center gap-4 flex-nowrap whitespace-nowrap overflow-x-auto font-black w-full">
                                         <span class="text-xl md:text-2xl text-slate-800">Chiều dài =</span>
-                                        <input type="text" id="ans-55-bt3-dai" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-55-bt3-dai" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                         <span class="text-xl md:text-2xl text-slate-800">m</span>
                                     </div>
 
                                     <div class="flex items-center gap-4 flex-nowrap whitespace-nowrap overflow-x-auto font-black w-full">
                                         <span class="text-xl md:text-2xl text-slate-800">Chu vi =</span>
-                                        <input type="text" id="ans-55-bt3-cv" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-55-bt3-cv" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                         <span class="text-xl md:text-2xl text-slate-800">m</span>
                                     </div>
                                 </div>
@@ -298,7 +286,7 @@ export const lesson55 = {
                         <div class="p-6 rounded-[2.5rem] bg-white shadow-none border-none relative overflow-hidden space-y-6 w-full">
                             <div class="flex items-center gap-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">4</div>
-                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 4: Đất xây nhà máy</h3>
+                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 4. Đất xây nhà máy</h3>
                             </div>
 
                             <div class="p-6 bg-slate-50 border border-slate-200 rounded-[2rem] space-y-6 w-full">
@@ -380,7 +368,7 @@ export const lesson55 = {
                         <div class="p-6 rounded-[2.5rem] bg-white shadow-none border-none relative overflow-hidden space-y-6 w-full">
                             <div class="flex items-center gap-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">5</div>
-                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 5: Bài toán hộp bóng</h3>
+                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 5. Bài toán hộp bóng</h3>
                             </div>
 
                             <div class="p-6 bg-slate-50 border border-slate-200 rounded-[2rem] space-y-6 w-full">

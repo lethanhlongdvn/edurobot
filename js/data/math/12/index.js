@@ -29,7 +29,7 @@ const metadata = {
             "title": "Bài 3. Tính số tự nhiên với phân số",
             "answers": ["36", "5", "19", "5", "13", "8", "11", "10"],
             "guidance": "Viết số tự nhiên dưới dạng phân số có mẫu số bằng mẫu số của phân số còn lại, sau đó thực hiện phép cộng hoặc phép trừ.",
-            "solution": "a) 7 + 1/5 = 35/5 + 1/5 = 36/5.<br>b) 14/5 + 1 = 14/5 + 5/5 = 19/5.<br>c) 3 - 11/8 = 24/8 - 11/8 = 13/8.<br>d) 31/10 - 2 = 31/10 - 20/10 = 11/10.<br>Chúc mừng em đã hoàn thành xuất sắc!"
+            "solution": "a) 7 + 1/5 = 35/5 + 1/5 = 36/5.<br>b) 14/5 + 1 = 14/5 + 5/5 = 19/5.<br>c) 3 - 11/8 = 24/8 - 11/8 = 13/8.<br>d) 31/10 - 2 = 31/10 - 20/10 = 11/10."
         },
         {
             "id": "12_4",
@@ -89,19 +89,7 @@ export const lesson12 = {
     ...metadata.lessonInfo,
     "content": `
         <div class="theory-section space-y-6 animate-in fade-in slide-in-from-bottom-10 duration-1000 pt-6">
-            <div class="glass-card p-6 md:p-10 rounded-[3rem] bg-gradient-to-br from-emerald-600 to-teal-700 shadow-2xl relative overflow-hidden text-white">
-                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-                <div class="absolute bottom-0 left-0 w-48 h-48 bg-teal-400/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-                <div class="flex flex-col md:flex-row items-start gap-8 relative z-10">
-                    <div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30 animate-pulse">
-                        <span class="text-5xl md:text-7xl">🍕</span>
-                    </div>
-                    <div class="text-left">
-                        <h2 class="text-3xl md:text-5xl font-black mb-2 tracking-tight">LUYỆN TẬP PHÉP CỘNG, PHÉP TRỪ PHÂN SỐ</h2>
-                        <p class="text-teal-100 text-xl md:text-3xl font-medium opacity-90">Tìm hiểu cách cộng trừ phân số với số tự nhiên và cách chia bánh thực tế!</p>
-                    </div>
-                </div>
-            </div>
+            
             <div class="glass-card p-6 md:p-10 rounded-[3rem] bg-white shadow-xl border border-teal-100 relative overflow-hidden">
                 <div class="flex items-center gap-4 mb-6">
                     <div class="w-12 h-12 bg-amber-500 rounded-2xl flex items-center justify-center text-white text-xl md:text-3xl shadow-lg shadow-amber-200">
@@ -176,9 +164,9 @@ export const lesson12 = {
                                         </div>
                                         <span>=</span>
                                         <div class="flex flex-col items-center">
-                                            <input type="text" id="ans-12-1a-tu" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-12-1a-tu" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             <div class="w-12 h-0.5 bg-slate-600 my-1"></div>
-                                            <input type="text" id="ans-12-1a-mau" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-12-1a-mau" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         </div>
                                     </div>
                                 </div>
@@ -196,9 +184,9 @@ export const lesson12 = {
                                         </div>
                                         <span>=</span>
                                         <div class="flex flex-col items-center">
-                                            <input type="text" id="ans-12-1b-tu" class="w-14 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-12-1b-tu" class="w-14 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             <div class="w-14 h-0.5 bg-slate-600 my-1"></div>
-                                            <input type="text" id="ans-12-1b-mau" class="w-14 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-12-1b-mau" class="w-14 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         </div>
                                     </div>
                                 </div>
@@ -216,9 +204,9 @@ export const lesson12 = {
                                         </div>
                                         <span>=</span>
                                         <div class="flex flex-col items-center">
-                                            <input type="text" id="ans-12-1c-tu" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-12-1c-tu" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             <div class="w-12 h-0.5 bg-slate-600 my-1"></div>
-                                            <input type="text" id="ans-12-1c-mau" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-12-1c-mau" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         </div>
                                     </div>
                                 </div>
@@ -236,9 +224,9 @@ export const lesson12 = {
                                         </div>
                                         <span>=</span>
                                         <div class="flex flex-col items-center">
-                                            <input type="text" id="ans-12-1d-tu" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-12-1d-tu" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             <div class="w-12 h-0.5 bg-slate-600 my-1"></div>
-                                            <input type="text" id="ans-12-1d-mau" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-12-1d-mau" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         </div>
                                     </div>
                                 </div>
@@ -340,9 +328,9 @@ export const lesson12 = {
                                         </div>
                                         <span>=</span>
                                         <div class="flex flex-col items-center">
-                                            <input type="text" id="ans-12-3a-tu" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-12-3a-tu" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             <div class="w-12 h-0.5 bg-slate-600 my-1"></div>
-                                            <input type="text" id="ans-12-3a-mau" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-12-3a-mau" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         </div>
                                     </div>
                                 </div>
@@ -358,9 +346,9 @@ export const lesson12 = {
                                         <span>1</span>
                                         <span>=</span>
                                         <div class="flex flex-col items-center">
-                                            <input type="text" id="ans-12-3b-tu" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-12-3b-tu" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             <div class="w-12 h-0.5 bg-slate-600 my-1"></div>
-                                            <input type="text" id="ans-12-3b-mau" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-12-3b-mau" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         </div>
                                     </div>
                                 </div>
@@ -376,9 +364,9 @@ export const lesson12 = {
                                         </div>
                                         <span>=</span>
                                         <div class="flex flex-col items-center">
-                                            <input type="text" id="ans-12-3c-tu" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-12-3c-tu" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             <div class="w-12 h-0.5 bg-slate-600 my-1"></div>
-                                            <input type="text" id="ans-12-3c-mau" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-12-3c-mau" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         </div>
                                     </div>
                                 </div>
@@ -394,9 +382,9 @@ export const lesson12 = {
                                         <span>2</span>
                                         <span>=</span>
                                         <div class="flex flex-col items-center">
-                                            <input type="text" id="ans-12-3d-tu" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-12-3d-tu" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             <div class="w-12 h-0.5 bg-slate-600 my-1"></div>
-                                            <input type="text" id="ans-12-3d-mau" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-12-3d-mau" class="w-12 h-12 border border-teal-300 rounded-xl text-center font-black md:text-2xl text-teal-600 outline-none focus:border-teal-500 shadow-inner w-10" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         </div>
                                     </div>
                                 </div>
@@ -534,13 +522,13 @@ export const lesson12 = {
                                 <div class="p-3 bg-teal-50/10 rounded-2xl border border-teal-50">
                                     <p class="text-emerald-700 mb-2 font-black">a) Mô tả cách chia bánh của Nam:</p>
                                     <p>Nam chia mỗi bánh làm 6 phần bằng nhau. Mỗi người lấy 1 phần từ mỗi chiếc bánh. Như vậy qua 5 chiếc bánh, mỗi người lấy được 
-                                        <input type="text" id="ans-12-4a-1" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> phần bánh, 
+                                        <input type="text" id="ans-12-4a-1" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> phần bánh, 
                                         tức là 
                                         <span class="inline-flex items-center">
                                             <span class="flex flex-col items-center">
-                                                <input type="text" id="ans-12-4a-2" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-12-4a-2" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <span class="w-10 h-0.5 bg-slate-600 my-0.5"></span>
-                                                <input type="text" id="ans-12-4a-3" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-12-4a-3" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             </span>
                                         </span> cái bánh.
                                     </p>
@@ -553,9 +541,9 @@ export const lesson12 = {
                                         - 3 chiếc bánh đầu chia làm đôi (mỗi chiếc 2 phần), mỗi người được 1 phần, tức là 
                                         <span class="inline-flex items-center">
                                             <span class="flex flex-col items-center">
-                                                <input type="text" id="ans-12-4b-1" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-12-4b-1" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <span class="w-10 h-0.5 bg-slate-600 my-0.5"></span>
-                                                <input type="text" id="ans-12-4b-2" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-12-4b-2" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             </span>
                                         </span> cái bánh.
                                     </p>
@@ -563,9 +551,9 @@ export const lesson12 = {
                                         - 2 chiếc bánh sau chia làm ba (mỗi chiếc 3 phần), mỗi người được 1 phần, tức là 
                                         <span class="inline-flex items-center">
                                             <span class="flex flex-col items-center">
-                                                <input type="text" id="ans-12-4b-3" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-12-4b-3" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <span class="w-10 h-0.5 bg-slate-600 my-0.5"></span>
-                                                <input type="text" id="ans-12-4b-4" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-12-4b-4" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             </span>
                                         </span> cái bánh.
                                     </p>
@@ -573,25 +561,25 @@ export const lesson12 = {
                                         - Tổng số bánh mỗi bạn được là: 
                                         <span class="inline-flex items-center">
                                             <span class="flex flex-col items-center">
-                                                <input type="text" id="ans-12-4b-5" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-12-4b-5" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <span class="w-10 h-0.5 bg-slate-600 my-0.5"></span>
-                                                <input type="text" id="ans-12-4b-6" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-12-4b-6" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             </span>
                                         </span>
                                         + 
                                         <span class="inline-flex items-center">
                                             <span class="flex flex-col items-center">
-                                                <input type="text" id="ans-12-4b-7" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-12-4b-7" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <span class="w-10 h-0.5 bg-slate-600 my-0.5"></span>
-                                                <input type="text" id="ans-12-4b-8" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-12-4b-8" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             </span>
                                         </span>
                                         = 
                                         <span class="inline-flex items-center">
                                             <span class="flex flex-col items-center">
-                                                <input type="text" id="ans-12-4b-9" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-12-4b-9" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <span class="w-10 h-0.5 bg-slate-600 my-0.5"></span>
-                                                <input type="text" id="ans-12-4b-10" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-12-4b-10" class="w-10 h-12 border border-teal-300 rounded text-center text-teal-600 font-black md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             </span>
                                         </span> cái bánh.
                                     </p>

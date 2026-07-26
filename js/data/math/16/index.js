@@ -64,19 +64,7 @@ export const lesson16 = {
     ...metadata.lessonInfo,
     "content": `
         <div class="theory-section space-y-6 animate-in fade-in slide-in-from-bottom-10 duration-1000 pt-6">
-            <div class="glass-card p-6 md:p-10 rounded-[3rem] bg-gradient-to-br from-emerald-600 to-teal-700 shadow-2xl relative overflow-hidden text-white">
-<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-<div class="absolute bottom-0 left-0 w-48 h-48 bg-teal-400/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-<div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-<div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30 animate-pulse">
-<span class="text-5xl md:text-7xl">⏰</span>
-</div>
-<div class="text-center md:text-left">
-<h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">ÔN TẬP HÌNH HỌC VÀ ĐO LƯỜNG (TIẾT 2)</h2>
-<p class="text-teal-100 text-lg md:text-2xl font-medium opacity-90">Hôm nay chúng ta sẽ ôn tập về đơn vị đo thời gian, quan hệ song song, vuông góc và giải quyết bài toán chia đất thực tế!</p>
-</div>
-</div>
-</div>
+            
 <div class="glass-card p-6 md:p-10 rounded-[3rem] bg-white shadow-xl border border-teal-100 relative overflow-hidden">
 <div class="flex items-center gap-4 mb-6">
 <div class="w-12 h-12 bg-emerald-500 rounded-2xl flex items-center justify-center text-white text-xl md:text-3xl shadow-lg shadow-emerald-200">
@@ -128,9 +116,9 @@ export const lesson16 = {
                                 <div class="p-4 bg-teal-50/20 rounded-[2rem] border border-teal-100 space-y-4 text-center">
                                     <div class="text-emerald-700 text-lg font-black">a) Đổi đơn vị thời gian</div>
                                     <div class="flex flex-col gap-3 items-center font-black text-lg md:text-2xl">
-                                        <div class="flex items-center gap-2">5 giờ = <input type="text" id="ans-16-1-a1" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none focus:border-teal-500 md:text-3xl" placeholder="?"> phút</div>
-                                        <div class="flex items-center gap-2">7 thế kỉ = <input type="text" id="ans-16-1-a2" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none focus:border-teal-500 md:text-3xl" placeholder="?"> năm</div>
-                                        <div class="flex items-center gap-2"><span class="flex flex-col text-xs md:text-sm items-center justify-center leading-none"><span>1</span><span class="border-t border-slate-700 w-4"></span><span>10</span></span> giờ = <input type="text" id="ans-16-1-a3" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none focus:border-teal-500 md:text-3xl" placeholder="?"> phút</div>
+                                        <div class="flex items-center gap-2">5 giờ = <input type="text" id="ans-16-1-a1" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none focus:border-teal-500 md:text-3xl" placeholder=""> phút</div>
+                                        <div class="flex items-center gap-2">7 thế kỉ = <input type="text" id="ans-16-1-a2" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none focus:border-teal-500 md:text-3xl" placeholder=""> năm</div>
+                                        <div class="flex items-center gap-2"><span class="flex flex-col text-xs md:text-sm items-center justify-center leading-none"><span>1</span><span class="border-t border-slate-700 w-4"></span><span>10</span></span> giờ = <input type="text" id="ans-16-1-a3" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none focus:border-teal-500 md:text-3xl" placeholder=""> phút</div>
                                     </div>
                                 </div>
 
@@ -138,9 +126,9 @@ export const lesson16 = {
                                 <div class="p-4 bg-teal-50/20 rounded-[2rem] border border-teal-100 space-y-4 text-center">
                                     <div class="text-emerald-700 text-lg font-black">b) Đổi đơn vị phức hợp</div>
                                     <div class="flex flex-col gap-3 items-center font-black text-lg md:text-2xl">
-                                        <div class="flex items-center gap-2">2 giờ 30 phút = <input type="text" id="ans-16-1-b1" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none focus:border-teal-500 md:text-3xl" placeholder="?"> phút</div>
-                                        <div class="flex items-center gap-2">4 phút 5 giây = <input type="text" id="ans-16-1-b2" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none focus:border-teal-500 md:text-3xl" placeholder="?"> giây</div>
-                                        <div class="flex items-center gap-2"><span class="flex flex-col text-xs md:text-sm items-center justify-center leading-none"><span>7</span><span class="border-t border-slate-700 w-6"></span><span>100</span></span> thế kỉ = <input type="text" id="ans-16-1-b3" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none focus:border-teal-500 md:text-3xl" placeholder="?"> năm</div>
+                                        <div class="flex items-center gap-2">2 giờ 30 phút = <input type="text" id="ans-16-1-b1" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none focus:border-teal-500 md:text-3xl" placeholder=""> phút</div>
+                                        <div class="flex items-center gap-2">4 phút 5 giây = <input type="text" id="ans-16-1-b2" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none focus:border-teal-500 md:text-3xl" placeholder=""> giây</div>
+                                        <div class="flex items-center gap-2"><span class="flex flex-col text-xs md:text-sm items-center justify-center leading-none"><span>7</span><span class="border-t border-slate-700 w-6"></span><span>100</span></span> thế kỉ = <input type="text" id="ans-16-1-b3" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none focus:border-teal-500 md:text-3xl" placeholder=""> năm</div>
                                     </div>
                                 </div>
                             </div>
@@ -356,14 +344,14 @@ export const lesson16 = {
                             <div class="grid grid-cols-1 lg:grid-cols-12 gap-3">
                                 <div class="lg:col-span-5 flex flex-col gap-2">
                                     <div class="p-3 bg-emerald-50 rounded-[1.5rem] border border-emerald-100 text-xs md:text-sm">
-                                        <p class="font-bold text-emerald-800">Đề bài:</p>
+                                        <p class="font-bold text-emerald-800"></p>
                                         <p class="text-slate-600">Dì Sáu có mảnh đất hình chữ nhật dài 12m, rộng 7m. Dì muốn chia đều thành 7 ô đất để xây phòng trọ.</p>
                                     </div>
                                     
                                     <div class="p-3 bg-teal-50/30 rounded-[1.5rem] border border-teal-100 space-y-2 text-xs md:text-sm font-bold text-slate-700">
                                         <div>a) Mỗi phòng trọ rộng bao nhiêu mét vuông?</div>
                                         <div class="flex items-center gap-1">
-                                            Đáp số: <input type="text" id="ans-16-4-a" class="w-16 h-12 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none w-10 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> m²
+                                            Đáp số: <input type="text" id="ans-16-4-a" class="w-16 h-12 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none w-10 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> m²
                                         </div>
                                     </div>
 

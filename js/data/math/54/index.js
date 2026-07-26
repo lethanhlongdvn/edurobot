@@ -74,19 +74,7 @@ export const lesson054 = {
                     <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
                         <div class="space-y-6">
                             <!-- Banner chính -->
-                            <div class="p-8 rounded-[2.5rem] bg-gradient-to-br from-blue-700 to-sky-600 shadow-2xl relative overflow-hidden text-white">
-                                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-                                <div class="absolute bottom-0 left-0 w-48 h-48 bg-sky-500/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-                                <div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-                                    <div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30 shrink-0 text-5xl">
-                                        🧠
-                                    </div>
-                                    <div class="text-center md:text-left">
-                                        <h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">LUYỆN TẬP CHUNG</h2>
-                                        <p class="text-sky-100 text-lg md:text-2xl font-medium opacity-90">Tổng hợp các kiến thức về tính giá trị biểu thức, tính nhanh và giải toán thực tế!</p>
-                                    </div>
-                                </div>
-                            </div>
+                            
 
                             <!-- Khối Lý thuyết bổ trợ -->
                             <div class="p-8 rounded-[2.5rem] bg-white border-2 border-blue-700 relative overflow-hidden shadow-none">
@@ -132,7 +120,7 @@ export const lesson054 = {
                         <div class="p-6 rounded-[2.5rem] bg-white shadow-none border-none relative overflow-hidden space-y-6 w-full">
                             <div class="flex items-center gap-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 1: Tính giá trị biểu thức</h3>
+                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 1. Tính giá trị biểu thức</h3>
                             </div>
 
                             <div class="flex flex-col gap-6 w-full">
@@ -143,7 +131,7 @@ export const lesson054 = {
                                     </p>
                                     <div class="flex items-center gap-4 flex-nowrap whitespace-nowrap overflow-x-auto font-black w-full">
                                         <span class="text-xl md:text-3xl text-slate-800">Đáp số =</span>
-                                        <input type="text" id="ans-54-lt1-a" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-54-lt1-a" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                     </div>
                                 </div>
 
@@ -154,7 +142,7 @@ export const lesson054 = {
                                     </p>
                                     <div class="flex items-center gap-4 flex-nowrap whitespace-nowrap overflow-x-auto font-black w-full">
                                         <span class="text-xl md:text-3xl text-slate-800">Đáp số =</span>
-                                        <input type="text" id="ans-54-lt1-b" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-54-lt1-b" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                     </div>
                                 </div>
                             </div>
@@ -170,7 +158,7 @@ export const lesson054 = {
                         <div class="p-6 rounded-[2.5rem] bg-white shadow-none border-none relative overflow-hidden space-y-6 w-full">
                             <div class="flex items-center gap-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 2: Tính nhanh</h3>
+                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 2. Tính nhanh</h3>
                             </div>
 
                             <div class="flex flex-col gap-6 w-full">
@@ -181,7 +169,7 @@ export const lesson054 = {
                                     </p>
                                     <div class="flex items-center gap-4 flex-nowrap whitespace-nowrap overflow-x-auto font-black w-full">
                                         <span class="text-xl md:text-3xl text-slate-800">Đáp số =</span>
-                                        <input type="text" id="ans-54-lt2-a" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-54-lt2-a" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                     </div>
                                 </div>
 
@@ -192,7 +180,7 @@ export const lesson054 = {
                                     </p>
                                     <div class="flex items-center gap-4 flex-nowrap whitespace-nowrap overflow-x-auto font-black w-full">
                                         <span class="text-xl md:text-3xl text-slate-800">Đáp số =</span>
-                                        <input type="text" id="ans-54-lt2-b" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-54-lt2-b" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                     </div>
                                 </div>
                             </div>
@@ -208,7 +196,7 @@ export const lesson054 = {
                         <div class="p-6 rounded-[2.5rem] bg-white shadow-none border-none relative overflow-hidden space-y-6 w-full">
                             <div class="flex items-center gap-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">3</div>
-                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 3: Tấm bản đồ</h3>
+                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 3. Tấm bản đồ</h3>
                             </div>
 
                             <div class="p-6 bg-slate-50 border border-slate-200 rounded-[2rem] space-y-6 w-full">
@@ -234,7 +222,7 @@ export const lesson054 = {
                                         <p class="text-slate-800 text-lg md:text-2xl font-black">a) Tính diện tích tấm bản đồ ban đầu:</p>
                                         <div class="flex items-center gap-4 flex-nowrap whitespace-nowrap overflow-x-auto font-black w-full">
                                             <span class="text-xl md:text-3xl text-slate-800">Diện tích =</span>
-                                            <input type="text" id="ans-54-lt3-a" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                            <input type="text" id="ans-54-lt3-a" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                             <span class="text-xl md:text-3xl text-slate-800">dm²</span>
                                         </div>
                                     </div>
@@ -244,7 +232,7 @@ export const lesson054 = {
                                         <p class="text-slate-800 text-lg md:text-2xl font-black">b) Sau khi gấp làm 4 phần bằng nhau, diện tích của mỗi phần nhỏ là:</p>
                                         <div class="flex items-center gap-4 flex-nowrap whitespace-nowrap overflow-x-auto font-black w-full">
                                             <span class="text-xl md:text-3xl text-slate-800">Diện tích nhỏ =</span>
-                                            <input type="text" id="ans-54-lt3-b" class="w-48 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                            <input type="text" id="ans-54-lt3-b" class="w-48 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                             <span class="text-xl md:text-3xl text-slate-800">dm²</span>
                                         </div>
                                     </div>
@@ -263,7 +251,7 @@ export const lesson054 = {
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">4</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 4: Bán cá chẽm</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 4. Bán cá chẽm</h3>
                                 </div>
                                 <button id="btn-toggle-54-4" onclick="window.toggle_54_4_sol()" class="bg-amber-500 text-white text-base md:text-lg font-black px-4 py-2 rounded-2xl hover:bg-amber-600 transition-all shadow-md">Hiện bài giải</button>
                             </div>
@@ -288,13 +276,13 @@ export const lesson054 = {
                                 <div class="space-y-4">
                                     <div class="flex items-center gap-4 flex-nowrap whitespace-nowrap overflow-x-auto font-black w-full">
                                         <span class="text-xl md:text-2xl text-slate-800">Năm thứ nhất =</span>
-                                        <input type="text" id="ans-54-lt4-y1" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-54-lt4-y1" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                         <span class="text-xl md:text-2xl text-slate-800">tấn</span>
                                     </div>
 
                                     <div class="flex items-center gap-4 flex-nowrap whitespace-nowrap overflow-x-auto font-black w-full">
                                         <span class="text-xl md:text-2xl text-slate-800">Năm thứ hai =</span>
-                                        <input type="text" id="ans-54-lt4-y2" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-54-lt4-y2" class="w-40 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white outline-none focus:border-blue-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                         <span class="text-xl md:text-2xl text-slate-800">tấn</span>
                                     </div>
                                 </div>

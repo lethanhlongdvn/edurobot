@@ -331,7 +331,7 @@ window.check_175_3 = () => {
     const isCorrect = score === 3;
     const rightAnswer = "a) Buýt: 2 giờ 15 phút, Taxi: 1 giờ 30 phút. b) 90 km.";
     const studentAnswer = `a) Buýt ${h1}h${m1}p, Taxi ${h2}h${m2}p. b) ${b} km.`;
-    const guidance = "Thời gian taxi bằng 2/3 thời gian buýt, tức là thời gian taxi ít hơn thời gian buýt 1 phần. Hiệu thời gian là 45 phút.";
+    const guidance = "Đây là bài toán Tìm hai số khi biết Hiệu và Tỉ số. Em hãy xác định hiệu số phần bằng nhau và tìm thời gian đi của mỗi xe dựa trên hiệu thời gian nhé!";
     const solution = `
         <b>Lời giải chi tiết:</b><br>
         a) Mai đến trước Việt: 9 giờ – 8 giờ 15 phút = 45 phút.<br>

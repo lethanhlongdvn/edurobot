@@ -64,19 +64,7 @@ export const lesson8 = {
     ...metadata.lessonInfo,
     "content": `
         <div class="theory-section space-y-6 animate-in fade-in slide-in-from-bottom-10 duration-1000 pt-6">
-            <div class="glass-card p-6 md:p-10 rounded-[3rem] bg-gradient-to-br from-blue-600 to-sky-700 shadow-2xl relative overflow-hidden text-white">
-<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-<div class="absolute bottom-0 left-0 w-48 h-48 bg-sky-400/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-<div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-<div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30 animate-pulse">
-<span class="text-5xl md:text-7xl">🧮</span>
-</div>
-<div class="text-center md:text-left">
-<h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">ÔN TẬP PHÉP TÍNH VỚI PHÂN SỐ</h2>
-<p class="text-sky-100 text-lg md:text-2xl font-medium opacity-90">Học vui và ghi nhớ sâu các phép tính cộng, trừ, nhân, chia phân số</p>
-</div>
-</div>
-</div>
+            
 <div class="glass-card p-6 md:p-10 rounded-[3rem] bg-white shadow-xl border border-sky-100 relative overflow-hidden">
 <div class="flex items-center gap-4 mb-6">
 <div class="w-12 h-12 bg-sky-500 rounded-2xl flex items-center justify-center text-white text-xl md:text-3xl shadow-lg shadow-sky-200">
@@ -108,7 +96,7 @@ export const lesson8 = {
                             <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-sky-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                    <h3 class="text-lg md:text-2xl text-sky-900 font-black uppercase tracking-tighter">Tính kết quả sau cùng</h3>
+                                    <h3 class="text-lg md:text-2xl text-sky-900 font-black uppercase tracking-tighter">Bài 1. Tính kết quả sau cùng</h3>
                                 </div>
                             </div>
                             
@@ -128,9 +116,9 @@ export const lesson8 = {
                                             </div>
                                             <span>=</span>
                                             <div class="flex flex-col items-center">
-                                                <input type="text" id="ans-8-1a-tu" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-8-1a-tu" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <div class="w-16 h-0.5 bg-slate-600 my-1"></div>
-                                                <input type="text" id="ans-8-1a-mau" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-8-1a-mau" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             </div>
                                         </div>
                                     </div>
@@ -148,9 +136,9 @@ export const lesson8 = {
                                             </div>
                                             <span>=</span>
                                             <div class="flex flex-col items-center">
-                                                <input type="text" id="ans-8-1b-tu" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-8-1b-tu" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <div class="w-16 h-0.5 bg-slate-600 my-1"></div>
-                                                <input type="text" id="ans-8-1b-mau" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-8-1b-mau" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             </div>
                                         </div>
                                     </div>
@@ -169,9 +157,9 @@ export const lesson8 = {
                                             <span>4</span>
                                             <span>=</span>
                                             <div class="flex flex-col items-center">
-                                                <input type="text" id="ans-8-1c-tu" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-8-1c-tu" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <div class="w-16 h-0.5 bg-slate-600 my-1"></div>
-                                                <input type="text" id="ans-8-1c-mau" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-8-1c-mau" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             </div>
                                         </div>
                                     </div>
@@ -187,9 +175,9 @@ export const lesson8 = {
                                             </div>
                                             <span>=</span>
                                             <div class="flex flex-col items-center">
-                                                <input type="text" id="ans-8-1d-tu" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-8-1d-tu" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <div class="w-16 h-0.5 bg-slate-600 my-1"></div>
-                                                <input type="text" id="ans-8-1d-mau" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-8-1d-mau" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             </div>
                                         </div>
                                     </div>
@@ -207,7 +195,7 @@ export const lesson8 = {
                         <div class="glass-card p-4 md:p-6 rounded-[2.5rem] bg-white shadow-2xl border border-sky-50 relative overflow-hidden">
                             <div class="flex items-center gap-4 mb-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-sky-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform rotate-3">2</div>
-                                <h3 class="text-lg md:text-2xl text-sky-900 font-black uppercase tracking-tighter">Tính giá trị của biểu thức</h3>
+                                <h3 class="text-lg md:text-2xl text-sky-900 font-black uppercase tracking-tighter">Bài 2. Tính giá trị của biểu thức</h3>
                             </div>
 
                             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -228,9 +216,9 @@ export const lesson8 = {
                                         </div>
                                         <span>=</span>
                                         <div class="flex flex-col items-center">
-                                            <input type="text" id="ans-8-2a-tu" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-8-2a-tu" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             <div class="w-16 h-0.5 bg-slate-600 my-1"></div>
-                                            <input type="text" id="ans-8-2a-mau" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-8-2a-mau" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         </div>
                                     </div>
                                 </div>
@@ -252,9 +240,9 @@ export const lesson8 = {
                                         <span class="text-2xl md:text-3xl font-bold">)</span>
                                         <span>=</span>
                                         <div class="flex flex-col items-center">
-                                            <input type="text" id="ans-8-2b-tu" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-8-2b-tu" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             <div class="w-16 h-0.5 bg-slate-600 my-1"></div>
-                                            <input type="text" id="ans-8-2b-mau" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-8-2b-mau" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         </div>
                                     </div>
                                 </div>
@@ -271,7 +259,7 @@ export const lesson8 = {
                         <div class="glass-card p-4 md:p-6 rounded-[2.5rem] bg-white shadow-2xl border border-sky-50 relative overflow-hidden">
                             <div class="flex items-center gap-4 mb-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-sky-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-2">3</div>
-                                <h3 class="text-lg md:text-2xl text-sky-900 font-black uppercase tracking-tighter">Chọn câu trả lời đúng</h3>
+                                <h3 class="text-lg md:text-2xl text-sky-900 font-black uppercase tracking-tighter">Bài 3. Chọn câu trả lời đúng</h3>
                             </div>
 
                             <div class="space-y-4">
@@ -343,9 +331,9 @@ export const lesson8 = {
                                     <div class="flex items-center gap-3 text-lg md:text-2xl font-bold text-slate-600">
                                         <span>Phân số chỉ số truyện thiếu nhi và tạp chí =</span>
                                         <div class="flex flex-col items-center">
-                                            <input type="text" id="ans-8-4-tu" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-8-4-tu" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             <div class="w-16 h-0.5 bg-slate-600 my-1"></div>
-                                            <input type="text" id="ans-8-4-mau" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-8-4-mau" class="w-16 h-12 border-2 border-sky-300 rounded-xl text-center font-black text-xl md:text-3xl text-sky-600 bg-white outline-none focus:border-sky-500 shadow-inner" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         </div>
                                     </div>
                                 </div>

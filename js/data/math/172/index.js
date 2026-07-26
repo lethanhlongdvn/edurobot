@@ -23,7 +23,7 @@ export const lesson172 = {
             <div id="lesson172_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">1</div>
-                    <p class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Hoàn thành bảng sau</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Bài 1. Hoàn thành bảng sau</h3>
                 </div>
                 
                 <div class="overflow-x-auto rounded-[2rem] border-2 border-blue-100 shadow-inner">
@@ -119,7 +119,7 @@ export const lesson172 = {
             <div id="lesson172_b2" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-green-500">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 bg-green-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">2</div>
-                    <p class="text-2xl md:text-4xl font-black text-green-800 uppercase tracking-wide">Sắp xếp các số</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-green-800 uppercase tracking-wide">Bài 2. Sắp xếp các số</h3>
                 </div>
                 
                 <div class="p-8 bg-green-50 rounded-[2.5rem] border-2 border-green-200">
@@ -148,7 +148,7 @@ export const lesson172 = {
             <div id="lesson172_b3" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-pink-500">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 bg-pink-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">3</div>
-                    <p class="text-2xl md:text-4xl font-black text-pink-800 uppercase tracking-wide">Chọn câu trả lời đúng</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-pink-800 uppercase tracking-wide">Bài 3. Chọn câu trả lời đúng</h3>
                 </div>
 
                 <div class="space-y-8">
@@ -236,7 +236,7 @@ export const lesson172 = {
             <div id="lesson172_b4" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-yellow-500">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 bg-yellow-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">4</div>
-                    <p class="text-2xl md:text-4xl font-black text-yellow-800 uppercase tracking-wide">Số?</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-yellow-800 uppercase tracking-wide">Bài 4. Số?</h3>
                 </div>
                 
                 <div class="space-y-6">
@@ -294,7 +294,7 @@ export const lesson172 = {
             <div id="lesson172_b5" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">5</div>
-                    <p class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">So sánh và Logic</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Bài 5. So sánh và Logic</h3>
                 </div>
                 
                 <div class="space-y-6">
@@ -596,7 +596,7 @@ window.check_172_3 = function () {
     const isCorrect = score === 2;
     const rightAnswer = "a) Hình A (hoặc C, D); b) 16/24";
     const studentAnswer = `a) ${valA || '?'}; b) ${valB || '?'}`;
-    const guidance = "a) Hình nào chia làm 8 phần và tô màu 5 phần? b) Em hãy chia cả tử và mẫu của các phân số cho một số tự nhiên để được 2/3.";
+    const guidance = "a) Em hãy đếm tổng số phần bằng nhau và số phần được tô màu ở mỗi hình.<br>b) Em hãy rút gọn các phân số đã cho bằng cách chia cả tử số và mẫu số cho ước chung lớn nhất để tìm phân số bằng phân số cần tìm nhé!";
     const solution = `
         <b>Lời giải chi tiết:</b><br>
         - Câu a: Hình chia làm 8 phần bằng nhau và tô màu 5 phần biểu thị phân số 5/8. Các hình A, C, D đều thể hiện điều này theo các cách chia khác nhau.<br>

@@ -65,19 +65,7 @@ export const lesson35 = {
     ...metadata.lessonInfo,
     "content": `
         <div class="theory-section space-y-6 animate-in fade-in slide-in-from-bottom-10 duration-1000 pt-6">
-            <div class="p-8 rounded-[2.5rem] bg-gradient-to-br from-blue-700 to-blue-900 shadow-2xl relative overflow-hidden text-white">
-<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-<div class="absolute bottom-0 left-0 w-48 h-48 bg-blue-500/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-<div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-<div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30">
-<span class="text-5xl md:text-7xl">🚜</span>
-</div>
-<div class="text-center md:text-left">
-<h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">LUYỆN TẬP DIỆN TÍCH</h2>
-<p class="text-blue-100 text-lg md:text-2xl font-medium opacity-90">Thực hành giải toán đổi số đo diện tích lớn/nhỏ dạng phân số, số thập phân và giải các bài toán diện tích đời sống thực tế!</p>
-</div>
-</div>
-</div>
+            
         </div>
         `,
     "practice": `
@@ -91,7 +79,7 @@ export const lesson35 = {
                             <div class="flex items-center justify-between mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Ghép cặp diện tích phù hợp</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 1. Ghép cặp diện tích phù hợp</h3>
                                 </div>
                                 <div class="flex gap-2">
                                     <button onclick="window.resetMatching35()" class="bg-red-500 text-white text-base font-bold px-4 py-2 rounded-2xl hover:bg-red-600 transition-all">Làm lại</button>
@@ -160,7 +148,7 @@ export const lesson35 = {
                             <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Số ?</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 2. Số ?</h3>
                                 </div>
                                 <div class="flex bg-slate-100 border border-slate-200 rounded-2xl p-1 shadow-inner gap-1">
                                     <button id="tab-35-2-btn-a" onclick="window.switchTab_35_2('a')" class="px-4 py-2 rounded-xl text-base md:text-lg font-bold bg-blue-600 text-white shadow transition-all duration-300">Phần a</button>
@@ -188,17 +176,17 @@ export const lesson35 = {
                                     <h4 class="text-xl font-black text-blue-950 border-b border-blue-100 pb-2">a) Viết dưới dạng số thập phân/phân số</h4>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-black text-2xl md:text-3xl py-2">
                                         <span>30 dm² =</span>
-                                        <input id="ans-35-2-a1" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="?" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-35-2-a1" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>m²</span>
                                     </div>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-black text-2xl md:text-3xl py-2 border-t border-blue-100 pt-4">
                                         <span>271 mm² =</span>
-                                        <input id="ans-35-2-a2" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="?" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-35-2-a2" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>cm²</span>
                                     </div>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-black text-2xl md:text-3xl py-2 border-t border-blue-100 pt-4">
                                         <span>54 m² =</span>
-                                        <input id="ans-35-2-a3" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="?" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-35-2-a3" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>ha</span>
                                     </div>
                                 </div>
@@ -208,17 +196,17 @@ export const lesson35 = {
                                     <h4 class="text-xl font-black text-blue-950 border-b border-blue-100 pb-2">b) Quy đổi phức hợp sang số thập phân</h4>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-black text-2xl md:text-3xl py-2">
                                         <span>3 m² 7 dm² =</span>
-                                        <input id="ans-35-2-b1" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="?" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-35-2-b1" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>m²</span>
                                     </div>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-black text-2xl md:text-3xl py-2 border-t border-blue-100 pt-4">
                                         <span>8 cm² 10 mm² =</span>
-                                        <input id="ans-35-2-b2" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="?" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-35-2-b2" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>cm²</span>
                                     </div>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-black text-2xl md:text-3xl py-2 border-t border-blue-100 pt-4">
                                         <span>12 km² 50 ha =</span>
-                                        <input id="ans-35-2-b3" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="?" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-35-2-b3" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>km²</span>
                                     </div>
                                 </div>
@@ -236,7 +224,7 @@ export const lesson35 = {
                             <div class="flex items-center justify-between mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">3</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Diện tích ô cửa sổ thông gió</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 3. Diện tích ô cửa sổ thông gió</h3>
                                 </div>
                                 <button id="btn-toggle-35-3" onclick="window.toggle_35_3_sol()" class="bg-amber-500 text-white text-lg font-bold px-4 py-2 rounded-2xl hover:bg-amber-600 transition-all">Hiện bài giải</button>
                             </div>
@@ -290,7 +278,7 @@ export const lesson35 = {
                             <div class="flex items-center justify-between mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">4</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài toán xây nhà bác Tư</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 4. Bài toán xây nhà bác Tư</h3>
                                 </div>
                                 <button id="btn-toggle-35-4" onclick="window.toggle_35_4_sol()" class="bg-amber-500 text-white text-lg font-bold px-4 py-2 rounded-2xl hover:bg-amber-600 transition-all">Hiện bài giải</button>
                             </div>
@@ -314,7 +302,7 @@ export const lesson35 = {
 
                                 <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-black text-lg md:text-2xl py-6 justify-center">
                                     <span>Diện tích đất xây nhà là:</span>
-                                    <input id="ans-35-4" type="text" class="w-48 h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="?">
+                                    <input id="ans-35-4" type="text" class="w-48 h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="">
                                     <span>m²</span>
                                 </div>
                             </div>

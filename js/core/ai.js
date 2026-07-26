@@ -6,20 +6,44 @@ export const AI = {
     // Trích xuất nội dung text thuần từ HTML, cắt gọn để không vượt token limit
     extractLessonText(htmlContent, maxLength = 2000) {
         if (!htmlContent) return '';
-        // Loại bỏ thẻ <script>, <style> và nội dung bên trong
-        let text = htmlContent.replace(/<script[\s\S]*?<\/script>/gi, '');
-        text = text.replace(/<style[\s\S]*?<\/style>/gi, '');
-        // Loại bỏ tất cả thẻ HTML
-        text = text.replace(/<[^>]+>/g, ' ');
-        // Loại bỏ các macro đặc biệt [[...]]
-        text = text.replace(/\[\[[^\]]*\]\]/g, '');
-        // Gộp khoảng trắng liên tiếp
-        text = text.replace(/\s+/g, ' ').trim();
-        // Cắt gọn
-        if (text.length > maxLength) {
-            text = text.substring(0, maxLength) + '...(nội dung còn tiếp)';
+        try {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(htmlContent, 'text/html');
+
+            // 1. Loại bỏ các thẻ script, style và audio
+            doc.querySelectorAll('script, style, audio').forEach(el => el.remove());
+
+            // 2. Loại bỏ các phần tử chứa bài giải chi tiết hoặc gợi ý làm lộ đáp án
+            doc.querySelectorAll('[id*="solution"], [class*="solution"], [id*="guidance"], [class*="guidance"]').forEach(el => el.remove());
+
+            // 3. Lấy text thuần từ DOM đã lọc sạch
+            let text = doc.body.textContent || doc.body.innerText || '';
+
+            // 4. Các bộ lọc regex bổ sung
+            text = text.replace(/(?:answer|solution|correctAnswer|expected|guidance)\s*[:=]\s*[^,;}\n]+/gi, '');
+            text = text.replace(/window\.check_\w+\s*=\s*function[\s\S]*?};/gi, '');
+            text = text.replace(/\[\[[^\]]*\]\]/g, '');
+            text = text.replace(/\s+/g, ' ').trim();
+
+            if (text.length > maxLength) {
+                text = text.substring(0, maxLength) + '...(nội dung còn tiếp)';
+            }
+            return text;
+        } catch (e) {
+            console.error("Lỗi extractLessonText:", e);
+            // Fallback: Lọc bằng Regex nếu DOMParser gặp lỗi
+            let text = htmlContent.replace(/<script[\s\S]*?<\/script>/gi, '');
+            text = text.replace(/<style[\s\S]*?<\/style>/gi, '');
+            text = text.replace(/<[^>]+>/g, ' ');
+            text = text.replace(/(?:answer|solution|correctAnswer|expected|guidance)\s*[:=]\s*[^,;}\n]+/gi, '');
+            text = text.replace(/window\.check_\w+\s*=\s*function[\s\S]*?};/gi, '');
+            text = text.replace(/\[\[[^\]]*\]\]/g, '');
+            text = text.replace(/\s+/g, ' ').trim();
+            if (text.length > maxLength) {
+                text = text.substring(0, maxLength) + '...';
+            }
+            return text;
         }
-        return text;
     },
 
     // Prompt chuyên trách Toán lớp 5 - Nâng cấp v3.0 (có nội dung bài học)
@@ -33,7 +57,8 @@ export const AI = {
 Nhiệm vụ: Hỗ trợ học sinh HIỂU BÀI và TỰ LÀM BÀI, không phải làm bài thay học sinh.
 
 QUY TẮC PHẢN HỒI (TUYỆT ĐỐI TUÂN THỦ):
-⛔ KHI HỌC SINH LÀM SAI: TUYỆT ĐỐI không đưa đáp án. Chỉ gợi ý cách làm, đặt câu hỏi để học sinh tự nhận ra lỗi sai.
+⛔ TUYỆT ĐỐI KHÔNG TIẾT LỘ ĐÁP ÁN HOẶC KẾT QUẢ SỐ CỤ THỂ CỦA BÀI TẬP (ví dụ: Không được viết các số như "20112026", "20 112 026", "2 030", v.v. vào câu trả lời gợi ý hoặc hướng dẫn). Bạn chỉ được hướng dẫn phương pháp làm bài, các bước tư duy, giải thích các khái niệm toán học liên quan.
+⛔ KHI HỌC SINH LÀM SAI HOẶC HỎI HƯỚNG DẪN: TUYỆT ĐỐI không đưa đáp án đúng. Chỉ gợi ý cách làm, đặt câu hỏi để học sinh tự tính toán và tự nhận ra kết quả.
 ✅ KHI HỌC SINH LÀM ĐÚNG: Khen ngợi và khuyến khích hiển thị "LỜI GIẢI CHI TIẾT" (bao gồm Lời giải, Phép tính, Đáp số) để học sinh đối chiếu trình bày.
 ⛔ KHÔNG giải bài tập hộ khi học sinh chưa thử sức.
 ✅ Giải đáp trực tiếp các câu hỏi lý thuyết, công thức trong bài học.
@@ -49,7 +74,7 @@ Phong cách giao tiếp:
 Ngữ cảnh: Học sinh đang học bài "${lessonTitle}".${contentSection}`;
     },
 
-    async fetchWithTimeout(url, fetchInit, timeoutMs = 8000) {
+    async fetchWithTimeout(url, fetchInit, timeoutMs = 25000) {
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
         try {
@@ -71,7 +96,7 @@ Ngữ cảnh: Học sinh đang học bài "${lessonTitle}".${contentSection}`;
                     sentence: `[Hệ thống: ${systemPrompt}]\n\n[Học sinh]: ${message}`,
                     mode: 'chat'
                 })
-            }, 8000);
+            }, 25000);
 
             if (!response.ok) throw new Error('API Error');
 
@@ -134,7 +159,7 @@ Bối cảnh:
                     sentence: tutorPrompt,
                     mode: 'chat'
                 })
-            }, 8000);
+            }, 25000);
 
             if (!response.ok) throw new Error('API Error');
             const data = await response.json();

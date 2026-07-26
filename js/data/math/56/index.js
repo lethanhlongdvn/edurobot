@@ -66,19 +66,7 @@ export const lesson56 = {
                     <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
                         <div class="space-y-8">
                             <!-- Banner chính -->
-                            <div class="p-8 rounded-[2.5rem] bg-gradient-to-br from-blue-700 to-sky-600 shadow-2xl relative overflow-hidden text-white">
-                                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-                                <div class="absolute bottom-0 left-0 w-48 h-48 bg-sky-500/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-                                <div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-                                    <div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30 shrink-0 text-3xl md:text-5xl">
-                                        🔺
-                                    </div>
-                                    <div class="text-center md:text-left">
-                                        <h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">BÀI 25: HÌNH TAM GIÁC</h2>
-                                        <p class="text-sky-100 text-lg md:text-2xl font-medium opacity-90">Nhận biết các loại hình tam giác, xác định đáy và đường cao tương ứng!</p>
-                                    </div>
-                                </div>
-                            </div>
+                            
 
                             <!-- Khám phá hội thoại -->
                             <div class="p-6 rounded-[2.5rem] bg-slate-50 border-2 border-dashed border-blue-300 relative overflow-hidden">
@@ -287,7 +275,7 @@ export const lesson56 = {
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Mỗi đồ vật dưới đây có dạng hình tam giác gì?</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 1. Mỗi đồ vật dưới đây có dạng hình tam giác gì?</h3>
                                 </div>
                             </div>
 
@@ -354,7 +342,7 @@ export const lesson56 = {
                         <div class="p-6 rounded-[2.5rem] bg-white shadow-none border-none relative overflow-hidden space-y-6 w-full">
                             <div class="flex items-center gap-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Hãy chỉ ra đáy và đường cao tương ứng được vẽ trong mỗi hình</h3>
+                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 2. Hãy chỉ ra đáy và đường cao tương ứng được vẽ trong mỗi hình</h3>
                             </div>
 
                             <!-- Sub-tabs điều hướng các hình tam giác -->
@@ -471,7 +459,7 @@ export const lesson56 = {
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">3</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Tìm hình tam giác trong tranh ghép và cho biết dạng hình</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 3. Tìm hình tam giác trong tranh ghép và cho biết dạng hình</h3>
                                 </div>
                                 <button id="btn-toggle-56-3" onclick="window.toggle_56_3_sol()" class="bg-amber-500 text-white text-base md:text-lg font-black px-4 py-2 rounded-2xl hover:bg-amber-600 transition-all shadow-md">Hiện bài giải</button>
                             </div>
@@ -506,7 +494,7 @@ export const lesson56 = {
                                 </div>
                                 <div class="flex items-center justify-center gap-3 text-lg md:text-2xl font-bold text-slate-800">
                                     <span>Hình trên có</span>
-                                    <input type="text" id="ans-56-bt3-count" class="w-16 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white font-black" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                    <input type="text" id="ans-56-bt3-count" class="w-16 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 bg-white font-black" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                     <span>hình tam giác.</span>
                                 </div>
                                 <div class="flex justify-end mt-4">

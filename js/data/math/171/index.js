@@ -41,7 +41,7 @@ export const lesson171 = {
             <div id="lesson171_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl md:text-4xl font-black shadow-lg">1</div>
-                    <p class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Chọn quả bóng</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Bài 1. Chọn quả bóng</h3>
                 </div>
                 
                 <div class="p-8 bg-blue-50 rounded-[2.5rem] border-2 border-blue-200">
@@ -89,11 +89,11 @@ export const lesson171 = {
             <div id="lesson171_b2" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-green-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 bg-green-600 text-white rounded-full flex items-center justify-center text-2xl md:text-4xl font-black shadow-lg rotate-1">2</div>
-                    <p class="text-2xl md:text-4xl font-black text-green-800 uppercase tracking-wide">Xúc xắc may mắn</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-green-800 uppercase tracking-wide">Bài 2. Xúc xắc may mắn</h3>
                 </div>
                 
                 <div class="flex flex-col lg:flex-row gap-10 items-center">
-                    <img src="assets/images/toan/toan_tap_2/171/171-2.png" alt="Xúc xắc" class="w-full lg:w-1/3 max-w-sm rounded-[3rem] shadow-2xl border-8 border-green-100">
+                    <img src="assets/images/toan/toan_tap_2/99/" alt="Xúc xắc" class="w-full lg:w-1/3 max-w-sm rounded-[3rem] shadow-2xl border-8 border-green-100">
                     <div class="w-full lg:w-2/3 space-y-6">
                         <p class="text-xl md:text-3xl text-gray-700 leading-relaxed font-bold">
                             Việt gieo một con xúc xắc 6 mặt. Các khẳng định sau ĐÚNG hay SAI?
@@ -120,7 +120,7 @@ export const lesson171 = {
             <div id="lesson171_b3" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-orange-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 bg-orange-600 text-white rounded-full flex items-center justify-center text-2xl md:text-4xl font-black shadow-lg">3</div>
-                    <p class="text-2xl md:text-4xl font-black text-orange-800 uppercase tracking-wide">Lấy thẻ số</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-orange-800 uppercase tracking-wide">Bài 3. Lấy thẻ số</h3>
                 </div>
                 
                 <div class="p-10 bg-orange-50 rounded-[3rem] border-4 border-orange-200 shadow-inner">
@@ -151,7 +151,7 @@ export const lesson171 = {
             <div id="lesson171_b4" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-rose-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 bg-rose-600 text-white rounded-full flex items-center justify-center text-2xl md:text-4xl font-black shadow-lg">4</div>
-                    <p class="text-2xl md:text-4xl font-black text-rose-800 uppercase tracking-wide">Quay vòng quay</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-rose-800 uppercase tracking-wide">Bài 4. Quay vòng quay</h3>
                 </div>
                 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
@@ -178,7 +178,7 @@ export const lesson171 = {
                             </div>
                         </div>
                     </div>
-                    <img src="assets/images/toan/toan_tap_2/171/171-4.png" alt="Vòng quay" class="w-full rounded-full shadow-2xl animate-spin-slow border-[16px] border-white ring-8 ring-rose-100">
+                    <img src="assets/images/toan/toan_tap_2/96/" alt="Vòng quay" class="w-full rounded-full shadow-2xl animate-spin-slow border-[16px] border-white ring-8 ring-rose-100">
                 </div>
 
                 <div class="flex justify-end mt-10">

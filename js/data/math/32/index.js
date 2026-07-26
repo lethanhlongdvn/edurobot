@@ -57,19 +57,7 @@ export const lesson32 = {
     ...metadata.lessonInfo,
     "content": `
         <div class="theory-section space-y-6 animate-in fade-in slide-in-from-bottom-10 duration-1000 pt-6">
-            <div class="p-8 rounded-[2.5rem] bg-gradient-to-br from-indigo-600 to-violet-800 shadow-2xl relative overflow-hidden text-white">
-<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-<div class="absolute bottom-0 left-0 w-48 h-48 bg-indigo-500/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-<div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-<div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30">
-<span class="text-5xl md:text-7xl">🌏</span>
-</div>
-<div class="text-center md:text-left">
-<h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">KI-LÔ-MÉT VUÔNG. HÉC-TA</h2>
-<p class="text-indigo-100 text-lg md:text-2xl font-medium opacity-90">Khám phá đơn vị đo diện tích Ki-lô-mét vuông (km²) dùng để đo các vùng đất siêu rộng lớn!</p>
-</div>
-</div>
-</div>
+            
 <div class="p-8 rounded-[2.5rem] bg-white border-2 border-indigo-600 shadow-none space-y-6">
 <div class="flex items-center gap-4">
 <div class="w-12 h-12 bg-indigo-600 rounded-2xl flex items-center justify-center text-white text-xl md:text-3xl shadow-lg">
@@ -110,7 +98,7 @@ export const lesson32 = {
                             <div class="flex items-center justify-between mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-indigo-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-indigo-900 font-black uppercase tracking-tighter">Hoàn thành bảng sau</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-indigo-900 font-black uppercase tracking-tighter">Bài 1. Hoàn thành bảng sau</h3>
                                 </div>
                                 <button id="btn-toggle-32-1" onclick="window.toggle_32_1_sol()" class="bg-amber-500 text-white text-lg font-bold px-4 py-2 rounded-2xl hover:bg-amber-600 transition-all">Hiện bài giải</button>
                             </div>
@@ -174,7 +162,7 @@ export const lesson32 = {
                             <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-indigo-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-indigo-900 font-black uppercase tracking-tighter">Số ?</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-indigo-900 font-black uppercase tracking-tighter">Bài 2. Số ?</h3>
                                 </div>
                                 <div class="flex bg-slate-100 border border-slate-200 rounded-2xl p-1 shadow-inner gap-1">
                                     <button id="tab-32-2-btn-a" onclick="window.switchTab_32_2('a')" class="px-4 py-2 rounded-xl text-base md:text-lg font-bold bg-blue-600 text-white shadow transition-all duration-300">Phần a</button>
@@ -201,12 +189,12 @@ export const lesson32 = {
                                     
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-black text-lg md:text-2xl py-2">
                                         <span>2 km² =</span>
-                                        <input id="ans-32-2-a1" type="text" class="w-48 h-12 border-2 border-indigo-700 rounded-xl text-center font-black text-indigo-800 md:text-3xl" placeholder="?">
+                                        <input id="ans-32-2-a1" type="text" class="w-48 h-12 border-2 border-indigo-700 rounded-xl text-center font-black text-indigo-800 md:text-3xl" placeholder="">
                                         <span>m²</span>
                                     </div>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-black text-lg md:text-2xl py-2">
                                         <span>4 km² 500 m² =</span>
-                                        <input id="ans-32-2-a2" type="text" class="w-48 h-12 border-2 border-indigo-700 rounded-xl text-center font-black text-indigo-800 md:text-3xl" placeholder="?">
+                                        <input id="ans-32-2-a2" type="text" class="w-48 h-12 border-2 border-indigo-700 rounded-xl text-center font-black text-indigo-800 md:text-3xl" placeholder="">
                                         <span>m²</span>
                                     </div>
                                 </div>
@@ -217,12 +205,12 @@ export const lesson32 = {
                                     
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-black text-lg md:text-2xl py-2">
                                         <span>5 000 000 m² =</span>
-                                        <input id="ans-32-2-b1" type="text" class="w-32 h-12 border-2 border-indigo-700 rounded-xl text-center font-black text-indigo-800 md:text-3xl" placeholder="?">
+                                        <input id="ans-32-2-b1" type="text" class="w-32 h-12 border-2 border-indigo-700 rounded-xl text-center font-black text-indigo-800 md:text-3xl" placeholder="">
                                         <span>km²</span>
                                     </div>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-black text-lg md:text-2xl py-2">
                                         <span>6 450 000 m² =</span>
-                                        <input id="ans-32-2-b2" type="text" class="w-32 h-12 border-2 border-indigo-700 rounded-xl text-center font-black text-indigo-800 md:text-3xl" placeholder="?">
+                                        <input id="ans-32-2-b2" type="text" class="w-32 h-12 border-2 border-indigo-700 rounded-xl text-center font-black text-indigo-800 md:text-3xl" placeholder="">
                                         <span>km²</span>
                                     </div>
                                 </div>
@@ -240,7 +228,7 @@ export const lesson32 = {
                             <div class="flex items-center justify-between mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-indigo-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">3</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-indigo-900 font-black uppercase tracking-tighter">Chọn mảnh đất lớn nhất</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-indigo-900 font-black uppercase tracking-tighter">Bài 3. Chọn mảnh đất lớn nhất</h3>
                                 </div>
                                 <button id="btn-toggle-32-3" onclick="window.toggle_32_3_sol()" class="bg-amber-500 text-white text-lg font-bold px-4 py-2 rounded-2xl hover:bg-amber-600 transition-all">Hiện bài giải</button>
                             </div>

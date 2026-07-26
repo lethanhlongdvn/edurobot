@@ -69,7 +69,7 @@ function renderLesson124KickoffSlide(item, idx) {
     }).join('');
 
     return `
-    <div class="presentation-slide-content h-full flex flex-col ${item.stacked ? 'justify-start' : 'justify-center'} items-center w-full px-10 ${item.stacked ? 'py-2' : 'py-4'} rounded-[40px] shadow-inner overflow-hidden bg-cover bg-center" style="background-image: url('assets/images/toan/toan_tap_2/124-khoidong2.webp');">
+    <div class="presentation-slide-content h-full flex flex-col ${item.stacked ? 'justify-start' : 'justify-center'} items-center w-full px-10 ${item.stacked ? 'py-2' : 'py-4'} rounded-[40px] shadow-inner overflow-hidden bg-cover bg-center" style="background-image: url('assets/images/toan/toan_tap_2/124/');">
         <div class="w-full max-w-5xl bg-transparent ${item.stacked ? 'p-4 md:p-5 mt-1' : 'p-6 md:p-8'} rounded-[50px] shadow-2xl border-4 border-blue-200/60 flex flex-col items-center">
             <div class="bg-indigo-600 text-white px-8 py-3 rounded-2xl font-black text-2xl ${item.stacked ? 'mb-3' : 'mb-4'} shadow-lg">${item.title}</div>
             <h3 class="${item.questionClass || 'text-3xl md:text-4xl'} font-black text-blue-700 text-center ${item.stacked ? 'mb-3' : 'mb-5'} leading-tight">${item.question}</h3>
@@ -86,7 +86,7 @@ function renderLesson124KickoffSlide(item, idx) {
 export const lesson124Presentation = [
     // Trang 1: KHỞI ĐỘNG
     `
-    <div class="presentation-slide-content h-full flex flex-col justify-center items-center w-full px-10 text-white rounded-[40px] shadow-inner overflow-hidden relative bg-cover bg-center" style="background-image: url('assets/images/toan/toan_tap_2/124-khoidong2.webp');">
+    <div class="presentation-slide-content h-full flex flex-col justify-center items-center w-full px-10 text-white rounded-[40px] shadow-inner overflow-hidden relative bg-cover bg-center" style="background-image: url('assets/images/toan/toan_tap_2/124/');">
         <div class="absolute inset-0 opacity-20 pointer-events-none">
             <div class="absolute top-10 left-10 w-64 h-64 bg-white rounded-full blur-3xl animate-pulse"></div>
             <div class="absolute bottom-10 right-10 w-96 h-96 bg-yellow-400 rounded-full blur-3xl opacity-50"></div>
@@ -123,10 +123,10 @@ export const lesson124Presentation = [
 
         <!-- Student Characters -->
         <div class="absolute left-8 bottom-8 character-square z-20 animate-fade-in">
-            <img src="assets/images/toan/toan_tap_2/124-student-boy.webp" alt="Student Boy" class="w-full h-full object-contain p-2">
+            <img src="assets/images/toan/toan_tap_2/124/" alt="Student Boy" class="w-full h-full object-contain p-2">
         </div>
         <div class="absolute right-8 bottom-8 character-square z-20 animate-fade-in" style="animation-delay: 0.5s;">
-            <img src="assets/images/toan/toan_tap_2/124-student-girl.webp" alt="Student Girl" class="w-full h-full object-contain p-2">
+            <img src="assets/images/toan/toan_tap_2/124/" alt="Student Girl" class="w-full h-full object-contain p-2">
         </div>
 
         <!-- Central Content Area -->
@@ -161,7 +161,7 @@ export const lesson124Presentation = [
             <h2 class="text-5xl md:text-7xl font-black text-purple-600 mb-10 tracking-widest uppercase animate-slide-in-top">KHÁM PHÁ</h2>
             <div class="bg-white p-8 md:p-12 rounded-[40px] border-4 border-purple-200 shadow-2xl relative w-full max-w-6xl flex justify-center items-center">
                 <div class="flex justify-center relative group">
-                    <img src="assets/images/toan/toan_tap_2/124-khampha.webp" alt="Khám phá" class="w-full max-w-[700px] h-auto rounded-[40px] shadow-2xl border-8 border-white group-hover:rotate-1 transition-transform">
+                    <img src="assets/images/toan/toan_tap_2/124/" alt="Khám phá" class="w-full max-w-[700px] h-auto rounded-[40px] shadow-2xl border-8 border-white group-hover:rotate-1 transition-transform">
                 </div>
             </div>
         </div>
@@ -251,7 +251,7 @@ export const lesson124Presentation = [
             <div class="grid grid-cols-12 gap-8 items-center w-full">
                 <!-- Illustration -->
                 <div class="col-span-4 flex flex-col items-center justify-center bg-white p-2 rounded-3xl shadow-sm border border-blue-50 self-center">
-                    <img src="assets/images/toan/toan_tap_2/124-trang-15.webp" alt="Minh họa" class="w-full h-auto rounded-lg drop-shadow-xl">
+                    <img src="assets/images/toan/toan_tap_2/124/" alt="Minh họa" class="w-full h-auto rounded-lg drop-shadow-xl">
                 </div>
 
                 <!-- Text Content -->
@@ -306,7 +306,7 @@ export const lesson124Presentation = [
         <div class="h-full flex flex-col justify-center items-center w-full px-8">
             <div class="bg-gradient-to-r from-pink-500 to-rose-600 p-6 lg:p-10 rounded-[60px] text-white shadow-2xl relative overflow-hidden flex flex-col lg:flex-row items-center gap-8 w-full max-w-6xl">
                 <div class="w-full lg:w-1/2 flex justify-center z-10">
-                    <img src="assets/images/toan/toan_tap_2/124-formula.webp" alt="Công thức" class="w-full h-auto rounded-[40px] border-8 border-pink-400/50 shadow-2xl bg-white/5">
+                    <img src="assets/images/toan/toan_tap_2/124/" alt="Công thức" class="w-full h-auto rounded-[40px] border-8 border-pink-400/50 shadow-2xl bg-white/5">
                 </div>
                 <div class="w-full lg:w-1/2 text-center lg:text-left space-y-8 z-10">
                     <p class="text-base md:text-lg font-black uppercase tracking-[0.3em] opacity-80 bg-white/20 inline-block px-4 py-1.5 rounded-full mb-2 shadow-sm border border-white/30">Ghi nhớ quan trọng</p>
@@ -455,9 +455,9 @@ export const lesson124Presentation = [
             <!-- Content -->
             <div class="flex-grow flex flex-col lg:flex-row items-center justify-center gap-8 z-10 pb-20">
                 <div class="flex flex-col items-center gap-6 w-full lg:w-1/3">
-                    <div class="relative group cursor-pointer w-full max-w-[320px]" onclick="window.Lesson.openZoom('assets/images/toan/toan_tap_2/124-b2-cake.webp', 'Chiếc bánh kem')">
+                    <div class="relative group cursor-pointer w-full max-w-[320px]" onclick="window.Lesson.openZoom('assets/images/toan/toan_tap_2/124/', 'Chiếc bánh kem')">
                         <div class="absolute -inset-4 bg-gradient-to-tr from-amber-100 to-orange-100 rounded-[40px] blur-2xl opacity-40 group-hover:opacity-100 transition-opacity"></div>
-                        <img src="assets/images/toan/toan_tap_2/124-b2-cake.webp" class="relative w-full drop-shadow-2xl transition-transform duration-500 rounded-3xl" alt="Bánh kem">
+                        <img src="assets/images/toan/toan_tap_2/124/" class="relative w-full drop-shadow-2xl transition-transform duration-500 rounded-3xl" alt="Bánh kem">
                         
                         <!-- Floating Small Square Zoom Button -->
                         <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-90 group-hover:scale-100">
@@ -562,7 +562,7 @@ export const lesson124Presentation = [
                     </div>
 
                     <div class="w-full lg:w-1/2 bg-white rounded-[40px] shadow-xl border border-indigo-100 p-4 md:p-6 flex items-center justify-center">
-                        <img src="assets/images/toan/toan_tap_2/124-b3-mairobot.webp" alt="Hình của Mai và Rô-bốt" class="w-full h-auto rounded-3xl">
+                        <img src="assets/images/toan/toan_tap_2/124/" alt="Hình của Mai và Rô-bốt" class="w-full h-auto rounded-3xl">
                     </div>
                 </div>
             </div>
@@ -604,7 +604,7 @@ export const lesson124Presentation = [
                     </div>
 
                     <div class="w-full lg:w-1/2 bg-white rounded-[40px] shadow-xl border border-indigo-100 p-4 md:p-6 flex items-center justify-center">
-                        <img src="assets/images/toan/toan_tap_2/124-b3-mairobot.webp" alt="Hình của Mai và Rô-bốt" class="w-full h-auto rounded-3xl">
+                        <img src="assets/images/toan/toan_tap_2/124/" alt="Hình của Mai và Rô-bốt" class="w-full h-auto rounded-3xl">
                     </div>
                 </div>
             </div>
@@ -645,7 +645,7 @@ export const lesson124Presentation = [
                     </div>
 
                     <div class="w-full lg:w-1/2 bg-white rounded-[40px] shadow-xl border border-indigo-100 p-4 md:p-6 flex items-center justify-center">
-                        <img src="assets/images/toan/toan_tap_2/124-b3-mairobot.webp" alt="Hình của Mai và Rô-bốt" class="w-full h-auto rounded-3xl">
+                        <img src="assets/images/toan/toan_tap_2/124/" alt="Hình của Mai và Rô-bốt" class="w-full h-auto rounded-3xl">
                     </div>
                 </div>
             </div>
@@ -889,7 +889,7 @@ export const lesson124Presentation = [
     `,
     // Trang 26: GHI NHỚ (Tổng kết công thức)
     `
-        <div class="presentation-slide-content h-full w-full flex flex-col items-center justify-center rounded-[40px] shadow-2xl overflow-hidden relative bg-cover bg-center" style="background-image: url('assets/images/toan/toan_tap_2/124-khoidong2.webp');">
+        <div class="presentation-slide-content h-full w-full flex flex-col items-center justify-center rounded-[40px] shadow-2xl overflow-hidden relative bg-cover bg-center" style="background-image: url('assets/images/toan/toan_tap_2/124/');">
             <div class="bg-white/80 backdrop-blur-md p-8 md:p-12 rounded-[56px] border-8 border-indigo-100 shadow-2xl text-center max-w-4xl animate-pop-in">
                 <p class="text-xl md:text-2xl font-black text-indigo-600 uppercase tracking-widest mb-5">Ghi nhớ</p>
                 <h3 class="text-3xl md:text-5xl font-black text-slate-800 mb-6 leading-tight">THỂ TÍCH HÌNH LẬP PHƯƠNG</h3>
@@ -905,9 +905,9 @@ export const lesson124Presentation = [
     // Trang 27: KẾT THÚC
     `
         <div class="presentation-slide-content h-full w-full flex items-center justify-center rounded-[40px] shadow-2xl overflow-hidden relative animate-fade-in bg-white">
-            <div class="relative w-[92%] h-[92%] bg-center bg-no-repeat" style="background-image: url('assets/images/toan/toan_tap_2/124-ketthuc.webp'); background-size: 92% 92%;">
-                <img src="assets/images/toan/toan_tap_2/124-hoamai1.webp" alt="Hoa mai 1" class="absolute top-6 left-6 md:top-8 md:left-8 w-28 md:w-40 lg:w-48 h-auto floating-cube drop-shadow-2xl pointer-events-none select-none" style="animation-duration: 4.6s;">
-                <img src="assets/images/toan/toan_tap_2/124-hoamai2.webp" alt="Hoa mai 2" class="absolute bottom-6 right-6 md:bottom-8 md:right-8 w-28 md:w-40 lg:w-48 h-auto floating-cube drop-shadow-2xl pointer-events-none select-none" style="animation-duration: 5.2s; animation-delay: 0.8s;">
+            <div class="relative w-[92%] h-[92%] bg-center bg-no-repeat" style="background-image: url('assets/images/toan/toan_tap_2/124/'); background-size: 92% 92%;">
+                <img src="assets/images/toan/toan_tap_2/124/" alt="Hoa mai 1" class="absolute top-6 left-6 md:top-8 md:left-8 w-28 md:w-40 lg:w-48 h-auto floating-cube drop-shadow-2xl pointer-events-none select-none" style="animation-duration: 4.6s;">
+                <img src="assets/images/toan/toan_tap_2/124/" alt="Hoa mai 2" class="absolute bottom-6 right-6 md:bottom-8 md:right-8 w-28 md:w-40 lg:w-48 h-auto floating-cube drop-shadow-2xl pointer-events-none select-none" style="animation-duration: 5.2s; animation-delay: 0.8s;">
             </div>
         </div>
     `

@@ -13,7 +13,7 @@ const metadata = {
             "title": "Hoạt động 1: Vẽ hình thang MNPQ với MN và QP là hai đáy (trên giấy kẻ ô vuông)",
             "answers": ["Đã hoàn thành"],
             "guidance": "Em hãy sử dụng bảng vẽ trực tuyến bên dưới để vẽ hình thang MNPQ (đáy MN song song với QP) hoặc vẽ vào vở rồi chụp ảnh tải lên nhé!",
-            "solution": "Hình thang MNPQ phải đảm bảo cạnh đáy MN song song với cạnh đáy QP.<br>Chúc mừng em đã hoàn thành bài vẽ!"
+            "solution": "Hình thang MNPQ phải đảm bảo cạnh đáy MN song song với cạnh đáy QP."
         },
         {
             "id": "61_bt2",
@@ -21,7 +21,7 @@ const metadata = {
             "title": "Hoạt động 2: Bạn nào thực hiện đúng yêu cầu vẽ thêm hai đoạn thẳng để được một hình thang?",
             "answers": ["C cả hai bạn đều đúng"],
             "guidance": "Hình thang là tứ giác có một cặp cạnh đối diện song song. Em hãy kiểm tra xem hình của bạn Mai và bạn Việt có cặp cạnh nào song song không nhé!",
-            "solution": "Cả hai bạn đều vẽ đúng!<br>- Bạn Mai vẽ thêm 2 đoạn thẳng tạo thành hình thang có đáy trên và đáy dưới song song.<br>- Bạn Việt vẽ thêm 2 đoạn thẳng tạo thành hình thang có hai cạnh bên (chéo) song song.<br>Tuyệt vời! Em đã nắm vững định nghĩa hình thang."
+            "solution": "Cả hai bạn đều vẽ đúng!<br>- Bạn Mai vẽ thêm 2 đoạn thẳng tạo thành hình thang có đáy trên và đáy dưới song song.<br>- Bạn Việt vẽ thêm 2 đoạn thẳng tạo thành hình thang có hai cạnh bên (chéo) song song."
         },
         {
             "id": "61_bt3",
@@ -72,14 +72,6 @@ export const lesson61 = {
             <!-- Slide 1: Khám phá lý thuyết -->
             <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
                 <div class="space-y-6">
-                    <div class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-6 rounded-[2.5rem] shadow-lg flex items-center justify-between">
-                        <div>
-                            <span class="text-sm font-black uppercase tracking-wider opacity-90">Chủ đề: Hình học</span>
-                            <h2 class="text-2xl md:text-4xl font-black mt-1">VẼ HÌNH THANG</h2>
-                        </div>
-                        <span class="text-4xl md:text-6xl animate-bounce-slow">✏️</span>
-                    </div>
-
                     <div class="grid grid-cols-1 gap-6">
                         <div class="bg-white p-4 rounded-3xl border border-blue-100 shadow-md flex flex-col justify-center items-center">
                             <img src="./assets/images/toan/toan_tap_1/61/kpa.png" alt="Khám phá vẽ hình thang" class="max-h-72 object-contain rounded-2xl">
@@ -150,7 +142,7 @@ export const lesson61 = {
                     <div class="flex items-center justify-between border-b border-slate-100 pb-4">
                         <div class="flex items-center gap-3">
                             <span class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-black text-xl">1</span>
-                            <h3 class="text-xl md:text-2xl font-black text-blue-700">Vẽ hình thang MNPQ với MN và QP là hai đáy (trên giấy kẻ ô vuông)</h3>
+                            <h3 class="text-xl md:text-2xl font-black text-blue-700">Bài 1. Vẽ hình thang MNPQ với MN và QP là hai đáy (trên giấy kẻ ô vuông)</h3>
                         </div>
                     </div>
 
@@ -176,8 +168,7 @@ export const lesson61 = {
                             Hình vẽ của em cần đảm bảo các tiêu chí sau:<br>
                             1. Là tứ giác có 4 đỉnh M, N, P, Q ghép lại.<br>
                             2. Cạnh đáy MN song song với cạnh đáy QP (MN và QP nằm trùng với các đường kẻ lưới ô vuông nằm ngang).<br>
-                            Ví dụ: Đáy MN dài 4 ô ở hàng trên, đáy QP dài 8 ô ở hàng dưới. Nối M với Q, N với P.<br>
-                            Chúc mừng em đã làm bài vẽ rất tốt!
+                            Ví dụ: Đáy MN dài 4 ô ở hàng trên, đáy QP dài 8 ô ở hàng dưới. Nối M với Q, N với P.
                         </p>
                     </div>
                 </div>
@@ -189,7 +180,7 @@ export const lesson61 = {
                     <div class="flex items-center justify-between border-b border-slate-100 pb-4">
                         <div class="flex items-center gap-3">
                             <span class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-black text-xl">2</span>
-                            <h3 class="text-xl md:text-2xl font-black text-blue-700">Vẽ thêm hai đoạn thẳng để được một hình thang. Bạn nào làm đúng?</h3>
+                            <h3 class="text-xl md:text-2xl font-black text-blue-700">Bài 2. Vẽ thêm hai đoạn thẳng để được một hình thang. Bạn nào làm đúng?</h3>
                         </div>
                     </div>
 
@@ -246,7 +237,7 @@ export const lesson61 = {
                     <div class="flex items-center justify-between border-b border-slate-100 pb-4">
                         <div class="flex items-center gap-3">
                             <span class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-black text-xl">3</span>
-                            <h3 class="text-xl md:text-2xl font-black text-blue-700">Vẽ hình theo mẫu (Họa tiết đối xứng)</h3>
+                            <h3 class="text-xl md:text-2xl font-black text-blue-700">Bài 3. Vẽ hình theo mẫu (Họa tiết đối xứng)</h3>
                         </div>
                     </div>
 
@@ -283,7 +274,7 @@ export const lesson61 = {
                     <div class="flex items-center justify-between border-b border-slate-100 pb-4">
                         <div class="flex items-center gap-3">
                             <span class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-black text-xl">4</span>
-                            <h3 class="text-xl md:text-2xl font-black text-blue-700">Vẽ hình theo mẫu chiếc cầu và cá; tô màu trang trí</h3>
+                            <h3 class="text-xl md:text-2xl font-black text-blue-700">Bài 4. Vẽ hình theo mẫu chiếc cầu và cá; tô màu trang trí</h3>
                         </div>
                     </div>
 
@@ -756,7 +747,7 @@ window.check_61_bt2 = function() {
     const rightAnswer = "Đáp án C (Cả hai bạn đều vẽ đúng)";
 
     const guidance = "Xem lại hình vẽ: Bạn Mai vẽ đáy trên song song với đáy dưới. Bạn Việt vẽ hai cạnh bên xiên song song với nhau. Cả hai đều có 1 cặp cạnh đối diện song song.";
-    const solution = "Cả hai bạn Mai và Việt đều vẽ đúng hình thang vì mỗi hình vẽ đều tạo ra một tứ giác có ít nhất một cặp cạnh đối diện song song.<br>Chúc mừng em đã nắm chắc lý thuyết hình thang!";
+    const solution = "Cả hai bạn Mai và Việt đều vẽ đúng hình thang vì mỗi hình vẽ đều tạo ra một tứ giác có ít nhất một cặp cạnh đối diện song song.";
 
     window.showMathFeedback(isCorrect, rightAnswer, studentAnswer, guidance, solution);
 

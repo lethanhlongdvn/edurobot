@@ -35,7 +35,7 @@ export const lesson167 = {
             <div id="lesson167_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-emerald-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-emerald-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg rotate-2">1</div>
-                    <p class="text-2xl md:text-4xl font-black text-emerald-800 uppercase tracking-wide">Số thích hợp điền vào chỗ trống</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-emerald-800 uppercase tracking-wide">Bài 1. Số thích hợp điền vào chỗ trống</h3>
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10 px-4">
@@ -89,7 +89,7 @@ export const lesson167 = {
             <div id="lesson167_b2" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-orange-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-orange-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg -rotate-1">2</div>
-                    <p class="text-2xl md:text-4xl font-black text-orange-800 uppercase tracking-wide">Tính thời gian</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-orange-800 uppercase tracking-wide">Bài 2. Tính thời gian</h3>
                 </div>
                 
                 <div class="p-8 bg-orange-50 rounded-[2.5rem] border-2 border-orange-100 flex flex-col gap-8">
@@ -123,7 +123,7 @@ export const lesson167 = {
             <div id="lesson167_b3" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg rotate-0">3</div>
-                    <p class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Thời gian làm bài</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Bài 3. Thời gian làm bài</h3>
                 </div>
                 
                 <div class="p-8 bg-blue-50 rounded-[2.5rem] border-2 border-blue-100 flex flex-col items-center gap-8">
@@ -249,7 +249,7 @@ window.check_167_3 = () => {
 
     const rightAnswer = "25";
     const studentAnswer = val || "?";
-    const guidance = "Em hãy đổi 1 giờ 15 phút ra đơn vị phút, sau đó lấy tổng thời gian chia cho số bài tập (3 bài) để tìm trung bình nhé!";
+    const guidance = "Em hãy đổi số đo thời gian ra đơn vị phút, sau đó lấy tổng số phút chia cho số lượng bài tập để tìm thời gian trung bình làm mỗi bài nhé!";
     const solution = `
         <b>Lời giải chi tiết:</b><br>
         Đổi: 1 giờ 15 phút = 75 phút.<br>

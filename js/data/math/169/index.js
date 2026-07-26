@@ -58,7 +58,7 @@ export const lesson169 = {
             <div id="lesson169_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">1</div>
-                    <p class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Ai nhanh hơn?</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Bài 1. Ai nhanh hơn?</h3>
                 </div>
                 
                 <p class="text-2xl md:text-3xl text-gray-700 leading-relaxed font-bold mb-8">
@@ -82,7 +82,7 @@ export const lesson169 = {
             <div id="lesson169_b2" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-green-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-green-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg rotate-2">2</div>
-                    <p class="text-2xl md:text-4xl font-black text-green-800 uppercase tracking-wide">Quãng đường xe máy</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-green-800 uppercase tracking-wide">Bài 2. Quãng đường xe máy</h3>
                 </div>
                 
                 <div class="p-8 bg-green-50 rounded-[2.5rem] border-2 border-green-100">
@@ -110,7 +110,7 @@ export const lesson169 = {
             <div id="lesson169_b3" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-orange-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-orange-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg -rotate-1">3</div>
-                    <p class="text-2xl md:text-4xl font-black text-orange-800 uppercase tracking-wide">Giờ khởi hành</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-orange-800 uppercase tracking-wide">Bài 3. Giờ khởi hành</h3>
                 </div>
                 
                 <div class="p-8 bg-orange-50 rounded-[2.5rem] border-2 border-orange-100">
@@ -141,7 +141,7 @@ export const lesson169 = {
             <div id="lesson169_b4" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-rose-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-rose-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">4</div>
-                    <p class="text-2xl md:text-4xl font-black text-rose-800 uppercase tracking-wide">Chiều dài đoàn tàu</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-rose-800 uppercase tracking-wide">Bài 4. Chiều dài đoàn tàu</h3>
                 </div>
                 
                 <div class="p-8 bg-rose-50 rounded-[2.5rem] border-2 border-rose-100 flex flex-col gap-8">
@@ -272,7 +272,7 @@ window.check_169_4 = () => {
 
     const rightAnswer = "140";
     const studentAnswer = val || "?";
-    const guidance = "Em hãy đổi vận tốc ra m/phút (24,3 × 1000 : 60). Tính quãng đường tàu đi được trong 6 phút. Chiều dài tàu sẽ bằng Quãng đường đó trừ đi chiều dài của cầu nhé!";
+    const guidance = "Em hãy đổi đơn vị của vận tốc từ km/giờ sang mét/phút. Sau đó tính quãng đường tàu chạy trong thời gian đã cho. Chiều dài của đoàn tàu sẽ bằng quãng đường đi được trừ đi chiều dài của cây cầu nhé!";
     const solution = `
         <b>Lời giải chi tiết:</b><br>
         Đổi 24,3 km/h = 24 300 m : 60 phút = 405 m/phút.<br>

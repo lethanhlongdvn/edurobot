@@ -56,3 +56,18 @@ Khi thiết kế các trang bài tập (sử dụng class `ltTrang` / slide chuy
   - Khung chứa chính (`#math-modal-content`) bắt buộc giới hạn chiều cao tối đa không quá `90vh` và có thuộc tính `display: flex; flex-direction: column`.
   - Vùng chứa nội dung (`#modal-body`) được thiết lập thuộc tính cuộn dọc `overflow-y: auto` và co giãn linh hoạt `flex: 1` để hiển thị thanh cuộn mượt mà khi nội dung quá dài.
 - **Thu hẹp khoảng cách và đệm (Padding):** Đệm (padding) của hộp thoại thu hẹp lại tối đa (khoảng `1.25rem`) để tối ưu hóa không gian hiển thị.
+
+## 9. Quy ước tên nhân vật trong Sách giáo khoa (Standard Textbook Character Names)
+Khi viết đề bài hoặc soạn bài giải liên quan đến các nhân vật minh họa trong Sách giáo khoa, bắt buộc sử dụng chính xác tên gọi của họ theo quy ước sau:
+- **Nam**: Bạn nam tóc xanh dương, mặc áo xanh dương, quần xanh dương.
+- **Mai**: Bạn nữ đeo bờm tóc màu vàng, mặc áo vàng, váy hồng.
+- **Rô-bốt**: Bạn người máy (robot).
+- **Việt**: Bạn nam tóc đen, mặc áo xanh lá cây, quần nâu.
+- **Mi**: Bạn nữ nhỏ tuổi nhất, tóc buộc hai bên, mặc áo hồng, váy xanh dương.
+Tuyệt đối không nhầm lẫn (ví dụ: không viết nhầm Mi thành My) để đảm bảo tính đồng bộ 100% với Sách giáo khoa.
+
+## 10. Quy tắc đảm bảo độ chính xác của nội dung truy vấn AI (AI Query Precision Rule)
+Khi sửa chữa, bổ sung hoặc tạo mới bài học:
+- **Độ chính xác của dữ liệu và truy vấn:** Mọi nội dung dữ liệu câu hỏi, bài tập, prompt cấu hình gửi lên AI, hay phần `quizPool` đều phải đảm bảo độ chính xác tuyệt đối, khớp với dữ liệu gốc của Sách giáo khoa hoặc yêu cầu thực tế của bài học.
+- **Tránh thông tin sai lệch:** Tuyệt đối không đưa các thông tin sai, công thức bị lỗi, hoặc dữ liệu mơ hồ làm AI trả về kết quả sai sót hoặc làm ảnh hưởng đến quá trình truy vấn và chấm điểm tự động.
+

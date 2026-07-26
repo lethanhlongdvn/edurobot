@@ -39,7 +39,7 @@ export const lesson166 = {
             <div id="lesson166_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg rotate-3">1</div>
-                    <p class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Số tự nhiên hoặc số thập phân?</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Bài 1. Số tự nhiên hoặc số thập phân?</h3>
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10 px-4">
@@ -117,7 +117,7 @@ export const lesson166 = {
             <div id="lesson166_b2" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-green-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-green-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg rotate-0">2</div>
-                    <p class="text-2xl md:text-4xl font-black text-green-800 uppercase tracking-wide">Diện tích và Thể tích</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-green-800 uppercase tracking-wide">Bài 2. Diện tích và Thể tích</h3>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10 px-4">
@@ -185,7 +185,7 @@ export const lesson166 = {
             <div id="lesson166_b3" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-orange-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-orange-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg -rotate-3">3</div>
-                    <p class="text-2xl md:text-4xl font-black text-orange-800 uppercase tracking-wide">Bài toán bể cá</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-orange-800 uppercase tracking-wide">Bài 3. Bài toán bể cá</h3>
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -230,7 +230,7 @@ export const lesson166 = {
             <div id="lesson166_b4" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-rose-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-rose-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg rotate-3">4</div>
-                    <p class="text-2xl md:text-4xl font-black text-rose-800 uppercase tracking-wide">Hút nước bể bơi</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-rose-800 uppercase tracking-wide">Bài 4. Hút nước bể bơi</h3>
                 </div>
                 
                 <div class="p-8 bg-rose-50 rounded-[30px] border-2 border-rose-100 flex flex-col items-center gap-8">
@@ -401,7 +401,7 @@ window.check_166_4 = () => {
 
     const rightAnswer = "180";
     const studentAnswer = val || "?";
-    const guidance = "Em có thể tìm phần lượng nước còn lại (1 - 5/8) rồi tính 3/8 của 480 m³ nhé.";
+    const guidance = "Em hãy tìm phân số chỉ lượng nước còn lại trong bể (lấy 1 bể trừ đi phân số chỉ lượng nước đã dùng). Sau đó lấy thể tích của bể nhân với phân số vừa tìm được để tính lượng nước còn lại nhé!";
     const solution = `
         <b>Lời giải chi tiết:</b><br>
         Cách 1:<br>

@@ -250,7 +250,7 @@ const lesson155_practice = `
             <div class="relative z-10">
                 <div class="flex items-start gap-4 md:gap-8 border-b-4 md:border-b-6 border-blue-100 pb-6 md:pb-10 mb-8 md:mb-12">
                     <span class="w-14 h-14 md:w-20 md:h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl md:text-4xl font-black shadow-lg shrink-0">2</span>
-                    <p class="text-xl md:text-3xl text-slate-700 font-bold">Viết các phân số sau dưới dạng số thập phân:</p>
+                    <h3 class="text-xl md:text-3xl text-slate-700 font-bold">Bài 2. Viết các phân số sau dưới dạng số thập phân:</h3>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-12 md:gap-y-8 p-4 md:p-8 bg-blue-50 rounded-2xl border-2 border-blue-100">
@@ -288,7 +288,7 @@ const lesson155_practice = `
             <div class="relative z-10">
                 <div class="flex items-start gap-4 md:gap-8 border-b-4 md:border-b-6 border-blue-100 pb-6 md:pb-10 mb-8 md:mb-12">
                     <span class="w-14 h-14 md:w-20 md:h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl md:text-4xl font-black shadow-lg shrink-0">3</span>
-                    <p class="text-xl md:text-3xl text-slate-700 font-bold">Điền dấu (>, <, =) thích hợp vào ô trống:</p>
+                    <h3 class="text-xl md:text-3xl text-slate-700 font-bold">Bài 3. Điền dấu (>, <, =) thích hợp vào ô trống:</h3>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 text-xl md:text-3xl font-bold text-slate-700">
@@ -340,7 +340,7 @@ const lesson155_practice = `
             <div class="relative z-10">
                 <div class="flex items-start gap-4 md:gap-8 border-b-4 md:border-b-6 border-blue-100 pb-6 md:pb-10 mb-8 md:mb-12">
                     <span class="w-14 h-14 md:w-20 md:h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl md:text-4xl font-black shadow-lg shrink-0">4</span>
-                    <p class="text-xl md:text-3xl text-slate-700 leading-relaxed font-bold">Dưới đây là số đo diện tích các căn hộ hai phòng ngủ của một toà chung cư: 71,5 m²; 69,83 m²; 71,09 m²; 68,93 m². Viết các số đo diện tích trên theo thứ tự từ bé đến lớn.</p>
+                    <h3 class="text-xl md:text-3xl text-slate-700 leading-relaxed font-bold">Bài 4. Dưới đây là số đo diện tích các căn hộ hai phòng ngủ của một toà chung cư: 71,5 m²; 69,83 m²; 71,09 m²; 68,93 m². Viết các số đo diện tích trên theo thứ tự từ bé đến lớn.</h3>
                 </div>
 
                 <div class="bg-rose-50 p-4 md:p-8 rounded-2xl border-2 border-rose-100">
@@ -369,7 +369,7 @@ const lesson155_practice = `
             <div class="relative z-10">
                 <div class="flex items-start gap-4 md:gap-8 border-b-4 md:border-b-6 border-blue-100 pb-6 md:pb-10 mb-8 md:mb-12">
                     <span class="w-14 h-14 md:w-20 md:h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl md:text-4xl font-black shadow-lg shrink-0">5</span>
-                    <p class="text-xl md:text-3xl text-slate-700 leading-relaxed font-bold">Số ?</p>
+                    <h3 class="text-xl md:text-3xl text-slate-700 leading-relaxed font-bold">Bài 5. Số ?</h3>
                 </div>
                 
                 <div class="space-y-6 md:space-y-8">
@@ -620,7 +620,7 @@ window.check_155_5 = () => {
         const isCorrect = score === 2;
         if (window.Quiz?.playSFX) window.Quiz.playSFX(isCorrect ? 'success' : 'wrong');
         const rightAnswer = "a) 150%; b) 3/5 hoặc 0,6";
-        const guidance = "Em hãy nhớ: <br>- Gấp rưỡi nghĩa là gấp 1,5 lần (hay 150%). <br>- 60% có thể viết thành 60/100 (rút gọn thành 3/5) hoặc số thập phân 0,6 nhé!";
+        const guidance = "Em hãy nhớ: Gấp rưỡi nghĩa là gấp 1,5 lần (hay 150%). Em hãy quy đổi các tỉ số phần trăm hoặc phân số về cùng một dạng (số thập phân hoặc phân số) để dễ thực hiện tính toán nhé!";
         const solution = `<div class='space-y-4'>
             <p class='text-emerald-600 font-bold'>💡 Tư duy rất linh hoạt! Em đã chuyển đổi tỉ số phần trăm rất tốt.</p>
             <div class='bg-white p-6 rounded-[2rem] shadow-inner border border-blue-50 space-y-2'>

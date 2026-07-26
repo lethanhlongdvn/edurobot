@@ -4,6 +4,83 @@ import { AI } from '../core/ai.js';
 export const AIInteraction = {
     quizStates: {},
 
+    getLessonTitle() {
+        let lessonData = window.currentLessonData;
+        if (!lessonData) {
+            const iframes = document.querySelectorAll('iframe');
+            for (const iframe of iframes) {
+                try {
+                    if (iframe.contentWindow.currentLessonData) {
+                        lessonData = iframe.contentWindow.currentLessonData;
+                        break;
+                    }
+                } catch (e) {}
+            }
+        }
+
+        if (lessonData && lessonData.title) {
+            return lessonData.title;
+        }
+
+        const bcCurrent = document.getElementById('breadcrumb-current');
+        if (bcCurrent && bcCurrent.innerText.trim()) {
+            return bcCurrent.innerText.trim();
+        }
+
+        if (document.title) {
+            const cleanTitle = document.title.replace(' - EduRobot', '');
+            if (cleanTitle && cleanTitle !== 'Hệ thống Học tập EduRobot - Lớp 5') {
+                return cleanTitle;
+            }
+        }
+
+        return "Tổng quát";
+    },
+
+    getCurrentSlideContent(lessonData) {
+        // 1. Ưu tiên lấy trực tiếp từ slide đang hiển thị trên DOM thực tế (hỗ trợ cả trường hợp bị nhúng trong iframe)
+        let track = document.getElementById('ltTrack');
+        let currentWindow = window;
+
+        if (!track) {
+            const iframes = document.querySelectorAll('iframe');
+            for (const iframe of iframes) {
+                try {
+                    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                    const t = iframeDoc.getElementById('ltTrack');
+                    if (t) {
+                        track = t;
+                        currentWindow = iframe.contentWindow;
+                        break;
+                    }
+                } catch (e) {}
+            }
+        }
+
+        if (track) {
+            const slides = track.querySelectorAll('.ltTrang');
+            const slideIndex = currentWindow._ltTrang;
+            if (slides.length > 0 && typeof slideIndex === 'number' && slideIndex >= 0 && slideIndex < slides.length) {
+                return slides[slideIndex].innerHTML;
+            }
+        }
+
+        // 2. Fallback: Parse từ dữ liệu HTML tĩnh
+        if (!lessonData) return '';
+        const fullContent = (lessonData.content || '') + '\n' + (lessonData.practice || '');
+        try {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(fullContent, 'text/html');
+            const slides = doc.querySelectorAll('.ltTrang');
+            if (slides.length > 1 && typeof window._ltTrang === 'number' && window._ltTrang >= 0 && window._ltTrang < slides.length) {
+                return slides[window._ltTrang].innerHTML;
+            }
+        } catch (e) {
+            console.error("Lỗi trích xuất slide hiện tại:", e);
+        }
+        return fullContent;
+    },
+
     toggleChat() {
         const chatWindow = document.getElementById('ai-chat-window');
         if (!chatWindow) return;
@@ -33,12 +110,15 @@ export const AIInteraction = {
         if (!message) return;
 
         const chatMessages = document.getElementById('ai-chat-messages');
-        const bcCurrent = document.getElementById('breadcrumb-current');
-        const lessonTitle = bcCurrent ? bcCurrent.innerText : "Tổng quát";
+        const lessonTitle = AIInteraction.getLessonTitle();
 
-        // Lấy nội dung bài học hiện tại để AI nghiên cứu trước khi trả lời
+        // Lấy nội dung bài học hiện tại để AI nghiên cứu trước khi trả lời (Lọc bỏ metadata chứa đáp án thô)
         const lessonData = window.currentLessonData;
-        let lessonContent = lessonData ? (lessonData.content || '') + '\n' + (lessonData.practice || '') : '';
+        let lessonContent = '';
+        if (lessonData) {
+            // Chỉ gửi phần HTML content/practice, tuyệt đối không gửi lessonData.metadata hoặc lessonData.bai_tap trực tiếp
+            lessonContent = AIInteraction.getCurrentSlideContent(lessonData);
+        }
 
         // Bổ sung dữ liệu bài tập đặc biệt (120B, 120C)
         if (window.problems120B) lessonContent += '\n\nDANH SÁCH PHÉP TÍNH (120B):\n' + JSON.stringify(window.problems120B);
@@ -93,10 +173,13 @@ export const AIInteraction = {
     // Hàm gọi AI ẩn context (dành cho chấm điểm gửi vào chat nếu cần)
     async sendDirectMessage(displayMessage, hiddenContext = '') {
         const chatMessages = document.getElementById('ai-chat-messages');
-        const bcCurrent = document.getElementById('breadcrumb-current');
-        const lessonTitle = bcCurrent ? bcCurrent.innerText : "Tổng quát";
+        const lessonTitle = AIInteraction.getLessonTitle();
+        // Lấy nội dung bài học hiện tại để AI nghiên cứu trước khi trả lời (Lọc bỏ metadata chứa đáp án thô)
         const lessonData = window.currentLessonData;
-        let lessonContent = lessonData ? (lessonData.content || '') + '\n' + (lessonData.practice || '') : '';
+        let lessonContent = '';
+        if (lessonData) {
+            lessonContent = AIInteraction.getCurrentSlideContent(lessonData);
+        }
 
         // Bổ sung dữ liệu bài tập đặc biệt (120B, 120C)
         if (window.problems120B) lessonContent += '\n\nDANH SÁCH PHÉP TÍNH (120B):\n' + JSON.stringify(window.problems120B);
@@ -198,8 +281,7 @@ export const AIInteraction = {
         btn.innerHTML = `<div class="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>`;
 
         try {
-            const bcCurrent = document.getElementById('breadcrumb-current');
-            const lessonTitle = bcCurrent ? bcCurrent.innerText : "Toán lớp 5";
+            const lessonTitle = AIInteraction.getLessonTitle();
 
             // Lấy nội dung bài học để AI chấm bài chính xác hơn
             const lessonData = window.currentLessonData;
@@ -291,7 +373,7 @@ export const AIInteraction = {
             modal.className = 'fixed inset-0 z-[100] flex items-center justify-center p-0 bg-gray-900/60 backdrop-blur-md hidden animate-fade-in';
             // Bấm ra ngoài để đóng modal (Quy định bắt buộc)
             modal.onclick = (e) => {
-                if (e.target === modal) this.closeAiModal();
+                if (e.target === modal) AIInteraction.closeAiModal();
             };
             document.body.appendChild(modal);
         }
@@ -339,7 +421,7 @@ export const AIInteraction = {
 
     async gradeWithModal(title, prompt, onGradeComplete = null) {
         // Hiển thị modal loading
-        this.showAiModal(title, `
+        AIInteraction.showAiModal(title, `
             <div class="flex flex-col items-center justify-center py-12 space-y-6">
                 <div class="w-16 h-16 border-4 border-blue-200 border-t-blue-600 rounded-full animate-spin"></div>
                 <p class="text-blue-600 font-bold animate-pulse text-lg">Thầy E đang đọc bài của em...</p>
@@ -351,16 +433,15 @@ export const AIInteraction = {
             const modal = document.getElementById('ai-modal');
             if (modal) {
                 modal.onclick = (e) => {
-                    if (e.target === modal) this.closeAiModal();
+                    if (e.target === modal) AIInteraction.closeAiModal();
                 };
             }
         }, 100);
 
         try {
-            const bcCurrent = document.getElementById('breadcrumb-current');
-            const lessonTitle = bcCurrent ? bcCurrent.innerText : "Toán lớp 5";
+            const lessonTitle = AIInteraction.getLessonTitle();
             const lessonData = window.currentLessonData || {};
-            const lessonContent = (lessonData.content || '') + '\n' + (lessonData.practice || '');
+            const lessonContent = AIInteraction.getCurrentSlideContent(lessonData);
 
             // Gọi AI chấm bài (Đã được cập nhật prompt ở ai.js)
             let response = await AI.tutor(prompt, lessonTitle, "Chấm bài làm của học sinh", lessonContent);
@@ -442,14 +523,14 @@ export const AIInteraction = {
             );
 
             // Cập nhật nội dung modal với kết quả đã định dạng
-            this.showAiModal(title, `
+            AIInteraction.showAiModal(title, `
                 <div class="prose prose-blue max-w-none dark:prose-invert lesson-body pt-4">
                     ${formattedResponse}
                 </div>
             `);
         } catch (error) {
             console.error("Grade Error:", error);
-            this.showAiModal(title, "Rất tiếc, kết nối của Thầy E đang gặp trục trặc. Em hãy kiểm tra internet hoặc thử lại sau nhé!");
+            AIInteraction.showAiModal(title, "Rất tiếc, kết nối của Thầy E đang gặp trục trặc. Em hãy kiểm tra internet hoặc thử lại sau nhé!");
         }
     },
 
@@ -506,7 +587,7 @@ export const AIInteraction = {
         }
 
         const quizData = lesson.chatQuizzes[lessonKey];
-        this.quizStates[id] = { index: 0, questions: quizData.questions };
+        AIInteraction.quizStates[id] = { index: 0, questions: quizData.questions };
 
         const chatArea = document.getElementById(`quiz-chat-area-${id}`);
         const inputArea = document.getElementById(`quiz-input-area-${id}`);
@@ -548,7 +629,7 @@ export const AIInteraction = {
     },
 
     async submitChatQuizAnswer(id, lessonKey) {
-        const state = this.quizStates[id];
+        const state = AIInteraction.quizStates[id];
         const input = document.getElementById(`quiz-input-field-${id}`);
         const chatArea = document.getElementById(`quiz-chat-area-${id}`);
         const inputArea = document.getElementById(`quiz-input-area-${id}`);

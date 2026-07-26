@@ -13,7 +13,7 @@ const metadata = {
             "title": "Bài 1. Điền dấu >, <, = thích hợp vào ô trống",
             "answers": [">", "<", ">", "<", "=", ">"],
             "guidance": "Quy đồng mẫu số hoặc so sánh với 1 để so sánh các phân số. Đối với hai phân số cùng tử số, phân số nào có mẫu số bé hơn thì phân số đó lớn hơn.",
-            "solution": "a) 3/4 = 9/12 > 7/12. 9/5 > 1 và 2 > 1, vì 9/5 = 1 và 4/5 < 2 nên 9/5 < 2.<br>b) 8/5 > 8/7 (cùng tử số, mẫu số 5 < 7). 7/6 = 28/24 < 29/24.<br>c) 6/5 = 12/10 (rút gọn 12/10 = 6/5). 3 = 24/8 > 17/8.<br>Chúc mừng em đã giải đúng!"
+            "solution": "a) 3/4 = 9/12 > 7/12. 9/5 > 1 và 2 > 1, vì 9/5 = 1 và 4/5 < 2 nên 9/5 < 2.<br>b) 8/5 > 8/7 (cùng tử số, mẫu số 5 < 7). 7/6 = 28/24 < 29/24.<br>c) 6/5 = 12/10 (rút gọn 12/10 = 6/5). 3 = 24/8 > 17/8."
         },
         {
             "id": "6_2",
@@ -76,19 +76,7 @@ export const lesson6 = {
     ...metadata.lessonInfo,
     "content": `
         <div class="theory-section space-y-6 animate-in fade-in slide-in-from-bottom-10 duration-1000 pt-6">
-            <div class="glass-card p-6 md:p-10 rounded-[3rem] bg-gradient-to-br from-blue-600 to-blue-800 shadow-2xl relative overflow-hidden text-white">
-                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-                <div class="absolute bottom-0 left-0 w-48 h-48 bg-blue-400/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-                <div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-                    <div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30 animate-pulse">
-                        <span class="text-5xl md:text-7xl">⚖️</span>
-                    </div>
-                    <div class="text-center md:text-left">
-                        <h2 class="text-3xl md:text-5xl font-black mb-2 tracking-tight">ÔN TẬP PHÂN SỐ (TIẾT 2)</h2>
-                        <p class="text-blue-100 text-lg md:text-2xl font-medium opacity-90">So sánh và sắp xếp thứ tự phân số</p>
-                    </div>
-                </div>
-            </div>
+            
 
             <!-- Navigation Tabs -->
             <div class="flex justify-center md:justify-start gap-2 border-b border-gray-100 pb-2">
@@ -145,9 +133,9 @@ export const lesson6 = {
                     <!-- Trang 1: Bài 1 -->
                     <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden;">
                         <div class="glass-card p-4 md:p-6 rounded-[2.5rem] bg-white shadow-2xl border border-blue-50 relative overflow-hidden">
-                            <div class="flex items-center gap-4 mb-4">
-                                <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                <h3 class="text-base md:text-2xl text-blue-900 font-black uppercase tracking-tighter">Điền dấu >, <, = thích hợp vào ô trống</h3>
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl shadow-lg">1</div>
+                                <h3 class="text-blue-900 uppercase tracking-tighter text-xl font-black">Bài 1. Điền dấu >, <, = thích hợp vào ô trống</h3>
                             </div>
 
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -243,10 +231,10 @@ export const lesson6 = {
                     <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden;">
                         <div class="glass-card p-4 md:p-6 rounded-[2.5rem] bg-white shadow-2xl border border-blue-50 relative overflow-hidden">
                             <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
-                                <div class="flex items-center gap-4">
-                                    <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                                    <h3 class="text-base md:text-2xl text-blue-900 font-black uppercase tracking-tighter">Chọn câu trả lời đúng</h3>
-                                </div>
+                                <div class="flex items-center gap-3 mb-6">
+                                <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl shadow-lg">2</div>
+                                <h3 class="text-blue-900 uppercase tracking-tighter text-xl font-black">Bài 2. Chọn câu trả lời đúng</h3>
+                            </div>
                             </div>
 
                             <div class="space-y-6">
@@ -393,9 +381,9 @@ export const lesson6 = {
                     <!-- Trang 3: Bài 3 -->
                     <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden;">
                         <div class="glass-card p-4 md:p-6 rounded-[2.5rem] bg-white shadow-2xl border border-blue-50 relative overflow-hidden">
-                            <div class="flex items-center gap-4 mb-4">
-                                <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">3</div>
-                                <h3 class="text-base md:text-2xl text-blue-900 font-black uppercase tracking-tighter">Sắp xếp các phân số theo thứ tự</h3>
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl shadow-lg">3</div>
+                                <h3 class="text-blue-900 uppercase tracking-tighter text-xl font-black">Bài 3. Sắp xếp các phân số theo thứ tự</h3>
                             </div>
 
                             <div class="p-3 bg-blue-50 border-2 border-blue-100 rounded-2xl text-xl text-center text-slate-700 mb-4 flex flex-wrap items-center justify-center gap-3">
@@ -522,9 +510,9 @@ export const lesson6 = {
                     <!-- Trang 4: Bài 4 -->
                     <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden;">
                         <div class="glass-card p-4 md:p-6 rounded-[2.5rem] bg-white shadow-2xl border border-blue-50 relative overflow-hidden">
-                            <div class="flex items-center gap-4 mb-4">
-                                <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">4</div>
-                                <h3 class="text-base md:text-2xl text-blue-900 font-black uppercase tracking-tighter">Khảo sát thể thao Khối 5</h3>
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl shadow-lg">4</div>
+                                <h3 class="text-blue-900 uppercase tracking-tighter text-xl font-black">Bài 4. Khảo sát thể thao Khối 5</h3>
                             </div>
 
                             <div class="p-4 bg-blue-50 border-2 border-blue-100 rounded-3xl mb-4 text-xl md:text-2xl font-medium text-slate-700 leading-relaxed">
@@ -553,9 +541,9 @@ export const lesson6 = {
                     <!-- Trang 5: Bài 5 -->
                     <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden;">
                         <div class="glass-card p-4 md:p-6 rounded-[2.5rem] bg-white shadow-2xl border border-blue-50 relative overflow-hidden">
-                            <div class="flex items-center gap-4 mb-4">
-                                <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">5</div>
-                                <h3 class="text-base md:text-2xl text-blue-900 font-black uppercase tracking-tighter">Đố em tìm chữ số thích hợp</h3>
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl shadow-lg">5</div>
+                                <h3 class="text-blue-900 uppercase tracking-tighter text-xl font-black">Bài 5. Đố em tìm chữ số thích hợp</h3>
                             </div>
 
                             <div class="p-6 bg-blue-50 border-2 border-blue-100 rounded-[2.5rem] flex flex-col justify-center items-center gap-6">
@@ -563,7 +551,7 @@ export const lesson6 = {
                                     <div class="flex flex-col items-center"><span>3</span><div class="w-10 h-1 bg-slate-700 my-1"></div><span>8</span></div>
                                     <span>&lt;</span>
                                     <div class="flex flex-col items-center">
-                                        <input type="text" id="ans-6-5" class="w-16 h-16 border-4 border-blue-300 rounded-2xl text-center font-black text-3xl md:text-5xl text-blue-600 bg-white outline-none focus:border-blue-500" placeholder="?">
+                                        <input type="text" id="ans-6-5" class="w-16 h-16 border-4 border-blue-300 rounded-2xl text-center font-black text-3xl md:text-5xl text-blue-600 bg-white outline-none focus:border-blue-500" placeholder="">
                                         <div class="w-16 h-1 bg-slate-700 my-1"></div>
                                         <span>8</span>
                                     </div>

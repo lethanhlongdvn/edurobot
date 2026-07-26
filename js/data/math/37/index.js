@@ -104,7 +104,7 @@ export const lesson37 = {
                                 <div class="flex items-center justify-between mb-4">
                                     <div class="flex items-center gap-4">
                                         <div class="w-10 h-10 md:w-12 md:h-12 bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                        <h3 class="text-lg md:text-2xl lg:text-3xl text-amber-900 font-black uppercase tracking-tighter">Dự toán giá sách lớp 5A</h3>
+                                        <h3 class="text-lg md:text-2xl lg:text-3xl text-amber-900 font-black uppercase tracking-tighter">Bài 1. Dự toán giá sách lớp 5A</h3>
                                     </div>
                                     <button onclick="window.toggleSolution('sol-37-1')" class="bg-amber-500 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full hover:bg-amber-600 active:scale-95 transition-all shadow-md">Hiện bài giải</button>
                                 </div>
@@ -112,7 +112,7 @@ export const lesson37 = {
                                 <div class="w-full mx-auto space-y-6">
                                     <!-- Đề bài -->
                                     <div class="p-6 bg-amber-50 rounded-[2rem] border border-amber-100 text-lg md:text-2xl font-medium">
-                                        <p class="font-bold text-amber-800">Đề bài:</p>
+                                        <p class="font-bold text-amber-800"></p>
                                         <p class="text-slate-600 leading-relaxed mb-2">
                                             Các bạn lớp 5A dự định đặt mua các tấm gỗ với kích thước và số lượng như sau để làm giá sách:
                                         </p>
@@ -131,7 +131,7 @@ export const lesson37 = {
                                             <div class="text-amber-800 border-l-4 border-amber-500 pl-2 text-xl font-black">Đáp số:</div>
                                             <div class="flex items-center gap-2 flex-wrap md:flex-nowrap font-bold">
                                                 <span>Số tiền mua gỗ làm giá sách đó là:</span>
-                                                <input type="text" id="ans-37-1-money" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 140px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-37-1-money" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 140px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <span>đồng</span>
                                             </div>
                                         </div>
@@ -164,7 +164,7 @@ export const lesson37 = {
                                 <div class="flex items-center justify-between mb-4">
                                     <div class="flex items-center gap-4">
                                         <div class="w-10 h-10 md:w-12 md:h-12 bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform rotate-2">2</div>
-                                        <h3 class="text-lg md:text-2xl lg:text-3xl text-amber-900 font-black uppercase tracking-tighter">Phòng thiết kế của em</h3>
+                                        <h3 class="text-lg md:text-2xl lg:text-3xl text-amber-900 font-black uppercase tracking-tighter">Bài 2. Phòng thiết kế của em</h3>
                                     </div>
                                     <button onclick="window.toggleSolution('sol-37-2')" class="bg-amber-500 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full hover:bg-amber-600 active:scale-95 transition-all shadow-md">Hiện bài giải</button>
                                 </div>
@@ -201,7 +201,7 @@ export const lesson37 = {
                                             <div class="text-amber-800 border-l-4 border-amber-500 pl-2 text-xl mb-2">1. Tính diện tích gỗ thiết kế:</div>
                                             <div class="flex items-center gap-2 flex-wrap md:flex-nowrap">
                                                 <span>(<span class="count-long">3</span> × 0,5) + (<span class="count-short">8</span> × 0,1) =</span>
-                                                <input type="text" id="ans-37-2-s" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 80px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-37-2-s" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 80px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <span>m²</span>
                                             </div>
                                         </div>
@@ -212,7 +212,7 @@ export const lesson37 = {
                                                 <span>250 000 ×</span>
                                                 <span class="val-student-s text-amber-600 font-bold">?</span>
                                                 <span>=</span>
-                                                <input type="text" id="ans-37-2-money" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 140px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-37-2-money" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 140px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <span>đồng</span>
                                             </div>
                                         </div>

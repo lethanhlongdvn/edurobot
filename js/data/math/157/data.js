@@ -54,7 +54,7 @@ export const lesson157 = {
             <div id="lesson157_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-14 h-14 md:w-16 md:h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">1</div>
-                    <h3 class="text-2xl md:text-3xl font-black text-blue-700 uppercase tracking-wide">Đặt tính rồi tính</h3>
+                    <h3 class="text-2xl md:text-3xl font-black text-blue-700 uppercase tracking-wide">Bài 1. Đặt tính rồi tính</h3>
                 </div>
 
                 <!-- Mẫu từ SGK -->
@@ -191,7 +191,7 @@ export const lesson157 = {
             <div id="lesson157_b2" class="bg-white p-6 md:p-10 rounded-[2.5rem] md:rounded-[3rem] shadow-2xl border-t-[12px] border-green-500">
                 <div class="flex items-center gap-6 mb-8 md:mb-10">
                     <div class="w-14 h-14 md:w-16 md:h-16 bg-green-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">2</div>
-                    <h3 class="text-2xl md:text-3xl font-black text-green-700 uppercase tracking-wide">Tính giá trị biểu thức</h3>
+                    <h3 class="text-2xl md:text-3xl font-black text-green-700 uppercase tracking-wide">Bài 2. Tính giá trị biểu thức</h3>
                 </div>
                 
                 <div class="grid grid-cols-1 gap-6 md:gap-8">
@@ -222,7 +222,7 @@ export const lesson157 = {
             <div id="lesson157_b3" class="bg-white p-6 md:p-10 rounded-[2.5rem] md:rounded-[3rem] shadow-2xl border-t-[12px] border-orange-500">
                 <div class="flex items-center gap-6 mb-8 md:mb-10">
                     <div class="w-14 h-14 md:w-16 md:h-16 bg-orange-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">3</div>
-                    <h3 class="text-2xl md:text-3xl font-black text-orange-700 uppercase tracking-wide">Số ?</h3>
+                    <h3 class="text-2xl md:text-3xl font-black text-orange-700 uppercase tracking-wide">Bài 3. Số ?</h3>
                 </div>
                 
                 <div class="p-6 md:p-8 bg-orange-50 rounded-[2rem] md:rounded-[2.5rem] border-4 border-orange-200">
@@ -231,7 +231,7 @@ export const lesson157 = {
                     </p>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-8">
-                        <img src="assets/images/toan/toan_tap_2/157/157-3.png" class="max-w-full rounded-2xl shadow-xl border-4 border-white mx-auto" alt="Nội thất">
+                        <img src="assets/images/toan/toan_tap_2/98/" class="max-w-full rounded-2xl shadow-xl border-4 border-white mx-auto" alt="Nội thất">
                         <div class="space-y-4 md:space-y-6">
                             <div class="p-5 md:p-6 bg-white rounded-3xl border-2 border-orange-100 shadow-sm flex flex-col gap-2 md:gap-3">
                                 <span class="text-lg md:text-2xl font-bold text-gray-600">a) Giá tiền một ti vi là:</span>
@@ -267,7 +267,7 @@ export const lesson157 = {
             <div id="lesson157_b4" class="bg-white p-6 md:p-10 rounded-[2.5rem] md:rounded-[3rem] shadow-2xl border-t-[12px] border-rose-500">
                 <div class="flex items-center gap-6 mb-8 md:mb-10">
                     <div class="w-14 h-14 md:w-16 md:h-16 bg-rose-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">4</div>
-                    <h3 class="text-2xl md:text-3xl font-black text-rose-700 uppercase tracking-wide">Giải bài toán</h3>
+                    <h3 class="text-2xl md:text-3xl font-black text-rose-700 uppercase tracking-wide">Bài 4. Giải bài toán</h3>
                 </div>
                 
                 <div class="p-6 md:p-8 bg-rose-50 rounded-[2rem] md:rounded-[2.5rem] border-4 border-rose-200 text-xl md:text-3xl leading-relaxed text-gray-800">

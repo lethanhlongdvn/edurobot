@@ -25,8 +25,9 @@ window.check_91_1 = () => {
     window.showMathFeedback(
         isCorrect,
         "13/17; 17/13; m/n",
-        "",
-        "Gợi ý: Tỉ số của hai số a và b là a/b. Hãy lấy số thứ nhất làm tử, số thứ hai làm mẫu."
+        `${v('91-1-2n') || ''}/${v('91-1-2d') || ''}; ${v('91-1-3n') || ''}/${v('91-1-3d') || ''}; ${v('91-1-4n') || ''}/${v('91-1-4d') || ''}`,
+        "Gợi ý: Tỉ số của số thứ nhất và số thứ hai bằng số thứ nhất chia cho số thứ hai (viết dưới dạng phân số). Hãy điền tử số ở trên và mẫu số ở dưới.",
+        "• Tỉ số của 13 và 17 là 13/17.<br>• Tỉ số của 17 và 13 là 17/13.<br>• Tỉ số của m và n là m/n.<br>Chúc mừng em đã hoàn thành bài tập rất tốt!"
     );
     if (window.submitMathLesson) {
         window.submitMathLesson(
@@ -60,8 +61,9 @@ window.check_91_2 = () => {
     window.showMathFeedback(
         isCorrect,
         "a) 23/17; b) 17/23; c) 23/40",
-        "",
-        "Gợi ý: Tổng số bạn tham gia = 23 + 17 = 40. Tỉ số = số cần tìm / số so sánh."
+        `a) ${v('91-2-an')}/${v('91-2-ad')}; b) ${v('91-2-bn')}/${v('91-2-bd')}; c) ${v('91-2-cn')}/${v('91-2-cd')}`,
+        "Gợi ý: Tổng số bạn tham gia thi là: 23 + 17 = 40 (bạn). Em hãy tính tỉ số bằng cách lấy số lượng của đối tượng thứ nhất chia cho đối tượng thứ hai.",
+        "Tổng số học sinh tham gia là: 23 + 17 = 40 (bạn).<br>a) Tỉ số của số bạn nữ và số bạn nam là: 23/17.<br>b) Tỉ số của số bạn nam và số bạn nữ là: 17/23.<br>c) Tỉ số của số bạn nữ và tổng số bạn tham gia là: 23/40.<br>Em giải toán rất xuất sắc!"
     );
     if (window.submitMathLesson) {
         window.submitMathLesson(
@@ -78,35 +80,49 @@ window._bee91Selected = null;
 window._matches91 = {};
 
 // Vẽ nét chì SVG nối từ ong đến hoa
-function drawPencilLine91(beeId, flowerId) {
-    const container = document.getElementById('match-container-91');
+window.redrawLines91 = () => {
     const svg = document.getElementById('svg-lines-91');
-    const beeEl = document.getElementById('bee-' + beeId);
-    const flowerEl = document.getElementById('flower-' + flowerId);
-    if (!container || !svg || !beeEl || !flowerEl) return;
-
+    if (!svg) return;
+    svg.innerHTML = '';
+    
+    const container = document.getElementById('match-container-91');
+    if (!container) return;
     const containerRect = container.getBoundingClientRect();
-    const beeRect = beeEl.getBoundingClientRect();
-    const flowerRect = flowerEl.getBoundingClientRect();
 
-    // Tâm dưới ong → tâm trên hoa
-    const x1 = beeRect.left + beeRect.width / 2 - containerRect.left;
-    const y1 = beeRect.bottom - containerRect.top;
-    const x2 = flowerRect.left + flowerRect.width / 2 - containerRect.left;
-    const y2 = flowerRect.top - containerRect.top;
+    Object.keys(window._matches91).forEach(beeId => {
+        const flowerId = window._matches91[beeId];
+        const beeEl = document.getElementById('bee-' + beeId);
+        const flowerEl = document.getElementById('flower-' + flowerId);
+        if (!beeEl || !flowerEl) return;
 
-    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-    line.setAttribute('x1', x1);
-    line.setAttribute('y1', y1);
-    line.setAttribute('x2', x2);
-    line.setAttribute('y2', y2);
-    line.setAttribute('stroke', '#555');
-    line.setAttribute('stroke-width', '3');
-    line.setAttribute('stroke-dasharray', '8,4');
-    line.setAttribute('stroke-linecap', 'round');
-    line.style.filter = 'drop-shadow(1px 1px 1px rgba(0,0,0,0.2))';
-    svg.appendChild(line);
-}
+        const beeRect = beeEl.getBoundingClientRect();
+        const flowerRect = flowerEl.getBoundingClientRect();
+
+        // Tâm ong → Tâm hoa
+        const x1 = beeRect.left + beeRect.width / 2 - containerRect.left;
+        const y1 = beeRect.top + beeRect.height / 2 - containerRect.top;
+        const x2 = flowerRect.left + flowerRect.width / 2 - containerRect.left;
+        const y2 = flowerRect.top + flowerRect.height / 2 - containerRect.top;
+
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line.setAttribute('x1', x1);
+        line.setAttribute('y1', y1);
+        line.setAttribute('x2', x2);
+        line.setAttribute('y2', y2);
+        line.setAttribute('stroke', '#ff7b29');
+        line.setAttribute('stroke-width', '4');
+        line.setAttribute('stroke-dasharray', '8,4');
+        line.setAttribute('stroke-linecap', 'round');
+        line.style.filter = 'drop-shadow(1px 1px 1px rgba(0,0,0,0.2))';
+        svg.appendChild(line);
+    });
+};
+
+window.addEventListener('resize', window.redrawLines91);
+// Gọi redraw định kỳ ngắn sau khi trang chuyển slide
+document.addEventListener('click', () => {
+    setTimeout(window.redrawLines91, 50);
+});
 
 window.selectBee91 = (beeValue) => {
     if (window._matches91[beeValue]) return;
@@ -141,8 +157,8 @@ window.selectFlower91 = (flowerValue) => {
         flowerEl.classList.add('opacity-60', 'pointer-events-none');
     }
 
-    // Vẽ nét chì nối
-    drawPencilLine91(beeValue, flowerValue);
+    // Vẽ lại toàn bộ các nét chì nối
+    window.redrawLines91();
 
     window._bee91Selected = null;
 };
@@ -157,11 +173,16 @@ window.check_91_3 = () => {
     if (matches['75'] === '75') score++;
 
     const isCorrect = score === total;
+    
+    // Construct student answers description
+    const studentAns = Object.keys(matches).map(bee => `${bee}% → ${matches[bee]}/100`).join('; ');
+
     window.showMathFeedback(
         isCorrect,
         "39% → 39/100; 41% → 41/100; 75% → 75/100",
-        "",
-        "Gợi ý: Tỉ số phần trăm a% chính là phân số a/100."
+        studentAns,
+        "Gợi ý: Tỉ số phần trăm dạng a% tương đương với phân số có tử số là a và mẫu số là 100.",
+        "• Con ong mang tỉ số 39% tương ứng với bông hoa 39/100.<br>• Con ong mang tỉ số 41% tương ứng với bông hoa 41/100.<br>• Con ong mang tỉ số 75% tương ứng với bông hoa 75/100.<br>Chúc mừng em đã hoàn thành rất tốt phần kết nối!"
     );
     if (window.submitMathLesson) {
         window.submitMathLesson(

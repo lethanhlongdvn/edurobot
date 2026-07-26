@@ -26,7 +26,7 @@ export const Quiz = {
                     </div>
                 </div>
                 
-                <div id="quiz-gamification-layer" class="absolute inset-0 pointer-events-none z-[100] flex items-center justify-center"></div>
+                <div id="quiz-gamification-layer" class="absolute inset-0 pointer-events-none z-[100] flex items-center justify-center transition-all duration-300"></div>
             </div>
 
             <div class="mt-8 max-w-4xl mx-auto">
@@ -443,13 +443,19 @@ export const Quiz = {
     showLottieFeedback(correct) {
         const layer = document.getElementById('quiz-gamification-layer');
         if (!layer) return;
+        layer.classList.add('bg-black/10', 'backdrop-blur-[2px]');
         layer.innerHTML = `
-            <div class="animate-bounce-in flex flex-col items-center">
-                <span class="text-[120px]">${correct ? '✅' : '❌'}</span>
-                <span class="text-3xl font-black uppercase ${correct ? 'text-emerald-500' : 'text-rose-500'} bg-white px-8 py-2 rounded-full border-4 ${correct ? 'border-emerald-500' : 'border-rose-500'} shadow-2xl">${correct ? 'Tuyệt vời!' : 'Thử lại nhé!'}</span>
+            <div class="animate-bounce-in flex flex-col items-center justify-center p-6 rounded-3xl bg-white/95 dark:bg-slate-900/95 border-4 ${correct ? 'border-emerald-500 shadow-emerald-500/30' : 'border-rose-500 shadow-rose-500/30'} shadow-2xl scale-110">
+                <span class="text-8xl md:text-[100px] mb-2 drop-shadow-md">${correct ? '✅' : '❌'}</span>
+                <span class="text-2xl md:text-3xl font-black uppercase ${correct ? 'text-emerald-600' : 'text-rose-600'} tracking-wider">${correct ? 'Tuyệt vời!' : 'Thử lại nhé!'}</span>
             </div>
         `;
-        setTimeout(() => { if (layer) layer.innerHTML = ''; }, 1500);
+        setTimeout(() => { 
+            if (layer) {
+                layer.innerHTML = '';
+                layer.classList.remove('bg-black/10', 'backdrop-blur-[2px]');
+            }
+        }, 1500);
     },
 
     cleanup() {

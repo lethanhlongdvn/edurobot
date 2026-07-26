@@ -55,19 +55,7 @@ export const lesson28 = {
                 <!-- Slide 1: Giới thiệu & Ý 1 -->
                 <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
                     <div class="space-y-6">
-                        <div class="p-8 rounded-[2.5rem] bg-gradient-to-br from-emerald-600 to-teal-800 shadow-2xl relative overflow-hidden text-white">
-<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-<div class="absolute bottom-0 left-0 w-48 h-48 bg-emerald-500/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-<div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-<div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30">
-<span class="text-5xl md:text-7xl">⚖️</span>
-</div>
-<div class="text-center md:text-left">
-<h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">LÀM TRÒN SỐ THẬP PHÂN</h2>
-<p class="text-emerald-100 text-lg md:text-2xl font-medium opacity-90">Học cách làm tròn số thập phân đến số tự nhiên gần nhất!</p>
-</div>
-</div>
-</div>
+                        
                         <div class="p-8 rounded-[2.5rem] bg-white border-2 border-emerald-600 shadow-none space-y-6">
 <div class="flex items-center gap-4">
 <div class="w-12 h-12 bg-emerald-600 rounded-2xl flex items-center justify-center text-white text-xl md:text-3xl shadow-lg">
@@ -199,7 +187,7 @@ export const lesson28 = {
                             <div class="flex justify-between items-center mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-emerald-900 font-black uppercase tracking-tighter">Làm tròn số thập phân</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-emerald-900 font-black uppercase tracking-tighter">Bài 1. Làm tròn số thập phân</h3>
                                 </div>
                                 <button id="btn-toggle-28-1" onclick="window.toggle_28_1_sol()" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white font-black text-sm md:text-base rounded-xl transition-all shadow-md">Hiện bài giải</button>
                             </div>
@@ -210,15 +198,15 @@ export const lesson28 = {
                                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 font-bold text-xl md:text-3xl">
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 p-3 bg-white rounded-xl border border-emerald-200 shadow-sm justify-center">
                                         <span>42,305 ≈</span>
-                                        <input id="ans-28-1-a" type="text" class="w-20 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 focus:ring-2 focus:ring-emerald-500 focus:outline-none w-10 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-28-1-a" type="text" class="w-20 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 focus:ring-2 focus:ring-emerald-500 focus:outline-none w-10 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                     </div>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 p-3 bg-white rounded-xl border border-emerald-200 shadow-sm justify-center">
                                         <span>513,59 ≈</span>
-                                        <input id="ans-28-1-b" type="text" class="w-20 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 focus:ring-2 focus:ring-emerald-500 focus:outline-none w-10 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-28-1-b" type="text" class="w-20 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 focus:ring-2 focus:ring-emerald-500 focus:outline-none w-10 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                     </div>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 p-3 bg-white rounded-xl border border-emerald-200 shadow-sm justify-center">
                                         <span>0,806 ≈</span>
-                                        <input id="ans-28-1-c" type="text" class="w-20 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 focus:ring-2 focus:ring-emerald-500 focus:outline-none w-10 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-28-1-c" type="text" class="w-20 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 focus:ring-2 focus:ring-emerald-500 focus:outline-none w-10 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                     </div>
                                 </div>
                             </div>
@@ -245,7 +233,7 @@ export const lesson28 = {
                             <div class="flex justify-between items-center mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-emerald-900 font-black uppercase tracking-tighter">Chiều cao, cân nặng chuẩn WHO</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-emerald-900 font-black uppercase tracking-tighter">Bài 2. Chiều cao, cân nặng chuẩn WHO</h3>
                                 </div>
                                 <button id="btn-toggle-28-2" onclick="window.toggle_28_2_sol()" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white font-black text-sm md:text-base rounded-xl transition-all shadow-md">Hiện bài giải</button>
                             </div>
@@ -269,22 +257,22 @@ export const lesson28 = {
                                                 <td class="p-4 bg-orange-50 border-r border-slate-200 text-orange-950 font-black">Trẻ trai</td>
                                                 <td class="p-4 border-r border-slate-200">137,8</td>
                                                 <td class="p-2 border-r border-slate-200">
-                                                    <input id="ans-28-2-h1" type="text" class="w-24 md:w-28 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                    <input id="ans-28-2-h1" type="text" class="w-24 md:w-28 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 </td>
                                                 <td class="p-4 border-r border-slate-200">31,2</td>
                                                 <td class="p-2">
-                                                    <input id="ans-28-2-w1" type="text" class="w-24 md:w-28 h-12 border-2 border-teal-600 rounded-xl text-center font-black text-teal-800 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                    <input id="ans-28-2-w1" type="text" class="w-24 md:w-28 h-12 border-2 border-teal-600 rounded-xl text-center font-black text-teal-800 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="p-4 bg-orange-50 border-r border-slate-200 text-orange-950 font-black">Trẻ gái</td>
                                                 <td class="p-4 border-r border-slate-200">138,6</td>
                                                 <td class="p-2 border-r border-slate-200">
-                                                    <input id="ans-28-2-h2" type="text" class="w-24 md:w-28 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                    <input id="ans-28-2-h2" type="text" class="w-24 md:w-28 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 </td>
                                                 <td class="p-4 border-r border-slate-200">31,9</td>
                                                 <td class="p-2">
-                                                    <input id="ans-28-2-w2" type="text" class="w-24 md:w-28 h-12 border-2 border-teal-600 rounded-xl text-center font-black text-teal-800 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                    <input id="ans-28-2-w2" type="text" class="w-24 md:w-28 h-12 border-2 border-teal-600 rounded-xl text-center font-black text-teal-800 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 </td>
                                             </tr>
                                         </tbody>

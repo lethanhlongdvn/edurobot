@@ -74,19 +74,7 @@ export const lesson59 = {
                     <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
                         <div class="space-y-6">
                             <!-- Banner chính -->
-                            <div class="p-8 rounded-[2.5rem] bg-gradient-to-br from-blue-700 to-sky-600 shadow-2xl relative overflow-hidden text-white">
-                                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-                                <div class="absolute bottom-0 left-0 w-48 h-48 bg-sky-500/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-                                <div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-                                    <div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30 shrink-0 text-4xl md:text-5xl">
-                                        🌲
-                                    </div>
-                                    <div class="text-center md:text-left">
-                                        <h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">LUYỆN TẬP DIỆN TÍCH HÌNH TAM GIÁC</h2>
-                                        <p class="text-sky-100 text-lg md:text-2xl font-medium opacity-90">Luyện tập giải các bài toán thực tế thú vị về hình tam giác!</p>
-                                    </div>
-                                </div>
-                            </div>
+                            
 
                             <!-- Khung tóm tắt quy tắc -->
                             <div class="p-6 rounded-[2.5rem] bg-[#fffbeb] border-2 border-[#fef08a] shadow-sm text-center space-y-4">
@@ -119,7 +107,7 @@ export const lesson59 = {
                             
                             <div class="flex items-center gap-4 border-b border-slate-100 pb-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                <h3 class="text-xl md:text-3xl font-black text-blue-900">Hoàn thành bảng sau và chọn câu trả lời đúng:</h3>
+                                <h3 class="text-xl md:text-3xl font-black text-blue-900">Bài 1. Hoàn thành bảng sau và chọn câu trả lời đúng:</h3>
                             </div>
 
                             <div class="space-y-6">
@@ -158,19 +146,19 @@ export const lesson59 = {
                                                     <td class="p-4 border-r border-slate-200 text-slate-600">15 cm²</td>
                                                     <td class="p-4 border-r border-slate-200 bg-blue-50/10">
                                                         <div class="flex items-center justify-center gap-1">
-                                                            <input type="text" id="ans-59-1-a1" class="w-16 h-10 text-center rounded-lg border-2 border-blue-200 focus:border-blue-500 focus:outline-none font-bold text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                                            <input type="text" id="ans-59-1-a1" class="w-16 h-10 text-center rounded-lg border-2 border-blue-200 focus:border-blue-500 focus:outline-none font-bold text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                                             <span>dm²</span>
                                                         </div>
                                                     </td>
                                                     <td class="p-4 border-r border-slate-200 bg-blue-50/10">
                                                         <div class="flex items-center justify-center gap-1">
-                                                            <input type="text" id="ans-59-1-a2" class="w-16 h-10 text-center rounded-lg border-2 border-blue-200 focus:border-blue-500 focus:outline-none font-bold text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                                            <input type="text" id="ans-59-1-a2" class="w-16 h-10 text-center rounded-lg border-2 border-blue-200 focus:border-blue-500 focus:outline-none font-bold text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                                             <span>m²</span>
                                                         </div>
                                                     </td>
                                                     <td class="p-4 bg-blue-50/10">
                                                         <div class="flex items-center justify-center gap-1">
-                                                            <input type="text" id="ans-59-1-a3" class="w-16 h-10 text-center rounded-lg border-2 border-blue-200 focus:border-blue-500 focus:outline-none font-bold text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                                            <input type="text" id="ans-59-1-a3" class="w-16 h-10 text-center rounded-lg border-2 border-blue-200 focus:border-blue-500 focus:outline-none font-bold text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                                             <span>cm²</span>
                                                         </div>
                                                     </td>
@@ -231,7 +219,7 @@ export const lesson59 = {
                             
                             <div class="flex items-center gap-4 border-b border-slate-100 pb-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                                <h3 class="text-xl md:text-3xl font-black text-blue-900">Vẽ đường cao ứng với đáy BC của mỗi hình tam giác:</h3>
+                                <h3 class="text-xl md:text-3xl font-black text-blue-900">Bài 2. Vẽ đường cao ứng với đáy BC của mỗi hình tam giác:</h3>
                             </div>
 
                             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
@@ -308,7 +296,7 @@ export const lesson59 = {
                             
                             <div class="flex items-center gap-4 border-b border-slate-100 pb-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">3</div>
-                                <h3 class="text-xl md:text-3xl font-black text-blue-900">Chọn câu trả lời đúng cho diện tích phần đuôi con cá:</h3>
+                                <h3 class="text-xl md:text-3xl font-black text-blue-900">Bài 3. Chọn câu trả lời đúng cho diện tích phần đuôi con cá:</h3>
                             </div>
 
                             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
@@ -366,7 +354,7 @@ export const lesson59 = {
                             
                             <div class="flex items-center gap-4 border-b border-slate-100 pb-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">4</div>
-                                <h3 class="text-xl md:text-3xl font-black text-blue-900">Tính diện tích cây thông vẽ trên lưới ô vuông:</h3>
+                                <h3 class="text-xl md:text-3xl font-black text-blue-900">Bài 4. Tính diện tích cây thông vẽ trên lưới ô vuông:</h3>
                             </div>
 
                             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
@@ -382,7 +370,7 @@ export const lesson59 = {
                                     <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-center items-center py-6 mt-4">
                                         <div class="flex items-center gap-3 text-lg md:text-2xl font-bold text-slate-800 flex-nowrap whitespace-nowrap overflow-x-auto">
                                             <span>Diện tích cây thông là: </span>
-                                            <input type="text" id="ans-59-4" class="w-20 h-12 text-center rounded-xl font-bold border-2 border-blue-200 focus:border-blue-500 focus:outline-none bg-blue-50/50 focus:bg-white text-blue-700" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 48px !important;" placeholder="?">
+                                            <input type="text" id="ans-59-4" class="w-20 h-12 text-center rounded-xl font-bold border-2 border-blue-200 focus:border-blue-500 focus:outline-none bg-blue-50/50 focus:bg-white text-blue-700" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 48px !important;" placeholder="">
                                             <span>cm²</span>
                                         </div>
                                     </div>

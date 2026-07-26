@@ -58,7 +58,7 @@ export const lesson122Presentation = [
                             </div>
                         </div>
                         <div class="relative group cursor-pointer inline-block mx-auto">
-                            <img src="assets/images/toan/toan_tap_2/122-khampha.webp" alt="Khám phá" class="w-full max-w-[500px] h-auto rounded-[40px] shadow-2xl border-8 border-white transform group-hover:rotate-1 transition-transform">
+                            <img src="assets/images/toan/toan_tap_2/122/" alt="Khám phá" class="w-full max-w-[500px] h-auto rounded-[40px] shadow-2xl border-8 border-white transform group-hover:rotate-1 transition-transform">
                             <div class="absolute bottom-4 right-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <button onclick="window.openKhamPhaModal122(); event.stopPropagation();" class="w-16 h-16 bg-amber-500 hover:bg-amber-600 text-white rounded-2xl font-black shadow-2xl flex items-center justify-center transform active:scale-95 transition-all text-2xl" title="Mô phỏng 3D">
                                     3D
@@ -158,7 +158,7 @@ export const lesson122Presentation = [
                 <div class="bg-rose-50 p-8 rounded-[48px] border-4 border-rose-200 shadow-xl relative overflow-hidden">
                     <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                         <div class="flex justify-center">
-                            <img src="assets/images/toan/toan_tap_2/122-formula.webp" alt="Công thức" class="w-full max-w-[400px] h-auto rounded-3xl shadow-xl">
+                            <img src="assets/images/toan/toan_tap_2/122/" alt="Công thức" class="w-full max-w-[400px] h-auto rounded-3xl shadow-xl">
                         </div>
                         <div class="bg-white p-8 rounded-[40px] shadow-inner border-2 border-rose-100">
                             <h4 class="text-xl font-black text-rose-600 uppercase mb-3 tracking-widest text-center">Ghi nhớ</h4>

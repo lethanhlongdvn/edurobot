@@ -50,11 +50,17 @@ export const router = {
 
         window.addEventListener('hashchange', () => this.handleHashChange());
 
-        // ====== GLOBAL UTILITIES ======
         window.normalizeVN = (s) => (s || "").toLowerCase().trim()
             .replace(/\s+/g, ' ')
             .replace(/linh/g, 'lẻ')
             .replace(/tư/g, 'bốn');
+
+        window.toggleSolution = function(elementId) {
+            const el = document.getElementById(elementId);
+            if (el) {
+                el.classList.toggle('hidden');
+            }
+        };
 
         // Show feedback function - supports multiple signatures:
         // 1) showMathFeedback(isCorrect, rightAnswer, studentAnswer, guidance, solution)
@@ -177,6 +183,12 @@ export const router = {
         
         // Dọn dẹp các component cũ nếu cần
         if (window.Quiz && window.Quiz.cleanup) window.Quiz.cleanup();
+        
+        // Dọn dẹp cửa sổ chat cũ để tránh trùng lặp DOM ID khi chuyển trang/bài học
+        const oldChat = document.getElementById('ai-chat-window');
+        if (oldChat) {
+            oldChat.remove();
+        }
         
         const main = document.getElementById('app-content');
         if (!main) return;

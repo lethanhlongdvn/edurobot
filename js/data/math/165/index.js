@@ -24,7 +24,7 @@ export const lesson165 = {
             <div id="lesson165_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg rotate-3">1</div>
-                    <p class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Tính kích thước hình hộp chữ nhật</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Bài 1. Tính kích thước hình hộp chữ nhật</h3>
                 </div>
                 
                 <div class="p-8 bg-blue-50 rounded-[2.5rem] border-2 border-blue-100 space-y-8">
@@ -66,7 +66,7 @@ export const lesson165 = {
             <div id="lesson165_b2" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-orange-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-orange-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg -rotate-3">2</div>
-                    <p class="text-2xl md:text-4xl font-black text-orange-800 uppercase tracking-wide">Tính thể tích hòn đá</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-orange-800 uppercase tracking-wide">Bài 2. Tính thể tích hòn đá</h3>
                 </div>
                 
                 <div class="p-8 bg-orange-50 rounded-[2.5rem] border-2 border-orange-100 flex flex-col md:flex-row gap-10 items-center">
@@ -111,7 +111,7 @@ export const lesson165 = {
             <div id="lesson165_b3" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-green-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-green-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg rotate-0">3</div>
-                    <p class="text-2xl md:text-4xl font-black text-green-800 uppercase tracking-wide">Tỉ số thể tích</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-green-800 uppercase tracking-wide">Bài 3. Tỉ số thể tích</h3>
                 </div>
                 
                 <div class="p-8 bg-green-50 rounded-[2.5rem] border-2 border-green-100 flex flex-col gap-8">
@@ -239,7 +239,7 @@ window.check_165_3 = () => {
     const isCorrect = score === total;
     const rightAnswer = "a) 2/3; b) 8/27";
     const studentAnswer = `a) ${v1}; b) ${v2}`;
-    const guidance = "a) Tỉ số độ dài cạnh là 8 : 12. b) Tỉ số thể tích bằng (Tỉ số độ dài cạnh) mũ 3, tức là (2/3) &times; (2/3) &times; (2/3).";
+    const guidance = "a) Em hãy lập tỉ số độ dài cạnh của hai hình lập phương rồi rút gọn phân số đó.<br>b) Tỉ số thể tích của hai hình lập phương bằng tỉ số độ dài cạnh nhân với chính nó ba lần (lũy thừa bậc 3) nhé!";
     const solution = `
         <div class="space-y-4">
             <p class="font-bold text-green-700">Xuất sắc! Em đã hiểu mối liên hệ giữa tỉ số cạnh và tỉ số thể tích. 📈</p>

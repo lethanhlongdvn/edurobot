@@ -13,7 +13,7 @@ const metadata = {
             "title": "Bài 1a: Tính diện tích hình thang biết độ dài hai đáy lần lượt là 4 cm và 6 cm; chiều cao là 3 cm.",
             "answers": ["15"],
             "guidance": "Áp dụng công thức tính diện tích hình thang: S = (a + b) x h : 2. Ở đây đáy bé a = 4 cm, đáy lớn b = 6 cm, chiều cao h = 3 cm.",
-            "solution": "Diện tích hình thang đó là:<br>(4 + 6) x 3 : 2 = 15 (cm²).<br>Đáp số: 15 cm².<br>Chúc mừng em đã tính toán chính xác!"
+            "solution": "Diện tích hình thang đó là:<br>(4 + 6) x 3 : 2 = 15 (cm²).<br>Đáp số: 15 cm²."
         },
         {
             "id": "62_bt1_b",
@@ -21,7 +21,7 @@ const metadata = {
             "title": "Bài 1b: Tính diện tích hình thang biết độ dài hai đáy lần lượt là 11 cm và 9 cm; chiều cao là 8 cm.",
             "answers": ["80"],
             "guidance": "Áp dụng công thức tính diện tích hình thang: S = (a + b) x h : 2. Ở đây đáy lớn b = 11 cm, đáy bé a = 9 cm, chiều cao h = 8 cm.",
-            "solution": "Diện tích hình thang đó là:<br>(11 + 9) x 8 : 2 = 80 (cm²).<br>Đáp số: 80 cm².<br>Tuyệt vời! Em làm rất tốt."
+            "solution": "Diện tích hình thang đó là:<br>(11 + 9) x 8 : 2 = 80 (cm²).<br>Đáp số: 80 cm²."
         },
         {
             "id": "62_bt2",
@@ -29,7 +29,7 @@ const metadata = {
             "title": "Bài 2: Tính diện tích mặt bàn đa năng ghép từ 6 bàn hình thang.",
             "answers": ["29700"],
             "guidance": "Đầu tiên, em hãy tính diện tích của một cái bàn hình thang có đáy bé 60 cm, đáy lớn 120 cm và chiều cao 55 cm. Sau đó, nhân diện tích đó với 6 để ra diện tích bàn đa năng.",
-            "solution": "Diện tích của 1 cái bàn hình thang là:<br>(60 + 120) x 55 : 2 = 4950 (cm²).<br>Diện tích của mặt bàn đa năng (gồm 6 cái bàn ghép lại) là:<br>4950 x 6 = 29700 (cm²).<br>Đáp số: 29700 cm².<br>Cực kỳ xuất sắc! Em đã giải quyết được một bài toán thực tế rất hay."
+            "solution": "Diện tích của 1 cái bàn hình thang là:<br>(60 + 120) x 55 : 2 = 4950 (cm²).<br>Diện tích của mặt bàn đa năng (gồm 6 cái bàn ghép lại) là:<br>4950 x 6 = 29700 (cm²).<br>Đáp số: 29700 cm²."
         },
         {
             "id": "62_bt3_a",
@@ -37,7 +37,7 @@ const metadata = {
             "title": "Bài 3a: Tính diện tích mảnh đất có dạng hình thang vuông.",
             "answers": ["104"],
             "guidance": "Quan sát bản vẽ: Mảnh đất có dạng hình thang vuông với chiều cao là 13 m. Đáy bé là 7 m, đáy lớn là 7 m + 2 m = 9 m. Áp dụng công thức để tính diện tích.",
-            "solution": "Độ dài đáy lớn của mảnh đất hình thang vuông là:<br>7 + 2 = 9 (m).<br>Diện tích mảnh đất đó là:<br>(7 + 9) x 13 : 2 = 104 (m²).<br>Đáp số: 104 m².<br>Chúc mừng em đã hoàn thành phần tính toán!"
+            "solution": "Độ dài đáy lớn của mảnh đất hình thang vuông là:<br>7 + 2 = 9 (m).<br>Diện tích mảnh đất đó là:<br>(7 + 9) x 13 : 2 = 104 (m²).<br>Đáp số: 104 m²."
         },
         {
             "id": "62_bt3_b",
@@ -81,15 +81,6 @@ export const lesson62 = {
                     <!-- Slide 1: Khám phá lý thuyết cắt ghép hình -->
                     <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
                         <div class="space-y-6">
-                            <!-- Banner -->
-                            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-6 rounded-[2.5rem] shadow-lg flex items-center justify-between">
-                                <div>
-                                    <span class="text-sm font-black uppercase tracking-wider opacity-90">Chủ đề: Hình học</span>
-                                    <h2 class="text-2xl md:text-4xl font-black mt-1">DIỆN TÍCH HÌNH THANG</h2>
-                                </div>
-                                <span class="text-4xl md:text-6xl animate-bounce-slow">📐</span>
-                            </div>
-
                             <!-- Khám phá a -->
                             <div class="bg-white p-6 rounded-3xl border border-blue-100 shadow-md space-y-4">
                                 <div class="border-l-4 border-blue-600 pl-4 py-1">
@@ -128,7 +119,7 @@ export const lesson62 = {
                                             <li>Diện tích hình thang ABCD bằng diện tích hình tam giác ADK.</li>
                                             <li>Diện tích hình tam giác ADK là: <span class="text-blue-600">DK x AH : 2</span>.</li>
                                             <li>Mà ta thấy cạnh đáy tam giác: <span class="text-orange-600">DK = DC + CK = DC + AB</span>.</li>
-                                            <li>Do đó, diện tích hình thang ABCD là: <span class="text-indigo-600">(DC + AB) x AH : 2</span>.</li>
+                                            <li>Do đó, diện tích hình thang ABCD là: <span class="text-blue-600">(DC + AB) x AH : 2</span>.</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -182,7 +173,7 @@ export const lesson62 = {
                             <div class="flex items-center justify-between border-b border-slate-100 pb-4">
                                 <div class="flex items-center gap-3">
                                     <span class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-black text-xl">1</span>
-                                    <h3 class="text-xl md:text-2xl font-black text-blue-700">Tính diện tích hình thang</h3>
+                                    <h3 class="text-xl md:text-2xl font-black text-blue-700">Bài 1. Tính diện tích hình thang</h3>
                                 </div>
                             </div>
 
@@ -225,8 +216,7 @@ export const lesson62 = {
                                     (11 + 9) x 8 : 2 = 80 (cm²).<br>
                                     Đáp số:<br>
                                     a) 15 cm²;<br>
-                                    b) 80 cm².<br>
-                                    Chúc mừng em đã giải đúng!
+                                    b) 80 cm².
                                 </p>
                             </div>
                         </div>
@@ -238,7 +228,7 @@ export const lesson62 = {
                             <div class="flex items-center justify-between border-b border-slate-100 pb-4">
                                 <div class="flex items-center gap-3">
                                     <span class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-black text-xl">2</span>
-                                    <h3 class="text-xl md:text-2xl font-black text-blue-700">Diện tích mặt bàn đa năng ghép từ 6 bàn nhỏ</h3>
+                                    <h3 class="text-xl md:text-2xl font-black text-blue-700">Bài 2. Diện tích mặt bàn đa năng ghép từ 6 bàn nhỏ</h3>
                                 </div>
                             </div>
 
@@ -269,8 +259,7 @@ export const lesson62 = {
                                     (60 + 120) x 55 : 2 = 4950 (cm²).<br>
                                     Diện tích mặt bàn đa năng (ghép từ 6 cái bàn giống nhau) là:<br>
                                     4950 x 6 = 29700 (cm²).<br>
-                                    Đáp số: 29700 cm².<br>
-                                    Chúc mừng em đã tính toán chính xác!
+                                    Đáp số: 29700 cm².
                                 </p>
                             </div>
                         </div>
@@ -283,7 +272,7 @@ export const lesson62 = {
                             <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-100 pb-4 gap-3">
                                 <div class="flex items-center gap-3">
                                     <span class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-black text-xl">3</span>
-                                    <h3 class="text-xl md:text-2xl font-black text-blue-700">Mảnh đất hình thang vuông</h3>
+                                    <h3 class="text-xl md:text-2xl font-black text-blue-700">Bài 3. Mảnh đất hình thang vuông</h3>
                                 </div>
                                 <div class="flex gap-2 bg-slate-100 p-1.5 rounded-2xl self-start sm:self-auto">
                                     <button id="tab-62-3-1" onclick="window.switch_62_3_tab(0)" class="px-4 py-2 text-xs md:text-sm font-black rounded-xl bg-blue-600 text-white shadow transition-all">a) Diện tích đất</button>
@@ -320,8 +309,7 @@ export const lesson62 = {
                                         7 + 2 = 9 (m).<br>
                                         Diện tích mảnh đất đó là:<br>
                                         (7 + 9) x 13 : 2 = 104 (m²).<br>
-                                        Đáp số: 104 m².<br>
-                                        Chúc mừng em đã làm đúng!
+                                        Đáp số: 104 m².
                                     </p>
                                 </div>
                             </div>
@@ -397,8 +385,8 @@ window.check_62_bt1 = function() {
     
     const rightAnswer = "a) 15; b) 80";
     const studentAnswer = `a) ${valA || 'Chưa nhập'}; b) ${valB || 'Chưa nhập'}`;
-    const guidance = "a) S = (4 + 6) x 3 : 2<br>b) S = (11 + 9) x 8 : 2";
-    const solution = "a) Diện tích hình thang là: (4 + 6) x 3 : 2 = 15 (cm²).<br>b) Diện tích hình thang là: (11 + 9) x 8 : 2 = 80 (cm²).<br>Chúc mừng em đã giải đúng hoàn toàn!";
+    const guidance = "Để tính diện tích hình thang, em hãy cộng độ dài hai đáy rồi nhân với chiều cao, sau đó chia cho 2 nhé!";
+    const solution = "a) Diện tích hình thang là: (4 + 6) x 3 : 2 = 15 (cm²).<br>b) Diện tích hình thang là: (11 + 9) x 8 : 2 = 80 (cm²).";
 
     window.showMathFeedback(isCorrect, rightAnswer, studentAnswer, guidance, solution);
 

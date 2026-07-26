@@ -84,19 +84,7 @@ export const lesson46 = {
     "content": `
         <div class="theory-section space-y-6 animate-in fade-in slide-in-from-bottom-10 duration-1000 pt-6">
             <!-- BANNER BÀI HỌC -->
-            <div class="p-8 rounded-[2.5rem] bg-gradient-to-br from-blue-600 to-sky-800 shadow-2xl relative overflow-hidden text-white">
-                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-                <div class="absolute bottom-0 left-0 w-48 h-48 bg-sky-500/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-                <div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-                    <div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30">
-                        <span class="text-5xl md:text-7xl">🧮</span>
-                    </div>
-                    <div class="text-center md:text-left">
-                        <h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">LUYỆN TẬP PHÉP NHÂN SỐ THẬP PHÂN</h2>
-                        <p class="text-blue-100 text-lg md:text-2xl font-medium opacity-90">Cùng ôn tập lý thuyết, quy tắc nhân hai số thập phân và áp dụng giải bài toán nhé!</p>
-                    </div>
-                </div>
-            </div>
+            
 
             <!-- ÔN TẬP KIẾN THỨC -->
             <div class="glass-card p-6 md:p-8 rounded-[2.5rem] bg-white border border-slate-100 shadow-xl space-y-6">
@@ -141,7 +129,7 @@ export const lesson46 = {
                     <div class="flex items-center justify-between border-b border-slate-100 pb-3">
                         <div class="flex items-center gap-4">
                             <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                            <h3 class="text-xl md:text-3xl font-black text-blue-900 uppercase">Phép nhân số thập phân</h3>
+                            <h3 class="text-xl md:text-3xl font-black text-blue-900 uppercase">Bài 1. Phép nhân số thập phân</h3>
                         </div>
                     </div>
 
@@ -166,26 +154,26 @@ export const lesson46 = {
                                         <!-- Hàng 1: _ | _ | 8 | , | 6 -->
                                         <span></span>
                                         <span></span>
-                                        <input type="text" id="ans-46-1-a1-r1c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a1-r1c2" oninput="window.handleCommaInput(this)" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a1-r1c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-46-1-a1-r1c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a1-r1c2" oninput="window.handleCommaInput(this)" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a1-r1c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
 
                                         <!-- Hàng ×: × | _ | 0 | , | 7 -->
                                         <span class="h-10 flex items-center justify-center text-blue-600 font-black text-xl">×</span>
                                         <span></span>
-                                        <input type="text" id="ans-46-1-a1-r2c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a1-r2c2" oninput="window.handleCommaInput(this)" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a1-r2c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-46-1-a1-r2c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a1-r2c2" oninput="window.handleCommaInput(this)" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a1-r2c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
 
                                         <!-- Gạch ngang -->
                                         <div class="col-span-5 border-t-2 border-slate-700 my-1"></div>
 
                                         <!-- Kết quả: _ | 6 | , | 0 | 2 -->
                                         <span></span>
-                                        <input type="text" id="ans-46-1-a1-r3c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a1-r3c2" oninput="window.handleCommaInput(this)" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a1-r3c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a1-r3c4" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-46-1-a1-r3c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a1-r3c2" oninput="window.handleCommaInput(this)" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a1-r3c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a1-r3c4" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                     </div>
                                 </div>
                                 <div id="sol-46-1a1" class="hidden w-full p-4 bg-sky-50 rounded-2xl border border-sky-200 text-sm font-medium text-slate-700 flex flex-col items-center">
@@ -209,32 +197,32 @@ export const lesson46 = {
                                     <div class="grid gap-1 items-center" style="grid-template-columns: 24px 40px 40px 40px 40px 40px;">
                                         <!-- Hàng 1: _ _ 2 , 1 4 -->
                                         <span></span><span></span>
-                                        <input type="text" id="ans-46-1-a2-r1c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a2-r1c2" oninput="window.handleCommaInput(this)" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a2-r1c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a2-r1c4" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-46-1-a2-r1c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a2-r1c2" oninput="window.handleCommaInput(this)" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a2-r1c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a2-r1c4" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
 
                                         <!-- Hàng ×: × _ _ _ 1 5 -->
                                         <span class="h-10 flex items-center justify-center text-blue-600 font-black text-xl">×</span>
                                         <span></span><span></span><span></span>
-                                        <input type="text" id="ans-46-1-a2-r2c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a2-r2c2" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-46-1-a2-r2c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a2-r2c2" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
 
                                         <!-- Gạch ngang -->
                                         <div class="col-span-6 border-t-2 border-slate-700 my-1"></div>
 
                                         <!-- Tích riêng 1: _ _ 1 0 7 0 -->
                                         <span></span><span></span>
-                                        <input type="text" id="ans-46-1-a2-r3c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a2-r3c2" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a2-r3c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a2-r3c4" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-46-1-a2-r3c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a2-r3c2" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a2-r3c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a2-r3c4" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
 
                                         <!-- Tích riêng 2: _ 2 1 4 _ -->
                                         <span></span><span></span>
-                                        <input type="text" id="ans-46-1-a2-r4c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a2-r4c2" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a2-r4c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-46-1-a2-r4c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a2-r4c2" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a2-r4c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                         <span></span>
 
                                         <!-- Gạch ngang -->
@@ -242,11 +230,11 @@ export const lesson46 = {
 
                                         <!-- Kết quả: _ 3 2 , 1 0 -->
                                         <span></span>
-                                        <input type="text" id="ans-46-1-a2-r5c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a2-r5c2" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a2-r5c3" oninput="window.handleCommaInput(this)" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a2-r5c4" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a2-r5c5" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-46-1-a2-r5c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a2-r5c2" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a2-r5c3" oninput="window.handleCommaInput(this)" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a2-r5c4" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a2-r5c5" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                     </div>
                                 </div>
                                 <div id="sol-46-1a2" class="hidden w-full p-4 bg-sky-50 rounded-2xl border border-sky-200 text-sm font-medium text-slate-700 flex flex-col items-center">
@@ -273,32 +261,32 @@ export const lesson46 = {
                                     <div class="grid gap-1 items-center" style="grid-template-columns: 24px 40px 40px 40px 40px 40px;">
                                         <!-- Hàng 1: _ _ 5 , 2 -->
                                         <span></span><span></span><span></span>
-                                        <input type="text" id="ans-46-1-a3-r1c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a3-r1c2" oninput="window.handleCommaInput(this)" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a3-r1c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-46-1-a3-r1c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a3-r1c2" oninput="window.handleCommaInput(this)" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a3-r1c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
 
                                         <!-- Hàng ×: × _ 0 , 4 3 -->
                                         <span class="h-10 flex items-center justify-center text-blue-600 font-black text-xl">×</span>
                                         <span></span>
-                                        <input type="text" id="ans-46-1-a3-r2c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a3-r2c2" oninput="window.handleCommaInput(this)" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a3-r2c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a3-r2c4" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-46-1-a3-r2c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a3-r2c2" oninput="window.handleCommaInput(this)" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a3-r2c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a3-r2c4" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
 
                                         <!-- Gạch ngang -->
                                         <div class="col-span-6 border-t-2 border-slate-700 my-1"></div>
 
                                         <!-- Tích riêng 1: _ _ 1 5 6 -->
                                         <span></span><span></span><span></span>
-                                        <input type="text" id="ans-46-1-a3-r3c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a3-r3c2" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a3-r3c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-46-1-a3-r3c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a3-r3c2" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a3-r3c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
 
                                         <!-- Tích riêng 2: _ 2 0 8 _ -->
                                         <span></span><span></span>
-                                        <input type="text" id="ans-46-1-a3-r4c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a3-r4c2" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a3-r4c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-46-1-a3-r4c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a3-r4c2" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a3-r4c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                         <span></span>
 
                                         <!-- Gạch ngang -->
@@ -306,11 +294,11 @@ export const lesson46 = {
 
                                         <!-- Kết quả: _ 2 , 2 3 6 -->
                                         <span></span>
-                                        <input type="text" id="ans-46-1-a3-r5c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a3-r5c2" oninput="window.handleCommaInput(this)" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a3-r5c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a3-r5c4" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-46-1-a3-r5c5" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-46-1-a3-r5c1" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a3-r5c2" oninput="window.handleCommaInput(this)" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a3-r5c3" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a3-r5c4" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-46-1-a3-r5c5" class="w-10 h-10 border border-slate-300 rounded-xl text-center outline-none font-black focus:border-blue-500" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                     </div>
                                 </div>
                                 <div id="sol-46-1a3" class="hidden w-full p-4 bg-sky-50 rounded-2xl border border-sky-200 text-sm font-medium text-slate-700 flex flex-col items-center">
@@ -346,21 +334,21 @@ export const lesson46 = {
                             <div class="p-6 bg-slate-50 border border-slate-200 rounded-[2rem] flex flex-col items-center gap-3">
                                 <span class="text-slate-700 font-black text-xl">3,6 × 24 =</span>
                                 <div class="flex items-center gap-2">
-                                    <input type="text" id="ans-46-1-b1" class="w-32 h-12 border-2 border-blue-300 rounded-xl text-center font-black text-xl text-blue-700 outline-none focus:border-blue-500 bg-white" placeholder="?">
+                                    <input type="text" id="ans-46-1-b1" class="w-32 h-12 border-2 border-blue-300 rounded-xl text-center font-black text-xl text-blue-700 outline-none focus:border-blue-500 bg-white" placeholder="">
                                 </div>
                             </div>
                             <!-- Câu 2 -->
                             <div class="p-6 bg-slate-50 border border-slate-200 rounded-[2rem] flex flex-col items-center gap-3">
                                 <span class="text-slate-700 font-black text-xl">36 × 0,24 =</span>
                                 <div class="flex items-center gap-2">
-                                    <input type="text" id="ans-46-1-b2" class="w-32 h-12 border-2 border-blue-300 rounded-xl text-center font-black text-xl text-blue-700 outline-none focus:border-blue-500 bg-white" placeholder="?">
+                                    <input type="text" id="ans-46-1-b2" class="w-32 h-12 border-2 border-blue-300 rounded-xl text-center font-black text-xl text-blue-700 outline-none focus:border-blue-500 bg-white" placeholder="">
                                 </div>
                             </div>
                             <!-- Câu 3 -->
                             <div class="p-6 bg-slate-50 border border-slate-200 rounded-[2rem] flex flex-col items-center gap-3">
                                 <span class="text-slate-700 font-black text-xl">0,36 × 2,4 =</span>
                                 <div class="flex items-center gap-2">
-                                    <input type="text" id="ans-46-1-b3" class="w-32 h-12 border-2 border-blue-300 rounded-xl text-center font-black text-xl text-blue-700 outline-none focus:border-blue-500 bg-white" placeholder="?">
+                                    <input type="text" id="ans-46-1-b3" class="w-32 h-12 border-2 border-blue-300 rounded-xl text-center font-black text-xl text-blue-700 outline-none focus:border-blue-500 bg-white" placeholder="">
                                 </div>
                             </div>
                         </div>
@@ -376,7 +364,7 @@ export const lesson46 = {
                     <div class="flex items-center justify-between border-b border-slate-100 pb-3">
                         <div class="flex items-center gap-4">
                             <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                            <h3 class="text-xl md:text-3xl font-black text-blue-900 uppercase">Tính chất của phép nhân</h3>
+                            <h3 class="text-xl md:text-3xl font-black text-blue-900 uppercase">Bài 2. Tính chất của phép nhân</h3>
                         </div>
                     </div>
 
@@ -392,14 +380,14 @@ export const lesson46 = {
                             <div class="p-6 bg-slate-50 border border-slate-200 rounded-[2rem] flex flex-col items-center gap-3">
                                 <div class="flex items-center gap-3 flex-wrap justify-center font-black text-xl md:text-2xl text-slate-800">
                                     <span>3,5 × 7,4</span>
-                                    <input type="text" id="ans-46-2-a1" class="w-14 h-12 border-2 border-blue-400 rounded-xl text-center text-blue-700 outline-none focus:border-blue-500 font-bold bg-white" placeholder="?">
+                                    <input type="text" id="ans-46-2-a1" class="w-14 h-12 border-2 border-blue-400 rounded-xl text-center text-blue-700 outline-none focus:border-blue-500 font-bold bg-white" placeholder="">
                                     <span>7,4 × 3,5</span>
                                 </div>
                             </div>
                             <div class="p-6 bg-slate-50 border border-slate-200 rounded-[2rem] flex flex-col items-center gap-3">
                                 <div class="flex items-center gap-3 flex-wrap justify-center font-black text-xl md:text-2xl text-slate-800">
                                     <span>(5,3 × 1,5) × 2</span>
-                                    <input type="text" id="ans-46-2-a2" class="w-14 h-12 border-2 border-blue-400 rounded-xl text-center text-blue-700 outline-none focus:border-blue-500 font-bold bg-white" placeholder="?">
+                                    <input type="text" id="ans-46-2-a2" class="w-14 h-12 border-2 border-blue-400 rounded-xl text-center text-blue-700 outline-none focus:border-blue-500 font-bold bg-white" placeholder="">
                                     <span>5,3 × (1,5 × 2)</span>
                                 </div>
                             </div>
@@ -423,7 +411,7 @@ export const lesson46 = {
                                 <textarea id="ans-46-2-b1-essay" rows="2" class="w-full p-4 border border-slate-300 rounded-2xl outline-none focus:border-blue-500 font-mono text-lg" placeholder="Nhập các bước tính nhẩm thuận tiện tại đây..."></textarea>
                                 <div class="flex items-center gap-2 font-bold text-lg">
                                     <span>Kết quả cuối cùng = </span>
-                                    <input type="text" id="ans-46-2-b1-result" class="w-32 h-10 border-2 border-blue-300 rounded-xl text-center text-blue-700 outline-none focus:border-blue-500 bg-white" placeholder="?">
+                                    <input type="text" id="ans-46-2-b1-result" class="w-32 h-10 border-2 border-blue-300 rounded-xl text-center text-blue-700 outline-none focus:border-blue-500 bg-white" placeholder="">
                                 </div>
                             </div>
                             <div id="sol-46-2b1" class="hidden p-4 bg-sky-50 rounded-2xl border border-sky-200 text-base md:text-lg font-medium text-slate-700">
@@ -443,7 +431,7 @@ export const lesson46 = {
                                 <textarea id="ans-46-2-b2-essay" rows="2" class="w-full p-4 border border-slate-300 rounded-2xl outline-none focus:border-blue-500 font-mono text-lg" placeholder="Nhập các bước tính nhẩm thuận tiện tại đây..."></textarea>
                                 <div class="flex items-center gap-2 font-bold text-lg">
                                     <span>Kết quả cuối cùng = </span>
-                                    <input type="text" id="ans-46-2-b2-result" class="w-32 h-10 border-2 border-blue-300 rounded-xl text-center text-blue-700 outline-none focus:border-blue-500 bg-white" placeholder="?">
+                                    <input type="text" id="ans-46-2-b2-result" class="w-32 h-10 border-2 border-blue-300 rounded-xl text-center text-blue-700 outline-none focus:border-blue-500 bg-white" placeholder="">
                                 </div>
                             </div>
                             <div id="sol-46-2b2" class="hidden p-4 bg-sky-50 rounded-2xl border border-sky-200 text-base md:text-lg font-medium text-slate-700">
@@ -463,7 +451,7 @@ export const lesson46 = {
                     <div class="flex items-center justify-between border-b border-slate-100 pb-3">
                         <div class="flex items-center gap-4">
                             <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">3</div>
-                            <h3 class="text-xl md:text-3xl font-black text-blue-900 uppercase">Xay xát gạo</h3>
+                            <h3 class="text-xl md:text-3xl font-black text-blue-900 uppercase">Bài 3. Xay xát gạo</h3>
                         </div>
                         <button onclick="window.toggleSolution('sol-46-3')" class="bg-amber-500 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full hover:bg-amber-600 active:scale-95 transition-all shadow-md">Hiện bài giải</button>
                     </div>
@@ -480,7 +468,7 @@ export const lesson46 = {
                                 <textarea id="ans-46-3-essay" rows="4" class="w-full p-4 border border-slate-300 rounded-3xl outline-none focus:border-blue-500 text-lg md:text-xl font-medium" placeholder="Nhập bài giải của em..."></textarea>
                                 <div class="flex items-center gap-2 font-bold text-lg md:text-2xl flex-nowrap whitespace-nowrap overflow-x-auto">
                                     <span>Đáp số:</span>
-                                    <input type="text" id="ans-46-3-result" class="w-36 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white md:text-2xl" placeholder="?">
+                                    <input type="text" id="ans-46-3-result" class="w-36 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white md:text-2xl" placeholder="">
                                     <span>kg gạo</span>
                                 </div>
                             </div>
@@ -552,7 +540,7 @@ export const lesson46 = {
                     <div class="flex items-center justify-between border-b border-slate-100 pb-3">
                         <div class="flex items-center gap-4">
                             <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">4</div>
-                            <h3 class="text-xl md:text-3xl font-black text-blue-900 uppercase">Mua xoài</h3>
+                            <h3 class="text-xl md:text-3xl font-black text-blue-900 uppercase">Bài 4. Mua xoài</h3>
                         </div>
                         <button onclick="window.toggleSolution('sol-46-4')" class="bg-amber-500 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full hover:bg-amber-600 active:scale-95 transition-all shadow-md">Hiện bài giải</button>
                     </div>
@@ -568,7 +556,7 @@ export const lesson46 = {
                         <textarea id="ans-46-4-essay" rows="5" class="w-full p-4 border border-slate-300 rounded-3xl outline-none focus:border-blue-500 text-lg md:text-xl font-medium" placeholder="Nhập bài giải của em..."></textarea>
                         <div class="flex items-center gap-2 font-bold text-lg md:text-2xl flex-nowrap whitespace-nowrap overflow-x-auto">
                             <span>Đáp số:</span>
-                            <input type="text" id="ans-46-4-result" class="w-44 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white md:text-2xl" placeholder="?">
+                            <input type="text" id="ans-46-4-result" class="w-44 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white md:text-2xl" placeholder="">
                             <span>đồng</span>
                         </div>
                     </div>

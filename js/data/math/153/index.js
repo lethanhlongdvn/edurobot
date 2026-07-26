@@ -105,7 +105,7 @@ const lesson153_theory = `
         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-8">
             <div class="glass-card p-3 md:p-8 rounded-[1rem] md:rounded-[3rem] bg-white border border-blue-100 shadow-xl space-y-2 md:space-y-6">
                 <div class="w-10 h-10 md:w-16 md:h-16 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center text-lg md:text-3xl font-black">1</div>
-                <h3 class="text-lg md:text-3xl font-black text-slate-800">Cấu tạo số</h3>
+                <h3 class="text-lg md:text-3xl font-black text-slate-800">Bài 1. Cấu tạo số</h3>
                 <ul class="space-y-1 md:space-y-4 text-sm md:text-xl text-slate-600 font-bold">
                     <li class="flex items-start gap-2"><i class="fas fa-check-circle text-emerald-500 mt-1"></i> <span>Đọc và viết số theo từng lớp.</span></li>
                     <li class="flex items-start gap-2"><i class="fas fa-check-circle text-emerald-500 mt-1"></i> <span>Mỗi hàng có một giá trị cụ thể.</span></li>
@@ -115,7 +115,7 @@ const lesson153_theory = `
 
             <div class="glass-card p-3 md:p-8 rounded-[1rem] md:rounded-[3rem] bg-white border border-blue-100 shadow-xl space-y-2 md:space-y-6">
                 <div class="w-10 h-10 md:w-16 md:h-16 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-lg md:text-3xl font-black">2</div>
-                <h3 class="text-lg md:text-3xl font-black text-slate-800">So sánh & Làm tròn</h3>
+                <h3 class="text-lg md:text-3xl font-black text-slate-800">Bài 2. So sánh & Làm tròn</h3>
                 <ul class="space-y-1 md:space-y-4 text-sm md:text-xl text-slate-600 font-bold">
                     <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-1"></i> <span>So sánh số chữ số trước.</span></li>
                     <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-1"></i> <span>Làm tròn dựa trên chữ số hàng kế bên.</span></li>
@@ -289,7 +289,7 @@ const lesson153_practice = `
         <div class="glass-card p-2.5 md:p-10 rounded-[1rem] md:rounded-[3rem] bg-white border border-blue-100 shadow-2xl relative overflow-hidden">
             <div class="flex items-start gap-2 md:gap-8 border-b-2 md:border-b-6 border-blue-100 pb-4 md:pb-10 mb-4 md:mb-12">
                 <span class="w-10 h-10 md:w-20 md:h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg md:text-4xl font-black shadow-lg shrink-0">3</span>
-                <p class="text-base md:text-3xl text-slate-700 leading-relaxed font-bold">Chọn câu trả lời đúng.</p>
+                <h3 class="text-base md:text-3xl text-slate-700 leading-relaxed font-bold">Bài 3. Chọn câu trả lời đúng.</h3>
             </div>
 
             <div class="grid grid-cols-1 gap-12">
@@ -403,7 +403,7 @@ const lesson153_practice = `
         <div class="glass-card p-2.5 md:p-10 rounded-[1rem] md:rounded-[3rem] bg-white border border-blue-100 shadow-2xl relative overflow-hidden">
             <div class="flex items-start gap-2 md:gap-8 border-b-2 md:border-b-6 border-blue-100 pb-4 md:pb-10 mb-4 md:mb-12">
                 <span class="w-10 h-10 md:w-20 md:h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg md:text-4xl font-black shadow-lg shrink-0">5</span>
-                <p class="text-base md:text-3xl text-slate-700 leading-relaxed font-bold">Số ?</p>
+                <h3 class="text-base md:text-3xl text-slate-700 leading-relaxed font-bold">Bài 5. Số ?</h3>
             </div>
 
             <div class="space-y-3 md:space-y-8 bg-blue-50/50 p-2.5 md:p-10 rounded-[1rem] md:rounded-[4rem] border-2 md:border-4 border-white shadow-xl">

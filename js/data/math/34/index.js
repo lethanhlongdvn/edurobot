@@ -57,19 +57,7 @@ export const lesson34 = {
     ...metadata.lessonInfo,
     "content": `
         <div class="theory-section space-y-6 animate-in fade-in slide-in-from-bottom-10 duration-1000 pt-6">
-            <div class="p-8 rounded-[2.5rem] bg-gradient-to-br from-blue-700 to-blue-900 shadow-2xl relative overflow-hidden text-white">
-<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-<div class="absolute bottom-0 left-0 w-48 h-48 bg-blue-500/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-<div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-<div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30">
-<span class="text-5xl md:text-7xl">📏</span>
-</div>
-<div class="text-center md:text-left">
-<h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">CÁC ĐƠN VỊ ĐO DIỆN TÍCH</h2>
-<p class="text-blue-100 text-lg md:text-2xl font-medium opacity-90">Hệ thống hóa toàn bộ các đơn vị đo diện tích đã học từ lớn đến bé và mối liên hệ giữa chúng!</p>
-</div>
-</div>
-</div>
+            
 <div class="p-8 rounded-[2.5rem] bg-white border-2 border-blue-700 shadow-none space-y-6">
 <div class="flex items-center gap-4">
 <div class="w-12 h-12 bg-blue-700 rounded-2xl flex items-center justify-center text-white text-xl md:text-3xl shadow-lg">
@@ -169,7 +157,7 @@ export const lesson34 = {
                             <div class="flex items-center justify-between mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Chọn câu trả lời đúng</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 1. Chọn câu trả lời đúng</h3>
                                 </div>
                                 <button id="btn-toggle-34-1" onclick="window.toggle_34_1_sol()" class="bg-amber-500 text-white text-lg font-bold px-4 py-2 rounded-2xl hover:bg-amber-600 transition-all">Hiện bài giải</button>
                             </div>
@@ -222,7 +210,7 @@ export const lesson34 = {
                             <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Số ?</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 2. Số ?</h3>
                                 </div>
                                 <div class="flex bg-slate-100 border border-slate-200 rounded-2xl p-1 shadow-inner gap-1">
                                     <button id="tab-34-2-btn-a" onclick="window.switchTab_34_2('a')" class="px-4 py-2 rounded-xl text-base md:text-lg font-bold bg-blue-600 text-white shadow transition-all duration-300">Phần a</button>
@@ -255,17 +243,17 @@ export const lesson34 = {
                                     <h4 class="text-xl font-black text-indigo-950 border-b border-blue-100 pb-2">a) Đổi từ đơn vị lớn hơn sang bé hơn</h4>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-black text-2xl md:text-3xl py-2">
                                         <span>5 km² =</span>
-                                        <input id="ans-34-2-a1" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="?" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-34-2-a1" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>ha</span>
                                     </div>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-black text-2xl md:text-3xl py-2 border-t border-blue-100 pt-4">
                                         <span>12 m² =</span>
-                                        <input id="ans-34-2-a2" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="?" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-34-2-a2" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>dm²</span>
                                     </div>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-black text-2xl md:text-3xl py-2 border-t border-blue-100 pt-4">
                                         <span>6 dm² =</span>
-                                        <input id="ans-34-2-a3" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="?" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-34-2-a3" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>cm²</span>
                                     </div>
                                 </div>
@@ -275,17 +263,17 @@ export const lesson34 = {
                                     <h4 class="text-xl font-black text-indigo-950 border-b border-blue-100 pb-2">b) Đổi từ đơn vị bé hơn sang lớn hơn</h4>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-black text-2xl md:text-3xl py-2">
                                         <span>600 ha =</span>
-                                        <input id="ans-34-2-b1" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="?" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-34-2-b1" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>km²</span>
                                     </div>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-black text-2xl md:text-3xl py-2 border-t border-blue-100 pt-4">
                                         <span>2 500 dm² =</span>
-                                        <input id="ans-34-2-b2" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="?" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-34-2-b2" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>m²</span>
                                     </div>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-black text-2xl md:text-3xl py-2 border-t border-blue-100 pt-4">
                                         <span>900 cm² =</span>
-                                        <input id="ans-34-2-b3" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="?" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-34-2-b3" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>dm²</span>
                                     </div>
                                 </div>
@@ -295,19 +283,19 @@ export const lesson34 = {
                                     <h4 class="text-xl font-black text-indigo-950 border-b border-blue-100 pb-2">c) Đổi đơn vị đo dưới dạng hợp chất</h4>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-black text-2xl md:text-3xl py-2">
                                         <span>2 m² 5 dm² =</span>
-                                        <input id="ans-34-2-c1" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="?" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-34-2-c1" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>dm²</span>
                                     </div>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-black text-2xl md:text-3xl py-2 border-t border-blue-100 pt-4">
                                         <span>40 cm² 4 mm² =</span>
-                                        <input id="ans-34-2-c2" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="?" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-34-2-c2" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>mm²</span>
                                     </div>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-black text-2xl md:text-3xl py-2 border-t border-blue-100 pt-4">
                                         <span>615 dm² =</span>
-                                        <input id="ans-34-2-c3" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="?" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-34-2-c3" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>m²</span>
-                                        <input id="ans-34-2-c4" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="?" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-34-2-c4" type="text" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="" style="width: auto !important; min-width: 50px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>dm²</span>
                                     </div>
                                 </div>
@@ -325,7 +313,7 @@ export const lesson34 = {
                             <div class="flex items-center justify-between mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">3</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Ước lượng diện tích bàn học</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 3. Ước lượng diện tích bàn học</h3>
                                 </div>
                                 <button id="btn-toggle-34-3" onclick="window.toggle_34_3_sol()" class="bg-amber-500 text-white text-lg font-bold px-4 py-2 rounded-2xl hover:bg-amber-600 transition-all">Hiện bài giải</button>
                             </div>

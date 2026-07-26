@@ -65,19 +65,7 @@ export const lesson19 = {
     ...metadata.lessonInfo,
     "content": `
         <div class="theory-section space-y-6 animate-in fade-in slide-in-from-bottom-10 duration-1000 pt-6">
-            <div class="glass-card p-6 md:p-10 rounded-[3rem] bg-gradient-to-br from-teal-600 to-emerald-700 shadow-2xl relative overflow-hidden text-white">
-<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-<div class="absolute bottom-0 left-0 w-48 h-48 bg-emerald-400/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-<div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-<div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30 animate-pulse">
-<span class="text-5xl md:text-7xl">⚡</span>
-</div>
-<div class="text-center md:text-left">
-<h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">LUYỆN TẬP CHUNG (TIẾT 3)</h2>
-<p class="text-teal-100 text-lg md:text-2xl font-medium opacity-90">Luyện tập ước lượng, tính toán thực tế, giải toán danh nhân và tính thuận tiện nhanh chóng!</p>
-</div>
-</div>
-</div>
+            
 <div class="glass-card p-6 md:p-10 rounded-[3rem] bg-white shadow-xl border border-teal-100 relative overflow-hidden">
 <div class="flex items-center gap-4 mb-6">
 <div class="w-12 h-12 bg-emerald-500 rounded-2xl flex items-center justify-center text-white text-xl md:text-3xl shadow-lg shadow-emerald-200">
@@ -116,7 +104,7 @@ export const lesson19 = {
                         <div class="glass-card p-4 md:p-6 rounded-[2.5rem] bg-white shadow-2xl border border-teal-50 relative overflow-hidden">
                             <div class="flex items-center gap-4 mb-2">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-teal-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                <h3 class="text-lg md:text-2xl lg:text-3xl text-teal-900 font-black uppercase tracking-tighter">Ước lượng kết quả phép tính</h3>
+                                <h3 class="text-lg md:text-2xl lg:text-3xl text-teal-900 font-black uppercase tracking-tighter">Bài 1. Ước lượng kết quả phép tính</h3>
                             </div>
                             
                             <div class="space-y-4 pr-2 text-slate-700 font-bold">
@@ -124,28 +112,28 @@ export const lesson19 = {
                                     <!-- Câu a -->
                                     <div class="p-4 bg-teal-50/20 rounded-2xl border border-teal-100 flex items-center gap-3 flex-nowrap whitespace-nowrap overflow-x-auto">
                                         <span>a) Kết quả phép tính 12 020 – 6 915 khoảng</span>
-                                        <input type="text" id="ans-19-1-a" class="w-16 h-12 md:w-20 md:h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-xl flex-shrink-0 w-10" placeholder="?"  style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;" />
+                                        <input type="text" id="ans-19-1-a" class="w-16 h-12 md:w-20 md:h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-xl flex-shrink-0 w-10" placeholder=""  style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;" />
                                         <span>nghìn.</span>
                                     </div>
 
                                     <!-- Câu b -->
                                     <div class="p-4 bg-teal-50/20 rounded-2xl border border-teal-100 flex items-center gap-3 flex-nowrap whitespace-nowrap overflow-x-auto">
                                         <span>b) Kết quả phép tính 36 070 + 23 950 khoảng</span>
-                                        <input type="text" id="ans-19-1-b" class="w-16 h-12 md:w-20 md:h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-xl flex-shrink-0 w-10" placeholder="?"  style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;" />
+                                        <input type="text" id="ans-19-1-b" class="w-16 h-12 md:w-20 md:h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-xl flex-shrink-0 w-10" placeholder=""  style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;" />
                                         <span>chục nghìn.</span>
                                     </div>
 
                                     <!-- Câu c -->
                                     <div class="p-4 bg-teal-50/20 rounded-2xl border border-teal-100 flex items-center gap-3 flex-nowrap whitespace-nowrap overflow-x-auto">
                                         <span>c) Kết quả phép tính 598 600 – 101 500 khoảng</span>
-                                        <input type="text" id="ans-19-1-c" class="w-16 h-12 md:w-20 md:h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-xl flex-shrink-0 w-10" placeholder="?"  style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;" />
+                                        <input type="text" id="ans-19-1-c" class="w-16 h-12 md:w-20 md:h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-xl flex-shrink-0 w-10" placeholder=""  style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;" />
                                         <span>trăm nghìn.</span>
                                     </div>
 
                                     <!-- Câu d -->
                                     <div class="p-4 bg-teal-50/20 rounded-2xl border border-teal-100 flex items-center gap-3 flex-nowrap whitespace-nowrap overflow-x-auto">
                                         <span>d) Kết quả phép tính 4 180 300 + 3 990 700 khoảng</span>
-                                        <input type="text" id="ans-19-1-d" class="w-16 h-12 md:w-20 md:h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-xl flex-shrink-0 w-10" placeholder="?"  style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;" />
+                                        <input type="text" id="ans-19-1-d" class="w-16 h-12 md:w-20 md:h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-xl flex-shrink-0 w-10" placeholder=""  style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;" />
                                         <span>triệu.</span>
                                     </div>
                                 </div>
@@ -163,7 +151,7 @@ export const lesson19 = {
                             <div class="flex items-center justify-between gap-4 mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-teal-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform rotate-2">2</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-teal-900 font-black uppercase tracking-tighter">Tính số năm kỷ niệm Trạng Trình</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-teal-900 font-black uppercase tracking-tighter">Bài 2. Tính số năm kỷ niệm Trạng Trình</h3>
                                 </div>
                                 <!-- Nút Hiện/Ẩn bài giải cho giáo viên -->
                                 <button id="btn-toggle-19-2" onclick="window.toggle_19_2_sol()" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 active:scale-95 text-white rounded-2xl font-black text-lg md:text-2xl font-medium lg:text-xl shadow-md transition-all">Hiện bài giải</button>
@@ -173,11 +161,11 @@ export const lesson19 = {
                                 <!-- Đề bài & Sơ đồ SVG nằm trên -->
                                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
                                     <div class="lg:col-span-8 p-4 bg-emerald-50 rounded-[1.5rem] border border-emerald-100 text-xl md:text-3xl lg:text-2xl">
-                                        <p class="font-bold text-emerald-800">Đề bài:</p>
+                                        <p class="font-bold text-emerald-800"></p>
                                         <p class="text-slate-600 leading-relaxed mb-4">Trạng Trình Nguyễn Bỉnh Khiêm sinh năm 1491. Hỏi kể từ năm nay (2026), còn bao nhiêu năm nữa sẽ kỉ niệm 600 năm năm sinh Trạng Trình Nguyễn Bỉnh Khiêm?</p>
                                         <div class="flex items-center gap-1.5 flex-nowrap whitespace-nowrap overflow-x-auto bg-white p-3 rounded-xl border border-emerald-100">
                                             <span>Đáp số:</span>
-                                            <input type="text" id="ans-19-2" class="w-20 h-12 md:w-28 md:h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none flex-shrink-0 w-10 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-19-2" class="w-20 h-12 md:w-28 md:h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none flex-shrink-0 w-10 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             <span>năm.</span>
                                         </div>
                                     </div>
@@ -262,7 +250,7 @@ export const lesson19 = {
                             <div class="flex items-center justify-between gap-4 mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-teal-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">3</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-teal-900 font-black uppercase tracking-tighter">Bài toán Cô Ba bán trứng gà</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-teal-900 font-black uppercase tracking-tighter">Bài 3. Bài toán Cô Ba bán trứng gà</h3>
                                 </div>
                                 <!-- Nút Hiện/Ẩn bài giải cho giáo viên -->
                                 <button id="btn-toggle-19-3" onclick="window.toggle_19_3_sol()" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 active:scale-95 text-white rounded-2xl font-black text-lg md:text-2xl font-medium lg:text-xl shadow-md transition-all">Hiện bài giải</button>
@@ -272,7 +260,7 @@ export const lesson19 = {
                                 <!-- Đề bài & Hình minh họa nằm trên -->
                                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
                                     <div class="lg:col-span-8 p-4 bg-emerald-50 rounded-[1.5rem] border border-emerald-100 text-xl md:text-3xl lg:text-2xl leading-relaxed">
-                                        <p class="font-bold text-emerald-800 mb-1">Đề bài:</p>
+                                        <p class="font-bold text-emerald-800 mb-1"></p>
                                         <p class="text-slate-600">Cô Ba mang 120 quả trứng gà ra chợ bán. Lần thứ nhất, cô Ba bán được <span class="inline-flex flex-col items-center align-middle mx-0.5"><span>1</span><span class="border-t border-slate-700 w-2"></span><span>8</span></span> số trứng đó. Lần thứ hai, cô Ba bán được <span class="inline-flex flex-col items-center align-middle mx-0.5"><span>2</span><span class="border-t border-slate-700 w-2"></span><span>7</span></span> số trứng còn lại sau lần bán thứ nhất. Hỏi cô Ba đã bán được tất cả bao nhiêu quả trứng gà?</p>
                                     </div>
                                     <div class="lg:col-span-4 p-2 bg-slate-50 border border-slate-200 rounded-[1.5rem] flex flex-col items-center justify-center">
@@ -286,7 +274,7 @@ export const lesson19 = {
                                         Đáp số:
                                     </div>
                                     <div class="flex items-center gap-2 whitespace-nowrap flex-nowrap">
-                                        <input type="text" id="ans-19-3-final" class="w-32 h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none text-xl md:text-3xl" placeholder="?" style="padding: 0px !important;">
+                                        <input type="text" id="ans-19-3-final" class="w-32 h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none text-xl md:text-3xl" placeholder="" style="padding: 0px !important;">
                                         <span class="text-xl md:text-2xl lg:text-3xl font-bold text-slate-700">quả trứng</span>
                                     </div>
                                 </div>
@@ -319,7 +307,7 @@ export const lesson19 = {
                             <div class="flex items-center justify-between gap-4 mb-3">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-teal-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform rotate-3">4</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-teal-900 font-black uppercase tracking-tighter">Tính bằng cách thuận tiện</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-teal-900 font-black uppercase tracking-tighter">Bài 4. Tính bằng cách thuận tiện</h3>
                                 </div>
                                 <!-- Nút Hiện/Ẩn bài giải cho giáo viên -->
                                 <button id="btn-toggle-19-4" onclick="window.toggle_19_4_sol()" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 active:scale-95 text-white rounded-2xl font-black text-lg md:text-2xl font-medium lg:text-xl shadow-md transition-all">Hiện bài giải</button>
@@ -329,13 +317,13 @@ export const lesson19 = {
                                  <!-- Phép tính a -->
                                  <div class="p-6 bg-teal-50/20 border border-teal-100 rounded-2xl flex items-center gap-4 text-xl md:text-2xl lg:text-3xl flex-nowrap whitespace-nowrap overflow-x-auto">
                                      <span>a) 524 × 63 + 524 × 37 – 2 400 =</span>
-                                     <input type="text" id="ans-19-4-a" class="w-32 h-12 md:w-40 md:h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-2xl flex-shrink-0 w-10" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                     <input type="text" id="ans-19-4-a" class="w-32 h-12 md:w-40 md:h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-2xl flex-shrink-0 w-10" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                  </div>
 
                                  <!-- Phép tính b -->
                                  <div class="p-6 bg-teal-50/20 border border-teal-100 rounded-2xl flex items-center gap-4 text-xl md:text-2xl lg:text-3xl flex-nowrap whitespace-nowrap overflow-x-auto">
                                      <span>b) <span class="inline-flex flex-col items-center align-middle mx-1"><span>7</span><span class="border-t border-slate-700 w-3"></span><span>9</span></span> × <span class="inline-flex flex-col items-center align-middle mx-1"><span>6</span><span class="border-t border-slate-700 w-3"></span><span>5</span></span> + <span class="inline-flex flex-col items-center align-middle mx-1"><span>6</span><span class="border-t border-slate-700 w-3"></span><span>5</span></span> × <span class="inline-flex flex-col items-center align-middle mx-1"><span>2</span><span class="border-t border-slate-700 w-3"></span><span>9</span></span> + <span class="inline-flex flex-col items-center align-middle mx-1"><span>4</span><span class="border-t border-slate-700 w-3"></span><span>5</span></span> =</span>
-                                     <input type="text" id="ans-19-4-b" class="w-20 h-12 md:w-28 md:h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-2xl flex-shrink-0 w-10" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                     <input type="text" id="ans-19-4-b" class="w-20 h-12 md:w-28 md:h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-2xl flex-shrink-0 w-10" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                  </div>
                                  
                                  <!-- Lời giải toán (Ẩn mặc định, dành cho giáo viên) -->

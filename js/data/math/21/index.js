@@ -63,19 +63,7 @@ export const lesson21 = {
                 <!-- Slide 1: Giới thiệu & Ý 1 -->
                 <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
                     <div class="space-y-6">
-                        <div class="glass-card p-6 md:p-10 rounded-[3rem] bg-gradient-to-br from-teal-600 to-emerald-700 shadow-2xl relative overflow-hidden text-white">
-<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-<div class="absolute bottom-0 left-0 w-48 h-48 bg-emerald-400/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-<div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-<div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30 animate-pulse">
-<span class="text-5xl md:text-7xl">💡</span>
-</div>
-<div class="text-center md:text-left">
-<h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">HÀNG CỦA SỐ THẬP PHÂN. ĐỌC, VIẾT SỐ THẬP PHÂN</h2>
-<p class="text-teal-100 text-lg md:text-2xl font-medium opacity-90">Tìm hiểu mối liên hệ giữa các hàng của số thập phân và cách đọc, viết chính xác!</p>
-</div>
-</div>
-</div>
+                        
                         <div class="glass-card p-6 md:p-10 rounded-[3rem] bg-white shadow-xl border border-teal-100 relative overflow-hidden">
 <div class="flex items-center gap-4 mb-6">
 <div class="w-12 h-12 bg-emerald-500 rounded-2xl flex items-center justify-center text-white text-xl md:text-3xl shadow-lg shadow-emerald-200">
@@ -334,28 +322,28 @@ export const lesson21 = {
                                             <tr class="bg-slate-50/50">
                                                 <td class="border border-slate-200 p-2.5 text-slate-600">116 đơn vị, 7 phần mười, 1 phần trăm, 5 phần nghìn</td>
                                                 <td class="border border-slate-200 p-2.5">
-                                                    <textarea id="ans-21-1-a1-w" rows="2" class="w-full h-20 border-2 border-teal-300 rounded-lg text-center text-teal-600 font-bold outline-none resize-none p-2 text-sm md:text-xl lg:text-2xl overflow-hidden" placeholder="?"></textarea>
+                                                    <textarea id="ans-21-1-a1-w" rows="2" class="w-full h-20 border-2 border-teal-300 rounded-lg text-center text-teal-600 font-bold outline-none resize-none p-2 text-sm md:text-xl lg:text-2xl overflow-hidden" placeholder=""></textarea>
                                                 </td>
                                                 <td class="border border-slate-200 p-2.5">
-                                                    <textarea id="ans-21-1-a1-r" rows="2" class="w-full h-20 border-2 border-teal-300 rounded-lg text-center text-teal-600 font-bold outline-none resize-none p-2 text-sm md:text-xl lg:text-2xl overflow-hidden" placeholder="?"></textarea>
+                                                    <textarea id="ans-21-1-a1-r" rows="2" class="w-full h-20 border-2 border-teal-300 rounded-lg text-center text-teal-600 font-bold outline-none resize-none p-2 text-sm md:text-xl lg:text-2xl overflow-hidden" placeholder=""></textarea>
                                                 </td>
                                             </tr>
                                             <tr class="bg-white">
                                                 <td class="border border-slate-200 p-2.5 text-slate-600">0 đơn vị, 7 phần mười, 3 phần trăm</td>
                                                 <td class="border border-slate-200 p-2.5">
-                                                    <textarea id="ans-21-1-a2-w" rows="2" class="w-full h-20 border-2 border-teal-300 rounded-lg text-center text-teal-600 font-bold outline-none resize-none p-2 text-sm md:text-xl lg:text-2xl overflow-hidden" placeholder="?"></textarea>
+                                                    <textarea id="ans-21-1-a2-w" rows="2" class="w-full h-20 border-2 border-teal-300 rounded-lg text-center text-teal-600 font-bold outline-none resize-none p-2 text-sm md:text-xl lg:text-2xl overflow-hidden" placeholder=""></textarea>
                                                 </td>
                                                 <td class="border border-slate-200 p-2.5">
-                                                    <textarea id="ans-21-1-a2-r" rows="2" class="w-full h-20 border-2 border-teal-300 rounded-lg text-center text-teal-600 font-bold outline-none resize-none p-2 text-sm md:text-xl lg:text-2xl overflow-hidden" placeholder="?"></textarea>
+                                                    <textarea id="ans-21-1-a2-r" rows="2" class="w-full h-20 border-2 border-teal-300 rounded-lg text-center text-teal-600 font-bold outline-none resize-none p-2 text-sm md:text-xl lg:text-2xl overflow-hidden" placeholder=""></textarea>
                                                 </td>
                                             </tr>
                                             <tr class="bg-slate-50/50">
                                                 <td class="border border-slate-200 p-2.5 text-slate-600">26 đơn vị và 408 phần nghìn</td>
                                                 <td class="border border-slate-200 p-2.5">
-                                                    <textarea id="ans-21-1-a3-w" rows="2" class="w-full h-20 border-2 border-teal-300 rounded-lg text-center text-teal-600 font-bold outline-none resize-none p-2 text-sm md:text-xl lg:text-2xl overflow-hidden" placeholder="?"></textarea>
+                                                    <textarea id="ans-21-1-a3-w" rows="2" class="w-full h-20 border-2 border-teal-300 rounded-lg text-center text-teal-600 font-bold outline-none resize-none p-2 text-sm md:text-xl lg:text-2xl overflow-hidden" placeholder=""></textarea>
                                                 </td>
                                                 <td class="border border-slate-200 p-2.5">
-                                                    <textarea id="ans-21-1-a3-r" rows="2" class="w-full h-20 border-2 border-teal-300 rounded-lg text-center text-teal-600 font-bold outline-none resize-none p-2 text-sm md:text-xl lg:text-2xl overflow-hidden" placeholder="?"></textarea>
+                                                    <textarea id="ans-21-1-a3-r" rows="2" class="w-full h-20 border-2 border-teal-300 rounded-lg text-center text-teal-600 font-bold outline-none resize-none p-2 text-sm md:text-xl lg:text-2xl overflow-hidden" placeholder=""></textarea>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -397,21 +385,21 @@ export const lesson21 = {
                                             <div class="flex flex-col gap-3">
                                                 <div class="flex items-center gap-1.5 flex-nowrap whitespace-nowrap overflow-x-auto">
                                                     <span>- 327,106: Nguyên:</span>
-                                                    <input type="text" id="ans-21-2-a1-n" class="border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none" placeholder="?" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
+                                                    <input type="text" id="ans-21-2-a1-n" class="border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none" placeholder="" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
                                                     <span>Thập phân:</span>
-                                                    <input type="text" id="ans-21-2-a1-tp" class="border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none" placeholder="?" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
+                                                    <input type="text" id="ans-21-2-a1-tp" class="border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none" placeholder="" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
                                                 </div>
                                                 <div class="flex items-center gap-1.5 flex-nowrap whitespace-nowrap overflow-x-auto">
                                                     <span>- 49,251: Nguyên:</span>
-                                                    <input type="text" id="ans-21-2-a2-n" class="border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none" placeholder="?" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
+                                                    <input type="text" id="ans-21-2-a2-n" class="border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none" placeholder="" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
                                                     <span>Thập phân:</span>
-                                                    <input type="text" id="ans-21-2-a2-tp" class="border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none" placeholder="?" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
+                                                    <input type="text" id="ans-21-2-a2-tp" class="border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none" placeholder="" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
                                                 </div>
                                                 <div class="flex items-center gap-1.5 flex-nowrap whitespace-nowrap overflow-x-auto">
                                                     <span>- 9,362: Nguyên:</span>
-                                                    <input type="text" id="ans-21-2-a3-n" class="border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none" placeholder="?" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
+                                                    <input type="text" id="ans-21-2-a3-n" class="border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none" placeholder="" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
                                                     <span>Thập phân:</span>
-                                                    <input type="text" id="ans-21-2-a3-tp" class="border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none" placeholder="?" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
+                                                    <input type="text" id="ans-21-2-a3-tp" class="border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none" placeholder="" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
                                                 </div>
                                             </div>
                                         </div>
@@ -422,19 +410,19 @@ export const lesson21 = {
                                             <div class="grid grid-cols-1 gap-3">
                                                 <div class="flex items-center gap-1.5 flex-nowrap whitespace-nowrap overflow-x-auto">
                                                     <span>- 4,05 đọc là:</span>
-                                                    <input type="text" id="ans-21-2-b1" class="border-2 border-teal-300 rounded-xl text-center text-teal-600 font-bold outline-none" placeholder="?" oninput="this.style.width = (Math.max(this.value.length, 10) * 12 + 45) + 'px';" style="width: 180px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
+                                                    <input type="text" id="ans-21-2-b1" class="border-2 border-teal-300 rounded-xl text-center text-teal-600 font-bold outline-none" placeholder="" oninput="this.style.width = (Math.max(this.value.length, 10) * 12 + 45) + 'px';" style="width: 180px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
                                                 </div>
                                                 <div class="flex items-center gap-1.5 flex-nowrap whitespace-nowrap overflow-x-auto">
                                                     <span>- 12,004 đọc là:</span>
-                                                    <input type="text" id="ans-21-2-b2" class="border-2 border-teal-300 rounded-xl text-center text-teal-600 font-bold outline-none" placeholder="?" oninput="this.style.width = (Math.max(this.value.length, 10) * 12 + 45) + 'px';" style="width: 180px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
+                                                    <input type="text" id="ans-21-2-b2" class="border-2 border-teal-300 rounded-xl text-center text-teal-600 font-bold outline-none" placeholder="" oninput="this.style.width = (Math.max(this.value.length, 10) * 12 + 45) + 'px';" style="width: 180px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
                                                 </div>
                                                 <div class="flex items-center gap-1.5 flex-nowrap whitespace-nowrap overflow-x-auto">
                                                     <span>- 8,03 đọc là:</span>
-                                                    <input type="text" id="ans-21-2-b3" class="border-2 border-teal-300 rounded-xl text-center text-teal-600 font-bold outline-none" placeholder="?" oninput="this.style.width = (Math.max(this.value.length, 10) * 12 + 45) + 'px';" style="width: 180px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
+                                                    <input type="text" id="ans-21-2-b3" class="border-2 border-teal-300 rounded-xl text-center text-teal-600 font-bold outline-none" placeholder="" oninput="this.style.width = (Math.max(this.value.length, 10) * 12 + 45) + 'px';" style="width: 180px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
                                                 </div>
                                                 <div class="flex items-center gap-1.5 flex-nowrap whitespace-nowrap overflow-x-auto">
                                                     <span>- 25,009 đọc là:</span>
-                                                    <input type="text" id="ans-21-2-b4" class="border-2 border-teal-300 rounded-xl text-center text-teal-600 font-bold outline-none" placeholder="?" oninput="this.style.width = (Math.max(this.value.length, 10) * 12 + 45) + 'px';" style="width: 180px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
+                                                    <input type="text" id="ans-21-2-b4" class="border-2 border-teal-300 rounded-xl text-center text-teal-600 font-bold outline-none" placeholder="" oninput="this.style.width = (Math.max(this.value.length, 10) * 12 + 45) + 'px';" style="width: 180px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
                                                 </div>
                                             </div>
                                         </div>
@@ -500,7 +488,7 @@ export const lesson21 = {
                                             <div class="relative w-32 h-32 flex items-center justify-center">
                                                 <!-- Quả bóng tương tác chứa ô nhập -->
                                                 <div class="absolute top-0 w-28 h-20 bg-gradient-to-tr from-pink-400 to-rose-300 border-2 border-rose-400 rounded-[1.5rem] flex items-center justify-center shadow-lg">
-                                                    <input type="text" id="ans-21-3-1" class="border border-white/50 bg-white/90 rounded-xl text-center text-teal-700 font-black outline-none" placeholder="?" oninput="this.style.width = (Math.max(this.value.length, 4) * 12 + 20) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
+                                                    <input type="text" id="ans-21-3-1" class="border border-white/50 bg-white/90 rounded-xl text-center text-teal-700 font-black outline-none" placeholder="" oninput="this.style.width = (Math.max(this.value.length, 4) * 12 + 20) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
                                                 </div>
                                                 <!-- Chú hải cẩu dễ thương -->
                                                 <svg viewBox="0 0 100 100" class="w-24 h-24 mt-8">
@@ -522,7 +510,7 @@ export const lesson21 = {
                                         <div class="flex flex-col items-center gap-2">
                                             <div class="relative w-32 h-32 flex items-center justify-center">
                                                 <div class="absolute top-0 w-28 h-20 bg-gradient-to-tr from-amber-400 to-yellow-300 border-2 border-yellow-400 rounded-[1.5rem] flex items-center justify-center shadow-lg">
-                                                    <input type="text" id="ans-21-3-2" class="border border-white/50 bg-white/90 rounded-xl text-center text-teal-700 font-black outline-none" placeholder="?" oninput="this.style.width = (Math.max(this.value.length, 4) * 12 + 20) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
+                                                    <input type="text" id="ans-21-3-2" class="border border-white/50 bg-white/90 rounded-xl text-center text-teal-700 font-black outline-none" placeholder="" oninput="this.style.width = (Math.max(this.value.length, 4) * 12 + 20) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
                                                 </div>
                                                 <svg viewBox="0 0 100 100" class="w-24 h-24 mt-8">
                                                     <path d="M 50,90 Q 30,80 30,60 Q 30,40 50,30 Q 70,40 70,60 Q 70,80 50,90 Z" fill="#475569" />
@@ -542,7 +530,7 @@ export const lesson21 = {
                                         <div class="flex flex-col items-center gap-2">
                                             <div class="relative w-32 h-32 flex items-center justify-center">
                                                 <div class="absolute top-0 w-28 h-20 bg-gradient-to-tr from-emerald-400 to-teal-300 border-2 border-emerald-400 rounded-[1.5rem] flex items-center justify-center shadow-lg">
-                                                    <input type="text" id="ans-21-3-3" class="border border-white/50 bg-white/90 rounded-xl text-center text-teal-700 font-black outline-none" placeholder="?" oninput="this.style.width = (Math.max(this.value.length, 4) * 12 + 20) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
+                                                    <input type="text" id="ans-21-3-3" class="border border-white/50 bg-white/90 rounded-xl text-center text-teal-700 font-black outline-none" placeholder="" oninput="this.style.width = (Math.max(this.value.length, 4) * 12 + 20) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
                                                 </div>
                                                 <svg viewBox="0 0 100 100" class="w-24 h-24 mt-8">
                                                     <path d="M 50,90 Q 30,80 30,60 Q 30,40 50,30 Q 70,40 70,60 Q 70,80 50,90 Z" fill="#334155" />
@@ -562,7 +550,7 @@ export const lesson21 = {
                                         <div class="flex flex-col items-center gap-2">
                                             <div class="relative w-32 h-32 flex items-center justify-center">
                                                 <div class="absolute top-0 w-28 h-20 bg-gradient-to-tr from-sky-400 to-blue-300 border-2 border-sky-400 rounded-[1.5rem] flex items-center justify-center shadow-lg">
-                                                    <input type="text" id="ans-21-3-4" class="border border-white/50 bg-white/90 rounded-xl text-center text-teal-700 font-black outline-none" placeholder="?" oninput="this.style.width = (Math.max(this.value.length, 4) * 12 + 20) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
+                                                    <input type="text" id="ans-21-3-4" class="border border-white/50 bg-white/90 rounded-xl text-center text-teal-700 font-black outline-none" placeholder="" oninput="this.style.width = (Math.max(this.value.length, 4) * 12 + 20) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; transition: width 0.1s ease;" />
                                                 </div>
                                                 <svg viewBox="0 0 100 100" class="w-24 h-24 mt-8">
                                                     <path d="M 50,90 Q 30,80 30,60 Q 30,40 50,30 Q 70,40 70,60 Q 70,80 50,90 Z" fill="#475569" />

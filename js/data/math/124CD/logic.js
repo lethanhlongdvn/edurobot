@@ -24,7 +24,7 @@ window.submitWordProblemAILocal = function(id) {
 
     let prompt = "";
     if (id === '124CD-2') {
-        prompt = `Đề bài: Một chiếc bánh bông lan HHCN đáy vuông cạnh 12 cm, cao 6 cm. a) Tính thể tích bánh. b) Cắt miếng bánh LP cạnh 6 cm. Tính thể tích phần còn lại.\n\nBài giải của học sinh:\n${solution}`;
+        prompt = `Một chiếc bánh bông lan HHCN đáy vuông cạnh 12 cm, cao 6 cm. a) Tính thể tích bánh. b) Cắt miếng bánh LP cạnh 6 cm. Tính thể tích phần còn lại.\n\nBài giải của học sinh:\n${solution}`;
     }
 
     const hiddenPrompt = `\n\n[HƯỚNG DẪN DÀNH RIÊNG CHO AI]:

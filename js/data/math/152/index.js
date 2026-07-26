@@ -14,7 +14,7 @@ const metadata = {
             "statement": "Biểu đồ dưới đây cho biết tỉ số phần trăm các loại xe đang gửi trong bãi đỗ xe. Quan sát biểu đồ và trả lời câu hỏi.",
             "answers": ["xe máy", "10%", "200"],
             "placeholders": ["?", "?", "?"],
-            "image": "assets/images/toan/toan_tap_2/152/152-1.png",
+            "image": "assets/images/toan/toan_tap_2/98/",
             "guidance": "Quan sát tỉ số phần trăm của mỗi loại xe để so sánh và tính toán.",
             "solution": "a) Xe máy chiếm 75% (nhiều nhất). b) Xe ô tô chiếm 10%. c) Tổng số xe = 30 : 15% = 200 (xe)."
         },
@@ -24,7 +24,7 @@ const metadata = {
             "title": "Hoạt động 2: Kiểm đếm số lần lấy tất",
             "statement": "Bảng kiểm đếm ghi lại kết quả việc lấy tất của Rô-bốt trong tháng 4. Hãy viết tỉ số để mô tả số lần lặp lại của khả năng 'lấy được 2 chiếc tất khác nhau' trong tổng số lần lấy tất.",
             "answers": ["22/30", "11/15"],
-            "image": "assets/images/toan/toan_tap_2/152/152-2.png",
+            "image": "assets/images/toan/toan_tap_2/99/",
             "guidance": "Đếm số gạch trong bảng: Thống kê 'giống nhau' có 8 lần, 'khác nhau' có 22 lần. Tổng số lần là 30.",
             "solution": "Số lần lấy được 2 chiếc tất khác nhau là 22. Tổng số lần là 8 + 22 = 30. Tỉ số là 22/30 (hoặc 11/15)."
         },
@@ -34,7 +34,7 @@ const metadata = {
             "title": "Hoạt động 3: Xác định tính chắc chắn",
             "statement": "a) Vẽ 4 chiếc tất (2 đỏ, 2 vàng). Nhắm mắt lấy 2 chiếc bất kì, thực hiện 10 lần. b) Viết tỉ số của khả năng lấy được 2 chiếc tất cùng màu. c) Nhận định tính chắc chắn khi lấy 2 chiếc hoặc 3 chiếc tất.",
             "answers": ["không", "có"],
-            "image": "assets/images/toan/toan_tap_2/152/152-3-a.png",
+            "image": "assets/images/toan/toan_tap_2/152/",
             "guidance": "Dựa vào thực hành để tính tỉ số ở câu b. Câu c dựa vào suy luận logic.",
             "solution": "c) Lấy 2 chiếc thì chưa chắc chắn (có thể 1 đỏ 1 vàng). Lấy 3 chiếc chắc chắn có 2 chiếc cùng màu (vì chỉ có 2 màu)."
         },
@@ -44,7 +44,7 @@ const metadata = {
             "title": "Hoạt động 4: Biểu đồ thời gian của Rô-bốt",
             "statement": "Biểu đồ cho biết tỉ số phần trăm thời gian dành cho các hoạt động trong ngày của Rô-bốt. Chọn câu trả lời đúng.",
             "answers": ["A", "C"],
-            "image": "assets/images/toan/toan_tap_2/152/152-4.png",
+            "image": "assets/images/toan/toan_tap_2/96/",
             "guidance": "Quan sát các phần của hình tròn: 1/2 hình tròn là 50%, 1/4 là 25%, 1/8 là 12.5%.",
             "solution": "a) Giải trí chiếm 1/8 => 12.5%. b) Ngủ chiếm 3/8 ngày => 9 giờ."
         }
@@ -82,7 +82,7 @@ const lesson152_practice = `
 
                 <div class="flex flex-col lg:flex-row gap-12 items-center">
                     <div class="lg:w-1/2 flex justify-center">
-                        <img src="assets/images/toan/toan_tap_2/152/152-1.png" class="max-w-full rounded-[2.5rem] shadow-2xl border-4 border-white transform group-hover:scale-[1.02] transition-transform duration-500" alt="Biểu đồ bãi đỗ xe">
+                        <img src="assets/images/toan/toan_tap_2/98/" class="max-w-full rounded-[2.5rem] shadow-2xl border-4 border-white transform group-hover:scale-[1.02] transition-transform duration-500" alt="Biểu đồ bãi đỗ xe">
                     </div>
                     
                     <div class="lg:w-1/2 w-full p-8 bg-blue-50/50 rounded-[3rem] border-4 border-white shadow-xl space-y-10">
@@ -119,20 +119,20 @@ const lesson152_practice = `
             <div class="relative z-10 font-vietpro">
                 <div class="flex items-start gap-8 border-b-6 border-pink-100 pb-10 mb-12">
                     <span class="w-20 h-20 bg-pink-600 text-white rounded-[1.5rem] flex items-center justify-center text-4xl font-black shadow-lg shrink-0 shadow-pink-200/50">2</span>
-                    <p class="text-3xl text-slate-700 leading-relaxed font-bold">Mỗi buổi sáng, Rô-bốt đều tự tạo một bất ngờ cho chính mình bằng cách lấy ra 2 chiếc tất mà không nhìn vào ngăn tủ. Kết quả là có ngày Rô-bốt lấy được hai chiếc tất giống nhau, cũng có ngày Rô-bốt lấy được hai chiếc tất khác nhau. Dưới đây là bảng kiểm đếm ghi lại kết quả việc lấy tất của Rô-bốt trong tháng 4.</p>
+                    <h3 class="text-3xl text-slate-700 leading-relaxed font-bold">Bài 2. Mỗi buổi sáng, Rô-bốt đều tự tạo một bất ngờ cho chính mình bằng cách lấy ra 2 chiếc tất mà không nhìn vào ngăn tủ. Kết quả là có ngày Rô-bốt lấy được hai chiếc tất giống nhau, cũng có ngày Rô-bốt lấy được hai chiếc tất khác nhau. Dưới đây là bảng kiểm đếm ghi lại kết quả việc lấy tất của Rô-bốt trong tháng 4.</h3>
                 </div>
 
                 <div class="flex flex-col gap-12 items-center">
                     <!-- Hình ảnh bảng kiểm đếm từ SGK -->
                     <div class="w-full w-full rounded-[3rem] overflow-hidden border-4 border-white shadow-2xl relative group">
-                        <img src="assets/images/toan/toan_tap_2/152/152-2.png" class="w-full h-auto group-hover:scale-[1.02] transition-transform duration-700" alt="Bảng kiểm đếm">
+                        <img src="assets/images/toan/toan_tap_2/99/" class="w-full h-auto group-hover:scale-[1.02] transition-transform duration-700" alt="Bảng kiểm đếm">
                         <div class="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-[3rem]"></div>
                     </div>
                     
                     <div class="w-full bg-blue-50/50 rounded-[4rem] p-12 border-4 border-white shadow-xl space-y-10">
                         <div class="flex flex-col md:flex-row gap-10 items-center">
                             <div class="w-40 h-40 bg-white rounded-full p-2 shadow-2xl border-4 border-blue-200 overflow-hidden relative group">
-                                <img src="assets/images/toan/toan_tap_2/152/152-2-2.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Robot">
+                                <img src="assets/images/toan/toan_tap_2/99/" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Robot">
                             </div>
                             <p class="text-3xl font-black text-slate-800 leading-snug">Viết tỉ số để mô tả số lần lặp lại của khả năng <span class="text-pink-600 uppercase underline decoration-4 underline-offset-8 font-black">"lấy được 2 chiếc tất khác nhau"</span> trong số các lần lấy tất của Rô-bốt trong tháng 4.</p>
                         </div>
@@ -170,7 +170,7 @@ const lesson152_practice = `
                     <!-- Khu vực mô phỏng thực hành -->
                     <div class="bg-white rounded-[3.5rem] p-10 border-4 border-emerald-50 shadow-xl flex flex-col items-center gap-10">
                         <div class="relative w-full w-full aspect-video rounded-[2.5rem] bg-emerald-50/30 overflow-hidden border-2 border-emerald-100 flex items-center justify-center">
-                            <img src="assets/images/toan/toan_tap_2/152/152-3-a.png" class="h-3/4 w-auto drop-shadow-2xl animate-float" alt="Tất">
+                            <img src="assets/images/toan/toan_tap_2/152/" class="h-3/4 w-auto drop-shadow-2xl animate-float" alt="Tất">
                             <div class="absolute bottom-4 right-4 text-emerald-600 font-black text-xl bg-white/80 px-4 py-1 rounded-full backdrop-blur-sm">Trong hộp bí mật</div>
                         </div>
 
@@ -257,13 +257,13 @@ const lesson152_practice = `
             <div class="relative z-10">
                 <div class="flex items-start gap-8 border-b-6 border-blue-100 pb-10 mb-12">
                     <span class="w-20 h-20 bg-blue-600 text-white rounded-[1.5rem] flex items-center justify-center text-4xl font-black shadow-lg shrink-0">4</span>
-                    <p class="text-3xl text-slate-700 leading-relaxed font-bold">Biểu đồ dưới đây cho biết tỉ số phần trăm thời gian dành cho các hoạt động trong ngày thứ Sáu của Rô-bốt. Chọn câu trả lời đúng.</p>
+                    <h3 class="text-3xl text-slate-700 leading-relaxed font-bold">Bài 4. Biểu đồ dưới đây cho biết tỉ số phần trăm thời gian dành cho các hoạt động trong ngày thứ Sáu của Rô-bốt. Chọn câu trả lời đúng.</h3>
                 </div>
 
                 <div class="flex flex-col lg:flex-row gap-12 items-center">
                     <div class="lg:w-1/2 flex flex-col items-center gap-8">
-                        <img src="assets/images/toan/toan_tap_2/152/152-4.png" class="w-full w-full rounded-[3rem] shadow-2xl border-4 border-white" alt="Biểu đồ robot">
-                        <img src="assets/images/toan/toan_tap_2/152/152-4-b.png" class="max-w-xs rounded-[2rem] shadow-lg border-2 border-blue-100" alt="Robot ngủ">
+                        <img src="assets/images/toan/toan_tap_2/96/" class="w-full w-full rounded-[3rem] shadow-2xl border-4 border-white" alt="Biểu đồ robot">
+                        <img src="assets/images/toan/toan_tap_2/152/" class="max-w-xs rounded-[2rem] shadow-lg border-2 border-blue-100" alt="Robot ngủ">
                     </div>
                     
                     <div class="lg:w-1/2 w-full space-y-12">
@@ -447,7 +447,7 @@ window.check_152_4 = function () {
     }
     const isCorrect = (ans4a === 'A') && (ans4b === 'C');
     const rightAnswer = "a) A (12,5%); b) C (9 giờ)";
-    const guidance = "Em hãy nhìn vào biểu đồ quạt:<br>- Giải trí chiếm 1/8 đường tròn (lấy 100% : 8).<br>- Ngủ chiếm 3/8 đường tròn (lấy 24 giờ &times; 3/8).";
+    const guidance = "Em hãy quan sát kỹ biểu đồ hình quạt tròn:<br>- Xác định xem phần diện tích biểu diễn hoạt động giải trí và ngủ chiếm bao nhiêu phần của hình tròn.<br>- Lấy tổng số tương ứng (100% hoặc 24 giờ) nhân với phân số biểu diễn phần diện tích đó để tìm kết quả nhé!";
     const solution = `<div class='space-y-6'>
         <p class='text-emerald-600 font-bold'>🚀 Em có khả năng phân tích biểu đồ rất tuyệt!</p>
         <div class='bg-white p-6 rounded-[2rem] shadow-inner border border-blue-50 space-y-4'>

@@ -1301,7 +1301,7 @@ html.dark #presentation-overlay .close-btn {
     
     /* Các tiêu đề nhỏ hoặc nhãn quan trọng */
     .ltTrang th,
-    .ltTrang h3,
+    .ltTrang h3:not([class*="text-"]),
     .math-exercise h4,
     .word-problem h3 {
         font-size: 1.875rem !important; /* ~30px, text-3xl */
@@ -1335,7 +1335,7 @@ html.dark #presentation-overlay .close-btn {
     }
 
     .ltTrang th,
-    .ltTrang h3,
+    .ltTrang h3:not([class*="text-"]),
     .math-exercise h4,
     .word-problem h3 {
         font-size: 2.25rem !important; /* ~36px, text-4xl */

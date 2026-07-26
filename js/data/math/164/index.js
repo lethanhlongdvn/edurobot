@@ -39,7 +39,7 @@ export const lesson164 = {
             <div id="lesson164_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">1</div>
-                    <h4 class="text-2xl md:text-3xl font-black text-blue-700 uppercase tracking-wide">So sánh hai hình hộp</h4>
+                    <h3 class="text-2xl md:text-3xl font-black text-blue-700 uppercase tracking-wide">Bài 1. So sánh hai hình hộp</h3>
                 </div>
                 
                 <div class="p-8 bg-blue-50 rounded-[3rem] border-4 border-blue-200">
@@ -72,7 +72,7 @@ export const lesson164 = {
             <div id="lesson164_b2" class="bg-white p-10 rounded-[3rem] shadow-2xl border-l-[12px] border-orange-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">2</div>
-                    <h4 class="text-2xl md:text-3xl font-black text-orange-700 uppercase tracking-wide">Diện tích quét vôi</h4>
+                    <h3 class="text-2xl md:text-3xl font-black text-orange-700 uppercase tracking-wide">Bài 2. Diện tích quét vôi</h3>
                 </div>
                 
                 <div class="p-8 bg-orange-50 rounded-[3rem] border-4 border-orange-200">
@@ -98,7 +98,7 @@ export const lesson164 = {
             <div id="lesson164_b3" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-green-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">3</div>
-                    <h4 class="text-2xl md:text-3xl font-black text-green-700 uppercase tracking-wide">Bài toán khối lập phương</h4>
+                    <h3 class="text-2xl md:text-3xl font-black text-green-700 uppercase tracking-wide">Bài 3. Bài toán khối lập phương</h3>
                 </div>
                 
                 <div class="p-8 bg-green-50 rounded-[3rem] border-4 border-green-200">

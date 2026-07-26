@@ -119,13 +119,13 @@ export const lesson38 = {
                             <div>
                                 <div class="flex items-center gap-4 mb-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-amber-900 font-black uppercase tracking-tighter">Ước lượng diện tích trường học</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-amber-900 font-black uppercase tracking-tighter">Bài 1. Ước lượng diện tích trường học</h3>
                                 </div>
 
                                 <div class="space-y-6 w-full mx-auto">
                                     <!-- Đề bài -->
                                     <div class="p-6 bg-amber-50 rounded-[2rem] border border-amber-100 text-lg md:text-2xl font-medium leading-relaxed">
-                                        <p class="font-bold text-amber-800">Đề bài:</p>
+                                        <p class="font-bold text-amber-800"></p>
                                         <p class="text-slate-600">
                                             Chọn số đo phù hợp. Diện tích trường học của Mai khoảng bao nhiêu?
                                         </p>
@@ -176,7 +176,7 @@ export const lesson38 = {
                                 <div class="flex items-center justify-between mb-6 flex-wrap gap-2">
                                     <div class="flex items-center gap-4">
                                         <div class="w-10 h-10 md:w-12 md:h-12 bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform rotate-2">2</div>
-                                        <h3 class="text-lg md:text-2xl lg:text-3xl text-amber-900 font-black uppercase tracking-tighter">Đổi đơn vị đo sang héc-ta</h3>
+                                        <h3 class="text-lg md:text-2xl lg:text-3xl text-amber-900 font-black uppercase tracking-tighter">Bài 2. Đổi đơn vị đo sang héc-ta</h3>
                                     </div>
                                     <!-- Thanh điều hướng Tab -->
                                     <div class="flex bg-slate-100 p-1 rounded-xl border border-slate-200 shadow-sm">
@@ -190,9 +190,9 @@ export const lesson38 = {
                                     <div class="p-6 bg-slate-50 rounded-[2rem] border border-slate-200 text-center font-black w-full mx-auto">
                                         <div class="text-amber-700 text-xl font-black border-b border-amber-100 pb-3 mb-4">a) Đổi từ mét vuông (m²)</div>
                                         <div class="flex flex-col gap-4 items-center text-lg md:text-2xl">
-                                            <div class="flex items-center gap-2 flex-nowrap">25 000 m² = <input type="text" id="ans-38-2-a1" class="w-20 h-12 border-2 border-amber-300 rounded-xl text-center font-black text-amber-700 outline-none md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> ha</div>
-                                            <div class="flex items-center gap-2 flex-nowrap">412 000 m² = <input type="text" id="ans-38-2-a2" class="w-20 h-12 border-2 border-amber-300 rounded-xl text-center font-black text-amber-700 outline-none md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> ha</div>
-                                            <div class="flex items-center gap-2 flex-nowrap">8 000 m² = <input type="text" id="ans-38-2-a3" class="w-20 h-12 border-2 border-amber-300 rounded-xl text-center font-black text-amber-700 outline-none md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> ha</div>
+                                            <div class="flex items-center gap-2 flex-nowrap">25 000 m² = <input type="text" id="ans-38-2-a1" class="w-20 h-12 border-2 border-amber-300 rounded-xl text-center font-black text-amber-700 outline-none md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> ha</div>
+                                            <div class="flex items-center gap-2 flex-nowrap">412 000 m² = <input type="text" id="ans-38-2-a2" class="w-20 h-12 border-2 border-amber-300 rounded-xl text-center font-black text-amber-700 outline-none md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> ha</div>
+                                            <div class="flex items-center gap-2 flex-nowrap">8 000 m² = <input type="text" id="ans-38-2-a3" class="w-20 h-12 border-2 border-amber-300 rounded-xl text-center font-black text-amber-700 outline-none md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> ha</div>
                                         </div>
                                     </div>
                                 </div>
@@ -202,9 +202,9 @@ export const lesson38 = {
                                     <div class="p-6 bg-slate-50 rounded-[2rem] border border-slate-200 text-center font-black w-full mx-auto">
                                         <div class="text-amber-700 text-xl font-black border-b border-amber-100 pb-3 mb-4">b) Đổi từ ki-lô-mét vuông (km²)</div>
                                         <div class="flex flex-col gap-4 items-center text-lg md:text-2xl">
-                                            <div class="flex items-center gap-2 flex-nowrap">11 km² = <input type="text" id="ans-38-2-b1" class="w-24 h-12 border-2 border-amber-300 rounded-xl text-center font-black text-amber-700 outline-none md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> ha</div>
-                                            <div class="flex items-center gap-2 flex-nowrap">7 km² = <input type="text" id="ans-38-2-b2" class="w-24 h-12 border-2 border-amber-300 rounded-xl text-center font-black text-amber-700 outline-none md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> ha</div>
-                                            <div class="flex items-center gap-2 flex-nowrap">480 km² = <input type="text" id="ans-38-2-b3" class="w-32 h-12 border-2 border-amber-300 rounded-xl text-center font-black text-amber-700 outline-none md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> ha</div>
+                                            <div class="flex items-center gap-2 flex-nowrap">11 km² = <input type="text" id="ans-38-2-b1" class="w-24 h-12 border-2 border-amber-300 rounded-xl text-center font-black text-amber-700 outline-none md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> ha</div>
+                                            <div class="flex items-center gap-2 flex-nowrap">7 km² = <input type="text" id="ans-38-2-b2" class="w-24 h-12 border-2 border-amber-300 rounded-xl text-center font-black text-amber-700 outline-none md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> ha</div>
+                                            <div class="flex items-center gap-2 flex-nowrap">480 km² = <input type="text" id="ans-38-2-b3" class="w-32 h-12 border-2 border-amber-300 rounded-xl text-center font-black text-amber-700 outline-none md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> ha</div>
                                         </div>
                                     </div>
                                 </div>
@@ -223,7 +223,7 @@ export const lesson38 = {
                                 <div class="flex items-center justify-between mb-4">
                                     <div class="flex items-center gap-4">
                                         <div class="w-10 h-10 md:w-12 md:h-12 bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">3</div>
-                                        <h3 class="text-lg md:text-2xl lg:text-3xl text-amber-900 font-black uppercase tracking-tighter">Tính diện tích khu cắm trại</h3>
+                                        <h3 class="text-lg md:text-2xl lg:text-3xl text-amber-900 font-black uppercase tracking-tighter">Bài 3. Tính diện tích khu cắm trại</h3>
                                     </div>
                                     <button onclick="window.toggleSolution('sol-38-3')" class="bg-amber-500 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full hover:bg-amber-600 active:scale-95 transition-all shadow-md">Hiện bài giải</button>
                                 </div>
@@ -231,7 +231,7 @@ export const lesson38 = {
                                 <div class="space-y-6 w-full mx-auto">
                                     <!-- Đề bài -->
                                     <div class="p-6 bg-amber-50 rounded-[2rem] border border-amber-100 text-lg md:text-2xl font-medium leading-relaxed">
-                                        <p class="font-bold text-amber-800">Đề bài:</p>
+                                        <p class="font-bold text-amber-800"></p>
                                         <p class="text-slate-600">
                                             Người ta muốn xây dựng khu vui chơi cho trẻ em kết hợp với khu cắm trại trên mảnh đất rộng <strong>2 ha</strong>. 
                                             Biết khu vui chơi cho trẻ em chiếm <span class="inline-flex flex-col items-center align-middle font-extrabold"><span>3</span><span class="border-t border-slate-700 w-2.5"></span><span>4</span></span> diện tích mảnh đất.
@@ -261,23 +261,23 @@ export const lesson38 = {
                                         
                                         <div class="space-y-4">
                                             <div>
-                                                Đổi: 2 ha = <input type="text" id="ans-38-3-1" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 140px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> m²
+                                                Đổi: 2 ha = <input type="text" id="ans-38-3-1" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 140px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> m²
                                             </div>
                                             <div class="border-t border-dashed border-slate-300 pt-4">
                                                 Diện tích khu vui chơi cho trẻ em là:
                                                 <div class="flex items-center gap-1.5 flex-nowrap mt-1">
-                                                    <span class="val-2ha text-amber-600">?</span> × 3/4 = <input type="text" id="ans-38-3-2" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 140px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> m²
+                                                    <span class="val-2ha text-amber-600">?</span> × 3/4 = <input type="text" id="ans-38-3-2" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 140px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> m²
                                                 </div>
                                             </div>
                                             <div class="border-t border-dashed border-slate-300 pt-4">
                                                 Diện tích của khu cắm trại là:
                                                 <div class="flex items-center gap-1.5 flex-nowrap mt-1">
-                                                    <span class="val-2ha text-amber-600">?</span> − <span class="val-playarea text-amber-600">?</span> = <input type="text" id="ans-38-3-3" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 140px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> m²
+                                                    <span class="val-2ha text-amber-600">?</span> − <span class="val-playarea text-amber-600">?</span> = <input type="text" id="ans-38-3-3" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 140px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> m²
                                                 </div>
                                             </div>
                                             <div class="border-t border-dashed border-slate-300 pt-4 flex items-center gap-2 flex-wrap md:flex-nowrap">
                                                 <span>Đáp số:</span>
-                                                <input type="text" id="ans-38-3-4" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 140px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-38-3-4" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 140px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <span>m²</span>
                                             </div>
                                         </div>
@@ -308,7 +308,7 @@ export const lesson38 = {
                                 <div class="flex items-center justify-between mb-4">
                                     <div class="flex items-center gap-4">
                                         <div class="w-10 h-10 md:w-12 md:h-12 bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform rotate-2">4</div>
-                                        <h3 class="text-lg md:text-2xl lg:text-3xl text-amber-900 font-black uppercase tracking-tighter">Tính diện tích đất xây nhà máy</h3>
+                                        <h3 class="text-lg md:text-2xl lg:text-3xl text-amber-900 font-black uppercase tracking-tighter">Bài 4. Tính diện tích đất xây nhà máy</h3>
                                     </div>
                                     <button onclick="window.toggleSolution('sol-38-4')" class="bg-amber-500 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full hover:bg-amber-600 active:scale-95 transition-all shadow-md">Hiện bài giải</button>
                                 </div>
@@ -316,7 +316,7 @@ export const lesson38 = {
                                 <div class="space-y-6 w-full mx-auto">
                                     <!-- Đề bài -->
                                     <div class="p-6 bg-amber-50 rounded-[2rem] border border-amber-100 text-lg md:text-2xl font-medium leading-relaxed">
-                                        <p class="font-bold text-amber-800">Đề bài:</p>
+                                        <p class="font-bold text-amber-800"></p>
                                         <p class="text-slate-600">
                                             Một mảnh đất hình chữ nhật được chia thành các phần như hình vẽ. 
                                             Biết phần đất màu vàng xây nhà máy. 
@@ -368,36 +368,36 @@ export const lesson38 = {
                                             <div>
                                                 <span class="text-emerald-700 pl-1 border-l-4 border-emerald-500">1. Chiều dài phần đất xây nhà máy:</span>
                                                 <div class="flex items-center gap-1.5 flex-nowrap mt-1">
-                                                    Đếm số ô ngang = <input type="text" id="ans-38-4-1" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 80px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> ô
+                                                    Đếm số ô ngang = <input type="text" id="ans-38-4-1" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 80px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> ô
                                                 </div>
                                                 <div class="flex items-center gap-1.5 flex-nowrap mt-1">
-                                                    Chiều dài thực tế: 30 × <span class="val-38-4-count-long text-amber-600">?</span> = <input type="text" id="ans-38-4-2" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 100px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> m
+                                                    Chiều dài thực tế: 30 × <span class="val-38-4-count-long text-amber-600">?</span> = <input type="text" id="ans-38-4-2" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 100px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> m
                                                 </div>
                                             </div>
 
                                             <div class="border-t border-dashed border-slate-200 pt-4">
                                                 <span class="text-emerald-700 pl-1 border-l-4 border-emerald-500">2. Chiều rộng phần đất xây nhà máy:</span>
                                                 <div class="flex items-center gap-1.5 flex-nowrap mt-1">
-                                                    Đếm số ô dọc = <input type="text" id="ans-38-4-3" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 80px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> ô
+                                                    Đếm số ô dọc = <input type="text" id="ans-38-4-3" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 80px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> ô
                                                 </div>
                                                 <div class="flex items-center gap-1.5 flex-nowrap mt-1">
-                                                    Chiều rộng thực tế: 30 × <span class="val-38-4-count-short text-amber-600">?</span> = <input type="text" id="ans-38-4-4" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 100px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> m
+                                                    Chiều rộng thực tế: 30 × <span class="val-38-4-count-short text-amber-600">?</span> = <input type="text" id="ans-38-4-4" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 100px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> m
                                                 </div>
                                             </div>
 
                                             <div class="border-t border-dashed border-slate-200 pt-4">
                                                 <span class="text-emerald-700 pl-1 border-l-4 border-emerald-500">3. Tính diện tích xây nhà máy:</span>
                                                 <div class="flex items-center gap-1.5 flex-nowrap mt-1">
-                                                    <span class="val-38-4-length text-amber-600">?</span> × <span class="val-38-4-width text-amber-600">?</span> = <input type="text" id="ans-38-4-5" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 140px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> m²
+                                                    <span class="val-38-4-length text-amber-600">?</span> × <span class="val-38-4-width text-amber-600">?</span> = <input type="text" id="ans-38-4-5" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 140px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> m²
                                                 </div>
                                                 <div class="flex items-center gap-1.5 flex-nowrap mt-1">
-                                                    Đổi sang héc-ta: <span class="val-38-4-area-m text-amber-600">?</span> m² = <input type="text" id="ans-38-4-6" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 120px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> ha
+                                                    Đổi sang héc-ta: <span class="val-38-4-area-m text-amber-600">?</span> m² = <input type="text" id="ans-38-4-6" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 120px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> ha
                                                 </div>
                                             </div>
                                             
                                             <div class="border-t border-dashed border-slate-200 pt-4 flex items-center gap-2 flex-wrap md:flex-nowrap">
                                                 <span>Đáp số:</span>
-                                                <input type="text" id="ans-38-4-7" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 120px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-38-4-7" class="h-12 border-2 border-amber-300 rounded-xl text-center text-amber-700 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 120px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <span>ha</span>
                                             </div>
                                         </div>

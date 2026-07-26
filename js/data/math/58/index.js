@@ -66,19 +66,7 @@ export const lesson58 = {
                     <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
                         <div class="space-y-6">
                             <!-- Banner chính -->
-                            <div class="p-8 rounded-[2.5rem] bg-gradient-to-br from-blue-700 to-sky-600 shadow-2xl relative overflow-hidden text-white">
-                                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-                                <div class="absolute bottom-0 left-0 w-48 h-48 bg-sky-500/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-                                <div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-                                    <div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30 shrink-0 text-4xl md:text-5xl">
-                                        📐
-                                    </div>
-                                    <div class="text-center md:text-left">
-                                        <h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight animate-pulse-subtle">BÀI 25: DIỆN TÍCH HÌNH TAM GIÁC</h2>
-                                        <p class="text-sky-100 text-lg md:text-2xl font-medium opacity-90">Học cách tính diện tích hình tam giác bằng phương pháp cắt ghép cực kỳ dễ hiểu!</p>
-                                    </div>
-                                </div>
-                            </div>
+                            
 
                             <!-- Khám phá hội thoại -->
                             <div class="p-6 rounded-[2.5rem] bg-slate-50 border-2 border-dashed border-blue-300 relative overflow-hidden">
@@ -221,7 +209,7 @@ export const lesson58 = {
                             
                             <div class="flex items-center gap-4 border-b border-slate-100 pb-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                <h3 class="text-xl md:text-3xl font-black text-blue-900">Tính diện tích của hình tam giác, biết:</h3>
+                                <h3 class="text-xl md:text-3xl font-black text-blue-900">Bài 1. Tính diện tích của hình tam giác, biết:</h3>
                             </div>
 
                             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -231,7 +219,7 @@ export const lesson58 = {
                                     <div class="bg-white p-4 rounded-2xl border border-slate-150 shadow-sm flex flex-col justify-center items-center py-6">
                                         <div class="flex items-center gap-3 text-lg md:text-2xl font-bold text-slate-800 flex-nowrap whitespace-nowrap overflow-x-auto">
                                             <span>Diện tích tam giác là: </span>
-                                            <input type="text" id="ans-58-1-a" class="w-16 h-12 text-center rounded-xl font-bold border-2 border-blue-200 focus:border-blue-500 focus:outline-none bg-blue-50/50 focus:bg-white text-blue-700" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 48px !important;" placeholder="?">
+                                            <input type="text" id="ans-58-1-a" class="w-16 h-12 text-center rounded-xl font-bold border-2 border-blue-200 focus:border-blue-500 focus:outline-none bg-blue-50/50 focus:bg-white text-blue-700" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 48px !important;" placeholder="">
                                             <span>cm²</span>
                                         </div>
                                     </div>
@@ -243,7 +231,7 @@ export const lesson58 = {
                                     <div class="bg-white p-4 rounded-2xl border border-slate-150 shadow-sm flex flex-col justify-center items-center py-6">
                                         <div class="flex items-center gap-3 text-lg md:text-2xl font-bold text-slate-800 flex-nowrap whitespace-nowrap overflow-x-auto">
                                             <span>Diện tích tam giác là: </span>
-                                            <input type="text" id="ans-58-1-b" class="w-16 h-12 text-center rounded-xl font-bold border-2 border-blue-200 focus:border-blue-500 focus:outline-none bg-blue-50/50 focus:bg-white text-blue-700" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 48px !important;" placeholder="?">
+                                            <input type="text" id="ans-58-1-b" class="w-16 h-12 text-center rounded-xl font-bold border-2 border-blue-200 focus:border-blue-500 focus:outline-none bg-blue-50/50 focus:bg-white text-blue-700" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 48px !important;" placeholder="">
                                             <span>dm²</span>
                                         </div>
                                     </div>
@@ -277,7 +265,7 @@ export const lesson58 = {
                             
                             <div class="flex items-center gap-4 border-b border-slate-100 pb-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                                <h3 class="text-xl md:text-3xl font-black text-blue-900">Chọn câu trả lời đúng</h3>
+                                <h3 class="text-xl md:text-3xl font-black text-blue-900">Bài 2. Chọn câu trả lời đúng</h3>
                             </div>
 
                             <div class="bg-blue-50/30 p-6 rounded-3xl border border-blue-100 space-y-4">
@@ -331,7 +319,7 @@ export const lesson58 = {
                             
                             <div class="flex items-center gap-4 border-b border-slate-100 pb-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">3</div>
-                                <h3 class="text-xl md:text-3xl font-black text-blue-900">Tính diện tích tấm kính có dạng hình tam giác vuông</h3>
+                                <h3 class="text-xl md:text-3xl font-black text-blue-900">Bài 3. Tính diện tích tấm kính có dạng hình tam giác vuông</h3>
                             </div>
 
                             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
@@ -349,7 +337,7 @@ export const lesson58 = {
                                     <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-center items-center py-6 mt-4">
                                         <div class="flex items-center gap-3 text-lg md:text-2xl font-bold text-slate-800 flex-nowrap whitespace-nowrap overflow-x-auto">
                                             <span>Diện tích tấm kính là: </span>
-                                            <input type="text" id="ans-58-3" class="w-20 h-12 text-center rounded-xl font-bold border-2 border-blue-200 focus:border-blue-500 focus:outline-none bg-blue-50/50 focus:bg-white text-blue-700" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 48px !important;" placeholder="?">
+                                            <input type="text" id="ans-58-3" class="w-20 h-12 text-center rounded-xl font-bold border-2 border-blue-200 focus:border-blue-500 focus:outline-none bg-blue-50/50 focus:bg-white text-blue-700" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 48px !important;" placeholder="">
                                             <span>m²</span>
                                         </div>
                                     </div>

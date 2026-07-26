@@ -4542,391 +4542,7 @@ export const lesson3 = {
 
 
 
-            <div class="glass-card p-6 md:p-10 rounded-[3rem] bg-gradient-to-br from-blue-600 to-blue-700 shadow-2xl relative overflow-hidden text-white">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="absolute bottom-0 left-0 w-48 h-48 bg-blue-400/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30 animate-pulse">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="text-5xl md:text-7xl">🧮</span>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="text-center md:text-left">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h2 class="text-3xl md:text-5xl font-black mb-2 tracking-tight">ÔN TẬP CÁC PHÉP TÍNH</h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p class="text-blue-100 text-lg md:text-2xl font-medium opacity-90">Tiết 1: Với số tự nhiên</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
+            
 
 
 
@@ -6142,423 +5758,7 @@ export const lesson3 = {
 
 
 
-                <div class="mt-8 p-8 rounded-[2.5rem] bg-gradient-to-r from-orange-400 to-pink-500 text-white shadow-lg relative overflow-hidden group">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                     <div class="absolute right-0 top-0 p-4 opacity-20 transform group-hover:scale-125 transition-transform">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        <i class="fas fa-star text-6xl"></i>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                     <h4 class="text-3xl md:text-5xl font-black mb-6">💡 Công thức Tổng - Hiệu</h4>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                     <div class="flex flex-col lg:flex-row gap-6 items-center justify-around font-black text-2xl md:text-4xl">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        <div class="bg-white/20 p-6 rounded-3xl backdrop-blur-sm border border-white/30 w-full text-center">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            Số lớn = (Tổng + Hiệu) : 2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        <div class="bg-white/20 p-6 rounded-3xl backdrop-blur-sm border border-white/30 w-full text-center">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            Số bé = (Tổng - Hiệu) : 2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
+                
 
 
 
@@ -6926,55 +6126,10 @@ export const lesson3 = {
 
 
 
-                        <div class="flex items-center gap-4 mb-6">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <div class="w-10 h-10 md:w-14 md:h-14 bg-emerald-600 text-white rounded-2xl flex items-center justify-center font-black text-xl md:text-3xl shadow-lg transform rotate-3">1</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <h3 class="text-lg md:text-3xl text-emerald-900 font-black uppercase tracking-tighter">Tính</h3>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        </div>
+                        <div class="flex items-center gap-3 mb-6">
+                                <div class="w-12 h-12 bg-emerald-600 text-white rounded-xl flex items-center justify-center text-xl shadow-lg">1</div>
+                                <h3 class="text-emerald-900 uppercase tracking-tighter text-xl font-black">Bài 1. Tính</h3>
+                            </div>
 
 
 
@@ -7150,7 +6305,7 @@ export const lesson3 = {
 
 
 
-                                        <input type="text" id="ans-3-1-1" class="w-24 md:w-32 h-10 md:h-12 border-2 border-blue-200 focus:border-blue-500 rounded-xl text-center font-black text-lg md:text-2xl text-blue-700 outline-none transition-all" style="padding: 0px !important;" placeholder="?">
+                                        <input type="text" id="ans-3-1-1" class="w-24 md:w-32 h-10 md:h-12 border-2 border-blue-200 focus:border-blue-500 rounded-xl text-center font-black text-lg md:text-2xl text-blue-700 outline-none transition-all" style="padding: 0px !important;" placeholder="">
 
 
 
@@ -7294,7 +6449,7 @@ export const lesson3 = {
 
 
 
-                                        <input type="text" id="ans-3-1-2" class="w-24 md:w-32 h-10 md:h-12 border-2 border-blue-200 focus:border-blue-500 rounded-xl text-center font-black text-lg md:text-2xl text-blue-700 outline-none transition-all" style="padding: 0px !important;" placeholder="?">
+                                        <input type="text" id="ans-3-1-2" class="w-24 md:w-32 h-10 md:h-12 border-2 border-blue-200 focus:border-blue-500 rounded-xl text-center font-black text-lg md:text-2xl text-blue-700 outline-none transition-all" style="padding: 0px !important;" placeholder="">
 
 
 
@@ -7438,7 +6593,7 @@ export const lesson3 = {
 
 
 
-                                        <input type="text" id="ans-3-1-3" class="w-24 md:w-32 h-10 md:h-12 border-2 border-blue-200 focus:border-blue-500 rounded-xl text-center font-black text-lg md:text-2xl text-blue-700 outline-none transition-all" style="padding: 0px !important;" placeholder="?">
+                                        <input type="text" id="ans-3-1-3" class="w-24 md:w-32 h-10 md:h-12 border-2 border-blue-200 focus:border-blue-500 rounded-xl text-center font-black text-lg md:text-2xl text-blue-700 outline-none transition-all" style="padding: 0px !important;" placeholder="">
 
 
 
@@ -7662,7 +6817,7 @@ export const lesson3 = {
 
 
 
-                                        <input type="text" id="ans-3-1-4" class="w-24 md:w-32 h-10 md:h-12 border-2 border-emerald-200 focus:border-emerald-500 rounded-xl text-center font-black text-lg md:text-2xl text-emerald-700 outline-none transition-all" style="padding: 0px !important;" placeholder="?">
+                                        <input type="text" id="ans-3-1-4" class="w-24 md:w-32 h-10 md:h-12 border-2 border-emerald-200 focus:border-emerald-500 rounded-xl text-center font-black text-lg md:text-2xl text-emerald-700 outline-none transition-all" style="padding: 0px !important;" placeholder="">
 
 
 
@@ -7806,7 +6961,7 @@ export const lesson3 = {
 
 
 
-                                        <input type="text" id="ans-3-1-5" class="w-24 md:w-32 h-10 md:h-12 border-2 border-emerald-200 focus:border-emerald-500 rounded-xl text-center font-black text-lg md:text-2xl text-emerald-700 outline-none transition-all" style="padding: 0px !important;" placeholder="?">
+                                        <input type="text" id="ans-3-1-5" class="w-24 md:w-32 h-10 md:h-12 border-2 border-emerald-200 focus:border-emerald-500 rounded-xl text-center font-black text-lg md:text-2xl text-emerald-700 outline-none transition-all" style="padding: 0px !important;" placeholder="">
 
 
 
@@ -7950,7 +7105,7 @@ export const lesson3 = {
 
 
 
-                                        <input type="text" id="ans-3-1-6" class="w-24 md:w-32 h-10 md:h-12 border-2 border-emerald-200 focus:border-emerald-500 rounded-xl text-center font-black text-lg md:text-2xl text-emerald-700 outline-none transition-all" style="padding: 0px !important;" placeholder="?">
+                                        <input type="text" id="ans-3-1-6" class="w-24 md:w-32 h-10 md:h-12 border-2 border-emerald-200 focus:border-emerald-500 rounded-xl text-center font-black text-lg md:text-2xl text-emerald-700 outline-none transition-all" style="padding: 0px !important;" placeholder="">
 
 
 
@@ -8088,13 +7243,10 @@ export const lesson3 = {
 
                         
 
-                        <div class="flex items-center gap-4 mb-6">
-
-                            <div class="w-10 h-10 md:w-14 md:h-14 bg-red-600 text-white rounded-2xl flex items-center justify-center font-black text-xl md:text-3xl shadow-lg transform rotate-2">2</div>
-
-                            <h3 class="text-lg md:text-3xl text-red-900 font-black uppercase tracking-tighter">Nối biểu thức bằng nhau</h3>
-
-                        </div>
+                        <div class="flex items-center gap-3 mb-6">
+                                <div class="w-12 h-12 bg-red-600 text-white rounded-xl flex items-center justify-center text-xl shadow-lg">2</div>
+                                <h3 class="text-red-900 uppercase tracking-tighter text-xl font-black">Bài 2. Nối biểu thức bằng nhau</h3>
+                            </div>
 
 
 
@@ -8228,103 +7380,10 @@ export const lesson3 = {
 
 
 
-                        <div class="flex items-center gap-4 mb-4">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <div class="w-10 h-10 md:w-12 md:h-12 bg-pink-500 text-white rounded-2xl flex items-center justify-center text-lg md:text-2xl font-black shadow-lg transform rotate-6">3</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <h3 class="text-base md:text-2xl font-black text-slate-800 uppercase">Giải bài toán</h3>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        </div>
+                        <div class="flex items-center gap-3 mb-6">
+                                <div class="w-12 h-12 bg-pink-500 text-white rounded-xl flex items-center justify-center text-xl shadow-lg">3</div>
+                                <h3 class="text-slate-800 uppercase text-xl font-black">Bài 3. Giải bài toán</h3>
+                            </div>
 
 
 
@@ -8676,7 +7735,7 @@ export const lesson3 = {
 
 
 
-                                        <input type="number" id="ans-3-3-1" class="w-36 p-2 rounded-xl border-2 border-pink-200 text-3xl md:text-4xl font-black text-pink-600 outline-none text-center" placeholder="?">
+                                        <input type="number" id="ans-3-3-1" class="w-36 p-2 rounded-xl border-2 border-pink-200 text-3xl md:text-4xl font-black text-pink-600 outline-none text-center" placeholder="">
 
 
 
@@ -8900,7 +7959,7 @@ export const lesson3 = {
 
 
 
-                                        <input type="number" id="ans-3-3-2" class="w-36 p-2 rounded-xl border-2 border-slate-200 text-3xl md:text-4xl font-black text-slate-600 outline-none text-center" placeholder="?">
+                                        <input type="number" id="ans-3-3-2" class="w-36 p-2 rounded-xl border-2 border-slate-200 text-3xl md:text-4xl font-black text-slate-600 outline-none text-center" placeholder="">
 
 
 
@@ -10980,7 +10039,7 @@ export const lesson3 = {
 
 
 
-                            <input type="text" id="ans-3-4" class="w-32 md:w-40 p-2 rounded-xl border-2 border-cyan-300 text-3xl md:text-4xl font-black text-cyan-700 text-center outline-none focus:border-cyan-500" placeholder="?">
+                            <input type="text" id="ans-3-4" class="w-32 md:w-40 p-2 rounded-xl border-2 border-cyan-300 text-3xl md:text-4xl font-black text-cyan-700 text-center outline-none focus:border-cyan-500" placeholder="">
 
 
 

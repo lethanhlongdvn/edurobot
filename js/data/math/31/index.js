@@ -62,19 +62,7 @@ export const lesson31 = {
     ...metadata.lessonInfo,
     "content": `
         <div class="theory-section space-y-6 animate-in fade-in slide-in-from-bottom-10 duration-1000 pt-6">
-            <div class="p-8 rounded-[2.5rem] bg-gradient-to-br from-blue-700 to-blue-900 shadow-2xl relative overflow-hidden text-white">
-<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-<div class="absolute bottom-0 left-0 w-48 h-48 bg-blue-500/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-<div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-<div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30">
-<span class="text-5xl md:text-7xl">🎲</span>
-</div>
-<div class="text-center md:text-left">
-<h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">LUYỆN TẬP CHUNG</h2>
-<p class="text-blue-100 text-lg md:text-2xl font-medium opacity-90">Củng cố kiến thức so sánh số thập phân, sắp xếp theo thứ tự và vui chơi cùng bàn cờ Cầu thang - Cầu trượt!</p>
-</div>
-</div>
-</div>
+            
 <div class="p-8 rounded-[2.5rem] bg-white border-2 border-blue-700 relative overflow-hidden shadow-none">
 <div class="flex items-center gap-4 mb-6">
 <div class="w-12 h-12 bg-blue-700 rounded-2xl flex items-center justify-center text-white text-xl md:text-3xl shadow-lg">
@@ -152,7 +140,7 @@ export const lesson31 = {
                             <div class="flex items-center justify-between mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Sắp xếp các số thập phân</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 1. Sắp xếp các số thập phân</h3>
                                 </div>
                                 <div class="flex gap-2">
                                     <button onclick="window.resetDragDrop()" class="bg-red-500 text-white text-base font-bold px-4 py-2 rounded-2xl hover:bg-red-600 transition-all">Làm lại</button>
@@ -236,7 +224,7 @@ export const lesson31 = {
                             <div class="flex items-center justify-between mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Chọn xe tải chở nhẹ nhất</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 2. Chọn xe tải chở nhẹ nhất</h3>
                                 </div>
                                 <button id="btn-toggle-31-2" onclick="window.toggle_31_2_sol()" class="bg-amber-500 text-white text-lg font-bold px-4 py-2 rounded-2xl hover:bg-amber-600 transition-all">Hiện bài giải</button>
                             </div>
@@ -301,7 +289,7 @@ export const lesson31 = {
                             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">3</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Trò chơi: Cầu thang - Cầu trượt</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 3. Trò chơi: Cầu thang - Cầu trượt</h3>
                                 </div>
                                 <div class="flex items-center gap-3">
                                     <button onclick="window.resetGame()" class="bg-red-500 text-white text-base font-bold px-4 py-2 rounded-2xl hover:bg-red-600 transition-all">Chơi lại từ đầu</button>

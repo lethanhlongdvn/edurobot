@@ -65,19 +65,7 @@ export const lesson22 = {
     ...metadata.lessonInfo,
     "content": `
         <div class="theory-section space-y-6 animate-in fade-in slide-in-from-bottom-10 duration-1000 pt-6">
-            <div class="p-8 rounded-[2.5rem] bg-gradient-to-br from-blue-700 to-blue-900 shadow-2xl relative overflow-hidden text-white">
-<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-<div class="absolute bottom-0 left-0 w-48 h-48 bg-blue-500/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-<div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-<div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30">
-<span class="text-5xl md:text-7xl">🐇</span>
-</div>
-<div class="text-center md:text-left">
-<h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">LUYỆN TẬP VỀ SỐ THẬP PHÂN</h2>
-<p class="text-blue-100 text-lg md:text-2xl font-medium opacity-90">Củng cố cách đọc, viết, chuyển đổi phân số và lập số thập phân qua các hoạt động tương tác sinh động!</p>
-</div>
-</div>
-</div>
+            
 <div class="p-8 rounded-[2.5rem] bg-white border-2 border-blue-700 relative overflow-hidden shadow-none">
 <div class="flex items-center gap-4 mb-6">
 <div class="w-12 h-12 bg-blue-700 rounded-2xl flex items-center justify-center text-white text-xl md:text-3xl shadow-lg">
@@ -109,7 +97,7 @@ export const lesson22 = {
                         <div class="p-6 rounded-[2.5rem] bg-white shadow-none border-none relative overflow-hidden space-y-4">
                             <div class="flex items-center gap-4 mb-2">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Chọn số thập phân thích hợp với cách đọc</h3>
+                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 1. Chọn số thập phân thích hợp với cách đọc</h3>
                             </div>
 
                             <p class="text-xl md:text-2xl font-bold text-blue-900 mb-4 italic text-center">Nhấn chọn một ô chữ bên trái, rồi chọn củ cà rốt bên phải tương ứng để nối.</p>
@@ -146,7 +134,7 @@ export const lesson22 = {
                         <div class="p-6 rounded-[2.5rem] bg-white shadow-none border-none relative overflow-hidden space-y-4">
                             <div class="flex items-center gap-4 mb-2">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Điền số thích hợp</h3>
+                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 2. Điền số thích hợp</h3>
                             </div>
 
                             <div class="space-y-6">
@@ -170,7 +158,7 @@ export const lesson22 = {
                                                 <td class="p-4">
                                                     <div class="inline-flex items-center gap-2">
                                                         <div class="flex flex-col items-center">
-                                                            <input id="ans-22-2-1" type="text" class="w-20 h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="?">
+                                                            <input id="ans-22-2-1" type="text" class="w-20 h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="">
                                                             <div class="w-16 h-0.5 bg-blue-900 my-0.5"></div>
                                                             <span>100</span>
                                                         </div>
@@ -188,7 +176,7 @@ export const lesson22 = {
                                                 <td class="p-4">
                                                     <div class="inline-flex items-center gap-2">
                                                         <div class="flex flex-col items-center">
-                                                            <input id="ans-22-2-2" type="text" class="w-20 h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="?">
+                                                            <input id="ans-22-2-2" type="text" class="w-20 h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="">
                                                             <div class="w-16 h-0.5 bg-blue-900 my-0.5"></div>
                                                             <span>100</span>
                                                         </div>
@@ -208,7 +196,7 @@ export const lesson22 = {
                                                         <div class="flex flex-col items-center">
                                                             <span>32</span>
                                                             <div class="w-20 h-0.5 bg-blue-900 my-0.5"></div>
-                                                            <input id="ans-22-2-3" type="text" class="w-24 h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="?">
+                                                            <input id="ans-22-2-3" type="text" class="w-24 h-12 border-2 border-blue-700 rounded-xl text-center font-black text-blue-800 md:text-3xl" placeholder="">
                                                         </div>
                                                     </div>
                                                 </td>
@@ -230,7 +218,7 @@ export const lesson22 = {
                             <div class="flex items-center justify-between mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">3</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Chuyển phân số thập phân thành số thập phân và đọc</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 3. Chuyển phân số thập phân thành số thập phân và đọc</h3>
                                 </div>
                                 <button id="btn-toggle-22-3" onclick="window.toggle_22_3_sol()" class="bg-amber-500 text-white text-lg font-bold px-4 py-2 rounded-2xl hover:bg-amber-600 transition-all">Hiện bài giải</button>
                             </div>
@@ -253,7 +241,7 @@ export const lesson22 = {
                                             <span>10</span>
                                         </div>
                                         <span class="text-2xl md:text-3xl">=</span>
-                                        <input id="ans-22-3-1-dec" type="text" class="border-2 border-blue-700 rounded-xl text-center font-black text-blue-800" placeholder="?" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; outline: none; transition: width 0.1s ease;" />
+                                        <input id="ans-22-3-1-dec" type="text" class="border-2 border-blue-700 rounded-xl text-center font-black text-blue-800" placeholder="" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; outline: none; transition: width 0.1s ease;" />
                                     </div>
                                     <div class="flex items-center gap-2">
                                         <span class="text-lg font-bold text-slate-600">Đọc là:</span>
@@ -270,7 +258,7 @@ export const lesson22 = {
                                             <span>100</span>
                                         </div>
                                         <span class="text-2xl md:text-3xl">=</span>
-                                        <input id="ans-22-3-2-dec" type="text" class="border-2 border-blue-700 rounded-xl text-center font-black text-blue-800" placeholder="?" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; outline: none; transition: width 0.1s ease;" />
+                                        <input id="ans-22-3-2-dec" type="text" class="border-2 border-blue-700 rounded-xl text-center font-black text-blue-800" placeholder="" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; outline: none; transition: width 0.1s ease;" />
                                     </div>
                                     <div class="flex items-center gap-2">
                                         <span class="text-lg font-bold text-slate-600">Đọc là:</span>
@@ -287,7 +275,7 @@ export const lesson22 = {
                                             <span>1000</span>
                                         </div>
                                         <span class="text-2xl md:text-3xl">=</span>
-                                        <input id="ans-22-3-3-dec" type="text" class="border-2 border-blue-700 rounded-xl text-center font-black text-blue-800" placeholder="?" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; outline: none; transition: width 0.1s ease;" />
+                                        <input id="ans-22-3-3-dec" type="text" class="border-2 border-blue-700 rounded-xl text-center font-black text-blue-800" placeholder="" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; outline: none; transition: width 0.1s ease;" />
                                     </div>
                                     <div class="flex items-center gap-2">
                                         <span class="text-lg font-bold text-slate-600">Đọc là:</span>
@@ -307,7 +295,7 @@ export const lesson22 = {
                         <div class="p-4 md:p-6 rounded-[2.5rem] bg-white shadow-none border-none relative space-y-3">
                             <div class="flex items-center gap-4 mb-1">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">4</div>
-                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Lập số thập phân từ bốn thẻ</h3>
+                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 4. Lập số thập phân từ bốn thẻ</h3>
                             </div>
 
                             <div class="space-y-4">

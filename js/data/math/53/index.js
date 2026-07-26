@@ -78,19 +78,7 @@ export const lesson53 = {
                     <!-- Slide 1: Ôn tập quy tắc cộng, trừ, nhân, chia thập phân -->
                     <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
                         <div class="space-y-6">
-                            <div class="p-8 rounded-[2.5rem] bg-gradient-to-br from-blue-700 to-sky-600 shadow-2xl relative overflow-hidden text-white font-sans">
-                                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-                                <div class="absolute bottom-0 left-0 w-48 h-48 bg-sky-500/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-                                <div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-                                    <div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30">
-                                        <span class="text-5xl md:text-7xl">🧮</span>
-                                    </div>
-                                    <div class="text-center md:text-left">
-                                        <h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">LUYỆN TẬP CHUNG</h2>
-                                        <p class="text-sky-100 text-lg md:text-2xl font-medium opacity-90">Tổng ôn tập các phép tính cộng, trừ, nhân, chia số thập phân và tính chất của phép toán!</p>
-                                    </div>
-                                </div>
-                            </div>
+                            
 
                             <div class="p-8 rounded-[2.5rem] bg-white border-2 border-blue-700 relative overflow-hidden shadow-none">
                                 <div class="flex items-center gap-4 mb-6">
@@ -152,7 +140,7 @@ export const lesson53 = {
                         <div class="p-6 rounded-[2.5rem] bg-white shadow-none border-none relative overflow-hidden space-y-6 w-full">
                             <div class="flex items-center gap-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 1: Đặt tính rồi tính</h3>
+                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 1. Đặt tính rồi tính</h3>
                             </div>
 
                             <div class="flex flex-col gap-8 w-full">
@@ -174,11 +162,11 @@ export const lesson53 = {
                                         <span></span>
                                         <span class="border-b-4 border-slate-850 w-full col-span-6 my-1"></span>
                                         <span></span>
-                                        <input type="text" id="ans-53-1-a1" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-53-1-a2" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-53-1-a1" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-53-1-a2" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                         <span>,</span>
-                                        <input type="text" id="ans-53-1-a3" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-53-1-a4" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-53-1-a3" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-53-1-a4" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                     </div>
                                 </div>
 
@@ -200,11 +188,11 @@ export const lesson53 = {
                                         <span>1</span>
                                         <span class="border-b-4 border-slate-850 w-full col-span-6 my-1"></span>
                                         <span></span>
-                                        <input type="text" id="ans-53-1-b1" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-53-1-b2" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-53-1-b1" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-53-1-b2" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                         <span>,</span>
-                                        <input type="text" id="ans-53-1-b3" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-53-1-b4" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-53-1-b3" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-53-1-b4" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                     </div>
                                 </div>
 
@@ -232,15 +220,15 @@ export const lesson53 = {
                                         <!-- Tích riêng thứ nhất (365) -->
                                         <span></span>
                                         <span></span>
-                                        <input type="text" id="ans-53-1-c1" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-53-1-c2" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-53-1-c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-53-1-c1" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-53-1-c2" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-53-1-c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
 
                                         <!-- Tích riêng thứ hai (438 - lùi 1 cột) -->
                                         <span></span>
-                                        <input type="text" id="ans-53-1-c4" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-53-1-c5" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                        <input type="text" id="ans-53-1-c6" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input type="text" id="ans-53-1-c4" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-53-1-c5" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                        <input type="text" id="ans-53-1-c6" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                         <span></span>
 
                                         <!-- Đường gạch ngang tích riêng -->
@@ -248,12 +236,12 @@ export const lesson53 = {
 
                                         <!-- Tích chung (4,745) -->
                                         <div class="flex items-center" style="grid-column: 2;">
-                                            <input type="text" id="ans-53-1-c7" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                            <input type="text" id="ans-53-1-c7" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                             <span class="text-sm font-black">,</span>
                                         </div>
-                                        <input type="text" id="ans-53-1-c8" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-column: 3;" placeholder="?">
-                                        <input type="text" id="ans-53-1-c9" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-column: 4;" placeholder="?">
-                                        <input type="text" id="ans-53-1-c10" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-column: 5;" placeholder="?">
+                                        <input type="text" id="ans-53-1-c8" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-column: 3;" placeholder="">
+                                        <input type="text" id="ans-53-1-c9" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-column: 4;" placeholder="">
+                                        <input type="text" id="ans-53-1-c10" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-column: 5;" placeholder="">
                                     </div>
                                 </div>
 
@@ -278,29 +266,29 @@ export const lesson53 = {
                                         <span style="grid-row: 1; grid-column: 10;" class="border-b-4 border-slate-850 w-full text-center font-black">5</span>
 
                                         <!-- Row 2: Số dư 1 + Hạ 8 | Thương nằm trên 1 hàng duy nhất -->
-                                        <input type="text" id="ans-53-1-d1" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 2; grid-column: 2;" placeholder="?">
-                                        <input type="text" id="ans-53-1-d2" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 2; grid-column: 3;" placeholder="?">
+                                        <input type="text" id="ans-53-1-d1" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 2; grid-column: 2;" placeholder="">
+                                        <input type="text" id="ans-53-1-d2" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 2; grid-column: 3;" placeholder="">
                                         <span style="grid-row: 2; grid-column: 4;">8</span>
                                         
                                         <!-- Thương: 12,34 tất cả đều ở grid-row: 2 -->
-                                        <input type="text" id="ans-53-1-d3" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 2; grid-column: 9;" placeholder="?">
-                                        <input type="text" id="ans-53-1-d4" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 2; grid-column: 10;" placeholder="?">
+                                        <input type="text" id="ans-53-1-d3" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 2; grid-column: 9;" placeholder="">
+                                        <input type="text" id="ans-53-1-d4" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 2; grid-column: 10;" placeholder="">
                                         <span style="grid-row: 2; grid-column: 11;" class="font-black">,</span>
-                                        <input type="text" id="ans-53-1-d5" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 2; grid-column: 12;" placeholder="?">
-                                        <input type="text" id="ans-53-1-d8" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 2; grid-column: 13;" placeholder="?">
+                                        <input type="text" id="ans-53-1-d5" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 2; grid-column: 12;" placeholder="">
+                                        <input type="text" id="ans-53-1-d8" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 2; grid-column: 13;" placeholder="">
 
                                         <!-- Row 3: Số dư 2 + Hạ 9 -->
-                                        <input type="text" id="ans-53-1-d6" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 3; grid-column: 3;" placeholder="?">
-                                        <input type="text" id="ans-53-1-d7" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 3; grid-column: 4;" placeholder="?">
+                                        <input type="text" id="ans-53-1-d6" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 3; grid-column: 3;" placeholder="">
+                                        <input type="text" id="ans-53-1-d7" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 3; grid-column: 4;" placeholder="">
                                         <span style="grid-row: 3; grid-column: 6;">9</span>
 
                                         <!-- Row 4: Số dư 3 + Hạ 0 -->
-                                        <input type="text" id="ans-53-1-d9" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 4; grid-column: 4;" placeholder="?">
-                                        <input type="text" id="ans-53-1-d10" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 4; grid-column: 6;" placeholder="?">
+                                        <input type="text" id="ans-53-1-d9" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 4; grid-column: 4;" placeholder="">
+                                        <input type="text" id="ans-53-1-d10" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 4; grid-column: 6;" placeholder="">
                                         <span style="grid-row: 4; grid-column: 7;">0</span>
 
                                         <!-- Row 5: Dư cuối -->
-                                        <input type="text" id="ans-53-1-d11" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 5; grid-column: 7;" placeholder="?">
+                                        <input type="text" id="ans-53-1-d11" class="w-10 h-10 border border-slate-800 rounded-lg text-center bg-[#fef9e7] text-blue-700" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; grid-row: 5; grid-column: 7;" placeholder="">
                                     </div>
                                 </div>
                             </div>
@@ -317,29 +305,29 @@ export const lesson53 = {
                             <div class="flex items-center justify-between mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Tính nhẩm</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 2. Tính nhẩm</h3>
                                 </div>
                             </div>
 
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 py-4 w-full">
                                 <div class="p-4 bg-sky-50/50 rounded-2xl border-2 border-sky-700 flex items-center justify-start gap-4 font-black text-xl md:text-2xl flex-nowrap whitespace-nowrap overflow-x-auto w-full">
                                     <span>3,14 × 0,1 =</span>
-                                    <input id="ans-53-2-1" type="text" class="w-36 h-12 border-2 border-sky-300 rounded-xl text-center text-sky-900 bg-white outline-none focus:border-sky-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                    <input id="ans-53-2-1" type="text" class="w-36 h-12 border-2 border-sky-300 rounded-xl text-center text-sky-900 bg-white outline-none focus:border-sky-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                 </div>
 
                                 <div class="p-4 bg-sky-50/50 rounded-2xl border-2 border-sky-700 flex items-center justify-start gap-4 font-black text-xl md:text-2xl flex-nowrap whitespace-nowrap overflow-x-auto w-full">
                                     <span>3,14 × 100 =</span>
-                                    <input id="ans-53-2-2" type="text" class="w-36 h-12 border-2 border-sky-300 rounded-xl text-center text-sky-900 bg-white outline-none focus:border-sky-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                    <input id="ans-53-2-2" type="text" class="w-36 h-12 border-2 border-sky-300 rounded-xl text-center text-sky-900 bg-white outline-none focus:border-sky-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                 </div>
 
                                 <div class="p-4 bg-sky-50/50 rounded-2xl border-2 border-sky-700 flex items-center justify-start gap-4 font-black text-xl md:text-2xl flex-nowrap whitespace-nowrap overflow-x-auto w-full">
                                     <span>31,4 : 10 =</span>
-                                    <input id="ans-53-2-3" type="text" class="w-36 h-12 border-2 border-sky-300 rounded-xl text-center text-sky-900 bg-white outline-none focus:border-sky-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                    <input id="ans-53-2-3" type="text" class="w-36 h-12 border-2 border-sky-300 rounded-xl text-center text-sky-900 bg-white outline-none focus:border-sky-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                 </div>
 
                                 <div class="p-4 bg-sky-50/50 rounded-2xl border-2 border-sky-700 flex items-center justify-start gap-4 font-black text-xl md:text-2xl flex-nowrap whitespace-nowrap overflow-x-auto w-full">
                                     <span>314 : 0,001 =</span>
-                                    <input id="ans-53-2-4" type="text" class="w-36 h-12 border-2 border-sky-300 rounded-xl text-center text-sky-900 bg-white outline-none focus:border-sky-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                    <input id="ans-53-2-4" type="text" class="w-36 h-12 border-2 border-sky-300 rounded-xl text-center text-sky-900 bg-white outline-none focus:border-sky-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                 </div>
                             </div>
 
@@ -355,7 +343,7 @@ export const lesson53 = {
                             <div class="flex items-center justify-between mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">3</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Điền dấu &gt;; &lt;; =</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 3. Điền dấu &gt;; &lt;; =</h3>
                                 </div>
                             </div>
 
@@ -406,7 +394,7 @@ export const lesson53 = {
                             <div class="flex items-center justify-between mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">4</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Giải toán</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 4. Giải toán</h3>
                                 </div>
                                 <button id="btn-toggle-53-4" onclick="window.toggle_53_4_sol()" class="bg-amber-500 text-white text-base md:text-lg font-black px-4 py-2 rounded-2xl hover:bg-amber-600 transition-all shadow-md">Hiện bài giải</button>
                             </div>
@@ -432,7 +420,7 @@ export const lesson53 = {
                                 <div class="p-6 bg-sky-50/50 rounded-3xl border-2 border-sky-700 flex flex-col md:flex-row items-center justify-start gap-4 font-black w-full">
                                     <span class="text-xl md:text-3xl text-slate-800">Đáp số =</span>
                                     <div class="flex items-center gap-2 flex-nowrap whitespace-nowrap">
-                                        <input id="ans-53-4-ans" type="text" class="w-36 h-12 border-2 border-sky-300 rounded-xl text-center text-sky-900 bg-white outline-none focus:border-sky-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                        <input id="ans-53-4-ans" type="text" class="w-36 h-12 border-2 border-sky-300 rounded-xl text-center text-sky-900 bg-white outline-none focus:border-sky-600" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                         <span class="text-xl md:text-3xl text-slate-800">m</span>
                                     </div>
                                 </div>

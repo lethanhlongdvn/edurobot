@@ -36,7 +36,7 @@ export const lesson170 = {
             <div id="lesson170_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">1</div>
-                    <p class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Phân loại hình học</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Bài 1. Phân loại hình học</h3>
                 </div>
                 
                 <p class="text-2xl md:text-3xl text-gray-700 leading-relaxed font-bold mb-8">
@@ -44,7 +44,7 @@ export const lesson170 = {
                 </p>
                 
                 <div class="flex flex-col items-center gap-8">
-                    <img src="assets/images/toan/toan_tap_2/170/170-1.png" alt="Biểu đồ tranh hình học" class="w-full w-full rounded-3xl shadow-xl border-4 border-blue-100">
+                    <img src="assets/images/toan/toan_tap_2/98/" alt="Biểu đồ tranh hình học" class="w-full w-full rounded-3xl shadow-xl border-4 border-blue-100">
                     
                     <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6 bg-blue-50 p-8 rounded-[2.5rem] border-2 border-blue-200">
                         <div class="space-y-4">
@@ -77,7 +77,7 @@ export const lesson170 = {
             <div id="lesson170_b2" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-green-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-green-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg rotate-1">2</div>
-                    <p class="text-2xl md:text-4xl font-black text-green-800 uppercase tracking-wide">Phân loại rác thải</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-green-800 uppercase tracking-wide">Bài 2. Phân loại rác thải</h3>
                 </div>
                 
                 <p class="text-2xl md:text-3xl text-gray-700 leading-relaxed font-bold mb-8">
@@ -118,7 +118,7 @@ export const lesson170 = {
             <div id="lesson170_b3" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-orange-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-orange-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg -rotate-1">3</div>
-                    <p class="text-2xl md:text-4xl font-black text-orange-800 uppercase tracking-wide">Cà phê Tây Nguyên</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-orange-800 uppercase tracking-wide">Bài 3. Cà phê Tây Nguyên</h3>
                 </div>
                 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
@@ -141,7 +141,7 @@ export const lesson170 = {
                             </div>
                         </div>
                     </div>
-                    <img src="assets/images/toan/toan_tap_2/170/170-3.png" alt="Biểu đồ cột cà phê" class="w-full rounded-[2.5rem] shadow-2xl border-4 border-orange-100">
+                    <img src="assets/images/toan/toan_tap_2/98/" alt="Biểu đồ cột cà phê" class="w-full rounded-[2.5rem] shadow-2xl border-4 border-orange-100">
                 </div>
 
                 <div class="flex justify-end mt-10">
@@ -153,7 +153,7 @@ export const lesson170 = {
             <div id="lesson170_b4" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-rose-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-rose-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">4</div>
-                    <p class="text-2xl md:text-4xl font-black text-rose-800 uppercase tracking-wide">Biểu đồ quạt khán giả</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-rose-800 uppercase tracking-wide">Bài 4. Biểu đồ quạt khán giả</h3>
                 </div>
                 
                 <p class="text-2xl md:text-3xl text-gray-700 leading-relaxed font-bold mb-8">
@@ -161,7 +161,7 @@ export const lesson170 = {
                 </p>
 
                 <div class="flex flex-col lg:flex-row gap-10 items-center">
-                    <img src="assets/images/toan/toan_tap_2/170/170-4.png" alt="Biểu đồ quạt khán giả" class="w-full lg:w-1/2 rounded-[3rem] shadow-2xl">
+                    <img src="assets/images/toan/toan_tap_2/96/" alt="Biểu đồ quạt khán giả" class="w-full lg:w-1/2 rounded-[3rem] shadow-2xl">
                     <div class="w-full lg:w-1/2 grid grid-cols-1 gap-4 bg-rose-50 p-8 rounded-[2.5rem] border-2 border-rose-200">
                         <div class="flex items-center justify-between p-4 bg-white rounded-2xl shadow-md border-l-8 border-yellow-400">
                             <span class="text-xl md:text-2xl font-black text-gray-700">Khán đài A (6000):</span>

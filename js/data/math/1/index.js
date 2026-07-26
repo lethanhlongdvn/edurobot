@@ -175,8 +175,8 @@ export const lesson1 = {
                     <div class="glass-card p-6 md:p-8 rounded-[2.5rem] bg-white shadow-2xl border border-blue-50 relative overflow-hidden min-h-[500px] flex flex-col justify-between">
                         <div class="absolute -right-20 -top-20 w-80 h-80 bg-blue-50/50 rounded-full blur-3xl opacity-50"></div>
                         <div>
-                            <h3 class="text-2xl md:text-4xl font-black text-blue-900 flex items-center gap-4 uppercase tracking-tight mb-6 relative z-10">
-                                <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-100 rounded-2xl flex items-center justify-center shadow-inner text-2xl md:text-4xl animate-pulse">🧠</div>
+                            <h3 class="text-blue-900 flex items-center uppercase tracking-tight mb-6 relative z-10 text-xl font-black gap-3">
+                                <div class="bg-blue-100 rounded-2xl flex items-center justify-center shadow-inner animate-pulse w-12 h-12 text-xl">🧠</div>
                                 <span>Cấu tạo số tự nhiên</span>
                             </h3>
 
@@ -236,9 +236,9 @@ export const lesson1 = {
                             </h4>
                             <div class="text-base md:text-2xl font-bold text-slate-700 flex flex-wrap items-center gap-2">
                                 <span>Phân tích số: 820 015 = 800 000 + 20 000 + </span>
-                                <input type="text" id="study-1-input-1" class="w-12 p-1.5 border-2 border-blue-200 text-center text-blue-700 rounded-xl font-black focus:border-blue-500 outline-none" placeholder="?">
+                                <input type="text" id="study-1-input-1" class="w-12 p-1.5 border-2 border-blue-200 text-center text-blue-700 rounded-xl font-black focus:border-blue-500 outline-none" placeholder="">
                                 <span> + </span>
-                                <input type="text" id="study-1-input-2" class="w-12 p-1.5 border-2 border-blue-200 text-center text-blue-700 rounded-xl font-black focus:border-blue-500 outline-none" placeholder="?">
+                                <input type="text" id="study-1-input-2" class="w-12 p-1.5 border-2 border-blue-200 text-center text-blue-700 rounded-xl font-black focus:border-blue-500 outline-none" placeholder="">
                             </div>
                             <div class="flex justify-end mt-4">
                                 <button id="btn-check-study-1" onclick="window.checkQuickStudy1()" class="w-16 h-16 rounded-[1.5rem] bg-blue-600 text-white font-black text-3xl shadow-lg transition-all active:scale-95 flex items-center justify-center">E</button>
@@ -252,8 +252,8 @@ export const lesson1 = {
                     <div class="glass-card p-6 md:p-8 rounded-[2.5rem] bg-white shadow-2xl border border-blue-50 relative overflow-hidden min-h-[500px] flex flex-col justify-between">
                         <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-blue-50/50 rounded-full blur-3xl opacity-50"></div>
                         <div>
-                            <h3 class="text-2xl md:text-4xl font-black text-blue-900 flex items-center gap-4 uppercase tracking-tight mb-6 relative z-10">
-                                <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-100 rounded-2xl flex items-center justify-center shadow-inner text-2xl md:text-4xl animate-pulse">📖</div>
+                            <h3 class="text-blue-900 flex items-center uppercase tracking-tight mb-6 relative z-10 text-xl font-black gap-3">
+                                <div class="bg-blue-100 rounded-2xl flex items-center justify-center shadow-inner animate-pulse w-12 h-12 text-xl">📖</div>
                                 <span>Đọc và viết số tự nhiên</span>
                             </h3>
 
@@ -296,7 +296,7 @@ export const lesson1 = {
                             <div class="text-base md:text-2xl font-bold text-slate-700 flex flex-wrap items-center gap-2 leading-relaxed">
                                 <span>Hãy điền phần cuối của cách đọc số 1 200 324:</span>
                                 <span>"Một triệu hai trăm nghìn ba trăm hai mươi </span>
-                                <input type="text" id="study-2-input" class="w-24 md:w-36 p-1.5 border-2 border-blue-200 text-center text-blue-700 rounded-xl font-black focus:border-blue-500 outline-none" placeholder="?">
+                                <input type="text" id="study-2-input" class="w-24 md:w-36 p-1.5 border-2 border-blue-200 text-center text-blue-700 rounded-xl font-black focus:border-blue-500 outline-none" placeholder="">
                                 <span>"</span>
                             </div>
                             <div class="flex justify-end mt-4">
@@ -334,10 +334,10 @@ export const lesson1 = {
 
                 <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden;">
                     <div class="glass-card p-4 md:p-6 rounded-[2.5rem] bg-white shadow-2xl border border-blue-50 relative overflow-hidden">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-10 h-10 md:w-14 md:h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-black text-xl md:text-3xl shadow-lg transform -rotate-3">1</div>
-                            <h3 class="text-lg md:text-3xl text-blue-900 font-black uppercase tracking-tighter">Viết số và đọc số (theo mẫu):</h3>
-                        </div>
+                        <div class="flex items-center gap-3 mb-6">
+                                <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl shadow-lg">1</div>
+                                <h3 class="text-blue-900 uppercase tracking-tighter text-xl font-black">Bài 1. Viết số và đọc số (theo mẫu):</h3>
+                            </div>
 
                         <div class="overflow-x-auto">
                             <table class="w-full border-collapse rounded-2xl overflow-hidden shadow-sm">
@@ -359,7 +359,7 @@ export const lesson1 = {
                                     <tr class="hover:bg-blue-50/30 transition-colors">
                                         <td class="p-3 md:p-4 border border-blue-100 text-slate-600 italic">3 chục triệu, 8 nghìn, 2 chục và 1 đơn vị</td>
                                         <td class="p-3 md:p-4 border border-blue-100">
-                                            <input type="text" id="ans-1-1b-write" class="w-full p-2 md:p-3 border-2 border-blue-100 rounded-xl text-center font-black text-blue-600 bg-white/50 focus:border-blue-400 outline-none transition-all shadow-inner text-lg md:text-2xl lg:text-3xl" placeholder="?">
+                                            <input type="text" id="ans-1-1b-write" class="w-full p-2 md:p-3 border-2 border-blue-100 rounded-xl text-center font-black text-blue-600 bg-white/50 focus:border-blue-400 outline-none transition-all shadow-inner text-lg md:text-2xl lg:text-3xl" placeholder="">
                                         </td>
                                         <td class="p-3 md:p-4 border border-blue-100">
                                             <input type="text" id="ans-1-1b-read" class="w-full p-2 md:p-3 border-2 border-blue-100 rounded-xl font-bold text-slate-700 bg-white/50 focus:border-blue-400 outline-none transition-all shadow-inner text-lg md:text-xl lg:text-2xl" placeholder="Đọc số...">
@@ -371,7 +371,7 @@ export const lesson1 = {
                                     <tr class="bg-blue-50/20 hover:bg-blue-50/40 transition-colors">
                                         <td class="p-3 md:p-4 border border-blue-100 text-slate-600 italic">8 trăm nghìn, 2 chục nghìn, 1 chục và 5 đơn vị</td>
                                         <td class="p-3 md:p-4 border border-blue-100">
-                                            <input type="text" id="ans-1-1c-write" class="w-full p-2 md:p-3 border-2 border-blue-100 rounded-xl text-center font-black text-blue-600 bg-white/50 focus:border-blue-400 outline-none transition-all shadow-inner text-lg md:text-2xl lg:text-3xl" placeholder="?">
+                                            <input type="text" id="ans-1-1c-write" class="w-full p-2 md:p-3 border-2 border-blue-100 rounded-xl text-center font-black text-blue-600 bg-white/50 focus:border-blue-400 outline-none transition-all shadow-inner text-lg md:text-2xl lg:text-3xl" placeholder="">
                                         </td>
                                         <td class="p-3 md:p-4 border border-blue-100">
                                             <input type="text" id="ans-1-1c-read" class="w-full p-2 md:p-3 border-2 border-blue-100 rounded-xl font-bold text-slate-700 bg-white/50 focus:border-blue-400 outline-none transition-all shadow-inner text-lg md:text-xl lg:text-2xl" placeholder="Đọc số...">
@@ -383,7 +383,7 @@ export const lesson1 = {
                                     <tr class="hover:bg-blue-50/30 transition-colors">
                                         <td class="p-3 md:p-4 border border-blue-100 text-slate-600 italic">1 triệu, 2 trăm nghìn, 3 trăm, 2 chục và 4 đơn vị</td>
                                         <td class="p-3 md:p-4 border border-blue-100">
-                                            <input type="text" id="ans-1-1d-write" class="w-full p-2 md:p-3 border-2 border-blue-100 rounded-xl text-center font-black text-blue-600 bg-white/50 focus:border-blue-400 outline-none transition-all shadow-inner text-lg md:text-2xl lg:text-3xl" placeholder="?">
+                                            <input type="text" id="ans-1-1d-write" class="w-full p-2 md:p-3 border-2 border-blue-100 rounded-xl text-center font-black text-blue-600 bg-white/50 focus:border-blue-400 outline-none transition-all shadow-inner text-lg md:text-2xl lg:text-3xl" placeholder="">
                                         </td>
                                         <td class="p-3 md:p-4 border border-blue-100">
                                             <input type="text" id="ans-1-1d-read" class="w-full p-2 md:p-3 border-2 border-blue-100 rounded-xl font-bold text-slate-700 bg-white/50 focus:border-blue-400 outline-none transition-all shadow-inner text-lg md:text-xl lg:text-2xl" placeholder="Đọc số...">
@@ -400,27 +400,27 @@ export const lesson1 = {
 
                 <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden;">
                     <div class="glass-card p-4 md:p-6 rounded-[2.5rem] bg-white shadow-2xl border border-blue-50 relative overflow-hidden">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-10 h-10 md:w-14 md:h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-black text-xl md:text-3xl shadow-lg transform rotate-3">2</div>
-                            <h3 class="text-lg md:text-3xl text-blue-900 font-black uppercase tracking-tighter">Số ?</h3>
-                        </div>
+                        <div class="flex items-center gap-3 mb-6">
+                                <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl shadow-lg">2</div>
+                                <h3 class="text-blue-900 uppercase tracking-tighter text-xl font-black">Bài 2. Số ?</h3>
+                            </div>
 
                         <div class="space-y-4">
                             <div class="p-4 md:p-6 bg-blue-50/50 rounded-[2rem] border-2 border-blue-100 flex flex-wrap items-center gap-2 md:gap-4 text-base md:text-xl lg:text-2xl font-black">
                                 <span class="text-blue-700">a) 504 842 = 500 000 + 4 000 +&nbsp;</span>
-                                <input type="text" id="ans-1-2a" class="w-24 md:w-36 p-2 rounded-xl border-2 border-blue-200 text-center text-blue-600 outline-none shadow-inner text-lg md:text-xl lg:text-2xl font-black" placeholder="?">
+                                <input type="text" id="ans-1-2a" class="w-24 md:w-36 p-2 rounded-xl border-2 border-blue-200 text-center text-blue-600 outline-none shadow-inner text-lg md:text-xl lg:text-2xl font-black" placeholder="">
                                 <span>&nbsp;+ 40 + 2</span>
                                 <button id="btn-check-1-2a" onclick="window.check_1_2a()" class="w-10 h-10 md:w-14 md:h-14 bg-orange-600 hover:bg-orange-700 text-white rounded-full font-black text-xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
                             </div>
                             <div class="p-4 md:p-6 bg-blue-50/50 rounded-[2rem] border-2 border-blue-100 flex flex-wrap items-center gap-2 md:gap-4 text-base md:text-xl lg:text-2xl font-black">
                                 <span class="text-blue-700">b) 1 730 539 = 1 000 000 +&nbsp;</span>
-                                <input type="text" id="ans-1-2b" class="w-32 md:w-48 p-2 rounded-xl border-2 border-blue-200 text-center text-blue-600 outline-none shadow-inner text-lg md:text-xl lg:text-2xl font-black" placeholder="?">
+                                <input type="text" id="ans-1-2b" class="w-32 md:w-48 p-2 rounded-xl border-2 border-blue-200 text-center text-blue-600 outline-none shadow-inner text-lg md:text-xl lg:text-2xl font-black" placeholder="">
                                 <span class="block md:inline">&nbsp;+ 30 000 + 500 + 30 + 9</span>
                                 <button id="btn-check-1-2b" onclick="window.check_1_2b()" class="w-10 h-10 md:w-14 md:h-14 bg-orange-600 hover:bg-orange-700 text-white rounded-full font-black text-xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
                             </div>
                             <div class="p-4 md:p-6 bg-blue-50/50 rounded-[2rem] border-2 border-blue-100 flex flex-wrap items-center gap-2 md:gap-4 text-base md:text-xl lg:text-2xl font-black">
                                 <span class="text-blue-700">c) 26 400 500 = 20 000 000 + 6 000 000 + 400 000 +&nbsp;</span>
-                                <input type="text" id="ans-1-2c" class="w-24 md:w-36 p-2 rounded-xl border-2 border-blue-200 text-center text-blue-600 outline-none shadow-inner text-lg md:text-xl lg:text-2xl font-black" placeholder="?">
+                                <input type="text" id="ans-1-2c" class="w-24 md:w-36 p-2 rounded-xl border-2 border-blue-200 text-center text-blue-600 outline-none shadow-inner text-lg md:text-xl lg:text-2xl font-black" placeholder="">
                                 <button id="btn-check-1-2c" onclick="window.check_1_2c()" class="w-10 h-10 md:w-14 md:h-14 bg-orange-600 hover:bg-orange-700 text-white rounded-full font-black text-xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
                             </div>
                         </div>
@@ -429,10 +429,10 @@ export const lesson1 = {
 
                 <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden;">
                     <div class="glass-card p-4 md:p-6 rounded-[2.5rem] bg-white shadow-2xl border border-teal-50 relative overflow-hidden">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-10 h-10 md:w-14 md:h-14 bg-teal-600 text-white rounded-2xl flex items-center justify-center font-black text-xl md:text-3xl shadow-lg transform -rotate-2">3</div>
-                            <h3 class="text-lg md:text-3xl text-teal-900 font-black uppercase tracking-tighter">Thử thách cùng Rô-bốt</h3>
-                        </div>
+                        <div class="flex items-center gap-3 mb-6">
+                                <div class="w-12 h-12 bg-teal-600 text-white rounded-xl flex items-center justify-center text-xl shadow-lg">3</div>
+                                <h3 class="uppercase tracking-tighter text-xl font-black">Bài 3. Thử thách cùng Rô-bốt</h3>
+                            </div>
 
                         <div class="space-y-6 relative z-10">
                             <div class="p-4 md:p-6 bg-teal-50/50 rounded-[2rem] border-2 border-teal-100 shadow-inner">
@@ -458,15 +458,15 @@ export const lesson1 = {
                                         <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
                                             <div class="space-y-1">
                                                 <label class="text-sm md:text-lg lg:text-xl font-medium text-teal-600 ml-2">Giá trị 1</label>
-                                                <input type="text" id="ans-1-3b-1" class="w-full p-2 border-2 border-teal-200 text-center text-teal-600 text-lg md:text-xl lg:text-2xl font-semibold shadow-inner rounded-xl" placeholder="?">
+                                                <input type="text" id="ans-1-3b-1" class="w-full p-2 border-2 border-teal-200 text-center text-teal-600 text-lg md:text-xl lg:text-2xl font-semibold shadow-inner rounded-xl" placeholder="">
                                             </div>
                                             <div class="space-y-1">
                                                 <label class="text-sm md:text-lg lg:text-xl font-medium text-teal-600 ml-2">Giá trị 2</label>
-                                                <input type="text" id="ans-1-3b-2" class="w-full p-2 border-2 border-teal-200 text-center text-teal-600 text-lg md:text-xl lg:text-2xl font-semibold shadow-inner rounded-xl" placeholder="?">
+                                                <input type="text" id="ans-1-3b-2" class="w-full p-2 border-2 border-teal-200 text-center text-teal-600 text-lg md:text-xl lg:text-2xl font-semibold shadow-inner rounded-xl" placeholder="">
                                             </div>
                                             <div class="space-y-1">
                                                 <label class="text-sm md:text-lg lg:text-xl font-medium text-teal-600 ml-2">Giá trị 3</label>
-                                                <input type="text" id="ans-1-3b-3" class="w-full p-2 border-2 border-teal-200 text-center text-teal-600 text-lg md:text-xl lg:text-2xl font-semibold shadow-inner rounded-xl" placeholder="?">
+                                                <input type="text" id="ans-1-3b-3" class="w-full p-2 border-2 border-teal-200 text-center text-teal-600 text-lg md:text-xl lg:text-2xl font-semibold shadow-inner rounded-xl" placeholder="">
                                             </div>
                                         </div>
                                         <div class="flex justify-end pt-2">
@@ -481,10 +481,10 @@ export const lesson1 = {
 
                 <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden;">
                     <div class="glass-card p-4 md:p-6 rounded-[2.5rem] bg-white shadow-2xl border border-amber-50 relative overflow-hidden">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-10 h-10 md:w-14 md:h-14 bg-amber-600 text-white rounded-2xl flex items-center justify-center font-black text-xl md:text-3xl shadow-lg transform rotate-2">4</div>
-                            <h3 class="text-lg md:text-3xl text-amber-900 font-black uppercase tracking-tighter">Tìm số trên mũ</h3>
-                        </div>
+                        <div class="flex items-center gap-3 mb-6">
+                                <div class="w-12 h-12 bg-amber-600 text-white rounded-xl flex items-center justify-center text-xl shadow-lg">4</div>
+                                <h3 class="text-amber-900 uppercase tracking-tighter text-xl font-black">Bài 4. Tìm số trên mũ</h3>
+                            </div>
 
                         <div class="p-4 md:p-6 bg-amber-50/30 rounded-[2rem] border-2 border-amber-100 space-y-4">
                             <p class="text-lg md:text-2xl lg:text-3xl font-medium text-slate-700 leading-relaxed">
@@ -497,7 +497,7 @@ export const lesson1 = {
                             <div class="space-y-3 bg-white/80 p-4 rounded-2xl border border-amber-100 shadow-sm text-lg md:text-2xl lg:text-3xl font-medium text-slate-700 leading-relaxed">
                                 <div class="block">
                                     <span>Hai số chẵn liên tiếp cách nhau </span>
-                                    <input type="text" id="ans-1-4-step1" class="inline-block w-16 p-1.5 rounded-lg border-2 border-amber-200 text-center text-amber-600 outline-none focus:border-amber-400 text-lg md:text-xl lg:text-2xl font-semibold animate-pulse-subtle align-middle mx-1" placeholder="?">
+                                    <input type="text" id="ans-1-4-step1" class="inline-block w-16 p-1.5 rounded-lg border-2 border-amber-200 text-center text-amber-600 outline-none focus:border-amber-400 text-lg md:text-xl lg:text-2xl font-semibold animate-pulse-subtle align-middle mx-1" placeholder="">
                                     <span>đơn vị.</span>
                                 </div>
                                 
@@ -505,17 +505,17 @@ export const lesson1 = {
                                     <span>Số trên mũ của Việt và Nam cách nhau số đơn vị là:</span>
                                 </div>
                                 <div class="block pl-4 mt-1">
-                                    <input type="text" id="ans-1-4-step2-num1" class="inline-block w-24 md:w-28 p-1.5 rounded-lg border-2 border-amber-200 text-center text-amber-600 outline-none focus:border-amber-400 text-lg md:text-xl lg:text-2xl font-semibold align-middle" placeholder="?">
+                                    <input type="text" id="ans-1-4-step2-num1" class="inline-block w-24 md:w-28 p-1.5 rounded-lg border-2 border-amber-200 text-center text-amber-600 outline-none focus:border-amber-400 text-lg md:text-xl lg:text-2xl font-semibold align-middle" placeholder="">
                                     <span class="mx-1 align-middle">-</span>
-                                    <input type="text" id="ans-1-4-step2-num2" class="inline-block w-24 md:w-28 p-1.5 rounded-lg border-2 border-amber-200 text-center text-amber-600 outline-none focus:border-amber-400 text-lg md:text-xl lg:text-2xl font-semibold align-middle" placeholder="?">
+                                    <input type="text" id="ans-1-4-step2-num2" class="inline-block w-24 md:w-28 p-1.5 rounded-lg border-2 border-amber-200 text-center text-amber-600 outline-none focus:border-amber-400 text-lg md:text-xl lg:text-2xl font-semibold align-middle" placeholder="">
                                     <span class="mx-1 align-middle">=</span>
-                                    <input type="text" id="ans-1-4-step2-val" class="inline-block w-20 p-1.5 rounded-lg border-2 border-amber-200 text-center text-amber-600 outline-none focus:border-amber-400 text-lg md:text-xl lg:text-2xl font-semibold align-middle" placeholder="?">
+                                    <input type="text" id="ans-1-4-step2-val" class="inline-block w-20 p-1.5 rounded-lg border-2 border-amber-200 text-center text-amber-600 outline-none focus:border-amber-400 text-lg md:text-xl lg:text-2xl font-semibold align-middle" placeholder="">
                                     <span class="ml-1 align-middle">(đơn vị)</span>
                                 </div>
 
                                 <div class="block mt-2">
                                     <span>Vì ba số chẵn liên tiếp được viết vào 3 chiếc mũ. Vậy số trên mũ của Rô-bốt là: </span>
-                                    <input type="text" id="ans-1-4-ans" class="inline-block w-28 md:w-32 p-1.5 rounded-lg border-2 border-amber-200 text-center text-amber-600 font-semibold outline-none focus:border-amber-400 text-lg md:text-xl lg:text-2xl align-middle mx-1" placeholder="?">
+                                    <input type="text" id="ans-1-4-ans" class="inline-block w-28 md:w-32 p-1.5 rounded-lg border-2 border-amber-200 text-center text-amber-600 font-semibold outline-none focus:border-amber-400 text-lg md:text-xl lg:text-2xl align-middle mx-1" placeholder="">
                                     <span>.</span>
                                 </div>
                             </div>

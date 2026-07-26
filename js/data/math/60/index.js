@@ -60,13 +60,7 @@ export const lesson60 = {
             <!-- Slide 1: Khám phá thực tế -->
             <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
                 <div class="space-y-6">
-                    <div class="bg-gradient-to-r from-orange-500 to-amber-500 text-white p-6 rounded-[2.5rem] shadow-lg flex items-center justify-between">
-                        <div>
-                            <span class="text-sm font-black uppercase tracking-wider opacity-90">Chủ đề: Hình học</span>
-                            <h2 class="text-2xl md:text-4xl font-black mt-1">HÌNH THANG</h2>
-                        </div>
-                        <span class="text-4xl md:text-6xl animate-bounce-slow">🪁</span>
-                    </div>
+                    
 
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
                         <div class="bg-white p-4 rounded-3xl border border-orange-100 shadow-md flex justify-center">
@@ -89,10 +83,7 @@ export const lesson60 = {
             <!-- Slide 2: Đặc điểm hình thang ABCD -->
             <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
                 <div class="space-y-6">
-                    <div class="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-6 rounded-[2.5rem] shadow-lg">
-                        <span class="text-sm font-black uppercase tracking-wider opacity-90">Tìm hiểu hình học</span>
-                        <h2 class="text-2xl md:text-4xl font-black mt-1">ĐẶC ĐIỂM HÌNH THANG ABCD</h2>
-                    </div>
+                    
 
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
                         <div class="bg-white p-4 rounded-3xl border border-blue-100 shadow-md flex justify-center">
@@ -119,10 +110,7 @@ export const lesson60 = {
             <!-- Slide 3: Hình thang vuông -->
             <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
                 <div class="space-y-6">
-                    <div class="bg-gradient-to-r from-emerald-600 to-teal-500 text-white p-6 rounded-[2.5rem] shadow-lg">
-                        <span class="text-sm font-black uppercase tracking-wider opacity-90">Khái niệm mới</span>
-                        <h2 class="text-2xl md:text-4xl font-black mt-1">HÌNH THANG VUÔNG</h2>
-                    </div>
+                    
 
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
                         <div class="bg-white p-4 rounded-3xl border border-emerald-100 shadow-md flex justify-center">
@@ -155,7 +143,7 @@ export const lesson60 = {
                     <div class="flex items-center justify-between border-b border-slate-100 pb-4">
                         <div class="flex items-center gap-3">
                             <span class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-black text-xl">1</span>
-                            <h3 class="text-xl md:text-2xl font-black text-blue-700">Hình nào là hình thang?</h3>
+                            <h3 class="text-xl md:text-2xl font-black text-blue-700">Bài 1. Hình nào là hình thang?</h3>
                         </div>
                     </div>
 
@@ -204,7 +192,7 @@ export const lesson60 = {
                     <div class="flex items-center justify-between border-b border-slate-100 pb-4">
                         <div class="flex items-center gap-3">
                             <span class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-black text-xl">2</span>
-                            <h3 class="text-xl md:text-2xl font-black text-blue-700">Hình ảnh hình thang trong thực tế</h3>
+                            <h3 class="text-xl md:text-2xl font-black text-blue-700">Bài 2. Hình ảnh hình thang trong thực tế</h3>
                         </div>
                     </div>
 
@@ -258,7 +246,7 @@ export const lesson60 = {
                     <div class="flex items-center justify-between border-b border-slate-100 pb-4">
                         <div class="flex items-center gap-3">
                             <span class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-black text-xl">3</span>
-                            <h3 class="text-xl md:text-2xl font-black text-blue-700">Trong hai hình dưới đây, hình nào là hình thang vuông?</h3>
+                            <h3 class="text-xl md:text-2xl font-black text-blue-700">Bài 3. Trong hai hình dưới đây, hình nào là hình thang vuông?</h3>
                         </div>
                     </div>
 

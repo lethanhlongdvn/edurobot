@@ -66,19 +66,7 @@ export const lesson57 = {
                     <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
                         <div class="space-y-6">
                             <!-- Banner chính -->
-                            <div class="p-8 rounded-[2.5rem] bg-gradient-to-br from-blue-700 to-sky-600 shadow-2xl relative overflow-hidden text-white">
-                                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-                                <div class="absolute bottom-0 left-0 w-48 h-48 bg-sky-500/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-                                <div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-                                    <div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30 shrink-0 text-3xl md:text-5xl">
-                                        📐
-                                    </div>
-                                    <div class="text-center md:text-left">
-                                        <h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">VẼ ĐƯỜNG CAO CỦA HÌNH TAM GIÁC</h2>
-                                        <p class="text-sky-100 text-lg md:text-2xl font-medium opacity-90">Học cách sử dụng thước ê-ke để vẽ đường cao chuẩn xác!</p>
-                                    </div>
-                                </div>
-                            </div>
+                            
 
                             <!-- Khám phá hình đầu tiên (1 cột) -->
                             <div class="flex justify-center p-6 bg-slate-50 border border-slate-200 rounded-[2.5rem] w-full shadow-sm">
@@ -174,7 +162,7 @@ export const lesson57 = {
                             <!-- Header bài tập -->
                             <div class="flex items-center gap-4 border-b border-slate-100 pb-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                <h3 class="text-xl md:text-2xl font-black text-blue-900">Vẽ đường cao ứng với cạnh đáy</h3>
+                                <h3 class="text-xl md:text-2xl font-black text-blue-900">Bài 1. Vẽ đường cao ứng với cạnh đáy</h3>
                             </div>
 
                             <!-- Đề bài -->
@@ -230,7 +218,7 @@ export const lesson57 = {
                         <div class="p-6 rounded-[2.5rem] bg-white shadow-none border-none relative overflow-hidden space-y-6 w-full">
                             <div class="flex items-center gap-4 border-b border-slate-100 pb-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                                <h3 class="text-xl md:text-2xl font-black text-blue-900">Xác định đường cao ứng với cạnh đáy thích hợp</h3>
+                                <h3 class="text-xl md:text-2xl font-black text-blue-900">Bài 2. Xác định đường cao ứng với cạnh đáy thích hợp</h3>
                             </div>
 
                             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -244,21 +232,21 @@ export const lesson57 = {
                                         <!-- Hàng 1 -->
                                         <div class="flex items-center gap-2 text-sm md:text-lg font-bold text-slate-700">
                                             <span>• AH là đường cao ứng với đáy</span>
-                                            <input id="ans-57-2-1" type="text" class="w-20 text-center border-2 border-slate-200 rounded-xl px-2 py-1 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none uppercase font-black" placeholder="?" />
+                                            <input id="ans-57-2-1" type="text" class="w-20 text-center border-2 border-slate-200 rounded-xl px-2 py-1 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none uppercase font-black" placeholder="" />
                                             <span>của hình tam giác ABC;</span>
                                         </div>
                                         
                                         <!-- Hàng 2 -->
                                         <div class="flex items-center gap-2 text-sm md:text-lg font-bold text-slate-700">
                                             <span>• HN là đường cao ứng với đáy</span>
-                                            <input id="ans-57-2-2" type="text" class="w-20 text-center border-2 border-slate-200 rounded-xl px-2 py-1 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none uppercase font-black" placeholder="?" />
+                                            <input id="ans-57-2-2" type="text" class="w-20 text-center border-2 border-slate-200 rounded-xl px-2 py-1 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none uppercase font-black" placeholder="" />
                                             <span>của hình tam giác HAB;</span>
                                         </div>
                                         
                                         <!-- Hàng 3 -->
                                         <div class="flex items-center gap-2 text-sm md:text-lg font-bold text-slate-700">
                                             <span>• HM là đường cao ứng với đáy</span>
-                                            <input id="ans-57-2-3" type="text" class="w-20 text-center border-2 border-slate-200 rounded-xl px-2 py-1 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none uppercase font-black" placeholder="?" />
+                                            <input id="ans-57-2-3" type="text" class="w-20 text-center border-2 border-slate-200 rounded-xl px-2 py-1 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none uppercase font-black" placeholder="" />
                                             <span>của hình tam giác HAC.</span>
                                         </div>
                                     </div>
@@ -286,7 +274,7 @@ export const lesson57 = {
                             <div class="flex items-center justify-between border-b border-slate-100 pb-4">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">3</div>
-                                    <h3 class="text-xl md:text-2xl font-black text-blue-900">Cấu tạo vì kèo trong thực tiễn</h3>
+                                    <h3 class="text-xl md:text-2xl font-black text-blue-900">Bài 3. Cấu tạo vì kèo trong thực tiễn</h3>
                                 </div>
                             </div>
 

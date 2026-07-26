@@ -65,19 +65,7 @@ export const lesson27 = {
     ...metadata.lessonInfo,
     "content": `
         <div class="theory-section space-y-6 animate-in fade-in slide-in-from-bottom-10 duration-1000 pt-6">
-            <div class="p-8 rounded-[2.5rem] bg-gradient-to-br from-emerald-600 to-teal-800 shadow-2xl relative overflow-hidden text-white">
-<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-<div class="absolute bottom-0 left-0 w-48 h-48 bg-emerald-500/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-<div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-<div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30">
-<span class="text-5xl md:text-7xl">✏️</span>
-</div>
-<div class="text-center md:text-left">
-<h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">LUYỆN TẬP TỔNG HỢP</h2>
-<p class="text-emerald-100 text-lg md:text-2xl font-medium opacity-90">Củng cố kỹ năng viết số đo các đại lượng dưới dạng số thập phân!</p>
-</div>
-</div>
-</div>
+            
 <div class="p-8 rounded-[2.5rem] bg-white border-2 border-emerald-600 shadow-none space-y-6">
 <div class="flex items-center gap-4">
 <div class="w-12 h-12 bg-emerald-600 rounded-2xl flex items-center justify-center text-white text-xl md:text-3xl shadow-lg">
@@ -133,7 +121,7 @@ export const lesson27 = {
                             <div class="flex justify-between items-center mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-emerald-900 font-black uppercase tracking-tighter">Tìm số thập phân thích hợp</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-emerald-900 font-black uppercase tracking-tighter">Bài 1. Tìm số thập phân thích hợp</h3>
                                 </div>
                                 <button id="btn-toggle-27-1" onclick="window.toggle_27_1_sol()" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white font-black text-sm md:text-base rounded-xl transition-all shadow-md">Hiện bài giải</button>
                             </div>
@@ -144,17 +132,17 @@ export const lesson27 = {
                                     <h4 class="text-xl md:text-3xl lg:text-2xl font-black text-emerald-800 border-b border-emerald-200 pb-2">a) Đổi sang mét (m) hoặc cm</h4>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-bold text-xl md:text-3xl">
                                         <span>8 m 7 dm =</span>
-                                        <input id="ans-27-1-a1" type="text" class="w-24 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 w-10 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-27-1-a1" type="text" class="w-24 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 w-10 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>m</span>
                                     </div>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-bold text-xl md:text-3xl">
                                         <span>4 m 8 cm =</span>
-                                        <input id="ans-27-1-a2" type="text" class="w-24 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 w-10 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-27-1-a2" type="text" class="w-24 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 w-10 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>m</span>
                                     </div>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-bold text-xl md:text-3xl">
                                         <span>5 cm 6 mm =</span>
-                                        <input id="ans-27-1-a3" type="text" class="w-24 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 w-10 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-27-1-a3" type="text" class="w-24 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 w-10 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>cm</span>
                                     </div>
                                 </div>
@@ -164,17 +152,17 @@ export const lesson27 = {
                                     <h4 class="text-xl md:text-3xl lg:text-2xl font-black text-teal-800 border-b border-teal-200 pb-2">b) Đổi cm, mm sang mét (m) hoặc cm</h4>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-bold text-xl md:text-3xl">
                                         <span>215 cm =</span>
-                                        <input id="ans-27-1-b1" type="text" class="w-24 h-12 border-2 border-teal-600 rounded-xl text-center font-black text-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500 w-10 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-27-1-b1" type="text" class="w-24 h-12 border-2 border-teal-600 rounded-xl text-center font-black text-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500 w-10 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>m</span>
                                     </div>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-bold text-xl md:text-3xl">
                                         <span>76 mm =</span>
-                                        <input id="ans-27-1-b2" type="text" class="w-24 h-12 border-2 border-teal-600 rounded-xl text-center font-black text-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500 w-10 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-27-1-b2" type="text" class="w-24 h-12 border-2 border-teal-600 rounded-xl text-center font-black text-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500 w-10 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>cm</span>
                                     </div>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-bold text-xl md:text-3xl">
                                         <span>9 mm =</span>
-                                        <input id="ans-27-1-b3" type="text" class="w-24 h-12 border-2 border-teal-600 rounded-xl text-center font-black text-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500 w-10 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-27-1-b3" type="text" class="w-24 h-12 border-2 border-teal-600 rounded-xl text-center font-black text-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500 w-10 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>cm</span>
                                     </div>
                                 </div>
@@ -205,7 +193,7 @@ export const lesson27 = {
                             <div class="flex justify-between items-center mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-emerald-900 font-black uppercase tracking-tighter">Cân nặng các con vật</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-emerald-900 font-black uppercase tracking-tighter">Bài 2. Cân nặng các con vật</h3>
                                 </div>
                                 <button id="btn-toggle-27-2" onclick="window.toggle_27_2_sol()" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white font-black text-sm md:text-base rounded-xl transition-all shadow-md">Hiện bài giải</button>
                             </div>
@@ -220,12 +208,12 @@ export const lesson27 = {
                                     <h4 class="text-xl md:text-3xl font-black text-emerald-800">a) Tìm số thập phân thích hợp:</h4>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-bold text-base md:text-lg">
                                         <span>6 kg 75 g =</span>
-                                        <input id="ans-27-2-a1" type="text" class="w-24 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 w-10 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-27-2-a1" type="text" class="w-24 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 w-10 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>kg</span>
                                     </div>
                                     <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-bold text-base md:text-lg">
                                         <span>6 100 g =</span>
-                                        <input id="ans-27-2-a2" type="text" class="w-24 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 w-10 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                        <input id="ans-27-2-a2" type="text" class="w-24 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 w-10 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                         <span>kg</span>
                                     </div>
                                 </div>
@@ -274,7 +262,7 @@ export const lesson27 = {
                             <div class="flex justify-between items-center mb-2 flex-wrap gap-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">3</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-emerald-900 font-black uppercase tracking-tighter">Đổi dung tích & Sắp xếp</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-emerald-900 font-black uppercase tracking-tighter">Bài 3. Đổi dung tích & Sắp xếp</h3>
                                 </div>
                                 <div class="flex items-center gap-2 flex-wrap">
                                     <button id="btn-tab-27-3-a" onclick="window.switchTab27_3('a')" class="tab-btn-27-3 px-4 py-2 text-sm md:text-base font-black rounded-xl transition-all bg-emerald-600 text-white shadow">a) Đổi đơn vị</button>
@@ -291,22 +279,22 @@ export const lesson27 = {
                                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                         <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-bold text-base md:text-lg">
                                             <span>6 l 260 ml =</span>
-                                            <input id="ans-27-3-a1" type="text" class="w-24 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 w-10 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input id="ans-27-3-a1" type="text" class="w-24 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 w-10 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             <span>l</span>
                                         </div>
                                         <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-bold text-base md:text-lg">
                                             <span>3 452 ml =</span>
-                                            <input id="ans-27-3-a2" type="text" class="w-24 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 w-10 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input id="ans-27-3-a2" type="text" class="w-24 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 w-10 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             <span>l</span>
                                         </div>
                                         <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-bold text-base md:text-lg">
                                             <span>5 l 75 ml =</span>
-                                            <input id="ans-27-3-a3" type="text" class="w-24 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 w-10 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input id="ans-27-3-a3" type="text" class="w-24 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 w-10 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             <span>l</span>
                                         </div>
                                         <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-2 font-bold text-base md:text-lg">
                                             <span>750 ml =</span>
-                                            <input id="ans-27-3-a4" type="text" class="w-24 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 w-10 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input id="ans-27-3-a4" type="text" class="w-24 h-12 border-2 border-emerald-600 rounded-xl text-center font-black text-emerald-800 w-10 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             <span>l</span>
                                         </div>
                                     </div>
@@ -364,7 +352,7 @@ export const lesson27 = {
                             <div class="flex justify-between items-center mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">4</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-emerald-900 font-black uppercase tracking-tighter">Bức tranh tường bé nhất</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-emerald-900 font-black uppercase tracking-tighter">Bài 4. Bức tranh tường bé nhất</h3>
                                 </div>
                                 <button id="btn-toggle-27-4" onclick="window.toggle_27_4_sol()" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white font-black text-sm md:text-base rounded-xl transition-all shadow-md">Hiện bài giải</button>
                             </div>

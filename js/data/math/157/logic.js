@@ -1,4 +1,5 @@
-// --- Logic Functions ---
+// --- Logic Functions for Tiết 157 (SGK Trang 108) ---
+
 window.reset157_1 = function () {
     ['157-1-1', '157-1-1-t1', '157-1-1-t3', '157-1-2', '157-1-2-t1', '157-1-2-t3', '157-1-3-n', '157-1-3-d', '157-1-3-tn', '157-1-3-td'].forEach(id => {
         const el = document.getElementById(id);
@@ -14,13 +15,13 @@ window.check_157_1 = function () {
         { id: '157-1-1', ans: ['18176', '18 176'] },
         { id: '157-1-1-t1', ans: ['18176', '18 176'] },
         { id: '157-1-1-t3', ans: ['8549', '8 549'] },
-        { id: '157-1-2', ans: ['6,31'] },
-        { id: '157-1-2-t1', ans: ['6,31'] },
-        { id: '157-1-2-t3', ans: ['35,71'] },
+        { id: '157-1-2', ans: ['6,31', '6.31'] },
+        { id: '157-1-2-t1', ans: ['6,31', '6.31'] },
+        { id: '157-1-2-t3', ans: ['35,71', '35.71'] },
         { id: '157-1-3-n', ans: ['17'] },
         { id: '157-1-3-d', ans: ['36'] },
-        { id: '157-1-3-tn', ans: ['17'] },
-        { id: '157-1-3-td', ans: ['36'] }
+        { id: '157-1-3-tn', ans: ['11'] },
+        { id: '157-1-3-td', ans: ['9'] }
     ];
 
     let correct = 0;
@@ -36,11 +37,14 @@ window.check_157_1 = function () {
         }
     });
 
-    const rightAnswer = "a) 18 176; 8 549; b) 6,31; 35,71; c) 17/36";
-    const guidance = "Để thử lại phép cộng, ta lấy tổng trừ đi một số hạng. Để thử lại phép trừ, ta lấy tổng (hoặc hiệu) cộng với số trừ (hoặc hiệu).";
-    const solution = "Tuyệt vời! Con đã thực hiện tính và thử lại rất chính xác.\n\nLời giải chi tiết:\n- a) 12 758 + 5 418 = 18 176. Thử lại: 18 176 - 5 418 = 12 758.\n- b) 42,02 - 6,31 = 35,71. Thử lại: 35,71 + 6,31 = 42,02.\n- c) 13/36 + 4/36 = 17/36. Thử lại: 17/36 - 4/36 = 13/36.";
+    const isCorrect = correct === results.length;
+    const rightAnswer = "a) 18 176 (Thử lại: 18 176 - 9 627 = 8 549)<br>b) 6,31 (Thử lại: 6,31 + 29,4 = 35,71)<br>c) 17/36 (Thử lại: 17/36 + 3/4 = 11/9)";
+    const guidance = "Muốn thử lại phép cộng, lấy tổng trừ đi một số hạng. Muốn thử lại phép trừ, lấy hiệu cộng với số trừ.";
+    const solution = "Thật tuyệt vời! Em đã tính và thử lại rất chính xác.<br><br>Lời giải chi tiết:<br>a) 8 549 + 9 627 = 18 176. Thử lại: 18 176 - 9 627 = 8 549.<br>b) 35,71 - 29,4 = 6,31. Thử lại: 6,31 + 29,4 = 35,71.<br>c) 11/9 - 3/4 = 44/36 - 27/36 = 17/36. Thử lại: 17/36 + 27/36 = 44/36 = 11/9.";
 
-    window.showMathFeedback(isCorrect, rightAnswer, "", guidance, solution);
+    if (window.showMathFeedback) {
+        window.showMathFeedback(isCorrect, rightAnswer, "", guidance, solution);
+    }
 
     if (window.submitMathLesson) {
         window.submitMathLesson("Bài 157 - Bài 1", Math.round(correct / results.length * 100), "btn-check-157-1", 0, results.length, correct);
@@ -48,103 +52,75 @@ window.check_157_1 = function () {
 };
 
 window.check_157_2 = function () {
-    const results = [
-        { id: '157-2-1', ans: ['55,5'] },
-        { id: '157-2-2-n', ans: ['14'] },
-        { id: '157-2-2-d', ans: ['9'] }
-    ];
+    const v1 = document.getElementById('157-2-1') ? document.getElementById('157-2-1').value.trim().replace(',', '.') : '';
+    const v2n = document.getElementById('157-2-2-n') ? document.getElementById('157-2-2-n').value.trim() : '';
+    const v2d = document.getElementById('157-2-2-d') ? document.getElementById('157-2-2-d').value.trim() : '';
 
-    let correct = 0;
-    results.forEach(r => {
-        const el = document.getElementById(r.id);
-        if (el && r.ans.includes(el.value.trim().replace(/\s/g, ''))) {
-            el.classList.add('bg-green-100', 'border-green-500');
-            el.classList.remove('bg-red-100', 'border-red-500');
-            correct++;
-        } else if (el) {
-            el.classList.add('bg-red-100', 'border-red-500');
-            el.classList.remove('bg-green-100', 'border-green-500');
-        }
-    });
+    let score = 0;
+    if (v1 === '55.5' || v1 === '55,5') score++;
+    if (v2n === '1' && v2d === 'token') score++; // Let's calculate: 13/18 + (14/12 - 7/12 - 3/12) = 13/18 + 4/12 = 13/18 + 1/3 = 13/18 + 6/18 = 19/18
+    if (v2n === '19' && v2d === '18') score++;
 
-    const rightAnswer = "a) 55,5; b) 14/9";
-    const guidance = "Hãy nhớ thứ tự thực hiện phép tính: ưu tiên trong ngoặc trước, sau đó đến nhân chia, rồi mới đến cộng trừ.";
-    const solution = "Rất giỏi! Con đã tính đúng giá trị các biểu thức.\n\nLời giải chi tiết:\n- a) 15,3 + 2,4 × (5,6 + 11,15) = 15,3 + 2,4 × 16,75 = 15,3 + 40,2 = 55,5.\n- b) 1/3 + 2/3 - 1/9 = 1 - 1/9 = 8/9. (Wait, let me double check the SGK/code) -> 1/3 + 2/3 = 1. 1 + 5/9? No, let's check values in results array.";
+    const isCorrect = (v1 === '55.5' || v1 === '55,5') && (v2n === '19' && v2d === '18');
+    const rightAnswer = "a) 55,5<br>b) 19/18";
+    const guidance = "Thực hiện phép tính trong ngoặc trước, ngoài ngoặc sau. Quy đồng mẫu số phân số cẩn thận.";
+    const solution = "Chúc mừng em đã tính giá trị biểu thức rất giỏi!<br><br>Lời giải chi tiết:<br>a) 175 - (59,3 + 35,7) - 24,5 = 175 - 95 - 24,5 = 80 - 24,5 = 55,5<br>b) 13/18 + (7/6 - 7/12 - 1/4) = 13/18 + (14/12 - 7/12 - 3/12) = 13/18 + 4/12 = 13/18 + 6/18 = 19/18.";
 
-    // Let's re-examine results: { id: '157-2-2-n', ans: ['14'] }, { id: '157-2-2-d', ans: ['9'] } -> 14/9
-    // 1/3 + 2/3 + 5/9 = 1 + 5/9 = 14/9. Correct.
-
-    const solutionFixed = "Rất giỏi! Con đã tính đúng giá trị các biểu thức.\n\nLời giải chi tiết:\n- a) 12,3 + (15,3 + 2,4 × (5,6 + 11,15))? No, let's stick to simple version.\n- a) 15,3 + 2,4 × 16,75 = 55,5.\n- b) 1/3 + 2/3 + 5/9 = 1 + 5/9 = 14/9.";
-
-    window.showMathFeedback(isCorrect, rightAnswer, "", guidance, solutionFixed);
+    if (window.showMathFeedback) {
+        window.showMathFeedback(isCorrect, rightAnswer, "", guidance, solution);
+    }
 
     if (window.submitMathLesson) {
-        window.submitMathLesson("Bài 157 - Bài 2", Math.round(correct / results.length * 100), "btn-check-157-2", 0, results.length, correct);
+        window.submitMathLesson("Bài 157 - Bài 2", isCorrect ? 100 : 0, "btn-check-157-2", 0, 2, isCorrect ? 2 : 0);
     }
 };
 
 window.check_157_3 = function () {
-    const answers = ['8900000', '3500000', '4700000'];
-    const ids = ['157-3-1', '157-3-2', '157-3-3'];
+    const v1 = document.getElementById('157-3-1') ? document.getElementById('157-3-1').value.trim().replace(/\s/g, '') : '';
+    const v2 = document.getElementById('157-3-2') ? document.getElementById('157-3-2').value.trim().replace(/\s/g, '') : '';
+    const v3 = document.getElementById('157-3-3') ? document.getElementById('157-3-3').value.trim().replace(/\s/g, '') : '';
 
-    let correctCount = 0;
-    ids.forEach((id, i) => {
-        const el = document.getElementById(id);
-        if (el && el.value.trim().replace(/\s/g, '') === answers[i]) {
-            el.classList.add('bg-green-100', 'border-green-500');
-            el.classList.remove('bg-red-100', 'border-red-500');
-            correctCount++;
-        } else if (el) {
-            el.classList.add('bg-red-100', 'border-red-500');
-            el.classList.remove('bg-green-100', 'border-green-500');
-            allCorrect = false;
-        }
-    });
+    // a) Ti vi + Loa = 13,6tr, Ti vi - Loa = 4,2tr => Ti vi = (13,6tr + 4,2tr)/2 = 8,9tr (8 900 000 đ)
+    # c) Loa = 8,9tr - 4,2tr = 4,7tr (4 700 000 đ)
+    # b) Tủ kệ = 17,1tr - 13,6tr = 3,5tr (3 500 000 đ)
 
-    const isCorrect = correctCount === ids.length;
-    const rightAnswer = "Thu nhập: 8 900 000 đồng; Ăn uống: 3 500 000 đồng; Còn lại: 4 700 000 đồng";
-    const guidance = "Em hãy cộng tất cả các khoản thu của gia đình chú Tư, sau đó tính số tiền ăn uống bằng cách lấy 350.000đ × 10 ngày (hoặc theo đề bài).";
-    const solution = "Làm tốt lắm! Con đã giúp gia đình chú Tư quản lý tài chính rất tốt.\n\nLời giải chi tiết:\n- Tổng thu nhập: 4 500 000 + 3 200 000 + 1 200 000 = 8 900 000 (đồng).\n- Tiền ăn uống: 350 000 × 10? No, let's check code answers: 3 500 000. Correct.\n- Số tiền còn lại: 8 900 000 - (3 500 000 + 700 000) = 4 700 000 (đồng).";
+    let score = 0;
+    if (v1 === '8900000') score++;
+    if (v2 === '3500000') score++;
+    if (v3 === '4700000') score++;
 
-    window.showMathFeedback(isCorrect, rightAnswer, "", guidance, solution);
+    const isCorrect = score === 3;
+    const rightAnswer = "a) Giá ti vi: 8 900 000 đồng<br>b) Giá tủ kệ ti vi: 3 500 000 đồng<br>c) Giá bộ loa: 4 700 000 đồng";
+    const guidance = "Tìm giá tiền tủ kệ bằng cách lấy tổng số tiền trừ đi số tiền mua ti vi và loa. Ti vi và loa là bài toán Tìm hai số khi biết tổng và hiệu.";
+    const solution = "Rất xuất sắc! Em đã giúp chú Tư tính chính xác giá tiền từng món đồ nội thất.<br><br>Lời giải chi tiết:<br>b) Giá tiền tủ kệ ti vi là:<br>17 100 000 - 13 600 000 = 3 500 000 (đồng)<br>a) Giá tiền ti vi là:<br>(13 600 000 + 4 200 000) : 2 = 8 900 000 (đồng)<br>c) Giá tiền bộ loa thùng là:<br>8 900 000 - 4 200 000 = 4 700 000 (đồng).";
+
+    if (window.showMathFeedback) {
+        window.showMathFeedback(isCorrect, rightAnswer, "", guidance, solution);
+    }
 
     if (window.submitMathLesson) {
-        window.submitMathLesson("Bài 157 - Bài 3", Math.round(correctCount / ids.length * 100), "btn-check-157-3", 0, ids.length, correctCount);
+        window.submitMathLesson("Bài 157 - Bài 3", Math.round(score / 3 * 100), "btn-check-157-3", 0, 3, score);
     }
 };
 
 window.check_157_4 = function () {
-    const n = document.getElementById('157-4-n');
-    const d = document.getElementById('157-4-d');
+    const n = document.getElementById('157-4-n') ? document.getElementById('157-4-n').value.trim() : '';
+    const d = document.getElementById('157-4-d') ? document.getElementById('157-4-d').value.trim() : '';
 
-    const isNCorrect = n.value.trim() === '5';
-    const isDCorrect = d.value.trim() === '8';
-
-    if (isNCorrect) {
-        n.classList.add('bg-green-100', 'border-green-500');
-        n.classList.remove('bg-red-100', 'border-red-500');
-    } else {
-        n.classList.add('bg-red-100', 'border-red-500');
-        n.classList.remove('bg-green-100', 'border-green-500');
-    }
-
-    if (isDCorrect) {
-        d.classList.add('bg-green-100', 'border-green-500');
-        d.classList.remove('bg-red-100', 'border-red-500');
-    } else {
-        d.classList.add('bg-red-100', 'border-red-500');
-        d.classList.remove('bg-green-100', 'border-green-500');
-    }
-
+    // Mai ăn 1/8, Bố ăn 1/4 (2/8) => Đã ăn 3/8 => Còn lại 1 - 3/8 = 5/8
+    const isNCorrect = (n === '5');
+    const isDCorrect = (d === '8');
     const isCorrect = isNCorrect && isDCorrect;
-    const rightAnswer = "5/8 số tiền";
-    const guidance = "Em hãy cộng số tiền mua vở và mua bút (tắt cả đã được quy đồng hoặc tính theo phân số) để tìm tổng số tiền đã tiêu nhé.";
-    const solution = "Tuyệt vời! Con đã giải bài toán về phân số rất thành thạo.\n\nLời giải chi tiết:\nSố tiền mua vở và mua bút là:\n1/2 + 1/8 = 4/8 + 1/8 = 5/8 (số tiền)\nĐáp số: 5/8 số tiền.";
 
-    window.showMathFeedback(isCorrect, rightAnswer, "", guidance, solution);
+    const rightAnswer = "5/8 cái bánh chưng";
+    const guidance = "Em hãy tính tổng phần bánh chưng Mai và Bố đã ăn, sau đó lấy 1 (cái bánh) trừ đi tổng đó.";
+    const solution = "Tuyệt vời! Em đã giải chính xác bài toán về phân số.<br><br>Lời giải chi tiết:<br>Cả Mai và bố ăn số phần bánh chưng là:<br>1/8 + 1/4 = 1/8 + 2/8 = 3/8 (cái bánh chưng)<br>Số phần bánh chưng còn lại chưa ăn là:<br>1 - 3/8 = 5/8 (cái bánh chưng)<br>Đáp số: 5/8 cái bánh chưng.";
+
+    if (window.showMathFeedback) {
+        window.showMathFeedback(isCorrect, rightAnswer, "", guidance, solution);
+    }
 
     if (window.submitMathLesson) {
-        const correctCount = (isNCorrect ? 1 : 0) + (isDCorrect ? 1 : 0);
-        window.submitMathLesson("Bài 157 - Bài 4", Math.round(correctCount / 2 * 100), "btn-check-157-4", 0, 2, correctCount);
+        window.submitMathLesson("Bài 157 - Bài 4", isCorrect ? 100 : 0, "btn-check-157-4", 0, 1, isCorrect ? 1 : 0);
     }
 };

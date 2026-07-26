@@ -35,7 +35,7 @@ export const lesson168 = {
             <div id="lesson168_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg rotate-3">1</div>
-                    <p class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Điền vào ô trống</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Bài 1. Điền vào ô trống</h3>
                 </div>
                 
                 <div class="overflow-x-auto p-4 bg-blue-50 rounded-[3rem] border-2 border-blue-100">
@@ -91,7 +91,7 @@ export const lesson168 = {
             <div id="lesson168_b2" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-orange-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-orange-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg -rotate-2">2</div>
-                    <p class="text-2xl md:text-4xl font-black text-orange-800 uppercase tracking-wide">Quãng đường ô tô đi được</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-orange-800 uppercase tracking-wide">Bài 2. Quãng đường ô tô đi được</h3>
                 </div>
                 
                 <div class="p-8 bg-orange-50 rounded-[2.5rem] border-2 border-orange-100 flex flex-col md:flex-row gap-8 items-center">
@@ -122,7 +122,7 @@ export const lesson168 = {
             <div id="lesson168_b3" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-green-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-20 h-20 flex-shrink-0 bg-green-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg rotate-1">3</div>
-                    <p class="text-2xl md:text-4xl font-black text-green-800 uppercase tracking-wide">Quãng đường chim đại bàng bay</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-green-800 uppercase tracking-wide">Bài 3. Quãng đường chim đại bàng bay</h3>
                 </div>
                 
                 <div class="p-8 bg-green-50 rounded-[2.5rem] border-2 border-green-100 flex flex-col items-center gap-8">
@@ -196,7 +196,7 @@ window.check_168_1 = () => {
     const isCorrect = score === ids.length;
     const rightAnswer = "130; 1470; 24";
     const studentAnswer = studentAns.join('<br>');
-    const guidance = "Em hãy nhớ công thức tính quãng đường: s = v × t. Lưu ý đổi đơn vị thời gian cho tương ứng với vận tốc (ví dụ 40 phút = 2/3 giờ) trước khi tính nhé!";
+    const guidance = "Em hãy nhớ công thức tính quãng đường: s = v × t. Lưu ý quy đổi các đơn vị đo thời gian và vận tốc cho đồng bộ trước khi tính nhé!";
     const solution = `
         <b>Lời giải chi tiết:</b><br>
         - Hàng 1: s = 32,5 × 4 = 130 (km)<br>
@@ -242,7 +242,7 @@ window.check_168_3 = () => {
 
     const rightAnswer = "115,2";
     const studentAnswer = val || "?";
-    const guidance = "Em hãy đổi 72 phút ra đơn vị giờ (72 : 60), sau đó lấy vận tốc nhân với thời gian để tìm quãng đường nhé!";
+    const guidance = "Em hãy thực hiện:<br>1. Đổi số đo thời gian từ phút ra đơn vị giờ (bằng cách chia số phút cho 60).<br>2. Áp dụng công thức tính quãng đường: lấy vận tốc nhân với thời gian chạy tương ứng nhé!";
     const solution = `
         <b>Lời giải chi tiết:</b><br>
         Đổi 72 phút = 1,2 giờ.<br>

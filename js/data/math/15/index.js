@@ -64,19 +64,7 @@ export const lesson15 = {
     ...metadata.lessonInfo,
     "content": `
         <div class="theory-section space-y-6 animate-in fade-in slide-in-from-bottom-10 duration-1000 pt-6">
-            <div class="glass-card p-6 md:p-10 rounded-[3rem] bg-gradient-to-br from-emerald-600 to-teal-700 shadow-2xl relative overflow-hidden text-white">
-<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-<div class="absolute bottom-0 left-0 w-48 h-48 bg-teal-400/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-<div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-<div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30 animate-pulse">
-<span class="text-5xl md:text-7xl">📐</span>
-</div>
-<div class="text-center md:text-left">
-<h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">ÔN TẬP HÌNH HỌC VÀ ĐO LƯỜNG</h2>
-<p class="text-teal-100 text-lg md:text-2xl font-medium opacity-90">Cùng ôn tập về khối lượng, các loại góc, đường thẳng song song và hình phẳng nhé!</p>
-</div>
-</div>
-</div>
+            
 <div class="glass-card p-6 md:p-10 rounded-[3rem] bg-white shadow-xl border border-teal-100 relative overflow-hidden">
 <div class="flex items-center gap-4 mb-6">
 <div class="w-12 h-12 bg-emerald-500 rounded-2xl flex items-center justify-center text-white text-xl md:text-3xl shadow-lg shadow-emerald-200">
@@ -118,7 +106,7 @@ export const lesson15 = {
                         <div class="glass-card p-4 md:p-6 rounded-[2.5rem] bg-white shadow-2xl border border-teal-50 relative overflow-hidden">
                             <div class="flex items-center gap-4 mb-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-teal-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                 <h3 class="text-lg md:text-2xl text-teal-900 font-black uppercase tracking-tighter">Điền số thích hợp vào chỗ chấm</h3>
+                                 <h3 class="text-lg md:text-2xl text-teal-900 font-black uppercase tracking-tighter">Bài 1. Điền số thích hợp vào chỗ chấm</h3>
                             </div>
                             
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700 font-bold">
@@ -126,9 +114,9 @@ export const lesson15 = {
                                 <div class="p-4 bg-teal-50/20 rounded-[2rem] border border-teal-100 space-y-4 text-center">
                                     <div class="text-emerald-700 text-lg font-black">a) Đổi sang ki-lô-gam</div>
                                     <div class="flex flex-col gap-3 items-center font-black text-lg md:text-2xl">
-                                        <div>6 yến = <input type="text" id="ans-15-1-a1" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none md:text-3xl" placeholder="?"> kg</div>
-                                        <div>2 tạ = <input type="text" id="ans-15-1-a2" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none md:text-3xl" placeholder="?"> kg</div>
-                                        <div>2 tấn = <input type="text" id="ans-15-1-a3" class="w-24 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none md:text-3xl" placeholder="?"> kg</div>
+                                        <div>6 yến = <input type="text" id="ans-15-1-a1" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none md:text-3xl" placeholder=""> kg</div>
+                                        <div>2 tạ = <input type="text" id="ans-15-1-a2" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none md:text-3xl" placeholder=""> kg</div>
+                                        <div>2 tấn = <input type="text" id="ans-15-1-a3" class="w-24 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none md:text-3xl" placeholder=""> kg</div>
                                     </div>
                                 </div>
 
@@ -136,9 +124,9 @@ export const lesson15 = {
                                 <div class="p-4 bg-teal-50/20 rounded-[2rem] border border-teal-100 space-y-4 text-center">
                                     <div class="text-emerald-700 text-lg font-black">b) Đổi đơn vị đo khối lượng lớn</div>
                                     <div class="flex flex-col gap-3 items-center font-black text-lg md:text-2xl">
-                                        <div>5 tấn = <input type="text" id="ans-15-1-b1" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none md:text-3xl" placeholder="?"> tạ</div>
-                                        <div>1 tấn = <input type="text" id="ans-15-1-b2" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none md:text-3xl" placeholder="?"> yến</div>
-                                        <div>9 tạ = <input type="text" id="ans-15-1-b3" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none md:text-3xl" placeholder="?"> yến</div>
+                                        <div>5 tấn = <input type="text" id="ans-15-1-b1" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none md:text-3xl" placeholder=""> tạ</div>
+                                        <div>1 tấn = <input type="text" id="ans-15-1-b2" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none md:text-3xl" placeholder=""> yến</div>
+                                        <div>9 tạ = <input type="text" id="ans-15-1-b3" class="w-20 h-9 border border-teal-300 rounded-xl text-center font-black text-teal-600 outline-none md:text-3xl" placeholder=""> yến</div>
                                     </div>
                                 </div>
                             </div>
@@ -154,7 +142,7 @@ export const lesson15 = {
                         <div class="glass-card p-4 md:p-6 rounded-[2.5rem] bg-white shadow-2xl border border-teal-50 relative overflow-hidden">
                             <div class="flex items-center gap-4 mb-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-teal-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform rotate-2">2</div>
-                                 <h3 class="text-lg md:text-2xl text-teal-900 font-black uppercase tracking-tighter">Nhận biết & Thực hành đo góc</h3>
+                                <h3 class="text-lg md:text-2xl text-teal-900 font-black uppercase tracking-tighter">Bài 2. Nhận biết & Thực hành đo góc</h3>
                             </div>
                             
                             <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
@@ -264,9 +252,9 @@ export const lesson15 = {
                                 <div class="p-4 bg-teal-50/20 rounded-[2rem] border border-teal-100 space-y-4 font-bold text-slate-700 text-lg md:text-2xl font-medium">
                                     <div class="p-3 bg-white border border-teal-100 rounded-2xl space-y-2">
                                         <p class="text-emerald-700 font-black">a) Đếm các góc:</p>
-                                        <p>Có <input type="text" id="ans-15-2a-vuong" class="w-10 h-7 border border-teal-300 rounded text-center text-teal-600 font-black h-12 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> góc vuông</p>
-                                        <p>Có <input type="text" id="ans-15-2a-nhon" class="w-10 h-7 border border-teal-300 rounded text-center text-teal-600 font-black h-12 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> góc nhọn</p>
-                                        <p>Có <input type="text" id="ans-15-2a-tu" class="w-10 h-7 border border-teal-300 rounded text-center text-teal-600 font-black h-12 md:text-3xl" placeholder="?" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> góc tù</p>
+                                        <p>Có <input type="text" id="ans-15-2a-vuong" class="w-10 h-7 border border-teal-300 rounded text-center text-teal-600 font-black h-12 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> góc vuông</p>
+                                        <p>Có <input type="text" id="ans-15-2a-nhon" class="w-10 h-7 border border-teal-300 rounded text-center text-teal-600 font-black h-12 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> góc nhọn</p>
+                                        <p>Có <input type="text" id="ans-15-2a-tu" class="w-10 h-7 border border-teal-300 rounded text-center text-teal-600 font-black h-12 md:text-3xl" placeholder="" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;"> góc tù</p>
                                     </div>
 
                                     <div class="p-3 bg-white border border-teal-100 rounded-2xl space-y-2">
@@ -313,7 +301,7 @@ export const lesson15 = {
                         <div class="glass-card p-4 md:p-6 rounded-[2.5rem] bg-white shadow-2xl border border-teal-50 relative overflow-hidden">
                             <div class="flex items-center gap-4 mb-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-teal-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-2">3</div>
-                                <h3 class="text-lg md:text-2xl text-teal-900 font-black uppercase tracking-tighter">Bức tranh của Rô-bốt</h3>
+                                <h3 class="text-lg md:text-2xl text-teal-900 font-black uppercase tracking-tighter">Bài 3. Bức tranh của Rô-bốt</h3>
                             </div>
                             
                             <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
@@ -393,7 +381,7 @@ export const lesson15 = {
                         <div class="glass-card p-4 md:p-6 rounded-[2.5rem] bg-white shadow-2xl border border-teal-50 relative overflow-hidden">
                             <div class="flex items-center gap-4 mb-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-teal-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">4</div>
-                                <h3 class="text-lg md:text-2xl text-teal-900 font-black uppercase tracking-tighter">Bài toán cam bác Năm</h3>
+                                <h3 class="text-lg md:text-2xl text-teal-900 font-black uppercase tracking-tighter">Bài 4. Bài toán cam bác Năm</h3>
                             </div>
                             
                             <div class="space-y-4">

@@ -36,7 +36,7 @@ export const lesson159 = {
             <div id="lesson159_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">1</div>
-                    <h4 class="text-2xl md:text-3xl font-black text-blue-700 uppercase tracking-wide">Tính rồi thử lại (theo mẫu)</h4>
+                    <h3 class="text-2xl md:text-3xl font-black text-blue-700 uppercase tracking-wide">Bài 1. Tính rồi thử lại (theo mẫu)</h3>
                 </div>
                 
                 <div class="p-8 bg-blue-50 rounded-[2.5rem] border-2 border-blue-100 mb-10">
@@ -146,7 +146,7 @@ export const lesson159 = {
             <div id="lesson159_b2" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-emerald-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-16 h-16 bg-emerald-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">2</div>
-                    <h4 class="text-2xl md:text-3xl font-black text-emerald-700 uppercase tracking-wide">Tính nhẩm</h4>
+                    <h3 class="text-2xl md:text-3xl font-black text-emerald-700 uppercase tracking-wide">Bài 2. Tính nhẩm</h3>
                 </div>
                 
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -182,7 +182,7 @@ export const lesson159 = {
             <div id="lesson159_b3" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-sky-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-16 h-16 bg-sky-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">3</div>
-                    <h4 class="text-2xl md:text-3xl font-black text-sky-700 uppercase tracking-wide">Tính giá trị của biểu thức</h4>
+                    <h3 class="text-2xl md:text-3xl font-black text-sky-700 uppercase tracking-wide">Bài 3. Tính giá trị của biểu thức</h3>
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -224,7 +224,7 @@ export const lesson159 = {
             <div id="lesson159_b4" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-rose-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-16 h-16 bg-rose-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">4</div>
-                    <h4 class="text-2xl md:text-3xl font-black text-rose-700 uppercase tracking-wide">Giải bài toán</h4>
+                    <h3 class="text-2xl md:text-3xl font-black text-rose-700 uppercase tracking-wide">Bài 4. Giải bài toán</h3>
                 </div>
                 
                 <div class="p-8 bg-rose-50 rounded-[2.5rem] border-4 border-rose-200">
@@ -259,7 +259,7 @@ export const lesson159 = {
             <div id="lesson159_b5" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-teal-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-16 h-16 bg-teal-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">5</div>
-                    <h4 class="text-2xl md:text-3xl font-black text-teal-700 uppercase tracking-wide">Chọn câu trả lời đúng</h4>
+                    <h3 class="text-2xl md:text-3xl font-black text-teal-700 uppercase tracking-wide">Bài 5. Chọn câu trả lời đúng</h3>
                 </div>
                 
                 <div class="p-8 bg-teal-50 rounded-[2.5rem] border-4 border-teal-200">

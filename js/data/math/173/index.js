@@ -51,7 +51,7 @@ export const lesson173 = {
             <div id="lesson173_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-16 h-16 flex-shrink-0 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">1</div>
-                    <p class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Đặt tính rồi tính</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Bài 1. Đặt tính rồi tính</h3>
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
@@ -97,7 +97,7 @@ export const lesson173 = {
             <div id="lesson173_b2" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-emerald-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-16 h-16 flex-shrink-0 bg-emerald-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">2</div>
-                    <p class="text-2xl md:text-4xl font-black text-emerald-800 uppercase tracking-wide">Đặt tính rồi tính (Số thập phân)</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-emerald-800 uppercase tracking-wide">Bài 2. Đặt tính rồi tính (Số thập phân)</h3>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
@@ -143,7 +143,7 @@ export const lesson173 = {
             <div id="lesson173_b3" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-orange-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-16 h-16 flex-shrink-0 bg-orange-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">3</div>
-                    <p class="text-2xl md:text-4xl font-black text-orange-800 uppercase tracking-wide">Tính giá trị biểu thức</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-orange-800 uppercase tracking-wide">Bài 3. Tính giá trị biểu thức</h3>
                 </div>
 
                 <div class="space-y-8">
@@ -193,7 +193,7 @@ export const lesson173 = {
             <div id="lesson173_b4" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-rose-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-16 h-16 flex-shrink-0 bg-rose-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">4</div>
-                    <p class="text-2xl md:text-4xl font-black text-rose-800 uppercase tracking-wide">Tính bằng cách thuận tiện</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-rose-800 uppercase tracking-wide">Bài 4. Tính bằng cách thuận tiện</h3>
                 </div>
 
                 <div class="space-y-8">
@@ -238,7 +238,7 @@ export const lesson173 = {
             <div id="lesson173_b5" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500 relative overflow-hidden">
                 <div class="flex items-center gap-6 mb-8">
                     <div class="w-16 h-16 flex-shrink-0 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">5</div>
-                    <p class="text-2xl md:text-4xl font-black text-blue-600 uppercase tracking-wide">Tính thời gian</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-blue-600 uppercase tracking-wide">Bài 5. Tính thời gian</h3>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">

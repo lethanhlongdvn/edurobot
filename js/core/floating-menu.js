@@ -193,16 +193,19 @@
         `;
         document.head.appendChild(style);
 
+        const isPage = window.location.href.includes('/pages/');
+        const assetsPrefix = isPage ? '../' : '';
+
         const btnG = document.createElement('div');
         btnG.id = BTN_G_ID;
         btnG.className = 'edurobot-floating-btn edurobot-pulse';
-        btnG.innerHTML = 'G';
+        btnG.innerHTML = `<img src="${assetsPrefix}assets/images/gamepad.png" style="width: 100%; height: 100%; object-fit: contain; padding: 15%;" />`;
         btnG.title = 'Trò chơi';
 
         const btnR = document.createElement('div');
         btnR.id = BTN_R_ID;
         btnR.className = 'edurobot-floating-btn';
-        btnR.innerHTML = 'R';
+        btnR.innerHTML = `<img src="${assetsPrefix}assets/images/chatbot.png" style="width: 100%; height: 100%; object-fit: contain; padding: 15%;" />`;
         btnR.title = 'Robot - Trợ lý của bạn';
 
         const menu = document.createElement('div');

@@ -58,19 +58,7 @@ export const lesson050 = {
     "content": `
         <div class="theory-section space-y-6 animate-in fade-in slide-in-from-top-10 duration-1000 pt-6">
             <!-- Banner chính -->
-            <div class="p-8 rounded-[2.5rem] bg-gradient-to-br from-blue-700 to-blue-900 shadow-2xl relative overflow-hidden text-white">
-                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-                <div class="absolute bottom-0 left-0 w-48 h-48 bg-blue-500/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-                <div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-                    <div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30 shrink-0 text-3xl md:text-5xl">
-                        💡
-                    </div>
-                    <div class="text-center md:text-left">
-                        <h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">CHIA MỘT SỐ THẬP PHÂN CHO MỘT SỐ THẬP PHÂN</h2>
-                        <p class="text-blue-100 text-lg md:text-2xl font-medium opacity-90">Dịch chuyển dấu phẩy ở cả hai số để đưa về phép chia cho số tự nhiên!</p>
-                    </div>
-                </div>
-            </div>
+            
 
             <!-- Khám phá ví dụ a -->
             <div class="p-8 rounded-[2.5rem] bg-white border border-slate-100 shadow-xl space-y-6">
@@ -198,7 +186,7 @@ export const lesson050 = {
                             <div class="flex items-center justify-between mb-6 flex-wrap gap-4">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                    <h3 class="text-xl md:text-3xl font-black text-blue-900 uppercase">Hoạt động: Đặt tính rồi tính</h3>
+                                    <h3 class="text-xl md:text-3xl font-black text-blue-900 uppercase">Bài 1. Hoạt động: Đặt tính rồi tính</h3>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <button onclick="window.toggleSolution('sol-50-1')" class="bg-amber-500 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full hover:bg-amber-600 active:scale-95 transition-all shadow-md">Hiện bài giải</button>
@@ -218,50 +206,42 @@ export const lesson050 = {
                                 <div id="content-act-a" class="animate-in fade-in duration-300 flex flex-col items-center">
                                     <h4 class="text-lg md:text-2xl font-black text-blue-700 mb-4">a) 48,3 : 3,5</h4>
                                     <div class="flex flex-col items-center justify-center font-mono py-6 bg-slate-50 border border-slate-200 rounded-3xl w-full max-w-[450px] shadow-inner">
-                                        <div class="grid gap-2 items-center justify-items-center" style="grid-template-columns: 40px 40px 40px 40px 24px 40px 40px 16px 40px; gap: 4px;">
+                                        <div class="grid gap-2 items-center justify-items-center" style="grid-template-columns: 40px 40px 40px 40px 24px 40px 40px 40px; gap: 4px;">
                                             <!-- Hàng 1: 4 8 3 _ | 3 5 -->
-                                            <input type="text" id="ans-50-1-a-r1c1" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-a-r1c2" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-a-r1c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                            <input type="text" id="ans-50-1-a-r1c1" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-a-r1c2" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-a-r1c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                             <span></span>
                                             <span class="border-r-4 border-slate-800 h-full w-0"></span>
-                                            <input type="text" id="ans-50-1-a-r1c5" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border-b-4 border-b-slate-800" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-a-r1c6" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border-b-4 border-b-slate-800" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <span class="border-b-4 border-slate-800 w-full h-full"></span>
-                                            <span class="border-b-4 border-slate-800 w-full h-full"></span>
+                                            <input type="text" id="ans-50-1-a-r1c5" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border-b-4 border-b-slate-800" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-a-r1c6" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border-b-4 border-b-slate-800" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <span></span>
 
                                             <!-- Hàng 2: 1 3 3 _ | 1 3 , 8 -->
-                                            <input type="text" id="ans-50-1-a-r2c1" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-a-r2c2" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-a-r2c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                            <input type="text" id="ans-50-1-a-r2c1" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-a-r2c2" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-a-r2c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                             <span></span>
                                             <span class="border-r-4 border-slate-800 h-full w-0"></span>
-                                            <input type="text" id="ans-50-1-a-r2c5" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-a-r2c6" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-a-r2c7" class="border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="width: 16px !important; height: 40px !important; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-a-r2c8" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                            <input type="text" id="ans-50-1-a-r2c5" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-a-r2c6" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-a-r2c8" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
 
                                             <!-- Hàng 3: _ 2 8 0 | -->
-                                            <span></span>
-                                            <input type="text" id="ans-50-1-a-r3c2" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-a-r3c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-a-r3c4" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                            <input type="text" id="ans-50-1-a-r3c1" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-a-r3c2" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-a-r3c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-a-r3c4" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                             <span class="border-r-4 border-slate-800 h-full w-0"></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
+                                            <span></span><span></span><span></span>
 
                                             <!-- Hàng 4: _ _ _ 0 | -->
                                             <span></span>
                                             <span></span>
-                                            <span></span>
-                                            <input type="text" id="ans-50-1-a-r4c4" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                            <input type="text" id="ans-50-1-a-r4c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-a-r4c4" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                             <span class="border-r-4 border-slate-800 h-full w-0"></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
+                                            <span></span><span></span><span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -270,58 +250,48 @@ export const lesson050 = {
                                 <div id="content-act-b" class="hidden animate-in fade-in duration-300 flex flex-col items-center">
                                     <h4 class="text-lg md:text-2xl font-black text-blue-700 mb-4">b) 144,55 : 3,5</h4>
                                     <div class="flex flex-col items-center justify-center font-mono py-6 bg-slate-50 border border-slate-200 rounded-3xl w-full max-w-[500px] shadow-inner">
-                                        <div class="grid gap-2 items-center justify-items-center" style="grid-template-columns: 40px 40px 40px 40px 16px 40px 24px 40px 40px 16px 40px; gap: 4px;">
+                                        <div class="grid gap-2 items-center justify-items-center" style="grid-template-columns: 40px 40px 40px 40px 40px 24px 40px 40px 40px; gap: 4px;">
                                             <!-- Hàng 1: 1 4 4 5 , 5 | 3 5 -->
-                                            <input type="text" id="ans-50-1-b-r1c1" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-b-r1c2" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-b-r1c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-b-r1c4" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-b-r1c5" class="border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="width: 16px !important; height: 40px !important; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-b-r1c6" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                            <input type="text" id="ans-50-1-b-r1c1" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-b-r1c2" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-b-r1c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-b-r1c4" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-b-r1c6" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                             <span class="border-r-4 border-slate-800 h-full w-0"></span>
-                                            <input type="text" id="ans-50-1-b-r1c8" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border-b-4 border-b-slate-800" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-b-r1c9" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border-b-4 border-b-slate-800" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <span class="border-b-4 border-slate-800 w-full h-full"></span>
-                                            <span class="border-b-4 border-slate-800 w-full h-full"></span>
+                                            <input type="text" id="ans-50-1-b-r1c8" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border-b-4 border-b-slate-800" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-b-r1c9" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border-b-4 border-b-slate-800" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <span></span>
 
                                             <!-- Hàng 2:     4 5 | 4 1 , 3 -->
                                             <span></span>
-                                            <span></span>
-                                            <input type="text" id="ans-50-1-b-r2c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-b-r2c4" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <span></span>
+                                            <input type="text" id="ans-50-1-b-r2c2" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-b-r2c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-b-r2c4" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                             <span></span>
                                             <span class="border-r-4 border-slate-800 h-full w-0"></span>
-                                            <input type="text" id="ans-50-1-b-r2c8" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-b-r2c9" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-b-r2c10" class="border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="width: 16px !important; height: 40px !important; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-b-r2c11" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                            <input type="text" id="ans-50-1-b-r2c8" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-b-r2c9" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-b-r2c11" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
 
                                             <!-- Hàng 3:     1 0   5 | -->
                                             <span></span>
                                             <span></span>
-                                            <input type="text" id="ans-50-1-b-r3c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-b-r3c4" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                            <input type="text" id="ans-50-1-b-r3c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-b-r3c4" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                             <span></span>
-                                            <input type="text" id="ans-50-1-b-r3c6" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                            <input type="text" id="ans-50-1-b-r3c6" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                             <span class="border-r-4 border-slate-800 h-full w-0"></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
+                                            <span></span><span></span><span></span>
 
                                             <!-- Hàng 4:           0 | -->
                                             <span></span>
                                             <span></span>
                                             <span></span>
                                             <span></span>
-                                            <span></span>
-                                            <input type="text" id="ans-50-1-b-r4c6" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                            <input type="text" id="ans-50-1-b-r4c5" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-b-r4c6" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                             <span class="border-r-4 border-slate-800 h-full w-0"></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
+                                            <span></span><span></span><span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -332,25 +302,25 @@ export const lesson050 = {
                                     <div class="flex flex-col items-center justify-center font-mono py-6 bg-slate-50 border border-slate-200 rounded-3xl w-full max-w-[450px] shadow-inner">
                                         <div class="grid gap-2 items-center justify-items-center" style="grid-template-columns: 40px 40px 40px 24px 40px 40px; gap: 4px;">
                                             <!-- Hàng 1: 3 0 0 | 2 5 -->
-                                            <input type="text" id="ans-50-1-c-r1c1" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-c-r1c2" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-c-r1c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                            <input type="text" id="ans-50-1-c-r1c1" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-c-r1c2" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-c-r1c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                             <span class="border-r-4 border-slate-800 h-full w-0"></span>
-                                            <input type="text" id="ans-50-1-c-r1c5" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border-b-4 border-b-slate-800" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-c-r1c6" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border-b-4 border-b-slate-800" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                            <input type="text" id="ans-50-1-c-r1c5" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border-b-4 border-b-slate-800" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-c-r1c6" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border-b-4 border-b-slate-800" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
 
                                             <!-- Hàng 2:   5 0 | 1 2 -->
-                                            <span></span>
-                                            <input type="text" id="ans-50-1-c-r2c2" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-c-r2c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                            <input type="text" id="ans-50-1-c-r2c1" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-c-r2c2" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-c-r2c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                             <span class="border-r-4 border-slate-800 h-full w-0"></span>
-                                            <input type="text" id="ans-50-1-c-r2c5" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
-                                            <input type="text" id="ans-50-1-c-r2c6" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                            <input type="text" id="ans-50-1-c-r2c5" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-c-r2c6" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
 
                                             <!-- Hàng 3:     0 | -->
                                             <span></span>
-                                            <span></span>
-                                            <input type="text" id="ans-50-1-c-r3c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="?">
+                                            <input type="text" id="ans-50-1-c-r3c2" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
+                                            <input type="text" id="ans-50-1-c-r3c3" class="w-10 h-10 border border-slate-800 rounded-lg text-center font-black p-0 bg-[#fef9e7] text-blue-700 focus:bg-white focus:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" placeholder="">
                                             <span class="border-r-4 border-slate-800 h-full w-0"></span>
                                             <span></span>
                                             <span></span>
@@ -447,7 +417,7 @@ export const lesson050 = {
                             <div class="flex items-center justify-between mb-6 flex-wrap gap-4">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                                    <h3 class="text-xl md:text-3xl font-black text-blue-900 uppercase">Tính số lượng kẹo</h3>
+                                    <h3 class="text-xl md:text-3xl font-black text-blue-900 uppercase">Bài 2. Tính số lượng kẹo</h3>
                                 </div>
                                 <button onclick="window.toggleSolution('sol-50-2')" class="bg-amber-500 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full hover:bg-amber-600 active:scale-95 transition-all shadow-md">Hiện bài giải</button>
                             </div>
@@ -471,7 +441,7 @@ export const lesson050 = {
                                     <div class="p-6 bg-slate-50 border border-slate-200 rounded-3xl shadow-inner">
                                         <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-3 text-lg md:text-2xl font-black text-slate-800">
                                             <span>Đáp số:</span>
-                                            <input type="text" id="ans-50-2-result" class="w-36 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white md:text-2xl" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="?">
+                                            <input type="text" id="ans-50-2-result" class="w-36 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white md:text-2xl" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="">
                                             <span class="text-blue-800">kg kẹo</span>
                                         </div>
                                     </div>
@@ -505,7 +475,7 @@ export const lesson050 = {
                             <div class="flex items-center justify-between mb-6">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">3</div>
-                                    <h3 class="text-xl md:text-3xl font-black text-blue-900 uppercase">Tính chiều dài nhà kính</h3>
+                                    <h3 class="text-xl md:text-3xl font-black text-blue-900 uppercase">Bài 3. Tính chiều dài nhà kính</h3>
                                 </div>
                                 <button onclick="window.toggleSolution('sol-50-3')" class="bg-amber-500 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full hover:bg-amber-600 active:scale-95 transition-all shadow-md">Hiện bài giải</button>
                             </div>
@@ -529,7 +499,7 @@ export const lesson050 = {
                                     <div class="p-6 bg-slate-50 border border-slate-200 rounded-3xl shadow-inner">
                                         <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-3 text-lg md:text-2xl font-black text-slate-800">
                                             <span>Đáp số:</span>
-                                            <input type="text" id="ans-50-3-result" class="w-36 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white md:text-2xl" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="?">
+                                            <input type="text" id="ans-50-3-result" class="w-36 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white md:text-2xl" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="">
                                             <span class="text-emerald-800">m</span>
                                         </div>
                                     </div>
@@ -612,45 +582,47 @@ window.check_50_1 = function() {
     var r2c2_a = getVal('ans-50-1-a-r2c2') === '3';
     var r2c3_a = getVal('ans-50-1-a-r2c3') === '3';
     var r2c5_a = getVal('ans-50-1-a-r2c5') === '1';
-    var r2c6_a = getVal('ans-50-1-a-r2c6') === '3';
-    var r2c7_a = isCommaVal(getVal('ans-50-1-a-r2c7'));
+    var r2c6_a = getVal('ans-50-1-a-r2c6') === '3,' || getVal('ans-50-1-a-r2c6') === '3.';
+    var r2c7_a = true;
     var r2c8_a = getVal('ans-50-1-a-r2c8') === '8';
 
+    var r3c1_a = getVal('ans-50-1-a-r3c1') === '0' || getVal('ans-50-1-a-r3c1') === '';
     var r3c2_a = getVal('ans-50-1-a-r3c2') === '2';
     var r3c3_a = getVal('ans-50-1-a-r3c3') === '8';
     var r3c4_a = getVal('ans-50-1-a-r3c4') === '0';
 
-    var r4c4_a = getVal('ans-50-1-a-r4c4') === '0';
+    var r4c4_a = getVal('ans-50-1-a-r4c4') === '0' && (getVal('ans-50-1-a-r4c3') === '0' || getVal('ans-50-1-a-r4c3') === '');
 
     var aCorrect = r1c1_a && r1c2_a && r1c3_a && r1c5_a && r1c6_a &&
                  r2c1_a && r2c2_a && r2c3_a && r2c5_a && r2c6_a && r2c7_a && r2c8_a &&
-                 r3c1_a && r3c2_a && r3c3_a && r4c3_a;
+                 r3c1_a && r3c2_a && r3c3_a && r3c4_a && r4c4_a;
 
     // b) 144,55 : 3,5 = 41,3 -> 1445,5 : 35 = 41,3
     var r1c1_b = getVal('ans-50-1-b-r1c1') === '1';
     var r1c2_b = getVal('ans-50-1-b-r1c2') === '4';
     var r1c3_b = getVal('ans-50-1-b-r1c3') === '4';
-    var r1c4_b = getVal('ans-50-1-b-r1c4') === '5';
-    var r1c5_b = isCommaVal(getVal('ans-50-1-b-r1c5'));
+    var r1c4_b = getVal('ans-50-1-b-r1c4') === '5,' || getVal('ans-50-1-b-r1c4') === '5.';
+    var r1c5_b = true;
     var r1c6_b = getVal('ans-50-1-b-r1c6') === '5';
     var r1c8_b = getVal('ans-50-1-b-r1c8') === '3';
     var r1c9_b = getVal('ans-50-1-b-r1c9') === '5';
 
+    var r2c2_b = getVal('ans-50-1-b-r2c2') === '0' || getVal('ans-50-1-b-r2c2') === '';
     var r2c3_b = getVal('ans-50-1-b-r2c3') === '4';
     var r2c4_b = getVal('ans-50-1-b-r2c4') === '5';
     var r2c8_b = getVal('ans-50-1-b-r2c8') === '4';
-    var r2c9_b = getVal('ans-50-1-b-r2c9') === '1';
-    var r2c10_b = isCommaVal(getVal('ans-50-1-b-r2c10'));
+    var r2c9_b = getVal('ans-50-1-b-r2c9') === '1,' || getVal('ans-50-1-b-r2c9') === '1.';
+    var r2c10_b = true;
     var r2c11_b = getVal('ans-50-1-b-r2c11') === '3';
 
     var r3c3_b = getVal('ans-50-1-b-r3c3') === '1';
     var r3c4_b = getVal('ans-50-1-b-r3c4') === '0';
     var r3c6_b = getVal('ans-50-1-b-r3c6') === '5';
 
-    var r4c6_b = getVal('ans-50-1-b-r4c6') === '0';
+    var r4c6_b = getVal('ans-50-1-b-r4c6') === '0' && (getVal('ans-50-1-b-r4c5') === '0' || getVal('ans-50-1-b-r4c5') === '');
 
     var bCorrect = r1c1_b && r1c2_b && r1c3_b && r1c4_b && r1c5_b && r1c6_b && r1c8_b && r1c9_b &&
-                 r2c3_b && r2c4_b && r2c8_b && r2c9_b && r2c10_b && r2c11_b &&
+                 r2c2_b && r2c3_b && r2c4_b && r2c8_b && r2c9_b && r2c10_b && r2c11_b &&
                  r3c3_b && r3c4_b && r3c6_b && r4c6_b;
 
     // c) 3 : 0,25 = 12 -> 300 : 25 = 12
@@ -660,15 +632,16 @@ window.check_50_1 = function() {
     var r1c5_c = getVal('ans-50-1-c-r1c5') === '2';
     var r1c6_c = getVal('ans-50-1-c-r1c6') === '5';
 
+    var r2c1_c = getVal('ans-50-1-c-r2c1') === '0' || getVal('ans-50-1-c-r2c1') === '';
     var r2c2_c = getVal('ans-50-1-c-r2c2') === '5';
     var r2c3_c = getVal('ans-50-1-c-r2c3') === '0';
     var r2c5_c = getVal('ans-50-1-c-r2c5') === '1';
     var r2c6_c = getVal('ans-50-1-c-r2c6') === '2';
 
-    var r3c3_c = getVal('ans-50-1-c-r3c3') === '0';
+    var r3c3_c = getVal('ans-50-1-c-r3c3') === '0' && (getVal('ans-50-1-c-r3c2') === '0' || getVal('ans-50-1-c-r3c2') === '');
 
     var cCorrect = r1c1_c && r1c2_c && r1c3_c && r1c5_c && r1c6_c &&
-                 r2c2_c && r2c3_c && r2c5_c && r2c6_c &&
+                 r2c1_c && r2c2_c && r2c3_c && r2c5_c && r2c6_c &&
                  r3c3_c;
 
     var isCorrect = aCorrect && bCorrect && cCorrect;

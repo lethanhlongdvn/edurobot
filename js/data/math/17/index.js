@@ -64,19 +64,7 @@ export const lesson17 = {
     ...metadata.lessonInfo,
     "content": `
         <div class="theory-section space-y-6 animate-in fade-in slide-in-from-bottom-10 duration-1000 pt-6">
-            <div class="glass-card p-6 md:p-10 rounded-[3rem] bg-gradient-to-br from-emerald-600 to-teal-700 shadow-2xl relative overflow-hidden text-white">
-<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-<div class="absolute bottom-0 left-0 w-48 h-48 bg-teal-400/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-<div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-<div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30 animate-pulse">
-<span class="text-5xl md:text-7xl">🧮</span>
-</div>
-<div class="text-center md:text-left">
-<h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">LUYỆN TẬP CHUNG</h2>
-<p class="text-teal-100 text-lg md:text-2xl font-medium opacity-90">Hệ thống lại kiến thức số tự nhiên, phân số, hỗn số, rèn luyện kỹ năng giải toán thực tế!</p>
-</div>
-</div>
-</div>
+            
 <div class="glass-card p-6 md:p-10 rounded-[3rem] bg-white shadow-xl border border-teal-100 relative overflow-hidden">
 <div class="flex items-center gap-4 mb-6">
 <div class="w-12 h-12 bg-emerald-500 rounded-2xl flex items-center justify-center text-white text-xl md:text-3xl shadow-lg shadow-emerald-200">
@@ -188,7 +176,7 @@ export const lesson17 = {
                                         <div class="pr-2">415076</div>
                                         <div class="pr-2">+ &nbsp;92380</div>
                                         <div class="border-t border-slate-700 my-1 w-full"></div>
-                                        <input type="text" id="ans-17-2-a" class="w-full text-right font-mono font-black text-teal-600 border border-teal-300 rounded p-1 outline-none md:text-2xl" placeholder="?">
+                                        <input type="text" id="ans-17-2-a" class="w-full text-right font-mono font-black text-teal-600 border border-teal-300 rounded p-1 outline-none md:text-2xl" placeholder="">
                                     </div>
                                 </div>
 
@@ -199,7 +187,7 @@ export const lesson17 = {
                                         <div class="pr-2">56830</div>
                                         <div class="pr-2">- &nbsp;&nbsp;7450</div>
                                         <div class="border-t border-slate-700 my-1 w-full"></div>
-                                        <input type="text" id="ans-17-2-b" class="w-full text-right font-mono font-black text-teal-600 border border-teal-300 rounded p-1 outline-none md:text-2xl" placeholder="?">
+                                        <input type="text" id="ans-17-2-b" class="w-full text-right font-mono font-black text-teal-600 border border-teal-300 rounded p-1 outline-none md:text-2xl" placeholder="">
                                     </div>
                                 </div>
 
@@ -227,27 +215,27 @@ export const lesson17 = {
 
                                             <!-- Hàng 2: Tích riêng thứ nhất (1221) -->
                                             <span></span>
-                                            <input type="text" id="ans-17-2-c-m1a" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
-                                            <input type="text" id="ans-17-2-c-m1b" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
-                                            <input type="text" id="ans-17-2-c-m1c" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
-                                            <input type="text" id="ans-17-2-c-m1d" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
+                                            <input type="text" id="ans-17-2-c-m1a" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
+                                            <input type="text" id="ans-17-2-c-m1b" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
+                                            <input type="text" id="ans-17-2-c-m1c" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
+                                            <input type="text" id="ans-17-2-c-m1d" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
 
                                             <!-- Hàng 3: Tích riêng thứ hai (2442) -->
-                                            <input type="text" id="ans-17-2-c-m2a" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
-                                            <input type="text" id="ans-17-2-c-m2b" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
-                                            <input type="text" id="ans-17-2-c-m2c" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
-                                            <input type="text" id="ans-17-2-c-m2d" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
+                                            <input type="text" id="ans-17-2-c-m2a" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
+                                            <input type="text" id="ans-17-2-c-m2b" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
+                                            <input type="text" id="ans-17-2-c-m2c" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
+                                            <input type="text" id="ans-17-2-c-m2d" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
                                             <span></span>
 
                                             <!-- Đường kẻ ngang thứ hai -->
                                             <div class="col-span-5 border-t-2 border-slate-400 my-1"></div>
 
                                             <!-- Hàng 4: Tích chung (25641) -->
-                                            <input type="text" id="ans-17-2-c-p1" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
-                                            <input type="text" id="ans-17-2-c-p2" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
-                                            <input type="text" id="ans-17-2-c-p3" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
-                                            <input type="text" id="ans-17-2-c-p4" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
-                                            <input type="text" id="ans-17-2-c-p5" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
+                                            <input type="text" id="ans-17-2-c-p1" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
+                                            <input type="text" id="ans-17-2-c-p2" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
+                                            <input type="text" id="ans-17-2-c-p3" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
+                                            <input type="text" id="ans-17-2-c-p4" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
+                                            <input type="text" id="ans-17-2-c-p5" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
                                         </div>
                                     </div>
                                 </div>
@@ -267,23 +255,23 @@ export const lesson17 = {
 
                                             <!-- Hàng 1: Dư lần 1 và hạ chữ số (067) -->
                                             <span></span>
-                                            <input type="text" id="ans-17-2-d-r1a" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
-                                            <input type="text" id="ans-17-2-d-r1b" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
-                                            <input type="text" id="ans-17-2-d-r1c" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
+                                            <input type="text" id="ans-17-2-d-r1a" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
+                                            <input type="text" id="ans-17-2-d-r1b" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
+                                            <input type="text" id="ans-17-2-d-r1c" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
                                             <span></span>
 
                                             <!-- Hàng 2: Dư lần 2 và hạ chữ số (112) -->
                                             <span></span>
                                             <span></span>
-                                            <input type="text" id="ans-17-2-d-r2a" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
-                                            <input type="text" id="ans-17-2-d-r2b" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
-                                            <input type="text" id="ans-17-2-d-r2c" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
+                                            <input type="text" id="ans-17-2-d-r2a" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
+                                            <input type="text" id="ans-17-2-d-r2b" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
+                                            <input type="text" id="ans-17-2-d-r2c" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
 
                                             <span></span>
                                             <span></span>
                                             <span></span>
-                                            <input type="text" id="ans-17-2-d-r3a" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
-                                            <input type="text" id="ans-17-2-d-r3b" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
+                                            <input type="text" id="ans-17-2-d-r3a" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
+                                            <input type="text" id="ans-17-2-d-r3b" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
                                         </div>
 
                                         <!-- Đường kẻ dọc chia phép tính -->
@@ -297,9 +285,9 @@ export const lesson17 = {
                                             </div>
                                             <!-- Thương 712 (3 ô nhập) -->
                                             <div class="grid grid-cols-3 gap-1 mt-2 text-center" style="grid-template-columns: repeat(3, 36px);">
-                                                <input type="text" id="ans-17-2-d-q1" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
-                                                <input type="text" id="ans-17-2-d-q2" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
-                                                <input type="text" id="ans-17-2-d-q3" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="?">
+                                                <input type="text" id="ans-17-2-d-q1" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
+                                                <input type="text" id="ans-17-2-d-q2" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
+                                                <input type="text" id="ans-17-2-d-q3" maxlength="1" class="w-9 h-9 border border-teal-300 rounded-lg text-center font-black text-teal-600 outline-none focus:border-teal-500" style="padding: 0px !important; font-size: 1.2rem !important; line-height: 34px !important;" placeholder="">
                                             </div>
                                         </div>
                                     </div>
@@ -326,7 +314,7 @@ export const lesson17 = {
                             <div class="flex flex-col gap-4">
                                 <!-- Đề bài & Hình minh họa -->
                                 <div class="p-4 bg-emerald-50 rounded-[1.5rem] border border-emerald-100 text-xl md:text-3xl lg:text-2xl">
-                                    <span class="font-bold text-emerald-800">Đề bài: </span>
+                                    <span class="font-bold text-emerald-800"></span>
                                     <span class="text-slate-600">Một bút bi giá 4 500 đồng, một quyển vở giá 7 000 đồng. Nam mua 2 bút bi và 7 quyển vở. Nam đưa cho cô bán hàng tờ tiền 100 000 đồng. Hỏi cô bán hàng trả lại Nam bao nhiêu tiền?</span>
                                 </div>
                                 
@@ -355,7 +343,7 @@ export const lesson17 = {
                                         Nhập số tiền cô bán hàng trả lại Nam:
                                     </div>
                                     <div class="flex items-center gap-2 whitespace-nowrap flex-nowrap">
-                                        <input type="text" id="ans-17-3-final" class="w-32 h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none text-xl md:text-3xl" placeholder="?" style="padding: 0px !important;">
+                                        <input type="text" id="ans-17-3-final" class="w-32 h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none text-xl md:text-3xl" placeholder="" style="padding: 0px !important;">
                                         <span class="text-xl md:text-3xl font-bold text-slate-700">đồng</span>
                                     </div>
                                 </div>
@@ -393,7 +381,7 @@ export const lesson17 = {
                             <div class="flex flex-col gap-4">
                                 <!-- Đề bài & Sơ đồ đoạn thẳng SVG -->
                                 <div class="p-4 bg-emerald-50 rounded-[1.5rem] border border-emerald-100 text-xl md:text-3xl lg:text-2xl">
-                                    <span class="font-bold text-emerald-800">Đề bài: </span>
+                                    <span class="font-bold text-emerald-800"></span>
                                     <span class="text-slate-600">Sân trường của Trường Tiểu học Đoàn Kết dạng hình chữ nhật có chu vi 142 m, chiều dài hơn chiều rộng 13 m. Tính diện tích sân trường đó.</span>
                                 </div>
                                 
@@ -430,7 +418,7 @@ export const lesson17 = {
                                         Nhập diện tích sân trường đó:
                                     </div>
                                     <div class="flex items-center gap-2 whitespace-nowrap flex-nowrap">
-                                        <input type="text" id="ans-17-4-final" class="w-32 h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none text-xl md:text-3xl" placeholder="?" style="padding: 0px !important;">
+                                        <input type="text" id="ans-17-4-final" class="w-32 h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none text-xl md:text-3xl" placeholder="" style="padding: 0px !important;">
                                         <span class="text-xl md:text-3xl font-bold text-slate-700">m²</span>
                                     </div>
                                 </div>

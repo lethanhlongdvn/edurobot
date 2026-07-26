@@ -77,6 +77,11 @@ import { lesson158 } from './158/index.js';
 import { lesson159 } from './159/index.js';
 import { lesson160 } from './160/index.js';
 import { lesson161 } from './161/index.js';
+import { lesson101 } from './101/index.js';
+import { lesson103 } from './103/index.js';
+import { lesson106 } from './106/index.js';
+import { lesson107 } from './107/index.js';
+import { lesson110 } from './110/index.js';
 import { lessonDemo } from '../demo_interactions.js';
 import { lesson56 } from './56/index.js';
 import { lesson61 } from './61/index.js';
@@ -168,6 +173,11 @@ const activeLessons = [
     lesson159,
     lesson160,
     lesson161,
+    lesson101,
+    lesson103,
+    lesson106,
+    lesson107,
+    lesson110,
     lessonDemo
 ];
 

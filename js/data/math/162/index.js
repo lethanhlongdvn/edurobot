@@ -39,7 +39,7 @@ export const lesson162 = {
             <div id="lesson162_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">1</div>
-                    <h4 class="text-2xl md:text-3xl font-black text-blue-700 uppercase tracking-wide">Chu vi và diện tích hình chữ nhật, hình vuông</h4>
+                    <h3 class="text-2xl md:text-3xl font-black text-blue-700 uppercase tracking-wide">Bài 1. Chu vi và diện tích hình chữ nhật, hình vuông</h3>
                 </div>
                 
                 <div class="space-y-10">
@@ -47,7 +47,7 @@ export const lesson162 = {
                         <p class="text-2xl md:text-3xl font-black text-blue-800 mb-6 uppercase">a) Hoàn thành công thức:</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div class="bg-white p-6 rounded-3xl shadow-md border-2 border-blue-100 flex flex-col items-center gap-4">
-                                <img src="../../../../assets/images/toan/toan_tap_2/162/162-1a1.png" class="h-32 object-contain mb-2" alt="Hình chữ nhật">
+                                <img src="assets/images/toan/toan_tap_2/98/" class="h-32 object-contain mb-2" alt="Hình chữ nhật">
                                 <div class="flex flex-wrap items-center justify-center gap-2 text-xl md:text-2xl font-black">
                                     <span>P = (</span>
                                     <input id="162-1-1" class="w-12 h-10 text-center border-b-4 border-blue-500 outline-none" placeholder="?">
@@ -63,7 +63,7 @@ export const lesson162 = {
                                 </div>
                             </div>
                             <div class="bg-white p-6 rounded-3xl shadow-md border-2 border-blue-100 flex flex-col items-center gap-4">
-                                <img src="../../../../assets/images/toan/toan_tap_2/162/162-1a2.png" class="h-32 object-contain mb-2" alt="Hình vuông">
+                                <img src="assets/images/toan/toan_tap_2/99/" class="h-32 object-contain mb-2" alt="Hình vuông">
                                 <div class="flex flex-wrap items-center justify-center gap-2 text-xl md:text-2xl font-black">
                                     <span>P =</span>
                                     <input id="162-1-5" class="w-12 h-10 text-center border-b-4 border-blue-500 outline-none" placeholder="?">
@@ -108,7 +108,7 @@ export const lesson162 = {
             <div id="lesson162_b2" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-orange-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">2</div>
-                    <h4 class="text-2xl md:text-3xl font-black text-orange-700 uppercase tracking-wide">Diện tích hình tam giác, hình thang</h4>
+                    <h3 class="text-2xl md:text-3xl font-black text-orange-700 uppercase tracking-wide">Bài 2. Diện tích hình tam giác, hình thang</h3>
                 </div>
                 
                 <div class="space-y-10">
@@ -116,7 +116,7 @@ export const lesson162 = {
                         <p class="text-2xl md:text-3xl font-black text-orange-800 mb-6 uppercase">a) Hoàn thành công thức:</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div class="bg-white p-6 rounded-3xl shadow-md border-2 border-orange-100 flex flex-col items-center gap-4">
-                                <img src="../../../../assets/images/toan/toan_tap_2/162/162-2a1.png" class="h-32 object-contain mb-2" alt="Hình tam giác">
+                                <img src="assets/images/toan/toan_tap_2/98/" class="h-32 object-contain mb-2" alt="Hình tam giác">
                                 <div class="flex flex-wrap items-center justify-center gap-2 text-xl md:text-2xl font-black">
                                     <span>S = (</span>
                                     <input id="162-2-1" class="w-10 border-b-4 border-orange-500 text-center outline-none" placeholder="?">
@@ -126,7 +126,7 @@ export const lesson162 = {
                                 </div>
                             </div>
                             <div class="bg-white p-6 rounded-3xl shadow-md border-2 border-orange-100 flex flex-col items-center gap-4">
-                                <img src="../../../../assets/images/toan/toan_tap_2/162/162-2a2.png" class="h-32 object-contain mb-2" alt="Hình thang">
+                                <img src="assets/images/toan/toan_tap_2/99/" class="h-32 object-contain mb-2" alt="Hình thang">
                                 <div class="flex flex-wrap items-center justify-center gap-2 text-xl md:text-2xl font-black">
                                     <span>S = (</span>
                                     <input id="162-2-3" class="w-10 border-b-4 border-orange-500 text-center outline-none" placeholder="?">
@@ -160,7 +160,7 @@ export const lesson162 = {
                                     </div>
                                 </div>
                             </div>
-                            <img src="../../../../assets/images/toan/toan_tap_2/162/162-2b.png" class="w-full h-auto rounded-2xl shadow-xl border-4 border-white" alt="Mảnh đất">
+                            <img src="assets/images/toan/toan_tap_2/109/" class="w-full h-auto rounded-2xl shadow-xl border-4 border-white" alt="Mảnh đất">
                         </div>
                     </div>
                 </div>
@@ -174,7 +174,7 @@ export const lesson162 = {
             <div id="lesson162_b3" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-green-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">3</div>
-                    <h4 class="text-2xl md:text-3xl font-black text-green-700 uppercase tracking-wide">Hình tròn</h4>
+                    <h3 class="text-2xl md:text-3xl font-black text-green-700 uppercase tracking-wide">Bài 3. Hình tròn</h3>
                 </div>
                 
                 <div class="space-y-10">
@@ -198,7 +198,7 @@ export const lesson162 = {
                                 </div>
                             </div>
                             <div class="flex justify-center">
-                                <img src="../../../../assets/images/toan/toan_tap_2/162/162-3a.png" class="h-40 object-contain" alt="Hình tròn">
+                                <img src="assets/images/toan/toan_tap_2/162/" class="h-40 object-contain" alt="Hình tròn">
                             </div>
                         </div>
                     </div>
@@ -216,7 +216,7 @@ export const lesson162 = {
                                     <span>cm²</span>
                                 </div>
                             </div>
-                            <img src="../../../../assets/images/toan/toan_tap_2/162/162-3b.png" class="h-48 object-contain rounded-full shadow-lg border-4 border-white" alt="Đĩa">
+                            <img src="assets/images/toan/toan_tap_2/103/" class="h-48 object-contain rounded-full shadow-lg border-4 border-white" alt="Đĩa">
                         </div>
                     </div>
                 </div>
@@ -230,7 +230,7 @@ export const lesson162 = {
             <div id="lesson162_b4" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-rose-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-16 h-16 bg-rose-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">4</div>
-                    <h4 class="text-2xl md:text-3xl font-black text-rose-700 uppercase tracking-wide">Diện tích còn lại</h4>
+                    <h3 class="text-2xl md:text-3xl font-black text-rose-700 uppercase tracking-wide">Bài 4. Diện tích còn lại</h3>
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -247,7 +247,7 @@ export const lesson162 = {
                         </div>
                     </div>
                     <div class="flex justify-center bg-white p-6 rounded-[3rem] border-2 border-rose-100 shadow-inner">
-                        <img src="../../../../assets/images/toan/toan_tap_2/162/162-4.png" class="w-full max-w-[300px] object-contain drop-shadow-2xl" alt="Bình minh">
+                        <img src="assets/images/toan/toan_tap_2/96/" class="w-full max-w-[300px] object-contain drop-shadow-2xl" alt="Bình minh">
                     </div>
                 </div>
 

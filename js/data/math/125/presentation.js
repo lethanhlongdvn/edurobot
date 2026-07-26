@@ -157,7 +157,7 @@ export const lesson125Presentation = [
              <div class="w-full space-y-8">
                 <p class="text-5xl md:text-6xl font-black text-teal-800 leading-tight italic">Hoàn thành bảng tính thể tích đồ vật!</p>
                 <div class="bg-white p-10 rounded-[40px] border-2 border-teal-100 flex justify-center shadow-lg">
-                    <img src="assets/images/toan/toan_tap_2/125-b2-items.webp" alt="Items" class="max-w-[600px] h-auto rounded-3xl">
+                    <img src="assets/images/toan/toan_tap_2/125/" alt="Items" class="max-w-[600px] h-auto rounded-3xl">
                 </div>
              </div>
         </div>
@@ -167,16 +167,16 @@ export const lesson125Presentation = [
     // Slide 8: Luyện tập - Bài 3
     `
     <div class="h-full flex flex-col justify-center items-center w-full px-12 bg-white">
-        <h2 class="text-5xl font-black text-purple-600 mb-10 w-full text-left max-w-7xl border-l-[16px] border-purple-500 pl-8 uppercase">Luyện tập: Bài 3</h2>
-        <div class="bg-purple-50 p-12 rounded-[56px] shadow-xl w-full max-w-7xl border-4 border-purple-200 flex flex-col lg:flex-row gap-12 items-center">
+        <h2 class="text-5xl font-black text-emerald-600 mb-10 w-full text-left max-w-7xl border-l-[16px] border-emerald-500 pl-8 uppercase">Luyện tập: Bài 3</h2>
+        <div class="bg-emerald-50 p-12 rounded-[56px] shadow-xl w-full max-w-7xl border-4 border-emerald-200 flex flex-col lg:flex-row gap-12 items-center">
              <div class="w-full lg:w-1/2 space-y-8">
                 <p class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight italic">Em hãy quan sát và cho biết 2 khối nào ghép được thành hình lập phương?</p>
-                <div class="p-6 bg-white rounded-3xl border-2 border-purple-100">
-                    <p class="text-3xl text-purple-700 font-black tracking-widest uppercase mb-2 animate-pulse">💡 Gợi ý tư duy</p>
+                <div class="p-6 bg-white rounded-3xl border-2 border-emerald-100">
+                    <p class="text-3xl text-emerald-700 font-black tracking-widest uppercase mb-2 animate-pulse">💡 Gợi ý tư duy</p>
                 </div>
              </div>
              <div class="w-full lg:w-1/2">
-                <img src="assets/images/toan/toan_tap_2/125-b3-blocks.webp" alt="Blocks" class="w-full rounded-[40px] shadow-2xl border-8 border-white">
+                <img src="assets/images/toan/toan_tap_2/125/" alt="Blocks" class="w-full rounded-[40px] shadow-2xl border-8 border-white">
              </div>
         </div>
     </div>

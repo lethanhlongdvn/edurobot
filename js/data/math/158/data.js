@@ -39,7 +39,7 @@ export const lesson158 = {
             <div id="lesson158_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-14 h-14 md:w-16 md:h-16 bg-blue-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">1</div>
-                    <h3 class="text-2xl md:text-3xl font-black text-blue-700 uppercase tracking-wide">Tính</h3>
+                    <h3 class="text-2xl md:text-3xl font-black text-blue-700 uppercase tracking-wide">Bài 1. Tính</h3>
                 </div>
                 
                 <div class="grid grid-cols-1 gap-8">
@@ -138,14 +138,14 @@ export const lesson158 = {
             <div id="lesson158_b2" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-green-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-14 h-14 md:w-16 md:h-16 bg-green-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">2</div>
-                    <h3 class="text-2xl md:text-3xl font-black text-green-700 uppercase tracking-wide">Tìm số hoặc chữ thích hợp với dấu "?"</h3>
+                    <h3 class="text-2xl md:text-3xl font-black text-green-700 uppercase tracking-wide">Bài 2. Tìm số hoặc chữ thích hợp với dấu "?"</h3>
                 </div>
                 
                 <div class="grid grid-cols-1 gap-12">
                     <!-- a -->
                     <div class="relative bg-[#fdf5e6] p-6 md:p-10 rounded-[2.5rem] md:rounded-[3rem] border-4 border-[#e6d5b8] shadow-inner">
                         <div class="absolute -top-12 right-10 w-24 h-24 md:w-32 md:h-32 bg-orange-200 rounded-full flex items-center justify-center shadow-md animate-bounce">
-                            <img src="https://cdn-icons-png.flaticon.com/512/3069/3069172.png" class="w-16 md:w-24 opacity-80" alt="bear">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3069/306917" class="w-16 md:w-24 opacity-80" alt="bear">
                         </div>
                         <div class="space-y-8 text-2xl md:text-4xl font-black text-amber-900 mt-10">
                             <div class="flex flex-wrap items-center gap-4"><span>a : a =</span><input id="158-2-1" class="w-20 h-14 md:w-24 md:h-16 text-center bg-white rounded-2xl border-2 border-amber-300 outline-none" placeholder="?"><span>(a khác 0)</span></div>
@@ -178,7 +178,7 @@ export const lesson158 = {
             <div id="lesson158_b3" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-orange-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-14 h-14 md:w-16 md:h-16 bg-orange-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">3</div>
-                    <h3 class="text-2xl md:text-3xl font-black text-orange-700 uppercase tracking-wide">Tính bằng cách thuận tiện</h3>
+                    <h3 class="text-2xl md:text-3xl font-black text-orange-700 uppercase tracking-wide">Bài 3. Tính bằng cách thuận tiện</h3>
                 </div>
                 
                 <div class="grid grid-cols-1 gap-10">
@@ -209,7 +209,7 @@ export const lesson158 = {
             <div id="lesson158_b4" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-rose-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-14 h-14 md:w-16 md:h-16 bg-rose-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">4</div>
-                    <h3 class="text-2xl md:text-3xl font-black text-rose-700 uppercase tracking-wide">Giải bài toán</h3>
+                    <h3 class="text-2xl md:text-3xl font-black text-rose-700 uppercase tracking-wide">Bài 4. Giải bài toán</h3>
                 </div>
                 
                 <div class="p-6 md:p-10 bg-rose-50 rounded-[2.5rem] md:rounded-[3rem] border-4 border-rose-200">
@@ -227,7 +227,7 @@ export const lesson158 = {
                         </div>
 
                         <div class="flex flex-col items-center gap-4 mt-10">
-                            <img src="assets/images/toan/toan_tap_2/158/158-4.png" class="max-w-full h-auto rounded-3xl shadow-2xl border-4 border-white" alt="notebook illustration">
+                            <img src="assets/images/toan/toan_tap_2/96/" class="max-w-full h-auto rounded-3xl shadow-2xl border-4 border-white" alt="notebook illustration">
                         </div>
                     </div>
                 </div>

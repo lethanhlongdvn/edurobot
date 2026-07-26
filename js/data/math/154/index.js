@@ -130,7 +130,7 @@ const lesson154_practice = `
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                         <!-- Hình 1 -->
                         <div class="flex flex-col items-center gap-6">
-                            <img src="assets/images/toan/toan_tap_2/154/154-1-a1.png" alt="Hình 1a" class="max-w-full h-auto rounded-2xl shadow-lg border-4 border-white">
+                            <img src="assets/images/toan/toan_tap_2/98/" alt="Hình 1a" class="max-w-full h-auto rounded-2xl shadow-lg border-4 border-white">
                             <div class="flex flex-col items-center gap-3">
                                 <p class="text-2xl md:text-3xl font-bold text-slate-500">Hình 1</p>
                                 <div class="flex items-center gap-2">
@@ -143,7 +143,7 @@ const lesson154_practice = `
                         </div>
                         <!-- Hình 2 -->
                         <div class="flex flex-col items-center gap-6">
-                            <img src="assets/images/toan/toan_tap_2/154/154-1-a2.png" alt="Hình 1a-2" class="max-w-full h-auto rounded-2xl shadow-lg border-4 border-white">
+                            <img src="assets/images/toan/toan_tap_2/99/" alt="Hình 1a-2" class="max-w-full h-auto rounded-2xl shadow-lg border-4 border-white">
                             <div class="flex flex-col items-center gap-3">
                                 <p class="text-2xl md:text-3xl font-bold text-slate-500">Hình 2</p>
                                 <div class="flex items-center gap-2">
@@ -167,7 +167,7 @@ const lesson154_practice = `
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                         <!-- Hình 1 -->
                         <div class="flex flex-col items-center gap-6">
-                            <img src="assets/images/toan/toan_tap_2/154/154-1-b1.png" alt="Hình 1b-1" class="max-w-full h-auto rounded-2xl shadow-lg border-4 border-white">
+                            <img src="assets/images/toan/toan_tap_2/98/" alt="Hình 1b-1" class="max-w-full h-auto rounded-2xl shadow-lg border-4 border-white">
                             <div class="flex flex-col items-center gap-3">
                                 <p class="text-2xl md:text-3xl font-bold text-slate-500">Hình 1</p>
                                 <div class="flex items-center gap-2 md:gap-4">
@@ -182,7 +182,7 @@ const lesson154_practice = `
                         </div>
                         <!-- Hình 2 -->
                         <div class="flex flex-col items-center gap-6">
-                            <img src="assets/images/toan/toan_tap_2/154/154-1-b2.png" alt="Hình 1b-2" class="max-w-full h-auto rounded-2xl shadow-lg border-4 border-white">
+                            <img src="assets/images/toan/toan_tap_2/99/" alt="Hình 1b-2" class="max-w-full h-auto rounded-2xl shadow-lg border-4 border-white">
                             <div class="flex flex-col items-center gap-3">
                                 <p class="text-2xl md:text-3xl font-bold text-slate-500">Hình 2</p>
                                 <div class="flex items-center gap-2 md:gap-4">
@@ -214,7 +214,7 @@ const lesson154_practice = `
             <div class="relative z-10">
                 <div class="flex items-start gap-4 md:gap-8 border-b-4 md:border-b-6 border-blue-100 pb-6 md:pb-10 mb-8 md:mb-12">
                     <span class="w-14 h-14 md:w-20 md:h-20 bg-blue-600 text-white rounded-xl md:rounded-[1.5rem] flex items-center justify-center text-2xl md:text-4xl font-black shadow-lg shrink-0">2</span>
-                    <p class="text-xl md:text-3xl text-slate-700 font-bold">Rút gọn các phân số về phân số tối giản:</p>
+                    <h3 class="text-xl md:text-3xl text-slate-700 font-bold">Bài 2. Rút gọn các phân số về phân số tối giản:</h3>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 text-xl md:text-3xl font-bold text-slate-700">
@@ -275,7 +275,7 @@ const lesson154_practice = `
             <div class="relative z-10">
                 <div class="flex items-start gap-4 md:gap-8 border-b-4 md:border-b-6 border-blue-100 pb-6 md:pb-10 mb-8 md:mb-12">
                     <span class="w-14 h-14 md:w-20 md:h-20 bg-blue-600 text-white rounded-xl md:rounded-[1.5rem] flex items-center justify-center text-2xl md:text-4xl font-black shadow-lg shrink-0">3</span>
-                    <p class="text-xl md:text-3xl text-slate-700 font-bold">Quy đồng mẫu số các phân số:</p>
+                    <h3 class="text-xl md:text-3xl text-slate-700 font-bold">Bài 3. Quy đồng mẫu số các phân số:</h3>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -337,7 +337,7 @@ const lesson154_practice = `
             <div class="relative z-10">
                 <div class="flex items-start gap-4 md:gap-8 border-b-4 md:border-b-6 border-blue-100 pb-6 md:pb-10 mb-8 md:mb-12">
                     <span class="w-14 h-14 md:w-20 md:h-20 bg-blue-600 text-white rounded-xl md:rounded-[1.5rem] flex items-center justify-center text-2xl md:text-4xl font-black shadow-lg shrink-0">4</span>
-                    <p class="text-xl md:text-3xl text-slate-700 leading-relaxed font-bold">Các bạn Mai, Việt, Nam và Rô-bốt thi giải khối ru-bích. Thời gian hoàn thành của mỗi bạn như sau:</p>
+                    <h3 class="text-xl md:text-3xl text-slate-700 leading-relaxed font-bold">Bài 4. Các bạn Mai, Việt, Nam và Rô-bốt thi giải khối ru-bích. Thời gian hoàn thành của mỗi bạn như sau:</h3>
                 </div>
 
                 <!-- Bộ chọn học sinh -->
@@ -365,7 +365,7 @@ const lesson154_practice = `
                 </div>
 
                 <div class="flex flex-col items-center gap-8 md:gap-10">
-                    <img src="assets/images/toan/toan_tap_2/154/154-4.png" alt="Rubik Illustration" class="w-full w-full h-auto rounded-2xl md:rounded-[3rem] shadow-2xl border-4 md:border-8 border-white">
+                    <img src="assets/images/toan/toan_tap_2/96/" alt="Rubik Illustration" class="w-full w-full h-auto rounded-2xl md:rounded-[3rem] shadow-2xl border-4 md:border-8 border-white">
                     
                     <div class="w-full grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6" id="rubik-chips">
                         <div class="rubik-chip p-4 md:p-6 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-2xl md:rounded-[2rem] shadow-xl border-2 md:border-4 border-white cursor-pointer hover:-translate-y-2 transition-all flex flex-col items-center" onclick="window.selectRubikChar154(this)" data-name="Mai">
@@ -428,7 +428,7 @@ const lesson154_practice = `
             <div class="relative z-10">
                 <div class="flex items-start gap-4 md:gap-8 border-b-4 md:border-b-6 border-blue-100 pb-6 md:pb-10 mb-8 md:mb-12">
                     <span class="w-14 h-14 md:w-20 md:h-20 bg-blue-600 text-white rounded-xl md:rounded-[1.5rem] flex items-center justify-center text-2xl md:text-4xl font-black shadow-lg shrink-0">5</span>
-                    <p class="text-xl md:text-3xl text-slate-700 font-bold">Chọn câu trả lời đúng:</p>
+                    <h3 class="text-xl md:text-3xl text-slate-700 font-bold">Bài 5. Chọn câu trả lời đúng:</h3>
                 </div>
 
                 <div class="space-y-6 md:space-y-8 bg-blue-50/30 p-4 md:p-10 rounded-3xl md:rounded-[4rem] border-2 md:border-4 border-white shadow-xl">
@@ -704,7 +704,7 @@ window.check_154_4 = () => {
 
         const studentName = window.lesson154_state.currentStudent || "Học sinh";
         const rightAnswer = "a) Đầu tiên: Rô-bốt, Cuối cùng: Việt; b) Việt và Nam";
-        const guidance = "Em hãy quy đồng mẫu số thời gian về 30 để so sánh: Việt (15/30), Mai (14/30), Nam (12/30), Rô-bốt (10/30). Bạn nào thời gian ít nhất là nhanh nhất!";
+        const guidance = "Để biết bạn nào chạy nhanh nhất, em hãy quy đồng mẫu số các phân số chỉ thời gian chạy của mỗi bạn về cùng một mẫu số chung, sau đó so sánh các tử số. Bạn nào có thời gian chạy ít nhất sẽ là người chạy nhanh nhất nhé!";
         const solution = `<div class='space-y-4'>
             <p class='text-emerald-600 font-bold'>🌈 Thật tuyệt! Em đã phân tích và so sánh thời gian rất giỏi.</p>
             <div class='bg-white p-6 rounded-[2rem] shadow-inner border border-blue-50 space-y-3'>

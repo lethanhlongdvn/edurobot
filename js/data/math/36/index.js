@@ -103,7 +103,7 @@ export const lesson36 = {
                                 <div class="flex items-center justify-between mb-4">
                                     <div class="flex items-center gap-4">
                                         <div class="w-10 h-10 md:w-12 md:h-12 bg-teal-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform rotate-2">1</div>
-                                        <h3 class="text-lg md:text-2xl lg:text-3xl text-teal-900 font-black uppercase tracking-tighter">Đo sàn lớp học và tính tiền mua gạch</h3>
+                                        <h3 class="text-lg md:text-2xl lg:text-3xl text-teal-900 font-black uppercase tracking-tighter">Bài 1. Đo sàn lớp học và tính tiền mua gạch</h3>
                                     </div>
                                     <button onclick="window.toggleSolution('sol-36-1')" class="bg-amber-500 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full hover:bg-amber-600 active:scale-95 transition-all shadow-md">Hiện bài giải</button>
                                 </div>
@@ -111,7 +111,7 @@ export const lesson36 = {
                                 <div class="w-full mx-auto space-y-6">
                                     <!-- Đề bài -->
                                     <div class="p-6 bg-emerald-50 rounded-[2rem] border border-emerald-100 text-lg md:text-2xl font-medium">
-                                        <p class="font-bold text-emerald-800">Đề bài:</p>
+                                        <p class="font-bold text-emerald-800"></p>
                                         <p class="text-slate-600 leading-relaxed">
                                             Em hãy thực hành đo chiều dài, chiều rộng phòng học lớp mình, tính diện tích mặt sàn phòng học đó, rồi tính số tiền mua gạch để lát mặt sàn. Biết mẫu gạch hình vuông cạnh 50 cm được đóng theo hộp 4 viên, mỗi hộp có giá 140 000 đồng.
                                         </p>
@@ -137,7 +137,7 @@ export const lesson36 = {
 
                                             <div class="flex items-center gap-2 flex-wrap md:flex-nowrap border-t border-slate-200 pt-4 font-bold">
                                                 <span>Diện tích mặt sàn phòng học là:</span>
-                                                <input type="text" id="ans-36-1-s" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 80px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-36-1-s" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 80px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <span>mét vuông (m²)</span>
                                             </div>
                                         </div>
@@ -148,31 +148,31 @@ export const lesson36 = {
 
                                             <div class="flex items-center gap-2 flex-wrap md:flex-nowrap">
                                                 <span>Diện tích 1 viên gạch là: 50 × 50 =</span>
-                                                <input type="text" id="ans-36-1-tile-s" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 80px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-36-1-tile-s" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 80px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <span>cm²</span>
                                             </div>
 
                                             <div class="flex items-center gap-2 flex-wrap md:flex-nowrap">
                                                 <span>Đổi đơn vị: diện tích 1 viên gạch bằng</span>
-                                                <input type="text" id="ans-36-1-tile-sm" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 80px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-36-1-tile-sm" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 80px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <span>m²</span>
                                             </div>
 
                                             <div class="flex items-center gap-2 flex-wrap md:flex-nowrap">
                                                 <span>Diện tích một hộp gạch (4 viên) là:</span>
-                                                <input type="text" id="ans-36-1-box-s" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 80px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-36-1-box-s" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 80px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <span>m²</span>
                                             </div>
 
                                             <div class="flex items-center gap-2 flex-wrap md:flex-nowrap">
                                                 <span>Số hộp gạch nguyên tối thiểu cần mua là:</span>
-                                                <input type="text" id="ans-36-1-boxes" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 80px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-36-1-boxes" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 80px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <span>hộp</span>
                                             </div>
 
                                             <div class="flex items-center gap-2 flex-wrap md:flex-nowrap border-t border-slate-200 pt-4 font-bold">
                                                 <span>Thành tiền mua gạch lát nền là:</span>
-                                                <input type="text" id="ans-36-1-money" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 140px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                                <input type="text" id="ans-36-1-money" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 140px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                                 <span>đồng</span>
                                             </div>
                                         </div>
@@ -199,7 +199,7 @@ export const lesson36 = {
                                 <div class="flex items-center justify-between mb-4">
                                     <div class="flex items-center gap-4">
                                         <div class="w-10 h-10 md:w-12 md:h-12 bg-teal-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                                        <h3 class="text-lg md:text-2xl lg:text-3xl text-teal-900 font-black uppercase tracking-tighter">Tính cho toàn trường</h3>
+                                        <h3 class="text-lg md:text-2xl lg:text-3xl text-teal-900 font-black uppercase tracking-tighter">Bài 2. Tính cho toàn trường</h3>
                                     </div>
                                     <button onclick="window.toggleSolution('sol-36-2')" class="bg-amber-500 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full hover:bg-amber-600 active:scale-95 transition-all shadow-md">Hiện bài giải</button>
                                 </div>
@@ -207,7 +207,7 @@ export const lesson36 = {
                                 <div class="w-full mx-auto space-y-6">
                                     <!-- Đề bài -->
                                     <div class="p-6 bg-emerald-50 rounded-[2rem] border border-emerald-100 text-lg md:text-2xl font-medium">
-                                        <p class="font-bold text-emerald-800">Đề bài:</p>
+                                        <p class="font-bold text-emerald-800"></p>
                                         <p class="text-slate-600 leading-relaxed">
                                             Giả sử các phòng học khác trong trường có diện tích mặt sàn bằng diện tích mặt sàn phòng học của lớp em. Tính số tiền để mua gạch lát lại mặt sàn của tất cả các phòng học trong trường em.
                                         </p>
@@ -223,7 +223,7 @@ export const lesson36 = {
 
                                         <div class="flex items-center gap-2 flex-wrap md:flex-nowrap border-t border-slate-200 pt-4 font-bold">
                                             <span>Số tiền để mua gạch lát toàn bộ trường học là:</span>
-                                            <input type="text" id="ans-36-2-total" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-3xl" placeholder="?" style="width: auto !important; min-width: 140px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
+                                            <input type="text" id="ans-36-2-total" size="1" oninput="this.size = Math.max(1, this.value.length);" class="h-12 border-2 border-teal-300 rounded-xl text-center text-teal-600 font-black outline-none md:text-3xl" placeholder="" style="width: auto !important; min-width: 140px; padding: 0px !important; font-size: 1.5rem !important; line-height: 44px !important;">
                                             <span>đồng</span>
                                         </div>
                                     </div>

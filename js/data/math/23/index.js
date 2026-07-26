@@ -27,9 +27,9 @@ const metadata = {
             "id": "23_3",
             "type": "fill_multiple",
             "title": "Bài 3. Chọn câu trả lời đúng (Tìm cân bị sai)",
-            "answers": ["A"],
+            "answers": ["C"],
             "guidance": "Em hãy so sánh số đo cân nặng ở hai bên đĩa cân của mỗi hình, sau đó quan sát trạng thái của đĩa cân xem có phù hợp với kết quả so sánh lớn hơn, bé hơn hay bằng nhau không nhé!",
-            "solution": "Đáp án đúng là A (Hình 1). Vì 2,75 kg > 2,54 kg nên đáng lẽ con mèo phải nặng hơn và đĩa cân mèo phải thấp xuống dưới. Tuy nhiên hình vẽ lại hiển thị con gà thấp hơn. Con tư duy rất sắc bén!"
+            "solution": "Đáp án đúng là C (Hình 3). Vì 2,75 kg > 2,57 kg nên đáng lẽ đĩa cân bao gạo 2,75 kg phải thấp hơn bao gạo 2,57 kg. Nhưng hình vẽ lại hiển thị đĩa cân bao gạo 2,57 kg thấp hơn, do đó cân này bị sai. Con tư duy rất sắc bén!"
         }
     ],
     "quizPool": [
@@ -63,19 +63,7 @@ export const lesson23 = {
                 <!-- Slide 1: Giới thiệu & Ý 1 -->
                 <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
                     <div class="space-y-6">
-                        <div class="p-8 rounded-[2.5rem] bg-gradient-to-br from-blue-700 to-blue-900 shadow-2xl relative overflow-hidden text-white">
-<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-<div class="absolute bottom-0 left-0 w-48 h-48 bg-blue-500/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-<div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-<div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30">
-<span class="text-5xl md:text-7xl">⚖️</span>
-</div>
-<div class="text-center md:text-left">
-<h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">SO SÁNH CÁC SỐ THẬP PHÂN</h2>
-<p class="text-blue-100 text-lg md:text-2xl font-medium opacity-90">Học cách so sánh phần nguyên, phần thập phân và các hàng số để biết số thập phân nào lớn hơn!</p>
-</div>
-</div>
-</div>
+                        
                         <div class="p-8 rounded-[2.5rem] bg-white border-2 border-blue-700 relative overflow-hidden shadow-none">
 <div class="flex items-center gap-4 mb-6">
 <div class="w-12 h-12 bg-blue-700 rounded-2xl flex items-center justify-center text-white text-xl md:text-3xl shadow-lg">
@@ -85,17 +73,17 @@ export const lesson23 = {
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
 <div class="p-4 bg-blue-50/50 rounded-2xl border border-blue-100 text-center">
-<img alt="Cầu Long Biên" class="w-full h-32 md:h-40 object-cover rounded-xl mb-3 shadow-inner" src="assets/images/toan/23-long-bien.png"/>
+<img alt="Cầu Long Biên" class="w-full h-32 md:h-40 object-cover rounded-xl mb-3 shadow-inner" src="assets/images/toan/toan_tap_1/23/KP_CauLongBien.png"/>
 <div class="text-lg md:text-xl font-black text-blue-900">Cầu Long Biên</div>
 <div class="text-base md:text-lg font-bold text-amber-600">2,29 km</div>
 </div>
 <div class="p-4 bg-blue-50/50 rounded-2xl border border-blue-100 text-center">
-<img alt="Cầu An Đông" class="w-full h-32 md:h-40 object-cover rounded-xl mb-3 shadow-inner" src="assets/images/toan/23-an-dong.png"/>
+<img alt="Cầu An Đông" class="w-full h-32 md:h-40 object-cover rounded-xl mb-3 shadow-inner" src="assets/images/toan/toan_tap_1/23/KP_CauAnDong.png"/>
 <div class="text-lg md:text-xl font-black text-blue-900">Cầu An Đông</div>
 <div class="text-base md:text-lg font-bold text-amber-600">3,5 km</div>
 </div>
 <div class="p-4 bg-blue-50/50 rounded-2xl border border-blue-100 text-center">
-<img alt="Cầu Cần Thơ" class="w-full h-32 md:h-40 object-cover rounded-xl mb-3 shadow-inner" src="assets/images/toan/23-can-tho.png"/>
+<img alt="Cầu Cần Thơ" class="w-full h-32 md:h-40 object-cover rounded-xl mb-3 shadow-inner" src="assets/images/toan/toan_tap_1/23/KP_CauCanTho.png"/>
 <div class="text-lg md:text-xl font-black text-blue-900">Cầu Cần Thơ</div>
 <div class="text-base md:text-lg font-bold text-amber-600">2,75 km</div>
 </div>
@@ -152,7 +140,7 @@ export const lesson23 = {
                         <div class="p-6 rounded-[2.5rem] bg-white shadow-none border-none relative overflow-hidden space-y-4">
                             <div class="flex items-center gap-4 mb-2">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">So sánh hai số thập phân</h3>
+                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 1. So sánh hai số thập phân</h3>
                             </div>
 
                             <div class="space-y-6 w-full mx-auto">
@@ -201,7 +189,7 @@ export const lesson23 = {
                         <div class="p-6 rounded-[2.5rem] bg-white shadow-none border-none relative overflow-hidden space-y-4">
                             <div class="flex items-center gap-4 mb-2">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Sắp xếp các số theo thứ tự từ bé đến lớn</h3>
+                                <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 2. Sắp xếp các số theo thứ tự từ bé đến lớn</h3>
                             </div>
 
                             <div class="space-y-6">
@@ -238,7 +226,7 @@ export const lesson23 = {
                             <div class="flex items-center justify-between mb-2">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">3</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Cân bị sai đó ở hình nào?</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl text-blue-900 font-black uppercase tracking-tighter">Bài 3. Cân bị sai đó ở hình nào?</h3>
                                 </div>
                                 <button id="btn-toggle-23-3" onclick="window.toggle_23_3_sol()" class="bg-amber-500 text-white text-lg font-bold px-4 py-2 rounded-2xl hover:bg-amber-600 transition-all">Hiện bài giải</button>
                             </div>
@@ -246,14 +234,14 @@ export const lesson23 = {
                             <!-- Lời giải cho giáo viên -->
                             <div id="sol-23-3-container" class="hidden p-6 bg-amber-50 border-2 border-amber-500 rounded-[2rem] space-y-2 mb-4 text-lg font-bold text-amber-900">
                                 <div class="underline text-xl font-black">Bài giải gợi ý:</div>
-                                <p>- Hình 1: Mèo nặng 2,75 kg và gà nặng 2,54 kg. Vì 2,75 > 2,54 nên đĩa cân của mèo phải thấp hơn con gà. Nhưng ở hình vẽ con gà lại ở vị trí thấp hơn, do đó cân này bị sai.</p>
+                                <p>- Hình 1: Mèo nặng 2,75 kg và gà nặng 2,54 kg. Vì 2,75 > 2,54 nên đĩa cân của mèo phải thấp hơn con gà. Ở hình vẽ con mèo ở vị trí thấp hơn (Đúng).</p>
                                 <p>- Hình 2: 3,05 kg = 3,05 kg, cân thăng bằng (Đúng).</p>
-                                <p>- Hình 3: 2,75 kg > 2,57 kg, đĩa cân bao gạo lớn thấp hơn (Đúng).</p>
-                                <p class="text-rose-700">Vậy cân bị sai là <strong>Hình 1 (A)</strong>.</p>
+                                <p>- Hình 3: Bao gạo trái nặng 2,75 kg và bao gạo phải nặng 2,57 kg. Vì 2,75 > 2,57 nên đáng lẽ đĩa cân bên trái (2,75 kg) phải thấp hơn. Nhưng hình vẽ lại hiển thị đĩa cân bên trái cao hơn (đĩa bên phải thấp hơn), do đó cân này bị sai.</p>
+                                <p class="text-rose-700">Vậy cân bị sai là <strong>Hình 3 (C)</strong>.</p>
                             </div>
 
                             <!-- Ảnh Cân và Nút bấm phủ -->
-                            <div class="relative w-full w-full mx-auto border-2 border-blue-200 rounded-[2rem] overflow-hidden bg-slate-50 p-2 select-none shadow-md">
+                            <div class="relative max-w-[60%] mx-auto border-2 border-blue-200 rounded-[2rem] overflow-hidden bg-slate-50 p-2 select-none shadow-md">
                                 <img src="assets/images/toan/toan_tap_1/23/3.png" alt="Hình ảnh các cân bài 3" class="w-full h-auto rounded-[1.8rem] block" />
                                 
                                 <!-- Khung viền chọn (Highlights) -->
@@ -385,8 +373,8 @@ export const lesson23 = {
             window.check_23_3 = function() {
                 var val = document.getElementById('ans-23-3').value;
 
-                var isCorrect = (val === 'A');
-                var rightAns = "A (Hình 1)";
+                var isCorrect = (val === 'C');
+                var rightAns = "C (Hình 3)";
                 var studentAns = val;
 
                 var meta = window.MATH_BUILDER_METADATA.bai_tap[2];

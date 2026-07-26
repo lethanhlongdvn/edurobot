@@ -1,6 +1,7 @@
-// --- Logic Functions ---
+// --- Logic Functions for Tiết 156 (SGK Trang 107) ---
+
 window.check_156_1 = () => {
-    const v = (id) => document.getElementById(id).value.trim().replace(/\s/g, '').replace(',', '.');
+    const v = (id) => document.getElementById(id) ? document.getElementById(id).value.trim().replace(/\s/g, '').replace(',', '.') : '';
     let score = 0;
     if (v('156-1-1') === '619396') score++;
     if (v('156-1-2') === '336492') score++;
@@ -11,23 +12,21 @@ window.check_156_1 = () => {
 
     const total = 6;
     const isCorrect = score === total;
-    const rightAnswer = "a) 619 396; 336 492; b) 157,84; 31,79; c) 41/35; 5/18";
-    const guidance = "Em hãy thực hiện phép tính cộng, trừ các số tự nhiên, số thập phân và phân số. Lưu ý quy đồng mẫu số khi cộng, trừ các phân số khác mẫu số.";
-    const solution = "Thật tuyệt vời! Con đã thực hiện các phép tính rất chính xác.\n\nLời giải chi tiết:\n- a) 286 315 + 333 081 = 619 396; 815 407 - 478 915 = 336 492.\n- b) 79,65 + 78,19 = 157,84; 136,75 - 104,96 = 31,79.\n- c) 4/5 + 13/35 = 28/35 + 13/35 = 41/35; 1/2 - 2/9 = 9/18 - 4/18 = 5/18.";
+    const rightAnswer = "a) 619 396; 336 492<br>b) 157,84; 31,79<br>c) 41/35; 5/18";
+    const guidance = "Em hãy thực hiện đặt tính và tính cẩn thận từ phải sang trái đối với số tự nhiên và số thập phân (thẳng hàng dấu phẩy), quy đồng mẫu số đối với phân số.";
+    const solution = "Chúc mừng em đã hoàn thành tính toán rất xuất sắc!<br><br>Lời giải chi tiết:<br>a) 536 817 + 82 579 = 619 396<br>981 759 - 645 267 = 336 492<br>b) 64,38 + 93,46 = 157,84<br>86,09 - 54,3 = 31,79<br>c) 4/7 + 3/5 = 20/35 + 21/35 = 41/35<br>10/9 - 5/6 = 20/18 - 15/18 = 5/18.";
 
-    window.showMathFeedback(isCorrect, rightAnswer, "", guidance, solution);
-    if (window.submitMathLesson) window.submitMathLesson("Bài 1. Tính", Math.round(score / total * 100), "btn-check-156-1", 0, total, score);
-};
+    if (window.showMathFeedback) {
+        window.showMathFeedback(isCorrect, rightAnswer, "", guidance, solution);
+    }
 
-window.reset156_1 = () => {
-    ['1-1', '1-2', '1-3', '1-4', '1-5n', '1-5d', '1-6n', '1-6d'].forEach(id => {
-        const el = document.getElementById('156-' + id);
-        if (el) el.value = '';
-    });
+    if (window.submitMathLesson) {
+        window.submitMathLesson("Bài 156 - Bài 1", Math.round(score / total * 100), "btn-check-156-1", 0, total, score);
+    }
 };
 
 window.check_156_2 = () => {
-    const v = (id) => document.getElementById(id).value.trim().toLowerCase();
+    const v = (id) => document.getElementById(id) ? document.getElementById(id).value.trim().toLowerCase() : '';
     let score = 0;
     if (v('156-2-1') === '0') score++;
     if (v('156-2-2') === '0') score++;
@@ -39,19 +38,24 @@ window.check_156_2 = () => {
 
     const total = 7;
     const isCorrect = score === total;
-    const rightAnswer = "a) 0, 0, 0, a; b) b, c, a";
-    const guidance = "Em hãy nhớ lại các tính chất cộng với số 0, tính chất giao hoán (a + b = b + a) và tính chất kết hợp (a + b) + c = a + (b + c).";
-    const solution = "Thật giỏi! Con đã nắm vững các tính chất của phép cộng.\n\nGiải thích:\n- Số nào cộng với 0 cũng bằng chính nó (a + 0 = a).\n- Khi đổi chỗ các số hạng trong một tổng thì tổng không thay đổi (tính chất giao hoán).\n- Khi cộng một tổng hai số với một số thứ ba, ta có thể cộng số thứ nhất với tổng của số thứ hai và số thứ ba (tính chất kết hợp).";
+    const rightAnswer = "a) a + 0 = a = 0 + a; a - 0 = a; a - a = 0<br>b) a + b = b + a; (a + b) + c = a + (b + c) = a + (b + c)";
+    const guidance = "Em hãy nhớ lại các tính chất cơ bản của phép cộng và phép trừ (cộng với 0, giao hoán, kết hợp).";
+    const solution = "Rất giỏi! Em đã điền đúng các số và chữ thích hợp vào chỗ trống.<br><br>Lời giải chi tiết:<br>a) a + 0 = a = 0 + a<br>a - 0 = a<br>a - a = 0<br>b) a + b = b + a<br>(a + b) + c = a + (b + c)<br>(a + b) + c = a + (b + c).";
 
-    window.showMathFeedback(isCorrect, rightAnswer, "", guidance, solution);
-    if (window.submitMathLesson) window.submitMathLesson("Bài 2. Tìm số hoặc chữ", Math.round(score / total * 100), "btn-check-156-2", 0, total, score);
+    if (window.showMathFeedback) {
+        window.showMathFeedback(isCorrect, rightAnswer, "", guidance, solution);
+    }
+
+    if (window.submitMathLesson) {
+        window.submitMathLesson("Bài 156 - Bài 2", Math.round(score / total * 100), "btn-check-156-2", 0, total, score);
+    }
 };
 
 window.check_156_3 = () => {
-    const v = (id) => document.getElementById(id).value.trim().replace(/\s/g, '').replace(',', '.');
+    const v = (id) => document.getElementById(id) ? document.getElementById(id).value.trim().replace(',', '.') : '';
     let score = 0;
     if (v('156-3-1') === '1486') score++;
-    if (v('156-3-2') === '13.29') score++;
+    if (v('156-3-2') === '13.29' || v('156-3-2') === '13,29') score++;
     if (v('156-3-3') === '697') score++;
     if (v('156-3-4') === '2') score++;
 
@@ -59,7 +63,7 @@ window.check_156_3 = () => {
     const isCorrect = score === total;
     const rightAnswer = "a) 1486; b) 13,29; c) 697; d) 2";
     const guidance = "Em hãy tìm các nhóm số hạng có tổng là số tròn trăm, tròn chục hoặc bằng 1 để thực hiện phép tính nhanh hơn.";
-    const solution = "Xuất sắc! Con đã biết cách sử dụng tính chất giao hoán và kết hợp để tính thuận tiện.\n\nLời giải chi tiết:\n- a) (689 + 311) + 486 = 1000 + 486 = 1486.\n- b) (6,37 + 3,63) + 3,29 = 10 + 3,29 = 13,29.\n- c) (345 + 352) + 0 = 697.\n- d) (1/2 + 1/2) + (3/4 + 1/4) = 1 + 1 = 2.";
+    const solution = "Xuất sắc! Con đã biết cách sử dụng tính chất giao hoán và kết hợp để tính thuận tiện.<br><br>Lời giải chi tiết:<br>- a) (689 + 311) + 486 = 1000 + 486 = 1486.<br>- b) (6,37 + 3,63) + 3,29 = 10 + 3,29 = 13,29.<br>- c) (345 + 352) + 0 = 697.<br>- d) (1/2 + 1/2) + (3/4 + 1/4) = 1 + 1 = 2.";
 
     window.showMathFeedback(isCorrect, rightAnswer, "", guidance, solution);
     if (window.submitMathLesson) window.submitMathLesson("Bài 3. Tính thuận tiện", Math.round(score / total * 100), "btn-check-156-3", 0, total, score);
@@ -74,7 +78,7 @@ window.check_156_4 = () => {
     const isCorrect = score === total;
     const rightAnswer = "1,45 m";
     const guidance = "Em hãy tính tổng độ dài của hai chiếc gậy, sau đó trừ đi phần chồng lên nhau để tìm ra độ dài của chiếc gậy mới nhé.";
-    const solution = "Chúc mừng con đã giải đúng bài toán thực tế này!\n\nLời giải chi tiết:\nChiếc gậy AB dài là:\n0,8 + 0,8 - 0,15 = 1,45 (m)\nĐáp số: 1,45 m.";
+    const solution = "Chúc mừng con đã giải đúng bài toán thực tế này!<br><br>Lời giải chi tiết:<br>Chiếc gậy AB dài là:<br>0,8 + 0,8 - 0,15 = 1,45 (m)<br>Đáp số: 1,45 m.";
 
     window.showMathFeedback(isCorrect, rightAnswer, "", guidance, solution);
     if (window.submitMathLesson) window.submitMathLesson("Bài 4. Giải bài toán", Math.round(score / total * 100), "btn-check-156-4", 0, total, score);

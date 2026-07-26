@@ -26,7 +26,7 @@ export const lesson163 = {
             <div id="lesson163_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">1</div>
-                    <h4 class="text-2xl md:text-3xl font-black text-blue-700 uppercase tracking-wide">Diện tích sân bóng rổ</h4>
+                    <h3 class="text-2xl md:text-3xl font-black text-blue-700 uppercase tracking-wide">Bài 1. Diện tích sân bóng rổ</h3>
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -53,7 +53,7 @@ export const lesson163 = {
                     </div>
                     
                     <div class="flex flex-col items-center bg-white p-6 rounded-[3rem] border-2 border-blue-100 shadow-inner">
-                        <img src="../../../../assets/images/toan/toan_tap_2/163/163-1.png" class="w-full h-auto drop-shadow-2xl" alt="Sân bóng rổ">
+                        <img src="assets/images/toan/toan_tap_2/98/" class="w-full h-auto drop-shadow-2xl" alt="Sân bóng rổ">
                     </div>
                 </div>
 
@@ -66,7 +66,7 @@ export const lesson163 = {
             <div id="lesson163_b2" class="bg-white p-10 rounded-[3rem] shadow-2xl border-l-[12px] border-orange-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">2</div>
-                    <h4 class="text-2xl md:text-3xl font-black text-orange-700 uppercase tracking-wide">Bài toán gấp hộp</h4>
+                    <h3 class="text-2xl md:text-3xl font-black text-orange-700 uppercase tracking-wide">Bài 2. Bài toán gấp hộp</h3>
                 </div>
                 
                 <div class="p-8 bg-orange-50 rounded-[3rem] border-4 border-orange-200">
@@ -106,7 +106,7 @@ export const lesson163 = {
             <div id="lesson163_b3" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-green-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">3</div>
-                    <h4 class="text-2xl md:text-3xl font-black text-green-700 uppercase tracking-wide">Diện tích đất tăng thêm</h4>
+                    <h3 class="text-2xl md:text-3xl font-black text-green-700 uppercase tracking-wide">Bài 3. Diện tích đất tăng thêm</h3>
                 </div>
                 
                 <div class="p-8 bg-green-50 rounded-[3rem] border-4 border-green-200 flex flex-col md:flex-row gap-10 items-center">
@@ -142,7 +142,7 @@ export const lesson163 = {
             <div id="lesson163_b4" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-rose-500">
                 <div class="flex items-center gap-6 mb-10">
                     <div class="w-16 h-16 bg-rose-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">4</div>
-                    <h4 class="text-2xl md:text-3xl font-black text-rose-700 uppercase tracking-wide">Thử thách: Ghép hình</h4>
+                    <h3 class="text-2xl md:text-3xl font-black text-rose-700 uppercase tracking-wide">Bài 4. Thử thách: Ghép hình</h3>
                 </div>
                 
                 <div class="p-8 bg-rose-50 rounded-[3rem] border-4 border-rose-200">
@@ -286,7 +286,7 @@ window.check_163_3 = () => {
     const isCorrect = val === '2000';
     const rightAnswer = "2000 m²";
     const studentAnswer = val + " m²";
-    const guidance = "Đáy lớn = 40 x 3/2 = 60m. Sau đó em áp dụng công thức diện tích hình thang: S = (đáy lớn + đáy bé) x chiều cao : 2.";
+    const guidance = "Em hãy tính toán theo các bước:<br>1. Tìm độ dài đáy lớn bằng cách lấy độ dài đáy bé nhân với tỉ số tương ứng.<br>2. Áp dụng công thức tính diện tích hình thang: lấy tổng độ dài hai đáy nhân với chiều cao rồi chia cho 2 nhé!";
     const solution = `
         <div class="space-y-4">
             <p class="font-bold text-green-700">Chính xác! Em đã tính toán diện tích mảnh đất hình thang rất giỏi. 📐</p>
@@ -319,7 +319,7 @@ window.check_163_4 = () => {
     const isCorrect = score === total;
     const rightAnswer = "P = 300 cm, S = 5400 cm²";
     const studentAnswer = `P = ${p}, S = ${s}`;
-    const guidance = "Diện tích tấm kim loại bằng tổng diện tích 9 miếng nhỏ. Chu vi phụ thuộc vào cách ghép (thường là ghép 3x3 để tạo thành HCN lớn có cạnh 90cm và 60cm).";
+    const guidance = "Em hãy tính diện tích của một miếng nhỏ rồi nhân với số lượng miếng để tìm diện tích tấm kim loại. Để tính chu vi, em hãy dựa vào cách ghép các hình vuông để xác định chiều dài và chiều rộng của hình chữ nhật mới tạo thành nhé!";
     const solution = `
         <div class="space-y-4">
             <p class="font-bold text-green-700">Tuyệt vời! Em đã giải quyết bài toán ghép hình rất tốt. 🏆</p>

@@ -5,7 +5,7 @@ const metadata = {
         "period": "122",
         "week": "25",
         "topic": "Hình học và Đo lường",
-        "title": "THỂ TÍCH HÌNH HỘP CHỮ NHẬT",
+        "title": "Bài 52. Thể tích của hình hộp chữ nhật (tiết 1)",
         "desc": "Bài 52: Cách tính thể tích hình hộp chữ nhật bằng công thức V = a × b × c (Trang 51-52)."
     },
     "exercises": [
@@ -16,7 +16,8 @@ const metadata = {
             "subQuestions": [
                 { "id": "122-1-ans", "answer": "240", "unit": "cm³" }
             ],
-            "image": "assets/images/toan/toan_tap_2/122-formula.webp"
+            "image": "assets/images/toan/toan_tap_2/122/",
+            "solution": "Thể tích hình hộp chữ nhật là:<br>8 x 5 x 6 = 240 (cm³).<br>Đáp số: 240 cm³."
         },
         {
             "id": "122_2",
@@ -25,7 +26,8 @@ const metadata = {
             "subQuestions": [
                 { "id": "122-2-ans", "answer": "480", "unit": "dm³" }
             ],
-            "image": "assets/images/toan/toan_tap_2/122-b2-beca.webp"
+            "image": "assets/images/toan/toan_tap_2/122/122-b2-beca.webp",
+            "solution": "Thể tích bể cá là:<br>10 x 6 x 8 = 480 (dm³).<br>Đáp số: 480 dm³."
         },
         {
             "id": "122_3",
@@ -34,14 +36,15 @@ const metadata = {
             "subQuestions": [
                 { "id": "122-3-ans", "answer": "600", "unit": "cm³" }
             ],
-            "image": "assets/images/toan/toan_tap_2/122-b3-blocks.webp"
+            "image": "assets/images/toan/toan_tap_2/122/122-b3-blocks.webp",
+            "solution": "Thể tích của một hình hộp chữ nhật nhỏ là:<br>10 x 5 x 2 = 100 (cm³).<br>Thể tích của cả khối hình ghép là:<br>100 x 6 = 600 (cm³).<br>Đáp số: 600 cm³."
         }
     ],
     "quizPool": [
         { "question": "Công thức tính thể tích HHCN có 3 kích thước a, b, c là:", "options": ["V = a + b + c", "V = a × b + c", "V = a × b × c", "V = a × b / c"], "answer": 2, "level": "easy" },
         { "question": "Muốn tính thể tích HHCN, ta lấy chiều dài nhân chiều rộng rồi nhân với:", "options": ["Chu vi đáy", "Diện tích đáy", "Chiều cao (c)", "Cạnh"], "answer": 2, "level": "easy" },
         { "question": "Đơn vị đo thể tích thường gặp là:", "options": ["cm², dm², m²", "cm, dm, m", "cm³, dm³, m³", "kg, g, tấn"], "answer": 2, "level": "easy" },
-        { "question": "Nếu một HHCN có 3 kích thước: 2dm, 3dm, 4dm thì thể tích là:", "options": ["24 dm³", "12 dm³", "9 dm³", "18 dm³"], "answer": 0, "level": "medium" },
+        { "question": "If a HHCN has 3 dimensions: 2dm, 3dm, 4dm then the volume is:", "options": ["24 dm³", "12 dm³", "9 dm³", "18 dm³"], "answer": 0, "level": "medium" },
         { "question": "Một HHCN có chiều dài 10cm, chiều rộng 5cm, chiều cao 2cm. Thể tích là:", "options": ["50 cm³", "100 cm³", "150 cm³", "20 cm³"], "answer": 1, "level": "medium" },
         { "question": "Công thức V = S_đáy × cao có dùng để tính thể tích HHCN không?", "options": ["Không dùng được", "Có dùng được", "Chỉ dùng cho HLP", "Chỉ dùng cho hình tròn"], "answer": 1, "level": "medium" },
         { "question": "Một bể cá dài 2 m, rộng 1,5 m, cao 1 m. Thể tích bể cá đó là:", "options": ["3 m³", "4,5 m³", "2 m³", "3,5 m³"], "answer": 0, "level": "medium" },
@@ -63,7 +66,7 @@ export const lesson122 = {
             <!-- 🎯 Mục tiêu -->
             <div class="bg-gradient-to-br from-blue-600 to-blue-700 p-10 rounded-[40px] text-white shadow-2xl flex items-center gap-10 relative overflow-hidden group">
                 <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-white/10 rounded-full blur-3xl group-hover:scale-150 transition-all duration-700"></div>
-                <div class="w-24 h-24 bg-white/20 rounded-3xl flex items-center justify-center backdrop-blur-md border-2 border-white/30 shrink-0 text-5xl shadow-lg">🎯</div>
+                <div class="w-24 h-24 bg-white/20 rounded-3xl flex items-center justify-center backdrop-blur-md border-2 border-white/30 shrink-0 text-4xl md:text-5xl shadow-lg">🎯</div>
                 <div>
                     <h3 class="text-3xl md:text-4xl font-black uppercase tracking-tight mb-2">Mục tiêu bài học</h3>
                     <ul class="list-disc list-inside font-bold text-xl md:text-2xl opacity-95 space-y-2">
@@ -79,25 +82,25 @@ export const lesson122 = {
                 <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
                     <div class="space-y-8">
                         <div class="flex items-center gap-4">
-                            <span class="bg-amber-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center font-black text-3xl shadow-lg">?</span>
+                            <span class="bg-amber-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center font-black text-2xl md:text-3xl shadow-lg">?</span>
                             <h4 class="text-3xl md:text-4xl font-black text-amber-700 uppercase italic">Tìm hiểu về thể tích</h4>
                         </div>
-                        <p class="text-2xl font-bold leading-tight text-gray-700 italic border-l-8 border-amber-400 pl-6 bg-amber-50 py-6 rounded-r-3xl">
+                        <p class="text-xl md:text-2xl font-bold leading-tight text-gray-700 italic border-l-8 border-amber-400 pl-6 bg-amber-50 py-6 rounded-r-3xl">
                             "Để biết chiếc hộp chứa được bao nhiêu khối lập phương 1dm³, ta có thể xếp chúng vào hộp và đếm."
                         </p>
                         <div class="bg-blue-50 p-8 rounded-[32px] border-2 border-blue-100 shadow-inner">
-                            <p class="text-2xl font-black text-blue-900 space-y-3">
+                            <p class="text-xl md:text-2xl font-black text-blue-900 space-y-3">
                                 <span class="block">📏 Chiều dài: 6 dm</span>
                                 <span class="block">📏 Chiều rộng: 5 dm</span>
                                 <span class="block">📏 Chiều cao: 4 dm</span>
-                                <span class="block mt-6 text-3xl text-blue-600 bg-white inline-block px-6 py-2 rounded-2xl shadow-sm">6 &times; 5 &times; 4 = 120 (khối)</span>
+                                <span class="block mt-6 text-2xl md:text-3xl text-blue-600 bg-white inline-block px-6 py-2 rounded-2xl shadow-sm">6 &times; 5 &times; 4 = 120 (khối)</span>
                             </p>
                         </div>
                     </div>
                     <div class="relative group cursor-pointer inline-block mx-auto">
-                        <img src="assets/images/toan/toan_tap_2/122-khampha.webp" alt="Khám phá" class="w-full max-w-[550px] h-auto rounded-[40px] shadow-2xl border-8 border-white transform group-hover:rotate-1 transition-all duration-500">
+                        <img src="assets/images/toan/toan_tap_2/122/122-khampha.webp" alt="Khám phá" class="w-full max-w-[550px] h-auto rounded-[40px] shadow-2xl border-8 border-white transform group-hover:rotate-1 transition-all duration-500">
                         <div class="absolute bottom-6 right-6 flex flex-col gap-3 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                            <button onclick="window.openKhamPhaModal122(); event.stopPropagation();" class="w-20 h-20 bg-amber-500 hover:bg-amber-600 text-white rounded-3xl font-black shadow-2xl flex items-center justify-center transform active:scale-90 transition-all text-3xl hover:shadow-amber-200/50 hover:shadow-2xl" title="Mô phỏng 3D">
+                            <button onclick="window.openKhamPhaModal122(); event.stopPropagation();" class="w-16 h-16 md:w-20 md:h-20 bg-amber-500 hover:bg-amber-600 text-white rounded-3xl font-black shadow-2xl flex items-center justify-center transform active:scale-90 transition-all text-2xl md:text-3xl hover:shadow-amber-200/50 hover:shadow-2xl" title="Mô phỏng 3D">
                                 3D
                             </button>
                         </div>
@@ -110,7 +113,7 @@ export const lesson122 = {
                 <div class="bg-blue-50 w-[96%] h-[94vh] max-h-[1000px] max-w-[1400px] rounded-[40px] shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden relative flex flex-col" onclick="event.stopPropagation()">
                     <!-- Header -->
                     <div class="bg-blue-600 bg-gradient-to-r from-blue-700 to-blue-600 text-white p-5 flex justify-between items-center shrink-0 shadow-lg z-20 relative">
-                        <h3 class="text-3xl md:text-4xl font-black uppercase tracking-tight flex items-center gap-4">
+                        <h3 class="text-2xl md:text-4xl font-black uppercase tracking-tight flex items-center gap-4">
                             <span class="bg-white/20 p-2 rounded-2xl">🧊</span> Khám phá thể tích 3D
                         </h3>
                         <button onclick="window.closeKhamPhaModal122()" class="w-14 h-14 bg-white/20 hover:bg-rose-500 rounded-full flex items-center justify-center transition-all shadow-md active:scale-90">
@@ -192,142 +195,200 @@ export const lesson122 = {
                 <div class="absolute -left-10 -bottom-10 w-60 h-60 bg-rose-200/50 rounded-full blur-3xl"></div>
                 <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
                     <div class="flex justify-center">
-                        <img src="assets/images/toan/toan_tap_2/122-formula.webp" alt="Công thức" class="w-full max-w-[450px] h-auto rounded-[40px] shadow-2xl border-4 border-white transition-transform hover:scale-105 duration-500">
+                        <img src="assets/images/toan/toan_tap_2/122/122-formula.webp" alt="Công thức" class="w-full max-w-[450px] h-auto rounded-[40px] shadow-2xl border-4 border-white transition-transform hover:scale-105 duration-500">
                     </div>
                     <div class="bg-white p-10 rounded-[40px] shadow-inner border-2 border-rose-100">
-                        <h4 class="text-2xl font-black text-rose-600 uppercase mb-4 tracking-widest text-center">Quy tắc cần nhớ</h4>
+                        <h4 class="text-xl md:text-2xl font-black text-rose-600 uppercase mb-4 tracking-widest text-center">Quy tắc cần nhớ</h4>
                         <p class="text-2xl md:text-3xl font-bold text-gray-800 leading-relaxed text-center italic">
-                            "Thể tích <span class="text-rose-600 font-black italic text-4xl">V</span> của hình hộp chữ nhật bằng chiều dài <span class="text-rose-600 font-black italic text-4xl">a</span> nhân với chiều rộng <span class="text-rose-600 font-black italic text-4xl">b</span> rồi nhân với chiều cao <span class="text-rose-600 font-black italic text-4xl">c</span>."
+                            "Thể tích <span class="text-rose-600 font-black italic text-2xl md:text-4xl">V</span> của hình hộp chữ nhật bằng chiều dài <span class="text-rose-600 font-black italic text-2xl md:text-4xl">a</span> nhân với chiều rộng <span class="text-rose-600 font-black italic text-2xl md:text-4xl">b</span> rồi nhân với chiều cao <span class="text-rose-600 font-black italic text-2xl md:text-4xl">c</span>."
                         </p>
                         <div class="mt-8 bg-rose-600 p-6 rounded-[32px] text-white text-center shadow-2xl transform hover:scale-102 transition-all">
-                            <p class="text-4xl md:text-6xl font-black tracking-wide italic drop-shadow-lg uppercase">V = a &times; b &times; c</p>
+                            <p class="text-3xl md:text-6xl font-black tracking-wide italic drop-shadow-lg uppercase">V = a &times; b &times; c</p>
                         </div>
-                        <p class="text-center mt-6 text-slate-500 font-bold text-xl">(a, b, c cùng đơn vị đo)</p>
+                        <p class="text-center mt-6 text-slate-500 font-bold text-lg md:text-xl">(a, b, c cùng đơn vị đo)</p>
                     </div>
                 </div>
             </div>
         </div>
     `,
     "practice": `
-        <div class="space-y-12 text-left animate-in fade-in duration-700">
-            <!-- Bài tập 1 -->
-            <div class="bg-white p-10 rounded-[40px] border border-gray-100 shadow-2xl relative overflow-hidden group">
-                <div class="relative z-10 flex items-center mb-8 gap-6">
-                    <span class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-black text-3xl shadow-xl">1</span>
-                    <p class="font-black text-3xl md:text-4xl text-blue-700 uppercase italic tracking-tight">Tính thể tích hình hộp chữ nhật</p>
-                </div>
-                
-                <div class="w-full mx-auto space-y-8 bg-blue-50/50 p-10 rounded-[48px] border-2 border-blue-100">
-                    <p class="text-2xl md:text-3xl font-bold text-slate-700 italic text-center mb-8">
-                        "Chiều dài 8 cm, chiều rộng 5 cm và chiều cao 6 cm."
-                    </p>
-                    <div class="flex items-center justify-center gap-6 bg-white p-8 rounded-[32px] shadow-inner border-2 border-blue-100 w-full w-full mx-auto">
-                        <span class="text-3xl font-black text-blue-600">Đáp số:</span>
-                        <input type="number" id="ans-122-1" class="w-40 bg-transparent border-b-4 border-blue-200 focus:border-blue-600 outline-none p-2 text-5xl font-black text-center text-blue-900 mx-4" placeholder="?">
-                        <span class="text-3xl font-black text-blue-400">cm³</span>
-                    </div>
-                    <div class="mt-8 flex justify-center">
-                        <button onclick="window.check_122_1()" class="w-24 h-24 bg-gradient-to-br from-rose-500 to-rose-600 hover:from-rose-400 hover:to-rose-500 text-white rounded-3xl font-black text-6xl shadow-2xl border-b-8 border-rose-800 transition-all active:border-b-0 active:translate-y-2 flex items-center justify-center transform hover:scale-105">E</button>
-                    </div>
-                </div>
-            </div>
+        <div class="-mx-8 md:-mx-12 mt-2 -mb-8 md:-mb-12">
+            <div id="ltViewport" style="overflow:hidden; width:100%; position:relative;">
+                <div id="ltTrack" class="flex transition-transform duration-500 ease-out" style="width: 100%; display: flex;">
 
-            <!-- Bài tập 2 -->
-            <div class="bg-white p-10 rounded-[40px] border border-gray-100 shadow-2xl relative overflow-hidden group">
-                <div class="relative z-10 flex items-center mb-8 gap-6">
-                    <span class="w-16 h-16 bg-emerald-500 text-white rounded-2xl flex items-center justify-center font-black text-3xl shadow-xl">2</span>
-                    <p class="font-black text-3xl md:text-4xl text-emerald-700 uppercase italic tracking-tight">Tính thể tích bể cá</p>
-                </div>
-                
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center w-full mx-auto bg-emerald-50/50 p-10 rounded-[48px] border-2 border-emerald-100">
-                    <div class="space-y-8">
-                        <p class="text-2xl font-bold text-emerald-900 leading-relaxed italic">
-                            "Bố của Mai vừa làm một bể cá dạng hình hộp chữ nhật với kích thước: chiều dài 10 dm, chiều rộng 6 dm và chiều cao 8 dm."
-                        </p>
-                        <div class="flex items-center justify-center gap-6 bg-white p-8 rounded-[32px] shadow-inner border-2 border-emerald-100">
-                            <span class="text-3xl font-black text-emerald-600">Đáp số:</span>
-                            <input type="number" id="ans-122-2" class="w-40 bg-transparent border-b-4 border-emerald-200 focus:border-emerald-600 outline-none p-2 text-5xl font-black text-center text-emerald-900 mx-4" placeholder="?">
-                            <span class="text-3xl font-black text-emerald-400">dm³</span>
-                        </div>
-                    </div>
-                    <img src="assets/images/toan/toan_tap_2/122-b2-beca.webp" alt="Bể cá" class="w-full max-w-[450px] h-auto rounded-[40px] shadow-2xl border-8 border-white mx-auto">
-                </div>
-                <div class="mt-8 flex justify-center">
-                    <button onclick="window.check_122_2()" class="w-24 h-24 bg-gradient-to-br from-rose-500 to-rose-600 hover:from-rose-400 hover:to-rose-500 text-white rounded-3xl font-black text-6xl shadow-2xl border-b-8 border-rose-800 transition-all active:border-b-0 active:translate-y-2 flex items-center justify-center transform hover:scale-105">E</button>
-                </div>
-            </div>
-
-            <!-- Bài tập 3 -->
-            <div class="bg-amber-50/50 p-10 rounded-[40px] border-4 border-dashed border-amber-200 shadow-xl relative overflow-hidden group">
-                <div class="relative z-10 flex items-center mb-8 gap-6">
-                    <span class="w-16 h-16 bg-amber-600 text-white rounded-2xl flex items-center justify-center font-black text-3xl shadow-xl">3</span>
-                    <p class="font-black text-3xl md:text-4xl text-amber-800 uppercase italic tracking-tight">Tính thể tích khối ghép</p>
-                </div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full mx-auto">
-                    <img src="assets/images/toan/toan_tap_2/122-b3-blocks.webp" alt="Khối hình" class="w-full max-w-[500px] h-auto rounded-[40px] shadow-2xl border-8 border-white mx-auto bg-white">
-                    <div class="space-y-8">
-                        <p class="text-2xl md:text-3xl font-bold text-amber-900 leading-tight italic">
-                            "Để tạo ra hình bên, Việt ghép <b>6 hình hộp chữ nhật</b> giống nhau. Mỗi hình có kích thước: <b>10 cm, 5 cm và 2 cm</b>."
-                        </p>
-                        <div class="bg-white p-8 rounded-[40px] border-2 border-amber-100 shadow-inner space-y-6">
-                            <div class="flex items-center justify-center gap-4">
-                                <span class="text-3xl font-black text-amber-600">Đáp số:</span>
-                                <input type="number" id="ans-122-3" class="w-40 bg-transparent border-b-4 border-amber-200 focus:border-amber-600 outline-none p-2 text-5xl font-black text-center text-amber-900 mx-2" placeholder="?">
-                                <span class="text-3xl font-black text-amber-400">cm³</span>
+                    <!-- Bài tập 1 -->
+                    <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
+                        <div class="glass-card p-10 rounded-[3rem] bg-white border border-gray-100 shadow-2xl relative overflow-hidden">
+                            <div class="flex justify-between items-start gap-6 mb-12 text-left">
+                                <div class="flex items-start gap-6">
+                                    <div class="w-14 h-14 md:w-16 md:h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow-lg shrink-0">1</div>
+                                    <div class="space-y-2">
+                                        <h3 class="text-xl md:text-2xl font-black text-blue-700 block">Bài 1. Tính thể tích hình hộp chữ nhật</h3>
+                                        <p class="text-2xl md:text-3xl text-slate-800 leading-relaxed font-black tracking-tight">Tính thể tích hình hộp chữ nhật có chiều dài 8 cm, chiều rộng 5 cm và chiều cao 6 cm.</p>
+                                    </div>
+                                </div>
+                                
                             </div>
+                            
+                            <div class="w-full mx-auto space-y-8 bg-blue-50/50 p-10 rounded-[48px] border-2 border-blue-100">
+                                <p class="text-xl md:text-2xl font-bold text-slate-700 italic text-center mb-8">
+                                    "Chiều dài 8 cm, chiều rộng 5 cm và chiều cao 6 cm."
+                                </p>
+                                <div class="flex items-center justify-center gap-6 bg-white p-8 rounded-[32px] shadow-inner border-2 border-blue-100 w-full mx-auto">
+                                    <span class="text-2xl md:text-3xl font-black text-blue-600">Đáp số:</span>
+                                    <input type="number" id="ans-122-1" class="w-40 bg-transparent border-b-4 border-blue-200 focus:border-blue-600 outline-none p-2 text-2xl md:text-3xl font-black text-center text-blue-900 mx-4" placeholder="?">
+                                    <span class="text-2xl md:text-3xl font-black text-blue-400">cm³</span>
+                                </div>
+
+                                <!-- Lời giải ẩn cho giáo viên -->
+                                <div id="sol-122-1" class="hidden p-8 bg-amber-50 rounded-3xl border-2 border-amber-300 text-xl md:text-3xl font-bold text-slate-900 leading-relaxed text-left w-full mb-8 shadow-inner">
+                                    <p class="text-2xl md:text-3xl font-black text-amber-900 mb-4">✍️ Bài giải chi tiết:</p>
+                                    Thể tích hình hộp chữ nhật là:<br>
+                                    8 x 5 x 6 = 240 (cm³).<br>
+                                    Đáp số: 240 cm³.
+                                </div>
+
+<div class="flex justify-end items-center gap-4 mt-8">
+                        <button onclick="window.toggleSolution('sol-122-1')" class="bg-amber-500 hover:bg-amber-600 text-white text-xs md:text-sm font-black px-5 py-3 rounded-2xl active:scale-95 transition-all shadow-md shrink-0">Hiện bài giải</button>
+                        <button id="btn-submit-122-1" onclick="window.submitEx122()" class="w-16 h-16 md:w-20 md:h-20 bg-blue-600 text-white rounded-2xl font-black text-3xl md:text-4xl shadow-xl hover:scale-105 active:scale-95 transition-all shrink-0">E</button>
+                    </div></div>
                         </div>
                     </div>
-                </div>
-                <div class="mt-10 flex justify-center">
-                    <button onclick="window.check_122_3()" class="w-24 h-24 bg-gradient-to-br from-rose-500 to-rose-600 hover:from-rose-400 hover:to-rose-500 text-white rounded-3xl font-black text-6xl shadow-2xl border-b-8 border-rose-800 transition-all active:border-b-0 active:translate-y-2 flex items-center justify-center transform hover:scale-105">E</button>
+
+                    <!-- Bài tập 2 -->
+                    <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
+                        <div class="glass-card p-10 rounded-[3rem] bg-white border border-gray-100 shadow-2xl relative overflow-hidden">
+                            <div class="flex justify-between items-start gap-6 mb-12 text-left">
+                                <div class="flex items-start gap-6">
+                                    <div class="w-14 h-14 md:w-16 md:h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow-lg shrink-0">2</div>
+                                    <div class="space-y-2">
+                                        <h3 class="text-xl md:text-2xl font-black text-blue-700 block">Bài 2. Tính thể tích bể cá</h3>
+                                        <p class="text-2xl md:text-3xl text-slate-800 leading-relaxed font-black tracking-tight">Bố của Mai vừa làm một bể cá dạng hình hộp chữ nhật với kích thước: chiều dài 10 dm, chiều rộng 6 dm và chiều cao 8 dm.</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center w-full mx-auto bg-blue-50/50 p-10 rounded-[48px] border-2 border-blue-100">
+                                <div class="space-y-8">
+                                    <p class="text-lg md:text-xl font-bold text-blue-900 leading-relaxed italic">
+                                        "Bố của Mai vừa làm một bể cá dạng hình hộp chữ nhật với kích thước: chiều dài 10 dm, chiều rộng 6 dm và chiều cao 8 dm."
+                                    </p>
+                                    <div class="flex items-center justify-center gap-6 bg-white p-8 rounded-[32px] shadow-inner border-2 border-blue-100">
+                                        <span class="text-2xl md:text-3xl font-black text-blue-600">Đáp số:</span>
+                                        <input type="number" id="ans-122-2" class="w-40 bg-transparent border-b-4 border-blue-200 focus:border-blue-600 outline-none p-2 text-2xl md:text-3xl font-black text-center text-blue-900 mx-4" placeholder="?">
+                                        <span class="text-2xl md:text-3xl font-black text-blue-400">dm³</span>
+                                    </div>
+                                </div>
+                                <img src="assets/images/toan/toan_tap_2/122/122-b2-beca.webp" alt="Bể cá" class="w-full max-w-[450px] h-auto rounded-[40px] shadow-2xl border-8 border-white mx-auto">
+                            </div>
+
+                            <!-- Lời giải ẩn cho giáo viên -->
+                            <div id="sol-122-2" class="hidden p-8 bg-amber-50 rounded-3xl border-2 border-amber-300 text-xl md:text-3xl font-bold text-slate-900 leading-relaxed text-left w-full mb-8 shadow-inner">
+                                <p class="text-2xl md:text-3xl font-black text-amber-900 mb-4">✍️ Bài giải chi tiết:</p>
+                                Thể tích bể cá là:<br>
+                                10 x 6 x 8 = 480 (dm³).<br>
+                                Đáp số: 480 dm³.
+                            </div>
+
+<div class="flex justify-end items-center gap-4 mt-8">
+                        <button onclick="window.toggleSolution('sol-122-2')" class="bg-amber-500 hover:bg-amber-600 text-white text-xs md:text-sm font-black px-5 py-3 rounded-2xl active:scale-95 transition-all shadow-md shrink-0">Hiện bài giải</button>
+                        <button id="btn-submit-122-2" onclick="window.submitEx122()" class="w-16 h-16 md:w-20 md:h-20 bg-blue-600 text-white rounded-2xl font-black text-3xl md:text-4xl shadow-xl hover:scale-105 active:scale-95 transition-all shrink-0">E</button>
+                    </div></div>
+                    </div>
+
+                    <!-- Bài tập 3 -->
+                    <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
+                        <div class="glass-card p-10 rounded-[3rem] bg-white border border-gray-100 shadow-2xl relative overflow-hidden">
+                            <div class="flex justify-between items-start gap-6 mb-12 text-left">
+                                <div class="flex items-start gap-6">
+                                    <div class="w-14 h-14 md:w-16 md:h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow-lg shrink-0">3</div>
+                                    <div class="space-y-2">
+                                        <h3 class="text-xl md:text-2xl font-black text-blue-700 block">Bài 3. Tính thể tích khối ghép</h3>
+                                        <p class="text-2xl md:text-3xl text-slate-800 leading-relaxed font-black tracking-tight">Để tạo ra hình bên, Việt ghép 6 hình hộp chữ nhật giống nhau. Tính thể tích hình đó.</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full mx-auto bg-blue-50/50 p-10 rounded-[48px] border-2 border-blue-100">
+                                <div class="space-y-8">
+                                    <p class="text-lg md:text-xl font-bold text-blue-900 leading-tight italic">
+                                        "Để tạo ra hình bên, Việt ghép <b>6 hình hộp chữ nhật</b> giống nhau. Mỗi hình có kích thước: <b>10 cm, 5 cm và 2 cm</b>."
+                                    </p>
+                                    <div class="bg-white p-8 rounded-[40px] border-2 border-blue-100 shadow-inner space-y-6">
+                                        <div class="flex items-center justify-center gap-4">
+                                            <span class="text-2xl md:text-3xl font-black text-blue-600">Đáp số:</span>
+                                            <input type="number" id="ans-122-3" class="w-40 bg-transparent border-b-4 border-blue-200 focus:border-blue-600 outline-none p-2 text-2xl md:text-3xl font-black text-center text-blue-900 mx-2" placeholder="?">
+                                            <span class="text-2xl md:text-3xl font-black text-blue-400">cm³</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="assets/images/toan/toan_tap_2/122/122-b3-blocks.webp" alt="Khối hình" class="w-full max-w-[500px] h-auto rounded-[40px] shadow-2xl border-8 border-white mx-auto bg-white">
+                            </div>
+
+                            <!-- Lời giải ẩn cho giáo viên -->
+                            <div id="sol-122-3" class="hidden p-8 bg-amber-50 rounded-3xl border-2 border-amber-300 text-xl md:text-3xl font-bold text-slate-900 leading-relaxed text-left w-full mb-8 shadow-inner">
+                                <p class="text-2xl md:text-3xl font-black text-amber-900 mb-4">✍️ Bài giải chi tiết:</p>
+                                Thể tích của một hình hộp chữ nhật nhỏ là:<br>
+                                10 x 5 x 2 = 100 (cm³).<br>
+                                Thể tích của cả khối hình ghép là:<br>
+                                100 x 6 = 600 (cm³).<br>
+                                Đáp số: 600 cm³.
+                            </div>
+
+<div class="flex justify-end items-center gap-4 mt-8">
+                        <button onclick="window.toggleSolution('sol-122-3')" class="bg-amber-500 hover:bg-amber-600 text-white text-xs md:text-sm font-black px-5 py-3 rounded-2xl active:scale-95 transition-all shadow-md shrink-0">Hiện bài giải</button>
+                        <button id="btn-submit-122-3" onclick="window.submitEx122()" class="w-16 h-16 md:w-20 md:h-20 bg-blue-600 text-white rounded-2xl font-black text-3xl md:text-4xl shadow-xl hover:scale-105 active:scale-95 transition-all shrink-0">E</button>
+                    </div></div>
+                    </div>
+
                 </div>
             </div>
         </div>
-
-        <script>
-        window.check_122_1 = function() {
-            const v = document.getElementById('ans-122-1').value.trim();
-            const isCorrect = (v === '240');
-            window.showMathFeedback(isCorrect, "240", v, "V = 8 × 5 × 6.", 
-                \`<div class="text-left space-y-4">
-                    <p class="text-2xl font-bold text-emerald-700 italic">Tuyệt vời! Thể tích là: 8 × 5 × 6 = 240 (cm³).</p>
-                    <div class="bg-emerald-50 p-4 rounded-2xl border border-emerald-100">
-                        <p class="font-bold uppercase text-emerald-800 mb-1">Cách tính:</p>
-                        <p class="text-xl">V = Chiều dài × Chiều rộng × Chiều cao</p>
-                        <p class="text-xl">V = 8 × 5 × 6 = 240 (cm³)</p>
-                    </div>
-                </div>\`
-            );
-            window.submitMathLesson("Tiết 122 - Bài 1", isCorrect ? 100 : 0, "ans-122-1", 0, 1, isCorrect ? 1 : 0);
-        };
-
-        window.check_122_2 = function() {
-            const v = document.getElementById('ans-122-2').value.trim();
-            const isCorrect = (v === '480');
-            window.showMathFeedback(isCorrect, "480", v, "V = 10 × 6 × 8 = 480.", 
-                \`<div class="text-left space-y-4">
-                    <p class="text-2xl font-bold text-emerald-700 italic">Chính xác! Thể tích bể cá là: 10 × 6 × 8 = 480 (dm³).</p>
-                </div>\`
-            );
-            window.submitMathLesson("Tiết 122 - Bài 2", isCorrect ? 100 : 0, "ans-122-2", 0, 1, isCorrect ? 1 : 0);
-        };
-
-        window.check_122_3 = function() {
-            const v = document.getElementById('ans-122-3').value.trim();
-            const isCorrect = (v === '600');
-            window.showMathFeedback(isCorrect, "600", v, "V_tổng = (10 × 5 × 2) × 6 = 600.", 
-                \`<div class="text-left space-y-4">
-                    <p class="text-2xl font-bold text-emerald-700 italic">Quá giỏi! Thể tích của cả khối hình là: (10 × 5 × 2) × 6 = 600 (cm³).</p>
-                </div>\`
-            );
-            window.submitMathLesson("Tiết 122 - Bài 3", isCorrect ? 100 : 0, "ans-122-3", 0, 1, isCorrect ? 1 : 0);
-        };
-        </script>
     `,
     "quizPool": metadata.quizPool,
     "metadata": metadata
 };
 
+window.check_122_1 = function() {
+    const v = document.getElementById('ans-122-1').value.trim();
+    const isCorrect = (v === '240');
+    window.showMathFeedback(isCorrect, "240", v, "Muốn tính thể tích hình hộp chữ nhật ta lấy chiều dài nhân với chiều rộng rồi nhân với chiều cao (cùng đơn vị đo) nhé!", 
+        `<div class="text-left space-y-4">
+            <p class="text-xl md:text-2xl font-bold text-emerald-700 italic">Tuyệt vời! Thể tích là: 8 × 5 × 6 = 240 (cm³).</p>
+            <div class="bg-emerald-50 p-4 rounded-2xl border border-emerald-100">
+                <p class="font-bold uppercase text-emerald-800 mb-1 text-sm md:text-base">Cách tính:</p>
+                <p class="text-lg md:text-xl">V = Chiều dài × Chiều rộng × Chiều cao</p>
+                <p class="text-lg md:text-xl">V = 8 × 5 × 6 = 240 (cm³)</p>
+            </div>
+        </div>`
+    );
+    window.submitMathLesson("Tiết 122 - Bài 1", isCorrect ? 100 : 0, "ans-122-1", 0, 1, isCorrect ? 1 : 0);
+};
+
+window.check_122_2 = function() {
+    const v = document.getElementById('ans-122-2').value.trim();
+    const isCorrect = (v === '480');
+    window.showMathFeedback(isCorrect, "480", v, "Thể tích bể cá hình hộp chữ nhật bằng chiều dài nhân với chiều rộng rồi nhân với chiều cao. Em hãy kiểm tra kĩ các số đo kích thước và tính lại nhé!", 
+        `<div class="text-left space-y-4">
+            <p class="text-xl md:text-2xl font-bold text-emerald-700 italic">Chính xác! Thể tích bể cá là: 10 × 6 × 8 = 480 (dm³).</p>
+        </div>`
+    );
+    window.submitMathLesson("Tiết 122 - Bài 2", isCorrect ? 100 : 0, "ans-122-2", 0, 1, isCorrect ? 1 : 0);
+};
+
+window.check_122_3 = function() {
+    const v = document.getElementById('ans-122-3').value.trim();
+    const isCorrect = (v === '600');
+    window.showMathFeedback(isCorrect, "600", v, "Em hãy tính thể tích của một hình hộp chữ nhật nhỏ trước (dài x rộng x cao), sau đó nhân với số lượng hình (6 hình) để tìm tổng thể tích nhé!", 
+        `<div class="text-left space-y-4">
+            <p class="text-xl md:text-2xl font-bold text-emerald-700 italic">Quá giỏi! Thể tích của cả khối hình là: (10 × 5 × 2) × 6 = 600 (cm³).</p>
+        </div>`
+    );
+    window.submitMathLesson("Tiết 122 - Bài 3", isCorrect ? 100 : 0, "ans-122-3", 0, 1, isCorrect ? 1 : 0);
+};
+
 /* --- MATH_BUILDER_METADATA ---
-\${JSON.stringify(metadata)}
+${JSON.stringify(metadata)}
 --- END_METADATA --- */

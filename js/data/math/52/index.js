@@ -68,19 +68,7 @@ export const lesson052 = {
     "content": `
         <div class="theory-section space-y-6 animate-in fade-in slide-in-from-top-10 duration-1000 pt-6">
             <!-- Banner chính -->
-            <div class="p-8 rounded-[2.5rem] bg-gradient-to-br from-blue-700 to-blue-900 shadow-2xl relative overflow-hidden text-white">
-                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-                <div class="absolute bottom-0 left-0 w-48 h-48 bg-blue-500/20 rounded-full -ml-10 -mb-10 blur-2xl"></div>
-                <div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
-                    <div class="w-24 h-24 md:w-32 md:h-32 bg-white/20 backdrop-blur-md rounded-[2rem] flex items-center justify-center shadow-inner border border-white/30 shrink-0 text-3xl md:text-5xl animate-bounce">
-                        💡
-                    </div>
-                    <div class="text-center md:text-left">
-                        <h2 class="text-2xl md:text-4xl font-black mb-2 tracking-tight">NHÂN, CHIA SỐ THẬP PHÂN VỚI 10; 100; 1000;... HOẶC VỚI 0,1; 0,01; 0,001…</h2>
-                        <p class="text-blue-100 text-lg md:text-2xl font-medium opacity-90">Luyện tập quy tắc dịch dấu phẩy sang trái hoặc sang phải cực kỳ nhanh chóng!</p>
-                    </div>
-                </div>
-            </div>
+            
 
             <!-- TÌM HIỂU LÝ THUYẾT -->
             <div class="space-y-8">
@@ -224,14 +212,7 @@ export const lesson052 = {
                                 </p>
                             </div>
 
-                            <div class="p-6 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl text-white shadow-lg space-y-2">
-                                <h4 class="font-black text-xl flex items-center gap-2">
-                                    💡 Quy tắc chia cho 10; 100; 1 000;...
-                                </h4>
-                                <p class="text-base md:text-lg font-bold leading-relaxed opacity-95">
-                                    Muốn chia một số thập phân cho <span class="underline">10; 100; 1 000;...</span> ta chỉ việc chuyển dấu phẩy của số đó lần lượt sang bên <span class="text-yellow-300 font-extrabold">trái</span> một; hai; ba;... chữ số.
-                                </p>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -269,14 +250,7 @@ export const lesson052 = {
                     </div>
 
                     <!-- Quy tắc -->
-                    <div class="p-6 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-3xl text-white shadow-lg space-y-2">
-                        <h4 class="font-black text-xl flex items-center gap-2">
-                            💡 Quy tắc chia cho 0,1; 0,01; 0,001;...
-                        </h4>
-                        <p class="text-base md:text-lg font-bold leading-relaxed opacity-95">
-                            Muốn chia một số thập phân cho <span class="underline">0,1; 0,01; 0,001;...</span> ta chỉ việc chuyển dấu phẩy của số đó lần lượt sang bên <span class="text-yellow-300 font-extrabold">phải</span> một; hai; ba;... chữ số.
-                        </p>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -291,7 +265,7 @@ export const lesson052 = {
                         <div class="p-6 rounded-[2.5rem] bg-white shadow-none border-none relative overflow-hidden space-y-6">
                             <div class="flex items-center gap-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                <h3 class="text-lg md:text-2xl lg:text-3xl font-black text-blue-900 uppercase">Bài 1: Tính nhẩm</h3>
+                                <h3 class="text-lg md:text-2xl lg:text-3xl font-black text-blue-900 uppercase">Bài 1. Tính nhẩm</h3>
                             </div>
 
                             <!-- Câu a (ở trên) -->
@@ -300,15 +274,15 @@ export const lesson052 = {
                                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                                     <div class="flex items-center gap-3 text-lg md:text-2xl font-black text-slate-800">
                                         <span>20,7 : 10 =</span>
-                                        <input type="text" id="ans-52-hd1-a1" class="w-28 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="?">
+                                        <input type="text" id="ans-52-hd1-a1" class="w-28 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="">
                                     </div>
                                     <div class="flex items-center gap-3 text-lg md:text-2xl font-black text-slate-800">
                                         <span>0,8 : 100 =</span>
-                                        <input type="text" id="ans-52-hd1-a2" class="w-28 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="?">
+                                        <input type="text" id="ans-52-hd1-a2" class="w-28 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="">
                                     </div>
                                     <div class="flex items-center gap-3 text-lg md:text-2xl font-black text-slate-800">
                                         <span>341 : 1 000 =</span>
-                                        <input type="text" id="ans-52-hd1-a3" class="w-28 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="?">
+                                        <input type="text" id="ans-52-hd1-a3" class="w-28 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="">
                                     </div>
                                 </div>
                             </div>
@@ -319,15 +293,15 @@ export const lesson052 = {
                                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                                     <div class="flex items-center gap-3 text-lg md:text-2xl font-black text-slate-800">
                                         <span>0,3 : 0,1 =</span>
-                                        <input type="text" id="ans-52-hd1-b1" class="w-28 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="?">
+                                        <input type="text" id="ans-52-hd1-b1" class="w-28 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="">
                                     </div>
                                     <div class="flex items-center gap-3 text-lg md:text-2xl font-black text-slate-800">
                                         <span>58 : 0,001 =</span>
-                                        <input type="text" id="ans-52-hd1-b2" class="w-28 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="?">
+                                        <input type="text" id="ans-52-hd1-b2" class="w-28 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="">
                                     </div>
                                     <div class="flex items-center gap-3 text-lg md:text-2xl font-black text-slate-800">
                                         <span>6,3 : 0,01 =</span>
-                                        <input type="text" id="ans-52-hd1-b3" class="w-28 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="?">
+                                        <input type="text" id="ans-52-hd1-b3" class="w-28 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="">
                                     </div>
                                 </div>
                             </div>
@@ -343,24 +317,24 @@ export const lesson052 = {
                         <div class="p-6 rounded-[2.5rem] bg-white shadow-none border-none relative overflow-hidden space-y-6">
                             <div class="flex items-center gap-4">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                                <h3 class="text-lg md:text-2xl lg:text-3xl font-black text-blue-900 uppercase">Bài 2: Số ?</h3>
+                                <h3 class="text-lg md:text-2xl lg:text-3xl font-black text-blue-900 uppercase">Bài 2. Số ?</h3>
                             </div>
 
                             <div class="p-6 bg-slate-50 rounded-[2rem] border border-slate-200">
                                 <div class="flex flex-col gap-6">
                                     <div class="flex items-center gap-3 text-lg md:text-2xl font-black text-slate-800">
                                         <span class="min-w-[150px] md:min-w-[180px]">a) 23,45 kg =</span>
-                                        <input type="text" id="ans-52-hd2-a" class="w-28 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="?">
+                                        <input type="text" id="ans-52-hd2-a" class="w-28 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="">
                                         <span>g</span>
                                     </div>
                                     <div class="flex items-center gap-3 text-lg md:text-2xl font-black text-slate-800">
                                         <span class="min-w-[150px] md:min-w-[180px]">b) 23,4 tạ =</span>
-                                        <input type="text" id="ans-52-hd2-b" class="w-28 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="?">
+                                        <input type="text" id="ans-52-hd2-b" class="w-28 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="">
                                         <span>yến</span>
                                     </div>
                                     <div class="flex items-center gap-3 text-lg md:text-2xl font-black text-slate-800">
                                         <span class="min-w-[150px] md:min-w-[180px]">c) 6,89 l =</span>
-                                        <input type="text" id="ans-52-hd2-c" class="w-28 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="?">
+                                        <input type="text" id="ans-52-hd2-c" class="w-28 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="">
                                         <span>ml</span>
                                     </div>
                                 </div>
@@ -377,7 +351,7 @@ export const lesson052 = {
                         <div class="p-6 rounded-[2.5rem] bg-white shadow-none border-none relative overflow-hidden space-y-4">
                             <div class="flex items-center gap-4 mb-2">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">1</div>
-                                <h3 class="text-lg md:text-2xl lg:text-3xl font-black text-blue-900 uppercase">Bài 1: Chuỗi tính liên hoàn</h3>
+                                <h3 class="text-lg md:text-2xl lg:text-3xl font-black text-blue-900 uppercase">Bài 1. Chuỗi tính liên hoàn</h3>
                             </div>
 
                             <!-- Chuỗi tính bằng CSS Grid gióng hàng chuẩn -->
@@ -397,7 +371,7 @@ export const lesson052 = {
 
                                     <!-- Ô trống 1 -->
                                     <div class="px-2.5 py-2 bg-white border-2 border-blue-200 rounded-xl shadow-md text-center">
-                                        <input type="text" id="ans-52-lt1-step1" class="w-20 h-10 border-2 border-blue-300 rounded-lg text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-amber-50/50" style="padding: 0px !important; font-size: 1.125rem !important; line-height: 36px !important;" placeholder="?">
+                                        <input type="text" id="ans-52-lt1-step1" class="w-20 h-10 border-2 border-blue-300 rounded-lg text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-amber-50/50" style="padding: 0px !important; font-size: 1.125rem !important; line-height: 36px !important;" placeholder="">
                                     </div>
 
                                     <!-- Mũi tên 2: : 0,01 -->
@@ -408,7 +382,7 @@ export const lesson052 = {
 
                                     <!-- Ô trống 2 -->
                                     <div class="px-2.5 py-2 bg-white border-2 border-blue-200 rounded-xl shadow-md text-center">
-                                        <input type="text" id="ans-52-lt1-step2" class="w-20 h-10 border-2 border-blue-300 rounded-lg text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-amber-50/50" style="padding: 0px !important; font-size: 1.125rem !important; line-height: 36px !important;" placeholder="?">
+                                        <input type="text" id="ans-52-lt1-step2" class="w-20 h-10 border-2 border-blue-300 rounded-lg text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-amber-50/50" style="padding: 0px !important; font-size: 1.125rem !important; line-height: 36px !important;" placeholder="">
                                     </div>
 
                                     <!-- Mũi tên 3: x 0,01 -->
@@ -419,7 +393,7 @@ export const lesson052 = {
 
                                     <!-- Ô trống 3 -->
                                     <div class="px-2.5 py-2 bg-white border-2 border-blue-200 rounded-xl shadow-md text-center">
-                                        <input type="text" id="ans-52-lt1-step3" class="w-20 h-10 border-2 border-blue-300 rounded-lg text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-amber-50/50" style="padding: 0px !important; font-size: 1.125rem !important; line-height: 36px !important;" placeholder="?">
+                                        <input type="text" id="ans-52-lt1-step3" class="w-20 h-10 border-2 border-blue-300 rounded-lg text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-amber-50/50" style="padding: 0px !important; font-size: 1.125rem !important; line-height: 36px !important;" placeholder="">
                                     </div>
 
                                     <!-- Mũi tên 4: x 100 -->
@@ -430,7 +404,7 @@ export const lesson052 = {
 
                                     <!-- Ô trống 4 -->
                                     <div class="px-2.5 py-2 bg-white border-2 border-blue-200 rounded-xl shadow-md text-center">
-                                        <input type="text" id="ans-52-lt1-step4" class="w-20 h-10 border-2 border-blue-300 rounded-lg text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-amber-50/50" style="padding: 0px !important; font-size: 1.125rem !important; line-height: 36px !important;" placeholder="?">
+                                        <input type="text" id="ans-52-lt1-step4" class="w-20 h-10 border-2 border-blue-300 rounded-lg text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-amber-50/50" style="padding: 0px !important; font-size: 1.125rem !important; line-height: 36px !important;" placeholder="">
                                     </div>
                                 </div>
                             </div>
@@ -447,7 +421,7 @@ export const lesson052 = {
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-4">
                                     <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-lg md:text-2xl shadow-lg transform -rotate-3">2</div>
-                                    <h3 class="text-lg md:text-2xl lg:text-3xl font-black text-blue-900 uppercase">Bài 2: Máy xúc quặng</h3>
+                                    <h3 class="text-lg md:text-2xl lg:text-3xl font-black text-blue-900 uppercase">Bài 2. Máy xúc quặng</h3>
                                 </div>
                                 <button onclick="window.toggleSolution('sol-52-lt2')" class="bg-amber-500 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full hover:bg-amber-600 active:scale-95 transition-all shadow-md">Hiện bài giải</button>
                             </div>
@@ -471,7 +445,7 @@ export const lesson052 = {
                                     <div class="p-6 bg-slate-50 border border-slate-200 rounded-3xl shadow-inner">
                                         <div class="flex items-center flex-nowrap whitespace-nowrap overflow-x-auto gap-3 text-lg md:text-2xl font-black text-slate-800">
                                             <span>Đáp số:</span>
-                                            <input type="text" id="ans-52-lt2-result" class="w-36 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="?">
+                                            <input type="text" id="ans-52-lt2-result" class="w-36 h-12 border-2 border-blue-300 rounded-xl text-center text-blue-700 font-black outline-none focus:border-blue-500 bg-white" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 46px !important;" placeholder="">
                                             <span class="text-emerald-800">tấn quặng</span>
                                         </div>
                                     </div>
