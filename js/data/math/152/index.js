@@ -1,547 +1,526 @@
-const metadata = {
-    "lessonInfo": {
-        "period": "152",
-        "week": "31",
-        "topic": "Số liệu và Biểu đồ",
-        "title": "BÀI 67: LUYỆN TẬP CHUNG",
-        "desc": "Học sinh luyện tập đọc biểu đồ hình quạt tròn, kiểm đếm số liệu và xác định tỉ số lần lặp lại của một sự kiện."
-    },
-    "exercises": [
-        {
-            "id": "152_1",
-            "type": "fill_multiple",
-            "title": "Hoạt động 1: Biểu đồ hình quạt tròn - Bãi đỗ xe",
-            "statement": "Biểu đồ dưới đây cho biết tỉ số phần trăm các loại xe đang gửi trong bãi đỗ xe. Quan sát biểu đồ và trả lời câu hỏi.",
-            "answers": ["xe máy", "10%", "200"],
-            "placeholders": ["?", "?", "?"],
-            "image": "assets/images/toan/toan_tap_2/98/",
-            "guidance": "Quan sát tỉ số phần trăm của mỗi loại xe để so sánh và tính toán.",
-            "solution": "a) Xe máy chiếm 75% (nhiều nhất). b) Xe ô tô chiếm 10%. c) Tổng số xe = 30 : 15% = 200 (xe)."
-        },
-        {
-            "id": "152_2",
-            "type": "fill_blank",
-            "title": "Hoạt động 2: Kiểm đếm số lần lấy tất",
-            "statement": "Bảng kiểm đếm ghi lại kết quả việc lấy tất của Rô-bốt trong tháng 4. Hãy viết tỉ số để mô tả số lần lặp lại của khả năng 'lấy được 2 chiếc tất khác nhau' trong tổng số lần lấy tất.",
-            "answers": ["22/30", "11/15"],
-            "image": "assets/images/toan/toan_tap_2/99/",
-            "guidance": "Đếm số gạch trong bảng: Thống kê 'giống nhau' có 8 lần, 'khác nhau' có 22 lần. Tổng số lần là 30.",
-            "solution": "Số lần lấy được 2 chiếc tất khác nhau là 22. Tổng số lần là 8 + 22 = 30. Tỉ số là 22/30 (hoặc 11/15)."
-        },
-        {
-            "id": "152_3",
-            "type": "fill_multiple",
-            "title": "Hoạt động 3: Xác định tính chắc chắn",
-            "statement": "a) Vẽ 4 chiếc tất (2 đỏ, 2 vàng). Nhắm mắt lấy 2 chiếc bất kì, thực hiện 10 lần. b) Viết tỉ số của khả năng lấy được 2 chiếc tất cùng màu. c) Nhận định tính chắc chắn khi lấy 2 chiếc hoặc 3 chiếc tất.",
-            "answers": ["không", "có"],
-            "image": "assets/images/toan/toan_tap_2/152/",
-            "guidance": "Dựa vào thực hành để tính tỉ số ở câu b. Câu c dựa vào suy luận logic.",
-            "solution": "c) Lấy 2 chiếc thì chưa chắc chắn (có thể 1 đỏ 1 vàng). Lấy 3 chiếc chắc chắn có 2 chiếc cùng màu (vì chỉ có 2 màu)."
-        },
-        {
-            "id": "152_4",
-            "type": "multiple_choice",
-            "title": "Hoạt động 4: Biểu đồ thời gian của Rô-bốt",
-            "statement": "Biểu đồ cho biết tỉ số phần trăm thời gian dành cho các hoạt động trong ngày của Rô-bốt. Chọn câu trả lời đúng.",
-            "answers": ["A", "C"],
-            "image": "assets/images/toan/toan_tap_2/96/",
-            "guidance": "Quan sát các phần của hình tròn: 1/2 hình tròn là 50%, 1/4 là 25%, 1/8 là 12.5%.",
-            "solution": "a) Giải trí chiếm 1/8 => 12.5%. b) Ngủ chiếm 3/8 ngày => 9 giờ."
-        }
-    ],
-    "quizPool": [
-        { "question": "Biểu đồ hình quạt tròn dùng để làm gì?", "options": ["So sánh các phần với tổng thể", "Chỉ đường đi", "Vẽ tranh", "Đếm số lượng vật"], "answer": 0 },
-        { "question": "Tổng tỉ số phần trăm của các phần trong biểu đồ hình quạt tròn là bao nhiêu?", "options": ["50%", "100%", "200%", "90%"], "answer": 1 },
-        { "question": "Nếu một phần chiếm 25% trong biểu đồ hình quạt, nó tương ứng với mấy phần hình tròn?", "options": ["1/2", "1/3", "1/4", "1/5"], "answer": 2 },
-        { "question": "Dựa vào bài 1, loài xe nào có tỉ số phần trăm thấp nhất?", "options": ["Xe ô tô", "Xe máy", "Xe đạp", "Không có"], "answer": 0 },
-        { "question": "Trong bài 1, xe đạp chiếm bao nhiêu phần trăm?", "options": ["10%", "15%", "75%", "25%"], "answer": 1 },
-        { "question": "Cách tính tỉ số lần lặp lại của một sự kiện là gì?", "options": ["Lấy số lần xảy ra chia cho tổng số lần", "Lấy tổng số lần chia cho số lần xảy ra", "Lấy số lần xảy ra nhân với 100", "Lấy số lần xảy ra cộng tổng số lần"], "answer": 0 },
-        { "question": "Tháng 4 có bao nhiêu ngày?", "options": ["28 ngày", "29 ngày", "30 ngày", "31 ngày"], "answer": 2 },
-        { "question": "Trong bài 2, có bao nhiêu lần Rô-bốt lấy được 2 chiếc tất GIỐNG nhau?", "options": ["8 lần", "10 lần", "22 lần", "30 lần"], "answer": 0 },
-        { "question": "Trong bài 4, Robot dành bao nhiêu phần trăm thời gian để NGỦ?", "options": ["25%", "50%", "12.5%", "100%"], "answer": 1 },
-        { "question": "Một ngày có 24 giờ. 12.5% của một ngày là bao nhiêu giờ?", "options": ["1 giờ", "2 giờ", "3 giờ", "4 giờ"], "answer": 2 },
-        { "question": "Nếu có 2 màu tất, muốn CHẮC CHẮN lấy được 2 chiếc cùng màu thì cần lấy ít nhất mấy chiếc?", "options": ["2 chiếc", "3 chiếc", "4 chiếc", "5 chiếc"], "answer": 1 },
-        { "question": "Trong bài 4, hoạt động nào chiếm 25% thời gian của Rô-bốt?", "options": ["Ngủ", "Học tập và đọc sách", "Giải trí và thư giãn", "Khác"], "answer": 1 },
-        { "question": "Dựa vào bài 1, nếu bãi xe có 200 xe, số xe ô tô (10%) là bao nhiêu chiếc?", "options": ["10 chiếc", "20 chiếc", "30 chiếc", "40 chiếc"], "answer": 1 },
-        { "question": "Biểu đồ hình quạt tròn ở bài 4 có mấy phần (mấy loại hoạt động)?", "options": ["2 phần", "3 phần", "4 phần", "5 phần"], "answer": 2 },
-        { "question": "Kết quả của phép tính: 30 : 15% là bao nhiêu?", "options": ["20", "200", "450", "300"], "answer": 1 }
-    ]
+/**
+ * @file index.js
+ * @description Standardized Lesson 152: Bài 67. Luyện tập chung (tiết 1)
+ * Targets: 100% SGK compliance (Trang 100-102), 4 slides with independent solution toggle & E buttons.
+ */
+
+// 1. Metadata & Lesson Info
+export const metadata = {
+    id: "math-152",
+    period: "152",
+    title: "Bài 67. Luyện tập chung (tiết 1)",
+    lastUpdated: "2026-04-24",
+    type: "math"
 };
 
-const lesson152_practice = `
-    <div class="font-vietpro space-y-12 md:space-y-16 pb-20">
-        <!-- Bài 1 -->
-        <div class="glass-card p-6 md:p-10 rounded-[3rem] bg-white border border-blue-100 shadow-2xl relative overflow-hidden group">
-            <div class="relative z-10">
-                <div class="flex items-start gap-8 border-b-6 border-blue-100 pb-10 mb-12">
-                    <span class="w-20 h-20 bg-blue-600 text-white rounded-[1.5rem] flex items-center justify-center text-4xl font-black shadow-lg shrink-0">1</span>
-                    <div class="space-y-6">
-                        <p class="text-3xl text-slate-700 leading-relaxed font-bold">Biểu đồ dưới đây cho biết tỉ số phần trăm các loại xe đang gửi trong bãi đỗ xe. Quan sát biểu đồ và trả lời câu hỏi.</p>
-                    </div>
-                </div>
+const lessonInfo = {
+    title: "BÀI 67. LUYỆN TẬP CHUNG (TIẾT 1)",
+    description: "Học sinh luyện tập đọc biểu đồ hình quạt tròn, kiểm đếm số liệu và xác định tỉ số lần lặp lại của một sự kiện.",
+    unit: "Toán 5 - Tập 2",
+    page: "SGK - Trang 100-102"
+};
 
-                <div class="flex flex-col lg:flex-row gap-12 items-center">
-                    <div class="lg:w-1/2 flex justify-center">
-                        <img src="assets/images/toan/toan_tap_2/98/" class="max-w-full rounded-[2.5rem] shadow-2xl border-4 border-white transform group-hover:scale-[1.02] transition-transform duration-500" alt="Biểu đồ bãi đỗ xe">
-                    </div>
-                    
-                    <div class="lg:w-1/2 w-full p-8 bg-blue-50/50 rounded-[3rem] border-4 border-white shadow-xl space-y-10">
-                        <div class="space-y-6">
-                            <p class="text-3xl font-bold text-slate-700 leading-tight italic">a) Trong bãi đỗ xe đó, loại xe nào có nhiều nhất?</p>
-                            <div class="ml-10">
-                                <input type="text" id="in-152-1-a" placeholder="loại xe..." class="w-full w-full p-6 border-b-8 border-blue-200 outline-none font-black text-4xl text-blue-700 bg-white rounded-2xl shadow-lg focus:border-blue-600 transition-all">
-                            </div>
-                        </div>
-                        <div class="space-y-6">
-                            <p class="text-3xl font-bold text-slate-700 leading-tight italic">b) Số xe ô tô chiếm bao nhiêu phần trăm số xe gửi trong bãi?</p>
-                            <div class="ml-10">
-                                <input type="text" id="in-152-1-b" placeholder="? %" class="w-48 text-center p-6 border-b-8 border-blue-200 outline-none font-black text-5xl text-blue-700 bg-white rounded-2xl shadow-lg focus:border-blue-600 transition-all">
-                            </div>
-                        </div>
-                        <div class="space-y-6">
-                            <p class="text-3xl font-bold text-slate-700 leading-tight italic">c) Biết trong bãi có 30 xe đạp. Hỏi trong bãi hiện có tất cả bao nhiêu xe?</p>
-                            <div class="ml-10 flex items-center gap-6">
-                                <input type="number" id="in-152-1-c" placeholder="?" class="w-48 text-center p-6 border-b-8 border-blue-200 outline-none font-black text-5xl text-blue-700 bg-white rounded-2xl shadow-lg focus:border-blue-600 transition-all">
-                                <span class="text-3xl font-bold text-slate-400">xe</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+// 2. HTML Content (Khám phá / Lý thuyết - Trang 100-102)
+const lesson152Content = `
+<div class="space-y-8 animate-fade-in pb-10">
+    <div class="bg-blue-50 p-8 rounded-[48px] border-4 border-blue-200 shadow-xl relative overflow-hidden">
+        <div class="relative z-10 space-y-8">
+            <h4 class="text-2xl md:text-3xl font-black text-blue-700 uppercase tracking-widest text-center">📊 LUYỆN TẬP CHUNG: BIỂU ĐỒ QUẠT & TỈ SỐ THỰC NGHIỆM</h4>
 
-                <div class="flex justify-end mt-12">
-                    <button id="btn-check-152-1" onclick="window.check_152_1()" class="w-20 h-20 bg-blue-600 text-white rounded-[1.5rem] font-black text-4xl flex items-center justify-center shadow-lg hover:bg-blue-700 active:scale-95 transition-all shadow-blue-200/50">E</button>
+            <div class="bg-white p-8 rounded-[40px] shadow-inner border-2 border-blue-100 max-w-3xl mx-auto space-y-6 text-left">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 font-bold text-lg md:text-xl">
+                    <div class="p-6 bg-blue-50 rounded-3xl border-2 border-blue-200 space-y-2">
+                        <p class="font-black text-blue-800 text-xl md:text-2xl">📊 Phân tích biểu đồ quạt:</p>
+                        <p class="text-slate-800">• Toàn bộ hình tròn biểu thị 100%.</p>
+                        <p class="text-slate-800">• Số lượng = Tổng số × Tỉ số phần trăm.</p>
+                    </div>
+                    <div class="p-6 bg-teal-50 rounded-3xl border-2 border-teal-200 space-y-2">
+                        <p class="font-black text-teal-800 text-xl md:text-2xl">🎲 Tỉ số xác suất thực nghiệm:</p>
+                        <p class="text-slate-800">• Tỉ số = (Số lần lặp lại) / (Tổng số lần).</p>
+                        <p class="text-slate-800">• Kiểm đếm chính xác bằng gạch sổ.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Bài 2 -->
-        <div class="glass-card p-6 md:p-10 rounded-[3rem] bg-white border border-blue-100 shadow-2xl relative overflow-hidden group">
-            <div class="relative z-10 font-vietpro">
-                <div class="flex items-start gap-8 border-b-6 border-pink-100 pb-10 mb-12">
-                    <span class="w-20 h-20 bg-pink-600 text-white rounded-[1.5rem] flex items-center justify-center text-4xl font-black shadow-lg shrink-0 shadow-pink-200/50">2</span>
-                    <h3 class="text-3xl text-slate-700 leading-relaxed font-bold">Bài 2. Mỗi buổi sáng, Rô-bốt đều tự tạo một bất ngờ cho chính mình bằng cách lấy ra 2 chiếc tất mà không nhìn vào ngăn tủ. Kết quả là có ngày Rô-bốt lấy được hai chiếc tất giống nhau, cũng có ngày Rô-bốt lấy được hai chiếc tất khác nhau. Dưới đây là bảng kiểm đếm ghi lại kết quả việc lấy tất của Rô-bốt trong tháng 4.</h3>
-                </div>
-
-                <div class="flex flex-col gap-12 items-center">
-                    <!-- Hình ảnh bảng kiểm đếm từ SGK -->
-                    <div class="w-full w-full rounded-[3rem] overflow-hidden border-4 border-white shadow-2xl relative group">
-                        <img src="assets/images/toan/toan_tap_2/99/" class="w-full h-auto group-hover:scale-[1.02] transition-transform duration-700" alt="Bảng kiểm đếm">
-                        <div class="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-[3rem]"></div>
-                    </div>
-                    
-                    <div class="w-full bg-blue-50/50 rounded-[4rem] p-12 border-4 border-white shadow-xl space-y-10">
-                        <div class="flex flex-col md:flex-row gap-10 items-center">
-                            <div class="w-40 h-40 bg-white rounded-full p-2 shadow-2xl border-4 border-blue-200 overflow-hidden relative group">
-                                <img src="assets/images/toan/toan_tap_2/99/" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Robot">
-                            </div>
-                            <p class="text-3xl font-black text-slate-800 leading-snug">Viết tỉ số để mô tả số lần lặp lại của khả năng <span class="text-pink-600 uppercase underline decoration-4 underline-offset-8 font-black">"lấy được 2 chiếc tất khác nhau"</span> trong số các lần lấy tất của Rô-bốt trong tháng 4.</p>
-                        </div>
-                        <div class="flex flex-col items-center gap-4">
-                            <input type="text" id="in-152-2" placeholder="ví dụ: 1/2" class="w-full max-w-sm text-center p-10 border-b-8 border-blue-400 outline-none font-black text-7xl text-blue-700 bg-white rounded-[2.5rem] shadow-2xl focus:border-blue-600 transition-all placeholder:text-slate-300">
-                            <p class="text-xl font-bold text-slate-400">Gợi ý: (Số lần khác nhau) / (Tổng số lần)</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex justify-end mt-12">
-                    <button id="btn-check-152-2" onclick="window.check_152_2()" class="w-24 h-24 bg-pink-600 text-white rounded-[2rem] font-black text-5xl flex items-center justify-center shadow-lg hover:bg-pink-700 active:scale-95 transition-all shadow-pink-200/50">E</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Bài 3 -->
-        <div class="glass-card p-4 md:p-12 rounded-[4rem] bg-[#fffcf5] border-8 border-white shadow-2xl relative overflow-hidden group mb-12">
-             <!-- Dải màu trang trí phía trên -->
-             <div class="absolute top-0 left-0 w-full h-8 bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-500 opacity-20"></div>
-             
-             <div class="relative z-10 font-vietpro">
-                <!-- Đề bài Header -->
-                <div class="flex items-start gap-10 mb-12">
-                    <span class="w-24 h-24 bg-emerald-600 text-white rounded-[2rem] flex items-center justify-center text-5xl font-black shadow-xl shrink-0 shadow-emerald-200/50 outline outline-8 outline-emerald-50">3</span>
-                    <div class="space-y-6">
-                        <p class="text-4xl text-slate-800 leading-snug font-black">a) Vẽ 4 chiếc tất và tô màu 2 chiếc tất bởi màu đỏ, 2 chiếc tất bởi màu vàng rồi cắt rời những chiếc tất đó.</p>
-                        <div class="bg-blue-50/80 p-6 rounded-[2rem] border-2 border-blue-100 italic text-3xl font-bold text-blue-700">
-                             Nhắm mắt, lấy 2 chiếc tất bất kì từ những chiếc tất đó, quan sát màu, ghi lại kết quả và trả lại 2 chiếc tất đó. Thực hiện 10 lần như vậy.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex flex-col gap-12 w-full mx-auto">
-                    <!-- Khu vực mô phỏng thực hành -->
-                    <div class="bg-white rounded-[3.5rem] p-10 border-4 border-emerald-50 shadow-xl flex flex-col items-center gap-10">
-                        <div class="relative w-full w-full aspect-video rounded-[2.5rem] bg-emerald-50/30 overflow-hidden border-2 border-emerald-100 flex items-center justify-center">
-                            <img src="assets/images/toan/toan_tap_2/152/" class="h-3/4 w-auto drop-shadow-2xl animate-float" alt="Tất">
-                            <div class="absolute bottom-4 right-4 text-emerald-600 font-black text-xl bg-white/80 px-4 py-1 rounded-full backdrop-blur-sm">Trong hộp bí mật</div>
-                        </div>
-
-                        <div class="w-full w-full space-y-6">
-                            <div class="flex items-center justify-between border-b-4 border-dashed border-emerald-100 pb-4">
-                                <span class="text-2xl font-black text-emerald-900 uppercase">Tiến độ: <span id="trial-count-152" class="text-4xl text-emerald-600">0</span>/10</span>
-                                <button onclick="window.resetTrials()" class="text-xl font-bold text-emerald-400 hover:text-emerald-700 underline transition-colors">Thiết lập lại</button>
-                            </div>
-                            <!-- Khu vực hiển thị kết quả các lần thử -->
-                            <div id="trial-container" class="flex flex-wrap gap-3 p-6 bg-emerald-50/50 rounded-3xl min-h-[8rem] items-center justify-center border-2 border-emerald-100 shadow-inner">
-                                <p class="text-2xl text-slate-400 font-medium italic">Bắt đầu lấy tất ngay bên dưới...</p>
-                            </div>
-                        </div>
-
-                        <!-- Buttons tương tác -->
-                        <div class="flex flex-col gap-4 w-full w-full">
-                            <div class="grid grid-cols-2 gap-4">
-                                <button onclick="window.addTrial('đỏ-đỏ')" class="group p-6 bg-white border-4 border-red-50 rounded-[2rem] text-2xl font-black text-red-600 shadow-lg hover:border-red-500 hover:bg-red-50 transition-all flex flex-col items-center gap-2">
-                                    <span class="text-5xl group-hover:scale-125 transition-transform">❤️❤️</span>
-                                    <span>Cùng màu Đỏ</span>
-                                </button>
-                                <button onclick="window.addTrial('vàng-vàng')" class="group p-6 bg-white border-4 border-yellow-50 rounded-[2rem] text-2xl font-black text-yellow-600 shadow-lg hover:border-yellow-500 hover:bg-yellow-50 transition-all flex flex-col items-center gap-2">
-                                    <span class="text-5xl group-hover:scale-125 transition-transform">💛💛</span>
-                                    <span>Cùng màu Vàng</span>
-                                </button>
-                            </div>
-                            <button onclick="window.addTrial('khác')" class="group w-full p-6 bg-white border-4 border-slate-50 rounded-[2rem] text-2xl font-black text-slate-600 shadow-lg hover:border-slate-500 hover:bg-slate-50 transition-all flex items-center justify-center gap-6">
-                                <span class="text-5xl group-hover:rotate-12 transition-transform">❤️💛</span>
-                                <span>Lấy được 2 màu KHÁC NHAU</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Khu vực trả lời câu hỏi -->
-                    <div class="space-y-12">
-                        <!-- Câu b -->
-                        <div class="bg-white p-10 rounded-[3.5rem] border-4 border-emerald-50 shadow-xl space-y-8 relative overflow-hidden">
-                             <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
-                             <p class="text-3xl font-black text-slate-800 leading-snug">
-                                <span class="inline-block w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl text-center leading-[3rem] mr-4 shadow-sm">b</span>
-                                Viết tỉ số để mô tả số lần lặp lại của khả năng <span class="text-emerald-600 italic underline">"lấy được 2 chiếc tất cùng màu"</span> trong số các lần lấy tất ở trên của em:
-                             </p>
-                             <div class="flex flex-col items-center gap-6">
-                                 <input type="text" id="in-152-3-ratio" placeholder="? / 10" class="w-full max-w-sm text-center p-10 border-b-8 border-emerald-400 outline-none font-black text-7xl text-emerald-700 bg-emerald-50/30 rounded-[2.5rem] shadow-inner focus:border-emerald-600 transition-all hover:bg-emerald-50">
-                                 <p class="text-xl font-bold text-slate-400">Hãy đếm số lần ❤️❤️ và 💛💛 rồi viết tỉ số nhé!</p>
-                             </div>
-                        </div>
-
-                        <!-- Câu c -->
-                        <div class="bg-white p-10 rounded-[3.5rem] border-4 border-emerald-50 shadow-xl space-y-10">
-                            <p class="text-3xl font-black text-slate-900 leading-snug flex items-center gap-4">
-                                <span class="w-12 h-12 bg-emerald-600 text-white rounded-xl flex items-center justify-center shadow-lg">c</span>
-                                <span>Nhận định tính chắc chắn:</span>
-                            </p>
-                            <div class="space-y-12 pl-6">
-                                <div class="space-y-6">
-                                    <p class="text-2xl font-bold text-slate-600 leading-relaxed italic border-l-8 border-emerald-200 pl-6">Nếu mỗi lần chỉ lấy 2 chiếc tất bất kì thì ta có chắc chắn lấy được 2 chiếc tất cùng màu hay không?</p>
-                                    <div class="grid grid-cols-2 gap-6">
-                                        <button id="btn-152-3-c1-no" onclick="window.selectC(1, 'không')" class="py-6 bg-slate-50 border-4 border-white rounded-[2rem] font-black text-3xl text-slate-700 transition-all hover:border-emerald-400 shadow-md">KHÔNG</button>
-                                        <button id="btn-152-3-c1-yes" onclick="window.selectC(1, 'có')" class="py-6 bg-slate-50 border-4 border-white rounded-[2rem] font-black text-3xl text-slate-700 transition-all hover:border-emerald-400 shadow-md">CÓ</button>
-                                    </div>
-                                </div>
-                                <div class="space-y-6">
-                                    <p class="text-2xl font-bold text-slate-600 leading-relaxed italic border-l-8 border-emerald-200 pl-6">Nếu mỗi lần lấy 3 chiếc tất bất kì thì ta có chắc chắn lấy được 2 chiếc tất cùng màu hay không?</p>
-                                    <div class="grid grid-cols-2 gap-6">
-                                        <button id="btn-152-3-c2-no" onclick="window.selectC(2, 'không')" class="py-6 bg-slate-50 border-4 border-white rounded-[2rem] font-black text-3xl text-slate-700 transition-all hover:border-emerald-400 shadow-md">KHÔNG</button>
-                                        <button id="btn-152-3-c2-yes" onclick="window.selectC(2, 'có')" class="py-6 bg-slate-50 border-4 border-white rounded-[2rem] font-black text-3xl text-slate-700 transition-all hover:border-emerald-400 shadow-md">CÓ</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex justify-end mt-12 pt-12 border-t-4 border-dashed border-emerald-100">
-                    <button id="btn-check-152-3" onclick="window.check_152_3()" class="w-28 h-28 bg-emerald-600 text-white rounded-[2.5rem] font-black text-6xl flex items-center justify-center shadow-2xl hover:bg-emerald-700 active:scale-95 transition-all shadow-emerald-200/50 hover:rotate-3">E</button>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Bài 4 -->
-        <div class="glass-card p-6 md:p-10 rounded-[3rem] bg-white border border-blue-100 shadow-2xl relative overflow-hidden group">
-            <div class="relative z-10">
-                <div class="flex items-start gap-8 border-b-6 border-blue-100 pb-10 mb-12">
-                    <span class="w-20 h-20 bg-blue-600 text-white rounded-[1.5rem] flex items-center justify-center text-4xl font-black shadow-lg shrink-0">4</span>
-                    <h3 class="text-3xl text-slate-700 leading-relaxed font-bold">Bài 4. Biểu đồ dưới đây cho biết tỉ số phần trăm thời gian dành cho các hoạt động trong ngày thứ Sáu của Rô-bốt. Chọn câu trả lời đúng.</h3>
-                </div>
-
-                <div class="flex flex-col lg:flex-row gap-12 items-center">
-                    <div class="lg:w-1/2 flex flex-col items-center gap-8">
-                        <img src="assets/images/toan/toan_tap_2/96/" class="w-full w-full rounded-[3rem] shadow-2xl border-4 border-white" alt="Biểu đồ robot">
-                        <img src="assets/images/toan/toan_tap_2/152/" class="max-w-xs rounded-[2rem] shadow-lg border-2 border-blue-100" alt="Robot ngủ">
-                    </div>
-                    
-                    <div class="lg:w-1/2 w-full space-y-12">
-                         <div class="space-y-6">
-                            <p class="text-3xl font-black text-blue-900 border-l-8 border-blue-600 pl-6 uppercase">a) Giải trí và thư giãn chiếm khoảng:</p>
-                            <div class="grid grid-cols-2 gap-4">
-                                <button onclick="window.select4a('A')" id="btn-4a-A" class="p-6 bg-white border-4 border-blue-100 rounded-3xl text-2xl font-bold hover:border-blue-500 transition-all text-left"><b>A.</b> 12,5%</button>
-                                <button onclick="window.select4a('B')" id="btn-4a-B" class="p-6 bg-white border-4 border-blue-100 rounded-3xl text-2xl font-bold hover:border-blue-500 transition-all text-left"><b>B.</b> 25%</button>
-                                <button onclick="window.select4a('C')" id="btn-4a-C" class="p-6 bg-white border-4 border-blue-100 rounded-3xl text-2xl font-bold hover:border-blue-500 transition-all text-left"><b>C.</b> 50%</button>
-                                <button onclick="window.select4a('D')" id="btn-4a-D" class="p-6 bg-white border-4 border-blue-100 rounded-3xl text-2xl font-bold hover:border-blue-500 transition-all text-left"><b>D.</b> 60%</button>
-                            </div>
-                         </div>
-
-                         <div class="space-y-6">
-                            <p class="text-3xl font-black text-blue-900 border-l-8 border-blue-600 pl-6 uppercase">b) Số giờ Rô-bốt dùng để ngủ là khoảng:</p>
-                            <div class="grid grid-cols-2 gap-4">
-                                <button onclick="window.select4b('A')" id="btn-4b-A" class="p-6 bg-white border-4 border-blue-100 rounded-3xl text-2xl font-bold hover:border-blue-500 transition-all text-left"><b>A.</b> 3 giờ</button>
-                                <button onclick="window.select4b('B')" id="btn-4b-B" class="p-6 bg-white border-4 border-blue-100 rounded-3xl text-2xl font-bold hover:border-blue-500 transition-all text-left"><b>B.</b> 6 giờ</button>
-                                <button onclick="window.select4b('C')" id="btn-4b-C" class="p-6 bg-white border-4 border-blue-100 rounded-3xl text-2xl font-bold hover:border-blue-500 transition-all text-left"><b>C.</b> 9 giờ</button>
-                                <button onclick="window.select4b('D')" id="btn-4b-D" class="p-6 bg-white border-4 border-blue-100 rounded-3xl text-2xl font-bold hover:border-blue-500 transition-all text-left"><b>D.</b> 12 giờ</button>
-                            </div>
-                         </div>
-                    </div>
-                </div>
-
-                <div class="flex justify-end mt-12">
-                    <button id="btn-check-152-4" onclick="window.check_152_4()" class="w-20 h-20 bg-blue-600 text-white rounded-[1.5rem] font-black text-4xl flex items-center justify-center shadow-lg hover:bg-blue-700 active:scale-95 transition-all shadow-blue-200/50">E</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="glass-card p-10 rounded-[4rem] bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-2xl flex flex-col items-center gap-6 text-center">
-            <h3 class="text-4xl font-black uppercase tracking-widest">🎉 Tuyệt vời!</h3>
-            <p class="text-2xl font-medium italic opacity-90">Em đã hoàn thành các chặng luyện tập của bài 67. Hãy nộp kết quả để lưu lại thành tích nhé!</p>
-            <button id="btn-final-152" onclick="window.submitFinal152()" class="px-16 py-8 bg-white text-blue-700 rounded-[3rem] font-black text-4xl shadow-2xl hover:scale-105 active:scale-95 transition-all">Nộp bài luyện tập</button>
         </div>
     </div>
-
-    <style>
-        .sock-token { width: 3rem; height: 3rem; display: flex; align-items: center; justify-center; border-radius: 50%; font-size: 1.5rem; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
-    </style>
+</div>
 `;
 
-// Logic Xử Lý
-let trialResults = [];
-let ans3c = { 1: null, 2: null };
-let ans4a = null;
-let ans4b = null;
+// 3. HTML Practice (Luyện tập - 4 Slide phụ - Trang 100-102)
+const lesson152Practice = `
+<div class="-mx-8 md:-mx-12 mt-2 -mb-8 md:-mb-12">
+    <div id="ltViewport" style="overflow:hidden; width:100%; position:relative;">
+        <div id="ltTrack" class="flex transition-transform duration-500 ease-out" style="width: 100%; display: flex;">
 
-window.check_152_1 = function () {
-    const a = (document.getElementById('in-152-1-a').value || "").toLowerCase().trim();
-    const b = (document.getElementById('in-152-1-b').value || "").trim();
-    const c = parseInt(document.getElementById('in-152-1-c').value);
+            <!-- Slide 1: Bài 1 (Trang 100) -->
+            <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
+                <div class="glass-card p-8 md:p-10 rounded-[3rem] bg-white border border-blue-50 shadow-2xl relative overflow-hidden">
+                    <div class="flex items-start gap-6 mb-6 text-left">
+                        <div class="w-14 h-14 md:w-16 md:h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow-lg shrink-0">1</div>
+                        <div class="space-y-2">
+                            <h3 class="text-xl md:text-2xl font-black text-blue-700 block">Bài 1. Biểu đồ tỉ số phần trăm các loại xe gửi trong bãi</h3>
+                            <p class="text-xl md:text-2xl font-bold text-slate-800 leading-relaxed tracking-tight">Biểu đồ dưới đây cho biết tỉ số phần trăm các loại xe đang gửi trong bãi đỗ xe. Quan sát biểu đồ và trả lời câu hỏi:</p>
+                        </div>
+                    </div>
 
-    let isCorrect = (a === "xe máy") && (b === "10%" || b === "10") && (c === 200);
+                    <!-- Hình Biểu đồ bãi đỗ xe SGK Trang 100 HÌNH TO RÕ NÉT -->
+                    <div class="mb-8 text-center bg-blue-50/50 p-6 rounded-[2.5rem] border-2 border-blue-100 shadow-inner">
+                        <img src="assets/images/toan/toan_tap_2/152/152-1-bai-do-xe.png" alt="Biểu đồ bãi đỗ xe" class="rounded-2xl w-full max-w-[650px] md:max-w-[750px] h-auto object-contain shadow-md mx-auto bg-white p-4">
+                    </div>
 
-    const rightAnswer = "a) Xe máy; b) 10%; c) 200 xe";
-    const guidance = "Em hãy quan sát biểu đồ hình quạt tròn:<br>- Phần nào rộng nhất tương ứng với tỉ lệ cao nhất.<br>- Đọc tỉ lệ trực tiếp trên từng phần màu.<br>- Để tìm tổng số xe, em lấy số xe đạp chia cho tỉ số phần trăm tương ứng của nó nhé!";
-    const solution = `<div class='space-y-4'>
-        <p class='text-emerald-600 font-bold'>🌟 Giỏi lắm! Em đã đọc và phân tích biểu đồ rất chính xác.</p>
-        <div class='bg-white p-6 rounded-[2rem] shadow-inner border border-blue-50 space-y-3'>
-            <p>a) Xe máy có phần quạt rộng nhất (75%), nên là loại xe nhiều nhất.</p>
-            <p>b) Xe ô tô tương ứng với phần màu đỏ, chiếm <b>10%</b>.</p>
-            <p>c) 30 xe đạp ứng với 15%.<br>Tổng số xe là: 30 : 15 &times; 100 = <b>200 (xe)</b>.</p>
+                    <div class="space-y-6 mb-10 text-left w-full">
+                        <!-- a -->
+                        <div class="p-6 bg-blue-50 rounded-3xl border-2 border-blue-100 shadow-sm space-y-3">
+                            <p class="text-xl md:text-2xl font-black text-blue-900">a) Trong bãi đỗ xe đó, loại xe nào có nhiều nhất?</p>
+                            <div class="w-full">
+                                <select id="ans-152-1a" class="w-full md:w-auto h-14 border-2 border-blue-600 rounded-2xl px-4 font-black text-blue-600 outline-none bg-white text-xl md:text-2xl">
+                                    <option value="">-- Chọn loại xe --</option>
+                                    <option value="Xe máy">Xe máy (75%)</option>
+                                    <option value="Xe ô tô">Xe ô tô (10%)</option>
+                                    <option value="Xe đạp">Xe đạp (15%)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- b -->
+                        <div class="p-6 bg-blue-50 rounded-3xl border-2 border-blue-100 shadow-sm">
+                            <div class="flex items-center gap-3 flex-nowrap whitespace-nowrap overflow-x-auto text-xl md:text-2xl font-black text-slate-800">
+                                <span class="text-blue-900 font-extrabold">b) Số xe ô tô chiếm =</span>
+                                <span class="inline-flex items-center flex-nowrap gap-2">
+                                    <input type="number" id="ans-152-1b" class="w-24 h-14 border-2 border-blue-600 rounded-2xl text-center text-xl md:text-3xl font-black text-blue-600 outline-none" style="padding: 0px !important; line-height: 52px !important;" placeholder="?">
+                                    <span class="font-bold text-slate-800">% số xe gửi trong bãi</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- c -->
+                        <div class="p-6 bg-blue-50 rounded-3xl border-2 border-blue-100 shadow-sm">
+                            <div class="flex items-center gap-3 flex-nowrap whitespace-nowrap overflow-x-auto text-xl md:text-2xl font-black text-slate-800">
+                                <span class="text-blue-900 font-extrabold">c) Biết trong bãi có tất cả 300 xe. Số chiếc xe đạp là =</span>
+                                <span class="inline-flex items-center flex-nowrap gap-2">
+                                    <input type="number" id="ans-152-1c" class="w-28 h-14 border-2 border-blue-600 rounded-2xl text-center text-xl md:text-3xl font-black text-blue-600 outline-none" style="padding: 0px !important; line-height: 52px !important;" placeholder="?">
+                                    <span class="font-bold text-slate-800">chiếc xe đạp</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lời giải ẩn cho giáo viên -->
+                    <div id="sol-152-1" class="hidden p-8 bg-amber-50 rounded-3xl border-2 border-amber-300 text-xl md:text-3xl font-bold text-slate-900 leading-relaxed text-left w-full mb-8 shadow-inner">
+                        <p class="text-2xl md:text-3xl font-black text-amber-900 mb-4">✍️ Bài giải chi tiết 1:</p>
+                        a) Xe máy có phần quạt rộng nhất (75%), nên là loại xe nhiều nhất.<br>
+                        b) Số xe ô tô chiếm <b>10%</b> số xe gửi trong bãi.<br>
+                        c) Số chiếc xe đạp hiện có trong bãi là: 300 × 15% = <b>45 chiếc xe đạp</b>.<br>
+                        Đáp số: a) Xe máy ; b) 10% ; c) 45 chiếc xe đạp.
+                    </div>
+
+                    <div class="flex justify-end items-center gap-4 mt-8">
+                        <button onclick="window.toggleSolution('sol-152-1')" class="bg-amber-500 hover:bg-amber-600 text-white text-xs md:text-sm font-black px-5 py-3 rounded-2xl active:scale-95 transition-all shadow-md shrink-0">Hiện bài giải</button>
+                        <button id="btn-submit-152-1" onclick="window.submitEx152_1()" class="w-16 h-16 md:w-20 md:h-20 bg-blue-600 text-white rounded-2xl font-black text-3xl md:text-4xl shadow-xl hover:scale-105 active:scale-95 transition-all shrink-0">E</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Bài 2 (Trang 100-101) -->
+            <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
+                <div class="glass-card p-8 md:p-10 rounded-[3rem] bg-white border border-teal-50 shadow-2xl relative overflow-hidden">
+                    <div class="flex items-start gap-6 mb-6 text-left">
+                        <div class="w-14 h-14 md:w-16 md:h-16 bg-teal-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow-lg shrink-0">2</div>
+                        <div class="space-y-2">
+                            <h3 class="text-xl md:text-2xl font-black text-teal-700 block">Bài 2. Kiểm đếm kết quả lấy tất của Rô-bốt trong tháng 4</h3>
+                            <p class="text-xl md:text-2xl font-bold text-slate-800 leading-relaxed tracking-tight">Mỗi buổi sáng tháng 4 (30 ngày), Rô-bốt lấy 2 chiếc tất từ tủ mà không nhìn. Kết quả kiểm đếm trong tháng 4:</p>
+                        </div>
+                    </div>
+
+                    <!-- Bảng kiểm đếm tất Rô-bốt SGK -->
+                    <div class="overflow-x-auto rounded-3xl border-2 border-teal-200 mb-6">
+                        <table class="w-full border-collapse text-center font-black text-lg md:text-xl">
+                            <thead>
+                                <tr class="bg-teal-600 text-white">
+                                    <th class="p-4 border-r border-teal-400">Khả năng</th>
+                                    <th class="p-4">Số lần lặp lại (gạch kiểm đếm)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-teal-50/40 text-slate-800 text-xl md:text-2xl">
+                                <tr class="border-b border-teal-100">
+                                    <td class="p-4 border-r border-teal-100 font-bold bg-teal-100/50">Lấy được 2 chiếc tất giống nhau</td>
+                                    <td class="p-4 text-teal-700 font-black">7 lần (1 cụm 5 + 2 gạch)</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 border-r border-teal-100 font-bold bg-teal-100/50">Lấy được 2 chiếc tất khác nhau</td>
+                                    <td class="p-4 text-teal-700 font-black">23 lần (4 cụm 5 + 3 gạch)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Hình Rô-bốt chọn tất SGK Trang 101 HÌNH TO RÕ NÉT -->
+                    <div class="mb-8 text-center bg-teal-50/50 p-6 rounded-[2.5rem] border-2 border-teal-100 shadow-inner">
+                        <img src="assets/images/toan/toan_tap_2/152/152-2-ro-bot-tat.png" alt="Rô-bốt chọn tất trong tủ" class="rounded-2xl w-full max-w-[650px] md:max-w-[750px] h-auto object-contain shadow-md mx-auto bg-white p-4">
+                    </div>
+
+                    <div class="space-y-6 mb-10 text-left w-full">
+                        <div class="p-6 bg-teal-50 rounded-3xl border-2 border-teal-100 shadow-sm">
+                            <div class="flex items-center gap-3 flex-nowrap whitespace-nowrap overflow-x-auto text-xl md:text-2xl font-black text-slate-800">
+                                <span class="text-teal-900 font-extrabold">Tỉ số mô tả khả năng "lấy được 2 chiếc tất khác nhau" trong tháng 4 (30 ngày) =</span>
+                                <div class="flex items-center gap-2 text-xl md:text-3xl font-black text-teal-600">
+                                    <input type="number" id="ans-152-2-num" class="w-20 h-14 border-2 border-teal-600 rounded-2xl text-center outline-none font-black text-teal-600" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 52px !important;" placeholder="?">
+                                    <span class="text-slate-400">/</span>
+                                    <input type="number" id="ans-152-2-den" class="w-20 h-14 border-2 border-teal-600 rounded-2xl text-center outline-none font-black text-teal-600" style="padding: 0px !important; font-size: 1.5rem !important; line-height: 52px !important;" placeholder="30">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lời giải ẩn cho giáo viên -->
+                    <div id="sol-152-2" class="hidden p-8 bg-amber-50 rounded-3xl border-2 border-amber-300 text-xl md:text-3xl font-bold text-slate-900 leading-relaxed text-left w-full mb-8 shadow-inner">
+                        <p class="text-2xl md:text-3xl font-black text-amber-900 mb-4">✍️ Bài giải chi tiết 2:</p>
+                        • Số lần Rô-bốt lấy được 2 chiếc tất khác nhau là: 4 × 5 + 3 = <b>23 lần</b>.<br>
+                        • Tổng số lần lấy tất trong tháng 4 là: <b>30 lần</b>.<br>
+                        • Tỉ số mô tả khả năng lấy được 2 chiếc tất khác nhau là: <b>23/30</b>.<br>
+                        Đáp số: 23/30.
+                    </div>
+
+                    <div class="flex justify-end items-center gap-4 mt-8">
+                        <button onclick="window.toggleSolution('sol-152-2')" class="bg-amber-500 hover:bg-amber-600 text-white text-xs md:text-sm font-black px-5 py-3 rounded-2xl active:scale-95 transition-all shadow-md shrink-0">Hiện bài giải</button>
+                        <button id="btn-submit-152-2" onclick="window.submitEx152_2()" class="w-16 h-16 md:w-20 md:h-20 bg-teal-600 text-white rounded-2xl font-black text-3xl md:text-4xl shadow-xl hover:scale-105 active:scale-95 transition-all shrink-0">E</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Bài 3 (Trang 101) -->
+            <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
+                <div class="glass-card p-8 md:p-10 rounded-[3rem] bg-white border border-sky-50 shadow-2xl relative overflow-hidden">
+                    <div class="flex items-start gap-6 mb-6 text-left">
+                        <div class="w-14 h-14 md:w-16 md:h-16 bg-sky-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow-lg shrink-0">3</div>
+                        <div class="space-y-2">
+                            <h3 class="text-xl md:text-2xl font-black text-sky-700 block">Bài 3. Thực hành lấy 2 chiếc tất từ 4 chiếc tất (2 đỏ, 2 vàng)</h3>
+                            <p class="text-xl md:text-2xl font-bold text-slate-800 leading-relaxed tracking-tight">a) Cắt 4 chiếc tất (2 màu đỏ, 2 màu vàng). Nhắm mắt lấy 2 chiếc bất kì, quan sát màu, ghi lại kết quả rồi trả lại. Thực hiện 10 lần như vậy.</p>
+                        </div>
+                    </div>
+
+                    <!-- Hình 4 chiếc tất SGK Trang 101 HÌNH TO RÕ NÉT -->
+                    <div class="mb-8 text-center bg-sky-50/50 p-6 rounded-[2.5rem] border-2 border-sky-100 shadow-inner">
+                        <img src="assets/images/toan/toan_tap_2/152/152-3-bon-chiec-tat.png" alt="4 chiếc tất đỏ và vàng" class="rounded-2xl w-full max-w-[650px] md:max-w-[750px] h-auto object-contain shadow-md mx-auto bg-white p-4">
+                    </div>
+
+                    <div class="space-y-6 mb-10 text-left w-full">
+                        <!-- b -->
+                        <div class="p-6 bg-sky-50 rounded-3xl border-2 border-sky-100 shadow-sm">
+                            <div class="flex items-center gap-3 flex-nowrap whitespace-nowrap overflow-x-auto text-xl md:text-2xl font-black text-slate-800">
+                                <span class="text-sky-900 font-extrabold">b) Tỉ số mô tả khả năng "lấy được 2 chiếc tất cùng màu" trong 10 lần thực hiện =</span>
+                                <div class="flex items-center gap-2 text-xl md:text-3xl font-black text-sky-600">
+                                    <input type="number" id="ans-152-3b-num" class="w-20 h-12 border-2 border-sky-600 rounded-xl text-center outline-none font-black text-sky-600" style="padding: 0px !important; line-height: 44px !important;" placeholder="?">
+                                    <span class="text-slate-400">/</span>
+                                    <input type="number" id="ans-152-3b-den" class="w-20 h-12 border-2 border-sky-600 rounded-xl text-center outline-none font-black text-sky-600" style="padding: 0px !important; line-height: 44px !important;" placeholder="10" value="10">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- c -->
+                        <div class="p-6 bg-sky-50 rounded-3xl border-2 border-sky-100 shadow-sm space-y-4">
+                            <p class="text-xl md:text-2xl font-black text-sky-900">c) Trả lời nhận định tính chắc chắn:</p>
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-3 flex-nowrap whitespace-nowrap overflow-x-auto text-xl md:text-2xl font-bold text-slate-800">
+                                    <span>• Lấy 2 chiếc bất kì có CHẮC CHẮN lấy được 2 chiếc cùng màu hay không? =</span>
+                                    <select id="ans-152-3c1" class="h-14 border-2 border-sky-600 rounded-2xl px-4 font-black text-sky-600 outline-none bg-white">
+                                        <option value="">-- Chọn --</option>
+                                        <option value="Không chắc chắn">Không chắc chắn</option>
+                                        <option value="Chắc chắn">Chắc chắn</option>
+                                    </select>
+                                </div>
+                                <div class="flex items-center gap-3 flex-nowrap whitespace-nowrap overflow-x-auto text-xl md:text-2xl font-bold text-slate-800">
+                                    <span>• Lấy 3 chiếc bất kì có CHẮC CHẮN lấy được 2 chiếc cùng màu hay không? =</span>
+                                    <select id="ans-152-3c2" class="h-14 border-2 border-sky-600 rounded-2xl px-4 font-black text-sky-600 outline-none bg-white">
+                                        <option value="">-- Chọn --</option>
+                                        <option value="Chắc chắn">Chắc chắn</option>
+                                        <option value="Không chắc chắn">Không chắc chắn</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lời giải ẩn cho giáo viên -->
+                    <div id="sol-152-3" class="hidden p-8 bg-amber-50 rounded-3xl border-2 border-amber-300 text-xl md:text-3xl font-bold text-slate-900 leading-relaxed text-left w-full mb-8 shadow-inner">
+                        <p class="text-2xl md:text-3xl font-black text-amber-900 mb-4">✍️ Bài giải chi tiết 3:</p>
+                        b) Tỉ số được viết bằng (Số lần lấy 2 tất cùng màu) / 10.<br>
+                        c) <br>
+                        – Lấy 2 chiếc: <b>Không chắc chắn</b> (vì có thể lấy phải 1 chiếc đỏ và 1 chiếc vàng).<br>
+                        – Lấy 3 chiếc: <b>Chắc chắn</b> (vì chỉ có 2 màu tất nên 3 chiếc bắt buộc phải có ít nhất 2 chiếc cùng màu).
+                    </div>
+
+                    <div class="flex justify-end items-center gap-4 mt-8">
+                        <button onclick="window.toggleSolution('sol-152-3')" class="bg-amber-500 hover:bg-amber-600 text-white text-xs md:text-sm font-black px-5 py-3 rounded-2xl active:scale-95 transition-all shadow-md shrink-0">Hiện bài giải</button>
+                        <button id="btn-submit-152-3" onclick="window.submitEx152_3()" class="w-16 h-16 md:w-20 md:h-20 bg-sky-600 text-white rounded-2xl font-black text-3xl md:text-4xl shadow-xl hover:scale-105 active:scale-95 transition-all shrink-0">E</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Bài 4 (Trang 102) -->
+            <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; overflow: hidden; padding: 0 1rem;">
+                <div class="glass-card p-8 md:p-10 rounded-[3rem] bg-white border border-emerald-50 shadow-2xl relative overflow-hidden">
+                    <div class="flex items-start gap-6 mb-8 text-left">
+                        <div class="w-14 h-14 md:w-16 md:h-16 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow-lg shrink-0">4</div>
+                        <div class="space-y-2">
+                            <h3 class="text-xl md:text-2xl font-black text-emerald-700 block">Bài 4. Chọn câu trả lời đúng (Thời gian hoạt động thứ Sáu của Rô-bốt)</h3>
+                            <p class="text-xl md:text-2xl font-bold text-slate-800 leading-relaxed tracking-tight">Biểu đồ quạt tròn cho biết tỉ số phần trăm thời gian dành cho các hoạt động trong ngày thứ Sáu hằng tuần của Rô-bốt. Quan sát và chọn đáp án đúng:</p>
+                        </div>
+                    </div>
+
+                    <!-- Hình Biểu đồ & Rô-bốt ngủ SGK Trang 102 HÌNH TO RÕ NÉT -->
+                    <div class="mb-8 text-center bg-emerald-50/50 p-6 rounded-[2.5rem] border-2 border-emerald-100 shadow-inner">
+                        <img src="assets/images/toan/toan_tap_2/152/152-4-ro-bot-ngu.png" alt="Biểu đồ hoạt động và Rô-bốt ngủ" class="rounded-2xl w-full max-w-[650px] md:max-w-[750px] h-auto object-contain shadow-md mx-auto bg-white p-4">
+                    </div>
+
+                    <div class="space-y-6 mb-10 text-left w-full">
+                        <!-- a -->
+                        <div class="p-6 bg-emerald-50 rounded-3xl border-2 border-emerald-100 shadow-sm space-y-3">
+                            <p class="text-xl md:text-2xl font-black text-emerald-900">a) Thời gian Rô-bốt dành để giải trí và thư giãn (1/8 ngày) chiếm khoảng:</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <button id="btn-152-4a-A" onclick="window.select152_4a(0)" class="p-4 bg-white border-2 border-emerald-200 rounded-2xl text-xl md:text-2xl font-black text-blue-900 hover:bg-emerald-300 transition-all text-left">A. 12,5% thời gian trong ngày</button>
+                                <button id="btn-152-4a-B" onclick="window.select152_4a(1)" class="p-4 bg-white border-2 border-emerald-200 rounded-2xl text-xl md:text-2xl font-black text-blue-900 hover:bg-emerald-300 transition-all text-left">B. 25% thời gian trong ngày</button>
+                                <button id="btn-152-4a-C" onclick="window.select152_4a(2)" class="p-4 bg-white border-2 border-emerald-200 rounded-2xl text-xl md:text-2xl font-black text-blue-900 hover:bg-emerald-300 transition-all text-left">C. 50% thời gian trong ngày</button>
+                                <button id="btn-152-4a-D" onclick="window.select152_4a(3)" class="p-4 bg-white border-2 border-emerald-200 rounded-2xl text-xl md:text-2xl font-black text-blue-900 hover:bg-emerald-300 transition-all text-left">D. 60% thời gian trong ngày</button>
+                            </div>
+                        </div>
+
+                        <!-- b -->
+                        <div class="p-6 bg-emerald-50 rounded-3xl border-2 border-emerald-100 shadow-sm space-y-3">
+                            <p class="text-xl md:text-2xl font-black text-emerald-900">b) Số giờ Rô-bốt dùng để ngủ (3/8 ngày = 24 × 3/8) là khoảng:</p>
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                                <button id="btn-152-4b-A" onclick="window.select152_4b(0)" class="p-4 bg-white border-2 border-emerald-200 rounded-2xl text-xl md:text-2xl font-black text-blue-900 hover:bg-emerald-300 transition-all text-center">A. 3 giờ</button>
+                                <button id="btn-152-4b-B" onclick="window.select152_4b(1)" class="p-4 bg-white border-2 border-emerald-200 rounded-2xl text-xl md:text-2xl font-black text-blue-900 hover:bg-emerald-300 transition-all text-center">B. 6 giờ</button>
+                                <button id="btn-152-4b-C" onclick="window.select152_4b(2)" class="p-4 bg-white border-2 border-emerald-200 rounded-2xl text-xl md:text-2xl font-black text-blue-900 hover:bg-emerald-300 transition-all text-center">C. 9 giờ</button>
+                                <button id="btn-152-4b-D" onclick="window.select152_4b(3)" class="p-4 bg-white border-2 border-emerald-200 rounded-2xl text-xl md:text-2xl font-black text-blue-900 hover:bg-emerald-300 transition-all text-center">D. 12 giờ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lời giải ẩn cho giáo viên -->
+                    <div id="sol-152-4" class="hidden p-8 bg-amber-50 rounded-3xl border-2 border-amber-300 text-xl md:text-3xl font-bold text-slate-900 leading-relaxed text-left w-full mb-8 shadow-inner">
+                        <p class="text-2xl md:text-3xl font-black text-amber-900 mb-4">✍️ Bài giải chi tiết 4:</p>
+                        a) Giải trí và thư giãn chiếm 1/8 hình tròn = 100% : 8 = <b>12,5%</b> -> Đáp án <b>A</b>.<br>
+                        b) Thời gian ngủ chiếm 3/8 ngày. Số giờ là: 24 × 3/8 = <b>9 giờ</b> -> Đáp án <b>C</b>.<br>
+                        Đáp số: a) A. 12,5% ; b) C. 9 giờ.
+                    </div>
+
+                    <div class="flex justify-end items-center gap-4 mt-8">
+                        <button onclick="window.toggleSolution('sol-152-4')" class="bg-amber-500 hover:bg-amber-600 text-white text-xs md:text-sm font-black px-5 py-3 rounded-2xl active:scale-95 transition-all shadow-md shrink-0">Hiện bài giải</button>
+                        <button id="btn-submit-152-4" onclick="window.submitEx152_4()" class="w-16 h-16 md:w-20 md:h-20 bg-emerald-600 text-white rounded-2xl font-black text-3xl md:text-4xl shadow-xl hover:scale-105 active:scale-95 transition-all shrink-0">E</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>`;
+    </div>
+</div>
+`;
 
-    window.showMathFeedback(isCorrect, rightAnswer, `${a}, ${b}, ${c}`, guidance, solution);
-    if (window.submitMathLesson) window.submitMathLesson("Bài 1. Biểu đồ bãi đỗ xe", isCorrect ? 100 : 0, 'btn-check-152-1', 0, 3, isCorrect ? 3 : 0);
+// 4. Quiz Pool (15 Củng cố)
+const lesson152QuizPool = [
+    { question: "Biểu đồ hình quạt tròn dùng để làm gì?", options: ["So sánh các phần với tổng thể", "Chỉ đường đi", "Vẽ tranh minh họa", "Đo chiều dài"], answer: 0, level: "easy" },
+    { question: "Tổng tỉ số phần trăm của các phần trong biểu đồ quạt luôn bằng bao nhiêu?", options: ["100%", "50%", "200%", "90%"], answer: 0, level: "easy" },
+    { question: "Dựa vào Bài 1, loại xe nào có tỉ số phần trăm gửi nhiều nhất trong bãi?", options: ["Xe máy (75%)", "Xe ô tô (10%)", "Xe đạp (15%)", "Không xác định"], answer: 0, level: "easy" },
+    { question: "Dựa vào Bài 1, loại xe nào có tỉ số phần trăm gửi ít nhất?", options: ["Xe ô tô (10%)", "Xe đạp (15%)", "Xe máy (75%)", "Không có"], answer: 0, level: "easy" },
+    { question: "Biết bãi xe có 300 xe, xe đạp chiếm 15%. Số xe đạp là bao nhiêu chiếc?", options: ["45 chiếc", "30 chiếc", "50 chiếc", "60 chiếc"], answer: 0, level: "easy" },
+    { question: "Tháng 4 có bao nhiêu ngày?", options: ["30 ngày", "31 ngày", "28 ngày", "29 ngày"], answer: 0, level: "easy" },
+    { question: "Ở Bài 2, Rô-bốt lấy được 2 chiếc tất khác nhau 23 lần trong tháng 4. Tỉ số là:", options: ["23/30", "7/30", "30/23", "23/7"], answer: 0, level: "easy" },
+    { question: "Ở Bài 2, Rô-bốt lấy được 2 chiếc tất giống nhau 7 lần trong tháng 4. Tỉ số là:", options: ["7/30", "23/30", "30/7", "7/23"], answer: 0, level: "easy" },
+    { question: "Nếu chỉ có 2 màu tất, lấy 2 chiếc bất kì có chắc chắn cùng màu không?", options: ["Không chắc chắn", "Chắc chắn", "Luôn cùng màu", "Không thể xảy ra"], answer: 0, level: "easy" },
+    { question: "Nếu chỉ có 2 màu tất, lấy 3 chiếc bất kì có chắc chắn lấy được 2 chiếc cùng màu không?", options: ["Chắc chắn", "Không chắc chắn", "Không bao giờ", "Tùy thuộc may mắn"], answer: 0, level: "easy" },
+    { question: "Một ngày có bao nhiêu giờ?", options: ["24 giờ", "12 giờ", "60 giờ", "48 giờ"], answer: 0, level: "easy" },
+    { question: "1/8 thời gian trong một ngày tương ứng với tỉ số phần trăm bao nhiêu?", options: ["12,5%", "25%", "50%", "37,5%"], answer: 0, level: "easy" },
+    { question: "Rô-bốt ngủ 3/8 thời gian của một ngày (24 giờ). Số giờ ngủ là:", options: ["9 giờ", "6 giờ", "12 giờ", "3 giờ"], answer: 0, level: "easy" },
+    { question: "Hoạt động nào chiếm 25% thời gian trong ngày của Rô-bốt ở Bài 4?", options: ["Học tập và đọc sách (và Khác)", "Ngủ", "Giải trí và thư giãn", "Ăn uống"], answer: 0, level: "easy" },
+    { question: "Nếu bãi xe có 200 xe, xe ô tô chiếm 10% thì có bao nhiêu xe ô tô?", options: ["20 chiếc", "10 chiếc", "30 chiếc", "40 chiếc"], answer: 0, level: "easy" }
+];
+
+// 5. Global Handlers & State
+window.lesson152State = {
+    ans4a: null,
+    ans4b: null
 };
 
-window.check_152_2 = function () {
-    const ans = (document.getElementById('in-152-2').value || "").trim().replace(/\s/g, '');
-    const isCorrect = (ans === "22/30" || ans === "11/15");
-    const rightAnswer = "22/30 (hoặc 11/15)";
-    const guidance = "Tỉ số thực nghiệm = (Số lần sự kiện xảy ra) : (Tổng số lần thực hiện).<br>Trong bài này, tổng số lần thực hiện là số ngày của tháng 4. Em hãy đếm xem có bao nhiêu ngày lấy được 2 chiếc tất khác nhau nhé!";
-    const solution = `<div class='space-y-4'>
-        <p class='text-emerald-600 font-bold'>✨ Tuyệt vời! Em đã xác định đúng tỉ số thực nghiệm.</p>
-        <div class='bg-white p-6 rounded-[2rem] shadow-inner border border-blue-50 space-y-3'>
-            <p>1. Tổng số lần lấy tất (số ngày trong tháng 4) là: <b>30</b> lần.</p>
-            <p>2. Số lần lấy được 2 chiếc tất khác nhau là: <b>22</b> lần.</p>
-            <p>3. Tỉ số mô tả khả năng này là: <b>22/30</b> (rút gọn thành <b>11/15</b>).</p>
-        </div>
-    </div>`;
-
-    window.showMathFeedback(isCorrect, rightAnswer, ans, guidance, solution);
-    if (window.submitMathLesson) window.submitMathLesson("Bài 2. Tỉ số kiểm đếm", isCorrect ? 100 : 0, 'btn-check-152-2', 0, 1, isCorrect ? 1 : 0);
-};
-
-window.addTrial = function (type) {
-    if (trialResults.length >= 10) {
-        window.UI.showToast("Đã thực hiện đủ 10 lần rồi em nhé!", "info");
-        return;
-    }
-    if (trialResults.length === 0) document.getElementById('trial-container').innerHTML = "";
-
-    trialResults.push(type);
-    const container = document.getElementById('trial-container');
-    const dot = document.createElement('div');
-    dot.className = "flex items-center justify-center w-16 h-16 rounded-xl text-white font-black text-xl shadow-lg animate-in zoom-in duration-300";
-    if (type === 'đỏ-đỏ') { dot.innerText = "❤️❤️"; dot.classList.add('bg-red-500'); }
-    else if (type === 'vàng-vàng') { dot.innerText = "💛💛"; dot.classList.add('bg-yellow-500'); }
-    else { dot.innerText = "❤️💛"; dot.classList.add('bg-slate-500'); }
-    container.appendChild(dot);
-
-    document.getElementById('trial-count-152').innerText = trialResults.length;
-};
-
-window.resetTrials = function () {
-    trialResults = [];
-    document.getElementById('trial-container').innerHTML = '<p class="text-2xl text-slate-400 font-medium italic">Bắt đầu lấy tất ngay bên dưới...</p>';
-    document.getElementById('trial-count-152').innerText = "0";
-    document.getElementById('in-152-3-ratio').value = "";
-};
-
-window.selectC = function (index, value) {
-    ans3c[index] = value;
-    document.querySelectorAll(`[id^='btn-152-3-c${index}']`).forEach(b => b.classList.replace('bg-emerald-600', 'bg-white'));
-    document.querySelectorAll(`[id^='btn-152-3-c${index}']`).forEach(b => b.classList.replace('text-white', 'text-emerald-900'));
-    const btn = document.getElementById(`btn-152-3-c${index}-${value === 'có' ? 'yes' : 'no'}`);
-    btn.classList.replace('bg-white', 'bg-emerald-600');
-    btn.classList.replace('text-emerald-900', 'text-white');
-};
-
-window.check_152_3 = function () {
-    if (trialResults.length < 10) {
-        window.UI.showToast("Em hãy hoàn thành đủ 10 lần thực hiện ảo đã nhé!", "warning");
-        return;
-    }
-    const ratioInput = (document.getElementById('in-152-3-ratio').value || "").trim();
-    if (!ratioInput) {
-        window.UI.showToast("Em hãy điền tỉ số ở mục (b) nhé!", "warning");
-        return;
-    }
-    if (!ans3c[1] || !ans3c[2]) {
-        window.UI.showToast("Em hãy trả lời xong các câu hỏi ở mục (c) nhé!", "warning");
-        return;
-    }
-
-    const sameColorCount = trialResults.filter(r => r === 'đỏ-đỏ' || r === 'vàng-vàng').length;
-    const expectedRatio = `${sameColorCount}/10`;
-    const isRatioCorrect = (ratioInput === expectedRatio || ratioInput === `${sameColorCount} / 10`);
-
-    const isLogicCorrect = (ans3c[1] === 'không') && (ans3c[2] === 'có');
-
-    const isCorrect = isRatioCorrect && isLogicCorrect;
-
-    const rightAnswer = `Tỉ số: ${expectedAvg}; c1: Không; c2: Có`;
-    const guidance = "Ở mục (b), em hãy đếm số cặp cùng màu (đỏ-đỏ hoặc vàng-vàng) trong 10 lần em vừa thực hiện. Ở mục (c), hãy nhớ rằng nếu chỉ lấy 2 chiếc, vẫn có thể rơi vào trường hợp 1 đỏ 1 vàng. Nhưng nếu lấy 3 chiếc, vì chỉ có 2 màu nên chắc chắn sẽ có 2 chiếc cùng màu.";
-    const solution = `<div class='space-y-6'>
-        <p class='text-emerald-600 font-bold'>🎉 Chúc mừng em đã hoàn thành bài thực hành thực nghiệm!</p>
-        <div class='bg-white p-6 rounded-[2rem] shadow-inner border border-blue-50 space-y-4'>
-            <p>• <b>Câu b:</b> Trong 10 lần thực hiện, có <b>${sameColorCount}</b> lần lấy được 2 tất cùng màu. Tỉ số là <b>${expectedRatio}</b>.</p>
-            <p>• <b>Câu c:</b></p>
-            <ul class='list-disc pl-10 space-y-2'>
-                <li>Lấy 2 chiếc: <b>Không chắc chắn</b> (vì có thể là 1 đỏ, 1 vàng).</li>
-                <li>Lấy 3 chiếc: <b>Chắc chắn</b> (vì chỉ có 2 màu, theo nguyên lý Dirichlet, lấy 3 chiếc sẽ luôn có ít nhất 2 chiếc cùng màu).</li>
-            </ul>
-        </div>
-    </div>`;
-
-    window.showMathFeedback(isCorrect, rightAnswer, ratioInput, guidance, solution);
-    if (window.submitMathLesson) window.submitMathLesson("Bài 3. Thực hành & Logic", isCorrect ? 100 : 0, 'btn-check-152-3', 0, 3, isCorrect ? 3 : 0);
-};
-
-window.select4a = function (v) {
-    ans4a = v;
-    document.querySelectorAll("[id^='btn-4a-']").forEach(b => b.classList.remove('bg-blue-600', 'text-white'));
-    document.getElementById(`btn-4a-${v}`).classList.add('bg-blue-600', 'text-white');
-};
-window.select4b = function (v) {
-    ans4b = v;
-    document.querySelectorAll("[id^='btn-4b-']").forEach(b => b.classList.remove('bg-blue-600', 'text-white'));
-    document.getElementById(`btn-4b-${v}`).classList.add('bg-blue-600', 'text-white');
-};
-
-window.check_152_4 = function () {
-    if (!ans4a || !ans4b) {
-        window.UI.showToast("Em hãy chọn đủ hai đáp án trắc nghiệm nhé!", "info");
-        return;
-    }
-    const isCorrect = (ans4a === 'A') && (ans4b === 'C');
-    const rightAnswer = "a) A (12,5%); b) C (9 giờ)";
-    const guidance = "Em hãy quan sát kỹ biểu đồ hình quạt tròn:<br>- Xác định xem phần diện tích biểu diễn hoạt động giải trí và ngủ chiếm bao nhiêu phần của hình tròn.<br>- Lấy tổng số tương ứng (100% hoặc 24 giờ) nhân với phân số biểu diễn phần diện tích đó để tìm kết quả nhé!";
-    const solution = `<div class='space-y-6'>
-        <p class='text-emerald-600 font-bold'>🚀 Em có khả năng phân tích biểu đồ rất tuyệt!</p>
-        <div class='bg-white p-6 rounded-[2rem] shadow-inner border border-blue-50 space-y-4'>
-            <p>a) Giải trí chiếm 1/8 đường tròn: 100% : 8 = <b>12,5%</b>. (Đáp án A)</p>
-            <p>b) Ngủ chiếm 3/8 hình tròn: 24 &times; 3/8 = <b>9 (giờ)</b>. (Đáp án C)</p>
-        </div>
-    </div>`;
-
-    window.showMathFeedback(isCorrect, rightAnswer, `${ans4a}, ${ans4b}`, guidance, solution);
-    if (window.submitMathLesson) window.submitMathLesson("Bài 4. Thời gian biểu của Robot", isCorrect ? 100 : 0, 'btn-check-152-4', 0, 2, isCorrect ? 2 : 0);
-};
-
-window.submitFinal152 = function () {
-    const report = {
-        lessonId: "152",
-        type: "practice_report",
-        title: "152. Luyện tập: Biểu đồ và Kiểm đếm",
-        timestamp: new Date().toISOString(),
-        score: 100,
-        results: {
-            bai1: "Hoàn thành",
-            bai2: "Hoàn thành",
-            bai3_practicalPath: trialResults.join(", "),
-            bai4: "Hoàn thành"
+window.select152_4a = function(idx) {
+    window.lesson152State.ans4a = idx;
+    const btnIds = ['btn-152-4a-A', 'btn-152-4a-B', 'btn-152-4a-C', 'btn-152-4a-D'];
+    btnIds.forEach((id, i) => {
+        const el = document.getElementById(id);
+        if (el) {
+            if (i === idx) {
+                el.className = "p-4 bg-emerald-600 text-white border-2 border-emerald-700 rounded-2xl text-xl md:text-2xl font-black text-left shadow-md";
+            } else {
+                el.className = "p-4 bg-white border-2 border-emerald-200 rounded-2xl text-xl md:text-2xl font-black text-blue-900 hover:bg-emerald-300 transition-all text-left";
+            }
         }
-    };
-    if (window.submitMathLesson) {
-        window.submitMathLesson(report, 100, 'btn-final-152', 0, 1, 1);
-        window.UI.showToast("Tuyệt vời! Kết quả bài 152 đã được lưu lại. 🚀", "success");
-        if (window.syncRealtimeProgress) window.syncRealtimeProgress({ completed: true, score: 100 }, true);
-    }
+    });
 };
 
+window.select152_4b = function(idx) {
+    window.lesson152State.ans4b = idx;
+    const btnIds = ['btn-152-4b-A', 'btn-152-4b-B', 'btn-152-4b-C', 'btn-152-4b-D'];
+    btnIds.forEach((id, i) => {
+        const el = document.getElementById(id);
+        if (el) {
+            if (i === idx) {
+                el.className = "p-4 bg-emerald-600 text-white border-2 border-emerald-700 rounded-2xl text-xl md:text-2xl font-black text-center shadow-md";
+            } else {
+                el.className = "p-4 bg-white border-2 border-emerald-200 rounded-2xl text-xl md:text-2xl font-black text-blue-900 hover:bg-emerald-300 transition-all text-center";
+            }
+        }
+    });
+};
+
+window.submitEx152_1 = function () {
+    const a = document.getElementById('ans-152-1a')?.value;
+    const b = document.getElementById('ans-152-1b')?.value.trim();
+    const c = document.getElementById('ans-152-1c')?.value.trim();
+
+    if (!a || !b || !c) {
+        alert("Em hãy chọn và điền đầy đủ câu trả lời cho cả 3 câu a, b, c!");
+        return;
+    }
+
+    const ca = (a === 'Xe máy');
+    const cb = (parseInt(b) === 10);
+    const cc = (parseInt(c) === 45);
+
+    const correctCount = (ca ? 1 : 0) + (cb ? 1 : 0) + (cc ? 1 : 0);
+    const isCorrect = (correctCount === 3);
+    const score = Math.round((correctCount / 3) * 100);
+
+    window.showMathFeedback(
+        isCorrect,
+        "a) Xe máy ; b) 10% ; c) 45 chiếc xe đạp",
+        `a) ${a} ; b) ${b}% ; c) ${c} chiếc`,
+        "Em hãy quan sát phần quạt lớn nhất trên biểu đồ để xác định loại xe nhiều nhất, đọc trực tiếp tỉ số % của xe ô tô và tính số xe đạp (300 × 15%) nhé!",
+        `
+        a) Xe máy có phần quạt rộng nhất (75%), nên là loại xe nhiều nhất.<br>
+        b) Số xe ô tô chiếm 10% số xe gửi trong bãi.<br>
+        c) Số chiếc xe đạp hiện có: 300 × 15% = 45 chiếc xe đạp.<br>
+        Đáp số: a) Xe máy ; b) 10% ; c) 45 chiếc xe đạp.
+        `
+    );
+
+    window.submitMathLesson(metadata.title, score, "btn-submit-152-1", 0, 3, correctCount);
+};
+
+window.submitEx152_2 = function () {
+    const num = document.getElementById('ans-152-2-num')?.value.trim();
+    const den = document.getElementById('ans-152-2-den')?.value.trim();
+
+    if (!num || !den) {
+        alert("Em hãy điền đầy đủ cả tử số và mẫu số cho tỉ số!");
+        return;
+    }
+
+    const cNum = (parseInt(num) === 23);
+    const cDen = (parseInt(den) === 30);
+    const isCorrect = cNum && cDen;
+
+    window.showMathFeedback(
+        isCorrect,
+        "23/30",
+        `${num}/${den}`,
+        "Em hãy đếm tổng số gạch của 2 chiếc tất khác nhau (4 cụm 5 + 3 gạch = 23) và lập tỉ số với tổng số ngày của tháng 4 (30 ngày) nhé!",
+        `
+        • Số lần Rô-bốt lấy được 2 chiếc tất khác nhau: 4 × 5 + 3 = 23 lần.<br>
+        • Tổng số lần lấy tất trong tháng 4 là 30 lần.<br>
+        • Tỉ số mô tả khả năng là 23/30.<br>
+        Đáp số: 23/30.
+        `
+    );
+
+    window.submitMathLesson(metadata.title, isCorrect ? 100 : 0, "btn-submit-152-2", 0, 1, isCorrect ? 1 : 0);
+};
+
+window.submitEx152_3 = function () {
+    const num = document.getElementById('ans-152-3b-num')?.value.trim();
+    const den = document.getElementById('ans-152-3b-den')?.value.trim();
+    const c1 = document.getElementById('ans-152-3c1')?.value;
+    const c2 = document.getElementById('ans-152-3c2')?.value;
+
+    if (!num || !den || !c1 || !c2) {
+        alert("Em hãy điền đầy đủ tỉ số câu b và chọn câu trả lời ở câu c!");
+        return;
+    }
+
+    const cc1 = (c1 === 'Không chắc chắn');
+    const cc2 = (c2 === 'Chắc chắn');
+    const cDen = (parseInt(den) === 10);
+
+    const correctCount = (cDen ? 1 : 0) + (cc1 ? 1 : 0) + (cc2 ? 1 : 0);
+    const isCorrect = (correctCount === 3);
+    const score = Math.round((correctCount / 3) * 100);
+
+    window.showMathFeedback(
+        isCorrect,
+        `b) ${num}/10 ; c1) Không chắc chắn ; c2) Chắc chắn`,
+        `b) ${num}/${den} ; c1) ${c1} ; c2) ${c2}`,
+        "Em hãy đếm số lần lấy được 2 chiếc tất cùng màu để điền tử số, câu c1 suy luận xem 2 chiếc lấy ra có thể khác màu không và câu c2 dùng nguyên lý thử chọn với 3 chiếc tất nhé!",
+        `
+        b) Tỉ số lấy 2 chiếc tất cùng màu trong 10 lần thực hiện = ${num}/10.<br>
+        c) <br>
+        – Lấy 2 chiếc: Không chắc chắn (vì có thể lấy 1 đỏ 1 vàng).<br>
+        – Lấy 3 chiếc: Chắc chắn (vì chỉ có 2 màu nên 3 chiếc luôn có ít nhất 2 chiếc cùng màu).
+        `
+    );
+
+    window.submitMathLesson(metadata.title, score, "btn-submit-152-3", 0, 3, correctCount);
+};
+
+window.submitEx152_4 = function () {
+    const a = window.lesson152State.ans4a;
+    const b = window.lesson152State.ans4b;
+
+    if (a === null || b === null) {
+        alert("Em hãy chọn đầy đủ câu trả lời trắc nghiệm cho cả câu a và câu b!");
+        return;
+    }
+
+    const ca = (a === 0); // A: 12.5%
+    const cb = (b === 2); // C: 9 giờ
+
+    const correctCount = (ca ? 1 : 0) + (cb ? 1 : 0);
+    const isCorrect = (correctCount === 2);
+    const score = Math.round((correctCount / 2) * 100);
+
+    const choicesA = ['A. 12,5%', 'B. 25%', 'C. 50%', 'D. 60%'];
+    const choicesB = ['A. 3 giờ', 'B. 6 giờ', 'C. 9 giờ', 'D. 12 giờ'];
+
+    window.showMathFeedback(
+        isCorrect,
+        "a) A. 12,5% ; b) C. 9 giờ",
+        `a) ${choicesA[a]} ; b) ${choicesB[b]}`,
+        "Em hãy quan sát phần quạt Giải trí (1/8 hình tròn = 100% ÷ 8) và phần quạt Ngủ (3/8 ngày = 24 × 3 ÷ 8) để chọn đáp án đúng nhé!",
+        `
+        a) Giải trí chiếm 1/8 hình tròn = 100% : 8 = 12,5% -> Đáp án A.<br>
+        b) Số giờ ngủ = 24 × 3/8 = 9 giờ -> Đáp án C.<br>
+        Đáp số: a) A. 12,5% ; b) C. 9 giờ.
+        `
+    );
+
+    window.submitMathLesson(metadata.title, score, "btn-submit-152-4", 0, 2, correctCount);
+};
+
+// 6. Main Lesson Export
 export const lesson152 = {
-    "topic": metadata.lessonInfo.topic,
-    "week": metadata.lessonInfo.week,
-    "period": metadata.lessonInfo.period,
-    "title": metadata.lessonInfo.title,
-    "desc": metadata.lessonInfo.desc,
-    "content": `
-        <div class="theory-section space-y-12 animate-in fade-in slide-in-from-bottom-10 duration-1000 pt-6 font-vietpro">
-            <!-- Header -->
-            <div class="glass-card p-10 rounded-[4rem] bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-2xl relative overflow-hidden mb-12">
-                <div class="absolute -right-20 -top-20 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
-                <div class="relative z-10 flex items-center gap-10">
-                    <div class="w-32 h-32 bg-white/20 backdrop-blur-md rounded-[2.5rem] flex items-center justify-center text-6xl shadow-inner animate-bounce-slow">🏹</div>
-                    <div>
-                        <h2 class="text-5xl font-black uppercase tracking-tight mb-2">Tóm tắt kiến thức</h2>
-                        <p class="text-3xl font-medium opacity-90 italic">Biểu đồ hình quạt tròn & Xác suất thực nghiệm</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Kiến thức 1 -->
-            <div class="glass-card p-10 rounded-[3.5rem] bg-white border-2 border-blue-50 shadow-xl">
-                 <h3 class="text-4xl font-black text-blue-700 flex items-center gap-6 mb-10 decoration-blue-200 underline underline-offset-10">
-                    <span class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-4xl shadow-inner">📊</span>
-                    <span>Biểu đồ hình quạt tròn</span>
-                </h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <div class="p-8 bg-slate-50 rounded-[3rem] border-2 border-slate-100 shadow-inner space-y-4">
-                        <p class="text-2xl font-bold text-slate-600 leading-relaxed">• Dùng để so sánh các phần với <b>toàn thể</b>.</p>
-                        <p class="text-2xl font-bold text-slate-600 leading-relaxed">• Toàn bộ hình tròn biểu thị <b>100%</b>.</p>
-                        <p class="text-2xl font-bold text-slate-600 leading-relaxed">• Mỗi phần hình tròn tương ứng với tỉ số phần trăm của từng đối tượng.</p>
-                    </div>
-                    <div class="bg-blue-600 p-10 rounded-[3rem] text-white shadow-2xl flex flex-col items-center justify-center text-center">
-                         <div class="text-2xl font-medium opacity-80 mb-4 uppercase tracking-widest">Công thức vàng</div>
-                         <div class="text-4xl font-black leading-tight italic">TỔNG THỂ = <br> GIÁ TRỊ PHẦN : TỈ SỐ %</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Kiến thức 2 -->
-            <div class="glass-card p-10 rounded-[3.5rem] bg-white border-2 border-emerald-50 shadow-xl">
-                 <h3 class="text-4xl font-black text-emerald-700 flex items-center gap-6 mb-10 decoration-emerald-200 underline underline-offset-10">
-                    <span class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center text-4xl shadow-inner">🎲</span>
-                    <span>Xác suất thực nghiệm</span>
-                </h3>
-                <div class="bg-emerald-50 rounded-[3rem] p-10 border-2 border-emerald-100">
-                    <p class="text-3xl font-bold text-slate-700 mb-8 leading-snug">Tỉ số lần lặp lại của một khả năng xảy ra trong một thí nghiệm được tính bằng công thức:</p>
-                    <div class="flex flex-col items-center bg-white p-10 rounded-[3rem] shadow-xl border-4 border-emerald-200">
-                        <div class="text-4xl font-black text-emerald-600">Số lần sự kiện xảy ra</div>
-                        <div class="w-3/4 h-2 bg-emerald-300 my-4 rounded-full"></div>
-                        <div class="text-4xl font-black text-emerald-600">Tổng số lần thực hiện</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    `,
-
-    "practice": lesson152_practice,
-    "quizPool": metadata.quizPool,
-    "metadata": metadata
+    topic: "Số liệu và Biểu đồ",
+    week: "31",
+    period: "152",
+    title: metadata.title || lessonInfo.title,
+    desc: lessonInfo.description,
+    content: lesson152Content,
+    practice: lesson152Practice,
+    quizPool: lesson152QuizPool,
+    metadata,
+    lessonInfo,
+    onLoad: () => {
+        console.log("Lesson 152 Loaded: Bài 67. Luyện tập chung (tiết 1)");
+        if (window.Presentation) window.Presentation.currentSlideIndex = 0;
+    }
 };
 
 window.lesson152 = lesson152;
-
+export default lesson152;
