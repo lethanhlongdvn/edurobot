@@ -1,258 +1,251 @@
 export const lesson165 = {
     period: "165",
     title: "BÀI 71: ÔN TẬP HÌNH HỌC (TIẾT 4)",
-    topic: "Ôn tập hình học",
+    topic: "Ôn tập thể tích và diện tích (tiếp theo)",
     week: "33",
 
-    content: `
-        <div class="space-y-6">
-            <div class="bg-rose-50 p-8 rounded-[3rem] border-4 border-rose-200 shadow-2xl">
-                <h3 class="text-3xl md:text-5xl font-black text-rose-700 mb-6 uppercase text-center tracking-tight">ÔN TẬP HÌNH HỌC (TIẾT 4)</h3>
-                <div class="space-y-4 text-xl md:text-3xl text-gray-800 leading-relaxed font-bold">
-                    <p class="uppercase text-rose-600 border-b-4 border-rose-200 pb-2">Luyện tập tổng hợp về hình hộp chữ nhật và hình lập phương</p>
-                    <div class="mt-6 p-6 bg-white rounded-3xl shadow-inner border-l-8 border-rose-500 italic text-xl md:text-2xl text-gray-600">
-                        "Ghi nhớ: Thể tích vật thể chìm trong nước bằng thể tích phần nước dâng lên."
-                    </div>
-                </div>
-            </div>
-        </div>
-    `,
-
     practice: `
-        <div class="space-y-12 pb-10">
-            <!-- BÀI 1 -->
-            <div id="lesson165_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500 relative overflow-hidden">
-                <div class="flex items-center gap-6 mb-8">
-                    <div class="w-20 h-20 flex-shrink-0 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg rotate-3">1</div>
-                    <h3 class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Bài 1. Tính kích thước hình hộp chữ nhật</h3>
+        <div class="space-y-10 pb-10">
+
+            <!-- Bài 1: Hình khai triển A -->
+            <div id="lesson165_b1" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-blue-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">1</div>
+                    <h3 class="text-xl md:text-2xl font-black text-blue-700">Bài 1. Giải bài toán</h3>
                 </div>
-                
-                <div class="p-8 bg-blue-50 rounded-[2.5rem] border-2 border-blue-100 space-y-8">
-                    <p class="text-2xl md:text-3xl leading-snug text-gray-700 font-medium">
-                        Một cái hộp hình hộp chữ nhật có chiều dài <span class="text-blue-600 font-black">6 cm</span>, chiều rộng <span class="text-blue-600 font-black">4 cm</span> và chiều cao <span class="text-blue-600 font-black">3 cm</span>. Tính:
+                <div class="bg-blue-50 p-5 rounded-2xl border border-blue-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Từ hình khai triển A gồm 6 hình vuông (cạnh <span class="font-black text-blue-700">4 cm</span>) như hình dưới đây, Mai đã gấp được hình lập phương B. Tính diện tích xung quanh, diện tích toàn phần, thể tích của hình lập phương B.
                     </p>
+                    <img src="assets/images/toan/toan_tap_2/165/165-1-khai-trien.png" class="max-w-[450px] w-full mx-auto rounded-2xl shadow-lg border-4 border-white" alt="Hình khai triển A gấp thành HLP B">
                     
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div class="bg-white p-6 rounded-3xl border-2 border-blue-200 shadow-md transform transition-all hover:scale-105">
-                            <label class="block text-xl font-bold text-blue-600 mb-2 uppercase">Diện tích xung quanh</label>
-                            <div class="flex items-center gap-2">
-                                <input id="165-1-1" type="text" class="w-full h-16 text-center text-2xl md:text-3xl font-black border-4 border-blue-400 rounded-2xl outline-none focus:ring-4 focus:ring-blue-200 transition-all" placeholder="?">
-                                <span class="text-xl md:text-2xl font-bold text-gray-500">cm<sup>2</sup></span>
-                            </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 border-t border-blue-200 pt-4">
+                        <div class="flex flex-col gap-1">
+                            <label class="font-bold text-gray-700">S<sub>xq</sub> của HLP B (cm²):</label>
+                            <input id="165-1-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-full h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
                         </div>
-                        <div class="bg-white p-6 rounded-3xl border-2 border-blue-200 shadow-md transform transition-all hover:scale-105">
-                            <label class="block text-xl font-bold text-blue-600 mb-2 uppercase">Diện tích toàn phần</label>
-                            <div class="flex items-center gap-2">
-                                <input id="165-1-2" type="text" class="w-full h-16 text-center text-2xl md:text-3xl font-black border-4 border-blue-400 rounded-2xl outline-none focus:ring-4 focus:ring-blue-200 transition-all" placeholder="?">
-                                <span class="text-xl md:text-2xl font-bold text-gray-500">cm<sup>2</sup></span>
-                            </div>
+                        <div class="flex flex-col gap-1">
+                            <label class="font-bold text-gray-700">S<sub>tp</sub> của HLP B (cm²):</label>
+                            <input id="165-1-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-full h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
                         </div>
-                        <div class="bg-white p-6 rounded-3xl border-2 border-blue-200 shadow-md transform transition-all hover:scale-105">
-                            <label class="block text-xl font-bold text-blue-600 mb-2 uppercase">Thể tích</label>
-                            <div class="flex items-center gap-2">
-                                <input id="165-1-3" type="text" class="w-full h-16 text-center text-2xl md:text-3xl font-black border-4 border-blue-400 rounded-2xl outline-none focus:ring-4 focus:ring-blue-200 transition-all" placeholder="?">
-                                <span class="text-xl md:text-2xl font-bold text-gray-500">cm<sup>3</sup></span>
-                            </div>
+                        <div class="flex flex-col gap-1">
+                            <label class="font-bold text-gray-700">Thể tích V của HLP B (cm³):</label>
+                            <input id="165-1-3" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-full h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
                         </div>
                     </div>
                 </div>
-
-                <div class="flex justify-end mt-10">
-                    <button id="btn-check-165-1" onclick="window.check_165_1()" class="w-24 h-24 bg-[#ff7b29] text-white rounded-3xl font-black text-4xl md:text-5xl shadow-[0_10px_0_0_#c45a1d] hover:translate-y-1 hover:shadow-[0_6px_0_0_#c45a1d] active:translate-y-2 active:shadow-none transition-all flex items-center justify-center">E</button>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-165-1').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-165-1" onclick="window.check_165_1()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-165-1" class="hidden bg-blue-50 p-4 rounded-2xl border border-blue-200 text-lg font-bold text-blue-900 space-y-1">
+                    <p>Cạnh HLP B = 4 cm.</p>
+                    <p>Sxq B = 4 × 4 × 4 = <span class="text-emerald-700">64 cm²</span></p>
+                    <p>Stp B = 4 × 4 × 6 = <span class="text-emerald-700">96 cm²</span></p>
+                    <p>Thể tích V = 4 × 4 × 4 = <span class="text-emerald-700">64 cm³</span></p>
                 </div>
             </div>
 
-            <!-- BÀI 2 -->
-            <div id="lesson165_b2" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-orange-500 relative overflow-hidden">
-                <div class="flex items-center gap-6 mb-8">
-                    <div class="w-20 h-20 flex-shrink-0 bg-orange-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg -rotate-3">2</div>
-                    <h3 class="text-2xl md:text-4xl font-black text-orange-800 uppercase tracking-wide">Bài 2. Tính thể tích hòn đá</h3>
+            <!-- Bài 2: Xưởng điêu khắc đá Ngũ Hành Sơn -->
+            <div id="lesson165_b2" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-emerald-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">2</div>
+                    <h3 class="text-xl md:text-2xl font-black text-emerald-700">Bài 2. Giải bài toán</h3>
                 </div>
-                
-                <div class="p-8 bg-orange-50 rounded-[2.5rem] border-2 border-orange-100 flex flex-col md:flex-row gap-10 items-center">
-                    <div class="flex-1 space-y-8">
-                        <p class="text-2xl md:text-3xl leading-relaxed text-gray-700">
-                            Một bể cá có diện tích đáy là <span class="text-orange-600 font-black">150 cm<sup>2</sup></span>, mực nước hiện tại cao <span class="text-orange-600 font-black">8 cm</span>. Sau khi thả một hòn đá vào bể, mực nước dâng lên cao tới <span class="text-orange-600 font-black">10 cm</span>.
-                        </p>
-                        <div class="flex items-center gap-6 p-6 bg-white rounded-3xl shadow-lg border-2 border-orange-200">
-                            <span class="text-2xl md:text-3xl font-black text-orange-700 uppercase">Thể tích hòn đá:</span>
-                            <div class="flex items-center gap-3">
-                                <input id="165-2-1" type="text" class="w-36 h-20 text-center text-4xl md:text-5xl font-black text-orange-600 bg-orange-50 border-4 border-orange-400 rounded-[1.5rem] outline-none shadow-inner focus:ring-4 focus:ring-orange-200 transition-all" placeholder="...">
-                                <span class="text-2xl md:text-3xl font-bold text-gray-500">cm<sup>3</sup></span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-white p-8 rounded-[3rem] shadow-xl border-4 border-orange-100 transform rotate-2">
-                        <svg width="280" height="240" viewBox="0 0 240 200" class="filter drop-shadow-md">
-                            <rect x="40" y="40" width="160" height="140" fill="none" stroke="#0369A1" stroke-width="4" rx="4" />
-                            <rect x="42" y="100" width="156" height="78" fill="#BAe6FD" opacity="0.8" rx="2" />
-                            <rect x="42" y="80" width="156" height="20" fill="#7DD3FC" opacity="0.6" stroke-dasharray="8,4" />
-                            <circle cx="120" cy="150" r="30" fill="#4B5563" stroke="#1F2937" stroke-width="2" />
-                            <line x1="210" y1="180" x2="210" y2="100" stroke="#0EA5E9" stroke-width="2" marker-end="url(#arrow)" />
-                            <text x="215" y="145" font-family="Arial" font-weight="bold" fill="#0369A1" font-size="14">8 cm</text>
-                            <line x1="30" y1="180" x2="30" y2="80" stroke="#0EA5E9" stroke-width="2" marker-end="url(#arrow)" />
-                            <text x="2" y="135" font-family="Arial" font-weight="bold" fill="#0C4A6E" font-size="14">10 cm</text>
-                            <defs>
-                                <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orientation="auto">
-                                    <path d="M0,0 L10,5 L0,10 Z" fill="#0EA5E9" />
-                                </marker>
-                            </defs>
-                        </svg>
-                    </div>
-                </div>
-
-                <div class="flex justify-end mt-10">
-                    <button id="btn-check-165-2" onclick="window.check_165_2()" class="w-24 h-24 bg-[#ff7b29] text-white rounded-3xl font-black text-4xl md:text-5xl shadow-[0_10px_0_0_#c45a1d] hover:translate-y-1 hover:shadow-[0_6px_0_0_#c45a1d] active:translate-y-2 active:shadow-none transition-all flex items-center justify-center">E</button>
-                </div>
-            </div>
-
-            <!-- BÀI 3 -->
-            <div id="lesson165_b3" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-green-500 relative overflow-hidden">
-                <div class="flex items-center gap-6 mb-8">
-                    <div class="w-20 h-20 flex-shrink-0 bg-green-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg rotate-0">3</div>
-                    <h3 class="text-2xl md:text-4xl font-black text-green-800 uppercase tracking-wide">Bài 3. Tỉ số thể tích</h3>
-                </div>
-                
-                <div class="p-8 bg-green-50 rounded-[2.5rem] border-2 border-green-100 flex flex-col gap-8">
-                    <p class="text-2xl md:text-3xl leading-relaxed text-gray-700 italic font-medium">
-                        Hình lập phương bé có cạnh dài <span class="text-green-600 font-black not-italic">2 cm</span>, hình lập phương lớn có cạnh dài <span class="text-green-600 font-black not-italic">5 cm</span>.
+                <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Trong một xưởng điêu khắc đá ở Ngũ Hành Sơn có khối đá dạng hình lập phương A cạnh <span class="font-black text-blue-700">0,8 m</span> và khối đá dạng hình hộp chữ nhật B có chiều cao <span class="font-black text-blue-700">0,8 m</span>, chiều dài <span class="font-black text-blue-700">0,6 m</span>, chiều rộng <span class="font-black text-blue-700">0,4 m</span>. Hỏi khối đá nào nặng hơn và nặng hơn bao nhiêu ki-lô-gam? Biết <span class="font-black text-blue-700">1 m³ đá cân nặng 2,75 tấn</span>.
                     </p>
-                    
-                    <div class="space-y-8 mt-4">
-                        <div class="flex flex-wrap items-center gap-6 bg-white p-6 rounded-[2rem] shadow-md border-2 border-green-200 transition-all hover:bg-green-100">
-                            <span class="text-2xl md:text-3xl font-bold text-gray-700">a) Thể tích hình bé bằng:</span>
-                            <div class="flex items-center gap-4">
-                                <input id="165-3-1" type="text" class="w-24 h-16 text-center text-3xl md:text-4xl font-black border-4 border-green-400 rounded-2xl outline-none focus:ring-4 focus:ring-green-200 transition-all text-green-700 shadow-inner" placeholder="?">
-                                <span class="text-3xl md:text-4xl font-bold text-gray-400">/</span>
-                                <input id="165-3-2" type="text" class="w-24 h-16 text-center text-3xl md:text-4xl font-black border-4 border-green-400 rounded-2xl outline-none focus:ring-4 focus:ring-green-200 transition-all text-green-700 shadow-inner" placeholder="?">
-                            </div>
-                            <span class="text-2xl md:text-3xl font-bold text-gray-700">thể tích hình lớn.</span>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 flex-wrap">
+                            <span class="font-bold text-gray-700 text-lg">Khối đá nặng hơn là (chọn A hay B?):</span>
+                            <input id="165-2-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-16 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none uppercase" placeholder="A/B">
                         </div>
-                        
-                        <div class="flex flex-wrap items-center gap-6 bg-white p-6 rounded-[2rem] shadow-md border-2 border-green-200 transition-all hover:bg-green-100">
-                            <span class="text-2xl md:text-3xl font-bold text-gray-700">b) Tỉ số phần trăm V hình lớn và V hình bé:</span>
-                            <div class="flex items-center gap-4">
-                                <input id="165-3-3" type="text" class="w-40 h-16 text-center text-3xl md:text-4xl font-black border-4 border-green-400 rounded-2xl outline-none focus:ring-4 focus:ring-green-200 transition-all text-green-700 shadow-inner" placeholder="?">
-                                <span class="text-3xl md:text-4xl font-black text-green-600">%</span>
+                        <div class="flex items-center gap-3 flex-wrap">
+                            <span class="font-bold text-gray-700 text-lg">Nặng hơn bao nhiêu ki-lô-gam (kg):</span>
+                            <input id="165-2-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-36 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span class="font-bold text-gray-700">kg</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-165-2').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-165-2" onclick="window.check_165_2()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-165-2" class="hidden bg-emerald-50 p-4 rounded-2xl border border-emerald-200 text-lg font-bold text-emerald-900 space-y-1">
+                    <p>Thể tích khối đá A: 0,8 × 0,8 × 0,8 = 0,512 m³</p>
+                    <p>Thể tích khối đá B: 0,6 × 0,4 × 0,8 = 0,192 m³</p>
+                    <p>Khối A thể tích lớn hơn khối B là: 0,512 − 0,192 = 0,32 m³</p>
+                    <p>Khối A nặng hơn khối B là: 0,32 × 2,75 = 0,88 tấn = <span class="text-blue-700">880 kg</span></p>
+                </div>
+            </div>
+
+            <!-- Bài 3: Bể cá -->
+            <div id="lesson165_b3" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-amber-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-amber-500 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">3</div>
+                    <h3 class="text-xl md:text-2xl font-black text-amber-700">Bài 3. Giải bài toán</h3>
+                </div>
+                <div class="bg-amber-50 p-5 rounded-2xl border border-amber-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Một bể cá có kích thước như hình vẽ (dài <span class="font-black text-blue-700">60 cm</span>, rộng <span class="font-black text-blue-700">30 cm</span>, cao <span class="font-black text-blue-700">40 cm</span>).
+                    </p>
+                    <img src="assets/images/toan/toan_tap_2/165/165-3-be-ca.png" class="max-w-[450px] w-full mx-auto rounded-2xl shadow-lg border-4 border-white" alt="Bể cá cảnh">
+                    
+                    <div class="space-y-4 border-t border-amber-200 pt-4">
+                        <div class="flex items-center gap-3 flex-wrap">
+                            <span class="font-bold text-gray-700 text-lg">a) Thể tích bể cá (cm³):</span>
+                            <input id="165-3-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-36 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span class="font-bold text-gray-700">cm³</span>
+                        </div>
+                        <div class="space-y-2 border-t border-amber-200 pt-3">
+                            <p class="text-lg leading-relaxed text-gray-800">
+                                b) Lúc đầu, mực nước trong bể bằng <span class="font-black text-blue-700">3/4</span> chiều cao của bể. Sau đó Nam cho vào bể một viên đá cảnh thì thấy mực nước lúc này cao <span class="font-black text-blue-700">32,5 cm</span>. Hỏi thể tích của viên đá cảnh đó là bao nhiêu xăng-ti-mét khối?
+                            </p>
+                            <div class="flex items-center gap-3 flex-wrap">
+                                <span class="font-bold text-gray-700 text-lg">Thể tích viên đá cảnh:</span>
+                                <input id="165-3-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-36 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="?">
+                                <span class="font-bold text-gray-700">cm³</span>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="flex justify-end mt-10">
-                    <button id="btn-check-165-3" onclick="window.check_165_3()" class="w-24 h-24 bg-[#ff7b29] text-white rounded-3xl font-black text-4xl md:text-5xl shadow-[0_10px_0_0_#c45a1d] hover:translate-y-1 hover:shadow-[0_6px_0_0_#c45a1d] active:translate-y-2 active:shadow-none transition-all flex items-center justify-center">E</button>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-165-3').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-165-3" onclick="window.check_165_3()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-165-3" class="hidden bg-amber-50 p-4 rounded-2xl border border-amber-200 text-lg font-bold text-amber-900 space-y-1">
+                    <p>a) Thể tích bể cá: 60 × 30 × 40 = <span class="text-emerald-700">72 000 cm³</span></p>
+                    <p>b) Mực nước ban đầu: 40 × 3/4 = 30 cm</p>
+                    <p>Mực nước tăng thêm: 32,5 − 30 = 2,5 cm</p>
+                    <p>Thể tích viên đá cảnh = 60 × 30 × 2,5 = <span class="text-emerald-700">4 500 cm³</span></p>
                 </div>
             </div>
+
+            <!-- Bài 4: Tăng cạnh HLP lên 2 lần -->
+            <div id="lesson165_b4" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-rose-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-rose-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">4</div>
+                    <div>
+                        <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-rose-100 text-rose-800 font-black rounded text-sm">Số ?</span>
+                        <h3 class="text-xl md:text-2xl font-black text-rose-700 mt-1">Bài 4. Tăng cạnh hình lập phương</h3>
+                    </div>
+                </div>
+                <div class="bg-rose-50 p-5 rounded-2xl border border-rose-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Một hình lập phương có cạnh <span class="font-black text-blue-700">3 cm</span>. Nếu tăng cạnh hình lập phương lên <span class="font-black text-blue-700">2 lần</span> thì:
+                    </p>
+                    <img src="assets/images/toan/toan_tap_2/165/165-4-tang-canh.png" class="max-w-[350px] w-full mx-auto rounded-2xl shadow-lg border-4 border-white" alt="Tăng cạnh HLP gấp 2 lần">
+                    
+                    <div class="space-y-4 border-t border-rose-200 pt-4">
+                        <div class="flex items-center gap-3 flex-wrap">
+                            <span class="font-bold text-gray-700 text-lg">a) Diện tích toàn phần hình lập phương tăng lên:</span>
+                            <input id="165-4-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-rose-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span class="font-bold text-gray-700">lần.</span>
+                        </div>
+                        <div class="flex items-center gap-3 flex-wrap">
+                            <span class="font-bold text-gray-700 text-lg">b) Thể tích hình lập phương tăng lên:</span>
+                            <input id="165-4-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-rose-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span class="font-bold text-gray-700">lần.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-165-4').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-165-4" onclick="window.check_165_4()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-165-4" class="hidden bg-rose-50 p-4 rounded-2xl border border-rose-200 text-lg font-bold text-rose-900 space-y-1">
+                    <p>a) Cạnh tăng 2 lần → Stp = (a×2) × (a×2) × 6 = (a×a×6) × 4 → Tăng lên <span class="text-emerald-700">4 lần</span></p>
+                    <p>b) Cạnh tăng 2 lần → V = (a×2) × (a×2) × (a×2) = (a×a×a) × 8 → Tăng lên <span class="text-emerald-700">8 lần</span></p>
+                    <p>Chúc mừng em đã giải đúng!</p>
+                </div>
+            </div>
+
         </div>
     `,
 
     quizPool: [
-        { question: "Diện tích xung quanh hình hộp chữ nhật (6x4x3 cm) là:", options: ["60 cm²", "48 cm²", "30 cm²", "72 cm²"], answer: 0 },
-        { question: "Diện tích toàn phần hình hộp chữ nhật (6x4x3 cm) là:", options: ["108 cm²", "60 cm²", "72 cm²", "120 cm²"], answer: 0 },
-        { question: "Thể tích hình hộp chữ nhật (6x4x3 cm) là:", options: ["72 cm³", "60 cm³", "108 cm³", "13 cm³"], answer: 0 },
-        { question: "Thể tích hòn đá làm nước dâng 2cm trong bể diện tích đáy 150cm² là:", options: ["300 cm³", "150 cm³", "75 cm³", "600 cm³"], answer: 0 },
-        { question: "Mực nước từ 8cm dâng lên 10cm thì phần dâng cao thêm bao nhiêu?", options: ["2 cm", "18 cm", "80 cm", "10 cm"], answer: 0 },
-        { question: "Tỉ số thể tích hai khối lập phương có cạnh 2cm và 5cm là:", options: ["8/125", "2/5", "4/25", "25/8"], answer: 0 },
-        { question: "Tỉ số diện tích toàn phần hai khối lập phương có cạnh 2cm và 5cm là:", options: ["4/25", "2/5", "8/125", "16/625"], answer: 0 },
-        { question: "Tỉ số phần trăm thể tích khối lớn (125cm³) so với khối bé (8cm³) là:", options: ["1562,5%", "6,4%", "15,6%", "156%"], answer: 0 },
-        { question: "Tỉ số phần trăm thể tích 1000cm³ so với 2000cm³ là:", options: ["50%", "200%", "20%", "40%"], answer: 0 },
-        { question: "Một khối sắt có thể tích 100cm³, biết 1cm³ sắt nặng 7,8g. Khối sắt nặng:", options: ["780 g", "78 g", "7,8 kg", "0,78 g"], answer: 0 },
-        { question: "Bể chứa được 2m³ nước. Nếu đã chứa 1500 lít thì còn bao nhiêu dm³?", options: ["500 dm³", "1500 dm³", "50 dm³", "2000 dm³"], answer: 0 },
-        { question: "Cạnh khối lập phương tăng 4 lần thì thể tích tăng:", options: ["64 lần", "16 lần", "4 lần", "8 lần"], answer: 0 },
-        { question: "Bể cá cảnh hình lập phương cạnh 0,6m. V của bể là:", options: ["0,216 m³", "2,16 m³", "0,36 m³", "1,44 m³"], answer: 0 },
-        { question: "Đổi 2,5 m³ sang dm³:", options: ["2500 dm³", "250 dm³", "25 dm³", "25000 dm³"], answer: 0 },
-        { question: "Đổi 4500 cm³ sang dm³:", options: ["4,5 dm³", "45 dm³", "0,45 dm³", "450 dm³"], answer: 0 },
-        { question: "Hình hộp chữ nhật có Sxq=80cm², cao=4cm. Chu vi đáy là:", options: ["20 cm", "10 cm", "40 cm", "5 cm"], answer: 0 },
-        { question: "Một hòn đá chìm trong bể làm nước dâng từ 500ml lên 800ml. V đá là:", options: ["300 cm³", "1300 cm³", "1,3 lít", "0,3 ml"], answer: 0 },
-        { question: "Tính 25% của thể tích 400 cm³:", options: ["100 cm³", "25 cm³", "200 cm³", "50 cm³"], answer: 0 },
-        { question: "Tỉ số thể tích 2 hình là 3:4. Nếu hình bé là 15cm³, hình lớn là:", options: ["20 cm³", "12 cm³", "45 cm³", "60 cm³"], answer: 0 },
-        { question: "Hình lập phương có cạnh 10cm. Sxq là:", options: ["400 cm²", "600 cm²", "1000 cm³", "100 cm²"], answer: 0 },
-        { question: "Trong các đơn vị sau, đơn vị nào dùng để đo thể tích?", options: ["dm³", "m²", "cm", "kg"], answer: 0 },
-        { question: "1 lít tương đương với đơn vị nào?", options: ["1 dm³", "1 cm³", "1 m³", "1 mm³"], answer: 0 },
-        { question: "Diện tích toàn phần của hình hộp chữ nhật có mấy mặt?", options: ["6 mặt", "4 mặt", "2 mặt", "8 mặt"], answer: 0 },
-        { question: "Thể tích của hình hộp chữ nhật vớ diện tích đáy S và chiều cao h là:", options: ["S x h", "S + h", "S : h", "S x 2 + h"], answer: 0 },
-        { question: "Cạnh hình lập phương là a. Thể tích V là:", options: ["a x a x a", "a x a", "a x 3", "a x a x 6"], answer: 0 }
+        { question: "Sxq của HLP B (cạnh 4 cm) là?", options: ["64 cm²", "96 cm²", "16 cm²", "32 cm²"], answer: 0 },
+        { question: "Stp của HLP B (cạnh 4 cm) là?", options: ["96 cm²", "64 cm²", "48 cm²", "16 cm²"], answer: 0 },
+        { question: "Thể tích V của HLP B (cạnh 4 cm) là?", options: ["64 cm³", "96 cm³", "16 cm³", "64 cm²"], answer: 0 },
+        { question: "Thể tích khối đá HLP A (0,8m) = ?", options: ["0,512 m³", "0,64 m³", "0,192 m³", "0,8 m³"], answer: 0 },
+        { question: "Thể tích khối đá HHCN B (0,6 × 0,4 × 0,8m) = ?", options: ["0,192 m³", "0,512 m³", "0,24 m³", "0,48 m³"], answer: 0 },
+        { question: "Khối đá A nặng hơn khối đá B bao nhiêu kg?", options: ["880 kg", "88 kg", "0,88 kg", "320 kg"], answer: 0 },
+        { question: "Thể tích bể cá (60×30×40 cm) là?", options: ["72 000 cm³", "7 200 cm³", "130 cm³", "36 000 cm³"], answer: 0 },
+        { question: "Mực nước ban đầu (3/4 chiều cao 40 cm) cao bao nhiêu cm?", options: ["30 cm", "20 cm", "25 cm", "35 cm"], answer: 0 },
+        { question: "Mực nước dâng thêm khi thả viên đá là?", options: ["2,5 cm", "32,5 cm", "30 cm", "5 cm"], answer: 0 },
+        { question: "Thể tích viên đá cảnh thả vào bể cá là?", options: ["4 500 cm³", "72 000 cm³", "58 500 cm³", "9 000 cm³"], answer: 0 },
+        { question: "Nếu tăng cạnh HLP lên 2 lần thì Stp tăng mấy lần?", options: ["4 lần", "2 lần", "6 lần", "8 lần"], answer: 0 },
+        { question: "Nếu tăng cạnh HLP lên 2 lần thì thể tích V tăng mấy lần?", options: ["8 lần", "4 lần", "2 lần", "6 lần"], answer: 0 },
+        { question: "Nếu tăng cạnh HLP lên 3 lần thì Stp tăng mấy lần?", options: ["9 lần", "3 lần", "6 lần", "27 lần"], answer: 0 },
+        { question: "Nếu tăng cạnh HLP lên 3 lần thì V tăng mấy lần?", options: ["27 lần", "9 lần", "3 lần", "18 lần"], answer: 0 },
+        { question: "1 m³ đá nặng 2,75 tấn = ? kg", options: ["2 750 kg", "275 kg", "27 500 kg", "27,5 kg"], answer: 0 }
     ]
 };
 
-// --- Logic Functions ---
-window.check_165_1 = () => {
-    const v = (id) => document.getElementById('165-1-' + id).value.trim();
-    let score = 0;
-    if (v('1') === '240') score++;
-    if (v('2') === '640') score++;
-    if (v('3') === '800') score++;
+window.lesson165 = lesson165;
 
-    const total = 3;
-    const isCorrect = score === total;
-    const rightAnswer = "a) Sxq=240 cm²; b) Stp=640 cm²; c) V=800 cm³";
-    const studentAnswer = `a) ${v('1')}; b) ${v('2')}; c) ${v('3')}`;
-    const guidance = "Em hãy nhớ các công thức: Sxq = (d + r) &times; 2 &times; c; Stp = Sxq + Sđáy &times; 2; V = d &times; r &times; c. Áp dụng cho hình hộp có kích thước 20cm, 10cm, 4cm nhé.";
-    const solution = `
-        <div class="space-y-4">
-            <p class="font-bold text-green-700">Rất tốt! Em đã tính toán các đại lượng của hình hộp chữ nhật rất chính xác. 🧊</p>
-            <div class="bg-blue-50 p-4 rounded-xl border-2 border-blue-200 text-left">
-                <p><b>Lời giải chi tiết:</b></p>
-                <p>• Diện tích xung quanh: (20 + 10) &times; 2 &times; 4 = <b>240</b> (cm²).</p>
-                <p>• Diện tích toàn phần: 240 + (20 &times; 10) &times; 2 = 240 + 400 = <b>640</b> (cm²).</p>
-                <p>• Thể tích hình hộp: 20 &times; 10 &times; 4 = <b>800</b> (cm³).</p>
-            </div>
-        </div>
-    `;
-
-    window.showMathFeedback(isCorrect, rightAnswer, studentAnswer, guidance, solution);
-    if (window.submitMathLesson) window.submitMathLesson("Bài 1. Hình hộp chữ nhật", Math.round(score / total * 100), "btn-check-165-1", 0, total, score);
+window.check_165_1 = function() {
+    const checks = [
+        {id:'165-1-1', ans:['64']},
+        {id:'165-1-2', ans:['96']},
+        {id:'165-1-3', ans:['64']},
+    ];
+    let correct = 0;
+    checks.forEach(c => {
+        const el = document.getElementById(c.id);
+        if (!el) return;
+        const v = el.value.trim().replace(/\s/g,'');
+        if (c.ans.includes(v)) { el.classList.add('bg-green-100','border-green-500'); el.classList.remove('bg-red-100','border-red-500'); correct++; }
+        else { el.classList.add('bg-red-100','border-red-500'); el.classList.remove('bg-green-100','border-green-500'); }
+    });
+    const isCorrect = correct === checks.length;
+    window.showMathFeedback(isCorrect,
+        "Sxq = 64 cm², Stp = 96 cm², V = 64 cm³",
+        "",
+        "Gợi ý: Cạnh HLP B = 4 cm. Sxq = 4×4×4, Stp = 4×4×6, V = 4×4×4.",
+        "Sxq = 4 × 4 × 4 = 64 cm²; Stp = 4 × 4 × 6 = 96 cm²; V = 4 × 4 × 4 = 64 cm³.<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 1. HLP gấp từ hình khai triển", Math.round(correct/checks.length*100), "btn-check-165-1", 0, checks.length, correct);
 };
 
-window.check_165_2 = () => {
-    const val = document.getElementById('165-2-1').value.trim().replace(',', '.');
-    const isCorrect = val === '1.2';
-    const rightAnswer = "1,2 dm³";
-    const studentAnswer = val + " dm³";
-    const guidance = "Em hãy chú ý: Thể tích của hòn đá chính bằng thể tích của phần nước dâng thêm. Phần nước dâng thêm có đáy là 2dm, 1,5dm và chiều cao là 0,4dm.";
-    const solution = `
-        <div class="space-y-4">
-            <p class="font-bold text-green-700">Chính xác! Em đã nắm rất vững nguyên lý vật lý trong bài toán toán học này. 🪨</p>
-            <div class="bg-orange-50 p-4 rounded-xl border-2 border-orange-200 text-left">
-                <p><b>Lời giải chi tiết:</b></p>
-                <p>Thể tích của hòn đá bằng thể tích phần nước dâng lên.</p>
-                <p>Chiều cao phần nước dâng lên là: 0,8 - 0,4 = 0,4 (dm).</p>
-                <p>Thể tích hòn đá là: 2 &times; 1,5 &times; 0,4 = <b>1,2</b> (dm³).</p>
-                <p>Đáp số: 1,2 dm³.</p>
-            </div>
-        </div>
-    `;
-
-    window.showMathFeedback(isCorrect, rightAnswer, studentAnswer, guidance, solution);
-    if (window.submitMathLesson) window.submitMathLesson("Bài 2. Hòn đá trong bể nước", isCorrect ? 100 : 0, "btn-check-165-2", 0, 1, isCorrect ? 1 : 0);
+window.check_165_2 = function() {
+    const v1 = document.getElementById('165-2-1')?.value.trim().toUpperCase() || '';
+    const v2 = document.getElementById('165-2-2')?.value.trim().replace(/\s/g,'') || '';
+    const isCorrect = (v1 === 'A' && v2 === '880');
+    window.showMathFeedback(isCorrect,
+        "Khối A nặng hơn khối B là 880 kg",
+        "",
+        "Gợi ý: V_A = 0,8^3 = 0,512 m³, V_B = 0,6×0,4×0,8 = 0,192 m³. Hiệu V = 0,32 m³. Khối lượng = 0,32 × 2,75 tấn = 0,88 tấn = 880 kg.",
+        "Khối A thể tích 0,512 m³, khối B thể tích 0,192 m³ → Khối A lớn hơn 0,32 m³.<br>Nặng hơn: 0,32 × 2,75 = 0,88 tấn = 880 kg.<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 2. Khối đá Ngũ Hành Sơn", isCorrect?100:0, "btn-check-165-2", 0, 1, isCorrect?1:0);
 };
 
-window.check_165_3 = () => {
-    const v1 = document.getElementById('165-3-1').value.trim();
-    const v2 = document.getElementById('165-3-2').value.trim();
-    let score = 0;
-    if (v1 === '2/3') score++;
-    if (v2 === '8/27') score++;
-
-    const total = 2;
-    const isCorrect = score === total;
-    const rightAnswer = "a) 2/3; b) 8/27";
-    const studentAnswer = `a) ${v1}; b) ${v2}`;
-    const guidance = "a) Em hãy lập tỉ số độ dài cạnh của hai hình lập phương rồi rút gọn phân số đó.<br>b) Tỉ số thể tích của hai hình lập phương bằng tỉ số độ dài cạnh nhân với chính nó ba lần (lũy thừa bậc 3) nhé!";
-    const solution = `
-        <div class="space-y-4">
-            <p class="font-bold text-green-700">Xuất sắc! Em đã hiểu mối liên hệ giữa tỉ số cạnh và tỉ số thể tích. 📈</p>
-            <div class="bg-green-50 p-4 rounded-xl border-2 border-green-200 text-left">
-                <p><b>Lời giải chi tiết:</b></p>
-                <p>a) Tỉ số độ dài cạnh của hình lập phương bé và hình lập phương lớn là: 8 : 12 = <b>2/3</b>.</p>
-                <p>b) Tỉ số thể tích của hình lập phương bé và hình lập phương lớn là:</p>
-                <p class="text-center font-bold">(2/3) &times; (2/3) &times; (2/3) = <b>8/27</b></p>
-                <p>Đáp số: a) 2/3; b) 8/27.</p>
-            </div>
-        </div>
-    `;
-
-    window.showMathFeedback(isCorrect, rightAnswer, studentAnswer, guidance, solution);
-    if (window.submitMathLesson) window.submitMathLesson("Bài 3. Tỉ số thể tích", Math.round(score / total * 100), "btn-check-165-3", 0, total, score);
+window.check_165_3 = function() {
+    const v1 = document.getElementById('165-3-1')?.value.trim().replace(/\s/g,'') || '';
+    const v2 = document.getElementById('165-3-2')?.value.trim().replace(/\s/g,'') || '';
+    const isCorrect = (v1 === '72000' || v1 === '72 000') && (v2 === '4500' || v2 === '4 500');
+    window.showMathFeedback(isCorrect,
+        "a) 72 000 cm³<br>b) 4 500 cm³",
+        "",
+        "Gợi ý: a) V = 60×30×40. b) Mực nước đầu = 30cm, dâng = 32,5 − 30 = 2,5cm. V đá = 60×30×2,5.",
+        "a) Thể tích bể: 60 × 30 × 40 = 72 000 cm³.<br>b) Mực nước ban đầu: 40 × 3/4 = 30 cm.<br>Tăng thêm: 32,5 − 30 = 2,5 cm → V đá = 60 × 30 × 2,5 = 4 500 cm³.<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 3. Bể cá cảnh", isCorrect?100:0, "btn-check-165-3", 0, 1, isCorrect?1:0);
 };
+
+window.check_165_4 = function() {
+    const v1 = document.getElementById('165-4-1')?.value.trim() || '';
+    const v2 = document.getElementById('165-4-2')?.value.trim() || '';
+    const isCorrect = (v1 === '4' && v2 === '8');
+    window.showMathFeedback(isCorrect,
+        "a) Tăng 4 lần<br>b) Tăng 8 lần",
+        "",
+        "Gợi ý: a) Stp tỉ lệ với (cạnh)², tăng 2² = 4 lần. b) V tỉ lệ với (cạnh)³, tăng 2³ = 8 lần.",
+        "a) Stp tăng lên 2 × 2 = 4 lần.<br>b) V tăng lên 2 × 2 × 2 = 8 lần.<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 4. Tăng cạnh HLP", isCorrect?100:0, "btn-check-165-4", 0, 1, isCorrect?1:0);
+};
+
+import './logic.js';
