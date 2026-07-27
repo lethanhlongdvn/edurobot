@@ -49,18 +49,18 @@ export const lesson159 = {
                                         <p class="text-blue-900 font-black">a) 14 138 : 45</p>
                                         <div class="flex items-center gap-3 flex-wrap">
                                             <span>Thương là:</span>
-                                            <input id="159-1-q1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
+                                            <input id="159-1-q1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="">
                                             <span>Số dư là:</span>
-                                            <input id="159-1-r1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
+                                            <input id="159-1-r1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="">
                                         </div>
                                     </div>
                                     <div class="space-y-2 border-t border-blue-200 pt-3">
                                         <p class="text-blue-900 font-black">b) 8 924 : 23</p>
                                         <div class="flex items-center gap-3 flex-wrap">
                                             <span>Thương là:</span>
-                                            <input id="159-1-q2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
+                                            <input id="159-1-q2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="">
                                             <span>Số dư là:</span>
-                                            <input id="159-1-r2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="0">
+                                            <input id="159-1-r2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="">
                                         </div>
                                     </div>
                                 </div>
@@ -87,32 +87,32 @@ export const lesson159 = {
                                 <p class="font-black text-emerald-900 text-xl">a) Nhân/chia với 10, 100, 1 000 và 0,1; 0,01; 0,001:</p>
                                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                                     <div class="space-y-2">
-                                        <div class="flex items-center gap-2"><span>27,6 × 10 =</span><input id="159-2-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?"></div>
-                                        <div class="flex items-center gap-2"><span>27,6 : 0,1 =</span><input id="159-2-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?"></div>
+                                        <div class="flex items-center gap-2"><span>27,6 × 10 =</span><input id="159-2-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder=""></div>
+                                        <div class="flex items-center gap-2"><span>27,6 : 0,1 =</span><input id="159-2-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder=""></div>
                                     </div>
                                     <div class="space-y-2">
-                                        <div class="flex items-center gap-2"><span>70,82 × 100 =</span><input id="159-2-3" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?"></div>
-                                        <div class="flex items-center gap-2"><span>70,82 : 0,01 =</span><input id="159-2-4" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?"></div>
+                                        <div class="flex items-center gap-2"><span>70,82 × 100 =</span><input id="159-2-3" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder=""></div>
+                                        <div class="flex items-center gap-2"><span>70,82 : 0,01 =</span><input id="159-2-4" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder=""></div>
                                     </div>
                                     <div class="space-y-2">
-                                        <div class="flex items-center gap-2"><span>4,523 × 1 000 =</span><input id="159-2-5" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?"></div>
-                                        <div class="flex items-center gap-2"><span>4,523 : 0,001 =</span><input id="159-2-6" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?"></div>
+                                        <div class="flex items-center gap-2"><span>4,523 × 1 000 =</span><input id="159-2-5" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder=""></div>
+                                        <div class="flex items-center gap-2"><span>4,523 : 0,001 =</span><input id="159-2-6" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder=""></div>
                                     </div>
                                 </div>
 
                                 <p class="font-black text-emerald-900 text-xl border-t border-emerald-200 pt-3">b) So sánh nhân với 0,1; 0,01... và chia cho 10, 100...:</p>
                                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                                     <div class="space-y-2">
-                                        <div class="flex items-center gap-2"><span>432 × 0,1 =</span><input id="159-2-7" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?"></div>
-                                        <div class="flex items-center gap-2"><span>432 : 10 =</span><input id="159-2-8" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?"></div>
+                                        <div class="flex items-center gap-2"><span>432 × 0,1 =</span><input id="159-2-7" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder=""></div>
+                                        <div class="flex items-center gap-2"><span>432 : 10 =</span><input id="159-2-8" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder=""></div>
                                     </div>
                                     <div class="space-y-2">
-                                        <div class="flex items-center gap-2"><span>360,5 × 0,01 =</span><input id="159-2-9" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?"></div>
-                                        <div class="flex items-center gap-2"><span>360,5 : 100 =</span><input id="159-2-10" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?"></div>
+                                        <div class="flex items-center gap-2"><span>360,5 × 0,01 =</span><input id="159-2-9" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder=""></div>
+                                        <div class="flex items-center gap-2"><span>360,5 : 100 =</span><input id="159-2-10" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder=""></div>
                                     </div>
                                     <div class="space-y-2">
-                                        <div class="flex items-center gap-2"><span>697 × 0,001 =</span><input id="159-2-11" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?"></div>
-                                        <div class="flex items-center gap-2"><span>697 : 1 000 =</span><input id="159-2-12" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?"></div>
+                                        <div class="flex items-center gap-2"><span>697 × 0,001 =</span><input id="159-2-11" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder=""></div>
+                                        <div class="flex items-center gap-2"><span>697 : 1 000 =</span><input id="159-2-12" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder=""></div>
                                     </div>
                                 </div>
                             </div>
@@ -138,11 +138,11 @@ export const lesson159 = {
                                 <div class="space-y-4">
                                     <div class="flex items-center gap-2 flex-wrap">
                                         <span>a) 61,4 × (15 : 0,25) − 2 024 =</span>
-                                        <input id="159-3-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-32 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="?">
+                                        <input id="159-3-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-32 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="">
                                     </div>
                                     <div class="flex items-center gap-2 flex-wrap">
                                         <span>b) (15/14 × 28/9) + (7/4 : 3/5) =</span>
-                                        <input id="159-3-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-32 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="25/4">
+                                        <input id="159-3-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-32 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="">
                                     </div>
                                 </div>
                             </div>
@@ -171,12 +171,12 @@ export const lesson159 = {
                                 <div class="space-y-3 border-t border-rose-200 pt-4">
                                     <div class="flex items-center gap-3 flex-wrap">
                                         <span>- May được nhiều nhất:</span>
-                                        <input id="159-4-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-rose-300 rounded-xl font-bold outline-none" placeholder="?">
+                                        <input id="159-4-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-rose-300 rounded-xl font-bold outline-none" placeholder="">
                                         <span>bộ quần áo</span>
                                     </div>
                                     <div class="flex items-center gap-3 flex-wrap">
                                         <span>- Còn thừa:</span>
-                                        <input id="159-4-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-rose-300 rounded-xl font-bold outline-none" placeholder="?">
+                                        <input id="159-4-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-rose-300 rounded-xl font-bold outline-none" placeholder="">
                                         <span>mét vải</span>
                                     </div>
                                 </div>
