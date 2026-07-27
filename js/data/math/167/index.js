@@ -1,266 +1,437 @@
 export const lesson167 = {
     period: "167",
     title: "BÀI 72: ÔN TẬP ĐO LƯỜNG (TIẾT 2)",
-    topic: "Ôn tập đo lường",
+    topic: "Ôn tập đơn vị đo thời gian",
     week: "34",
 
-    content: `
-        <div class="space-y-6">
-            <div class="bg-emerald-50 p-8 rounded-[3rem] border-4 border-emerald-200 shadow-2xl">
-                <h3 class="text-3xl md:text-5xl font-black text-emerald-700 mb-6 uppercase text-center tracking-tight">ÔN TẬP ĐO LƯỜNG (TIẾT 2)</h3>
-                <div class="space-y-4 text-xl md:text-3xl text-gray-800 leading-relaxed font-bold">
-                    <p class="uppercase text-emerald-600 border-b-4 border-emerald-200 pb-2 text-center">Ôn tập về đơn vị đo thời gian</p>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-                        <div class="p-6 bg-white rounded-3xl shadow-xl border-t-8 border-emerald-500 text-center">
-                            <h4 class="font-black text-emerald-600 text-xl md:text-3xl mb-3 underline italic uppercase">QUY ĐỔI</h4>
-                            <p class="text-xl md:text-2xl text-gray-600">1 năm = 12 tháng<br>1 tuần = 7 ngày</p>
-                        </div>
-                        <div class="p-6 bg-white rounded-3xl shadow-xl border-t-8 border-sky-500 text-center">
-                            <h4 class="font-black text-sky-600 text-xl md:text-3xl mb-3 underline italic uppercase">NGÀY ĐÊM</h4>
-                            <p class="text-xl md:text-2xl text-gray-600">1 ngày = 24 giờ<br>1 giờ = 60 phút</p>
-                        </div>
-                        <div class="p-6 bg-white rounded-3xl shadow-xl border-t-8 border-rose-500 text-center">
-                            <h4 class="font-black text-rose-600 text-xl md:text-3xl mb-3 underline italic uppercase">PHÚT GIÂY</h4>
-                            <p class="text-xl md:text-2xl text-gray-600">1 phút = 60 giây<br>1 giờ = 3600 giây</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    `,
-
     practice: `
-        <div class="space-y-12 pb-10">
-            <!-- Bài 1 -->
-            <div id="lesson167_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-emerald-500 relative overflow-hidden">
-                <div class="flex items-center gap-6 mb-8">
-                    <div class="w-20 h-20 flex-shrink-0 bg-emerald-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg rotate-2">1</div>
-                    <h3 class="text-2xl md:text-4xl font-black text-emerald-800 uppercase tracking-wide">Bài 1. Số thích hợp điền vào chỗ trống</h3>
+        <div class="space-y-10 pb-10">
+
+            <!-- Bài 1: Đổi đơn vị thời gian đơn giản -->
+            <div id="lesson167_b1" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-blue-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">1</div>
+                    <div>
+                        <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-blue-100 text-blue-800 font-black rounded text-sm">Số ?</span>
+                        <h3 class="text-xl md:text-2xl font-black text-blue-700 mt-1">Bài 1. Điền số thích hợp</h3>
+                    </div>
                 </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 px-4">
-                    <div class="space-y-6 bg-emerald-50 p-8 rounded-[2.5rem] border-2 border-emerald-100">
-                        <div class="space-y-4">
-                            <div class="flex items-center gap-4 text-xl md:text-2xl">
-                                <span class="w-48 text-right font-bold">2,5 thế kỉ =</span>
-                                <input id="167-1-1" type="text" class="w-32 h-14 text-center text-2xl md:text-3xl font-black border-4 border-emerald-400 rounded-xl outline-none focus:ring-4 focus:ring-emerald-200" placeholder="?">
-                                <span class="font-bold text-gray-500">năm</span>
-                            </div>
-                            <div class="flex items-center gap-4 text-xl md:text-2xl">
-                                <span class="w-48 text-right font-bold">3 năm rưỡi =</span>
-                                <input id="167-1-2" type="text" class="w-32 h-14 text-center text-2xl md:text-3xl font-black border-4 border-emerald-400 rounded-xl outline-none focus:ring-4 focus:ring-emerald-200" placeholder="?">
-                                <span class="font-bold text-gray-500">tháng</span>
-                            </div>
-                            <div class="flex items-center gap-4 text-xl md:text-2xl">
-                                <span class="w-48 text-right font-bold">3/4 ngày =</span>
-                                <input id="167-1-3" type="text" class="w-32 h-14 text-center text-2xl md:text-3xl font-black border-4 border-emerald-400 rounded-xl outline-none focus:ring-4 focus:ring-emerald-200" placeholder="?">
-                                <span class="font-bold text-gray-500">giờ</span>
-                            </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 font-bold text-lg">
+                    <!-- a -->
+                    <div class="bg-blue-50 p-5 rounded-2xl border border-blue-200 space-y-3">
+                        <p class="font-black text-blue-800 text-xl border-b border-blue-200 pb-2">a)</p>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span>3 năm 8 tháng =</span>
+                            <input id="167-1-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>tháng</span>
+                        </div>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span>4 ngày 15 giờ =</span>
+                            <input id="167-1-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>giờ</span>
+                        </div>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span>6 giờ 27 phút =</span>
+                            <input id="167-1-3" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>phút</span>
+                        </div>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span>5 phút 40 giây =</span>
+                            <input id="167-1-4" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>giây</span>
                         </div>
                     </div>
 
-                    <div class="space-y-6 bg-sky-50 p-8 rounded-[2.5rem] border-2 border-sky-100">
-                        <div class="space-y-4">
-                            <div class="flex items-center gap-4 text-xl md:text-2xl">
-                                <span class="w-48 text-right font-bold">0,4 giờ =</span>
-                                <input id="167-1-4" type="text" class="w-32 h-14 text-center text-2xl md:text-3xl font-black border-4 border-sky-400 rounded-xl outline-none focus:ring-4 focus:ring-sky-200" placeholder="?">
-                                <span class="font-bold text-gray-500">phút</span>
-                            </div>
-                            <div class="flex items-center gap-4 text-xl md:text-2xl">
-                                <span class="w-48 text-right font-bold">72 phút =</span>
-                                <input id="167-1-5" type="text" class="w-32 h-14 text-center text-2xl md:text-3xl font-black border-4 border-sky-400 rounded-xl outline-none focus:ring-4 focus:ring-sky-200" placeholder="?">
-                                <span class="font-bold text-gray-500">giờ</span>
-                            </div>
-                            <div class="flex items-center gap-4 text-xl md:text-2xl">
-                                <span class="w-48 text-right font-bold">270 giây =</span>
-                                <input id="167-1-6" type="text" class="w-32 h-14 text-center text-2xl md:text-3xl font-black border-4 border-sky-400 rounded-xl outline-none focus:ring-4 focus:ring-sky-200" placeholder="?">
-                                <span class="font-bold text-gray-500">phút</span>
-                            </div>
+                    <!-- b -->
+                    <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-200 space-y-3">
+                        <p class="font-black text-emerald-800 text-xl border-b border-emerald-200 pb-2">b)</p>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span>40 tháng =</span>
+                            <input id="167-1-5" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-16 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>năm</span>
+                            <input id="167-1-6" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-16 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>tháng</span>
                         </div>
-                    </div>
-                </div>
-
-                <div class="flex justify-end mt-10">
-                    <button id="btn-check-167-1" onclick="window.check_167_1()" class="w-24 h-24 bg-[#ff7b29] text-white rounded-3xl font-black text-4xl md:text-5xl shadow-[0_10px_0_0_#c45a1d] hover:translate-y-1 hover:shadow-[0_6px_0_0_#c45a1d] active:translate-y-2 active:shadow-none transition-all flex items-center justify-center">E</button>
-                </div>
-            </div>
-
-            <!-- Bài 2 -->
-            <div id="lesson167_b2" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-orange-500 relative overflow-hidden">
-                <div class="flex items-center gap-6 mb-8">
-                    <div class="w-20 h-20 flex-shrink-0 bg-orange-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg -rotate-1">2</div>
-                    <h3 class="text-2xl md:text-4xl font-black text-orange-800 uppercase tracking-wide">Bài 2. Tính thời gian</h3>
-                </div>
-                
-                <div class="p-8 bg-orange-50 rounded-[2.5rem] border-2 border-orange-100 flex flex-col gap-8">
-                    <p class="text-2xl md:text-3xl text-gray-700 leading-relaxed font-bold">
-                        a) 2 giờ 30 phút + 3 giờ 15 phút = ... giờ ... phút
-                    </p>
-                    <div class="flex items-center gap-3 bg-white p-6 rounded-2xl shadow-md self-start">
-                        <input id="167-2-1" type="text" class="w-24 h-16 text-center text-2xl md:text-3xl font-black border-4 border-orange-400 rounded-xl outline-none" placeholder="?">
-                        <span class="text-xl md:text-2xl font-bold">giờ</span>
-                        <input id="167-2-2" type="text" class="w-24 h-16 text-center text-2xl md:text-3xl font-black border-4 border-orange-400 rounded-xl outline-none" placeholder="?">
-                        <span class="text-xl md:text-2xl font-bold">phút</span>
-                    </div>
-
-                    <p class="text-2xl md:text-3xl text-gray-700 leading-relaxed font-bold mt-4">
-                        b) 5 giờ 40 phút - 2 giờ 50 phút = ... giờ ... phút
-                    </p>
-                    <div class="flex items-center gap-3 bg-white p-6 rounded-2xl shadow-md self-start">
-                        <input id="167-2-3" type="text" class="w-24 h-16 text-center text-2xl md:text-3xl font-black border-4 border-orange-400 rounded-xl outline-none" placeholder="?">
-                        <span class="text-xl md:text-2xl font-bold">giờ</span>
-                        <input id="167-2-4" type="text" class="w-24 h-16 text-center text-2xl md:text-3xl font-black border-4 border-orange-400 rounded-xl outline-none" placeholder="?">
-                        <span class="text-xl md:text-2xl font-bold">phút</span>
-                    </div>
-                </div>
-
-                <div class="flex justify-end mt-10">
-                    <button id="btn-check-167-2" onclick="window.check_167_2()" class="w-24 h-24 bg-[#ff7b29] text-white rounded-3xl font-black text-4xl md:text-5xl shadow-[0_10px_0_0_#c45a1d] hover:translate-y-1 hover:shadow-[0_6px_0_0_#c45a1d] active:translate-y-2 active:shadow-none transition-all flex items-center justify-center">E</button>
-                </div>
-            </div>
-
-            <!-- Bài 3 -->
-            <div id="lesson167_b3" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500 relative overflow-hidden">
-                <div class="flex items-center gap-6 mb-8">
-                    <div class="w-20 h-20 flex-shrink-0 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg rotate-0">3</div>
-                    <h3 class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Bài 3. Thời gian làm bài</h3>
-                </div>
-                
-                <div class="p-8 bg-blue-50 rounded-[2.5rem] border-2 border-blue-100 flex flex-col items-center gap-8">
-                    <p class="text-2xl md:text-3xl text-gray-700 leading-relaxed font-bold text-center">
-                        Hôm nay bạn Lan làm 3 bài tập toán hết 1 giờ 15 phút. 
-                        Hỏi trung bình mỗi bài tập bạn Lan làm hết <span class="text-blue-600 font-black">bao nhiêu phút</span>?
-                    </p>
-                    
-                    <div class="flex items-center gap-6 bg-white p-8 rounded-[2.5rem] shadow-xl border-4 border-blue-400">
-                        <span class="text-xl md:text-3xl font-black text-gray-700 uppercase">TRUNG BÌNH:</span>
-                        <div class="flex items-center gap-3">
-                            <input id="167-3-1" type="text" class="w-32 h-20 text-center text-4xl md:text-5xl font-black border-4 border-blue-500 rounded-2xl outline-none text-blue-700 shadow-inner" placeholder="...">
-                            <span class="text-2xl md:text-3xl font-black text-blue-600 uppercase">PHÚT</span>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span>75 giờ =</span>
+                            <input id="167-1-7" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-16 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>ngày</span>
+                            <input id="167-1-8" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-16 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>giờ</span>
+                        </div>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span>150 phút =</span>
+                            <input id="167-1-9" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-16 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>giờ</span>
+                            <input id="167-1-10" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-16 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>phút</span>
+                        </div>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span>135 giây =</span>
+                            <input id="167-1-11" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-16 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>phút</span>
+                            <input id="167-1-12" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-16 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>giây</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="flex justify-end mt-10">
-                    <button id="btn-check-167-3" onclick="window.check_167_3()" class="w-24 h-24 bg-[#ff7b29] text-white rounded-3xl font-black text-4xl md:text-5xl shadow-[0_10px_0_0_#c45a1d] hover:translate-y-1 hover:shadow-[0_6px_0_0_#c45a1d] active:translate-y-2 active:shadow-none transition-all flex items-center justify-center">E</button>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-167-1').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-167-1" onclick="window.check_167_1()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-167-1" class="hidden bg-blue-50 p-4 rounded-2xl border border-blue-200 text-lg font-bold text-blue-900 space-y-1">
+                    <p>a) 44 tháng; 111 giờ; 387 phút; 340 giây</p>
+                    <p>b) 3 năm 4 tháng; 3 ngày 3 giờ; 2 giờ 30 phút; 2 phút 15 giây</p>
                 </div>
             </div>
+
+            <!-- Bài 2: Phân số & số thập phân đo thời gian -->
+            <div id="lesson167_b2" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-emerald-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">2</div>
+                    <h3 class="text-xl md:text-2xl font-black text-emerald-700">Bài 2. Tìm số tự nhiên hoặc số thập phân thích hợp</h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 font-bold text-lg">
+                    <!-- a -->
+                    <div class="bg-amber-50 p-5 rounded-2xl border border-amber-200 space-y-3">
+                        <p class="font-black text-amber-800 text-xl border-b border-amber-200 pb-2">a)</p>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span>3/4 thế kỷ =</span>
+                            <input id="167-2-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>năm</span>
+                        </div>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span>7/8 ngày =</span>
+                            <input id="167-2-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>giờ</span>
+                        </div>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span>2/5 giờ =</span>
+                            <input id="167-2-3" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>phút</span>
+                        </div>
+                    </div>
+
+                    <!-- b -->
+                    <div class="bg-rose-50 p-5 rounded-2xl border border-rose-200 space-y-3">
+                        <p class="font-black text-rose-800 text-xl border-b border-rose-200 pb-2">b)</p>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span>45 phút =</span>
+                            <input id="167-2-4" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-rose-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>giờ</span>
+                        </div>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span>12 phút =</span>
+                            <input id="167-2-5" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-rose-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>giờ</span>
+                        </div>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span>15 giây =</span>
+                            <input id="167-2-6" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-rose-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>phút</span>
+                        </div>
+                    </div>
+
+                    <!-- c -->
+                    <div class="bg-blue-50 p-5 rounded-2xl border border-blue-200 space-y-3">
+                        <p class="font-black text-blue-800 text-xl border-b border-blue-200 pb-2">c)</p>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span>2 giờ 15 phút =</span>
+                            <input id="167-2-7" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>giờ</span>
+                        </div>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span>5 phút 12 giây =</span>
+                            <input id="167-2-8" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>phút</span>
+                        </div>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span>96 phút =</span>
+                            <input id="167-2-9" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>giờ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-167-2').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-167-2" onclick="window.check_167_2()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-167-2" class="hidden bg-emerald-50 p-4 rounded-2xl border border-emerald-200 text-lg font-bold text-emerald-900 space-y-1">
+                    <p>a) 75 năm; 21 giờ; 24 phút</p>
+                    <p>b) 0,75 giờ; 0,2 giờ; 0,25 phút</p>
+                    <p>c) 2,25 giờ; 5,2 phút; 1,6 giờ</p>
+                </div>
+            </div>
+
+            <!-- Bài 3: Phép tính số đo thời gian -->
+            <div id="lesson167_b3" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-amber-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-amber-500 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">3</div>
+                    <h3 class="text-xl md:text-2xl font-black text-amber-700">Bài 3. Tính</h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 font-bold text-lg">
+                    <div class="bg-amber-50 p-5 rounded-2xl border border-amber-200 space-y-3">
+                        <p class="font-black text-amber-900 text-xl">a) 7 giờ 48 phút + 5 giờ 32 phút</p>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span class="text-gray-700">=</span>
+                            <input id="167-3-1-h" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-16 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>giờ</span>
+                            <input id="167-3-1-m" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-16 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>phút</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 p-5 rounded-2xl border border-blue-200 space-y-3">
+                        <p class="font-black text-blue-900 text-xl">b) 12 phút 54 giây − 8 phút 30 giây</p>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span class="text-gray-700">=</span>
+                            <input id="167-3-2-m" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-16 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>phút</span>
+                            <input id="167-3-2-s" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-16 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>giây</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-rose-50 p-5 rounded-2xl border border-rose-200 space-y-3">
+                        <p class="font-black text-rose-900 text-xl">c) 9 phút 15 giây × 4</p>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span class="text-gray-700">=</span>
+                            <input id="167-3-3-m" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-rose-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>phút</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-200 space-y-3">
+                        <p class="font-black text-emerald-900 text-xl">d) 16 giờ 10 phút : 5</p>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span class="text-gray-700">=</span>
+                            <input id="167-3-4-h" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-16 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>giờ</span>
+                            <input id="167-3-4-m" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-16 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>phút</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-167-3').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-167-3" onclick="window.check_167_3()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-167-3" class="hidden bg-amber-50 p-4 rounded-2xl border border-amber-200 text-lg font-bold text-amber-900 space-y-1">
+                    <p>a) 7 giờ 48 phút + 5 giờ 32 phút = 12 giờ 80 phút = <span class="text-emerald-700">13 giờ 20 phút</span></p>
+                    <p>b) 12 phút 54 giây − 8 phút 30 giây = <span class="text-emerald-700">4 phút 24 giây</span></p>
+                    <p>c) 9 phút 15 giây × 4 = 36 phút 60 giây = <span class="text-emerald-700">37 phút</span></p>
+                    <p>d) 16 giờ 10 phút : 5 = 15 giờ 70 phút : 5 = <span class="text-emerald-700">3 giờ 14 phút</span></p>
+                </div>
+            </div>
+
+            <!-- Bài 4: Đoàn tàu Hà Nội - Sài Gòn -->
+            <div id="lesson167_b4" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-rose-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-rose-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">4</div>
+                    <h3 class="text-xl md:text-2xl font-black text-rose-700">Bài 4. Giải bài toán đoàn tàu</h3>
+                </div>
+                <div class="bg-rose-50 p-5 rounded-2xl border border-rose-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Một đoàn tàu khởi hành từ ga Hà Nội lúc <span class="font-black text-blue-700">6 giờ 10 phút</span>, đến ga Sài Gòn lúc <span class="font-black text-blue-700">18 giờ ngày hôm sau</span>. Hỏi đoàn tàu đó đi từ ga Hà Nội đến ga Sài Gòn hết bao lâu?
+                    </p>
+                    <div class="flex items-center gap-3 flex-wrap font-bold text-lg">
+                        <span class="text-gray-700">Đoàn tàu đi hết:</span>
+                        <input id="167-4-h" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-rose-300 rounded-xl font-bold outline-none" placeholder="?">
+                        <span>giờ</span>
+                        <input id="167-4-m" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-rose-300 rounded-xl font-bold outline-none" placeholder="?">
+                        <span>phút</span>
+                    </div>
+                </div>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-167-4').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-167-4" onclick="window.check_167_4()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-167-4" class="hidden bg-rose-50 p-4 rounded-2xl border border-rose-200 text-lg font-bold text-rose-900 space-y-1">
+                    <p>Từ 6 giờ 10 phút hôm nay đến 6 giờ 10 phút ngày hôm sau là 24 giờ.</p>
+                    <p>Từ 6 giờ 10 phút hôm sau đến 18 giờ hôm sau là: 18 giờ − 6 giờ 10 phút = 11 giờ 50 phút.</p>
+                    <p>Tổng thời gian: 24 giờ + 11 giờ 50 phút = <span class="text-emerald-700">35 giờ 50 phút</span></p>
+                    <p>Chúc mừng em đã giải đúng!</p>
+                </div>
+            </div>
+
+            <!-- Bài 5: Đố em! (Mấy giờ rồi) -->
+            <div id="lesson167_b5" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-teal-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-teal-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">5</div>
+                    <div>
+                        <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-teal-100 text-teal-800 font-black rounded text-sm">Đố em !</span>
+                        <h3 class="text-xl md:text-2xl font-black text-teal-700 mt-1">Bài 5. Tìm xem bây giờ là mấy giờ</h3>
+                    </div>
+                </div>
+                <div class="bg-teal-50 p-5 rounded-2xl border border-teal-200 space-y-4">
+                    <img src="assets/images/toan/toan_tap_2/167/167-5-do-em.png" class="max-w-[450px] w-full mx-auto rounded-2xl shadow-lg border-4 border-white" alt="Nam và Mai đố xem mấy giờ">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Nam hỏi: "Bây giờ là mấy giờ rồi Mai ơi?". Mai trả lời: "Thời gian từ bây giờ đến nửa đêm bằng <span class="font-black text-blue-700">1/2</span> thời gian từ lúc bắt đầu ngày hôm nay đến bây giờ."
+                    </p>
+                    <div class="flex items-center gap-3 flex-wrap font-bold text-lg">
+                        <span class="text-gray-700">Bây giờ là:</span>
+                        <input id="167-5" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-teal-300 rounded-xl font-bold outline-none" placeholder="?">
+                        <span>giờ (hoặc 4 giờ chiều)</span>
+                    </div>
+                </div>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-167-5').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-167-5" onclick="window.check_167_5()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-167-5" class="hidden bg-teal-50 p-4 rounded-2xl border border-teal-200 text-lg font-bold text-teal-900 space-y-1">
+                    <p>Một ngày có 24 giờ (từ 0 giờ đến nửa đêm 24 giờ).</p>
+                    <p>Tổng thời gian từ 0h đến bây giờ + từ bây giờ đến nửa đêm = 24 giờ.</p>
+                    <p>Coi thời gian từ 0h đến bây giờ là 2 phần, thì từ bây giờ đến nửa đêm là 1 phần.</p>
+                    <p>Tổng số phần bằng nhau: 2 + 1 = 3 phần.</p>
+                    <p>Thời gian từ 0h đến bây giờ là: 24 : 3 × 2 = <span class="text-emerald-700">16 giờ</span> (hay 4 giờ chiều)</p>
+                    <p>Chúc mừng em đã giải đúng câu đố!</p>
+                </div>
+            </div>
+
         </div>
     `,
 
     quizPool: [
-        { question: "2,5 thế kỉ là bao nhiêu năm?", options: ["250 năm", "25 năm", "2500 năm", "205 năm"], answer: 0 },
-        { question: "3 năm rưỡi có bao nhiêu tháng?", options: ["42 tháng", "36 tháng", "40 tháng", "38 tháng"], answer: 0 },
-        { question: "3/4 ngày tương ứng với bao nhiêu giờ?", options: ["18 giờ", "15 giờ", "12 giờ", "20 giờ"], answer: 0 },
-        { question: "0,4 giờ bằng bao nhiêu phút?", options: ["24 phút", "40 phút", "4 phút", "15 phút"], answer: 0 },
-        { question: "72 phút bằng bao nhiêu giờ?", options: ["1,2 giờ", "1,5 giờ", "1,1 giờ", "0,72 giờ"], answer: 0 },
-        { question: "270 giây bằng bao nhiêu phút?", options: ["4,5 phút", "4 phút", "4,2 phút", "5 phút"], answer: 0 },
-        { question: "2 giờ 30 phút cộng 3 giờ 15 phút là:", options: ["5 giờ 45 phút", "6 giờ", "5 giờ 30 phút", "6 giờ 15 phút"], answer: 0 },
-        { question: "5 giờ 40 phút trừ 2 giờ 50 phút là:", options: ["2 giờ 50 phút", "3 giờ 10 phút", "2 giờ 40 phút", "3 giờ"], answer: 0 },
-        { question: "1 giờ 15 phút chia cho 3 bằng bao nhiêu phút?", options: ["25 phút", "30 phút", "15 phút", "20 phút"], answer: 0 },
-        { question: "Một thế kỉ bằng bao nhiêu năm?", options: ["100 năm", "1000 năm", "10 năm", "50 năm"], answer: 0 },
-        { question: "Một năm thường (không nhuận) có bao nhiêu ngày?", options: ["365 ngày", "366 ngày", "360 ngày", "364 ngày"], answer: 0 },
-        { question: "Tháng 2 năm nhuận có bao nhiêu ngày?", options: ["29 ngày", "28 ngày", "30 ngày", "31 ngày"], answer: 0 },
-        { question: "1 năm nhuận có bao nhiêu ngày?", options: ["366 ngày", "365 ngày", "364 ngày", "360 ngày"], answer: 0 },
-        { question: "Bao nhiêu phút bằng 1,5 giờ?", options: ["90 phút", "60 phút", "150 phút", "100 phút"], answer: 0 },
-        { question: "Trung bình cộng của 2 giờ và 4 giờ là:", options: ["3 giờ", "2 giờ", "6 giờ", "4 giờ"], answer: 0 },
-        { question: "Năm 2024 là năm nhuận hay năm thường?", options: ["Năm nhuận", "Năm thường", "Không xác định", "Năm nhuận kép"], answer: 0 },
-        { question: "Đổi 0,5 ngày ra giờ:", options: ["12 giờ", "6 giờ", "24 giờ", "18 giờ"], answer: 0 },
-        { question: "Dương đi học lúc 7h, đến trường lúc 7h25. Dương đi hết:", options: ["25 phút", "15 phút", "30 phút", "20 phút"], answer: 0 },
-        { question: "1 giờ 30 phút nhân với 2 bằng:", options: ["3 giờ", "2 giờ 30 phút", "4 giờ", "3 giờ 30 phút"], answer: 0 },
-        { question: "Kim giờ đồng hồ quay một vòng hết bao nhiêu giờ?", options: ["12 giờ", "24 giờ", "1 giờ", "60 giờ"], answer: 0 },
-        { question: "Một năm có mấy quý?", options: ["4 quý", "2 quý", "3 quý", "12 quý"], answer: 0 },
-        { question: "Mỗi quý có mấy tháng?", options: ["3 tháng", "4 tháng", "1 tháng", "6 tháng"], answer: 0 },
-        { question: "Tháng nào sau đây có 31 ngày?", options: ["Tháng 1", "Tháng 4", "Tháng 6", "Tháng 2"], answer: 0 },
-        { question: "Tháng nào sau đây có 30 ngày?", options: ["Tháng 9", "Tháng 12", "Tháng 3", "Tháng 8"], answer: 0 },
-        { question: "Đổi 150 phút ra giờ:", options: ["2,5 giờ", "2,15 giờ", "3 giờ", "1,5 giờ"], answer: 0 }
+        { question: "3 năm 8 tháng = ? tháng", options: ["44 tháng", "38 tháng", "36 tháng", "40 tháng"], answer: 0 },
+        { question: "4 ngày 15 giờ = ? giờ", options: ["111 giờ", "96 giờ", "100 giờ", "115 giờ"], answer: 0 },
+        { question: "40 tháng = ? năm ? tháng", options: ["3 năm 4 tháng", "3 năm 6 tháng", "4 năm 0 tháng", "2 năm 16 tháng"], answer: 0 },
+        { question: "3/4 thế kỷ = ? năm", options: ["75 năm", "25 năm", "50 năm", "34 năm"], answer: 0 },
+        { question: "7/8 ngày = ? giờ", options: ["21 giờ", "14 giờ", "18 giờ", "20 giờ"], answer: 0 },
+        { question: "2/5 giờ = ? phút", options: ["24 phút", "25 phút", "12 phút", "20 phút"], answer: 0 },
+        { question: "45 phút = ? giờ", options: ["0,75 giờ", "0,45 giờ", "0,5 giờ", "0,8 giờ"], answer: 0 },
+        { question: "12 phút = ? giờ", options: ["0,2 giờ", "0,12 giờ", "0,5 giờ", "0,25 giờ"], answer: 0 },
+        { question: "2 giờ 15 phút = ? giờ", options: ["2,25 giờ", "2,15 giờ", "2,5 giờ", "2,3 giờ"], answer: 0 },
+        { question: "7 giờ 48 phút + 5 giờ 32 phút = ?", options: ["13 giờ 20 phút", "12 giờ 80 phút", "13 giờ 10 phút", "12 giờ 20 phút"], answer: 0 },
+        { question: "9 phút 15 giây × 4 = ?", options: ["37 phút", "36 phút 60 giây", "36 phút 15 giây", "38 phút"], answer: 0 },
+        { question: "16 giờ 10 phút : 5 = ?", options: ["3 giờ 14 phút", "3 giờ 10 phút", "3 giờ 20 phút", "3 giờ 2 phút"], answer: 0 },
+        { question: "Tàu đi từ 6h10 hôm nay đến 18h hôm sau hết bao lâu?", options: ["35 giờ 50 phút", "36 giờ", "24 giờ", "35 giờ 10 phút"], answer: 0 },
+        { question: "Thời gian từ bây giờ đến 24h = 1/2 từ 0h đến bây giờ. Bây giờ là?", options: ["16 giờ", "12 giờ", "18 giờ", "8 giờ"], answer: 0 },
+        { question: "15 giây = ? phút", options: ["0,25 phút", "0,15 phút", "0,5 phút", "0,2 phút"], answer: 0 }
     ]
 };
 
-// --- Logic Functions ---
-window.check_167_1 = () => {
-    const ids = ['167-1-1', '167-1-2', '167-1-3', '167-1-4', '167-1-5', '167-1-6'];
-    const names = [
-        '2,5 thế kỉ = ... năm', '3 năm rưỡi = ... tháng', '3/4 ngày = ... giờ',
-        '0,4 giờ = ... phút', '72 phút = ... giờ', '270 giây = ... phút'
+window.lesson167 = lesson167;
+
+window.check_167_1 = function() {
+    const checks = [
+        {id:'167-1-1', ans:['44']},
+        {id:'167-1-2', ans:['111']},
+        {id:'167-1-3', ans:['387']},
+        {id:'167-1-4', ans:['340']},
+        {id:'167-1-5', ans:['3']},
+        {id:'167-1-6', ans:['4']},
+        {id:'167-1-7', ans:['3']},
+        {id:'167-1-8', ans:['3']},
+        {id:'167-1-9', ans:['2']},
+        {id:'167-1-10', ans:['30']},
+        {id:'167-1-11', ans:['2']},
+        {id:'167-1-12', ans:['15']},
     ];
-    const ans = ['250', '42', '18', '24', '1.2', '4.5'];
-    let score = 0;
-    let studentAns = [];
-    ids.forEach((id, idx) => {
-        const val = document.getElementById(id).value.trim().replace(',', '.');
-        studentAns.push(`${names[idx]}: ${val || '?'}`);
-        if (val === ans[idx]) score++;
+    let correct = 0;
+    checks.forEach(c => {
+        const el = document.getElementById(c.id);
+        if (!el) return;
+        const v = el.value.trim().replace(/\s/g,'');
+        if (c.ans.includes(v)) { el.classList.add('bg-green-100','border-green-500'); el.classList.remove('bg-red-100','border-red-500'); correct++; }
+        else { el.classList.add('bg-red-100','border-red-500'); el.classList.remove('bg-green-100','border-green-500'); }
     });
-
-    const isCorrect = score === ids.length;
-    const rightAnswer = "250; 42; 18; 24; 1,2; 4,5";
-    const studentAnswer = studentAns.join('<br>');
-    const guidance = "Em hãy nhớ các mốc quy đổi: 1 thế kỉ = 100 năm; 1 năm = 12 tháng; 1 ngày = 24 giờ; 1 giờ = 60 phút; 1 phút = 60 giây.";
-    const solution = `
-        <b>Lời giải chi tiết:</b><br>
-        - 2,5 thế kỉ = 100 × 2,5 = 250 (năm)<br>
-        - 3 năm rưỡi = 12 × 3,5 = 42 (tháng)<br>
-        - 3/4 ngày = 24 × 3 : 4 = 18 (giờ)<br>
-        - 0,4 giờ = 60 × 0,4 = 24 (phút)<br>
-        - 72 phút = 72 : 60 = 1,2 (giờ)<br>
-        - 270 giây = 270 : 60 = 4,5 (phút)<br>
-        Kết quả rất tốt! Em đã nắm vững cách đổi đơn vị thời gian rồi đấy.
-    `;
-
-    window.showMathFeedback(isCorrect, rightAnswer, studentAnswer, guidance, solution);
-    if (window.submitMathLesson) {
-        window.submitMathLesson("Bài 1. Đổi đơn vị thời gian", Math.round(score / ids.length * 100), "btn-check-167-1", 0, ids.length, score);
-    }
+    const isCorrect = correct === checks.length;
+    window.showMathFeedback(isCorrect,
+        "a) 44; 111; 387; 340<br>b) 3 năm 4 tháng; 3 ngày 3 giờ; 2 giờ 30 phút; 2 phút 15 giây",
+        "",
+        "Gợi ý: 1 năm = 12 tháng, 1 ngày = 24 giờ, 1 giờ = 60 phút, 1 phút = 60 giây.",
+        "a) 3×12+8=44; 4×24+15=111; 6×60+27=387; 5×60+40=340.<br>b) 40:12=3 dư 4; 75:24=3 dư 3; 150:60=2 dư 30; 135:60=2 dư 15.<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 1. Đổi đơn vị thời gian", Math.round(correct/checks.length*100), "btn-check-167-1", 0, checks.length, correct);
 };
 
-window.check_167_2 = () => {
-    const v1 = document.getElementById('167-2-1').value.trim();
-    const v2 = document.getElementById('167-2-2').value.trim();
-    const v3 = document.getElementById('167-2-3').value.trim();
-    const v4 = document.getElementById('167-2-4').value.trim();
-
-    let score = 0;
-    if (v1 === '5' && v2 === '45') score++;
-    if (v3 === '2' && v4 === '50') score++;
-
-    const isCorrect = score === 2;
-    const rightAnswer = "a) 5 giờ 45 phút; b) 2 giờ 50 phút";
-    const studentAnswer = `a) ${v1 || '?'} giờ ${v2 || '?'} phút<br>b) ${v3 || '?'} giờ ${v4 || '?'} phút`;
-    const guidance = "Khi cộng hoặc trừ đơn vị thời gian, em hãy đặt tính thẳng hàng theo từng loại đơn vị. Lưu ý khi thực hiện phép trừ nếu số phút ở số bị trừ nhỏ hơn số trừ, em cần đổi 1 giờ thành 60 phút nhé!";
-    const solution = `
-        <b>Lời giải chi tiết:</b><br>
-        a) 2 giờ 30 phút + 3 giờ 15 phút = 5 giờ 45 phút.<br>
-        b) 5 giờ 40 phút - 2 giờ 50 phút:<br>
-        Vì 40 phút < 50 phút nên ta đổi 5 giờ 40 phút = 4 giờ 100 phút.<br>
-        4 giờ 100 phút - 2 giờ 50 phút = 2 giờ 50 phút.<br>
-        Tuyệt vời! Em làm tính rất chính xác.
-    `;
-
-    window.showMathFeedback(isCorrect, rightAnswer, studentAnswer, guidance, solution);
-    if (window.submitMathLesson) {
-        window.submitMathLesson("Bài 2. Phép tính thời gian", score === 2 ? 100 : (score === 1 ? 50 : 0), "btn-check-167-2", 0, 2, score);
-    }
+window.check_167_2 = function() {
+    const checks = [
+        {id:'167-2-1', ans:['75']},
+        {id:'167-2-2', ans:['21']},
+        {id:'167-2-3', ans:['24']},
+        {id:'167-2-4', ans:['0,75','0.75']},
+        {id:'167-2-5', ans:['0,2','0.2']},
+        {id:'167-2-6', ans:['0,25','0.25']},
+        {id:'167-2-7', ans:['2,25','2.25']},
+        {id:'167-2-8', ans:['5,2','5.2']},
+        {id:'167-2-9', ans:['1,6','1.6']},
+    ];
+    let correct = 0;
+    checks.forEach(c => {
+        const el = document.getElementById(c.id);
+        if (!el) return;
+        const v = el.value.trim().replace(/\s/g,'');
+        if (c.ans.includes(v)) { el.classList.add('bg-green-100','border-green-500'); el.classList.remove('bg-red-100','border-red-500'); correct++; }
+        else { el.classList.add('bg-red-100','border-red-500'); el.classList.remove('bg-green-100','border-green-500'); }
+    });
+    const isCorrect = correct === checks.length;
+    window.showMathFeedback(isCorrect,
+        "a) 75 năm; 21 giờ; 24 phút<br>b) 0,75 giờ; 0,2 giờ; 0,25 phút<br>c) 2,25 giờ; 5,2 phút; 1,6 giờ",
+        "",
+        "Gợi ý: Nhân/chia phân số với 100 (thế kỷ), 24 (ngày), 60 (giờ/phút).",
+        "a) 100×3/4=75; 24×7/8=21; 60×2/5=24.<br>b) 45:60=0,75; 12:60=0,2; 15:60=0,25.<br>c) 2+15/60=2,25; 5+12/60=5,2; 96:60=1,6.<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 2. Đổi thời gian ra phân số/số thập phân", Math.round(correct/checks.length*100), "btn-check-167-2", 0, checks.length, correct);
 };
 
-window.check_167_3 = () => {
-    const val = document.getElementById('167-3-1').value.trim().replace(',', '.');
-    const isCorrect = val === '25';
-
-    const rightAnswer = "25";
-    const studentAnswer = val || "?";
-    const guidance = "Em hãy đổi số đo thời gian ra đơn vị phút, sau đó lấy tổng số phút chia cho số lượng bài tập để tìm thời gian trung bình làm mỗi bài nhé!";
-    const solution = `
-        <b>Lời giải chi tiết:</b><br>
-        Đổi: 1 giờ 15 phút = 75 phút.<br>
-        Trung bình mỗi bài tập Lan làm hết số thời gian là:<br>
-        75 : 3 = 25 (phút)<br>
-        Đáp số: 25 phút.<br>
-        Em giải toán rất hay! Tiếp tục cố gắng nhé.
-    `;
-
-    window.showMathFeedback(isCorrect, rightAnswer, studentAnswer, guidance, solution);
-    if (window.submitMathLesson) {
-        window.submitMathLesson("Bài 3. Trung bình mỗi bài", isCorrect ? 100 : 0, "btn-check-167-3", 0, 1, isCorrect ? 1 : 0);
-    }
+window.check_167_3 = function() {
+    const checks = [
+        {id:'167-3-1-h', ans:['13']},
+        {id:'167-3-1-m', ans:['20']},
+        {id:'167-3-2-m', ans:['4']},
+        {id:'167-3-2-s', ans:['24']},
+        {id:'167-3-3-m', ans:['37']},
+        {id:'167-3-4-h', ans:['3']},
+        {id:'167-3-4-m', ans:['14']},
+    ];
+    let correct = 0;
+    checks.forEach(c => {
+        const el = document.getElementById(c.id);
+        if (!el) return;
+        const v = el.value.trim().replace(/\s/g,'');
+        if (c.ans.includes(v)) { el.classList.add('bg-green-100','border-green-500'); el.classList.remove('bg-red-100','border-red-500'); correct++; }
+        else { el.classList.add('bg-red-100','border-red-500'); el.classList.remove('bg-green-100','border-green-500'); }
+    });
+    const isCorrect = correct === checks.length;
+    window.showMathFeedback(isCorrect,
+        "a) 13 giờ 20 phút<br>b) 4 phút 24 giây<br>c) 37 phút<br>d) 3 giờ 14 phút",
+        "",
+        "Gợi ý: Đặt tính cộng/trừ/nhân/chia theo từng loại đơn vị đo, lưu ý đổi 60 phút = 1 giờ, 60 giây = 1 phút.",
+        "a) 12 giờ 80 phút = 13 giờ 20 phút.<br>b) 4 phút 24 giây.<br>c) 36 phút 60 giây = 37 phút.<br>d) 16h10p = 15h70p; :5 = 3 giờ 14 phút.<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 3. Phép tính số đo thời gian", Math.round(correct/checks.length*100), "btn-check-167-3", 0, checks.length, correct);
 };
+
+window.check_167_4 = function() {
+    const v1 = document.getElementById('167-4-h')?.value.trim().replace(/\s/g,'') || '';
+    const v2 = document.getElementById('167-4-m')?.value.trim().replace(/\s/g,'') || '';
+    const isCorrect = (v1 === '35' && v2 === '50');
+    window.showMathFeedback(isCorrect,
+        "35 giờ 50 phút",
+        "",
+        "Gợi ý: Từ 6h10 hôm nay đến 6h10 hôm sau = 24 giờ. Từ 6h10 hôm sau đến 18h = 11 giờ 50 phút. Cộng hai khoảng thời gian.",
+        "24 giờ + (18 giờ − 6 giờ 10 phút) = 24 giờ + 11 giờ 50 phút = 35 giờ 50 phút.<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 4. Đoàn tàu Hà Nội Sài Gòn", isCorrect?100:0, "btn-check-167-4", 0, 1, isCorrect?1:0);
+};
+
+window.check_167_5 = function() {
+    const v = document.getElementById('167-5')?.value.trim().replace(/\s/g,'') || '';
+    const isCorrect = (v === '16' || v === '16 giờ' || v === '4 giờ chiều');
+    window.showMathFeedback(isCorrect,
+        "16 giờ (hay 4 giờ chiều)",
+        "",
+        "Gợi ý: Nửa đêm là 24h. Tổng thời gian từ 0h đến bây giờ + từ bây giờ đến 24h = 24h. Tỉ số = 1/2.",
+        "Tổng phần = 2 + 1 = 3 phần. Bây giờ là 24 : 3 × 2 = 16 giờ.<br>Chúc mừng em đã giải đúng câu đố!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 5. Đố em mấy giờ", isCorrect?100:0, "btn-check-167-5", 0, 1, isCorrect?1:0);
+};
+
+import './logic.js';
