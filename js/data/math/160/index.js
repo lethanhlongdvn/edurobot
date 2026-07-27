@@ -1,366 +1,245 @@
 export const lesson160 = {
     period: "160",
-    title: "ÔN TẬP TỈ SỐ, TỈ SỐ PHẦN TRĂM",
-    topic: "Luyện tập",
-    week: "32",
-
-    content: `
-        <div class="space-y-6 md:space-y-10">
-            <div class="bg-blue-50 p-6 md:p-10 rounded-[2rem] md:rounded-[3rem] border-4 border-blue-200 shadow-xl">
-                <h3 class="text-2xl md:text-3xl font-black text-blue-700 mb-6 md:mb-8 uppercase tracking-wider text-center">Kiến thức cần nhớ</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 font-bold">
-                    <div class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border-l-8 border-blue-500">
-                        <p class="text-xl md:text-2xl text-blue-600 mb-4 underline">1. Tỉ số:</p>
-                        <p class="text-xl md:text-2xl text-gray-700 leading-relaxed">
-                            Tỉ số của hai số a và b (với b ≠ 0) là kết quả của phép chia a : b, thường được viết dưới dạng phân số <span class="text-blue-700 text-2xl md:text-3xl font-black">a/b</span>.
-                        </p>
-                    </div>
-                    <div class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border-l-8 border-emerald-500">
-                        <p class="text-xl md:text-2xl text-emerald-600 mb-4 underline">2. Các bài toán điển hình:</p>
-                        <ul class="space-y-3 text-xl md:text-2xl text-gray-700">
-                            <li>• Bài toán Tìm hai số khi biết <span class="text-emerald-700">Tổng và Tỉ số</span>.</li>
-                            <li>• Bài toán Tìm hai số khi biết <span class="text-rose-700">Hiệu và Tỉ số</span>.</li>
-                            <li>• Bài toán liên quan đến <span class="text-blue-700">Tỉ lệ bản đồ</span>.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    `,
+    title: "BÀI 70: ÔN TẬP TỈ SỐ, TỈ SỐ PHẦN TRĂM (TIẾT 1)",
+    topic: "Ôn tập tỉ số, tỉ số phần trăm",
+    week: "33",
 
     practice: `
-        <div class="space-y-12 pb-10">
-            <!-- Bài 1 -->
-            <div id="lesson160_b1" class="bg-white p-6 md:p-10 rounded-[2.5rem] md:rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500">
-                <div class="flex items-center gap-6 mb-8 md:mb-10">
-                    <div class="w-14 h-14 md:w-16 md:h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">1</div>
-                    <h3 class="text-2xl md:text-3xl font-black text-blue-700 uppercase tracking-wide">Bài 1. Chọn câu trả lời đúng</h3>
+        <div class="space-y-10 pb-10">
+
+            <!-- Bài 1: Chọn câu trả lời đúng -->
+            <div id="lesson160_b1" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-blue-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">1</div>
+                    <h3 class="text-xl md:text-2xl font-black text-blue-700">Bài 1. Chọn câu trả lời đúng</h3>
                 </div>
-                
-                <div class="p-6 md:p-8 bg-blue-50 rounded-[2rem] md:rounded-[2.5rem] border-4 border-blue-200">
-                    <p class="text-xl md:text-3xl leading-relaxed text-gray-800 mb-8 font-medium">
-                        Lớp 5A có 32 bạn. Để chuẩn bị cho chuyến đi tham quan dã ngoại, cả lớp đã thống nhất chọn một trong hai phương án: lên rừng hoặc xuống biển. Kết quả lấy ý kiến của các bạn như sau: <span class="text-emerald-700 font-black">13 bạn chọn lên rừng</span>, <span class="text-blue-700 font-black">19 bạn chọn xuống biển</span>.
+                <div class="bg-blue-50 p-5 rounded-2xl border border-blue-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Lớp 5A có 32 bạn. Để chuẩn bị cho chuyến đi tham quan dã ngoại, cả lớp đã thống nhất chọn một trong hai phương án: lên rừng hoặc xuống biển. Kết quả lấy ý kiến của các bạn như sau: <span class="font-black text-emerald-700">13 bạn chọn lên rừng</span>, <span class="font-black text-blue-700">19 bạn chọn xuống biển</span>. Như vậy:
                     </p>
-                    <p class="text-2xl md:text-3xl font-black text-blue-800 mb-8 italic">Tỉ số của số bạn chọn lên rừng và số bạn chọn xuống biển là:</p>
-                    
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                        <button onclick="window.select160_1('A')" id="btn-160-1-A" class="flex flex-col items-center gap-2 p-6 bg-white rounded-3xl border-4 border-blue-100 hover:border-blue-400 transition-all text-2xl md:text-3xl font-black">
-                            <span class="text-blue-400 text-xl md:text-2xl">A</span>
-                            <div class="flex flex-col items-center"><span>13</span><div class="w-10 md:w-12 h-1 bg-gray-800"></div><span>32</span></div>
+                    <p class="text-lg md:text-xl font-black text-blue-800">Tỉ số của số bạn chọn lên rừng và số bạn chọn xuống biển là:</p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <button onclick="window.select160_1('A')" id="btn-160-1-A" class="flex flex-col items-center gap-2 p-4 bg-white rounded-2xl border-4 border-blue-100 hover:border-blue-400 transition-all text-2xl font-black">
+                            <span class="text-blue-400 text-lg">A.</span>
+                            <div class="flex flex-col items-center"><span>13</span><div class="w-10 h-0.5 bg-gray-800"></div><span>32</span></div>
                         </button>
-                        <button onclick="window.select160_1('B')" id="btn-160-1-B" class="flex flex-col items-center gap-2 p-6 bg-white rounded-3xl border-4 border-blue-100 hover:border-blue-400 transition-all text-2xl md:text-3xl font-black">
-                            <span class="text-blue-400 text-xl md:text-2xl">B</span>
-                            <div class="flex flex-col items-center"><span>19</span><div class="w-10 md:w-12 h-1 bg-gray-800"></div><span>32</span></div>
+                        <button onclick="window.select160_1('B')" id="btn-160-1-B" class="flex flex-col items-center gap-2 p-4 bg-white rounded-2xl border-4 border-blue-100 hover:border-blue-400 transition-all text-2xl font-black">
+                            <span class="text-blue-400 text-lg">B.</span>
+                            <div class="flex flex-col items-center"><span>19</span><div class="w-10 h-0.5 bg-gray-800"></div><span>32</span></div>
                         </button>
-                        <button onclick="window.select160_1('C')" id="btn-160-1-C" class="flex flex-col items-center gap-2 p-6 bg-white rounded-3xl border-4 border-blue-100 hover:border-blue-400 transition-all text-2xl md:text-3xl font-black">
-                            <span class="text-blue-400 text-xl md:text-2xl">C</span>
-                            <div class="flex flex-col items-center"><span>13</span><div class="w-10 md:w-12 h-1 bg-gray-800"></div><span>19</span></div>
+                        <button onclick="window.select160_1('C')" id="btn-160-1-C" class="flex flex-col items-center gap-2 p-4 bg-white rounded-2xl border-4 border-blue-100 hover:border-blue-400 transition-all text-2xl font-black">
+                            <span class="text-blue-400 text-lg">C.</span>
+                            <div class="flex flex-col items-center"><span>13</span><div class="w-10 h-0.5 bg-gray-800"></div><span>19</span></div>
                         </button>
-                        <button onclick="window.select160_1('D')" id="btn-160-1-D" class="flex flex-col items-center gap-2 p-6 bg-white rounded-3xl border-4 border-blue-100 hover:border-blue-400 transition-all text-2xl md:text-3xl font-black">
-                            <span class="text-blue-400 text-xl md:text-2xl">D</span>
-                            <div class="flex flex-col items-center"><span>19</span><div class="w-10 md:w-12 h-1 bg-gray-800"></div><span>13</span></div>
+                        <button onclick="window.select160_1('D')" id="btn-160-1-D" class="flex flex-col items-center gap-2 p-4 bg-white rounded-2xl border-4 border-blue-100 hover:border-blue-400 transition-all text-2xl font-black">
+                            <span class="text-blue-400 text-lg">D.</span>
+                            <div class="flex flex-col items-center"><span>19</span><div class="w-10 h-0.5 bg-gray-800"></div><span>13</span></div>
                         </button>
                     </div>
-                    <input type="hidden" id="160-1-ans">
                 </div>
-
-                <div class="flex justify-end mt-12">
-                    <button id="btn-check-160-1" onclick="window.check_160_1()" class="w-16 h-16 md:w-20 md:h-20 bg-[#ff7b29] text-white rounded-[1.5rem] md:rounded-[2rem] font-black text-4xl md:text-5xl shadow-xl hover:brightness-110 active:scale-95 transition-all">E</button>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-160-1').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-160-1" onclick="window.check_160_1()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-160-1" class="hidden bg-blue-50 p-4 rounded-2xl border border-blue-200 text-lg font-bold text-blue-900">
+                    <p>Tỉ số của số bạn chọn lên rừng (13) và số bạn chọn xuống biển (19) là 13/19.</p>
+                    <p>Đáp án đúng: <span class="text-emerald-700">C. 13/19</span></p>
                 </div>
             </div>
 
-            <!-- Bài 2 -->
-            <div id="lesson160_b2" class="bg-white p-6 md:p-10 rounded-[2.5rem] md:rounded-[3rem] shadow-2xl border-t-[12px] border-emerald-500">
-                <div class="flex items-center gap-6 mb-8 md:mb-10">
-                    <div class="w-14 h-14 md:w-16 md:h-16 bg-emerald-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">2</div>
-                    <h3 class="text-2xl md:text-3xl font-black text-emerald-700 uppercase tracking-wide">Bài 2. Giải bài toán</h3>
+            <!-- Bài 2: Quyển sách lớp 5A và 5B -->
+            <div id="lesson160_b2" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-emerald-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">2</div>
+                    <h3 class="text-xl md:text-2xl font-black text-emerald-700">Bài 2. Giải bài toán</h3>
                 </div>
-                
-                <div class="p-6 md:p-8 bg-emerald-50 rounded-[2rem] md:rounded-[2.5rem] border-4 border-emerald-200 text-xl md:text-3xl font-bold leading-relaxed">
-                    <p class="mb-8">
-                        Hưởng ứng phong trào quyên góp sách vào thư viện để xây dựng tủ sách dùng chung, lớp 5A và lớp 5B quyên góp được <span class="text-emerald-700 underline">126 quyển sách</span>. Biết rằng số quyển sách lớp 5A quyên góp bằng <span class="text-blue-700 underline">5/4</span> số quyển sách lớp 5B quyên góp. Hỏi mỗi lớp quyên góp bao nhiêu quyển sách vào thư viện?
+                <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Hưởng ứng phong trào quyên góp sách vào thư viện để xây dựng tủ sách dùng chung, lớp 5A và lớp 5B quyên góp được <span class="font-black text-blue-700">126 quyển sách</span>. Biết rằng số quyển sách lớp 5A quyên góp bằng <span class="font-black text-blue-700">5/4</span> số quyển sách lớp 5B quyên góp. Hỏi mỗi lớp quyên góp bao nhiêu quyển sách vào thư viện?
                     </p>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="bg-white p-6 md:p-8 rounded-3xl border-2 border-emerald-100 flex flex-col items-center gap-4">
-                            <span class="text-emerald-800 uppercase text-lg md:text-2xl">Lớp 5A quyên góp:</span>
-                            <div class="flex items-center gap-3">
-                                <input id="160-2-1" class="w-28 md:w-32 h-16 md:h-20 text-center bg-emerald-50 border-4 border-emerald-300 rounded-2xl text-3xl md:text-5xl font-black" placeholder="?">
-                                <span class="text-xl md:text-2xl">quyển</span>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-emerald-900 font-bold mb-1">Lớp 5A quyên góp:</label>
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <input id="160-2-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-28 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?">
+                                <span class="font-bold">quyển</span>
                             </div>
                         </div>
-                        <div class="bg-white p-6 md:p-8 rounded-3xl border-2 border-emerald-100 flex flex-col items-center gap-4">
-                            <span class="text-emerald-800 uppercase text-lg md:text-2xl">Lớp 5B quyên góp:</span>
-                            <div class="flex items-center gap-3">
-                                <input id="160-2-2" class="w-28 md:w-32 h-16 md:h-20 text-center bg-emerald-50 border-4 border-emerald-300 rounded-2xl text-3xl md:text-5xl font-black" placeholder="?">
-                                <span class="text-xl md:text-2xl">quyển</span>
+                        <div>
+                            <label class="block text-emerald-900 font-bold mb-1">Lớp 5B quyên góp:</label>
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <input id="160-2-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-28 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?">
+                                <span class="font-bold">quyển</span>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="flex justify-end mt-12">
-                    <button id="btn-check-160-2" onclick="window.check_160_2()" class="w-16 h-16 md:w-20 md:h-20 bg-[#ff7b29] text-white rounded-[1.5rem] md:rounded-[2rem] font-black text-4xl md:text-5xl shadow-xl hover:brightness-110 active:scale-95 transition-all">E</button>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-160-2').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-160-2" onclick="window.check_160_2()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-160-2" class="hidden bg-emerald-50 p-4 rounded-2xl border border-emerald-200 text-lg font-bold text-emerald-900 space-y-1">
+                    <p>Tỉ số 5A : 5B = 5 : 4. Tổng số phần = 5 + 4 = 9 phần.</p>
+                    <p>5B = 126 : 9 × 4 = <span class="text-blue-700">56 quyển</span></p>
+                    <p>5A = 126 : 9 × 5 = <span class="text-blue-700">70 quyển</span></p>
+                    <p>Chúc mừng em đã giải đúng!</p>
                 </div>
             </div>
 
-            <!-- Bài 3 -->
-            <div id="lesson160_b3" class="bg-white p-6 md:p-10 rounded-[2.5rem] md:rounded-[3rem] shadow-2xl border-t-[12px] border-sky-500">
-                <div class="flex items-center gap-6 mb-8 md:mb-10">
-                    <div class="w-14 h-14 md:w-16 md:h-16 bg-sky-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">3</div>
-                    <h3 class="text-2xl md:text-3xl font-black text-sky-700 uppercase tracking-wide">Bài 3. Số ?</h3>
+            <!-- Bài 3: Bản đồ trường tiểu học -->
+            <div id="lesson160_b3" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-amber-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-amber-500 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">3</div>
+                    <div>
+                        <span class="inline-flex items-center gap-2 px-2 py-1 bg-amber-100 rounded-lg text-amber-800 font-black text-sm">Số ?</span>
+                        <h3 class="text-xl md:text-2xl font-black text-amber-800 mt-1">Bài 3. Bản đồ quy hoạch</h3>
+                    </div>
                 </div>
-                
-                <div class="p-6 md:p-8 bg-sky-50 rounded-[2rem] md:rounded-[2.5rem] border-4 border-sky-200 text-xl md:text-3xl">
-                    <p class="mb-8 font-medium leading-relaxed">
-                        Trên bản đồ tỉ lệ <span class="font-black text-sky-700">1 : 3 000</span> của một khu đô thị, thửa đất xây dựng trường tiểu học là hình chữ nhật có <span class="font-black text-sky-700">chiều dài 3 cm</span>, <span class="font-black text-sky-700">chiều rộng 2 cm</span>.
+                <div class="bg-amber-50 p-5 rounded-2xl border border-amber-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Trên bản đồ tỉ lệ <span class="font-black text-blue-700">1 : 3 000</span> của một khu đô thị, thửa đất xây dựng trường tiểu học là hình chữ nhật có chiều dài <span class="font-black text-blue-700">3 cm</span>, chiều rộng <span class="font-black text-blue-700">2 cm</span>.
                     </p>
-
-                    <!-- Map Re-creation -->
-                    <div class="bg-[#d4e157]/30 p-6 md:p-10 rounded-[2rem] border-2 border-[#afb42b] mb-10 overflow-hidden shadow-inner">
-                        <div class="relative w-full aspect-[16/8] bg-[#f0f4c3] border-4 border-[#afb42b] p-4 flex gap-4 shadow-lg">
-                            <!-- Khu nhà ở -->
-                            <div class="flex-1 bg-[#4fc3f7] border-2 border-[#0288d1] rounded-xl flex items-center justify-center shadow-md p-4">
-                                <span class="text-center font-black text-white text-lg md:text-2xl drop-shadow-md">Khu nhà ở</span>
-                            </div>
-                            <!-- Center Column -->
-                            <div class="flex-[1.2] flex flex-col gap-4">
-                                <!-- Trường tiểu học -->
-                                <div class="flex-1 bg-[#ef5350] border-2 border-[#c62828] rounded-xl flex items-center justify-center shadow-md p-4">
-                                    <span class="text-center font-black text-white text-lg md:text-2xl drop-shadow-md">Trường tiểu học</span>
-                                </div>
-                                <!-- Quảng trường -->
-                                <div class="flex-1 bg-[#66bb6a] border-2 border-[#2e7d32] rounded-xl flex items-center justify-center shadow-md p-4">
-                                    <span class="text-center font-black text-white text-lg md:text-2xl drop-shadow-md">Quảng trường</span>
-                                </div>
-                            </div>
-                            <!-- Right Column -->
-                            <div class="flex-[0.6] bg-[#f06292] border-2 border-[#ad1457] rounded-xl flex items-center justify-center shadow-md p-4">
-                                <span class="text-center font-black text-white text-lg md:text-2xl drop-shadow-md writing-vertical">Khu thương mại</span>
-                            </div>
-                            <div class="flex-[0.8] bg-[#ffa726] border-2 border-[#ef6c00] rounded-xl flex items-center justify-center shadow-md p-4">
-                                <span class="text-center font-black text-white text-lg md:text-2xl drop-shadow-md writing-vertical">Khu vui chơi</span>
-                            </div>
-                            
-                            <!-- Scale Overlay -->
-                            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/80 px-4 md:px-6 py-2 rounded-full border-2 border-[#afb42b] font-black text-xl md:text-2xl text-[#827717]">
-                                Tỉ lệ 1 : 3 000
+                    <img src="assets/images/toan/toan_tap_2/160/160-3-ban-do.png" class="max-w-[600px] w-full mx-auto rounded-2xl shadow-lg border-4 border-white" alt="Bản đồ quy hoạch khu đô thị tỉ lệ 1:3000">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-amber-900 font-bold mb-1">a) Chiều dài thật của thửa đất (m):</label>
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <input id="160-3-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-28 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="?">
+                                <span class="font-bold">m</span>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="space-y-6 font-black text-gray-800">
-                        <div class="flex flex-wrap items-center gap-4 bg-white p-6 rounded-2xl border-2 border-sky-100 shadow-sm">
-                            <span class="text-lg md:text-2xl">a) Chiều dài thật của thửa đất xây dựng trường tiểu học là:</span>
-                            <input id="160-3-1" class="w-24 md:w-32 h-14 md:h-16 text-center border-4 border-sky-300 rounded-xl outline-none focus:border-sky-500 bg-sky-50 text-2xl" placeholder="?">
-                            <span class="text-lg md:text-2xl">m.</span>
-                        </div>
-                        <div class="flex flex-wrap items-center gap-4 bg-white p-6 rounded-2xl border-2 border-sky-100 shadow-sm">
-                            <span class="text-lg md:text-2xl">b) Chiều rộng thật của thửa đất xây dựng trường tiểu học là:</span>
-                            <input id="160-3-2" class="w-24 md:w-32 h-14 md:h-16 text-center border-4 border-sky-300 rounded-xl outline-none focus:border-sky-500 bg-sky-50 text-2xl" placeholder="?">
-                            <span class="text-lg md:text-2xl">m.</span>
+                        <div>
+                            <label class="block text-amber-900 font-bold mb-1">b) Chiều rộng thật của thửa đất (m):</label>
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <input id="160-3-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-28 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="?">
+                                <span class="font-bold">m</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="flex justify-end mt-12">
-                    <button id="btn-check-160-3" onclick="window.check_160_3()" class="w-16 h-16 md:w-20 md:h-20 bg-[#ff7b29] text-white rounded-[1.5rem] md:rounded-[2rem] font-black text-4xl md:text-5xl shadow-xl hover:brightness-110 active:scale-95 transition-all">E</button>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-160-3').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-160-3" onclick="window.check_160_3()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-160-3" class="hidden bg-amber-50 p-4 rounded-2xl border border-amber-200 text-lg font-bold text-amber-900 space-y-1">
+                    <p>Tỉ lệ 1 : 3 000, tức là 1 cm trên bản đồ = 3 000 cm = 30 m thực tế.</p>
+                    <p>a) Chiều dài thật: 3 × 3 000 = 9 000 cm = <span class="text-emerald-700">90 m</span></p>
+                    <p>b) Chiều rộng thật: 2 × 3 000 = 6 000 cm = <span class="text-emerald-700">60 m</span></p>
+                    <p>Chúc mừng em đã giải đúng!</p>
                 </div>
             </div>
 
-            <!-- Bài 4 -->
-            <div id="lesson160_b4" class="bg-white p-6 md:p-10 rounded-[2.5rem] md:rounded-[3rem] shadow-2xl border-t-[12px] border-rose-500">
-                <div class="flex items-center gap-6 mb-8 md:mb-10">
-                    <div class="w-14 h-14 md:w-16 md:h-16 bg-rose-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">4</div>
-                    <h3 class="text-2xl md:text-3xl font-black text-rose-700 uppercase tracking-wide">Bài 4. Giải bài toán</h3>
+            <!-- Bài 4: Mai và Việt gấp ngôi sao -->
+            <div id="lesson160_b4" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-rose-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-rose-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">4</div>
+                    <h3 class="text-xl md:text-2xl font-black text-rose-700">Bài 4. Giải bài toán</h3>
                 </div>
-                
-                <div class="p-6 md:p-8 bg-rose-50 rounded-[2rem] md:rounded-[2.5rem] border-4 border-rose-200 text-xl md:text-3xl font-bold leading-relaxed">
-                    <p class="mb-8">
-                        Mai và Việt gấp ngôi sao giấy tặng Nam nhân ngày sinh nhật. Việt gấp được ít hơn Mai <span class="text-rose-600 underline">11 ngôi sao</span> và số ngôi sao Việt gấp được bằng <span class="text-blue-600 underline">4/5</span> số ngôi sao Mai gấp được. Hỏi cả hai bạn đã gấp được bao nhiêu ngôi sao?
+                <div class="bg-rose-50 p-5 rounded-2xl border border-rose-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Mai và Việt gấp ngôi sao giấy tặng Nam nhân ngày sinh nhật. Việt gấp được ít hơn Mai <span class="font-black text-blue-700">11 ngôi sao</span> và số ngôi sao Việt gấp được bằng <span class="font-black text-blue-700">4/5</span> số ngôi sao Mai gấp được. Hỏi cả hai bạn đã gấp được bao nhiêu ngôi sao?
                     </p>
-                    
-                    <div class="flex flex-col items-center gap-6 md:gap-8 bg-white p-6 md:p-10 rounded-3xl border-2 border-rose-100 shadow-md">
-                        <span class="text-rose-800 uppercase text-lg md:text-2xl font-black text-center">Tổng số ngôi sao hai bạn gấp được là:</span>
-                        <div class="flex items-center gap-4">
-                            <input id="160-4-1" class="w-32 md:w-40 h-20 md:h-24 text-center bg-rose-50 border-4 border-rose-300 rounded-[1.5rem] md:rounded-[2rem] text-4xl md:text-6xl font-black outline-none focus:border-rose-500" placeholder="?">
-                            <span class="text-2xl md:text-3xl font-black">ngôi sao</span>
-                        </div>
+                    <div class="flex items-center gap-3 flex-wrap">
+                        <span class="font-bold text-gray-700 text-lg">Số ngôi sao cả hai bạn gấp được:</span>
+                        <input id="160-4" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-28 h-10 text-center border-2 border-rose-300 rounded-xl font-bold outline-none" placeholder="?">
+                        <span class="font-bold text-gray-700">ngôi sao</span>
                     </div>
                 </div>
-
-                <div class="flex justify-end mt-12">
-                    <button id="btn-check-160-4" onclick="window.check_160_4()" class="w-16 h-16 md:w-20 md:h-20 bg-[#ff7b29] text-white rounded-[1.5rem] md:rounded-[2rem] font-black text-4xl md:text-5xl shadow-xl hover:brightness-110 active:scale-95 transition-all">E</button>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-160-4').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-160-4" onclick="window.check_160_4()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-160-4" class="hidden bg-rose-50 p-4 rounded-2xl border border-rose-200 text-lg font-bold text-rose-900 space-y-1">
+                    <p>Tỉ số Việt : Mai = 4 : 5. Hiệu = 11 ngôi sao = 5 − 4 = 1 phần.</p>
+                    <p>Mỗi phần = 11 ngôi sao.</p>
+                    <p>Mai gấp: 11 × 5 = 55 ngôi sao. Việt gấp: 11 × 4 = 44 ngôi sao.</p>
+                    <p>Cả hai: 55 + 44 = <span class="text-emerald-700">99 ngôi sao</span></p>
+                    <p>Chúc mừng em đã giải đúng!</p>
                 </div>
             </div>
+
         </div>
-        <style>
-            .writing-vertical {
-                writing-mode: vertical-rl;
-                text-orientation: mixed;
-                white-space: nowrap;
-            }
-        </style>
     `,
 
     quizPool: [
-        {
-            question: "Lớp 5A có 13 bạn chọn lên rừng, 19 bạn chọn xuống biển. Tỉ số của số bạn chọn lên rừng và số bạn xuống biển là:",
-            options: ["13/19", "19/13", "13/32", "19/32"],
-            answer: 0
-        },
-        {
-            question: "Lớp 5A có 32 bạn. 13 bạn chọn lên rừng. Tỉ số của số bạn chọn lên rừng và tổng số học sinh lớp là:",
-            options: ["13/32", "32/13", "13/19", "19/32"],
-            answer: 0
-        },
-        {
-            question: "Tổng số sách hai lớp 5A và 5B là 126 quyển. Tỉ số là 5/4. Số sách lớp 5A là:",
-            options: ["70 quyển", "56 quyển", "60 quyển", "66 quyển"],
-            answer: 0
-        },
-        {
-            question: "Tổng số sách hai lớp 5A và 5B là 126 quyển. Tỉ số là 5/4. Số sách lớp 5B là:",
-            options: ["56 quyển", "70 quyển", "63 quyển", "46 quyển"],
-            answer: 0
-        },
-        {
-            question: "Bản đồ tỉ lệ 1 : 3 000. Khoảng cách 1cm trên bản đồ tương ứng với bao nhiêu mét ngoài thực tế?",
-            options: ["30 m", "3 m", "300 m", "3 000 m"],
-            answer: 0
-        },
-        {
-            question: "Bản đồ tỉ lệ 1 : 3 000. Khoảng cách 3cm trên bản đồ tương ứng với độ dài thật là:",
-            options: ["90 m", "9 m", "900 m", "9 000 m"],
-            answer: 0
-        },
-        {
-            question: "Việt ít hơn Mai 11 ngôi sao. Tỉ số Việt/Mai là 4/5. Việt gấp được bao nhiêu ngôi sao?",
-            options: ["44 ngôi sao", "55 ngôi sao", "11 ngôi sao", "99 ngôi sao"],
-            answer: 0
-        },
-        {
-            question: "Việt ít hơn Mai 11 ngôi sao. Tỉ số Việt/Mai là 4/5. Mai gấp được bao nhiêu ngôi sao?",
-            options: ["55 ngôi sao", "44 ngôi sao", "11 ngôi sao", "99 ngôi sao"],
-            answer: 0
-        },
-        {
-            question: "Tỉ số của hai số 4 và 5 là:",
-            options: ["4/5", "5/4", "9/4", "9/5"],
-            answer: 0
-        },
-        {
-            question: "Một bản đồ có tỉ lệ 1 : 1 000 000. Nếu đo được 2cm trên bản đồ thì độ dài thật là:",
-            options: ["20 km", "2 km", "200 km", "200 m"],
-            answer: 0
-        },
-        {
-            question: "Hiệu của hai số là 15. Tỉ số của hai số là 2/3. Số lớn là:",
-            options: ["45", "30", "15", "60"],
-            answer: 0
-        },
-        {
-            question: "Tổng của hai số là 100. Tỉ số của hai số là 1/4. Số bé là:",
-            options: ["20", "25", "80", "10"],
-            answer: 0
-        },
-        {
-            question: "Trên bản đồ tỉ lệ 1 : 500, chiều dài 4cm ứng với độ dài thật là:",
-            options: ["20 m", "200 m", "2 m", "2000 cm"],
-            answer: 0
-        },
-        {
-            question: "Tỉ số phần trăm của 15 và 60 là:",
-            options: ["25%", "15%", "40%", "20%"],
-            answer: 0
-        },
-        {
-            question: "Lãi suất tiết kiệm là 0,5% một tháng. Gửi 10 000 000 đồng thì sau một tháng tiền lãi là:",
-            options: ["50 000 đồng", "5 000 đồng", "500 000 đồng", "20 000 đồng"],
-            answer: 0
-        }
+        { question: "Tỉ số của 13 bạn lên rừng và 19 bạn xuống biển là?", options: ["13/19", "19/13", "13/32", "19/32"], answer: 0 },
+        { question: "Lớp 5A quyên góp bằng 5/4 lớp 5B. Tỉ số 5A : 5B là?", options: ["5 : 4", "4 : 5", "5 : 9", "4 : 9"], answer: 0 },
+        { question: "Tổng số phần trong bài tổng-tỉ của bài 2 là?", options: ["9", "5", "4", "10"], answer: 0 },
+        { question: "Lớp 5B quyên góp bao nhiêu quyển sách?", options: ["56", "70", "63", "50"], answer: 0 },
+        { question: "Lớp 5A quyên góp bao nhiêu quyển sách?", options: ["70", "56", "63", "80"], answer: 0 },
+        { question: "Tỉ lệ bản đồ 1 : 3 000. 1 cm bản đồ = ? m thực tế", options: ["30 m", "3 m", "300 m", "3 000 m"], answer: 0 },
+        { question: "Chiều dài thật của thửa đất trường = ?", options: ["90 m", "9 m", "900 m", "60 m"], answer: 0 },
+        { question: "Chiều rộng thật của thửa đất trường = ?", options: ["60 m", "6 m", "600 m", "90 m"], answer: 0 },
+        { question: "Hiệu số ngôi sao Mai và Việt gấp là 11. Tỉ số 4:5 thì hiệu số phần là?", options: ["1", "4", "5", "9"], answer: 0 },
+        { question: "Mai gấp được bao nhiêu ngôi sao?", options: ["55", "44", "99", "11"], answer: 0 },
+        { question: "Việt gấp được bao nhiêu ngôi sao?", options: ["44", "55", "99", "11"], answer: 0 },
+        { question: "Cả Mai và Việt gấp tổng cộng bao nhiêu ngôi sao?", options: ["99", "88", "110", "55"], answer: 0 },
+        { question: "Trong bài tổng-tỉ số, tổng số phần bằng?", options: ["Tổng hai số chia cho tổng số phần", "Tổng hai số nhân cho tỉ số", "Hiệu chia tỉ số", "Tổng hai số trừ tỉ số"], answer: 0 },
+        { question: "Diện tích thật của thửa đất trường tiểu học là?", options: ["5 400 m²", "540 m²", "54 000 m²", "180 m²"], answer: 0 },
+        { question: "Tỉ số của a và b (b ≠ 0) là?", options: ["a : b", "b : a", "a + b", "a × b"], answer: 0 }
     ]
 };
 
-// --- Logic Functions ---
-window.select160_1 = function (ans) {
-    document.getElementById('160-1-ans').value = ans;
-    ['A', 'B', 'C', 'D'].forEach(opt => {
-        document.getElementById('btn-160-1-' + opt).classList.remove('border-blue-600', 'bg-blue-100');
-    });
-    document.getElementById('btn-160-1-' + ans).classList.add('border-blue-600', 'bg-blue-100');
-};
-
-window.check_160_1 = function () {
-    const ans = document.getElementById('160-1-ans')?.value || '';
-    const isCorrect = ans === 'C';
-
-    window.showMathFeedback(
-        isCorrect,
-        "Tỉ số của số bạn chọn lên rừng (13) và số bạn chọn xuống biển (19) là 13/19. Đáp án C.",
-        "",
-        "Gợi ý: Tỉ số = số bạn lên rừng : số bạn xuống biển = 13 : 19."
-    );
-    if (window.submitMathLesson) {
-        window.submitMathLesson("Bài 1. Chọn câu đúng", isCorrect ? 100 : 0, "btn-check-160-1", 0, 1, isCorrect ? 1 : 0);
-    }
-};
-
-window.check_160_2 = function () {
-    const a = document.getElementById('160-2-1')?.value.trim() || '';
-    const b = document.getElementById('160-2-2')?.value.trim() || '';
-
-    let score = 0;
-    const total = 2;
-    if (a === '70') score++;
-    if (b === '56') score++;
-    const isCorrect = score === total;
-
-    window.showMathFeedback(
-        isCorrect,
-        "Tổng số phần: 5 + 4 = 9. Giá trị 1 phần: 126 : 9 = 14. Lớp 5A: 14 × 5 = 70 quyển. Lớp 5B: 14 × 4 = 56 quyển.",
-        "",
-        "Gợi ý: Tổng số phần bằng nhau là 5 + 4 = 9 phần. Giá trị 1 phần = 126 : 9."
-    );
-    if (window.submitMathLesson) {
-        window.submitMathLesson("Bài 2. Giải bài toán Tổng-Tỉ", Math.round(score / total * 100), "btn-check-160-2", 0, total, score);
-    }
-};
-
-window.check_160_3 = function () {
-    const l = document.getElementById('160-3-1')?.value.trim() || '';
-    const w = document.getElementById('160-3-2')?.value.trim() || '';
-
-    let score = 0;
-    const total = 2;
-    if (l === '90') score++;
-    if (w === '60') score++;
-    const isCorrect = score === total;
-
-    window.showMathFeedback(
-        isCorrect,
-        "Chiều dài thật: 3 × 3 000 = 9 000 cm = 90 m. Chiều rộng thật: 2 × 3 000 = 6 000 cm = 60 m.",
-        "",
-        "Gợi ý: Nhân kích thước trên bản đồ với 3 000, rồi đổi cm sang m (chia 100)."
-    );
-    if (window.submitMathLesson) {
-        window.submitMathLesson("Bài 3. Tỉ lệ bản đồ", Math.round(score / total * 100), "btn-check-160-3", 0, total, score);
-    }
-};
-
-window.check_160_4 = function () {
-    const res = document.getElementById('160-4-1')?.value.trim() || '';
-    const isCorrect = res === '99';
-
-    window.showMathFeedback(
-        isCorrect,
-        "Hiệu số phần: 5 - 4 = 1 phần = 11 ngôi sao. Việt: 11 × 4 = 44. Mai: 11 × 5 = 55. Tổng: 44 + 55 = 99 ngôi sao.",
-        "",
-        "Gợi ý: Bài toán Hiệu-Tỉ. Hiệu số phần = 5 - 4 = 1 phần. Giá trị 1 phần = 11."
-    );
-    if (window.submitMathLesson) {
-        window.submitMathLesson("Bài 4. Giải bài toán Hiệu-Tỉ", isCorrect ? 100 : 0, "btn-check-160-4", 0, 1, isCorrect ? 1 : 0);
-    }
-};
-
 window.lesson160 = lesson160;
+
+window._sel160_1 = null;
+window.select160_1 = function(opt) {
+    ['A','B','C','D'].forEach(o => {
+        const b = document.getElementById('btn-160-1-'+o);
+        if (b) b.className = 'flex flex-col items-center gap-2 p-4 bg-white rounded-2xl border-4 border-blue-100 hover:border-blue-400 transition-all text-2xl font-black';
+    });
+    const sel = document.getElementById('btn-160-1-'+opt);
+    if (sel) sel.className = 'flex flex-col items-center gap-2 p-4 bg-blue-100 rounded-2xl border-4 border-blue-500 transition-all text-2xl font-black';
+    window._sel160_1 = opt;
+};
+
+window.check_160_1 = function() {
+    const isCorrect = window._sel160_1 === 'C';
+    window.showMathFeedback(isCorrect,
+        "C. 13/19",
+        "",
+        "Gợi ý: Tỉ số của số bạn chọn lên rừng (A) và số bạn chọn xuống biển (B) là A : B = A/B.",
+        "Tỉ số của 13 bạn lên rừng và 19 bạn xuống biển là 13/19.<br>Đáp án: C. 13/19<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 1. Chọn câu trả lời đúng", isCorrect?100:0, "btn-check-160-1", 0, 1, isCorrect?1:0);
+};
+
+window.check_160_2 = function() {
+    const v1 = document.getElementById('160-2-1')?.value.trim().replace(/\s/g,'') || '';
+    const v2 = document.getElementById('160-2-2')?.value.trim().replace(/\s/g,'') || '';
+    const isCorrect = (v1 === '70' && v2 === '56');
+    window.showMathFeedback(isCorrect,
+        "Lớp 5A: 70 quyển, Lớp 5B: 56 quyển",
+        "",
+        "Gợi ý: Dùng phương pháp bài toán tổng-tỉ số. Vẽ sơ đồ với 5A = 5 phần, 5B = 4 phần.",
+        "Tổng phần: 5 + 4 = 9. Mỗi phần: 126 : 9 = 14 quyển.<br>5B: 14 × 4 = 56 quyển; 5A: 14 × 5 = 70 quyển.<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 2. Quyên góp sách", isCorrect?100:0, "btn-check-160-2", 0, 1, isCorrect?1:0);
+};
+
+window.check_160_3 = function() {
+    const v1 = document.getElementById('160-3-1')?.value.trim().replace(/\s/g,'') || '';
+    const v2 = document.getElementById('160-3-2')?.value.trim().replace(/\s/g,'') || '';
+    const isCorrect = (v1 === '90' && v2 === '60');
+    window.showMathFeedback(isCorrect,
+        "a) 90 m; b) 60 m",
+        "",
+        "Gợi ý: Tỉ lệ 1 : 3 000 nghĩa là 1 cm trên bản đồ = 3 000 cm = 30 m thực tế. Nhân chiều dài/rộng bản đồ với 3 000 cm rồi đổi ra mét.",
+        "1 cm bản đồ = 3 000 cm = 30 m thực tế.<br>a) Chiều dài: 3 × 30 = 90 m.<br>b) Chiều rộng: 2 × 30 = 60 m.<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 3. Bản đồ tỉ lệ", isCorrect?100:0, "btn-check-160-3", 0, 1, isCorrect?1:0);
+};
+
+window.check_160_4 = function() {
+    const v = document.getElementById('160-4')?.value.trim().replace(/\s/g,'') || '';
+    const isCorrect = v === '99';
+    window.showMathFeedback(isCorrect,
+        "99 ngôi sao",
+        "",
+        "Gợi ý: Dùng phương pháp bài toán hiệu-tỉ số. Tỉ số Việt : Mai = 4 : 5, hiệu = 11.",
+        "Hiệu số phần: 5 − 4 = 1 phần = 11 ngôi sao.<br>Mai: 11 × 5 = 55; Việt: 11 × 4 = 44.<br>Tổng: 55 + 44 = 99 ngôi sao.<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 4. Mai và Việt gấp ngôi sao", isCorrect?100:0, "btn-check-160-4", 0, 1, isCorrect?1:0);
+};
+
+import './logic.js';
