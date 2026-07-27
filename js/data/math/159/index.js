@@ -4,6 +4,30 @@ export const lesson159 = {
     topic: "Ôn tập phép chia và tính nhẩm",
     week: "32",
 
+    content: `
+        <div class="space-y-10">
+            <div class="bg-blue-50 p-6 md:p-10 rounded-[2.5rem] md:rounded-[3rem] border-4 border-blue-200 shadow-xl">
+                <h3 class="text-2xl md:text-3xl font-black text-blue-700 mb-8 uppercase tracking-wider text-center">Kiến thức cần nhớ</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border-t-8 border-blue-500 space-y-4">
+                        <p class="font-black text-blue-600 text-xl md:text-2xl italic underline">1. Phép chia và thử lại:</p>
+                        <ul class="space-y-3 text-gray-700 text-lg md:text-xl">
+                            <li>• Phép chia hết: <span class="font-black text-blue-700">a : b = c</span> $\\Rightarrow$ <span class="font-black text-emerald-700">Thử lại: c × b = a</span></li>
+                            <li>• Phép chia có dư: <span class="font-black text-blue-700">a : b = c (dư r)</span> $\\Rightarrow$ <span class="font-black text-emerald-700">Thử lại: c × b + r = a</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border-t-8 border-emerald-500 space-y-4">
+                        <p class="font-black text-emerald-600 text-xl md:text-2xl italic underline">2. Qui tắc tính nhẩm số thập phân:</p>
+                        <ul class="space-y-3 text-gray-700 text-lg md:text-xl">
+                            <li>• Nhân với <span class="font-black text-blue-700">10, 100, 1000...</span> tương đương với <span class="font-black text-emerald-700">Chia cho 0,1; 0,01; 0,001...</span></li>
+                            <li>• Nhân với <span class="font-black text-blue-700">0,1; 0,01; 0,001...</span> tương đương với <span class="font-black text-emerald-700">Chia cho 10, 100, 1000...</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `,
+
     practice: `
         <div class="space-y-10 pb-10">
 
