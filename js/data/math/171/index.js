@@ -1,339 +1,329 @@
 export const lesson171 = {
     period: "171",
-    title: "BÀI 74: ÔN TẬP THỐNG KÊ VÀ XÁC SUẤT (TIẾT 2)",
-    topic: "Thống kê và xác suất",
-    week: "35",
-
-    content: `
-        <div class="space-y-6">
-            <div class="bg-blue-50 p-8 rounded-[3rem] border-4 border-blue-200 shadow-2xl">
-                <h3 class="text-3xl md:text-5xl font-black text-blue-700 mb-6 uppercase text-center tracking-tight">ÔN TẬP XÁC SUẤT</h3>
-                <div class="flex flex-col gap-6">
-                    <div class="p-8 bg-white rounded-[2.5rem] shadow-xl border-t-8 border-green-500 flex items-center gap-8">
-                        <div class="w-16 h-16 md:w-24 md:h-24 flex-shrink-0 bg-green-100 rounded-full flex items-center justify-center text-3xl md:text-5xl">✅</div>
-                        <div>
-                            <h4 class="text-xl md:text-3xl font-black text-green-600 mb-2 uppercase">Chắc chắn</h4>
-                            <p class="text-lg md:text-2xl text-gray-700 font-bold">Sự việc luôn luôn xảy ra trong mọi trường hợp.</p>
-                        </div>
-                    </div>
-                    <div class="p-8 bg-white rounded-[2.5rem] shadow-xl border-t-8 border-orange-500 flex items-center gap-8">
-                        <div class="w-16 h-16 md:w-24 md:h-24 flex-shrink-0 bg-orange-100 rounded-full flex items-center justify-center text-3xl md:text-5xl">❓</div>
-                        <div>
-                            <h4 class="text-xl md:text-3xl font-black text-orange-600 mb-2 uppercase">Có thể</h4>
-                            <p class="text-lg md:text-2xl text-gray-700 font-bold">Sự việc có thể xảy ra hoặc không xảy ra.</p>
-                        </div>
-                    </div>
-                    <div class="p-8 bg-white rounded-[2.5rem] shadow-xl border-t-8 border-rose-500 flex items-center gap-8">
-                        <div class="w-16 h-16 md:w-24 md:h-24 flex-shrink-0 bg-rose-100 rounded-full flex items-center justify-center text-3xl md:text-5xl">❌</div>
-                        <div>
-                            <h4 class="text-xl md:text-3xl font-black text-rose-600 mb-2 uppercase">Không thể</h4>
-                            <p class="text-lg md:text-2xl text-gray-700 font-bold">Sự việc không bao giờ xảy ra.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    `,
+    title: "BÀI 74: ÔN TẬP MỘT SỐ YẾU TỐ THỐNG KÊ VÀ XÁC SUẤT (TIẾT 2)",
+    topic: "Ôn tập khả năng xảy ra và xác suất",
+    week: "34",
 
     practice: `
-        <div class="space-y-12 pb-10">
-            <!-- Bài 1 -->
-            <div id="lesson171_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500 relative overflow-hidden">
-                <div class="flex items-center gap-6 mb-8">
-                    <div class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl md:text-4xl font-black shadow-lg">1</div>
-                    <h3 class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Bài 1. Chọn quả bóng</h3>
+        <div class="space-y-10 pb-10">
+
+            <!-- Bài 1: Gieo hai xúc xắc -->
+            <div id="lesson171_b1" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-blue-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">1</div>
+                    <h3 class="text-xl md:text-2xl font-black text-blue-700">Bài 1. Chọn khả năng xảy ra trong mỗi trường hợp</h3>
                 </div>
-                
-                <div class="p-8 bg-blue-50 rounded-[2.5rem] border-2 border-blue-200">
-                    <p class="text-xl md:text-3xl text-gray-700 leading-relaxed font-bold mb-8 italic">
-                        Trong túi có <span class="text-blue-600">3 quả bóng ĐỎ</span> và <span class="text-orange-600">2 quả bóng VÀNG</span>. Lấy ngẫu nhiên <span class="text-rose-600">4 quả bóng</span>. Điền từ thích hợp vào chỗ trống:
+                <div class="bg-blue-50 p-5 rounded-2xl border border-blue-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Gieo hai xúc xắc. Chọn khả năng xảy ra (Chắc chắn, Có thể, Không thể) trong mỗi trường hợp sau:
                     </p>
-                    
-                    <div class="space-y-6">
-                        <div class="flex flex-wrap items-center gap-4 text-lg md:text-2xl font-bold bg-white p-6 rounded-2xl shadow-md border-l-8 border-blue-400">
-                            <span>a) Lấy được ít nhất 2 quả bóng đỏ là việc</span>
-                            <select id="171-1-a" class="p-2 border-b-4 border-blue-300 outline-none text-blue-700 font-black bg-blue-50 rounded-lg">
-                                <option value="">-- Chọn --</option>
-                                <option value="co-the">có thể</option>
-                                <option value="khong-the">không thể</option>
-                                <option value="chac-chan">chắc chắn</option>
+                    <img src="assets/images/toan/toan_tap_2/171/171-1-xuc-xac.png" class="max-w-[250px] w-full mx-auto rounded-2xl shadow-lg border-4 border-white" alt="Hai xúc xắc">
+
+                    <div class="space-y-4 border-t border-blue-200 pt-4 font-bold text-lg">
+                        <div class="flex items-center gap-3 flex-wrap">
+                            <span>a) Tổng số chấm ở hai mặt trên của hai xúc xắc là số chẵn:</span>
+                            <select id="171-1-1" class="px-4 py-2 border-2 border-blue-300 rounded-xl font-bold bg-white outline-none">
+                                <option value="">--Chọn--</option>
+                                <option value="Chắc chắn">Chắc chắn</option>
+                                <option value="Có thể">Có thể</option>
+                                <option value="Không thể">Không thể</option>
                             </select>
                         </div>
-                        <div class="flex flex-wrap items-center gap-4 text-lg md:text-2xl font-bold bg-white p-6 rounded-2xl shadow-md border-l-8 border-orange-400">
-                            <span>b) Lấy được 4 quả bóng vàng là việc</span>
-                            <select id="171-1-b" class="p-2 border-b-4 border-orange-300 outline-none text-orange-700 font-black bg-orange-50 rounded-lg">
-                                <option value="">-- Chọn --</option>
-                                <option value="co-the">có thể</option>
-                                <option value="khong-the">không thể</option>
-                                <option value="chac-chan">chắc chắn</option>
+                        <div class="flex items-center gap-3 flex-wrap">
+                            <span>b) Tổng số chấm ở hai mặt trên của hai xúc xắc là 13:</span>
+                            <select id="171-1-2" class="px-4 py-2 border-2 border-blue-300 rounded-xl font-bold bg-white outline-none">
+                                <option value="">--Chọn--</option>
+                                <option value="Chắc chắn">Chắc chắn</option>
+                                <option value="Có thể">Có thể</option>
+                                <option value="Không thể">Không thể</option>
                             </select>
                         </div>
-                        <div class="flex flex-wrap items-center gap-4 text-lg md:text-2xl font-bold bg-white p-6 rounded-2xl shadow-md border-l-8 border-green-400">
-                            <span>c) Lấy được ít nhất 1 quả bóng đỏ là việc</span>
-                            <select id="171-1-c" class="p-2 border-b-4 border-green-300 outline-none text-green-700 font-black bg-green-50 rounded-lg">
-                                <option value="">-- Chọn --</option>
-                                <option value="co-the">có thể</option>
-                                <option value="khong-the">không thể</option>
-                                <option value="chac-chan">chắc chắn</option>
+                        <div class="flex items-center gap-3 flex-wrap">
+                            <span>c) Tổng số chấm ở hai mặt trên của hai xúc xắc là số bé hơn 13 và lớn hơn 1:</span>
+                            <select id="171-1-3" class="px-4 py-2 border-2 border-blue-300 rounded-xl font-bold bg-white outline-none">
+                                <option value="">--Chọn--</option>
+                                <option value="Chắc chắn">Chắc chắn</option>
+                                <option value="Có thể">Có thể</option>
+                                <option value="Không thể">Không thể</option>
                             </select>
                         </div>
                     </div>
                 </div>
-
-                <div class="flex justify-end mt-10">
-                    <button id="btn-check-171-1" onclick="window.check_171_1()" class="w-16 h-16 md:w-24 md:h-24 bg-[#ff7b29] text-white rounded-3xl font-black text-3xl md:text-5xl shadow-[0_10px_0_0_#c45a1d] hover:translate-y-1 hover:shadow-[0_6px_0_0_#c45a1d] active:translate-y-2 active:shadow-none transition-all flex items-center justify-center">E</button>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-171-1').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-171-1" onclick="window.check_171_1()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-171-1" class="hidden bg-blue-50 p-4 rounded-2xl border border-blue-200 text-lg font-bold text-blue-900 space-y-1">
+                    <p>a) Có thể (có thể là chẵn như 1+1=2, hoặc lẻ như 1+2=3)</p>
+                    <p>b) Không thể (tổng tối đa của 2 xúc xắc là 6 + 6 = 12)</p>
+                    <p>c) Chắc chắn (tổng 2 xúc xắc luôn nằm trong khoảng từ 2 đến 12)</p>
                 </div>
             </div>
 
-            <!-- Bài 2 -->
-            <div id="lesson171_b2" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-green-500 relative overflow-hidden">
-                <div class="flex items-center gap-6 mb-8">
-                    <div class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 bg-green-600 text-white rounded-full flex items-center justify-center text-2xl md:text-4xl font-black shadow-lg rotate-1">2</div>
-                    <h3 class="text-2xl md:text-4xl font-black text-green-800 uppercase tracking-wide">Bài 2. Xúc xắc may mắn</h3>
+            <!-- Bài 2: Rô-bốt bốc 3 quả bóng -->
+            <div id="lesson171_b2" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-emerald-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">2</div>
+                    <h3 class="text-xl md:text-2xl font-black text-emerald-700">Bài 2. Các khả năng xảy ra khi bốc 3 quả bóng</h3>
                 </div>
-                
-                <div class="flex flex-col lg:flex-row gap-10 items-center">
-                    <img src="assets/images/toan/toan_tap_2/99/" alt="Xúc xắc" class="w-full lg:w-1/3 max-w-sm rounded-[3rem] shadow-2xl border-8 border-green-100">
-                    <div class="w-full lg:w-2/3 space-y-6">
-                        <p class="text-xl md:text-3xl text-gray-700 leading-relaxed font-bold">
-                            Việt gieo một con xúc xắc 6 mặt. Các khẳng định sau ĐÚNG hay SAI?
-                        </p>
-                        <div class="grid grid-cols-1 gap-4">
-                            <div class="flex items-center justify-between p-6 bg-green-50 rounded-[2rem] border-2 border-green-200">
-                                <span class="text-lg md:text-2xl font-black text-green-800">1. Số chấm là số lẻ là việc <span class="underline underline-offset-4">có thể</span>.</span>
-                                <button onclick="window.check_171_2('1', true)" class="w-20 h-14 bg-green-600 text-white rounded-xl text-xl font-black hover:bg-green-700 active:scale-95 transition-all">ĐÚNG</button>
-                            </div>
-                            <div class="flex items-center justify-between p-6 bg-orange-50 rounded-[2rem] border-2 border-orange-200">
-                                <span class="text-lg md:text-2xl font-black text-orange-800">2. Số chấm bằng 7 là việc <span class="underline underline-offset-4">có thể</span>.</span>
-                                <button onclick="window.check_171_2('2', false)" class="w-20 h-14 bg-orange-600 text-white rounded-xl text-xl font-black hover:bg-orange-700 active:scale-95 transition-all">SAI</button>
-                            </div>
-                            <div class="flex items-center justify-between p-6 bg-blue-50 rounded-[2rem] border-2 border-blue-200">
-                                <span class="text-lg md:text-2xl font-black text-blue-800">3. Số chấm nhỏ hơn 7 là việc <span class="underline underline-offset-4">chắc chắn</span>.</span>
-                                <button onclick="window.check_171_2('3', true)" class="w-20 h-14 bg-blue-600 text-white rounded-xl text-xl font-black hover:bg-blue-700 active:scale-95 transition-all">ĐÚNG</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bài 3 -->
-            <div id="lesson171_b3" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-orange-500 relative overflow-hidden">
-                <div class="flex items-center gap-6 mb-8">
-                    <div class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 bg-orange-600 text-white rounded-full flex items-center justify-center text-2xl md:text-4xl font-black shadow-lg">3</div>
-                    <h3 class="text-2xl md:text-4xl font-black text-orange-800 uppercase tracking-wide">Bài 3. Lấy thẻ số</h3>
-                </div>
-                
-                <div class="p-10 bg-orange-50 rounded-[3rem] border-4 border-orange-200 shadow-inner">
-                    <p class="text-xl md:text-3xl text-gray-700 leading-relaxed font-bold mb-10 text-center">
-                        Mai có 5 tấm thẻ ghi các số: <span class="text-orange-700 font-black">2, 3, 5, 7, 8</span>. Mai lấy ngẫu nhiên 2 tấm thẻ.
-                        <br>
-                        Khả năng nào sau đây là <span class="text-rose-600 underline underline-offset-4">không thể</span>?
+                <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Trong hộp có <span class="font-black text-rose-600">2 quả bóng đỏ</span> và <span class="font-black text-blue-600">3 quả bóng xanh</span>. Nếu Rô-bốt lấy ra từ trong hộp cùng một lúc 3 quả bóng thì có các khả năng nào về màu của 3 quả bóng đó có thể xảy ra?
                     </p>
+                    <img src="assets/images/toan/toan_tap_2/171/171-2-boc-bong.png" class="max-w-[350px] w-full mx-auto rounded-2xl shadow-lg border-4 border-white" alt="Rô-bốt lấy bóng">
                     
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <button onclick="window.check_171_3('A')" class="p-8 bg-white hover:bg-orange-100 rounded-[2.5rem] border-4 border-orange-300 text-lg md:text-2xl font-black text-orange-800 transition-all shadow-lg active:scale-95">
-                            A. Tổng 2 số bằng 5
-                        </button>
-                        <button onclick="window.check_171_3('B')" class="p-8 bg-white hover:bg-orange-100 rounded-[2.5rem] border-4 border-orange-300 text-lg md:text-2xl font-black text-orange-800 transition-all shadow-lg active:scale-95">
-                            B. Tổng 2 số bằng 15
-                        </button>
-                        <button onclick="window.check_171_3('C')" class="p-8 bg-white hover:bg-orange-100 rounded-[2.5rem] border-4 border-orange-300 text-lg md:text-2xl font-black text-orange-800 transition-all shadow-lg active:scale-95">
-                            C. Tổng 2 số bằng 20
-                        </button>
-                        <button onclick="window.check_171_3('D')" class="p-8 bg-white hover:bg-orange-100 rounded-[2.5rem] border-4 border-orange-300 text-lg md:text-2xl font-black text-orange-800 transition-all shadow-lg active:scale-95">
-                            D. Tổng 2 số là số chẵn
-                        </button>
+                    <div class="space-y-3 font-bold text-lg border-t border-emerald-200 pt-4">
+                        <p class="text-emerald-900 font-black">Chọn tất cả các khả năng có thể xảy ra (bấm chọn):</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border-2 border-emerald-200 cursor-pointer">
+                                <input type="checkbox" id="chk-171-2-1" class="w-5 h-5 accent-emerald-600">
+                                <span>2 quả bóng đỏ và 1 quả bóng xanh</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border-2 border-emerald-200 cursor-pointer">
+                                <input type="checkbox" id="chk-171-2-2" class="w-5 h-5 accent-emerald-600">
+                                <span>1 quả bóng đỏ và 2 quả bóng xanh</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border-2 border-emerald-200 cursor-pointer">
+                                <input type="checkbox" id="chk-171-2-3" class="w-5 h-5 accent-emerald-600">
+                                <span>3 quả bóng xanh</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3 bg-white rounded-xl border-2 border-emerald-200 cursor-pointer">
+                                <input type="checkbox" id="chk-171-2-4" class="w-5 h-5 accent-emerald-600">
+                                <span>3 quả bóng đỏ</span>
+                            </label>
+                        </div>
                     </div>
+                </div>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-171-2').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-171-2" onclick="window.check_171_2()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-171-2" class="hidden bg-emerald-50 p-4 rounded-2xl border border-emerald-200 text-lg font-bold text-emerald-900 space-y-1">
+                    <p>Vì chỉ có 2 quả bóng đỏ nên KHÔNG THỂ lấy ra 3 quả bóng đỏ.</p>
+                    <p>Các khả năng có thể xảy ra là:</p>
+                    <p>- 2 quả đỏ và 1 quả xanh</p>
+                    <p>- 1 quả đỏ và 2 quả xanh</p>
+                    <p>- 3 quả xanh</p>
                 </div>
             </div>
 
-            <!-- Bài 4 -->
-            <div id="lesson171_b4" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-rose-500 relative overflow-hidden">
-                <div class="flex items-center gap-6 mb-8">
-                    <div class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 bg-rose-600 text-white rounded-full flex items-center justify-center text-2xl md:text-4xl font-black shadow-lg">4</div>
-                    <h3 class="text-2xl md:text-4xl font-black text-rose-800 uppercase tracking-wide">Bài 4. Quay vòng quay</h3>
+            <!-- Bài 3: Bảng kiểm kê xúc xắc của Việt -->
+            <div id="lesson171_b3" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-amber-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-amber-500 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">3</div>
+                    <h3 class="text-xl md:text-2xl font-black text-amber-700">Bài 3. Kết quả gieo xúc xắc của Việt</h3>
                 </div>
-                
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-                    <div class="space-y-6">
-                        <p class="text-xl md:text-3xl text-gray-700 leading-relaxed font-bold">
-                            Dự đoán khả năng kim dừng lại ở các phần:
-                        </p>
-                        <div class="space-y-4">
-                            <div class="flex items-center justify-between p-6 bg-rose-50 rounded-3xl border-2 border-rose-200">
-                                <span class="text-lg md:text-2xl font-black text-rose-800">Dừng ở phần SÀNH ĐIỆU:</span>
-                                <span class="text-xl md:text-3xl font-black text-rose-600 uppercase">Có thể</span>
+                <div class="bg-amber-50 p-5 rounded-2xl border border-amber-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Việt gieo xúc xắc nhiều lần rồi ghi lại kết quả nhận được như bảng dưới đây:
+                    </p>
+                    <img src="assets/images/toan/toan_tap_2/171/171-3-bang-xuc-xac.png" class="max-w-[550px] w-full mx-auto rounded-2xl shadow-lg border-4 border-white" alt="Bảng kết quả gieo xúc xắc">
+                    
+                    <div class="space-y-4 border-t border-amber-200 pt-4 font-bold text-lg">
+                        <div class="flex items-center gap-3 flex-wrap">
+                            <span>a) Mặt 5 chấm đã xuất hiện bao nhiêu lần?</span>
+                            <input id="171-3-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>lần.</span>
+                        </div>
+                        <div class="space-y-2 border-t border-amber-200 pt-3">
+                            <p class="text-amber-900 font-black">b) Mặt nào xuất hiện nhiều lần nhất, mặt nào ít lần nhất?</p>
+                            <div class="flex items-center gap-3 flex-wrap">
+                                <span>- Nhiều lần nhất: Mặt</span>
+                                <input id="171-3-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-16 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="?">
+                                <span>chấm.</span>
                             </div>
-                            <div class="flex items-center justify-start p-6 bg-blue-50 rounded-3xl border-2 border-blue-200">
-                                <span class="text-lg md:text-2xl font-black text-blue-800">Dừng ở phần MÀU ĐỎ:</span>
-                                <div class="flex items-center gap-3">
-                                    <input id="171-4-1" type="text" class="w-40 h-14 text-center border-4 border-blue-400 rounded-xl outline-none text-xl md:text-2xl font-black text-blue-700" placeholder="?">
-                                </div>
-                            </div>
-                            <div class="flex items-center justify-start p-6 bg-green-50 rounded-3xl border-2 border-green-200">
-                                <span class="text-lg md:text-2xl font-black text-green-800">Dừng ở phần CÓ CHỮ:</span>
-                                <div class="flex items-center gap-3">
-                                    <input id="171-4-2" type="text" class="w-40 h-14 text-center border-4 border-green-400 rounded-xl outline-none text-xl md:text-2xl font-black text-green-700" placeholder="?">
-                                </div>
+                            <div class="flex items-center gap-3 flex-wrap">
+                                <span>- Ít lần nhất: Mặt</span>
+                                <input id="171-3-3" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-16 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="?">
+                                <span>chấm.</span>
                             </div>
                         </div>
                     </div>
-                    <img src="assets/images/toan/toan_tap_2/96/" alt="Vòng quay" class="w-full rounded-full shadow-2xl animate-spin-slow border-[16px] border-white ring-8 ring-rose-100">
                 </div>
-
-                <div class="flex justify-end mt-10">
-                    <button id="btn-check-171-4" onclick="window.check_171_4()" class="w-16 h-16 md:w-24 md:h-24 bg-[#ff7b29] text-white rounded-3xl font-black text-3xl md:text-5xl shadow-[0_10px_0_0_#c45a1d] hover:translate-y-1 hover:shadow-[0_6px_0_0_#c45a1d] active:translate-y-2 active:shadow-none transition-all flex items-center justify-center">E</button>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-171-3').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-171-3" onclick="window.check_171_3()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-171-3" class="hidden bg-amber-50 p-4 rounded-2xl border border-amber-200 text-lg font-bold text-amber-900 space-y-1">
+                    <p>a) Mặt 5 chấm xuất hiện: <span class="text-emerald-700">6 lần</span></p>
+                    <p>b) Nhiều lần nhất: <span class="text-emerald-700">Mặt 4 chấm (7 lần)</span>; Ít lần nhất: <span class="text-emerald-700">Mặt 1 chấm (3 lần)</span></p>
+                    <p>c) Các mặt xuất hiện bằng nhau: Mặt 6 và 3 (4 lần); Mặt 5 và 2 (6 lần).</p>
                 </div>
             </div>
+
+            <!-- Bài 4: Gieo hai đồng xu 25 lần -->
+            <div id="lesson171_b4" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-rose-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-rose-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">4</div>
+                    <h3 class="text-xl md:text-2xl font-black text-rose-700">Bài 4. Mai gieo hai đồng xu 25 lần</h3>
+                </div>
+                <div class="bg-rose-50 p-5 rounded-2xl border border-rose-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Mai gieo đồng thời hai đồng xu 25 lần, đếm số lần lặp lại kết quả: Hai mặt sấp (7 lần), Hai mặt ngửa (6 lần), Một mặt sấp, một mặt ngửa (12 lần).
+                    </p>
+
+                    <div class="space-y-4 border-t border-rose-200 pt-4 font-bold text-lg">
+                        <p class="font-black text-rose-900 text-xl">a) Khả năng nào nhiều nhất, khả năng nào ít nhất?</p>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-3 flex-wrap">
+                                <span>- Nhiều nhất:</span>
+                                <select id="171-4-1" class="px-4 py-2 border-2 border-rose-300 rounded-xl font-bold bg-white outline-none">
+                                    <option value="">--Chọn--</option>
+                                    <option value="Hai mặt sấp">Hai mặt sấp</option>
+                                    <option value="Hai mặt ngửa">Hai mặt ngửa</option>
+                                    <option value="Một mặt sấp, một mặt ngửa">Một mặt sấp, một mặt ngửa</option>
+                                </select>
+                            </div>
+                            <div class="flex items-center gap-3 flex-wrap">
+                                <span>- Ít nhất:</span>
+                                <select id="171-4-2" class="px-4 py-2 border-2 border-rose-300 rounded-xl font-bold bg-white outline-none">
+                                    <option value="">--Chọn--</option>
+                                    <option value="Hai mặt sấp">Hai mặt sấp</option>
+                                    <option value="Hai mặt ngửa">Hai mặt ngửa</option>
+                                    <option value="Một mặt sấp, một mặt ngửa">Một mặt sấp, một mặt ngửa</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <p class="font-black text-rose-900 text-xl border-t border-rose-200 pt-3">b) Tỉ số phần trăm của mỗi khả năng so với tổng 25 lần:</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <span>Hai mặt sấp:</span>
+                                <input id="171-4-p1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-rose-300 rounded-xl font-bold outline-none" placeholder="?%">
+                            </div>
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <span>Hai mặt ngửa:</span>
+                                <input id="171-4-p2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-rose-300 rounded-xl font-bold outline-none" placeholder="?%">
+                            </div>
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <span>Một sấp, một ngửa:</span>
+                                <input id="171-4-p3" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-rose-300 rounded-xl font-bold outline-none" placeholder="?%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-171-4').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-171-4" onclick="window.check_171_4()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-171-4" class="hidden bg-rose-50 p-4 rounded-2xl border border-rose-200 text-lg font-bold text-rose-900 space-y-1">
+                    <p>a) Nhiều nhất: Một mặt sấp, một mặt ngửa (12 lần). Ít nhất: Hai mặt ngửa (6 lần).</p>
+                    <p>b) Hai mặt sấp: 7 : 25 × 100 = <span class="text-emerald-700">28%</span></p>
+                    <p>Hai mặt ngửa: 6 : 25 × 100 = <span class="text-emerald-700">24%</span></p>
+                    <p>Một sấp, một ngửa: 12 : 25 × 100 = <span class="text-emerald-700">48%</span></p>
+                </div>
+            </div>
+
         </div>
     `,
 
     quizPool: [
-        { question: "Tung đồng xu, khả năng xuất hiện mặt ngửa là:", options: ["Có thể", "Chắc chắn", "Không thể", "Luôn luôn"], answer: 0 },
-        { question: "Mặt Trời mọc ở hướng Tây là việc:", options: ["Không thể", "Có thể", "Chắc chắn", "Hàng ngày"], answer: 0 },
-        { question: "Tháng Hai có 30 ngày là việc:", options: ["Không thể", "Có thể", "Chắc chắn", "Năm nhuận"], answer: 0 },
-        { question: "Gieo xúc xắc 1 lần được mặt 15 chấm là việc:", options: ["Không thể", "Có thể", "Chắc chắn", "Hên xui"], answer: 0 },
-        { question: "Trong túi chỉ có kẹo dâu. Lấy được kẹo dâu là việc:", options: ["Chắc chắn", "Có thể", "Không thể", "Khó xảy ra"], answer: 0 },
-        { question: "Hôm nay là thứ Hai, ngày mai là thứ Ba là việc:", options: ["Chắc chắn", "Có thể", "Không thể", "Tùy tháng"], answer: 0 },
-        { question: "Số chia hết cho 2 là số lẻ là việc:", options: ["Không thể", "Có thể", "Chắc chắn", "Bình thường"], answer: 0 },
-        { question: "Một tam giác có 4 góc là việc:", options: ["Không thể", "Có thể", "Chắc chắn", "Vô lý"], answer: 0 },
-        { question: "Trong 10 tấm thẻ 1-10, lấy được số lớn hơn 0 là:", options: ["Chắc chắn", "Có thể", "Không thể", "Ít khi"], answer: 0 },
-        { question: "Quay vòng quay có màu Xanh và Đỏ. Dừng ở màu Vàng:", options: ["Không thể", "Có thể", "Chắc chắn", "Ngẫu nhiên"], answer: 0 },
-        { question: "Tổng hai số tự nhiên là một số tự nhiên là việc:", options: ["Chắc chắn", "Có thể", "Không thể", "Sai"], answer: 0 },
-        { question: "Kết quả của phép tính 2 + 3 = 6 là việc:", options: ["Không thể", "Có thể", "Chắc chắn", "Luôn đúng"], answer: 0 },
-        { question: "Một người sống thọ 500 tuổi là việc:", options: ["Không thể", "Có thể", "Chắc chắn", "Thỉnh thoảng"], answer: 0 },
-        { question: "Mai đi học muộn là việc:", options: ["Có thể", "Chắc chắn", "Không thể", "Luôn luôn"], answer: 0 },
-        { question: "Mua một vé số và trúng giải độc đắc là việc:", options: ["Có thể", "Chắc chắn", "Không thể", "Dễ dàng"], answer: 0 },
-        { question: "Con voi biết bay là việc:", options: ["Không thể", "Có thể", "Chắc chắn", "Trong phim"], answer: 0 },
-        { question: "Trái Đất quay quanh Mặt Trời là việc:", options: ["Chắc chắn", "Có thể", "Không thể", "Thỉnh thoảng"], answer: 0 },
-        { question: "1 + 1 bằng 2 là việc:", options: ["Chắc chắn", "Có thể", "Không thể", "Sai rồi"], answer: 0 },
-        { question: "Thả một viên đá vào nước, nó sẽ chìm là việc:", options: ["Chắc chắn", "Có thể", "Không thể", "Tùy đá"], answer: 0 },
-        { question: "Lớp học có 30 học sinh nữ, lấy 1 bạn là nam là việc:", options: ["Không thể", "Có thể", "Chắc chắn", "Bình thường"], answer: 0 },
-        { question: "Đội tuyển Việt Nam thắng World Cup 2026 là việc:", options: ["Có thể", "Chắc chắn", "Không thể", "Khó tin"], answer: 0 },
-        { question: "Hai đường thẳng song song cắt nhau là việc:", options: ["Không thể", "Có thể", "Chắc chắn", "Ở vô cực"], answer: 0 },
-        { question: "Cây táo nở ra bông hoa hồng là việc:", options: ["Không thể", "Có thể", "Chắc chắn", "Ghép cây"], answer: 0 },
-        { question: "Trong hộp có 10 bi xanh. Lấy 2 bi đỏ là việc:", options: ["Không thể", "Có thể", "Chắc chắn", "Sai lầm"], answer: 0 },
-        { question: "Số chẵn chia hết cho 5 là việc:", options: ["Có thể", "Chắc chắn", "Không thể", "Luôn luôn"], answer: 0 }
+        { question: "Tổng số chấm 2 xúc xắc là số chẵn thuộc khả năng nào?", options: ["Có thể", "Chắc chắn", "Không thể", "Không biết"], answer: 0 },
+        { question: "Tổng số chấm 2 xúc xắc là 13 thuộc khả năng nào?", options: ["Không thể", "Có thể", "Chắc chắn", "Hiếm khi"], answer: 0 },
+        { question: "Tổng số chấm 2 xúc xắc bé hơn 13 và lớn hơn 1 thuộc khả năng nào?", options: ["Chắc chắn", "Có thể", "Không thể", "Đôi khi"], answer: 0 },
+        { question: "Trong hộp có 2 đỏ 3 xanh, bốc 3 quả thì KHÔNG THỂ xảy ra trường hợp nào?", options: ["3 quả đỏ", "3 quả xanh", "2 đỏ 1 xanh", "1 đỏ 2 xanh"], answer: 0 },
+        { question: "Mặt 5 chấm xuất hiện bao nhiêu lần trên bảng thống kê xúc xắc?", options: ["6 lần", "7 lần", "4 lần", "5 lần"], answer: 0 },
+        { question: "Mặt nào xuất hiện nhiều lần nhất trên bảng xúc xắc?", options: ["Mặt 4 chấm (7 lần)", "Mặt 5 chấm", "Mặt 6 chấm", "Mặt 2 chấm"], answer: 0 },
+        { question: "Mặt nào xuất hiện ít lần nhất trên bảng xúc xắc?", options: ["Mặt 1 chấm (3 lần)", "Mặt 6 chấm", "Mặt 3 chấm", "Mặt 2 chấm"], answer: 0 },
+        { question: "Gieo 2 đồng xu 25 lần, kết quả nào xuất hiện nhiều nhất?", options: ["Một mặt sấp, một mặt ngửa (12 lần)", "Hai mặt sấp", "Hai mặt ngửa", "Bằng nhau"], answer: 0 },
+        { question: "Tỉ số phần trăm của 'Hai mặt sấp' (7/25) là?", options: ["28%", "24%", "48%", "30%"], answer: 0 },
+        { question: "Tỉ số phần trăm của 'Hai mặt ngửa' (6/25) là?", options: ["24%", "28%", "48%", "25%"], answer: 0 },
+        { question: "Tỉ số phần trăm của 'Một mặt sấp, một mặt ngửa' (12/25) là?", options: ["48%", "50%", "40%", "28%"], answer: 0 },
+        { question: "Hai mặt nào có số lần xuất hiện bằng nhau trên bảng xúc xắc?", options: ["Mặt 6 và 3 (4 lần), Mặt 5 và 2 (6 lần)", "Mặt 1 và 4", "Mặt 2 và 3", "Không có mặt nào"], answer: 0 },
+        { question: "Tối đa tổng số chấm của 2 con xúc xắc là bao nhiêu?", options: ["12", "13", "14", "6"], answer: 0 },
+        { question: "Tối thiểu tổng số chấm của 2 con xúc xắc là bao nhiêu?", options: ["2", "1", "0", "3"], answer: 0 },
+        { question: "Tổng tỉ số phần trăm của 3 khả năng gieo đồng xu là?", options: ["100%", "90%", "95%", "80%"], answer: 0 }
     ]
 };
 
-// --- Logic Functions ---
-window.check_171_1 = () => {
-    const a = document.getElementById('171-1-a').value;
-    const b = document.getElementById('171-1-b').value;
-    const c = document.getElementById('171-1-c').value;
+window.lesson171 = lesson171;
 
-    let score = 0;
-    if (a === 'chac-chan') score++;
-    if (b === 'khong-the') score++;
-    if (c === 'chac-chan') score++;
-
-    const isCorrect = score === 3;
-    const rightAnswer = "a) chắc chắn, b) không thể, c) chắc chắn";
-    const studentAnswer = `a) ${a || '?'}, b) ${b || '?'}, c) ${c || '?'}`;
-    const guidance = "Em hãy xem xét số lượng bóng đỏ (3) và bóng vàng (2). Nếu lấy 4 quả, dù có lấy hết bóng vàng (2 quả) thì vẫn phải lấy thêm ít nhất bao nhiêu quả bóng đỏ? Từ đó suy ra câu trả lời.";
-    const solution = `
-        <b>Lời giải chi tiết:</b><br>
-        Trong túi có 3 bóng đỏ và 2 bóng vàng. Lấy ngẫu nhiên 4 quả bóng.<br>
-        - a) Vì chỉ có 2 quả bóng vàng, nên khi lấy 4 quả, chắc chắn phải có ít nhất 2 quả bóng đỏ (Trường hợp ít bóng đỏ nhất là 2 đỏ + 2 vàng). Vậy là <b>chắc chắn</b>.<br>
-        - b) Vì trong túi chỉ có 2 quả bóng vàng, nên việc lấy được 4 quả bóng vàng là <b>không thể</b>.<br>
-        - c) Theo câu a, ít nhất phải lấy được 2 quả bóng đỏ, nên việc lấy được ít nhất 1 quả bóng đỏ là việc <b>chắc chắn</b>.<br>
-        Đáp án: a) chắc chắn, b) không thể, c) chắc chắn.<br>
-        Em có tư duy về xác suất rất tốt!
-    `;
-
-    window.showMathFeedback(isCorrect, rightAnswer, studentAnswer, guidance, solution);
-    if (window.submitMathLesson) {
-        window.submitMathLesson("Bài 1. Chọn quả bóng", Math.round(score / 3 * 100), "btn-check-171-1", 0, 3, score);
-    }
+window.check_171_1 = function() {
+    const checks = [
+        {id:'171-1-1', ans:['Có thể']},
+        {id:'171-1-2', ans:['Không thể']},
+        {id:'171-1-3', ans:['Chắc chắn']},
+    ];
+    let correct = 0;
+    checks.forEach(c => {
+        const el = document.getElementById(c.id);
+        if (!el) return;
+        if (c.ans.includes(el.value)) { el.classList.add('bg-green-100','border-green-500'); el.classList.remove('bg-red-100','border-red-500'); correct++; }
+        else { el.classList.add('bg-red-100','border-red-500'); el.classList.remove('bg-green-100','border-green-500'); }
+    });
+    const isCorrect = correct === checks.length;
+    window.showMathFeedback(isCorrect,
+        "a) Có thể<br>b) Không thể<br>c) Chắc chắn",
+        "",
+        "Gợi ý: a) Có thể chẵn hoặc lẻ. b) Tổng tối đa là 6+6=12 nên không thể là 13. c) Tổng luôn từ 2 đến 12 nên chắc chắn.",
+        "a) Có thể.<br>b) Không thể.<br>c) Chắc chắn.<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 1. Khả năng gieo xúc xắc", Math.round(correct/checks.length*100), "btn-check-171-1", 0, checks.length, correct);
 };
 
-window.check_171_2 = (id, expected) => {
-    const isCorrect = expected;
-    const rightAnswer = expected ? "ĐÚNG" : "SAI";
-    const studentAnswer = expected ? "ĐÚNG" : "SAI"; // Mocking since it's a direct button click
-
-    let guidance = "";
-    let solution = "";
-
-    if (id === '1') {
-        guidance = "Con xúc xắc có các mặt 1, 2, 3, 4, 5, 6. Em xem trong đó có số lẻ không nhé.";
-        solution = `
-            <b>Lời giải chi tiết:</b><br>
-            Các mặt của xúc xắc là {1, 2, 3, 4, 5, 6}. Trong đó các số lẻ là {1, 3, 5}.<br>
-            Do đó, việc xuất hiện số chấm là số lẻ là việc <b>có thể</b> xảy ra.<br>
-            Khẳng định là ĐÚNG.
-        `;
-    } else if (id === '2') {
-        guidance = "Con xúc xắc thông thường chỉ có tối đa mấy chấm nhỉ?";
-        solution = `
-            <b>Lời giải chi tiết:</b><br>
-            Xúc xắc 6 mặt chỉ có số chấm từ 1 đến 6. Không có mặt nào có 7 chấm.<br>
-            Do đó, việc số chấm bằng 7 là <b>không thể</b>.<br>
-            Khẳng định "Số chấm bằng 7 là có thể" là SAI.
-        `;
-    } else if (id === '3') {
-        guidance = "Tất cả các số từ 1 đến 6 có nhỏ hơn 7 không em?";
-        solution = `
-            <b>Lời giải chi tiết:</b><br>
-            Tất cả các mặt {1, 2, 3, 4, 5, 6} đều nhỏ hơn 7.<br>
-            Do đó, việc số chấm nhỏ hơn 7 là việc luôn luôn xảy ra, tức là <b>chắc chắn</b>.<br>
-            Khẳng định là ĐÚNG.
-        `;
-    }
-
-    window.showMathFeedback(isCorrect, rightAnswer, studentAnswer, guidance, solution);
-    if (window.submitMathLesson) {
-        window.submitMathLesson("Bài 2. Xúc xắc (Câu " + id + ")", isCorrect ? 100 : 0, "lesson171_b2", 0, 1, isCorrect ? 1 : 0);
-    }
+window.check_171_2 = function() {
+    const c1 = document.getElementById('chk-171-2-1')?.checked;
+    const c2 = document.getElementById('chk-171-2-2')?.checked;
+    const c3 = document.getElementById('chk-171-2-3')?.checked;
+    const c4 = document.getElementById('chk-171-2-4')?.checked;
+    const isCorrect = (c1 && c2 && c3 && !c4);
+    window.showMathFeedback(isCorrect,
+        "Các khả năng có thể xảy ra: 2 đỏ 1 xanh; 1 đỏ 2 xanh; 3 xanh",
+        "",
+        "Gợi ý: Chỉ có 2 quả bóng đỏ nên không thể lấy ra 3 quả bóng đỏ.",
+        "Chỉ có 2 bóng đỏ nên KHÔNG THỂ bốc được 3 bóng đỏ.<br>Các trường hợp đúng: 2 đỏ 1 xanh, 1 đỏ 2 xanh, 3 xanh.<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 2. Bốc bóng từ hộp", isCorrect?100:0, "btn-check-171-2", 0, 1, isCorrect?1:0);
 };
 
-window.check_171_3 = (choice) => {
-    const isCorrect = choice === 'C';
-    const rightAnswer = "C. Tổng 2 số bằng 20";
-    const studentAnswer = choice;
-    const guidance = "Em hãy tìm tổng lớn nhất của hai thẻ bất kỳ trong bộ (2, 3, 5, 7, 8). Nếu tổng lớn nhất vẫn nhỏ hơn 20 thì việc có tổng bằng 20 là gì?";
-    const solution = `
-        <b>Lời giải chi tiết:</b><br>
-        Các thẻ số là: 2, 3, 5, 7, 8.<br>
-        - A. 2 + 3 = 5 (Có thể)<br>
-        - B. 7 + 8 = 15 (Có thể)<br>
-        - C. Hai thẻ có tổng lớn nhất là 7 + 8 = 15. Vì 15 < 20 nên việc lấy được 2 thẻ có tổng bằng 20 là <b>không thể</b>.<br>
-        - D. 3 + 5 = 8 hoặc 7 + 5 = 12 (Số chẵn - Có thể)<br>
-        Vậy khả năng không thể là C.<br>
-        Chúc mừng em đã chọn đúng đáp án!
-    `;
-
-    window.showMathFeedback(isCorrect, rightAnswer, studentAnswer, guidance, solution);
-    if (window.submitMathLesson) {
-        window.submitMathLesson("Bài 3. Lấy thẻ số", isCorrect ? 100 : 0, "lesson171_b3", 0, 1, isCorrect ? 1 : 0);
-    }
+window.check_171_3 = function() {
+    const checks = [
+        {id:'171-3-1', ans:['6']},
+        {id:'171-3-2', ans:['4']},
+        {id:'171-3-3', ans:['1']},
+    ];
+    let correct = 0;
+    checks.forEach(c => {
+        const el = document.getElementById(c.id);
+        if (!el) return;
+        const v = el.value.trim();
+        if (c.ans.includes(v)) { el.classList.add('bg-green-100','border-green-500'); el.classList.remove('bg-red-100','border-red-500'); correct++; }
+        else { el.classList.add('bg-red-100','border-red-500'); el.classList.remove('bg-green-100','border-green-500'); }
+    });
+    const isCorrect = correct === checks.length;
+    window.showMathFeedback(isCorrect,
+        "a) 6 lần<br>b) Nhiều nhất: Mặt 4 chấm; Ít nhất: Mặt 1 chấm",
+        "",
+        "Gợi ý: Đếm số vạch kiểm đếm từng mặt. Mặt 4 có 7 lần (nhiều nhất), Mặt 1 có 3 lần (ít nhất).",
+        "a) Mặt 5 có 6 lần.<br>b) Nhiều nhất: Mặt 4 chấm. Ít nhất: Mặt 1 chấm.<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 3. Thống kê gieo xúc xắc", Math.round(correct/checks.length*100), "btn-check-171-3", 0, checks.length, correct);
 };
 
-window.check_171_4 = () => {
-    const v1 = document.getElementById('171-4-1').value.trim().toLowerCase();
-    const v2 = document.getElementById('171-4-2').value.trim().toLowerCase();
-
-    let score = 0;
-    if (v1 === 'khong the' || v1 === 'không thể') score++;
-    if (v2 === 'chac chan' || v2 === 'chắc chắn') score++;
-
-    const isCorrect = score === 2;
-    const rightAnswer = "Không thể, Chắc chắn";
-    const studentAnswer = `Màu đỏ: ${v1 || '?'}, Có chữ: ${v2 || '?'}`;
-    const guidance = "Em hãy quan sát vòng quay: Có phần nào màu đỏ không? Tất cả các phần có chứa chữ không? Từ đó em sẽ biết khả năng xảy ra là gì.";
-    const solution = `
-        <b>Lời giải chi tiết:</b><br>
-        Quan sát vòng quay trong hình:<br>
-        - Không có phần nào được tô màu đỏ. Vậy dừng ở phần màu đỏ là <b>không thể</b>.<br>
-        - Tất cả các phần (Vàng, Xanh, Cam...) đều có viết chữ trên đó. Vậy dừng ở phần có chữ là việc <b>chắc chắn</b>.<br>
-        Đáp án: Không thể, Chắc chắn.<br>
-        Em quan sát hình ảnh rất kỹ đấy! Rất tốt.
-    `;
-
-    window.showMathFeedback(isCorrect, rightAnswer, studentAnswer, guidance, solution);
-    if (window.submitMathLesson) {
-        window.submitMathLesson("Bài 4. Quay vòng quay", Math.round(score / 2 * 100), "btn-check-171-4", 0, 2, score);
-    }
+window.check_171_4 = function() {
+    const checks = [
+        {id:'171-4-1', ans:['Một mặt sấp, một mặt ngửa']},
+        {id:'171-4-2', ans:['Hai mặt ngửa']},
+        {id:'171-4-p1', ans:['28%','28']},
+        {id:'171-4-p2', ans:['24%','24']},
+        {id:'171-4-p3', ans:['48%','48']},
+    ];
+    let correct = 0;
+    checks.forEach(c => {
+        const el = document.getElementById(c.id);
+        if (!el) return;
+        const v = el.value.trim().replace(/\s/g,'');
+        if (c.ans.some(a => a.replace(/\s/g,'') === v)) { el.classList.add('bg-green-100','border-green-500'); el.classList.remove('bg-red-100','border-red-500'); correct++; }
+        else { el.classList.add('bg-red-100','border-red-500'); el.classList.remove('bg-green-100','border-green-500'); }
+    });
+    const isCorrect = correct === checks.length;
+    window.showMathFeedback(isCorrect,
+        "a) Nhiều nhất: Một sấp, một ngửa; Ít nhất: Hai mặt ngửa<br>b) Sấp-Sấp: 28%, Ngửa-Ngửa: 24%, Sấp-Ngửa: 48%",
+        "",
+        "Gợi ý: Tỉ số % = số lần : 25 × 100%. (7/25=28%, 6/25=24%, 12/25=48%).",
+        "a) Nhiều nhất: Một sấp một ngửa (12 lần). Ít nhất: Hai mặt ngửa (6 lần).<br>b) Sấp-Sấp: 28%, Ngửa-Ngửa: 24%, Sấp-Ngửa: 48%.<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 4. Gieo hai đồng xu", Math.round(correct/checks.length*100), "btn-check-171-4", 0, checks.length, correct);
 };
 
+import './logic.js';
