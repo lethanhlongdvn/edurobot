@@ -1,5 +1,5 @@
 import { lesson120C as dataObj } from './data.js';
-import './logic.js';
+// import './logic.js';
 
 export const lesson120C = {
     ...dataObj

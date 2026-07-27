@@ -248,4 +248,4 @@ window.check_165_4 = function() {
     if (window.submitMathLesson) window.submitMathLesson("Bài 4. Tăng cạnh HLP", isCorrect?100:0, "btn-check-165-4", 0, 1, isCorrect?1:0);
 };
 
-import './logic.js';
+// import './logic.js';

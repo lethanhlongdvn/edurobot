@@ -341,4 +341,4 @@ window.check_174_4 = function() {
     if (window.submitMathLesson) window.submitMathLesson("Bài 4. Thống kê Sea Games 31", Math.round(correct/checks.length*100), "btn-check-174-4", 0, checks.length, correct);
 };
 
-import './logic.js';
+// import './logic.js';

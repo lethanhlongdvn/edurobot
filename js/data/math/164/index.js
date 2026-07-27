@@ -355,4 +355,4 @@ window.check_164_5 = function() {
     if (window.submitMathLesson) window.submitMathLesson("Bài 5. Rô-bốt sơn khối lập phương", isCorrect?100:0, "btn-check-164-5", 0, 1, isCorrect?1:0);
 };
 
-import './logic.js';
+// import './logic.js';

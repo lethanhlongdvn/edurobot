@@ -230,4 +230,4 @@ window.check_161_4 = function() {
     if (window.submitMathLesson) window.submitMathLesson("Bài 4. Lãi suất tiết kiệm", isCorrect?100:0, "btn-check-161-4", 0, 1, isCorrect?1:0);
 };
 
-import './logic.js';
+// import './logic.js';

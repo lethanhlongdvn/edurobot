@@ -5,7 +5,7 @@
 
 import { lesson99Data } from './data.js';
 import { lesson99Presentation } from './presentation.js';
-import './logic.js';
+// import './logic.js';
 
 export const lesson99 = {
     "topic": "Tỉ số phần trăm",

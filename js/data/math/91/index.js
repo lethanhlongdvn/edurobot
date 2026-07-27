@@ -5,7 +5,7 @@
 
 import { lesson91Data } from './data.js';
 import { lesson91Presentation } from './presentation.js';
-import './logic.js';
+// import './logic.js';
 
 const metadata = {
     "lessonInfo": {

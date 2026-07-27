@@ -326,4 +326,4 @@ window.check_171_4 = function() {
     if (window.submitMathLesson) window.submitMathLesson("Bài 4. Gieo hai đồng xu", Math.round(correct/checks.length*100), "btn-check-171-4", 0, checks.length, correct);
 };
 
-import './logic.js';
+// import './logic.js';

@@ -391,4 +391,4 @@ window.check_170_4 = function() {
     if (window.submitMathLesson) window.submitMathLesson("Bài 4. Khán giả bóng đá", Math.round(correct/checks.length*100), "btn-check-170-4", 0, checks.length, correct);
 };
 
-import './logic.js';
+// import './logic.js';

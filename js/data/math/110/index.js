@@ -5,7 +5,7 @@
 
 import { lesson110Data } from './data.js';
 import { lesson110Presentation } from './presentation.js';
-import './logic.js';
+// import './logic.js';
 
 export const lesson110 = {
     "topic": "Hình học và Đo lường",

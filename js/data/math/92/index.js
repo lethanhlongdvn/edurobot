@@ -5,7 +5,7 @@
 
 import { lesson92Data } from './data.js';
 import { lesson92Presentation } from './presentation.js';
-import './logic.js';
+// import './logic.js';
 
 export const lesson92 = {
     "topic": "Tỉ số và các bài toán liên quan",

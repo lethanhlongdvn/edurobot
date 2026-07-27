@@ -400,4 +400,4 @@ window.check_172_5 = function() {
     if (window.submitMathLesson) window.submitMathLesson("Bài 5. Chiều cao Rô-bốt và so sánh", isCorrect?100:0, "btn-check-172-5", 0, 1, isCorrect?1:0);
 };
 
-import './logic.js';
+// import './logic.js';

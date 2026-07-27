@@ -207,4 +207,4 @@ window.check_175_4 = function() {
     if (window.submitMathLesson) window.submitMathLesson("Bài 4. Mật độ dân số", isCorrect?100:0, "btn-check-175-4", 0, 1, isCorrect?1:0);
 };
 
-import './logic.js';
+// import './logic.js';

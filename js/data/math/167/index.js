@@ -434,4 +434,4 @@ window.check_167_5 = function() {
     if (window.submitMathLesson) window.submitMathLesson("Bài 5. Đố em mấy giờ", isCorrect?100:0, "btn-check-167-5", 0, 1, isCorrect?1:0);
 };
 
-import './logic.js';
+// import './logic.js';

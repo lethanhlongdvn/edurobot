@@ -214,4 +214,4 @@ window.check_169_4 = function() {
     if (window.submitMathLesson) window.submitMathLesson("Bài 4. Tàu qua cầu Long Biên", isCorrect?100:0, "btn-check-169-4", 0, 1, isCorrect?1:0);
 };
 
-import './logic.js';
+// import './logic.js';

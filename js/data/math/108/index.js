@@ -5,7 +5,7 @@
 
 import { lesson108Data } from './data.js';
 import { lesson108Presentation } from './presentation.js';
-import './logic.js';
+// import './logic.js';
 
 export const lesson108 = {
     "topic": "Thể tích của một hình",

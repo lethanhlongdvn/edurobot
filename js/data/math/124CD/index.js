@@ -2,7 +2,7 @@
 // Gom các phần của bài 124CD thành một object duy nhất
 
 import './cube3d.js';
-import './logic.js';
+// import './logic.js';
 import { lesson124CDContent, lesson124CDPractice, lesson124CDQuizPool } from './data.js';
 import { lesson124CDPresentation } from './presentation.js';
 

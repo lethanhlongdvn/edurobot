@@ -6,7 +6,7 @@
 
 import { lessonTemplateContent, lessonTemplatePractice, lessonTemplateQuizPool } from './data.js';
 import { lessonTemplatePresentation } from './presentation.js';
-import './logic.js'; // Nạp logic để đăng ký các hàm window
+// import './logic.js'; // Nạp logic để đăng ký các hàm window
 
 export const lessonTemplate = {
     id: "standard_math_template",

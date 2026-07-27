@@ -351,4 +351,4 @@ window.check_173_5 = function() {
     if (window.submitMathLesson) window.submitMathLesson("Bài 5. Thời gian & Hình học", isCorrect?100:0, "btn-check-173-5", 0, 1, isCorrect?1:0);
 };
 
-import './logic.js';
+// import './logic.js';
