@@ -1,259 +1,204 @@
 export const lesson168 = {
     period: "168",
     title: "BÀI 73: ÔN TẬP TOÁN CHUYỂN ĐỘNG ĐỀU (TIẾT 1)",
-    topic: "Ôn tập chuyển động đều",
+    topic: "Ôn tập vận tốc, quãng đường, thời gian",
     week: "34",
 
-    content: `
-        <div class="space-y-6">
-            <div class="bg-blue-50 p-8 rounded-[3rem] border-4 border-blue-200 shadow-2xl">
-                <h3 class="text-3xl md:text-5xl font-black text-blue-700 mb-6 uppercase text-center tracking-tight">ÔN TẬP CHUYỂN ĐỘNG ĐỀU (TIẾT 1)</h3>
-                <div class="space-y-4 text-xl md:text-3xl text-gray-800 leading-relaxed font-bold">
-                    <p class="uppercase text-blue-600 border-b-4 border-blue-200 pb-2 text-center">Các công thức cơ bản</p>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-                        <div class="p-6 bg-white rounded-3xl shadow-xl border-t-8 border-blue-500 text-center">
-                            <h4 class="font-black text-blue-600 text-2xl md:text-4xl mb-3">s = v x t</h4>
-                            <p class="text-lg md:text-xl text-gray-500 uppercase">Quãng đường</p>
-                        </div>
-                        <div class="p-6 bg-white rounded-3xl shadow-xl border-t-8 border-orange-500 text-center">
-                            <h4 class="font-black text-orange-600 text-2xl md:text-4xl mb-3">v = s : t</h4>
-                            <p class="text-lg md:text-xl text-gray-500 uppercase">Vận tốc</p>
-                        </div>
-                        <div class="p-6 bg-white rounded-3xl shadow-xl border-t-8 border-green-500 text-center">
-                            <h4 class="font-black text-green-600 text-2xl md:text-4xl mb-3">t = s : v</h4>
-                            <p class="text-lg md:text-xl text-gray-500 uppercase">Thời gian</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    `,
-
     practice: `
-        <div class="space-y-12 pb-10">
-            <!-- Bài 1 -->
-            <div id="lesson168_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500 relative overflow-hidden">
-                <div class="flex items-center gap-6 mb-8">
-                    <div class="w-20 h-20 flex-shrink-0 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg rotate-3">1</div>
-                    <h3 class="text-2xl md:text-4xl font-black text-blue-800 uppercase tracking-wide">Bài 1. Điền vào ô trống</h3>
-                </div>
-                
-                <div class="overflow-x-auto p-4 bg-blue-50 rounded-[3rem] border-2 border-blue-100">
-                    <table class="w-full border-collapse bg-white rounded-3xl overflow-hidden shadow-xl">
-                        <thead>
-                            <tr class="bg-blue-500 text-white text-xl md:text-2xl">
-                                <th class="p-6 border-2 border-blue-200 uppercase">v</th>
-                                <th class="p-6 border-2 border-blue-200 uppercase">t</th>
-                                <th class="p-6 border-2 border-blue-200 uppercase">s</th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-2xl md:text-3xl font-black text-gray-700">
-                            <tr>
-                                <td class="p-6 border-2 border-blue-100 text-center">32,5 km/giờ</td>
-                                <td class="p-6 border-2 border-blue-100 text-center">4 giờ</td>
-                                <td class="p-6 border-2 border-blue-100 text-center">
-                                    <div class="flex items-center justify-center gap-2">
-                                        <input id="168-1-1" type="text" class="w-32 h-14 text-center border-4 border-blue-400 rounded-xl outline-none" placeholder="?">
-                                        <span class="text-xl text-gray-400 uppercase">km</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="bg-blue-50">
-                                <td class="p-6 border-2 border-blue-100 text-center">210 m/phút</td>
-                                <td class="p-6 border-2 border-blue-100 text-center">7 phút</td>
-                                <td class="p-6 border-2 border-blue-100 text-center">
-                                    <div class="flex items-center justify-center gap-2">
-                                        <input id="168-1-2" type="text" class="w-32 h-14 text-center border-4 border-blue-400 rounded-xl outline-none" placeholder="?">
-                                        <span class="text-xl text-gray-400 uppercase">m</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="p-6 border-2 border-blue-100 text-center">36 km/giờ</td>
-                                <td class="p-6 border-2 border-blue-100 text-center">40 phút</td>
-                                <td class="p-6 border-2 border-blue-100 text-center">
-                                    <div class="flex items-center justify-center gap-2">
-                                        <input id="168-1-3" type="text" class="w-32 h-14 text-center border-4 border-blue-400 rounded-xl outline-none" placeholder="?">
-                                        <span class="text-xl text-gray-400 uppercase">km</span>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+        <div class="space-y-10 pb-10">
 
-                <div class="flex justify-end mt-10">
-                    <button id="btn-check-168-1" onclick="window.check_168_1()" class="w-24 h-24 bg-[#ff7b29] text-white rounded-3xl font-black text-4xl md:text-5xl shadow-[0_10px_0_0_#c45a1d] hover:translate-y-1 hover:shadow-[0_6px_0_0_#c45a1d] active:translate-y-2 active:shadow-none transition-all flex items-center justify-center">E</button>
-                </div>
-            </div>
-
-            <!-- Bài 2 -->
-            <div id="lesson168_b2" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-orange-500 relative overflow-hidden">
-                <div class="flex items-center gap-6 mb-8">
-                    <div class="w-20 h-20 flex-shrink-0 bg-orange-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg -rotate-2">2</div>
-                    <h3 class="text-2xl md:text-4xl font-black text-orange-800 uppercase tracking-wide">Bài 2. Quãng đường ô tô đi được</h3>
-                </div>
-                
-                <div class="p-8 bg-orange-50 rounded-[2.5rem] border-2 border-orange-100 flex flex-col md:flex-row gap-8 items-center">
-                    <div class="flex-1 space-y-6">
-                        <p class="text-2xl md:text-3xl text-gray-700 leading-relaxed font-bold">
-                            Một ô tô đi từ Hà Nội lúc <span class="text-orange-600">6 giờ 15 phút</span> và đến Hải Phòng lúc <span class="text-orange-600">8 giờ 45 phút</span>. 
-                            Biết xe nghỉ giữa đường <span class="text-rose-600 font-black">15 phút</span> và vận tốc ô tô là <span class="text-orange-600">45 km/giờ</span>. 
-                            <br><br>
-                            Tính quãng đường từ Hà Nội đến Hải Phòng?
-                        </p>
-                        
-                        <div class="flex items-center gap-6 bg-white p-6 rounded-3xl shadow-xl border-4 border-orange-400">
-                            <span class="text-xl md:text-3xl font-black text-gray-700 uppercase">QUÃNG ĐƯỜNG:</span>
-                            <div class="flex items-center gap-3">
-                                <input id="168-2-1" type="text" class="w-40 h-20 text-center text-4xl md:text-5xl font-black border-4 border-orange-500 rounded-2xl outline-none text-orange-700 shadow-inner" placeholder="...">
-                                <span class="text-2xl md:text-3xl font-black text-orange-600">KM</span>
-                            </div>
-                        </div>
+            <!-- Bài 1: Việt chạy 360m trong 3 phút -->
+            <div id="lesson168_b1" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-blue-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">1</div>
+                    <div>
+                        <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-blue-100 text-blue-800 font-black rounded text-sm">Số ?</span>
+                        <h3 class="text-xl md:text-2xl font-black text-blue-700 mt-1">Bài 1. Vận tốc chạy của Việt</h3>
                     </div>
                 </div>
-
-                <div class="flex justify-end mt-10">
-                    <button id="btn-check-168-2" onclick="window.check_168_2()" class="w-24 h-24 bg-[#ff7b29] text-white rounded-3xl font-black text-4xl md:text-5xl shadow-[0_10px_0_0_#c45a1d] hover:translate-y-1 hover:shadow-[0_6px_0_0_#c45a1d] active:translate-y-2 active:shadow-none transition-all flex items-center justify-center">E</button>
-                </div>
-            </div>
-
-            <!-- Bài 3 -->
-            <div id="lesson168_b3" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-green-500 relative overflow-hidden">
-                <div class="flex items-center gap-6 mb-8">
-                    <div class="w-20 h-20 flex-shrink-0 bg-green-600 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg rotate-1">3</div>
-                    <h3 class="text-2xl md:text-4xl font-black text-green-800 uppercase tracking-wide">Bài 3. Quãng đường chim đại bàng bay</h3>
-                </div>
-                
-                <div class="p-8 bg-green-50 rounded-[2.5rem] border-2 border-green-100 flex flex-col items-center gap-8">
-                    <p class="text-2xl md:text-3xl text-gray-700 leading-relaxed font-bold text-center">
-                        Một con chim đại bàng bay với vận tốc <span class="text-green-700 font-black">96 km/giờ</span>. 
-                        Tính quãng đường con chim đó bay được trong <span class="text-green-700 font-black">72 phút</span>.
+                <div class="bg-blue-50 p-5 rounded-2xl border border-blue-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Buổi sáng, Việt chạy quãng đường dài <span class="font-black text-blue-700">360 m</span> trong <span class="font-black text-blue-700">3 phút</span>. Như vậy:
                     </p>
-                    
-                    <div class="flex items-center gap-6 bg-white p-10 rounded-[3rem] shadow-2xl border-4 border-emerald-400 transform transition-all hover:scale-105">
-                        <span class="text-xl md:text-3xl font-black text-gray-700 uppercase">QUÃNG ĐƯỜNG:</span>
-                        <div class="flex items-center gap-4">
-                            <input id="168-3-1" type="text" class="w-56 h-24 text-center text-5xl md:text-6xl font-black border-4 border-emerald-500 rounded-3xl outline-none text-emerald-700 shadow-inner" placeholder="...">
-                            <span class="text-3xl md:text-4xl font-black text-emerald-600 uppercase">KM</span>
+                    <div class="space-y-3 font-bold text-lg">
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span>a) Vận tốc chạy của Việt là:</span>
+                            <input id="168-1-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>km/h.</span>
+                        </div>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span>b) Vận tốc chạy của Việt là:</span>
+                            <input id="168-1-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span>m/s.</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="flex justify-end mt-10">
-                    <button id="btn-check-168-3" onclick="window.check_168_3()" class="w-24 h-24 bg-[#ff7b29] text-white rounded-3xl font-black text-4xl md:text-5xl shadow-[0_10px_0_0_#c45a1d] hover:translate-y-1 hover:shadow-[0_6px_0_0_#c45a1d] active:translate-y-2 active:shadow-none transition-all flex items-center justify-center">E</button>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-168-1').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-168-1" onclick="window.check_168_1()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-168-1" class="hidden bg-blue-50 p-4 rounded-2xl border border-blue-200 text-lg font-bold text-blue-900 space-y-1">
+                    <p>b) 3 phút = 180 giây. Vận tốc theo m/s: 360 : 180 = <span class="text-emerald-700">2 m/s</span></p>
+                    <p>a) 360 m = 0,36 km, 3 phút = 0,05 giờ. Vận tốc theo km/h: 0,36 : 0,05 = <span class="text-emerald-700">7,2 km/h</span> (hoặc 2 × 3,6 = 7,2 km/h)</p>
                 </div>
             </div>
+
+            <!-- Bài 2: Hầm Thủ Thiêm -->
+            <div id="lesson168_b2" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-emerald-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">2</div>
+                    <h3 class="text-xl md:text-2xl font-black text-emerald-700">Bài 2. Đường hầm Thủ Thiêm</h3>
+                </div>
+                <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Đường hầm Thủ Thiêm vượt sông Sài Gòn có chiều dài <span class="font-black text-blue-700">1,49 km</span>. Một người đi xe máy vào cửa hầm lúc <span class="font-black text-blue-700">8 giờ 18 phút</span>, ra khỏi cửa hầm lúc <span class="font-black text-blue-700">8 giờ 21 phút</span>. Tính vận tốc của người đi xe máy.
+                    </p>
+                    <img src="assets/images/toan/toan_tap_2/168/168-2-ham-thu-thiem.png" class="max-w-[500px] w-full mx-auto rounded-2xl shadow-lg border-4 border-white" alt="Đường hầm Thủ Thiêm">
+                    <div class="flex items-center gap-3 flex-wrap font-bold text-lg">
+                        <span class="text-gray-700">Vận tốc của người đi xe máy:</span>
+                        <input id="168-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-32 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?">
+                        <span>km/h</span>
+                    </div>
+                </div>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-168-2').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-168-2" onclick="window.check_168_2()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-168-2" class="hidden bg-emerald-50 p-4 rounded-2xl border border-emerald-200 text-lg font-bold text-emerald-900 space-y-1">
+                    <p>Thời gian đi qua hầm: 8 giờ 21 phút − 8 giờ 18 phút = 3 phút = 0,05 giờ.</p>
+                    <p>Vận tốc của xe máy: 1,49 : 0,05 = <span class="text-blue-700">29,8 km/h</span></p>
+                    <p>Chúc mừng em đã giải đúng!</p>
+                </div>
+            </div>
+
+            <!-- Bài 3: Hà Nội - Thanh Hoá -->
+            <div id="lesson168_b3" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-amber-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-amber-500 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">3</div>
+                    <h3 class="text-xl md:text-2xl font-black text-amber-700">Bài 3. Chuyến xe Hà Nội – Thanh Hoá</h3>
+                </div>
+                <div class="bg-amber-50 p-5 rounded-2xl border border-amber-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Quãng đường Hà Nội – Thanh Hoá dài <span class="font-black text-blue-700">156 km</span>. Một ô tô khởi hành từ Hà Nội lúc <span class="font-black text-blue-700">8 giờ 30 phút</span> với vận tốc <span class="font-black text-blue-700">60 km/h</span>. Hỏi ô tô đó đến Thanh Hoá lúc mấy giờ?
+                    </p>
+                    <div class="flex items-center gap-3 flex-wrap font-bold text-lg">
+                        <span class="text-gray-700">Ô tô đến Thanh Hoá lúc:</span>
+                        <input id="168-3-h" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="?">
+                        <span>giờ</span>
+                        <input id="168-3-m" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-20 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="?">
+                        <span>phút</span>
+                    </div>
+                </div>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-168-3').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-168-3" onclick="window.check_168_3()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-168-3" class="hidden bg-amber-50 p-4 rounded-2xl border border-amber-200 text-lg font-bold text-amber-900 space-y-1">
+                    <p>Thời gian ô tô đi: 156 : 60 = 2,6 giờ = 2 giờ 36 phút.</p>
+                    <p>Ô tô đến Thanh Hoá lúc: 8 giờ 30 phút + 2 giờ 36 phút = <span class="text-emerald-700">11 giờ 6 phút</span></p>
+                    <p>Chúc mừng em đã giải đúng!</p>
+                </div>
+            </div>
+
+            <!-- Bài 4: Lớp của Mai đi tham quan -->
+            <div id="lesson168_b4" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-rose-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-rose-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">4</div>
+                    <h3 class="text-xl md:text-2xl font-black text-rose-700">Bài 4. Lớp Mai đi tham quan</h3>
+                </div>
+                <div class="bg-rose-50 p-5 rounded-2xl border border-rose-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Lớp của Mai đi tham quan, ô tô khởi hành từ trường lúc <span class="font-black text-blue-700">7 giờ 45 phút</span> và đến địa điểm tham quan lúc <span class="font-black text-blue-700">9 giờ 15 phút</span> cùng ngày. Biết rằng ô tô đi với vận tốc là <span class="font-black text-blue-700">42 km/h</span>. Hỏi quãng đường từ trường đến địa điểm tham quan dài bao nhiêu ki-lô-mét?
+                    </p>
+                    <div class="flex items-center gap-3 flex-wrap font-bold text-lg">
+                        <span class="text-gray-700">Quãng đường từ trường đến địa điểm tham quan:</span>
+                        <input id="168-4" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-32 h-10 text-center border-2 border-rose-300 rounded-xl font-bold outline-none" placeholder="?">
+                        <span>km</span>
+                    </div>
+                </div>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-168-4').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-168-4" onclick="window.check_168_4()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-168-4" class="hidden bg-rose-50 p-4 rounded-2xl border border-rose-200 text-lg font-bold text-rose-900 space-y-1">
+                    <p>Thời gian ô tô đi: 9 giờ 15 phút − 7 giờ 45 phút = 1 giờ 30 phút = 1,5 giờ.</p>
+                    <p>Quãng đường: 42 × 1,5 = <span class="text-emerald-700">63 km</span></p>
+                    <p>Chúc mừng em đã giải đúng!</p>
+                </div>
+            </div>
+
         </div>
     `,
 
     quizPool: [
-        { question: "Công thức tính quãng đường s khi biết v và t là:", options: ["s = v × t", "s = v : t", "s = t : v", "s = v + t"], answer: 0 },
-        { question: "Đổi 40 phút ra giờ (dạng phân số tối giản) là:", options: ["2/3 giờ", "1/4 giờ", "1/2 giờ", "3/4 giờ"], answer: 0 },
-        { question: "32,5 km/giờ nhân với 4 giờ bằng bao nhiêu km?", options: ["130 km", "120 km", "140 km", "135 km"], answer: 0 },
-        { question: "210 m/phút nhân với 7 phút bằng bao nhiêu mét?", options: ["1470 m", "1400 m", "1500 m", "1200 m"], answer: 0 },
-        { question: "Đổi 1,2 giờ ra phút:", options: ["72 phút", "60 phút", "120 phút", "80 phút"], answer: 0 },
-        { question: "Xe đi từ 6h15 đến 8h45 hết bao lâu (chưa trừ nghỉ)?", options: ["2 giờ 30 phút", "2 giờ", "3 giờ", "2 giờ 15 phút"], answer: 0 },
-        { question: "2 giờ 30 phút trừ đi 15 phút nghỉ còn lại bao nhiêu?", options: ["2 giờ 15 phút", "2 giờ 45 phút", "2 giờ", "1 giờ 45 phút"], answer: 0 },
-        { question: "Đổi 2 giờ 15 phút sang đơn vị giờ (số thập phân):", options: ["2,25 giờ", "2,15 giờ", "2,5 giờ", "2,75 giờ"], answer: 0 },
-        { question: "Vận tốc 45 km/h đi trong 2,25 giờ được quãng đường:", options: ["101,25 km", "100 km", "90 km", "112,5 km"], answer: 0 },
-        { question: "Đổi 72 phút ra giờ:", options: ["1,2 giờ", "1,5 giờ", "0,72 giờ", "1,12 giờ"], answer: 0 },
-        { question: "Chim bay 96 km/h trong 1,2 giờ được bao nhiêu km?", options: ["115,2 km", "100 km", "110 km", "120 km"], answer: 0 },
-        { question: "Vận tốc 5 m/giây đi trong 1 phút được bao nhiêu mét?", options: ["300 m", "5 m", "60 m", "12 m"], answer: 0 },
-        { question: "Quãng đường 18km, vận tốc 12km/h. Thời gian đi là:", options: ["1,5 giờ", "1 giờ", "2 giờ", "0,75 giờ"], answer: 0 },
-        { question: "Một người đi bộ 5km/h trong 15 phút được bao nhiêu mét?", options: ["1250 m", "125 m", "5000 m", "750 m"], answer: 0 },
-        { question: "Vận tốc dòng nước là 2km/h, vận tốc thuyền là 15km/h. Vận tốc xuôi dòng là:", options: ["17 km/h", "13 km/h", "15 km/h", "30 km/h"], answer: 0 },
-        { question: "Vận tốc dòng nước là 2km/h, vận tốc thuyền là 15km/h. Vận tốc ngược dòng là:", options: ["13 km/h", "17 km/h", "15 km/h", "7,5 km/h"], answer: 0 },
-        { question: "Quãng đường AB dài 120km. Xe máy đi hết 3 giờ. Vận tốc xe là:", options: ["40 km/h", "360 km/h", "30 km/h", "50 km/h"], answer: 0 },
-        { question: "Quãng đường 60km, đi với vận tốc 15km/h hết bao lâu?", options: ["4 giờ", "3 giờ", "5 giờ", "2 giờ"], answer: 0 },
-        { question: "Đổi vận tốc 36 km/giờ sang m/giây:", options: ["10 m/giây", "1 m/giây", "360 m/giây", "20 m/giây"], answer: 0 },
-        { question: "Đổi vận tốc 5 m/giây sang km/giờ:", options: ["18 km/giờ", "50 km/giờ", "15 km/giờ", "20 km/giờ"], answer: 0 },
-        { question: "Hai xe đi ngược chiều, vận tốc v1 và v2. Vận tốc chuyển động tương đối là:", options: ["v1 + v2", "v1 - v2", "v1 x v2", "v1 : v2"], answer: 0 },
-        { question: "Hai xe đi cùng chiều, xe sau đuổi xe trước. Vận tốc tương đối là:", options: ["v1 - v2", "v1 + v2", "v1 x v2", "v1 : v2"], answer: 0 },
-        { question: "Trong công thức s = v x t, nếu v tăng 2 lần, t tăng 2 lần thì s tăng:", options: ["4 lần", "2 lần", "1 lần", "16 lần"], answer: 0 },
-        { question: "Đơn vị nào KHÔNG dùng để đo vận tốc?", options: ["km", "km/h", "m/phút", "m/giây"], answer: 0 },
-        { question: "1 giờ 20 phút bằng bao nhiêu phút?", options: ["80 phút", "120 phút", "70 phút", "60 phút"], answer: 0 }
+        { question: "Việt chạy 360 m trong 3 phút (180s). Vận tốc m/s là?", options: ["2 m/s", "120 m/s", "3 m/s", "1,8 m/s"], answer: 0 },
+        { question: "Vận tốc 2 m/s đổi ra km/h bằng bao nhiêu?", options: ["7,2 km/h", "3,6 km/h", "72 km/h", "10,8 km/h"], answer: 0 },
+        { question: "Hầm Thủ Thiêm dài 1,49 km, đi từ 8h18 đến 8h21. Thời gian đi là?", options: ["3 phút (0,05 giờ)", "4 phút", "5 phút", "2 phút"], answer: 0 },
+        { question: "Vận tốc người đi xe máy qua hầm Thủ Thiêm là?", options: ["29,8 km/h", "30 km/h", "28,9 km/h", "29 km/h"], answer: 0 },
+        { question: "Hà Nội - Thanh Hoá 156 km, v = 60 km/h. Thời gian đi là?", options: ["2,6 giờ (2h36p)", "2,5 giờ", "3 giờ", "2h15p"], answer: 0 },
+        { question: "Xuất phát lúc 8h30, đi 2h36p thì ô tô đến Thanh Hoá lúc?", options: ["11 giờ 6 phút", "11 giờ 30 phút", "11 giờ", "10 giờ 56 phút"], answer: 0 },
+        { question: "Thời gian ô tô chở lớp Mai đi tham quan (7h45 đến 9h15) là?", options: ["1,5 giờ (1h30p)", "2 giờ", "1 giờ", "1h45p"], answer: 0 },
+        { question: "Quãng đường ô tô đi tham quan (v = 42 km/h, t = 1,5h) là?", options: ["63 km", "42 km", "84 km", "60 km"], answer: 0 },
+        { question: "Công thức tính vận tốc v là?", options: ["v = s : t", "v = s × t", "v = t : s", "v = s + t"], answer: 0 },
+        { question: "Công thức tính quãng đường s là?", options: ["s = v × t", "s = v : t", "s = t : v", "s = v + t"], answer: 0 },
+        { question: "Công thức tính thời gian t là?", options: ["t = s : v", "t = s × v", "t = v : s", "t = s - v"], answer: 0 },
+        { question: "Đổi m/s sang km/h ta nhân với?", options: ["3,6", "60", "1000", "3600"], answer: 0 },
+        { question: "Đổi km/h sang m/s ta chia cho?", options: ["3,6", "60", "1000", "3600"], answer: 0 },
+        { question: "3 phút = ? giờ", options: ["0,05 giờ", "0,3 giờ", "0,5 giờ", "0,03 giờ"], answer: 0 },
+        { question: "2,6 giờ = ? giờ ? phút", options: ["2 giờ 36 phút", "2 giờ 60 phút", "2 giờ 6 phút", "2 giờ 30 phút"], answer: 0 }
     ]
 };
 
-// --- Logic Functions ---
-window.check_168_1 = () => {
-    const ids = ['168-1-1', '168-1-2', '168-1-3'];
-    const ans = ['130', '1470', '24'];
-    const names = [
-        'Hàng 1: v = 32,5 km/giờ, t = 4 giờ',
-        'Hàng 2: v = 210 m/phút, t = 7 phút',
-        'Hàng 3: v = 36 km/giờ, t = 40 phút'
-    ];
-    let score = 0;
-    let studentAns = [];
-    ids.forEach((id, idx) => {
-        const val = document.getElementById(id).value.trim().replace(',', '.');
-        studentAns.push(`${names[idx]}: s = ${val || '?'}`);
-        if (val === ans[idx]) score++;
-    });
+window.lesson168 = lesson168;
 
-    const isCorrect = score === ids.length;
-    const rightAnswer = "130; 1470; 24";
-    const studentAnswer = studentAns.join('<br>');
-    const guidance = "Em hãy nhớ công thức tính quãng đường: s = v × t. Lưu ý quy đổi các đơn vị đo thời gian và vận tốc cho đồng bộ trước khi tính nhé!";
-    const solution = `
-        <b>Lời giải chi tiết:</b><br>
-        - Hàng 1: s = 32,5 × 4 = 130 (km)<br>
-        - Hàng 2: s = 210 × 7 = 1470 (m)<br>
-        - Hàng 3: Đổi 40 phút = 2/3 giờ. s = 36 × 2/3 = 24 (km)<br>
-        Đáp số: 130; 1470; 24. Em làm rất tốt!
-    `;
-
-    window.showMathFeedback(isCorrect, rightAnswer, studentAnswer, guidance, solution);
-    if (window.submitMathLesson) {
-        window.submitMathLesson("Bài 1. Điền bảng v, t, s", Math.round(score / ids.length * 100), "btn-check-168-1", 0, ids.length, score);
-    }
+window.check_168_1 = function() {
+    const v1 = document.getElementById('168-1-1')?.value.trim().replace(',','.').replace(/\s/g,'') || '';
+    const v2 = document.getElementById('168-1-2')?.value.trim().replace(/\s/g,'') || '';
+    const isCorrect = (v1 === '7.2' || v1 === '7,2') && v2 === '2';
+    window.showMathFeedback(isCorrect,
+        "a) 7,2 km/h<br>b) 2 m/s",
+        "",
+        "Gợi ý: b) 3 phút = 180 giây → v = 360 : 180 = 2 m/s. a) 360m = 0,36km, 3p = 0,05h → v = 0,36 : 0,05 = 7,2 km/h (hoặc 2 × 3,6 = 7,2).",
+        "b) 360 : 180 = 2 m/s.<br>a) 2 × 3,6 = 7,2 km/h.<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 1. Vận tốc của Việt", isCorrect?100:0, "btn-check-168-1", 0, 1, isCorrect?1:0);
 };
 
-window.check_168_2 = () => {
-    const val = document.getElementById('168-2-1').value.trim().replace(',', '.');
-    const isCorrect = val === '101.25';
-
-    const rightAnswer = "101,25";
-    const studentAnswer = val || "?";
-    const guidance = "Em hãy tính thời gian ô tô đi thực tế (Thời gian đến - Thời gian đi - Thời gian nghỉ). Sau đó đổi thời gian ra số thập phân (giờ) rồi tính quãng đường (s = v × t).";
-    const solution = `
-        <b>Lời giải chi tiết:</b><br>
-        Thời gian ô tô đi (nếu không nghỉ) là:<br>
-        8 giờ 45 phút - 6 giờ 15 phút = 2 giờ 30 phút.<br>
-        Thời gian ô tô đi thực tế là:<br>
-        2 giờ 30 phút - 15 phút = 2 giờ 15 phút.<br>
-        Đổi 2 giờ 15 phút = 2,25 giờ.<br>
-        Quãng đường từ Hà Nội đến Hải Phòng là:<br>
-        45 × 2,25 = 101,25 (km)<br>
-        Đáp số: 101,25 km. Rất giỏi!
-    `;
-
-    window.showMathFeedback(isCorrect, rightAnswer, studentAnswer, guidance, solution);
-    if (window.submitMathLesson) {
-        window.submitMathLesson("Bài 2. Quãng đường ô tô", isCorrect ? 100 : 0, "btn-check-168-2", 0, 1, isCorrect ? 1 : 0);
-    }
+window.check_168_2 = function() {
+    const v = document.getElementById('168-2')?.value.trim().replace(',','.').replace(/\s/g,'') || '';
+    const isCorrect = (v === '29.8' || v === '29,8');
+    window.showMathFeedback(isCorrect,
+        "29,8 km/h",
+        "",
+        "Gợi ý: Thời gian = 8h21 − 8h18 = 3 phút = 0,05 giờ. Vận tốc = 1,49 : 0,05 = 29,8 km/h.",
+        "Thời gian: 3 phút = 0,05 giờ.<br>Vận tốc: 1,49 : 0,05 = 29,8 km/h.<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 2. Hầm Thủ Thiêm", isCorrect?100:0, "btn-check-168-2", 0, 1, isCorrect?1:0);
 };
 
-window.check_168_3 = () => {
-    const val = document.getElementById('168-3-1').value.trim().replace(',', '.');
-    const isCorrect = val === '115.2';
-
-    const rightAnswer = "115,2";
-    const studentAnswer = val || "?";
-    const guidance = "Em hãy thực hiện:<br>1. Đổi số đo thời gian từ phút ra đơn vị giờ (bằng cách chia số phút cho 60).<br>2. Áp dụng công thức tính quãng đường: lấy vận tốc nhân với thời gian chạy tương ứng nhé!";
-    const solution = `
-        <b>Lời giải chi tiết:</b><br>
-        Đổi 72 phút = 1,2 giờ.<br>
-        Quãng đường con chim đại bàng bay được là:<br>
-        96 × 1,2 = 115,2 (km)<br>
-        Đáp số: 115,2 km.<br>
-        Em giải bài toán rất chính xác! Chúc mừng em.
-    `;
-
-    window.showMathFeedback(isCorrect, rightAnswer, studentAnswer, guidance, solution);
-    if (window.submitMathLesson) {
-        window.submitMathLesson("Bài 3. Quãng đường đại bàng", isCorrect ? 100 : 0, "btn-check-168-3", 0, 1, isCorrect ? 1 : 0);
-    }
+window.check_168_3 = function() {
+    const v1 = document.getElementById('168-3-h')?.value.trim() || '';
+    const v2 = document.getElementById('168-3-m')?.value.trim() || '';
+    const isCorrect = (v1 === '11' && v2 === '6');
+    window.showMathFeedback(isCorrect,
+        "11 giờ 6 phút",
+        "",
+        "Gợi ý: Thời gian đi = 156 : 60 = 2,6 giờ = 2 giờ 36 phút. Giờ đến = 8h30 + 2h36p = 11h6p.",
+        "Thời gian đi: 156 : 60 = 2,6h = 2h36p.<br>Giờ đến: 8h30 + 2h36 = 11 giờ 6 phút.<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 3. Chuyến xe Hà Nội Thanh Hoá", isCorrect?100:0, "btn-check-168-3", 0, 1, isCorrect?1:0);
 };
+
+window.check_168_4 = function() {
+    const v = document.getElementById('168-4')?.value.trim().replace(/\s/g,'') || '';
+    const isCorrect = v === '63';
+    window.showMathFeedback(isCorrect,
+        "63 km",
+        "",
+        "Gợi ý: Thời gian đi = 9h15 − 7h45 = 1h30p = 1,5 giờ. Quãng đường = 42 × 1,5 = 63 km.",
+        "Thời gian đi: 1,5 giờ.<br>Quãng đường: 42 × 1,5 = 63 km.<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 4. Lớp Mai đi tham quan", isCorrect?100:0, "btn-check-168-4", 0, 1, isCorrect?1:0);
+};
+
+import './logic.js';
