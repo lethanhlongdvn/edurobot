@@ -1,341 +1,257 @@
 export const lesson163 = {
     period: "163",
     title: "BÀI 71: ÔN TẬP HÌNH HỌC (TIẾT 2)",
-    topic: "Ôn tập hình học",
+    topic: "Ôn tập hình học (tiếp theo)",
     week: "33",
 
-    content: `
-        <div class="space-y-10">
-            <div class="bg-orange-50 p-8 rounded-[2rem] border-4 border-orange-200 shadow-lg text-xl md:text-3xl">
-                <h3 class="text-2xl md:text-3xl font-black text-orange-700 mb-6 uppercase tracking-wider text-center">Ôn tập hình học (Luyện tập 2)</h3>
-                <p class="text-xl md:text-3xl text-gray-700 leading-relaxed font-black uppercase mb-8 border-b-4 border-orange-100 pb-2">
-                    Các bài toán tổng hợp về diện tích:
-                </p>
-                <div class="p-8 bg-white rounded-3xl shadow-inner border-l-8 border-orange-500 italic">
-                    <p class="text-xl md:text-3xl font-bold text-gray-700 leading-relaxed">
-                        "Khi giải các bài toán hình học phức tạp, hãy chia nhỏ hình đó thành các hình cơ bản (hình chữ nhật, hình tam giác, hình tròn) để tính toán dễ dàng hơn."
-                    </p>
-                </div>
-            </div>
-        </div>
-    `,
-
     practice: `
-        <div class="space-y-12 pb-10">
-            <!-- Bài 1 -->
-            <div id="lesson163_b1" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-blue-500">
-                <div class="flex items-center gap-6 mb-10">
-                    <div class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">1</div>
-                    <h3 class="text-2xl md:text-3xl font-black text-blue-700 uppercase tracking-wide">Bài 1. Diện tích sân bóng rổ</h3>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                    <div class="p-8 bg-blue-50 rounded-[3rem] border-4 border-blue-200 shadow-inner space-y-6">
-                        <p class="text-2xl md:text-3xl font-black text-gray-800 leading-relaxed italic">
-                            "Một sân bóng rổ có kích thước như hình vẽ. Biết vòng tròn ở giữa sân có đường kính 3,6 m."
-                        </p>
-                        <div class="grid grid-cols-1 gap-4 font-black">
-                            <div class="bg-white p-4 rounded-xl border-2 border-blue-400">
-                                <span class="text-xl uppercase text-blue-700">a) Sân bóng rổ:</span>
-                                <div class="flex flex-wrap gap-4 mt-2">
-                                    <div class="flex items-center gap-2">P: <input id="163-1-1" class="w-24 h-10 text-center border-b-2 border-blue-500 outline-none" placeholder="?"> m</div>
-                                    <div class="flex items-center gap-2">S: <input id="163-1-2" class="w-24 h-10 text-center border-b-2 border-blue-500 outline-none" placeholder="?"> m²</div>
-                                </div>
-                            </div>
-                            <div class="bg-white p-4 rounded-xl border-2 border-cyan-400">
-                                <span class="text-xl uppercase text-cyan-700">b) Vòng tròn giữa sân:</span>
-                                <div class="flex flex-wrap gap-4 mt-2">
-                                    <div class="flex items-center gap-2">C: <input id="163-1-3" class="w-24 h-10 text-center border-b-2 border-cyan-500 outline-none" placeholder="?"> m</div>
-                                    <div class="flex items-center gap-2">S: <input id="163-1-4" class="w-24 h-10 text-center border-b-2 border-cyan-500 outline-none" placeholder="?"> m²</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="flex flex-col items-center bg-white p-6 rounded-[3rem] border-2 border-blue-100 shadow-inner">
-                        <img src="assets/images/toan/toan_tap_2/98/" class="w-full h-auto drop-shadow-2xl" alt="Sân bóng rổ">
-                    </div>
-                </div>
+        <div class="space-y-10 pb-10">
 
-                <div class="flex justify-end mt-12">
-                    <button id="btn-check-163-1" onclick="window.check_163_1()" class="w-20 h-20 bg-[#ff7b29] text-white rounded-[2rem] font-black text-4xl md:text-5xl shadow-xl hover:brightness-110 active:scale-95 transition-all">E</button>
+            <!-- Bài 1: Sân bóng rổ -->
+            <div id="lesson163_b1" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-blue-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">1</div>
+                    <h3 class="text-xl md:text-2xl font-black text-blue-700">Bài 1. Giải bài toán</h3>
                 </div>
-            </div>
-
-            <!-- Bài 2 -->
-            <div id="lesson163_b2" class="bg-white p-10 rounded-[3rem] shadow-2xl border-l-[12px] border-orange-500">
-                <div class="flex items-center gap-6 mb-10">
-                    <div class="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">2</div>
-                    <h3 class="text-2xl md:text-3xl font-black text-orange-700 uppercase tracking-wide">Bài 2. Bài toán gấp hộp</h3>
-                </div>
-                
-                <div class="p-8 bg-orange-50 rounded-[3rem] border-4 border-orange-200">
-                    <p class="text-2xl md:text-3xl font-black text-gray-800 leading-relaxed mb-10 italic">
-                        "Từ một miếng bìa hình vuông cạnh 40 cm, Nam cắt bốn hình vuông bằng nhau có cạnh 8 cm ở bốn góc để gấp thành một chiếc hộp không nắp."
+                <div class="bg-blue-50 p-5 rounded-2xl border border-blue-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Một sân bóng rổ dạng hình chữ nhật có kích thước như hình vẽ dưới đây (chiều dài <span class="font-black text-blue-700">28 m</span>, chiều rộng <span class="font-black text-blue-700">15 m</span>, hình tròn ở giữa sân có đường kính <span class="font-black text-blue-700">3,6 m</span>).
                     </p>
+                    <img src="assets/images/toan/toan_tap_2/163/163-1-san-bong-ro.png" class="max-w-[500px] w-full mx-auto rounded-2xl shadow-lg border-4 border-white" alt="Sân bóng rổ">
                     
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                         <div class="flex flex-col items-center bg-white p-8 rounded-[3rem] border-2 border-orange-100 shadow-inner">
-                            <svg width="300" height="300" viewBox="0 0 240 240" class="drop-shadow-2xl">
-                                <rect x="0" y="0" width="240" height="240" fill="none" stroke="#E67E22" stroke-width="2" stroke-dasharray="8,4" />
-                                <path d="M 60 0 L 180 0 L 180 60 L 240 60 L 240 180 L 180 180 L 180 240 L 60 240 L 60 180 L 0 180 L 0 60 L 60 60 Z" fill="#FFF3E0" stroke="#E67E22" stroke-width="4" />
-                                <text x="120" y="30" font-size="20" font-weight="black" text-anchor="middle" fill="#E67E22">8 cm</text>
-                                <text x="30" y="120" font-size="20" font-weight="black" text-anchor="middle" transform="rotate(-90, 30, 120)" fill="#E67E22">8 cm</text>
-                                <text x="120" y="235" font-size="20" font-weight="black" text-anchor="middle" fill="#A04000">Cạnh miếng bìa: 40 cm</text>
-                            </svg>
+                    <div class="space-y-4 border-t border-blue-200 pt-4">
+                        <p class="font-black text-blue-900 text-lg">a) Chu vi và diện tích sân bóng rổ:</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <span class="font-bold text-gray-700">Chu vi sân:</span>
+                                <input id="163-1-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-28 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
+                                <span class="font-bold text-gray-700">m</span>
+                            </div>
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <span class="font-bold text-gray-700">Diện tích sân:</span>
+                                <input id="163-1-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-28 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
+                                <span class="font-bold text-gray-700">m²</span>
+                            </div>
                         </div>
-                        
-                        <div class="space-y-8">
-                            <div class="bg-white p-6 rounded-2xl border-l-[10px] border-orange-400 shadow-lg">
-                                <p class="text-xl md:text-2xl font-black text-orange-900 mb-4">Diện tích miếng bìa dùng làm hộp:</p>
-                                <div class="flex items-center gap-4">
-                                    <input id="163-2-1" class="w-32 h-14 text-center border-4 border-orange-300 rounded-xl text-2xl md:text-3xl font-black outline-none" placeholder="...">
-                                    <span class="text-xl md:text-2xl font-bold">cm²</span>
-                                </div>
+
+                        <p class="font-black text-blue-900 text-lg border-t border-blue-200 pt-3">b) Chu vi và diện tích hình tròn ở giữa sân:</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <span class="font-bold text-gray-700">Chu vi hình tròn:</span>
+                                <input id="163-1-3" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-32 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
+                                <span class="font-bold text-gray-700">m</span>
+                            </div>
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <span class="font-bold text-gray-700">Diện tích hình tròn:</span>
+                                <input id="163-1-4" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-32 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?">
+                                <span class="font-bold text-gray-700">m²</span>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="flex justify-end mt-12">
-                    <button id="btn-check-163-2" onclick="window.check_163_2()" class="w-20 h-20 bg-[#ff7b29] text-white rounded-[2rem] font-black text-4xl md:text-5xl shadow-xl hover:brightness-110 active:scale-95 transition-all">E</button>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-163-1').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-163-1" onclick="window.check_163_1()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-163-1" class="hidden bg-blue-50 p-4 rounded-2xl border border-blue-200 text-lg font-bold text-blue-900 space-y-1">
+                    <p>a) Chu vi sân bóng rổ: (28 + 15) × 2 = <span class="text-emerald-700">86 m</span></p>
+                    <p>Diện tích sân bóng rổ: 28 × 15 = <span class="text-emerald-700">420 m²</span></p>
+                    <p>b) Chu vi hình tròn: 3,14 × 3,6 = <span class="text-emerald-700">11,304 m</span></p>
+                    <p>Bán kính hình tròn: 3,6 : 2 = 1,8 m</p>
+                    <p>Diện tích hình tròn: 3,14 × 1,8 × 1,8 = <span class="text-emerald-700">10,1736 m²</span></p>
                 </div>
             </div>
 
-            <!-- Bài 3 -->
-            <div id="lesson163_b3" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-green-500">
-                <div class="flex items-center gap-6 mb-10">
-                    <div class="w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">3</div>
-                    <h3 class="text-2xl md:text-3xl font-black text-green-700 uppercase tracking-wide">Bài 3. Diện tích đất tăng thêm</h3>
+            <!-- Bài 2: Cái hộp hình A -->
+            <div id="lesson163_b2" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-emerald-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">2</div>
+                    <h3 class="text-xl md:text-2xl font-black text-emerald-700">Bài 2. Giải bài toán</h3>
                 </div>
-                
-                <div class="p-8 bg-green-50 rounded-[3rem] border-4 border-green-200 flex flex-col md:flex-row gap-10 items-center">
-                    <div class="flex-1 space-y-8">
-                        <p class="text-2xl md:text-3xl font-black text-gray-800 leading-relaxed italic">
-                            "Một mảnh đất có dạng hình thang vuông với chiều cao bằng đáy bé và bằng 40 m. Độ dài đáy lớn bằng 3/2 độ dài đáy bé. Tính diện tích mảnh đất đó."
-                        </p>
-                        <div class="bg-white p-8 rounded-3xl border-4 border-green-400 shadow-xl flex flex-col items-center gap-6">
-                            <span class="text-2xl md:text-3xl font-black text-green-900 uppercase text-center">Diện tích mảnh đất ban đầu:</span>
-                            <div class="flex items-center gap-4">
-                                <input id="163-3-1" class="w-48 h-20 text-center text-3xl md:text-4xl font-black border-4 border-green-300 rounded-2xl outline-none" placeholder="...">
-                                <span class="text-2xl md:text-3xl font-black text-gray-600">m²</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-white p-6 rounded-[2.5rem] border-2 border-green-100 shadow-inner">
-                        <svg width="320" height="220" viewBox="0 0 300 200" class="drop-shadow-2xl">
-                            <path d="M 60 40 L 160 40 L 210 160 L 60 160 Z" fill="#C8E6C9" stroke="#2E7D32" stroke-width="4" />
-                            <text x="110" y="30" font-size="20" font-weight="black" text-anchor="middle" fill="#1B5E20">40 m</text>
-                            <text x="135" y="185" font-size="20" font-weight="black" text-anchor="middle" fill="#1B5E20">Đáy lớn = 3/2 Đáy bé</text>
-                            <text x="45" y="100" font-size="20" font-weight="black" text-anchor="middle" transform="rotate(-90, 45, 100)" fill="#1B5E20">h = 40m</text>
-                        </svg>
+                <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Từ miếng bìa hình vuông cạnh <span class="font-black text-blue-700">40 cm</span>, Nam đã cắt 4 hình vuông cạnh <span class="font-black text-blue-700">8 cm</span> ở bốn góc, rồi gấp lên để được cái hộp không nắp (Hình A). Tính diện tích miếng bìa làm thành cái hộp hình A đó.
+                    </p>
+                    <img src="assets/images/toan/toan_tap_2/163/163-2-cai-hop.png" class="max-w-[450px] w-full mx-auto rounded-2xl shadow-lg border-4 border-white" alt="Cái hộp không nắp">
+                    <div class="flex items-center gap-3 flex-wrap">
+                        <span class="font-bold text-gray-700 text-lg">Diện tích miếng bìa làm cái hộp:</span>
+                        <input id="163-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-36 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?">
+                        <span class="font-bold text-gray-700">cm²</span>
                     </div>
                 </div>
-
-                <div class="flex justify-end mt-12">
-                    <button id="btn-check-163-3" onclick="window.check_163_3()" class="w-20 h-20 bg-[#ff7b29] text-white rounded-[2rem] font-black text-4xl md:text-5xl shadow-xl hover:brightness-110 active:scale-95 transition-all">E</button>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-163-2').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-163-2" onclick="window.check_163_2()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-163-2" class="hidden bg-emerald-50 p-4 rounded-2xl border border-emerald-200 text-lg font-bold text-emerald-900 space-y-1">
+                    <p>Diện tích miếng bìa ban đầu: 40 × 40 = 1 600 cm²</p>
+                    <p>Diện tích 4 hình vuông ở góc: 4 × (8 × 8) = 256 cm²</p>
+                    <p>Diện tích miếng bìa làm cái hộp: 1 600 − 256 = <span class="text-blue-700">1 344 cm²</span></p>
+                    <p>Chúc mừng em đã giải đúng!</p>
                 </div>
             </div>
 
-            <!-- Bài 4 -->
-            <div id="lesson163_b4" class="bg-white p-10 rounded-[3rem] shadow-2xl border-t-[12px] border-rose-500">
-                <div class="flex items-center gap-6 mb-10">
-                    <div class="w-16 h-16 bg-rose-500 text-white rounded-full flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg">4</div>
-                    <h3 class="text-2xl md:text-3xl font-black text-rose-700 uppercase tracking-wide">Bài 4. Thử thách: Ghép hình</h3>
+            <!-- Bài 3: Khu đất hình thang -->
+            <div id="lesson163_b3" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-amber-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-amber-500 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">3</div>
+                    <h3 class="text-xl md:text-2xl font-black text-amber-700">Bài 3. Giải bài toán</h3>
                 </div>
-                
-                <div class="p-8 bg-rose-50 rounded-[3rem] border-4 border-rose-200">
-                    <div class="flex flex-col md:flex-row gap-12 items-center">
-                        <div class="flex-1 space-y-8">
-                            <p class="text-2xl md:text-3xl font-black text-gray-800 leading-relaxed italic">
-                                "Một tấm kim loại gồm 9 hình chữ nhật bằng nhau ghép lại. Mỗi hình chữ nhật nhỏ có chiều dài 30 cm, chiều rộng 20 cm. Tính chu vi và diện tích của tấm kim loại đó."
-                            </p>
-                            <div class="bg-white p-8 rounded-3xl border-4 border-rose-400 shadow-xl space-y-6">
-                                <div class="flex items-center gap-4 text-xl md:text-2xl font-black">
-                                    <span class="text-rose-900 uppercase">Chu vi tấm kim loại:</span>
-                                    <input id="163-4-1" class="w-32 h-12 text-center border-b-4 border-rose-300 outline-none" placeholder="...">
-                                    <span>cm</span>
-                                </div>
-                                <div class="flex items-center gap-4 text-xl md:text-2xl font-black">
-                                    <span class="text-rose-900 uppercase">Diện tích tấm kim loại:</span>
-                                    <input id="163-4-2" class="w-32 h-12 text-center border-b-4 border-rose-300 outline-none" placeholder="...">
-                                    <span>cm²</span>
-                                </div>
-                            </div>
+                <div class="bg-amber-50 p-5 rounded-2xl border border-amber-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Một khu đất dạng hình thang vuông có chiều cao bằng đáy bé và bằng <span class="font-black text-blue-700">40 m</span>, độ dài đáy lớn bằng <span class="font-black text-blue-700">3/2</span> đáy bé. Để xây dựng khu nhà văn hoá, đội xây dựng đã cải tạo, đắp đất mở rộng khu đất cũ thành khu đất mới dạng hình chữ nhật có chiều rộng bằng chiều cao hình thang, có chiều dài bằng đáy lớn hình thang (như hình vẽ).
+                    </p>
+                    <img src="assets/images/toan/toan_tap_2/163/163-3-khu-dat.png" class="max-w-[350px] w-full mx-auto rounded-2xl shadow-lg border-4 border-white" alt="Khu đất mở rộng">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 flex-wrap">
+                            <span class="font-bold text-gray-700 text-lg">a) Diện tích khu đất dạng hình thang ban đầu:</span>
+                            <input id="163-3-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-36 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span class="font-bold text-gray-700">m²</span>
                         </div>
-                        
-                        <div class="bg-white p-8 rounded-[3rem] border-2 border-rose-100 shadow-inner flex flex-col items-center">
-                            <svg width="260" height="220" viewBox="0 0 240 200" class="drop-shadow-2xl">
-                                <rect x="10" y="10" width="150" height="150" fill="#FCE4EC" stroke="#C2185B" stroke-width="4" />
-                                <line x1="10" y1="40" x2="160" y2="40" stroke="#C2185B" stroke-width="2" />
-                                <line x1="10" y1="70" x2="160" y2="70" stroke="#C2185B" stroke-width="2" />
-                                <line x1="10" y1="100" x2="160" y2="100" stroke="#C2185B" stroke-width="2" />
-                                <line x1="10" y1="130" x2="160" y2="130" stroke="#C2185B" stroke-width="2" />
-                                <rect x="160" y="10" width="70" height="150" fill="#F8BBD0" stroke="#C2185B" stroke-width="4" />
-                                <line x1="160" y1="47.5" x2="230" y2="47.5" stroke="#C2185B" stroke-width="2" />
-                                <line x1="160" y1="85" x2="230" y2="85" stroke="#C2185B" stroke-width="2" />
-                                <line x1="160" y1="122.5" x2="230" y2="122.5" stroke="#C2185B" stroke-width="2" />
-                            </svg>
-                            <p class="mt-6 text-xl font-black text-rose-400 italic">Hình minh họa 9 mảnh ghép</p>
+                        <div class="flex items-center gap-3 flex-wrap">
+                            <span class="font-bold text-gray-700 text-lg">b) Diện tích phần đất được mở rộng:</span>
+                            <input id="163-3-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-36 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span class="font-bold text-gray-700">m²</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="flex justify-end mt-12">
-                    <button id="btn-check-163-4" onclick="window.check_163_4()" class="w-20 h-20 bg-[#ff7b29] text-white rounded-[2rem] font-black text-4xl md:text-5xl shadow-xl hover:brightness-110 active:scale-95 transition-all">E</button>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-163-3').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-163-3" onclick="window.check_163_3()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-163-3" class="hidden bg-amber-50 p-4 rounded-2xl border border-amber-200 text-lg font-bold text-amber-900 space-y-1">
+                    <p>Đáy bé = chiều cao = 40 m. Đáy lớn = 40 × 3/2 = 60 m.</p>
+                    <p>a) Diện tích hình thang ban đầu: (60 + 40) × 40 : 2 = <span class="text-emerald-700">2 000 m²</span></p>
+                    <p>Diện tích HCN mới: 60 × 40 = 2 400 m².</p>
+                    <p>b) Diện tích phần mở rộng: 2 400 − 2 000 = <span class="text-emerald-700">400 m²</span> (hoặc (60 − 40) × 40 : 2 = 400 m²)</p>
                 </div>
             </div>
+
+            <!-- Bài 4: Việt dán 9 tờ giấy màu -->
+            <div id="lesson163_b4" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-rose-500 space-y-6">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-rose-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">4</div>
+                    <div>
+                        <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-rose-100 text-rose-800 font-black rounded text-sm">Số ?</span>
+                        <h3 class="text-xl md:text-2xl font-black text-rose-700 mt-1">Bài 4. Dán 9 tờ giấy màu</h3>
+                    </div>
+                </div>
+                <div class="bg-rose-50 p-5 rounded-2xl border border-rose-200 space-y-4">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                        Việt cắt 9 tờ giấy màu, mỗi tờ là hình chữ nhật có chu vi <span class="font-black text-blue-700">30 cm</span> (Hình A). Việt đã dán 9 tờ giấy màu đó thành hình chữ nhật (Hình B).
+                    </p>
+                    <img src="assets/images/toan/toan_tap_2/163/163-4-hinh-a-b.png" class="max-w-[400px] w-full mx-auto rounded-2xl shadow-lg border-4 border-white" alt="Hình A và Hình B">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 flex-wrap">
+                            <span class="font-bold text-gray-700 text-lg">a) Chu vi hình B là:</span>
+                            <input id="163-4-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-28 h-10 text-center border-2 border-rose-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span class="font-bold text-gray-700">cm</span>
+                        </div>
+                        <div class="flex items-center gap-3 flex-wrap">
+                            <span class="font-bold text-gray-700 text-lg">b) Nếu hình chữ nhật B có chiều dài hơn chiều rộng 9 cm thì diện tích hình A là:</span>
+                            <input id="163-4-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-28 h-10 text-center border-2 border-rose-300 rounded-xl font-bold outline-none" placeholder="?">
+                            <span class="font-bold text-gray-700">cm²</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative flex justify-end items-center mt-4 gap-3">
+                    <button onclick="document.getElementById('sol-163-4').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                    <button id="btn-check-163-4" onclick="window.check_163_4()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                </div>
+                <div id="sol-163-4" class="hidden bg-rose-50 p-4 rounded-2xl border border-rose-200 text-lg font-bold text-rose-900 space-y-1">
+                    <p>Hình B ghép bởi 3 × 3 tờ giấy A. Gọi dài, rộng tờ A là a, b → a + b = 15 cm.</p>
+                    <p>Kích thước B là 3a và 3b. Chu vi B = 2 × (3a + 3b) = 6 × (a + b) = 6 × 15 = <span class="text-emerald-700">90 cm</span></p>
+                    <p>b) B có 3a − 3b = 9 → a − b = 3 cm. Mà a + b = 15 cm.</p>
+                    <p>Chiều dài A: a = (15 + 3) : 2 = 9 cm. Chiều rộng A: b = 6 cm.</p>
+                    <p>Diện tích hình A: 9 × 6 = <span class="text-emerald-700">54 cm²</span></p>
+                </div>
+            </div>
+
         </div>
     `,
 
     quizPool: [
-        { question: "Diện tích sân bóng rổ dài 28m, rộng 15m là:", options: ["420 m²", "43 m²", "86 m²", "210 m²"], answer: 0 },
-        { question: "Chu vi sân bóng rổ 28m x 15m là:", options: ["86 m", "420 m", "43 m", "172 m"], answer: 0 },
-        { question: "Chu vi vòng tròn giữa sân đường kính 3,6m là:", options: ["11,304 m", "5,652 m", "22,608 m", "3,14 m"], answer: 0 },
-        { question: "Diện tích vòng tròn giữa sân đường kính 3,6m là:", options: ["10,1736 m²", "11,304 m²", "5,0868 m²", "40,6944 m²"], answer: 0 },
-        { question: "Bìa 40x40 cm cắt 4 góc 8cm. Diện tích ban đầu là:", options: ["1600 cm²", "400 cm²", "800 cm²", "160 cm²"], answer: 0 },
-        { question: "Diện tích 4 hình vuông góc 8x8 cm là:", options: ["256 cm²", "64 cm²", "128 cm²", "32 cm²"], answer: 0 },
-        { question: "Diện tích miếng bìa làm hộp (40x40 trừ 4 góc 8x8) là:", options: ["1344 cm²", "1536 cm²", "1472 cm²", "1200 cm²"], answer: 0 },
-        { question: "Hộp từ bìa 40x40 cắt góc 8cm có chiều cao là:", options: ["8 cm", "40 cm", "24 cm", "16 cm"], answer: 0 },
-        { question: "Hộp từ bìa 40x40 cắt góc 8cm có cạnh đáy là:", options: ["24 cm", "32 cm", "16 cm", "8 cm"], answer: 0 },
-        { question: "Diện tích hình thang đáy 40m, 60m; cao 40m là:", options: ["2000 m²", "4000 m²", "1000 m²", "2400 m²"], answer: 0 },
-        { question: "Tấm kim loại 9 miếng 30x20 cm. Diện tích là:", options: ["5400 cm²", "600 cm²", "4500 cm²", "1800 cm²"], answer: 0 },
-        { question: "Một mảnh vườn hcn có dài 25m, rộng 18m. S là:", options: ["450 m²", "86 m²", "43 m²", "500 m²"], answer: 0 },
-        { question: "S hình tam giác có đáy 15dm, cao 12dm là:", options: ["90 dm²", "180 dm²", "27 dm²", "54 dm²"], answer: 0 },
-        { question: "Tính 3/5 của 500m²:", options: ["300 m²", "200 m²", "150 m²", "450 m²"], answer: 0 },
-        { question: "S hình thang có đáy 4m, 6m; cao 5m là:", options: ["25 m²", "50 m²", "10 m²", "15 m²"], answer: 0 },
-        { question: "Đường kính 1,2m. Diện tích hình tròn là:", options: ["1,1304 m²", "3,768 m²", "4,5216 m²", "0,5652 m²"], answer: 0 },
-        { question: "Cửa sổ hình tròn bán kính 0,5m có diện tích là:", options: ["0,785 m²", "3,14 m²", "1,57 m²", "0,3925 m²"], answer: 0 },
-        { question: "Tỉ số diện tích 2 hình vuông cạnh 2cm và 4cm là:", options: ["1/4", "1/2", "1/8", "1/16"], answer: 0 },
-        { question: "S hình tam giác vuông có 2 cạnh góc vuông 6cm và 8cm là:", options: ["24 cm²", "48 cm²", "14 cm²", "7 cm²"], answer: 0 },
-        { question: "Một mặt bàn hình tròn đường kính 1m. S mặt bàn là:", options: ["0,785 m²", "3,14 m²", "1,57 m²", "2,355 m²"], answer: 0 },
-        { question: "Hcn có dài 12cm, rộng bằng 2/3 dài. S là:", options: ["96 cm²", "144 cm²", "20 cm²", "40 cm²"], answer: 0 },
-        { question: "S hình vuông là 100 cm². Chu vi là:", options: ["40 cm", "20 cm", "25 cm", "10 cm"], answer: 0 },
-        { question: "Tam giác có đáy 20m, S là 150m². Chiều cao là:", options: ["15 m", "30 m", "7,5 m", "10 m"], answer: 0 },
-        { question: "Hình thang có S=60cm², cao=5cm. Tổng 2 đáy là:", options: ["24 cm", "12 cm", "15 cm", "30 cm"], answer: 0 },
-        { question: "Chu vi hình tròn 6,28cm. Diện tích là:", options: ["3,14 cm²", "1,57 cm²", "6,28 cm²", "12,56 cm²"], answer: 0 },
-        { question: "Một hình thoi có 2 đường chéo 10cm và 12cm. S là:", options: ["60 cm²", "120 cm²", "22 cm²", "44 cm²"], answer: 0 },
-        { question: "1 km² bằng bao nhiêu ha?", options: ["100", "10", "1000", "10 000"], answer: 0 }
+        { question: "Chu vi sân bóng rổ (28 m × 15 m) là?", options: ["86 m", "43 m", "420 m", "84 m"], answer: 0 },
+        { question: "Diện tích sân bóng rổ (28 m × 15 m) là?", options: ["420 m²", "86 m²", "210 m²", "430 m²"], answer: 0 },
+        { question: "Chu vi hình tròn đường kính 3,6 m là?", options: ["11,304 m", "10,1736 m", "5,652 m", "11,3 m"], answer: 0 },
+        { question: "Diện tích hình tròn đường kính 3,6 m (r=1,8 m) là?", options: ["10,1736 m²", "11,304 m²", "40,6944 m²", "10,17 m²"], answer: 0 },
+        { question: "Diện tích 4 hình vuông nhỏ cạnh 8 cm là?", options: ["256 cm²", "64 cm²", "128 cm²", "512 cm²"], answer: 0 },
+        { question: "Diện tích miếng bìa làm cái hộp hình A (vuông 40 cm cắt 4 góc 8 cm) là?", options: ["1 344 cm²", "1 600 cm²", "1 536 cm²", "1 244 cm²"], answer: 0 },
+        { question: "Đáy lớn khu đất hình thang (đáy bé 40 m, bằng 3/2) là?", options: ["60 m", "50 m", "80 m", "45 m"], answer: 0 },
+        { question: "Diện tích khu đất hình thang ban đầu (đáy 40m, 60m, cao 40m) là?", options: ["2 000 m²", "2 400 m²", "1 000 m²", "4 000 m²"], answer: 0 },
+        { question: "Diện tích phần đất mở rộng thêm là?", options: ["400 m²", "2 000 m²", "2 400 m²", "200 m²"], answer: 0 },
+        { question: "Chu vi hình A là 30 cm thì nửa chu vi (a + b) là?", options: ["15 cm", "30 cm", "60 cm", "10 cm"], answer: 0 },
+        { question: "Hình B ghép 3x3 từ hình A có chu vi là?", options: ["90 cm", "270 cm", "45 cm", "180 cm"], answer: 0 },
+        { question: "Nếu 3a - 3b = 9 cm thì hiệu a - b của hình A là?", options: ["3 cm", "9 cm", "1 cm", "6 cm"], answer: 0 },
+        { question: "Chiều dài a và chiều rộng b của hình A (tổng 15, hiệu 3) là?", options: ["a = 9 cm, b = 6 cm", "a = 10 cm, b = 5 cm", "a = 8 cm, b = 7 cm", "a = 9 cm, b = 3 cm"], answer: 0 },
+        { question: "Diện tích hình A là?", options: ["54 cm²", "90 cm²", "30 cm²", "48 cm²"], answer: 0 },
+        { question: "Diện tích hình B (ghép 9 hình A) là?", options: ["486 cm²", "54 cm²", "450 cm²", "540 cm²"], answer: 0 }
     ]
-};
-
-// --- Logic Functions ---
-window.check_163_1 = () => {
-    const v = (id) => document.getElementById('163-1-' + id).value.trim().replace(',', '.');
-    let score = 0;
-    if (v('1') === '86') score++;
-    if (v('2') === '420') score++;
-    if (v('3') === '11.304') score++;
-    if (v('4') === '10.1736') score++;
-
-    const total = 4;
-    const isCorrect = score === total;
-    const rightAnswer = "a) P=86m, S=420m2; b) C=11,304m, S=10,1736m2";
-    const studentAnswer = `a) P=${v('1')}, S=${v('2')}; b) C=${v('3')}, S=${v('4')}`;
-    const guidance = "Em hãy nhớ: Chu vi sân = (dài + rộng) x 2; Diện tích sân = dài x rộng. Chu vi hình tròn = d x 3,14; Diện tích hình tròn = r x r x 3,14 (với r = d : 2).";
-    const solution = `
-        <div class="space-y-4">
-            <p class="font-bold text-green-700">Chính xác! Em đã giải quyết trọn vẹn bài toán sân bóng rổ. 🏀</p>
-            <div class="bg-blue-50 p-4 rounded-xl border-2 border-blue-200">
-                <p><b>Lời giải chi tiết:</b></p>
-                <p>a) Sân bóng rổ:</p>
-                <p>• Chu vi: (28 + 15) &times; 2 = <b>86</b> (m).</p>
-                <p>• Diện tích: 28 &times; 15 = <b>420</b> (m²).</p>
-                <p>b) Vòng tròn giữa sân:</p>
-                <p>• Chu vi: 3,6 &times; 3,14 = <b>11,304</b> (m).</p>
-                <p>• Bán kính: 3,6 : 2 = 1,8 (m).</p>
-                <p>• Diện tích: 1,8 &times; 1,8 &times; 3,14 = <b>10,1736</b> (m²).</p>
-            </div>
-        </div>
-    `;
-
-    window.showMathFeedback(isCorrect, rightAnswer, studentAnswer, guidance, solution);
-    if (window.submitMathLesson) window.submitMathLesson("Bài 1. Sân bóng rổ", Math.round(score / total * 100), "btn-check-163-1", 0, total, score);
-};
-
-window.check_163_2 = () => {
-    const a = document.getElementById('163-2-1').value.trim();
-    let score = 0;
-    if (a === '1344') score++;
-
-    const total = 1;
-    const isCorrect = score === total;
-    const rightAnswer = "1344 cm²";
-    const studentAnswer = `${a} cm²`;
-    const guidance = "Diện tích miếng bìa dùng làm hộp bằng diện tích miếng bìa hình vuông ban đầu trừ đi diện tích của 4 hình vuông nhỏ ở 4 góc.";
-    const solution = `
-        <div class="space-y-4">
-            <p class="font-bold text-green-700">Rất tốt! Em đã tính toán phần diện tích bị cắt bỏ rất chính xác. 📦</p>
-            <div class="bg-orange-50 p-4 rounded-xl border-2 border-orange-200 text-left">
-                <p><b>Lời giải chi tiết:</b></p>
-                <p>1. Diện tích miếng bìa ban đầu là: 40 &times; 40 = 1600 (cm²).</p>
-                <p>2. Diện tích của 4 hình vuông nhỏ là: 4 &times; (8 &times; 8) = 256 (cm²).</p>
-                <p>3. Diện tích miếng bìa dùng làm hộp là: 1600 - 256 = <b>1344</b> (cm²).</p>
-                <p>Đáp số: 1344 cm².</p>
-            </div>
-        </div>
-    `;
-
-    window.showMathFeedback(isCorrect, rightAnswer, studentAnswer, guidance, solution);
-    if (window.submitMathLesson) window.submitMathLesson("Bài 2. Gấp hộp", isCorrect ? 100 : 0, "btn-check-163-2", 0, 1, isCorrect ? 1 : 0);
-};
-
-window.check_163_3 = () => {
-    const val = document.getElementById('163-3-1').value.trim();
-    const isCorrect = val === '2000';
-    const rightAnswer = "2000 m²";
-    const studentAnswer = val + " m²";
-    const guidance = "Em hãy tính toán theo các bước:<br>1. Tìm độ dài đáy lớn bằng cách lấy độ dài đáy bé nhân với tỉ số tương ứng.<br>2. Áp dụng công thức tính diện tích hình thang: lấy tổng độ dài hai đáy nhân với chiều cao rồi chia cho 2 nhé!";
-    const solution = `
-        <div class="space-y-4">
-            <p class="font-bold text-green-700">Chính xác! Em đã tính toán diện tích mảnh đất hình thang rất giỏi. 📐</p>
-            <div class="bg-green-50 p-4 rounded-xl border-2 border-green-200 text-left">
-                <p><b>Lời giải chi tiết:</b></p>
-                <p>1. Độ dài đáy lớn của mảnh đất là: 40 &times; 3/2 = 60 (m).</p>
-                <p>2. Diện tích mảnh đất hình thang là: (40 + 60) &times; 40 : 2 = <b>2000</b> (m²).</p>
-                <p>Đáp số: 2000 m².</p>
-            </div>
-        </div>
-    `;
-
-    window.showMathFeedback(isCorrect, rightAnswer, studentAnswer, guidance, solution);
-    if (window.submitMathLesson) window.submitMathLesson("Bài 3. Mảnh đất hình thang", isCorrect ? 100 : 0, "btn-check-163-3", 0, 1, isCorrect ? 1 : 0);
-};
-
-window.check_163_4 = () => {
-    const p = document.getElementById('163-4-1').value.trim();
-    const s = document.getElementById('163-4-2').value.trim();
-    let score = 0;
-    // Tấm kim loại ghép từ 9 miếng 30x20. 
-    // Thường ghép 3x3 để thành hình vuông 90x60 hoặc các kiểu khác.
-    // Theo SGK Trang 116: 9 miếng 30x20 ghép lại.
-    // Nếu ghép thành hình chữ nhật lớn: Area = 9 * (30*20) = 5400.
-    // Chu vi tùy cách ghép. Theo Loigiaihay: Ghép thành HCN 90x60 -> P = (90+60)*2 = 300.
-    if (p === '300') score++;
-    if (s === '5400') score++;
-
-    const total = 2;
-    const isCorrect = score === total;
-    const rightAnswer = "P = 300 cm, S = 5400 cm²";
-    const studentAnswer = `P = ${p}, S = ${s}`;
-    const guidance = "Em hãy tính diện tích của một miếng nhỏ rồi nhân với số lượng miếng để tìm diện tích tấm kim loại. Để tính chu vi, em hãy dựa vào cách ghép các hình vuông để xác định chiều dài và chiều rộng của hình chữ nhật mới tạo thành nhé!";
-    const solution = `
-        <div class="space-y-4">
-            <p class="font-bold text-green-700">Tuyệt vời! Em đã giải quyết bài toán ghép hình rất tốt. 🏆</p>
-            <div class="bg-rose-50 p-4 rounded-xl border-2 border-rose-200 text-left">
-                <p><b>Lời giải chi tiết:</b></p>
-                <p>1. Diện tích một hình chữ nhật nhỏ là: 30 &times; 20 = 600 (cm²).</p>
-                <p>2. Diện tích tấm kim loại (9 miếng) là: 600 &times; 9 = <b>5400</b> (cm²).</p>
-                <p>3. Khi ghép 3 hàng, mỗi hàng 3 miếng (theo chiều dài) thì cạnh tấm lớn là 90cm (30x3) và 60cm (20x3).</p>
-                <p>4. Chu vi tấm kim loại là: (90 + 60) &times; 2 = <b>300</b> (cm).</p>
-            </div>
-        </div>
-    `;
-
-    window.showMathFeedback(isCorrect, rightAnswer, studentAnswer, guidance, solution);
-    if (window.submitMathLesson) window.submitMathLesson("Bài 4. Ghép hình", Math.round(score / total * 100), "btn-check-163-4", 0, total, score);
 };
 
 window.lesson163 = lesson163;
 
+window.check_163_1 = function() {
+    const checks = [
+        {id:'163-1-1', ans:['86']},
+        {id:'163-1-2', ans:['420']},
+        {id:'163-1-3', ans:['11,304','11.304']},
+        {id:'163-1-4', ans:['10,1736','10.1736']},
+    ];
+    let correct = 0;
+    checks.forEach(c => {
+        const el = document.getElementById(c.id);
+        if (!el) return;
+        const v = el.value.trim().replace(/\s/g,'');
+        if (c.ans.includes(v)) { el.classList.add('bg-green-100','border-green-500'); el.classList.remove('bg-red-100','border-red-500'); correct++; }
+        else { el.classList.add('bg-red-100','border-red-500'); el.classList.remove('bg-green-100','border-green-500'); }
+    });
+    const isCorrect = correct === checks.length;
+    window.showMathFeedback(isCorrect,
+        "a) P = 86 m; S = 420 m²<br>b) C = 11,304 m; S = 10,1736 m²",
+        "",
+        "Gợi ý: a) P = (dài + rộng) × 2, S = dài × rộng. b) Đường kính 3,6 m → r = 1,8 m. C = 3,14 × d, S = 3,14 × r × r.",
+        "a) P = (28 + 15) × 2 = 86 m; S = 28 × 15 = 420 m²<br>b) C = 3,14 × 3,6 = 11,304 m; r = 1,8 m → S = 3,14 × 1,8 × 1,8 = 10,1736 m²<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 1. Sân bóng rổ", Math.round(correct/checks.length*100), "btn-check-163-1", 0, checks.length, correct);
+};
+
+window.check_163_2 = function() {
+    const v = document.getElementById('163-2')?.value.trim().replace(/\s/g,'') || '';
+    const isCorrect = v === '1344';
+    window.showMathFeedback(isCorrect,
+        "1 344 cm²",
+        "",
+        "Gợi ý: Diện tích bìa cái hộp = diện tích hình vuông lớn (40×40) trừ diện tích 4 hình vuông góc (4 × 8×8).",
+        "S lớn = 40 × 40 = 1 600 cm². S 4 góc = 4 × 64 = 256 cm².<br>S bìa cái hộp = 1 600 − 256 = 1 344 cm².<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 2. Cái hộp không nắp", isCorrect?100:0, "btn-check-163-2", 0, 1, isCorrect?1:0);
+};
+
+window.check_163_3 = function() {
+    const v1 = document.getElementById('163-3-1')?.value.trim().replace(/\s/g,'') || '';
+    const v2 = document.getElementById('163-3-2')?.value.trim().replace(/\s/g,'') || '';
+    const isCorrect = (v1 === '2000' || v1 === '2 000') && (v2 === '400' || v2 === '400');
+    window.showMathFeedback(isCorrect,
+        "a) 2 000 m²<br>b) 400 m²",
+        "",
+        "Gợi ý: Đáy lớn = 40 × 3/2 = 60 m. a) S thang = (60+40)×40:2. b) S mở rộng = S HCN (60×40) − S thang.",
+        "Đáy lớn = 60 m.<br>a) S ban đầu = (60 + 40) × 40 : 2 = 2 000 m².<br>b) S mở rộng = 60 × 40 − 2 000 = 400 m².<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 3. Khu đất mở rộng", isCorrect?100:0, "btn-check-163-3", 0, 1, isCorrect?1:0);
+};
+
+window.check_163_4 = function() {
+    const v1 = document.getElementById('163-4-1')?.value.trim().replace(/\s/g,'') || '';
+    const v2 = document.getElementById('163-4-2')?.value.trim().replace(/\s/g,'') || '';
+    const isCorrect = (v1 === '90' && v2 === '54');
+    window.showMathFeedback(isCorrect,
+        "a) 90 cm<br>b) 54 cm²",
+        "",
+        "Gợi ý: a) Hình B gấp 3 lần kích thước hình A → Chu vi B = 3 × Chu vi A. b) Nửa chu vi A = 15, hiệu = 3 → tính dài, rộng A rồi tính diện tích.",
+        "a) Chu vi A = 30 cm → Nửa chu vi = 15 cm. Chu vi B = 6 × 15 = 90 cm.<br>b) 3a − 3b = 9 → a − b = 3. Dài a = (15+3):2 = 9 cm, Rộng b = 6 cm.<br>S hình A = 9 × 6 = 54 cm².<br>Chúc mừng em!"
+    );
+    if (window.submitMathLesson) window.submitMathLesson("Bài 4. Dán 9 tờ giấy màu", isCorrect?100:0, "btn-check-163-4", 0, 1, isCorrect?1:0);
+};
+
+import './logic.js';
