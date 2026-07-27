@@ -12,8 +12,8 @@ export const lesson159 = {
                     <div class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border-t-8 border-blue-500 space-y-4">
                         <p class="font-black text-blue-600 text-xl md:text-2xl italic underline">1. Phép chia và thử lại:</p>
                         <ul class="space-y-3 text-gray-700 text-lg md:text-xl">
-                            <li>• Phép chia hết: <span class="font-black text-blue-700">a : b = c</span> $\\Rightarrow$ <span class="font-black text-emerald-700">Thử lại: c × b = a</span></li>
-                            <li>• Phép chia có dư: <span class="font-black text-blue-700">a : b = c (dư r)</span> $\\Rightarrow$ <span class="font-black text-emerald-700">Thử lại: c × b + r = a</span></li>
+                            <li>• Phép chia hết: <span class="font-black text-blue-700">a : b = c</span> <span class="text-gray-400">➔</span> <span class="font-black text-emerald-700">Thử lại: c × b = a</span></li>
+                            <li>• Phép chia có dư: <span class="font-black text-blue-700">a : b = c (dư r)</span> <span class="text-gray-400">➔</span> <span class="font-black text-emerald-700">Thử lại: c × b + r = a</span></li>
                         </ul>
                     </div>
                     <div class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border-t-8 border-emerald-500 space-y-4">
