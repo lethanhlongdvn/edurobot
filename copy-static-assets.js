@@ -37,7 +37,7 @@ foldersToCopy.forEach(folder => {
 });
 
 // Also copy students_data.json and other root JSON if needed
-const filesToCopy = ['students_data.json'];
+const filesToCopy = ['students_data.json', 'CNAME'];
 filesToCopy.forEach(file => {
     if (fs.existsSync(file)) {
         console.log(`Copying "${file}" to "dist/${file}"...`);
