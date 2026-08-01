@@ -346,17 +346,39 @@ window.submitMathLesson = async function (content, score, btnId, timeTaken = 0, 
     const userRole = localStorage.getItem('userRole');
     const userApproved = localStorage.getItem('userApproved');
 
-    if (!userRole || !userApproved) {
-        // Người dùng chưa đăng nhập hoặc chưa được duyệt
-        const shouldRedirect = confirm(
-            '⚠️ Bạn cần đăng nhập tài khoản đã được duyệt để nộp bài cho Thầy/Cô.\n\n' +
-            '• Nếu đã có tài khoản → Bấm OK để đăng nhập\n' +
-            '• Nếu chưa có → Đăng ký rồi chờ Admin duyệt\n\n' +
-            'Bạn vẫn có thể xem bài học và tự luyện tập mà không cần đăng nhập.'
-        );
-        if (shouldRedirect) {
-            window.location.href = 'auth.html';
+    // Định nghĩa hàm hiển thị Toast thông báo nhẹ nhàng ở góc màn hình
+    function showEduRobotToast(message) {
+        let container = document.getElementById('edurobot-toast-container');
+        if (!container) {
+            container = document.createElement('div');
+            container.id = 'edurobot-toast-container';
+            container.style.cssText = 'position:fixed; top:20px; right:20px; z-index:2147483647; display:flex; flex-direction:column; gap:10px; pointer-events:none;';
+            document.body.appendChild(container);
         }
+        
+        const toast = document.createElement('div');
+        toast.style.cssText = 'pointer-events:auto; background:#fffbeb; border-left:6px solid #f59e0b; color:#b45309; padding:12px 18px; border-radius:16px; box-shadow:0 10px 25px rgba(0,0,0,0.1); font-family:\'Be Vietnam Pro\', sans-serif; font-weight:700; font-size:13px; min-width:280px; max-width:360px; transform:translateX(120%); transition:all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); opacity:0; box-sizing:border-box; border: 1px solid #fef3c7;';
+        toast.innerHTML = `<div style="display:flex; align-items:center; gap:10px;"><span style="font-size: 18px;">⚠️</span><div>${message}</div></div>`;
+        
+        container.appendChild(toast);
+        
+        // Trượt vào
+        setTimeout(() => {
+            toast.style.transform = 'translateX(0)';
+            toast.style.opacity = '1';
+        }, 50);
+        
+        // Trượt ra và xóa
+        setTimeout(() => {
+            toast.style.transform = 'translateX(120%)';
+            toast.style.opacity = '0';
+            setTimeout(() => toast.remove(), 300);
+        }, 5000);
+    }
+
+    if (!userRole || !userApproved) {
+        // Tài khoản khách/chưa duyệt: Cho phép xem đáp án thoải mái, chỉ hiện toast nhắc nhở nhẹ nhàng không lưu điểm
+        showEduRobotToast("Bạn đang dùng tài khoản Khách. Điểm số bài học sẽ không được lưu vào sổ điểm của lớp.");
         return;
     }
 
@@ -373,8 +395,19 @@ window.submitMathLesson = async function (content, score, btnId, timeTaken = 0, 
     const check = window.isValidStudentName(name);
     if (!check.valid) {
         pendingSubmission = { content, score, btnId, timeTaken };
-        alert(check.msg);
-        window.openStudentModal();
+        if (typeof window.showMathFeedback === 'function') {
+            window.showMathFeedback(
+                "⚠️ THÔNG TIN CHƯA HỢP LỆ",
+                "✍️",
+                `<div class="text-center p-4">
+                    <p class="text-lg md:text-xl font-bold text-red-600 mb-6" style="line-height: 1.6;">${check.msg}</p>
+                    <button onclick="window.closeMathModal(); window.openStudentModal();" class="bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-2.5 rounded-xl shadow-md transition-all active:scale-95 text-sm md:text-base">Cập nhật thông tin</button>
+                </div>`
+            );
+        } else {
+            alert(check.msg);
+            window.openStudentModal();
+        }
         return;
     }
 

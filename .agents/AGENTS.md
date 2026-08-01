@@ -71,3 +71,10 @@ Khi sửa chữa, bổ sung hoặc tạo mới bài học:
 - **Độ chính xác của dữ liệu và truy vấn:** Mọi nội dung dữ liệu câu hỏi, bài tập, prompt cấu hình gửi lên AI, hay phần `quizPool` đều phải đảm bảo độ chính xác tuyệt đối, khớp với dữ liệu gốc của Sách giáo khoa hoặc yêu cầu thực tế của bài học.
 - **Tránh thông tin sai lệch:** Tuyệt đối không đưa các thông tin sai, công thức bị lỗi, hoặc dữ liệu mơ hồ làm AI trả về kết quả sai sót hoặc làm ảnh hưởng đến quá trình truy vấn và chấm điểm tự động.
 
+## 11. Quy trình soạn bài môn Khoa học (Science Lesson Drafting Workflow)
+Khi soạn thảo các bài học môn Khoa học (lớp 5):
+- **Tab 1 - Tìm hiểu bài:** Bám sát 100% kênh chữ và kênh hình từ hình ảnh trang Sách Giáo Khoa (SGK) do người dùng cung cấp. Các hình ảnh minh họa chèn vào bài được cắt/trích xuất từ ảnh SGK.
+- **Tab 2 - Luyện tập:** Trích xuất đầy đủ câu hỏi và đáp án từ Vở bài tập (VBT) Khoa học 5 Kết nối tri thức (nguồn VietJack: `https://vietjack.com/vbt-khoa-hoc-5-kn/index.jsp`) tương ứng với bài học để chuyển thành các dạng bài tập tương tác (nối cột, trắc nghiệm, điền ô trống, đúng/sai...).
+- **Tab 3 - Củng cố:** AI tự động biên soạn ngân hàng gồm 15 câu hỏi trắc nghiệm chất lượng bám sát kiến thức tiết học. Mỗi lượt làm bài hệ thống tự động chọn ngẫu nhiên 10 câu (mỗi câu 10% điểm). Khi học sinh chọn sai, hệ thống báo sai nhưng tuyệt đối không lộ đáp án đúng để học sinh tự suy nghĩ và thử lại.
+
+

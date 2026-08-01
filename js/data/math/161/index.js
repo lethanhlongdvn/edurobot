@@ -4,139 +4,239 @@ export const lesson161 = {
     topic: "Ôn tập tỉ số phần trăm",
     week: "33",
 
+    content: `
+        <div class="space-y-8 animate-fade-in pb-10">
+            <!-- Card Tiêu đề & Tổng quan -->
+            <div class="bg-gradient-to-br from-blue-50 to-sky-50 p-6 md:p-10 rounded-[2.5rem] md:rounded-[3rem] border-4 border-blue-200 shadow-xl relative overflow-hidden">
+                <div class="relative z-10 space-y-6">
+                    <div class="flex items-center justify-center gap-3">
+                        <span class="text-3xl md:text-4xl">📖</span>
+                        <h3 class="text-2xl md:text-3xl font-black text-blue-700 uppercase tracking-wide text-center">TÌM HIỂU BÀI: ÔN TẬP TỈ SỐ PHẦN TRĂM</h3>
+                    </div>
+
+                    <!-- Grid 4 chủ đề chính -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 font-bold">
+                        
+                        <!-- 1. Tìm tỉ số phần trăm của hai số -->
+                        <div class="bg-white p-6 md:p-8 rounded-[2rem] shadow-md border-t-8 border-blue-500 space-y-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-black text-xl">1</div>
+                                <h4 class="font-black text-blue-700 text-xl md:text-2xl">Tìm tỉ số phần trăm của hai số</h4>
+                            </div>
+                            <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                                Muốn tìm tỉ số phần trăm của <span class="text-blue-700 font-black">a</span> và <span class="text-blue-700 font-black">b</span>:
+                            </p>
+                            <ul class="space-y-1 text-sm md:text-base text-gray-700 pl-2">
+                                <li>• Tìm thương của <span class="font-black text-blue-700">a : b</span>.</li>
+                                <li>• Nhân thương đó với <span class="font-black text-blue-700">100</span> và viết thêm ký hiệu <span class="font-black text-blue-700">%</span> vào bên phải.</li>
+                            </ul>
+                            <div class="bg-blue-50 p-4 rounded-xl border border-blue-200 text-sm md:text-base text-blue-900">
+                                <span class="font-black">📌 Ví dụ:</span> Tìm tỉ số % của 8 và 32:<br>
+                                8 : 32 = 0,25 = <span class="font-black text-emerald-700">25%</span>.
+                            </div>
+                        </div>
+
+                        <!-- 2. Tìm giá trị phần trăm của một số -->
+                        <div class="bg-white p-6 md:p-8 rounded-[2rem] shadow-md border-t-8 border-emerald-500 space-y-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center font-black text-xl">2</div>
+                                <h4 class="font-black text-emerald-700 text-xl md:text-2xl">Tìm giá trị phần trăm của một số</h4>
+                            </div>
+                            <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                                Muốn tìm <span class="text-emerald-700 font-black">x%</span> của số <span class="text-emerald-700 font-black">A</span>, ta lấy:
+                            </p>
+                            <div class="text-center font-black text-emerald-800 text-lg py-1 bg-emerald-50 rounded-lg">
+                                A : 100 × x <span class="text-gray-500 font-normal">hoặc</span> A × x : 100
+                            </div>
+                            <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-200 text-sm md:text-base text-emerald-900">
+                                <span class="font-black">📌 Ví dụ:</span> Tìm 10% của 350 000 đồng:<br>
+                                350 000 : 100 × 10 = <span class="font-black text-blue-700">35 000 đồng</span>.
+                            </div>
+                        </div>
+
+                        <!-- 3. Bài toán Giảm giá % -->
+                        <div class="bg-white p-6 md:p-8 rounded-[2rem] shadow-md border-t-8 border-amber-500 space-y-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center font-black text-xl">3</div>
+                                <h4 class="font-black text-amber-700 text-xl md:text-2xl">Bài toán Giảm giá %</h4>
+                            </div>
+                            <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                                Khi giảm giá <span class="text-amber-800 font-black">x%</span>, giá mới bằng <span class="text-amber-800 font-black">(100% - x%)</span> giá ban đầu.
+                            </p>
+                            <div class="bg-amber-50 p-4 rounded-xl border border-amber-200 text-sm md:text-base text-amber-900">
+                                <span class="font-black">📌 Các bước tính:</span><br>
+                                1. Số tiền giảm = Giá gốc × x%<br>
+                                2. Giá phải trả = Giá gốc - Số tiền giảm
+                            </div>
+                        </div>
+
+                        <!-- 4. Bài toán Lãi suất tiết kiệm -->
+                        <div class="bg-white p-6 md:p-8 rounded-[2rem] shadow-md border-t-8 border-rose-500 space-y-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-rose-100 text-rose-700 rounded-full flex items-center justify-center font-black text-xl">4</div>
+                                <h4 class="font-black text-rose-700 text-xl md:text-2xl">Bài toán Lãi suất tiết kiệm</h4>
+                            </div>
+                            <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                                Tiền lãi được tính theo tỉ số phần trăm trên vốn gửi.
+                            </p>
+                            <div class="bg-rose-50 p-4 rounded-xl border border-rose-200 text-sm md:text-base text-rose-900">
+                                <span class="font-black">📌 Lưu ý khi nhập gốc năm sau:</span><br>
+                                Nếu tiền lãi năm 1 góp vào tiền gốc gửi năm 2 thì:<br>
+                                • <span class="font-black">Gốc năm 2</span> = Gốc năm 1 + Lãi năm 1.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    `,
+
     practice: `
-        <div class="space-y-10 pb-10">
+        <div class="-mx-4 md:-mx-8 mt-2 -mb-8">
+            <div id="ltViewport" style="overflow:hidden; width:100%; position:relative;">
+                <div id="ltTrack" class="flex transition-transform duration-500 ease-out" style="width: 100%; display: flex;">
 
-            <!-- Bài 1: Tìm tỉ số phần trăm -->
-            <div id="lesson161_b1" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-blue-500 space-y-6">
-                <div class="flex items-center gap-4 mb-2">
-                    <div class="w-12 h-12 md:w-14 md:h-14 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">1</div>
-                    <h3 class="text-xl md:text-2xl font-black text-blue-700">Bài 1. Tìm tỉ số phần trăm thích hợp</h3>
-                </div>
-                <div class="bg-blue-50 p-5 rounded-2xl border border-blue-200 space-y-4">
-                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
-                        Lớp 5A có 32 học sinh, kết quả giáo dục cuối năm học của lớp như sau: <span class="font-black text-blue-700">8 học sinh</span> đạt mức Hoàn thành xuất sắc, <span class="font-black text-blue-700">12 học sinh</span> đạt mức Hoàn thành tốt, số học sinh còn lại đạt mức Hoàn thành.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-3 flex-wrap">
-                            <span class="text-lg font-bold text-gray-800">a) Số học sinh đạt mức Hoàn thành xuất sắc chiếm</span>
-                            <input id="161-1-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?%">
-                            <span class="text-lg font-bold text-gray-800">số học sinh cả lớp.</span>
+                    <!-- Slide 1: Bài 1 -->
+                    <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; padding: 0 1rem;">
+                        <div id="lesson161_b1" class="bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-blue-500 space-y-6">
+                            <div class="flex items-center gap-4 mb-2">
+                                <div class="w-12 h-12 md:w-14 md:h-14 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">1</div>
+                                <h3 class="text-xl md:text-2xl font-black text-blue-700">Bài 1. Tìm tỉ số phần trăm thích hợp</h3>
+                            </div>
+                            <div class="bg-blue-50 p-5 rounded-2xl border border-blue-200 space-y-4">
+                                <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                                    Lớp 5A có 32 học sinh, kết quả giáo dục cuối năm học của lớp như sau: <span class="font-black text-blue-700">8 học sinh</span> đạt mức Hoàn thành xuất sắc, <span class="font-black text-blue-700">12 học sinh</span> đạt mức Hoàn thành tốt, số học sinh còn lại đạt mức Hoàn thành.
+                                </p>
+                                <div class="space-y-4">
+                                    <div class="flex items-center gap-3 flex-wrap">
+                                        <span class="text-lg font-bold text-gray-800">a) Số học sinh đạt mức Hoàn thành xuất sắc chiếm</span>
+                                        <input id="161-1-1" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?%">
+                                        <span class="text-lg font-bold text-gray-800">số học sinh cả lớp.</span>
+                                    </div>
+                                    <div class="flex items-center gap-3 flex-wrap">
+                                        <span class="text-lg font-bold text-gray-800">b) Số học sinh đạt mức Hoàn thành tốt chiếm</span>
+                                        <input id="161-1-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?%">
+                                        <span class="text-lg font-bold text-gray-800">số học sinh cả lớp.</span>
+                                    </div>
+                                    <div class="flex items-center gap-3 flex-wrap">
+                                        <span class="text-lg font-bold text-gray-800">c) Số học sinh đạt mức Hoàn thành chiếm</span>
+                                        <input id="161-1-3" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?%">
+                                        <span class="text-lg font-bold text-gray-800">số học sinh cả lớp.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative flex justify-end items-center mt-4 gap-3">
+                                <button onclick="document.getElementById('sol-161-1').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                                <button id="btn-check-161-1" onclick="window.check_161_1()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                            </div>
+                            <div id="sol-161-1" class="hidden bg-blue-50 p-4 rounded-2xl border border-blue-200 text-lg font-bold text-blue-900 space-y-1">
+                                <p>a) 8 : 32 × 100 = <span class="text-emerald-700">25%</span></p>
+                                <p>b) 12 : 32 × 100 = <span class="text-emerald-700">37,5%</span></p>
+                                <p>c) Còn lại: 32 − 8 − 12 = 12 học sinh. 12 : 32 × 100 = <span class="text-emerald-700">37,5%</span></p>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-3 flex-wrap">
-                            <span class="text-lg font-bold text-gray-800">b) Số học sinh đạt mức Hoàn thành tốt chiếm</span>
-                            <input id="161-1-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?%">
-                            <span class="text-lg font-bold text-gray-800">số học sinh cả lớp.</span>
+                    </div>
+
+                    <!-- Slide 2: Bài 2 -->
+                    <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; padding: 0 1rem;">
+                        <div id="lesson161_b2" class="bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-emerald-500 space-y-6">
+                            <div class="flex items-center gap-4 mb-2">
+                                <div class="w-12 h-12 md:w-14 md:h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">2</div>
+                                <h3 class="text-xl md:text-2xl font-black text-emerald-700">Bài 2. Giải bài toán</h3>
+                            </div>
+                            <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-200 space-y-4">
+                                <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                                    Khi làm hồng treo gió, người ta cứ phơi <span class="font-black text-blue-700">20 kg quả hồng tươi</span> thì thu được <span class="font-black text-blue-700">3,3 kg quả hồng khô</span>. Hỏi lượng nước trong quả hồng tươi đã mất đi là bao nhiêu phần trăm?
+                                </p>
+                                <img src="assets/images/toan/toan_tap_2/161/161-2-hong-treo-gio.png" class="max-w-[600px] w-full mx-auto rounded-2xl shadow-lg border-4 border-white" alt="Hồng treo gió phơi khô">
+                                <div class="flex items-center gap-3 flex-wrap">
+                                    <span class="font-bold text-gray-700 text-lg">Lượng nước mất đi:</span>
+                                    <input id="161-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-28 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?%">
+                                </div>
+                            </div>
+                            <div class="relative flex justify-end items-center mt-4 gap-3">
+                                <button onclick="document.getElementById('sol-161-2').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                                <button id="btn-check-161-2" onclick="window.check_161_2()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                            </div>
+                            <div id="sol-161-2" class="hidden bg-emerald-50 p-4 rounded-2xl border border-emerald-200 text-lg font-bold text-emerald-900 space-y-1">
+                                <p>Lượng nước mất: 20 − 3,3 = 16,7 kg</p>
+                                <p>Phần trăm: 16,7 : 20 × 100 = <span class="text-blue-700">83,5%</span></p>
+                                <p>Chúc mừng em đã giải đúng!</p>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-3 flex-wrap">
-                            <span class="text-lg font-bold text-gray-800">c) Số học sinh đạt mức Hoàn thành chiếm</span>
-                            <input id="161-1-3" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-24 h-10 text-center border-2 border-blue-300 rounded-xl font-bold outline-none" placeholder="?%">
-                            <span class="text-lg font-bold text-gray-800">số học sinh cả lớp.</span>
+                    </div>
+
+                    <!-- Slide 3: Bài 3 -->
+                    <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; padding: 0 1rem;">
+                        <div id="lesson161_b3" class="bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-amber-500 space-y-6">
+                            <div class="flex items-center gap-4 mb-2">
+                                <div class="w-12 h-12 md:w-14 md:h-14 bg-amber-500 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">3</div>
+                                <h3 class="text-xl md:text-2xl font-black text-amber-700">Bài 3. Giải bài toán</h3>
+                            </div>
+                            <div class="bg-amber-50 p-5 rounded-2xl border border-amber-200 space-y-4">
+                                <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                                    Giá tiền <span class="font-black text-blue-700">1 kg hồng treo gió</span> là <span class="font-black text-blue-700">350 000 đồng</span>. Mai mua <span class="font-black text-blue-700">1 kg hồng treo gió</span> vào Ngày Quốc tế Thiếu nhi nên được giảm giá <span class="font-black text-blue-700">10%</span>. Hỏi Mai phải trả người bán hàng bao nhiêu tiền?
+                                </p>
+                                <div class="flex items-center gap-3 flex-wrap">
+                                    <span class="font-bold text-gray-700 text-lg">Mai phải trả:</span>
+                                    <input id="161-3" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-36 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="?">
+                                    <span class="font-bold text-gray-700">đồng</span>
+                                </div>
+                            </div>
+                            <div class="relative flex justify-end items-center mt-4 gap-3">
+                                <button onclick="document.getElementById('sol-161-3').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                                <button id="btn-check-161-3" onclick="window.check_161_3()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                            </div>
+                            <div id="sol-161-3" class="hidden bg-amber-50 p-4 rounded-2xl border border-amber-200 text-lg font-bold text-amber-900 space-y-1">
+                                <p>Số tiền giảm: 350 000 × 10 : 100 = 35 000 đồng</p>
+                                <p>Mai trả: 350 000 − 35 000 = <span class="text-emerald-700">315 000 đồng</span></p>
+                                <p>Chúc mừng em đã giải đúng!</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="relative flex justify-end items-center mt-4 gap-3">
-                    <button onclick="document.getElementById('sol-161-1').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
-                    <button id="btn-check-161-1" onclick="window.check_161_1()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
-                </div>
-                <div id="sol-161-1" class="hidden bg-blue-50 p-4 rounded-2xl border border-blue-200 text-lg font-bold text-blue-900 space-y-1">
-                    <p>a) 8 : 32 × 100 = <span class="text-emerald-700">25%</span></p>
-                    <p>b) 12 : 32 × 100 = <span class="text-emerald-700">37,5%</span></p>
-                    <p>c) Còn lại: 32 − 8 − 12 = 12 học sinh. 12 : 32 × 100 = <span class="text-emerald-700">37,5%</span></p>
-                </div>
-            </div>
 
-            <!-- Bài 2: Hồng treo gió -->
-            <div id="lesson161_b2" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-emerald-500 space-y-6">
-                <div class="flex items-center gap-4 mb-2">
-                    <div class="w-12 h-12 md:w-14 md:h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">2</div>
-                    <h3 class="text-xl md:text-2xl font-black text-emerald-700">Bài 2. Giải bài toán</h3>
-                </div>
-                <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-200 space-y-4">
-                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
-                        Khi làm hồng treo gió, người ta cứ phơi <span class="font-black text-blue-700">20 kg quả hồng tươi</span> thì thu được <span class="font-black text-blue-700">3,3 kg quả hồng khô</span>. Hỏi lượng nước trong quả hồng tươi đã mất đi là bao nhiêu phần trăm?
-                    </p>
-                    <img src="assets/images/toan/toan_tap_2/161/161-2-hong-treo-gio.png" class="max-w-[600px] w-full mx-auto rounded-2xl shadow-lg border-4 border-white" alt="Hồng treo gió phơi khô">
-                    <div class="flex items-center gap-3 flex-wrap">
-                        <span class="font-bold text-gray-700 text-lg">Lượng nước mất đi:</span>
-                        <input id="161-2" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-28 h-10 text-center border-2 border-emerald-300 rounded-xl font-bold outline-none" placeholder="?%">
+                    <!-- Slide 4: Bài 4 -->
+                    <div class="ltTrang" style="width: 100%; min-width: 100%; max-width: 100%; flex-shrink: 0; box-sizing: border-box; padding: 0 1rem;">
+                        <div id="lesson161_b4" class="bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-rose-500 space-y-6">
+                            <div class="flex items-center gap-4 mb-2">
+                                <div class="w-12 h-12 md:w-14 md:h-14 bg-rose-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">4</div>
+                                <h3 class="text-xl md:text-2xl font-black text-rose-700">Bài 4. Chọn câu trả lời đúng</h3>
+                            </div>
+                            <div class="bg-rose-50 p-5 rounded-2xl border border-rose-200 space-y-4">
+                                <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+                                    Lãi suất tiết kiệm là <span class="font-black text-blue-700">8% một năm</span>. Cô Hoa gửi tiết kiệm <span class="font-black text-blue-700">50 000 000 đồng</span>. Hỏi sau hai năm, cô Hoa sẽ nhận được bao nhiêu tiền lãi? (Biết rằng tiền lãi năm trước được góp vào tiền gốc để gửi năm sau.)
+                                </p>
+                                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                    <button onclick="window.select161_4('A')" id="btn-161-4-A" class="p-4 bg-white rounded-2xl border-4 border-rose-100 hover:border-rose-400 transition-all font-black text-lg text-center">
+                                        <span class="text-rose-400 text-base block">A.</span>4 000 000 đồng
+                                    </button>
+                                    <button onclick="window.select161_4('B')" id="btn-161-4-B" class="p-4 bg-white rounded-2xl border-4 border-rose-100 hover:border-rose-400 transition-all font-black text-lg text-center">
+                                        <span class="text-rose-400 text-base block">B.</span>8 000 000 đồng
+                                    </button>
+                                    <button onclick="window.select161_4('C')" id="btn-161-4-C" class="p-4 bg-white rounded-2xl border-4 border-rose-100 hover:border-rose-400 transition-all font-black text-lg text-center">
+                                        <span class="text-rose-400 text-base block">C.</span>8 320 000 đồng
+                                    </button>
+                                    <button onclick="window.select161_4('D')" id="btn-161-4-D" class="p-4 bg-white rounded-2xl border-4 border-rose-100 hover:border-rose-400 transition-all font-black text-lg text-center">
+                                        <span class="text-rose-400 text-base block">D.</span>8 400 000 đồng
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="relative flex justify-end items-center mt-4 gap-3">
+                                <button onclick="document.getElementById('sol-161-4').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
+                                <button id="btn-check-161-4" onclick="window.check_161_4()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
+                            </div>
+                            <div id="sol-161-4" class="hidden bg-rose-50 p-4 rounded-2xl border border-rose-200 text-lg font-bold text-rose-900 space-y-1">
+                                <p>Năm 1: Lãi = 50 000 000 × 8% = 4 000 000 đồng. Gốc mới = 54 000 000 đồng.</p>
+                                <p>Năm 2: Lãi = 54 000 000 × 8% = 4 320 000 đồng.</p>
+                                <p>Tổng lãi: 4 000 000 + 4 320 000 = <span class="text-emerald-700">8 320 000 đồng</span></p>
+                                <p>Đáp án: <span class="text-emerald-700">C. 8 320 000 đồng</span></p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="relative flex justify-end items-center mt-4 gap-3">
-                    <button onclick="document.getElementById('sol-161-2').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
-                    <button id="btn-check-161-2" onclick="window.check_161_2()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
-                </div>
-                <div id="sol-161-2" class="hidden bg-emerald-50 p-4 rounded-2xl border border-emerald-200 text-lg font-bold text-emerald-900 space-y-1">
-                    <p>Lượng nước mất: 20 − 3,3 = 16,7 kg</p>
-                    <p>Phần trăm: 16,7 : 20 × 100 = <span class="text-blue-700">83,5%</span></p>
-                    <p>Chúc mừng em đã giải đúng!</p>
+
                 </div>
             </div>
-
-            <!-- Bài 3: Giá tiền 1 kg hồng treo gió -->
-            <div id="lesson161_b3" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-amber-500 space-y-6">
-                <div class="flex items-center gap-4 mb-2">
-                    <div class="w-12 h-12 md:w-14 md:h-14 bg-amber-500 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">3</div>
-                    <h3 class="text-xl md:text-2xl font-black text-amber-700">Bài 3. Giải bài toán</h3>
-                </div>
-                <div class="bg-amber-50 p-5 rounded-2xl border border-amber-200 space-y-4">
-                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
-                        Giá tiền <span class="font-black text-blue-700">1 kg hồng treo gió</span> là <span class="font-black text-blue-700">350 000 đồng</span>. Mai mua <span class="font-black text-blue-700">1 kg hồng treo gió</span> vào Ngày Quốc tế Thiếu nhi nên được giảm giá <span class="font-black text-blue-700">10%</span>. Hỏi Mai phải trả người bán hàng bao nhiêu tiền?
-                    </p>
-                    <div class="flex items-center gap-3 flex-wrap">
-                        <span class="font-bold text-gray-700 text-lg">Mai phải trả:</span>
-                        <input id="161-3" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;" class="w-36 h-10 text-center border-2 border-amber-300 rounded-xl font-bold outline-none" placeholder="?">
-                        <span class="font-bold text-gray-700">đồng</span>
-                    </div>
-                </div>
-                <div class="relative flex justify-end items-center mt-4 gap-3">
-                    <button onclick="document.getElementById('sol-161-3').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
-                    <button id="btn-check-161-3" onclick="window.check_161_3()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
-                </div>
-                <div id="sol-161-3" class="hidden bg-amber-50 p-4 rounded-2xl border border-amber-200 text-lg font-bold text-amber-900 space-y-1">
-                    <p>Số tiền giảm: 350 000 × 10 : 100 = 35 000 đồng</p>
-                    <p>Mai trả: 350 000 − 35 000 = <span class="text-emerald-700">315 000 đồng</span></p>
-                    <p>Chúc mừng em đã giải đúng!</p>
-                </div>
-            </div>
-
-            <!-- Bài 4: Lãi suất tiết kiệm -->
-            <div id="lesson161_b4" class="ltTrang bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl border-t-[10px] border-rose-500 space-y-6">
-                <div class="flex items-center gap-4 mb-2">
-                    <div class="w-12 h-12 md:w-14 md:h-14 bg-rose-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow">4</div>
-                    <h3 class="text-xl md:text-2xl font-black text-rose-700">Bài 4. Chọn câu trả lời đúng</h3>
-                </div>
-                <div class="bg-rose-50 p-5 rounded-2xl border border-rose-200 space-y-4">
-                    <p class="text-lg md:text-xl leading-relaxed text-gray-800">
-                        Lãi suất tiết kiệm là <span class="font-black text-blue-700">8% một năm</span>. Cô Hoa gửi tiết kiệm <span class="font-black text-blue-700">50 000 000 đồng</span>. Hỏi sau hai năm, cô Hoa sẽ nhận được bao nhiêu tiền lãi? (Biết rằng tiền lãi năm trước được góp vào tiền gốc để gửi năm sau.)
-                    </p>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        <button onclick="window.select161_4('A')" id="btn-161-4-A" class="p-4 bg-white rounded-2xl border-4 border-rose-100 hover:border-rose-400 transition-all font-black text-lg text-center">
-                            <span class="text-rose-400 text-base block">A.</span>4 000 000 đồng
-                        </button>
-                        <button onclick="window.select161_4('B')" id="btn-161-4-B" class="p-4 bg-white rounded-2xl border-4 border-rose-100 hover:border-rose-400 transition-all font-black text-lg text-center">
-                            <span class="text-rose-400 text-base block">B.</span>8 000 000 đồng
-                        </button>
-                        <button onclick="window.select161_4('C')" id="btn-161-4-C" class="p-4 bg-white rounded-2xl border-4 border-rose-100 hover:border-rose-400 transition-all font-black text-lg text-center">
-                            <span class="text-rose-400 text-base block">C.</span>8 320 000 đồng
-                        </button>
-                        <button onclick="window.select161_4('D')" id="btn-161-4-D" class="p-4 bg-white rounded-2xl border-4 border-rose-100 hover:border-rose-400 transition-all font-black text-lg text-center">
-                            <span class="text-rose-400 text-base block">D.</span>8 400 000 đồng
-                        </button>
-                    </div>
-                </div>
-                <div class="relative flex justify-end items-center mt-4 gap-3">
-                    <button onclick="document.getElementById('sol-161-4').classList.toggle('hidden')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-sm shadow active:scale-95 transition-all">Hiện bài giải</button>
-                    <button id="btn-check-161-4" onclick="window.check_161_4()" class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-2xl font-black text-2xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
-                </div>
-                <div id="sol-161-4" class="hidden bg-rose-50 p-4 rounded-2xl border border-rose-200 text-lg font-bold text-rose-900 space-y-1">
-                    <p>Năm 1: Lãi = 50 000 000 × 8% = 4 000 000 đồng. Gốc mới = 54 000 000 đồng.</p>
-                    <p>Năm 2: Lãi = 54 000 000 × 8% = 4 320 000 đồng.</p>
-                    <p>Tổng lãi: 4 000 000 + 4 320 000 = <span class="text-emerald-700">8 320 000 đồng</span></p>
-                    <p>Đáp án: <span class="text-emerald-700">C. 8 320 000 đồng</span></p>
-                </div>
-            </div>
-
         </div>
     `,
 
@@ -229,5 +329,3 @@ window.check_161_4 = function() {
     );
     if (window.submitMathLesson) window.submitMathLesson("Bài 4. Lãi suất tiết kiệm", isCorrect?100:0, "btn-check-161-4", 0, 1, isCorrect?1:0);
 };
-
-// import './logic.js';

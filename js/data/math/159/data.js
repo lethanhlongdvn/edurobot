@@ -39,38 +39,48 @@ export const lesson159 = {
                     <h3 class="text-2xl md:text-3xl font-black text-blue-700 uppercase tracking-wide">Bài 1. Tính rồi thử lại (theo mẫu)</h3>
                 </div>
                 
-                <div class="p-8 bg-blue-50 rounded-[2.5rem] border-2 border-blue-100 mb-10">
-                    <p class="text-xl md:text-2xl font-black text-blue-500 uppercase mb-6 tracking-widest text-center italic">Mẫu chia có dư</p>
-                    <div class="flex flex-col lg:flex-row justify-around items-center gap-10 text-2xl md:text-3xl font-black">
-                        <div class="bg-white p-8 rounded-3xl border-2 border-blue-200 flex flex-col items-center">
-                            <div class="flex items-start gap-0">
-                                <div class="flex flex-col items-end pr-4 border-r-4 border-gray-800">
-                                    <span>3904</span>
-                                    <span class="text-gray-400">70</span>
-                                    <span class="text-gray-400">64</span>
-                                    <span class="text-blue-600">0</span>
-                                </div>
-                                <div class="flex flex-col items-start pl-4">
-                                    <span class="border-b-4 border-gray-800 w-full text-center">32</span>
-                                    <span>122</span>
+                <div class="p-6 md:p-8 bg-blue-50/60 rounded-[2.5rem] border-2 border-blue-200 mb-10 text-2xl md:text-3xl font-black text-gray-800">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
+                        <!-- Đường kẻ chia đôi 2 ví dụ theo SGK -->
+                        <div class="hidden md:block absolute left-1/2 top-2 bottom-2 w-[2px] bg-slate-300 -translate-x-1/2"></div>
+                        
+                        <!-- Ví dụ 1: Phép chia hết -->
+                        <div class="flex flex-col items-center justify-center p-2">
+                            <div class="flex items-start gap-2">
+                                <span class="font-bold text-gray-700 pt-0.5">Mẫu:</span>
+                                <div class="flex font-mono">
+                                    <div class="grid grid-cols-5 text-center items-center pr-3 gap-y-1">
+                                        <span>3</span><span>&nbsp;</span><span>9</span><span>0</span><span>4</span>
+                                        <span></span><span></span><span>7</span><span>0</span><span></span>
+                                        <span></span><span></span><span></span><span>6</span><span>4</span>
+                                        <span></span><span></span><span></span><span></span><span>0</span>
+                                    </div>
+                                    <div class="border-l-2 border-slate-700 pl-3 flex flex-col justify-start">
+                                        <div class="border-b-2 border-slate-700 pb-1 mb-1 text-center font-mono">32</div>
+                                        <div class="font-mono text-center">122</div>
+                                    </div>
                                 </div>
                             </div>
-                            <p class="mt-6 text-xl md:text-2xl text-gray-500 italic">Thử lại: 122 × 32 = 3904</p>
+                            <p class="mt-6 text-xl md:text-2xl font-bold text-gray-700">Thử lại: 122 × 32 = 3 904</p>
                         </div>
-                        <div class="bg-white p-8 rounded-3xl border-2 border-blue-200 flex flex-col items-center">
-                            <div class="flex items-start gap-0">
-                                <div class="flex flex-col items-end pr-4 border-r-4 border-gray-800">
-                                    <span>3917</span>
-                                    <span class="text-gray-400">71</span>
-                                    <span class="text-gray-400">77</span>
-                                    <span class="text-rose-600">13</span>
-                                </div>
-                                <div class="flex flex-col items-start pl-4">
-                                    <span class="border-b-4 border-gray-800 w-full text-center">32</span>
-                                    <span>122</span>
+
+                        <!-- Ví dụ 2: Phép chia có dư -->
+                        <div class="flex flex-col items-center justify-center p-2">
+                            <div class="flex items-start">
+                                <div class="flex font-mono">
+                                    <div class="grid grid-cols-5 text-center items-center pr-3 gap-y-1">
+                                        <span>3</span><span>&nbsp;</span><span>9</span><span>1</span><span>7</span>
+                                        <span></span><span></span><span>7</span><span>1</span><span></span>
+                                        <span></span><span></span><span></span><span>7</span><span>7</span>
+                                        <span></span><span></span><span></span><span>1</span><span>3</span>
+                                    </div>
+                                    <div class="border-l-2 border-slate-700 pl-3 flex flex-col justify-start">
+                                        <div class="border-b-2 border-slate-700 pb-1 mb-1 text-center font-mono">32</div>
+                                        <div class="font-mono text-center">122</div>
+                                    </div>
                                 </div>
                             </div>
-                            <p class="mt-6 text-xl md:text-2xl text-gray-500 italic">Thử lại: 122 × 32 + 13 = 3917</p>
+                            <p class="mt-6 text-xl md:text-2xl font-bold text-gray-700">Thử lại: 122 × 32 + 13 = 3 917</p>
                         </div>
                     </div>
                 </div>

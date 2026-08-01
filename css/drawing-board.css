@@ -1,0 +1,244 @@
+/* Canvas Board Styling */
+
+#canvas-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  user-select: none;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Floating Toolbar */
+.drawing-toolbar {
+  position: absolute;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  backdrop-filter: blur(12px);
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
+  user-select: none;
+  scrollbar-width: none; /* Ẩn thanh cuộn trên Firefox */
+}
+
+.drawing-toolbar::-webkit-scrollbar {
+  display: none; /* Ẩn thanh cuộn trên Chrome/Safari */
+}
+
+/* Drag Handle */
+.toolbar-drag-handle {
+  width: 20px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: move;
+  color: #94a3b8;
+  padding: 0 4px;
+}
+
+.toolbar-drag-handle::before {
+  content: "•••";
+  writing-mode: vertical-lr;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+/* Buttons */
+.toolbar-btn {
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: transparent;
+  border-radius: 10px;
+  color: #475569;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.toolbar-btn:hover {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+.toolbar-btn.active {
+  background-color: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.toolbar-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2px;
+}
+
+.toolbar-divider {
+  width: 1px;
+  height: 28px;
+  background-color: #e2e8f0;
+  margin: 0 2px;
+}
+
+/* Color Picker Popover */
+.color-picker-popover {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1010;
+}
+
+.color-picker-popover.show {
+  display: flex;
+}
+
+.color-options {
+  display: flex;
+  gap: 6px;
+}
+
+.color-swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.color-swatch:hover {
+  transform: scale(1.15);
+}
+
+.color-swatch.active {
+  border-color: #0f172a;
+  transform: scale(1.1);
+}
+
+.thickness-slider-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.thickness-slider-container span {
+  font-size: 12px;
+  color: #64748b;
+  min-width: 20px;
+}
+
+.thickness-slider {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: #e2e8f0;
+  outline: none;
+}
+
+/* Overlay & Menu State */
+.toolbar-toggle-btn {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1005;
+  transition: all 0.2s ease;
+}
+
+.toolbar-toggle-btn:hover {
+  transform: scale(1.05);
+  background: #1d4ed8;
+}
+
+.toolbar-toggle-btn.active {
+  background: #dc2626;
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.4);
+}
+
+/* Dock styles */
+.drawing-toolbar.dock-top {
+  top: 10px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+.drawing-toolbar.dock-bottom {
+  bottom: 10px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+.drawing-toolbar.dock-left {
+  left: 10px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  flex-direction: column;
+  max-height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.drawing-toolbar.dock-left .toolbar-drag-handle::before {
+  writing-mode: horizontal-tb;
+}
+
+.drawing-toolbar.dock-left .color-picker-popover {
+  left: 60px;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+
+/* Text editor input placeholder */
+.canvas-text-input {
+  position: absolute;
+  border: 1px dashed #2563eb;
+  background: transparent;
+  padding: 4px;
+  font-family: inherit;
+  font-size: 18px;
+  color: #0f172a;
+  outline: none;
+  z-index: 999;
+  min-width: 100px;
+  overflow: hidden;
+  resize: both;
+}
