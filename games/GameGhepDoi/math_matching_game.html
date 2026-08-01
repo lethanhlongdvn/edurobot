@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Pro - TV & Mobile - EduRobot</title>
+    <!-- Firebase SDK (v8) -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    
+    <style>
+        :root {
+            --primary-bg: #f8fafc;
+            --accent-blue: #0284c7;
+            --accent-yellow: #f59e0b;
+            --accent-green: #16a34a;
+            --accent-red: #dc2626;
+            --text-dark: #1e293b;
+            --card-width: 20vw;
+            --card-height: 20vh;
+            --card-font-size: 2.5rem;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+
+        body {
+            background: #f1f5f9;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-dark);
+            overflow-x: hidden;
+            overflow-y: auto;
+            padding: 20px 10px;
+        }
+
+        #game-container { width: 100%; max-width: 1600px; text-align: center; }
+        h1 { 
+            font-size: clamp(1.5rem, 5vw, 3rem); 
+            margin-bottom: 15px; 
+            color: var(--accent-blue); 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+        }
+
+        .stats {
+            display: flex; justify-content: space-around; margin-bottom: 15px;
+            font-size: clamp(1rem, 4vw, 1.8rem); font-weight: bold; background: white;
+            padding: 8px 30px; border-radius: 50px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            visibility: hidden; margin: 0 auto 15px; width: fit-content;
+        }
+
+        .grid-container { 
+            display: flex; gap: clamp(10px, 3vw, 30px); 
+            justify-content: center; align-items: center; 
+        }
+        .grid { 
+            display: none; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: clamp(5px, 1.2vw, 10px); 
+        }
+
+        .card { width: var(--card-width); height: var(--card-height); perspective: 1000px; cursor: pointer; }
+        .card-inner {
+            position: relative; width: 100%; height: 100%; text-align: center;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-style: preserve-3d; border-radius: clamp(8px, 2vw, 15px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .card.flipped .card-inner { transform: rotateY(180deg); }
+        .card-front, .card-back {
+            position: absolute; width: 100%; height: 100%; backface-visibility: hidden;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: clamp(8px, 2vw, 15px); border: clamp(2px, 0.5vw, 4px) solid white; overflow: hidden;
+        }
+        .card-front { background: #3b82f6; color: white; font-size: var(--card-font-size); font-weight: 800; }
+        .card[data-side="2"] .card-front { background: #f59e0b; }
+        .card-back { 
+            background: #1e40af; color: #ffffff; transform: rotateY(180deg); 
+            font-size: var(--card-font-size); font-weight: bold; padding: 15px;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            overflow: hidden; text-align: center; line-height: 1.2; word-break: break-word;
+            box-shadow: inset 0 0 40px rgba(0,0,0,0.2);
+        }
+        .card-back.long-text { font-size: calc(var(--card-font-size) * 0.7) !important; }
+        .card-back.very-long-text { font-size: calc(var(--card-font-size) * 0.5) !important; }
+        .card-back img { max-width: 95%; max-height: 95%; object-fit: contain; border-radius: 8px; }
+
+        .setup-screen {
+            background: white; padding: clamp(20px, 5vw, 40px); border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;
+            width: 90%; max-width: 600px; margin: 0 auto;
+        }
+        .setup-screen h3 { font-size: clamp(1.2rem, 4vw, 1.8rem); margin-bottom: 20px; color: #64748b; }
+        
+        .filters { 
+            margin-bottom: 20px; 
+            display: grid; 
+            grid-template-columns: 1fr; 
+            gap: 12px; 
+            width: 100%;
+        }
+        @media (min-width: 600px) {
+            .filters { grid-template-columns: 1fr 1fr; }
+        }
+        .filters select { width: 100%; padding: 12px; font-size: 1.1rem; border-radius: 12px; border: 2px solid #cbd5e1; outline: none; background: #fff; cursor: pointer; transition: 0.2s; }
+        .filters select:focus { border-color: var(--accent-blue); box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.1); }
+
+        .options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+        .option-btn {
+            padding: 15px; font-size: clamp(1rem, 4vw, 1.4rem); background: #fff; color: #3b82f6;
+            border: 3px solid #3b82f6; border-radius: 16px; cursor: pointer; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); font-weight: 800;
+            box-shadow: 0 4px 6px rgba(59, 130, 246, 0.1);
+        }
+        .option-btn:hover { background: #3b82f6; color: #fff; transform: translateY(-3px); box-shadow: 0 8px 15px rgba(59, 130, 246, 0.2); }
+        .option-btn:active { transform: translateY(0); }
+
+        #settings-btn {
+            position: fixed; top: 10px; right: 10px; background: white; border: none;
+            border-radius: 50%; width: 50px; height: 50px; cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); font-size: 1.5rem; z-index: 2500;
+        }
+
+        /* Teacher Modal - Responsive */
+        #teacher-modal {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(15, 23, 42, 0.95); display: none; align-items: center; justify-content: center;
+            z-index: 4000;
+        }
+        .modal-content {
+            background: white; padding: 15px; border-radius: 20px; width: 98%; max-width: 1400px;
+            height: 98vh; display: flex; flex-direction: column;
+        }
+        .modal-header { display: flex; justify-content: space-between; align-items: center; padding: 5px; }
+
+        .quiz-config-top { display: grid; grid-template-columns: 1fr; gap: 10px; margin-bottom: 10px; background: #f8fafc; padding: 10px; border-radius: 10px; }
+        @media (min-width: 768px) { .quiz-config-top { grid-template-columns: 1fr 1fr 1fr; } }
+        
+        .scroll-area { flex-grow: 1; overflow-y: auto; margin-bottom: 10px; border: 1px solid #f1f5f9; }
+        
+        table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        th { background: #f1f5f9; position: sticky; top: 0; z-index: 10; padding: 8px; border-bottom: 2px solid #e2e8f0; font-size: 0.75rem; }
+        td { padding: 4px; border-bottom: 1px solid #f1f5f9; }
+        
+        .side-cell { display: flex; gap: 4px; align-items: center; }
+        .type-select { width: 65px; padding: 5px; font-size: 0.7rem; border-radius: 5px; }
+        .content-input { flex-grow: 1; padding: 6px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 0.8rem; }
+        .btn-upload { background: #6366f1; color: white; border: none; padding: 5px 8px; border-radius: 8px; cursor: pointer; font-size: 1rem; }
+
+        .save-footer { display: flex; flex-direction: column; gap: 10px; align-items: center; padding: 10px; border-top: 2px solid #f1f5f9; }
+        @media (min-width: 768px) { .save-footer { flex-direction: row; justify-content: space-between; } }
+        .btn-save { background: var(--accent-green); color: white; padding: 12px 30px; border-radius: 12px; border: none; font-weight: 800; cursor: pointer; width: 100%; max-width: 300px; }
+
+        #result-overlay {
+            position: fixed; top: 75%; left: 50%; transform: translate(-50%, -50%) scale(0);
+            z-index: 2000; transition: transform 0.3s; pointer-events: none;
+        }
+        #result-overlay.show { transform: translate(-50%, -50%) scale(1.1); }
+        #result-overlay img { max-width: 150px; }
+
+        #win-screen {
+            position: fixed; inset: 0; background: rgba(255,255,255,0.98); display: none;
+            flex-direction: column; align-items: center; justify-content: center; z-index: 3000; padding: 20px; text-align: center;
+        }
+        #win-screen h2 { font-size: clamp(2rem, 10vw, 4rem); color: var(--accent-green); margin-bottom: 20px; }
+
+        .loading-overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 5000;
+            display: none; flex-direction: column; align-items: center; justify-content: center; color: white;
+        }
+        .card-dimmed { filter: brightness(0.3); opacity: 0.6; pointer-events: none; transition: 0.3s; }
+
+        /* Tablet/Mobile Adjustments */
+        @media (max-width: 768px) {
+            :root {
+                --card-width: 22vw;
+                --card-height: 12vh;
+            }
+            .grid-container { gap: 10px; }
+            h1 { margin-top: 40px; }
+        }
+    </style>
+</head>
+<body>
+
+    <button id="settings-btn" onclick="openTeacherModal()">⚙️</button>
+
+    <div id="game-container">
+        <h1 id="game-title">TRÒ CHƠI GHÉP ĐÔI</h1>
+        
+        <div class="stats" id="stats-panel">
+            <div>⏰ <span id="timer">0.0s</span></div>
+            <div>🧩 Còn <span id="matches-left">?</span></div>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid" id="side1-grid"></div>
+            <div class="grid" id="side2-grid"></div>
+        </div>
+
+        <div class="setup-screen" id="setup-screen">
+            <div id="lesson-modes" style="display:none; margin-bottom: 20px; border-bottom: 2px dashed #e2e8f0; padding-bottom: 15px;">
+                <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                    <button id="btn-mode-prev" class="option-btn" onclick="startLessonGame('prev')" style="display:none; background:#f97316; border-color:#f97316; color:#fff; font-weight:800; padding: 12px 20px; border-radius: 16px; font-size: 0.95rem;">🚀 Khởi động</button>
+                    <button id="btn-mode-current" class="option-btn" onclick="startLessonGame('current')" style="display:none; background:#22c55e; border-color:#22c55e; color:#fff; font-weight:800; padding: 12px 20px; border-radius: 16px; font-size: 0.95rem;">🎯 Củng cố</button>
+                    <div id="custom-lesson-modes" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
+                </div>
+            </div>
+
+            <h3 id="default-modes-title">Tự chọn hoặc mặc định:</h3>
+            <div class="filters">
+                <select id="filter-subject" onchange="fetchQuizzesForSelector()">
+                    <option value="all">-- Môn học --</option>
+                    <option value="Toán">Toán</option>
+                    <option value="Tiếng Việt">Tiếng Việt</option>
+                    <option value="Khoa học">Khoa học</option>
+                    <option value="Lịch sử & Địa lý">Lịch sử & Địa lý</option>
+                    <option value="Khác">Khác</option>
+                </select>
+                <select id="cloud-quiz-select" title="Chọn bộ đề">
+                    <option value="local">-- Bài tập mẫu --</option>
+                </select>
+            </div>
+            
+            <h3>Chọn số cặp thẻ:</h3>
+            <div class="options">
+                <button class="option-btn" onclick="startGame(4)">4 Cặp</button>
+                <button class="option-btn" onclick="startGame(6)">6 Cặp</button>
+                <button class="option-btn" onclick="startGame(8)">8 Cặp</button>
+                <button class="option-btn" onclick="startGame(10)">10 Cặp</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Giáo Viên -->
+    <div id="teacher-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 style="font-size: 1.2rem;">Cài đặt Trò chơi ghép đôi</h2>
+                <button onclick="closeTeacherModal()" style="font-size: 1.5rem; border: none; background: none; cursor: pointer;">✖</button>
+            </div>
+            
+            <div class="quiz-config-top">
+                <div>
+                    <label style="font-size: 0.7rem; font-weight: bold;">Môn học:</label>
+                    <select id="input-subject" title="Chọn môn học" style="width: 100%; padding: 6px; border-radius: 5px;">
+                        <option value="Toán">Toán</option>
+                        <option value="Tiếng Việt">Tiếng Việt</option>
+                        <option value="Khoa học">Khoa học</option>
+                        <option value="Lịch sử & Địa lý">Lịch sử & Địa lý</option>
+                        <option value="Khác">Khác</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="font-size: 0.7rem; font-weight: bold;">Tên bài:</label>
+                    <input type="text" id="input-quiz-name" style="padding: 6px; width: 100%; border-radius: 5px; border:1px solid #ddd;">
+                </div>
+                <div>
+                    <label style="font-size: 0.7rem; font-weight: bold;">Đề cũ:</label>
+                    <div id="cloud-management-list" style="max-height: 60px; overflow-y: auto; font-size: 0.65rem; background: #fff; padding: 5px; border: 1px solid #eee; border-radius:5px;">
+                        Đang tải...
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-area">
+                <table>
+                    <thead><tr><th>STT</th><th>Vế 1 (Trái)</th><th>Vế 2 (Phải)</th></tr></thead>
+                    <tbody id="pair-rows"></tbody>
+                </table>
+            </div>
+
+            <div class="save-footer">
+                <p style="font-size: 0.7rem; color: #64748b; text-align: center;">💡 Chọn kiểu "Hình" và bấm 📁 để tải ảnh lên.</p>
+                <button class="btn-save" onclick="saveToCloud()">LƯU LÊN CLOUD</button>
+            </div>
+        </div>
+    </div>
+
+    <input type="file" id="global-file-input" style="display:none;" accept="image/*">
+    <div id="loading-overlay" class="loading-overlay"><div style="font-size: 2rem;">⏳</div><div id="loading-text">Chờ xíu nha...</div></div>
+    <div id="result-overlay"><img id="result-img" src="Dung.png"></div>
+    <div id="win-screen">
+        <h2>🎉 CHIẾN THẮNG! 🎉</h2>
+        <p style="font-size: 1.8rem;">Thời gian: <span id="final-time">0s</span></p>
+        <button class="option-btn" onclick="location.reload()" style="margin-top: 20px; width: 200px;">CHƠI LẠI</button>
+    </div>
+
+    <script>
+        // Config
+        const firebaseConfig = {
+            apiKey: "AIzaSyC6zlWn8BKYU7P6A2-PYq6IIWOzaqJWFhc",
+            authDomain: "gamhoctap.firebaseapp.com",
+            projectId: "gamhoctap",
+            storageBucket: "gamhoctap.firebasestorage.app",
+            messagingSenderId: "833329613932",
+            appId: "1:833329613932:web:0d8574827bcfe50b535c49"
+        };
+        if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore(), storage = firebase.storage();
+
+        let defaultPairs = [
+            { s1:{type:'text', content:'Trường học'}, s2:{type:'text', content:'School' }},
+            { s1:{type:'text', content:'Giáo viên'}, s2:{type:'text', content:'Teacher' }},
+            { s1:{type:'text', content:'Học sinh'}, s2:{type:'text', content:'Student' }},
+            { s1:{type:'text', content:'Sách vở'}, s2:{type:'text', content:'Book' }},
+            { s1:{type:'text', content:'Bảng đen'}, s2:{type:'text', content:'Blackboard' }},
+            { s1:{type:'text', content:'Gia đình'}, s2:{type:'text', content:'Family' }},
+            { s1:{type:'text', content:'Ông bà'}, s2:{type:'text', content:'Grandparents' }},
+            { s1:{type:'text', content:'Cha mẹ'}, s2:{type:'text', content:'Parents' }},
+            { s1:{type:'text', content:'Anh chị em'}, s2:{type:'text', content:'Siblings' }},
+            { s1:{type:'text', content:'Bạn bè'}, s2:{type:'text', content:'Friends' }}
+        ];
+        function preloadAssets() {
+            ['Dung.png', 'Sai.png', 'Dung.mp3', 'Sai.mp3'].forEach(src => {
+                if (src.endsWith('.png')) { const img = new Image(); img.src = src; }
+                else { const audio = new Audio(); audio.src = src; audio.preload = 'auto'; }
+            });
+        }
+        preloadAssets();
+        let selectedCards = [], matchesFound = 0, totalMatchesNeeded = 0, startTime, timerInterval, isGameActive = false;
+        const correctSound = new Audio('Dung.mp3'), incorrectSound = new Audio('Sai.mp3');
+
+        // ==== Lesson Integration ====
+        const params = new URLSearchParams(window.location.search);
+        const lessonId = localStorage.getItem('edurobot_matching_lesson_id') || "";
+        
+        if (params.get('source') === 'lesson') {
+            const lessonTitle = localStorage.getItem('edurobot_matching_title');
+            const hasCurrent = !!localStorage.getItem('edurobot_matching_current');
+            const hasPrev = !!localStorage.getItem('edurobot_matching_prev');
+            
+            document.getElementById('lesson-modes').style.display = 'block';
+
+            // Warm-up button logic
+            if (hasPrev) {
+                document.getElementById('btn-mode-prev').style.display = 'inline-flex';
+            } else {
+                setupAdvancedWarmup(); // Find previous lesson via manifest
+            }
+
+            // Current lesson button
+            if (hasCurrent) {
+                document.getElementById('btn-mode-current').style.display = 'inline-flex';
+            }
+
+            // Teacher quizzes and Exercise buttons
+            fetchAdditionalLessonContent();
+        }
+
+        async function fetchAdditionalLessonContent() {
+            if (!lessonId) return;
+            const container = document.getElementById('custom-lesson-modes');
+
+            // 1. Teacher-composed quizzes from Firebase
+            try {
+                const snap = await db.collection('matching_quizzes').where('lessonId', '==', lessonId).get();
+                if (!snap.empty) {
+                    snap.forEach(doc => {
+                        const btn = createModeBtn(`📁 ${doc.data().name}`, '#0ea5e9', '#0ea5e9', '#fff');
+                        btn.onclick = () => startCustomLessonGame(doc.id, doc.data());
+                        container.appendChild(btn);
+                    });
+                }
+            } catch (e) { console.error("Firebase error", e); }
+
+            // 2. Standard exercises from lesson data (Bài 1, Bài 2...)
+            const dataVar = "lesson" + lessonId + "Data";
+            const lessonData = window[dataVar] || window.currentLessonData;
+            if (lessonData && lessonData.matchingExercises) {
+                lessonData.matchingExercises.forEach(ex => {
+                    const btn = createModeBtn(`📝 ${ex.name}`, '#3b82f6', '#3b82f6', '#fff');
+                    btn.onclick = () => {
+                        defaultPairs = ex.pairs;
+                        setupGame();
+                    };
+                    container.appendChild(btn);
+                });
+            }
+        }
+
+        function createModeBtn(text, bg, border, font) {
+            const btn = document.createElement('button');
+            btn.className = 'option-btn';
+            btn.style.cssText = `display:inline-flex; background:${bg}; border-color:${border}; color:${font}; font-weight:800; padding:12px 20px; border-radius:16px; font-size:0.95rem;`;
+            btn.innerHTML = text;
+            return btn;
+        }
+
+
+        async function setupAdvancedWarmup() {
+            try {
+                // We use dynamic import to get the mathManifest
+                const m = await import('../../js/data/math/manifest.js');
+                const manifest = m.mathManifest;
+                const currentIndex = manifest.findIndex(l => String(l.period) === String(lessonId));
+                if (currentIndex > 0) {
+                    const prevLesson = manifest[currentIndex - 1];
+                    const btn = document.getElementById('btn-mode-prev');
+                    btn.style.display = 'inline-flex';
+                    btn.innerHTML = `🚀 Khởi động`;
+                    btn.onclick = async () => {
+                        const prevDataUrl = `../../js/data/math/${prevLesson.period}/data.js`;
+                        try {
+                            const scriptContent = await fetch(prevDataUrl).then(r => r.text());
+                            const blob = new Blob([scriptContent], { type: 'application/javascript' });
+                            const url = URL.createObjectURL(blob);
+                            const prevModule = await import(url);
+                            const prevData = prevModule["lesson" + prevLesson.period + "Data"];
+                            if (prevData && prevData.quizPool) {
+                                window.startWarmupGame(prevData.quizPool);
+                            } else {
+                                alert("Bài trước chưa có kho câu học!");
+                            }
+                        } catch (e) {
+                            console.error("Failed to load prev lesson data", e);
+                            alert("Không thể tải dữ liệu bài cũ.");
+                        }
+                    };
+                }
+            } catch (e) { console.error("Manifest load failed", e); }
+        }
+
+        window.startWarmupGame = function(pool) {
+            defaultPairs = pool.map(item => ({
+                s1: { type: 'text', content: item.question },
+                s2: { type: 'text', content: item.options[item.answer] }
+            }));
+            setupGame();
+        };
+
+        function startLessonGame(mode) {
+            const raw = localStorage.getItem(mode === 'prev' ? 'edurobot_matching_prev' : 'edurobot_matching_current');
+            if (raw) {
+                try {
+                    const pool = JSON.parse(raw);
+                    defaultPairs = pool.map(item => ({
+                        s1: { type: 'text', content: item.question },
+                        s2: { type: 'text', content: item.options[item.answer] }
+                    }));
+                    updateModeHighlight(mode === 'prev' ? 'btn-mode-prev' : 'btn-mode-current', mode === 'prev' ? 'TIẾT CŨ' : 'TIẾT NÀY');
+                } catch (e) { alert("Lỗi nạp dữ liệu bài học!"); }
+            }
+        }
+
+        function startCustomLessonGame(id, data) {
+            defaultPairs = data.pairs;
+            updateModeHighlight(null, data.name);
+            // Chọn bộ đề này trong dropdown để đồng bộ
+            document.getElementById('cloud-quiz-select').value = id;
+        }
+
+        function updateModeHighlight(btnId, title) {
+            // Reset highlights
+            document.querySelectorAll('#lesson-modes .option-btn').forEach(b => {
+                b.style.opacity = '0.6';
+                b.style.borderWidth = '2px';
+            });
+            if (btnId) {
+                const btn = document.getElementById(btnId);
+                btn.style.opacity = '1';
+                btn.style.borderWidth = '4px';
+            }
+            document.getElementById('default-modes-title').innerText = `Đã chọn: ${title}. Chọn số cặp:`;
+            document.getElementById('default-modes-title').style.color = 'var(--accent-blue)';
+        }
+
+        function initTeacherTable() {
+            const tbody = document.getElementById('pair-rows'); tbody.innerHTML = '';
+            for (let i = 0; i < 10; i++) {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td align="center" style="font-size:0.7rem">${i+1}</td>
+                    <td><div class="side-cell">
+                        <select id="type1-${i}" class="type-select" title="Loại 1" onchange="toggleUploadBtn(${i}, 1)"><option value="text">Chữ</option><option value="image">Hình</option></select>
+                        <input type="text" id="cont1-${i}" class="content-input">
+                        <button id="up1-${i}" class="btn-upload" onclick="triggerUpload(${i}, 1)" style="display:none;">📁</button>
+                    </div></td>
+                    <td><div class="side-cell">
+                        <select id="type2-${i}" class="type-select" title="Loại 2" onchange="toggleUploadBtn(${i}, 2)"><option value="text">Chữ</option><option value="image">Hình</option></select>
+                        <input type="text" id="cont2-${i}" class="content-input">
+                        <button id="up2-${i}" class="btn-upload" onclick="triggerUpload(${i}, 2)" style="display:none;">📁</button>
+                    </div></td>`;
+                tbody.appendChild(tr);
+            }
+        }
+
+        function toggleUploadBtn(r, s) { document.getElementById(`up${s}-${r}`).style.display = document.getElementById(`type${s}-${r}`).value === 'image' ? 'block' : 'none'; }
+        
+        let currentUpload = { row: null, side: null };
+        function triggerUpload(r, s) { currentUpload = { row: r, side: s }; document.getElementById('global-file-input').click(); }
+
+        document.getElementById('global-file-input').onchange = async (e) => {
+            const file = e.target.files[0]; if (!file) return;
+            toggleLoading(true, "Đang tải ảnh...");
+            try {
+                const ref = storage.ref(`images/${Date.now()}_${file.name}`);
+                const snap = await ref.put(file);
+                const url = await snap.ref.getDownloadURL();
+                document.getElementById(`cont${currentUpload.side}-${currentUpload.row}`).value = url;
+            } catch (e) { alert('Lỗi: ' + e.message); }
+            toggleLoading(false); e.target.value = '';
+        };
+
+        async function openTeacherModal() { 
+            document.getElementById('teacher-modal').style.display = 'flex'; 
+            initTeacherTable(); 
+            const lessonTitle = localStorage.getItem('edurobot_matching_title');
+            if (lessonTitle && !document.getElementById('input-quiz-name').value) {
+                document.getElementById('input-quiz-name').value = lessonTitle;
+            }
+            fetchAdminList(); 
+        }
+        function closeTeacherModal() { document.getElementById('teacher-modal').style.display = 'none'; }
+
+        async function saveToCloud() {
+            const name = document.getElementById('input-quiz-name').value.trim(), subject = document.getElementById('input-subject').value;
+            const lessonId = localStorage.getItem('edurobot_matching_lesson_id') || "";
+            if (!name) { alert('Nhập tên bài!'); return; }
+            const pairs = [];
+            for (let i = 0; i < 10; i++) {
+                const c1 = document.getElementById(`cont1-${i}`).value.trim(), c2 = document.getElementById(`cont2-${i}`).value.trim();
+                if (c1 && c2) pairs.push({
+                    s1: { type: document.getElementById(`type1-${i}`).value, content: c1 },
+                    s2: { type: document.getElementById(`type2-${i}`).value, content: c2 }
+                });
+            }
+            if (pairs.length < 4) { alert('Tối thiểu 4 cặp!'); return; }
+            toggleLoading(true, "Đang lưu...");
+            try {
+                await db.collection('matching_quizzes').add({ 
+                    name, subject, lessonId, pairs, 
+                    createdAt: firebase.firestore.FieldValue.serverTimestamp() 
+                });
+                alert('Đã lưu!'); fetchAdminList(); fetchQuizzesForSelector();
+            } catch (e) { alert('Lỗi: ' + e.message); }
+            toggleLoading(false);
+        }
+
+        async function fetchAdminList() {
+            const listDiv = document.getElementById('cloud-management-list');
+            const lessonId = localStorage.getItem('edurobot_matching_lesson_id') || "";
+            try {
+                let q = db.collection('matching_quizzes').orderBy('createdAt', 'desc');
+                const snap = await q.get();
+                listDiv.innerHTML = snap.docs.map(doc => {
+                    const data = doc.data();
+                    const isSameLesson = data.lessonId === lessonId;
+                    return `<div style="display:flex; justify-content:space-between; padding:3px; border-bottom:1px solid #f8fafc; ${isSameLesson?'background:#f0fdf4':''}">
+                        <span title="${data.lessonId||''}">${data.name} ${isSameLesson?'✅':''}</span>
+                        <button onclick="deleteQuiz('${doc.id}')" style="color:red; background:none; border:none; cursor:pointer;">Xóa</button>
+                    </div>`;
+                }).join('') || 'Trống.';
+            } catch (e) { listDiv.innerText = 'Lỗi.'; }
+        }
+
+        async function fetchQuizzesForSelector() {
+            const subject = document.getElementById('filter-subject').value, select = document.getElementById('cloud-quiz-select');
+            const lessonId = localStorage.getItem('edurobot_matching_lesson_id') || "";
+            try {
+                let q = db.collection('matching_quizzes').orderBy('createdAt', 'desc');
+                if (subject !== 'all') q = q.where('subject', '==', subject);
+                const snap = await q.get();
+                
+                // Phân loại: đưa các bộ đề của tiết này lên đầu
+                const options = snap.docs.map(doc => {
+                    const data = doc.data();
+                    const isSameLesson = data.lessonId === lessonId;
+                    return `<option value="${doc.id}" style="${isSameLesson?'font-weight:bold;color:green;':''}">${isSameLesson?'⭐ ':''}${data.name}</option>`;
+                });
+
+                select.innerHTML = '<option value="local">-- Bài tập mặc định --</option>' + options.join('');
+            } catch (e) {}
+        }
+
+        async function deleteQuiz(id) { if(confirm('Xóa?')) { await db.collection('matching_quizzes').doc(id).delete(); fetchAdminList(); fetchQuizzesForSelector(); } }
+
+        function toggleLoading(s, t = "Chờ xíu...") { document.getElementById('loading-overlay').style.display = s ? 'flex' : 'none'; document.getElementById('loading-text').innerText = t; }
+
+        function createCard(data, matchId, index, side) {
+            const card = document.createElement('div'); card.className = 'card'; card.dataset.matchId = matchId; card.dataset.side = side;
+            card.onclick = () => handleCardClick(card);
+            const inner = document.createElement('div'); inner.className = 'card-inner';
+            const front = document.createElement('div'); front.className = 'card-front';
+            front.innerText = side === 1 ? (index + 1) : String.fromCharCode(65 + index);
+            
+            const back = document.createElement('div'); back.className = 'card-back';
+            if (data.type === 'image') { 
+                const img = document.createElement('img'); img.src = data.content; img.onerror = () => { back.innerText = "!"; }; back.appendChild(img); 
+            } else { 
+                back.innerText = data.content;
+                const len = data.content.length;
+                if (len > 80) back.classList.add('very-long-text');
+                else if (len > 40) back.classList.add('long-text');
+            }
+            inner.appendChild(front); inner.appendChild(back); card.appendChild(inner);
+            return card;
+        }
+
+        async function startGame(numPairs) {
+            toggleLoading(true, "Đang tải...");
+            let activePairs = [...defaultPairs];
+            const quizId = document.getElementById('cloud-quiz-select').value;
+            if (quizId !== 'local') {
+                try {
+                    const doc = await db.collection('matching_quizzes').doc(quizId).get();
+                    if (doc.exists) { 
+                        activePairs = doc.data().pairs; 
+                        document.getElementById('game-title').innerText = doc.data().name.toUpperCase(); 
+                    }
+                } catch (e) {
+                    alert("Lỗi kết nối Cloud! Đang dùng bài tập mặc định.");
+                }
+            }
+            
+            if (!activePairs || activePairs.length === 0) {
+                activePairs = [...defaultPairs];
+            }
+
+            if (activePairs.length < numPairs) {
+                alert(`Đề này chỉ có ${activePairs.length} cặp. Đang giảm số cặp xuống.`);
+                numPairs = activePairs.length;
+            }
+
+            // Dynamic Layout & Font Logic
+            const rows = numPairs / 2;
+            const isMobile = window.innerWidth <= 768;
+            
+            // Calculate height to fit TV/Mobile vertical space (avoiding scrolling)
+            let cardH = isMobile ? (60 / rows) : (65 / rows);
+            let fontSize = isMobile ? (10 / rows) : (12 / rows);
+            
+            // Limit font size for accessibility
+            if (fontSize < 2) fontSize = 2;
+            if (fontSize > 8) fontSize = 8;
+
+            document.documentElement.style.setProperty('--card-height', cardH + 'vh');
+            document.documentElement.style.setProperty('--card-font-size', fontSize + 'vh');
+
+            totalMatchesNeeded = numPairs; matchesFound = 0;
+            document.getElementById('setup-screen').style.display = 'none';
+            document.getElementById('stats-panel').style.visibility = 'visible';
+            document.getElementById('matches-left').innerText = numPairs;
+            document.getElementById('settings-btn').style.display = 'none';
+
+            const s1G = document.getElementById('side1-grid'), s2G = document.getElementById('side2-grid');
+            s1G.innerHTML = ''; s2G.innerHTML = ''; s1G.style.display = 'grid'; s2G.style.display = 'grid';
+
+            const selection = activePairs.sort(() => 0.5 - Math.random()).slice(0, numPairs);
+            selection.forEach((p, i) => p.mId = i);
+            const Sh1 = [...selection].sort(() => 0.5 - Math.random()), Sh2 = [...selection].sort(() => 0.5 - Math.random());
+            Sh1.forEach((p, i) => s1G.appendChild(createCard(p.s1, p.mId, i, 1)));
+            Sh2.forEach((p, i) => s2G.appendChild(createCard(p.s2, p.mId, i, 2)));
+
+            isGameActive = true; startTime = Date.now();
+            timerInterval = setInterval(() => { document.getElementById('timer').innerText = ((Date.now() - startTime) / 1000).toFixed(1) + 's'; }, 100);
+            toggleLoading(false);
+        }
+
+        function handleCardClick(card) {
+            if (!isGameActive || card.classList.contains('flipped') || selectedCards.length >= 2) return;
+            card.classList.add('flipped'); selectedCards.push(card);
+            if (selectedCards.length === 2) {
+                isGameActive = false;
+                const [c1, c2] = selectedCards;
+                const isCorrect = c1.dataset.side !== c2.dataset.side && c1.dataset.matchId === c2.dataset.matchId;
+                setTimeout(() => {
+                    const rect1 = c1.getBoundingClientRect(), rect2 = c2.getBoundingClientRect();
+                    const centerX = window.innerWidth / 2, centerY = window.innerHeight / 2;
+                    const offset = window.innerWidth > 768 ? 150 : 60;
+                    const mX1 = centerX - (rect1.left + rect1.width/2) - offset, mY1 = centerY - (rect1.top + rect1.height/2);
+                    const mX2 = centerX - (rect2.left + rect2.width/2) + offset, mY2 = centerY - (rect2.top + rect2.height/2);
+                    document.querySelectorAll('.card').forEach(c => { if(c !== c1 && c !== c2) c.classList.add('card-dimmed'); });
+                    c1.style.transition = 'transform 0.5s'; c2.style.transition = 'transform 0.5s';
+                    c1.style.zIndex = '10000'; c2.style.zIndex = '10000';
+                    c1.style.transform = `translate(${mX1}px, ${mY1}px) scale(1.15)`;
+                    c2.style.transform = `translate(${mX2}px, ${mY2}px) scale(1.15)`;
+                    setTimeout(() => {
+                        const overlay = document.getElementById('result-overlay'), img = document.getElementById('result-img');
+                        if (isCorrect) { img.src = 'Dung.png'; correctSound.play().catch(()=>{}); }
+                        else { img.src = 'Sai.png'; incorrectSound.play().catch(()=>{}); }
+                        overlay.classList.add('show');
+                        setTimeout(() => {
+                            overlay.classList.remove('show'); 
+                            document.querySelectorAll('.card').forEach(c => c.classList.remove('card-dimmed'));
+                            if (isCorrect) {
+                                c1.style.visibility = 'hidden'; c2.style.visibility = 'hidden';
+                                c1.style.pointerEvents = 'none'; c2.style.pointerEvents = 'none';
+                                matchesFound++;
+                                document.getElementById('matches-left').innerText = totalMatchesNeeded - matchesFound;
+                                c1.style.zIndex = ''; c2.style.zIndex = '';
+                                if (matchesFound === totalMatchesNeeded) { clearInterval(timerInterval); document.getElementById('final-time').innerText = document.getElementById('timer').innerText; document.getElementById('win-screen').style.display = 'flex'; }
+                            } else { 
+                                c1.style.transform = c2.style.transform = ''; 
+                                c1.style.zIndex = ''; c2.style.zIndex = '';
+                                c1.classList.remove('flipped'); c2.classList.remove('flipped'); 
+                            }
+                            selectedCards = []; isGameActive = true;
+                        }, 1200);
+                    }, 800);
+                }, 600);
+            }
+        }
+        fetchQuizzesForSelector();
+    </script>
+</body>
+</html>

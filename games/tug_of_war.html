@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kéo Co - EduRobot</title>
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Firebase SDK (v8) -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+    <!-- Initialize Firebase for standalone mode -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyC6zlWn8BKYU7P6A2-PYq6IIWOzaqJWFhc",
+            authDomain: "gamhoctap.firebaseapp.com",
+            projectId: "gamhoctap",
+            storageBucket: "gamhoctap.firebasestorage.app",
+            messagingSenderId: "833329613932",
+            appId: "1:833329613932:web:0d8574827bcfe50b535c49"
+        };
+        try {
+            if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
+            window.db = firebase.firestore();
+        } catch(e) { console.warn('Firebase init failed:', e); }
+    </script>
+    
+    
+
+    <style>
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            margin: 0;
+            overflow: hidden;
+            background: #0f172a;
+        }
+        #game-container {
+            width: 100vw;
+            height: 100vh;
+        }
+        .close-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 999999;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    </style>
+</head>
+<body>
+    <button class="close-btn" onclick="window.close()" title="Đóng Game" style="padding: 10px; border-radius: 9999px; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+
+    <div id="game-container"></div>
+
+    <script type="module">
+        import { TugOfWar } from '../js/components/games/TugOfWar.js';
+        import { QuestionBankManager } from '../js/services/QuestionBankManager.js';
+
+        // Bridge for inline onclick handlers
+        window.GameLibrary = { games: { tug_of_war: TugOfWar } };
+        window.QuestionBankManager = QuestionBankManager;
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Pre-load question bank
+            await QuestionBankManager.init();
+
+            const gameDataRaw = localStorage.getItem('edurobot_current_game_data');
+            if (!gameDataRaw) {
+                alert('Không tìm thấy dữ liệu trò chơi!');
+                window.close();
+                return;
+            }
+
+            const gameData = JSON.parse(gameDataRaw);
+            
+            // GIẢ LẬP BIẾN MÔI TRƯỜNG ĐỂ CÁC GAME NHẬN ĐÚNG TIẾT
+            window.router = { currentLessonPeriod: gameData.lessonId };
+            window.currentLessonData = { period: gameData.lessonId, id: gameData.lessonId, title: "Tiết " + gameData.lessonId };
+
+            const container = document.getElementById('game-container');
+
+            // Initialize TugOfWar
+            TugOfWar.start(container, {
+                questions: gameData.questions || [],
+                role: gameData.isTeacher ? 'teacher' : 'student'
+            }, () => window.close());
+        });
+    </script>
+</body>
+</html>
+
