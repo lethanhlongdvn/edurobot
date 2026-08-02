@@ -589,7 +589,7 @@ export const router = {
             // Update Metadata
             const metaContainer = document.getElementById('navbar-metadata');
             if (metaContainer) {
-                metaContainer.classList.remove('hidden');
+                metaContainer.className = "hidden md:flex items-center space-x-4 border-l-2 border-gray-100 dark:border-slate-700 pl-4";
                 metaContainer.innerHTML = `
                     <div class="flex items-center gap-3 text-[9px] font-black uppercase tracking-wider">
                         <span class="w-[1px] h-4 bg-gray-100 mx-1"></span>
