@@ -362,7 +362,7 @@ export const lesson1 = {
                                             <input type="text" id="ans-1-1b-write" class="w-full p-2 md:p-3 border-2 border-blue-100 rounded-xl text-center font-black text-blue-600 bg-white/50 focus:border-blue-400 outline-none transition-all shadow-inner text-lg md:text-2xl lg:text-3xl" placeholder="">
                                         </td>
                                         <td class="p-3 md:p-4 border border-blue-100">
-                                            <input type="text" id="ans-1-1b-read" class="w-full p-2 md:p-3 border-2 border-blue-100 rounded-xl font-bold text-slate-700 bg-white/50 focus:border-blue-400 outline-none transition-all shadow-inner text-lg md:text-xl lg:text-2xl" placeholder="Đọc số...">
+                                            <textarea id="ans-1-1b-read" rows="2" class="w-full p-2 border-2 border-blue-100 rounded-xl font-bold text-slate-700 bg-white/50 focus:border-blue-400 outline-none transition-all shadow-inner text-sm md:text-xl resize-none overflow-hidden" placeholder="Đọc số..."></textarea>
                                         </td>
                                         <td class="p-3 md:p-4 border border-blue-100 text-center">
                                             <button onclick="window.check_1_1b()" id="btn-check-1-1b" class="w-10 h-10 md:w-14 md:h-14 bg-orange-600 hover:bg-orange-700 text-white rounded-full font-black text-xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
@@ -374,7 +374,7 @@ export const lesson1 = {
                                             <input type="text" id="ans-1-1c-write" class="w-full p-2 md:p-3 border-2 border-blue-100 rounded-xl text-center font-black text-blue-600 bg-white/50 focus:border-blue-400 outline-none transition-all shadow-inner text-lg md:text-2xl lg:text-3xl" placeholder="">
                                         </td>
                                         <td class="p-3 md:p-4 border border-blue-100">
-                                            <input type="text" id="ans-1-1c-read" class="w-full p-2 md:p-3 border-2 border-blue-100 rounded-xl font-bold text-slate-700 bg-white/50 focus:border-blue-400 outline-none transition-all shadow-inner text-lg md:text-xl lg:text-2xl" placeholder="Đọc số...">
+                                            <textarea id="ans-1-1c-read" rows="2" class="w-full p-2 border-2 border-blue-100 rounded-xl font-bold text-slate-700 bg-white/50 focus:border-blue-400 outline-none transition-all shadow-inner text-sm md:text-xl resize-none overflow-hidden" placeholder="Đọc số..."></textarea>
                                         </td>
                                         <td class="p-3 md:p-4 border border-blue-100 text-center">
                                             <button onclick="window.check_1_1c()" id="btn-check-1-1c" class="w-10 h-10 md:w-14 md:h-14 bg-orange-600 hover:bg-orange-700 text-white rounded-full font-black text-xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
@@ -386,7 +386,7 @@ export const lesson1 = {
                                             <input type="text" id="ans-1-1d-write" class="w-full p-2 md:p-3 border-2 border-blue-100 rounded-xl text-center font-black text-blue-600 bg-white/50 focus:border-blue-400 outline-none transition-all shadow-inner text-lg md:text-2xl lg:text-3xl" placeholder="">
                                         </td>
                                         <td class="p-3 md:p-4 border border-blue-100">
-                                            <input type="text" id="ans-1-1d-read" class="w-full p-2 md:p-3 border-2 border-blue-100 rounded-xl font-bold text-slate-700 bg-white/50 focus:border-blue-400 outline-none transition-all shadow-inner text-lg md:text-xl lg:text-2xl" placeholder="Đọc số...">
+                                            <textarea id="ans-1-1d-read" rows="2" class="w-full p-2 border-2 border-blue-100 rounded-xl font-bold text-slate-700 bg-white/50 focus:border-blue-400 outline-none transition-all shadow-inner text-sm md:text-xl resize-none overflow-hidden" placeholder="Đọc số..."></textarea>
                                         </td>
                                         <td class="p-3 md:p-4 border border-blue-100 text-center">
                                             <button onclick="window.check_1_1d()" id="btn-check-1-1d" class="w-10 h-10 md:w-14 md:h-14 bg-orange-600 hover:bg-orange-700 text-white rounded-full font-black text-xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
