@@ -1539,6 +1539,138 @@ html.dark #presentation-overlay .close-btn {
     #modal-body {
         font-size: 1.1rem !important;
     }
+
+    /* 6. CHUYỂN ĐỔI BỘ TAB NGANG THÀNH BENTO GRID 3 CỘT (STITCH STYLE) */
+    .sticky.top-\[92px\],
+    .sticky.top-\[96px\],
+    #app-content .sticky {
+        position: relative !important;
+        top: 0 !important;
+        margin-bottom: 1.25rem !important;
+        padding: 0 !important;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        z-index: 30 !important;
+    }
+
+    .sticky div.bg-white\/95,
+    .sticky div.backdrop-blur-2xl,
+    #app-content .sticky > div {
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 0.5rem !important;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+    }
+
+    .tab-btn {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0.75rem 0.25rem !important;
+        border-radius: 1.25rem !important;
+        background: #ffffff !important;
+        color: #424754 !important; /* on-surface-variant */
+        border: 2px solid #e5eeff !important; /* surface-container */
+        box-shadow: 0px 4px 12px rgba(59, 130, 246, 0.04) !important;
+        font-size: 10px !important;
+        font-weight: 800 !important;
+        letter-spacing: normal !important;
+        text-transform: uppercase !important;
+        min-height: 5.5rem !important;
+        transition: all 0.15s ease-in-out !important;
+    }
+
+    .dark .tab-btn {
+        background: #1e293b !important;
+        border-color: #334155 !important;
+        color: #94a3b8 !important;
+    }
+
+    .tab-btn span {
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: #eff4ff !important; /* surface-container-low */
+        border-radius: 0.75rem !important;
+        margin-bottom: 0.375rem !important;
+        font-size: 1.25rem !important;
+        transition: all 0.15s ease-in-out !important;
+    }
+
+    .dark .tab-btn span {
+        background: #334155 !important;
+    }
+
+    .tab-btn.active {
+        background: #0058be !important; /* Stitch Primary Blue */
+        color: #ffffff !important;
+        border-color: #0058be !important;
+        box-shadow: 0 4px 14px rgba(0, 88, 190, 0.2) !important;
+    }
+
+    .tab-btn.active span {
+        background: rgba(255, 255, 255, 0.2) !important;
+        color: #ffffff !important;
+    }
+
+    .tab-btn:active {
+        transform: translateY(2px) !important;
+    }
+
+    /* 7. TỐI ƯU HEADER TOP BAR THEO PHONG CÁCH STITCH */
+    header.sticky {
+        padding: 0 !important;
+    }
+    
+    header nav.glass-card-premium {
+        border-radius: 0 !important;
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        padding: 0.5rem 1rem !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04) !important;
+        background: rgba(255, 255, 255, 0.96) !important;
+    }
+
+    .dark header nav.glass-card-premium {
+        background: rgba(15, 23, 42, 0.96) !important;
+    }
+
+    header nav.glass-card-premium a.flex.items-center div.w-11.h-11 {
+        width: 2.25rem !important;
+        height: 2.25rem !important;
+        border-radius: 0.5rem !important;
+        font-size: 1.15rem !important;
+    }
+
+    header nav.glass-card-premium span.text-2xl {
+        font-size: 1.15rem !important;
+    }
+
+    header nav.glass-card-premium span.text-\[9px\] {
+        font-size: 8px !important;
+    }
+
+    #subject-badge {
+        display: inline-block !important;
+        background: #fd761a !important; /* Vibrant Orange từ Stitch */
+        padding: 0.2rem 0.5rem !important;
+        font-size: 8px !important;
+        border-radius: 9999px !important;
+        font-weight: 800 !important;
+        color: #ffffff !important;
+        line-height: 1 !important;
+        margin-left: 0.25rem !important;
+    }
 }
+
 
 
