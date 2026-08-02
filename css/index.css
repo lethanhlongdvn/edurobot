@@ -1448,6 +1448,14 @@ html.dark #presentation-overlay .close-btn {
    TỐI ƯU HÓA RESPONSIVE CHO ĐIỆN THOẠI (MOBILE RESPONSIVENESS < 768px)
    ========================================================================== */
 @media (max-width: 767px) {
+    /* Tiêu đề bài học chính (h1) nhỏ gọn phù hợp di động */
+    h1,
+    #app-content h1,
+    .max-w-full h1 {
+        font-size: 1.25rem !important; /* ~20px thay vì text-3xl/5xl */
+        line-height: 1.4 !important;
+    }
+
     /* 1. Cỡ chữ đề bài, mô tả & nhãn gọn gàng hơn trên điện thoại */
     .ltTrang p,
     .ltTrang td,
@@ -1459,7 +1467,7 @@ html.dark #presentation-overlay .close-btn {
     .fraction-exercise span,
     .word-problem p,
     .word-problem label {
-        font-size: 1.1rem !important; /* ~17px-18px thay vì quá to */
+        font-size: 0.95rem !important; /* ~15px-16px tương đương cỡ chữ nhỏ trong hình */
         line-height: 1.5 !important;
     }
 
@@ -1467,8 +1475,9 @@ html.dark #presentation-overlay .close-btn {
     .ltTrang h3:not([class*="text-"]),
     .math-exercise h4,
     .word-problem h3 {
-        font-size: 1.25rem !important; /* ~20px thay vì 30px */
+        font-size: 1.1rem !important; /* ~17px-18px */
     }
+
 
     /* 2. Giảm padding thừa để tăng không gian hiển thị nội dung chính */
     .ltTrang {
