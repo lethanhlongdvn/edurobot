@@ -1450,9 +1450,12 @@ html.dark #presentation-overlay .close-btn {
 @media (max-width: 767px) {
     /* Tiêu đề bài học chính (h1) nhỏ gọn phù hợp di động */
     h1,
+    h1.text-3xl,
+    h1.text-2xl,
+    h1.text-xl,
     #app-content h1,
     .max-w-full h1 {
-        font-size: 1.25rem !important; /* ~20px thay vì text-3xl/5xl */
+        font-size: 1.15rem !important; /* ~18px thay vì quá to */
         line-height: 1.4 !important;
     }
 
