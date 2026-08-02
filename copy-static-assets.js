@@ -25,7 +25,7 @@ function copyDir(src, dest) {
 console.log('--- Post-Build Static Copy Script ---');
 
 // Folders to copy to dist
-const foldersToCopy = ['assets', 'games', 'js', 'pages', 'css'];
+const foldersToCopy = ['assets', 'games', 'js', 'pages', 'css', 'data'];
 
 foldersToCopy.forEach(folder => {
     if (fs.existsSync(folder)) {
@@ -35,6 +35,12 @@ foldersToCopy.forEach(folder => {
         console.warn(`Warning: Directory "${folder}" does not exist, skipping.`);
     }
 });
+
+// Copy js/data into dist/data to prevent runtime 404 errors for dynamic imports in compiled code
+if (fs.existsSync('js/data')) {
+    console.log('Copying "js/data" to "dist/data" for runtime path resolution...');
+    copyDir('js/data', path.join('dist', 'data'));
+}
 
 // Also copy students_data.json and other root JSON if needed
 const filesToCopy = ['students_data.json', 'CNAME'];
