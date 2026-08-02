@@ -1021,7 +1021,11 @@ window.saveHonor = async function(studentEmail, honorData) {
                 milestones.certificates.push(honorData);
             }
             
-            transaction.update(docRef, { milestones });
+            if (doc.exists) {
+                transaction.update(docRef, { milestones });
+            } else {
+                transaction.set(docRef, { milestones });
+            }
         });
         
         return { success: true };
