@@ -121,3 +121,6 @@ serviceAccount.json
 students_import.json
 .env
 
+
+# Local Netlify folder
+.netlify

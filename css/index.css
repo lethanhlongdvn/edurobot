@@ -1444,3 +1444,89 @@ html.dark #presentation-overlay .close-btn {
     }
 }
 
+/* ==========================================================================
+   TỐI ƯU HÓA RESPONSIVE CHO ĐIỆN THOẠI (MOBILE RESPONSIVENESS < 768px)
+   ========================================================================== */
+@media (max-width: 767px) {
+    /* 1. Cỡ chữ đề bài, mô tả & nhãn gọn gàng hơn trên điện thoại */
+    .ltTrang p,
+    .ltTrang td,
+    .ltTrang span,
+    .math-exercise p,
+    .math-exercise span,
+    .vc-exercise h3,
+    .fraction-exercise h3,
+    .fraction-exercise span,
+    .word-problem p,
+    .word-problem label {
+        font-size: 1.1rem !important; /* ~17px-18px thay vì quá to */
+        line-height: 1.5 !important;
+    }
+
+    .ltTrang th,
+    .ltTrang h3:not([class*="text-"]),
+    .math-exercise h4,
+    .word-problem h3 {
+        font-size: 1.25rem !important; /* ~20px thay vì 30px */
+    }
+
+    /* 2. Giảm padding thừa để tăng không gian hiển thị nội dung chính */
+    .ltTrang {
+        padding-bottom: 4rem !important;
+    }
+    
+    /* Thu hẹp padding của các thẻ card/container bài tập */
+    .p-8, .p-6, .p-5, .md\:p-8, .rounded-\[2\.5rem\], .rounded-\[3rem\], .rounded-\[2rem\] {
+        padding: 1.25rem !important; /* ~20px */
+        border-radius: 1.5rem !important;
+    }
+    
+    .space-y-8, .md\:space-y-8 {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    /* 3. Ô nhập liệu (inputs) gọn gàng, không bị phình to */
+    .ltTrang input[type="text"],
+    .math-exercise input[type="text"],
+    .vc-exercise input[type="text"],
+    .fraction-exercise input[type="text"],
+    .word-problem textarea {
+        font-size: 1.125rem !important; /* ~18px */
+        padding: 0.375rem 0.5rem !important;
+        height: auto !important;
+        min-height: unset !important;
+    }
+
+    /* 4. Tự động co giãn nút bấm E w-24 h-24 xuống w-16 h-16 trên di động */
+    button.w-24.h-24,
+    .w-24.h-24.rounded-\[2rem\],
+    .w-24.h-24.rounded-3xl {
+        width: 4rem !important; /* 64px */
+        height: 4rem !important;
+        font-size: 2.25rem !important; /* ~36px */
+        border-radius: 1.25rem !important;
+    }
+
+    /* 5. Căn gióng hàng đặt dọc (Math Vertical Calculations) */
+    /* Đảm bảo khung đặt tính không tràn và có thanh cuộn ngang nếu quá nhiều cột */
+    .math-vertical-container, 
+    .math-vertical-layout,
+    [class*="grid-template-columns"] {
+        max-width: 100% !important;
+        overflow-x: auto !important;
+    }
+    
+    /* Modal phản hồi tối ưu trên màn hình nhỏ */
+    #math-modal-content {
+        max-height: 95vh !important;
+        padding: 1rem !important;
+        border-radius: 1.5rem !important;
+    }
+    
+    #modal-body {
+        font-size: 1.1rem !important;
+    }
+}
+
+
