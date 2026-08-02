@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduRobot Mobile - Trải nghiệm di động chuẩn</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        pastel: {
+                            blue: '#e0f2fe',
+                            blueDark: '#0284c7',
+                            yellow: '#fef9c3',
+                            yellowDark: '#ca8a04',
+                            green: '#dcfce7',
+                            greenDark: '#16a34a',
+                            pink: '#fce7f3',
+                            pinkDark: '#db2777',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+        }
+        /* Custom scrollbar for mobile frame content */
+        .mobile-content::-webkit-scrollbar {
+            width: 5px;
+        }
+        .mobile-content::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .mobile-content::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 99px;
+        }
+        .badge-animation:hover {
+            transform: scale(1.1) rotate(5deg);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+    </style>
+</head>
+
+<body class="flex flex-col items-center justify-center min-h-screen p-4 md:p-8">
+
+    <div class="text-center mb-6">
+        <h1 class="text-3xl font-black text-sky-950 uppercase tracking-wide">Trải nghiệm di động EduRobot</h1>
+        <p class="text-slate-600 text-sm font-semibold mt-1">Phiên bản thử nghiệm chuẩn màn hình điện thoại (Mobile-First Mockup)</p>
+    </div>
+
+    <!-- iPhone Device Container Wrapper -->
+    <div class="relative w-full max-w-[400px] h-[820px] rounded-[55px] border-[14px] border-slate-900 bg-slate-900 shadow-2xl overflow-hidden flex flex-col">
+        <!-- Phone Camera Notch / Dynamic Island -->
+        <div class="absolute top-3 left-1/2 -translate-x-1/2 w-28 h-6 bg-black rounded-full z-50 flex items-center justify-between px-3">
+            <div class="w-2.5 h-2.5 bg-zinc-900 rounded-full border border-zinc-800"></div>
+            <div class="w-1.5 h-1.5 bg-blue-900 rounded-full"></div>
+        </div>
+
+        <!-- System Status Bar -->
+        <div class="w-full h-11 bg-white text-slate-800 px-8 pt-3 flex justify-between items-center text-xs font-black z-40 select-none">
+            <span id="mobile-time">09:41</span>
+            <div class="flex items-center gap-1.5">
+                <!-- Signal -->
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.18 19.58 10.54 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm-1-8h2v5h-2zm0-3h2v2h-2z"/></svg>
+                <!-- Wifi -->
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21l-12-12c4.97-4.97 13.03-4.97 18 0l-12 12zm0-16.5c-3.15 0-6.12 1.23-8.36 3.46l8.36 8.36 8.36-8.36c-2.24-2.23-5.21-3.46-8.36-3.46z"/></svg>
+                <!-- Battery -->
+                <div class="w-6 h-3 border-2 border-current rounded-sm p-0.5 flex items-center">
+                    <div class="w-full h-full bg-current rounded-2xs"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Web Content Area simulating Mobile App -->
+        <div class="flex-1 w-full bg-slate-50 flex flex-col overflow-hidden relative">
+            
+            <!-- Toast notification system -->
+            <div id="mobile-toast" class="absolute top-4 left-4 right-4 bg-emerald-500 text-white font-black text-sm px-4 py-3 rounded-2xl shadow-xl flex items-center gap-2 transform -translate-y-24 transition-transform duration-300 z-50">
+                <span id="toast-icon">🎉</span>
+                <span id="toast-text">Làm bài xuất sắc! +10 Điểm</span>
+            </div>
+
+            <!-- Scrollable View Screen -->
+            <div class="flex-1 overflow-y-auto px-4 pt-4 pb-20 mobile-content flex flex-col gap-4">
+                
+                <!-- TAB 1: HOME DASHBOARD -->
+                <div id="tab-home" class="flex flex-col gap-4">
+                    <!-- User Welcome Card -->
+                    <div class="bg-gradient-to-r from-sky-400 to-blue-500 rounded-[2rem] p-5 text-white shadow-lg relative overflow-hidden">
+                        <div class="relative z-10">
+                            <span class="text-xs font-extrabold uppercase tracking-widest opacity-80">Chào mừng trở lại!</span>
+                            <h2 class="text-2xl font-black mt-0.5">Chào Việt 👋</h2>
+                            <p class="text-xs font-semibold mt-2 opacity-90">Hôm nay chúng ta cùng học tập vui vẻ nhé!</p>
+                        </div>
+                        
+                        <!-- Floating Mascot SVG directly built in code -->
+                        <div class="absolute -right-4 -bottom-4 w-32 h-32 opacity-90 animate-bounce-slow">
+                            <svg viewBox="0 0 100 100" class="w-full h-full">
+                                <!-- Body -->
+                                <rect x="25" y="35" width="50" height="45" rx="20" fill="#fef9c3" stroke="#ca8a04" stroke-width="3" />
+                                <!-- Screen -->
+                                <rect x="33" y="42" width="34" height="24" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="2" />
+                                <!-- Eyes -->
+                                <circle cx="43" cy="54" r="3" fill="#0284c7" />
+                                <circle cx="57" cy="54" r="3" fill="#0284c7" />
+                                <!-- Mouth -->
+                                <path d="M46 60 Q50 63 54 60" stroke="#0284c7" stroke-width="2" fill="none" stroke-linecap="round" />
+                                <!-- Antenna -->
+                                <line x1="50" y1="35" x2="50" y2="20" stroke="#ca8a04" stroke-width="3" />
+                                <circle cx="50" cy="18" r="5" fill="#f87171" stroke="#b91c1c" stroke-width="2" />
+                                <!-- Arms -->
+                                <path d="M25 50 Q15 45 12 55" stroke="#ca8a04" stroke-width="3" fill="none" stroke-linecap="round" />
+                                <path d="M75 50 Q85 45 88 38" stroke="#ca8a04" stroke-width="3" fill="none" stroke-linecap="round" class="animate-pulse" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Progress Card -->
+                    <div class="bg-white rounded-[2rem] p-5 shadow-sm border border-slate-100">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-sm font-black text-slate-800">Tiến trình tuần này</span>
+                            <span class="text-xs font-extrabold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full">80% Đạt</span>
+                        </div>
+                        <div class="w-full bg-slate-100 h-4 rounded-full overflow-hidden">
+                            <div class="bg-gradient-to-r from-emerald-400 to-green-500 h-full rounded-full" style="width: 80%"></div>
+                        </div>
+                        <div class="flex justify-between mt-3 text-xs font-semibold text-slate-500">
+                            <span>Đã học: 8 tiết</span>
+                            <span>Mục tiêu: 10 tiết</span>
+                        </div>
+                    </div>
+
+                    <!-- Lesson Cards Selector -->
+                    <div>
+                        <h3 class="text-sm font-black text-slate-700 uppercase tracking-widest mb-3 px-1">Bài học hôm nay</h3>
+                        <div class="grid grid-cols-1 gap-3">
+                            
+                            <!-- Toán 5 Card -->
+                            <button onclick="switchLesson('math')" class="w-full text-left bg-gradient-to-br from-amber-50 to-orange-100/50 hover:from-amber-100 hover:to-orange-100 border-2 border-amber-200/60 rounded-[2rem] p-4 flex items-center justify-between transition-all active:scale-98 shadow-xs">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-12 h-12 bg-amber-400 text-white rounded-2xl flex items-center justify-center font-black text-xl shadow-md shadow-amber-200">➕</div>
+                                    <div>
+                                        <span class="text-[10px] font-black text-amber-700 uppercase tracking-wider">Tiết 61 • Toán học 5</span>
+                                        <h4 class="text-base font-black text-slate-800 mt-0.5">Nhân số thập phân</h4>
+                                    </div>
+                                </div>
+                                <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-amber-600 font-extrabold shadow-xs">→</div>
+                            </button>
+
+                            <!-- Tiếng Việt 5 Card -->
+                            <button onclick="switchLesson('vietnamese')" class="w-full text-left bg-gradient-to-br from-sky-50 to-indigo-100/50 hover:from-sky-100 hover:to-indigo-100 border-2 border-sky-200/60 rounded-[2rem] p-4 flex items-center justify-between transition-all active:scale-98 shadow-xs">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-12 h-12 bg-sky-500 text-white rounded-2xl flex items-center justify-center font-black text-xl shadow-md shadow-sky-200">📝</div>
+                                    <div>
+                                        <span class="text-[10px] font-black text-sky-700 uppercase tracking-wider">Tiết 1 • Tiếng Việt 5</span>
+                                        <h4 class="text-base font-black text-slate-800 mt-0.5">Từ đồng nghĩa</h4>
+                                    </div>
+                                </div>
+                                <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-sky-600 font-extrabold shadow-xs">→</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 2: INTERACTIVE QUIZ SCREEN -->
+                <div id="tab-quiz" class="hidden flex flex-col gap-4">
+                    
+                    <!-- Subject Picker -->
+                    <div class="flex bg-slate-200/80 p-1 rounded-2xl">
+                        <button id="btn-select-math" onclick="loadLessonData('math')" class="flex-1 py-2 text-center text-xs font-black rounded-xl transition-all bg-white text-slate-800 shadow-sm">TOÁN 5</button>
+                        <button id="btn-select-vietnamese" onclick="loadLessonData('vietnamese')" class="flex-1 py-2 text-center text-xs font-black rounded-xl transition-all text-slate-600 hover:text-slate-900">TIẾNG VIỆT 5</button>
+                    </div>
+
+                    <!-- Quiz Title / Progress -->
+                    <div class="bg-white rounded-3xl p-5 border border-slate-100 shadow-xs">
+                        <div class="flex justify-between items-center mb-2">
+                            <span id="quiz-badge" class="text-[10px] font-black text-amber-700 bg-amber-50 px-2.5 py-1 rounded-full uppercase tracking-wider">Tiết 61 • Toán 5</span>
+                            <span class="text-xs font-bold text-slate-400">Câu hỏi 1/1</span>
+                        </div>
+                        <h3 id="quiz-question-title" class="text-lg font-black text-slate-800 leading-snug">Nhân một số thập phân với một số tự nhiên:</h3>
+                    </div>
+
+                    <!-- QUIZ WORKSPACE -->
+                    <div class="bg-white rounded-3xl p-5 border border-slate-100 shadow-xs flex flex-col gap-5">
+                        
+                        <!-- Math Content (Vertical Math Calculation Grid Layout) -->
+                        <div id="quiz-content-math" class="flex flex-col items-center py-4">
+                            <!-- Vertical Math Grid Layout built precisely to guidelines -->
+                            <div class="grid justify-center items-center select-none" style="grid-template-columns: 24px 40px 40px 40px 40px; font-family: monospace; font-weight: 900;">
+                                <!-- Row 1: 3,4 -->
+                                <span></span>
+                                <span></span>
+                                <span class="text-2xl text-right pr-2">3</span>
+                                <span class="text-2xl text-center">,</span>
+                                <span class="text-2xl text-left pl-2">4</span>
+
+                                <!-- Row 2: x 5 -->
+                                <span class="text-2xl text-center text-amber-600">×</span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="text-2xl text-left pl-2">5</span>
+
+                                <!-- Separator line across columns -->
+                                <div class="col-span-5 border-b-4 border-slate-800 my-2"></div>
+
+                                <!-- Result Row with exact inputs -->
+                                <span></span>
+                                <span></span>
+                                <input id="math-input-1" type="text" maxlength="1" class="w-10 h-10 text-center text-xl font-black text-amber-700 bg-amber-50 border-2 border-amber-200 rounded-xl focus:border-amber-500 focus:bg-white outline-none transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;">
+                                <span class="text-2xl text-center">,</span>
+                                <input id="math-input-2" type="text" maxlength="1" class="w-10 h-10 text-center text-xl font-black text-amber-700 bg-amber-50 border-2 border-amber-200 rounded-xl focus:border-amber-500 focus:bg-white outline-none transition-all" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;">
+                            </div>
+                        </div>
+
+                        <!-- Vietnamese Content -->
+                        <div id="quiz-content-vietnamese" class="hidden flex flex-col gap-3 py-2">
+                            <p class="text-sm font-bold text-slate-600 mb-2">Chọn từ đồng nghĩa với từ <strong class="text-indigo-600">"Hòa bình"</strong>:</p>
+                            
+                            <!-- Options list -->
+                            <button onclick="selectVietnameseOption(this, 'A')" class="vietnamese-option w-full p-4 rounded-2xl border-2 border-slate-100 text-left font-black text-slate-700 hover:bg-slate-50 transition-all flex justify-between items-center active:scale-98">
+                                <span>A. Tĩnh lặng</span>
+                                <span class="option-check text-transparent">✓</span>
+                            </button>
+                            <button onclick="selectVietnameseOption(this, 'B')" class="vietnamese-option w-full p-4 rounded-2xl border-2 border-slate-100 text-left font-black text-slate-700 hover:bg-slate-50 transition-all flex justify-between items-center active:scale-98">
+                                <span>B. Thái bình</span>
+                                <span class="option-check text-transparent">✓</span>
+                            </button>
+                            <button onclick="selectVietnameseOption(this, 'C')" class="vietnamese-option w-full p-4 rounded-2xl border-2 border-slate-100 text-left font-black text-slate-700 hover:bg-slate-50 transition-all flex justify-between items-center active:scale-98">
+                                <span>C. Chiến tranh</span>
+                                <span class="option-check text-transparent">✓</span>
+                            </button>
+                        </div>
+
+                        <!-- Button Show Solution (Teacher Helper) -->
+                        <div class="flex justify-between items-center">
+                            <button onclick="toggleSolution()" class="text-xs font-black text-amber-600 bg-amber-50 hover:bg-amber-100 px-3 py-2 rounded-xl transition-all">Hiện bài giải 💡</button>
+                            <!-- Submit Button E -->
+                            <button onclick="checkAnswer()" class="w-16 h-16 rounded-2xl bg-amber-500 hover:bg-amber-600 text-white font-black text-2xl shadow-lg shadow-amber-200 active:scale-95 transition-all flex items-center justify-center">E</button>
+                        </div>
+
+                        <!-- Detailed Solution Card (Hidden by default) -->
+                        <div id="solution-card" class="hidden p-4 rounded-2xl bg-slate-50 border-2 border-slate-200/50 space-y-2 text-slate-700">
+                            <h4 class="font-black text-sm underline text-amber-700 mb-2">Bài giải chi tiết:</h4>
+                            <p id="solution-text" class="text-xs font-semibold leading-relaxed">a) Ta tính nhẩm như nhân số tự nhiên:<br>34 × 5 = 170.<br>b) Vì thừa số 3,4 có một chữ số ở phần thập phân, ta đặt dấu phẩy tương ứng ở kết quả để được 17,0 (hoặc 17).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 3: ACHIEVEMENT REWARD SCREEN -->
+                <div id="tab-achievements" class="hidden flex flex-col gap-4 text-center">
+                    
+                    <!-- Stats summary card -->
+                    <div class="bg-gradient-to-br from-emerald-50 to-green-100/50 border border-green-200 rounded-[2.5rem] p-5 text-center flex flex-col items-center">
+                        <div class="w-16 h-16 bg-emerald-500 text-white text-3xl rounded-3xl flex items-center justify-center shadow-lg shadow-green-200 animate-pulse">👑</div>
+                        <h3 class="text-xl font-black text-emerald-950 mt-3">Thành Tích Của Bạn</h3>
+                        <p class="text-xs font-semibold text-emerald-700 mt-1">Cố gắng mở khóa toàn bộ huy hiệu nhé!</p>
+                        
+                        <div class="flex gap-8 mt-5 border-t border-emerald-200/50 pt-4 w-full justify-center">
+                            <div>
+                                <span class="block text-xl font-black text-emerald-900" id="total-score">100</span>
+                                <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-widest">Tổng Điểm</span>
+                            </div>
+                            <div class="border-l border-emerald-200/50"></div>
+                            <div>
+                                <span class="block text-xl font-black text-emerald-900" id="unlocked-count">3/3</span>
+                                <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-widest">Huy Hiệu</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Badges Vault -->
+                    <div class="bg-white rounded-3xl p-5 border border-slate-100 shadow-xs">
+                        <h4 class="text-xs font-black text-slate-500 uppercase tracking-widest text-left mb-4">Kho huy hiệu của Việt</h4>
+                        <div class="grid grid-cols-3 gap-3">
+                            <!-- Badge 1 -->
+                            <div class="badge-animation flex flex-col items-center p-2 rounded-2xl bg-amber-50 border border-amber-100">
+                                <div class="w-12 h-12 flex items-center justify-center text-3xl">⭐</div>
+                                <span class="text-[10px] font-black text-slate-700 mt-2">Thần đồng</span>
+                            </div>
+                            <!-- Badge 2 -->
+                            <div class="badge-animation flex flex-col items-center p-2 rounded-2xl bg-sky-50 border border-sky-100">
+                                <div class="w-12 h-12 flex items-center justify-center text-3xl">📝</div>
+                                <span class="text-[10px] font-black text-slate-700 mt-2">Vua Việt</span>
+                            </div>
+                            <!-- Badge 3 -->
+                            <div class="badge-animation flex flex-col items-center p-2 rounded-2xl bg-emerald-50 border border-emerald-100">
+                                <div class="w-12 h-12 flex items-center justify-center text-3xl">🔥</div>
+                                <span class="text-[10px] font-black text-slate-700 mt-2">Chăm chỉ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Navigation Bar simulated -->
+            <div class="absolute bottom-0 left-0 right-0 h-16 bg-white border-t border-slate-100 flex items-center justify-around px-4 z-40 select-none">
+                <!-- Nav Item 1 -->
+                <button id="nav-home" onclick="changeTab('home')" class="flex flex-col items-center justify-center text-blue-600 transition-all font-black text-[10px]">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                    <span>Trang chủ</span>
+                </button>
+                
+                <!-- Nav Item 2 -->
+                <button id="nav-quiz" onclick="changeTab('quiz')" class="flex flex-col items-center justify-center text-slate-400 hover:text-slate-600 transition-all font-black text-[10px]">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                    <span>Luyện tập</span>
+                </button>
+                
+                <!-- Nav Item 3 -->
+                <button id="nav-achievements" onclick="changeTab('achievements')" class="flex flex-col items-center justify-center text-slate-400 hover:text-slate-600 transition-all font-black text-[10px]">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5a2 2 0 10-2 2h2zm0 0h4m-4 0H8m12 3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    <span>Thành tích</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Instructions context -->
+    <div class="mt-6 max-w-md bg-white rounded-3xl p-5 shadow-sm text-slate-600 text-xs leading-relaxed border border-slate-100">
+        <p class="font-black text-slate-700 mb-2">💡 HƯỚNG DẪN TƯƠNG TÁC DEMO:</p>
+        <ul class="list-disc pl-4 space-y-1 font-semibold">
+            <li>Nhấp vào thẻ môn học ở <strong>Trang chủ</strong> để đổi sang bài học đó.</li>
+            <li>Tại tab <strong>Luyện tập</strong>, nhập đáp án cho Toán là <strong class="text-amber-600">17,0</strong> (ô 1 điền <code class="bg-slate-100 px-1 rounded">1</code>, ô 2 điền <code class="bg-slate-100 px-1 rounded">7</code>) hoặc chọn <strong class="text-sky-600">B. Thái bình</strong> cho tiếng Việt, sau đó nhấn nút <strong class="text-amber-600">E</strong> để nộp bài.</li>
+            <li>Giao diện thiết kế theo hệ màu pastel, nút bấm bo góc 2rem và có phản ứng xúc giác chạm nổi bật.</li>
+        </ul>
+    </div>
+
+    <!-- JavaScript Interactive Logic -->
+    <script>
+        // Update Time simulation
+        function updateTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            document.getElementById('mobile-time').textContent = `${hours}:${minutes}`;
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+
+        // State variables
+        let currentTab = 'home';
+        let currentLesson = 'math';
+        let selectedVietnameseAns = '';
+
+        // Tab changer
+        function changeTab(tabName) {
+            // Hide all tabs
+            document.getElementById('tab-home').classList.add('hidden');
+            document.getElementById('tab-quiz').classList.add('hidden');
+            document.getElementById('tab-achievements').classList.add('hidden');
+
+            // Show active tab
+            document.getElementById(`tab-${tabName}`).classList.remove('hidden');
+
+            // Update bottom navigation styling
+            const navs = ['home', 'quiz', 'achievements'];
+            navs.forEach(nav => {
+                const navBtn = document.getElementById(`nav-${nav}`);
+                if (nav === tabName) {
+                    navBtn.className = "flex flex-col items-center justify-center text-blue-600 transition-all font-black text-[10px]";
+                } else {
+                    navBtn.className = "flex flex-col items-center justify-center text-slate-400 hover:text-slate-600 transition-all font-black text-[10px]";
+                }
+            });
+
+            currentTab = tabName;
+            
+            // Auto close solution when switching tabs
+            document.getElementById('solution-card').classList.add('hidden');
+        }
+
+        // Change lesson from home or picker
+        function switchLesson(subject) {
+            changeTab('quiz');
+            loadLessonData(subject);
+        }
+
+        // Load specific lesson screen states
+        function loadLessonData(subject) {
+            currentLesson = subject;
+            document.getElementById('solution-card').classList.add('hidden');
+
+            const quizBadge = document.getElementById('quiz-badge');
+            const quizTitle = document.getElementById('quiz-question-title');
+            
+            const btnMath = document.getElementById('btn-select-math');
+            const btnVN = document.getElementById('btn-select-vietnamese');
+
+            if (subject === 'math') {
+                // Update headers
+                quizBadge.textContent = "Tiết 61 • Toán 5";
+                quizBadge.className = "text-[10px] font-black text-amber-700 bg-amber-50 px-2.5 py-1 rounded-full uppercase tracking-wider";
+                quizTitle.textContent = "Nhân một số thập phân với một số tự nhiên:";
+
+                btnMath.className = "flex-1 py-2 text-center text-xs font-black rounded-xl transition-all bg-white text-slate-800 shadow-sm";
+                btnVN.className = "flex-1 py-2 text-center text-xs font-black rounded-xl transition-all text-slate-600 hover:text-slate-900";
+
+                // Show/hide components
+                document.getElementById('quiz-content-math').classList.remove('hidden');
+                document.getElementById('quiz-content-vietnamese').classList.add('hidden');
+
+                // Solution content
+                document.getElementById('solution-text').innerHTML = "a) Ta tính nhẩm như nhân số tự nhiên:<br>34 × 5 = 170.<br>b) Vì thừa số 3,4 có một chữ số ở phần thập phân, ta đặt dấu phẩy tương ứng ở kết quả để được 17,0 (hoặc 17).";
+                
+                // Clear inputs
+                document.getElementById('math-input-1').value = '';
+                document.getElementById('math-input-2').value = '';
+            } else {
+                // Update headers
+                quizBadge.textContent = "Tiết 1 • Tiếng Việt 5";
+                quizBadge.className = "text-[10px] font-black text-sky-700 bg-sky-50 px-2.5 py-1 rounded-full uppercase tracking-wider";
+                quizTitle.textContent = "Từ đồng nghĩa và từ trái nghĩa:";
+
+                btnMath.className = "flex-1 py-2 text-center text-xs font-black rounded-xl transition-all text-slate-600 hover:text-slate-900";
+                btnVN.className = "flex-1 py-2 text-center text-xs font-black rounded-xl transition-all bg-white text-slate-800 shadow-sm";
+
+                // Show/hide components
+                document.getElementById('quiz-content-math').classList.add('hidden');
+                document.getElementById('quiz-content-vietnamese').classList.remove('hidden');
+
+                // Solution content
+                document.getElementById('solution-text').innerHTML = "Từ đồng nghĩa với 'Hòa bình' là các từ biểu thị trạng thái không có chiến tranh, xã hội bình yên.<br>Đáp án đúng là:<br><strong>B. Thái bình</strong>.<br>Chúc mừng em đã trả lời đúng!";
+
+                // Reset options selection
+                const options = document.querySelectorAll('.vietnamese-option');
+                options.forEach(opt => {
+                    opt.classList.remove('border-sky-500', 'bg-sky-50/50');
+                    opt.querySelector('.option-check').className = "option-check text-transparent";
+                });
+                selectedVietnameseAns = '';
+            }
+        }
+
+        // Handle Vietnamese option selections
+        function selectVietnameseOption(element, val) {
+            const options = document.querySelectorAll('.vietnamese-option');
+            options.forEach(opt => {
+                opt.classList.remove('border-sky-500', 'bg-sky-50/50');
+                opt.querySelector('.option-check').className = "option-check text-transparent";
+            });
+
+            // Highlight chosen
+            element.classList.add('border-sky-500', 'bg-sky-50/50');
+            element.querySelector('.option-check').className = "option-check text-sky-600 font-black";
+            selectedVietnameseAns = val;
+        }
+
+        // Toggle solution visibility
+        function toggleSolution() {
+            const card = document.getElementById('solution-card');
+            card.classList.toggle('hidden');
+        }
+
+        // Show toast helper
+        function showToast(text, isSuccess) {
+            const toast = document.getElementById('mobile-toast');
+            const toastText = document.getElementById('toast-text');
+            const toastIcon = document.getElementById('toast-icon');
+
+            toastText.textContent = text;
+            if (isSuccess) {
+                toast.classList.replace('bg-rose-500', 'bg-emerald-500');
+                toastIcon.textContent = '🎉';
+            } else {
+                toast.classList.replace('bg-emerald-500', 'bg-rose-500');
+                toastIcon.textContent = '❌';
+            }
+
+            toast.classList.remove('-translate-y-24');
+            toast.classList.add('translate-y-0');
+
+            setTimeout(() => {
+                toast.classList.replace('translate-y-0', '-translate-y-24');
+            }, 3000);
+        }
+
+        // Verify correct answer logic
+        function checkAnswer() {
+            if (currentLesson === 'math') {
+                const ans1 = document.getElementById('math-input-1').value.trim();
+                const ans2 = document.getElementById('math-input-2').value.trim();
+
+                if (ans1 === '1' && ans2 === '7') {
+                    // Correct!
+                    showToast('Đúng rồi! Cực kỳ xuất sắc! +10đ', true);
+                    confetti({
+                        particleCount: 80,
+                        spread: 50,
+                        origin: { y: 0.6 }
+                    });
+                    // Automatically show solution
+                    document.getElementById('solution-card').classList.remove('hidden');
+                } else {
+                    // Incorrect
+                    showToast('Chưa chính xác rồi, hãy kiểm tra lại nhé!', false);
+                }
+            } else {
+                if (selectedVietnameseAns === 'B') {
+                    // Correct!
+                    showToast('Chính xác! Bạn là vua tiếng Việt! +10đ', true);
+                    confetti({
+                        particleCount: 80,
+                        spread: 50,
+                        origin: { y: 0.6 }
+                    });
+                    document.getElementById('solution-card').classList.remove('hidden');
+                } else if (selectedVietnameseAns === '') {
+                    showToast('Hãy chọn một đáp án trước khi kiểm tra nhé!', false);
+                } else {
+                    showToast('Chưa đúng rồi! Thử lại xem nào!', false);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
