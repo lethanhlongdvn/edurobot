@@ -1498,16 +1498,33 @@ html.dark #presentation-overlay .close-btn {
         margin-bottom: 1rem !important;
     }
     
-    /* 3. Ô nhập liệu (inputs) gọn gàng, không bị phình to */
+    /* 3. Ô nhập liệu (inputs) gọn gàng, không bị phình to và đồng bộ viền Focus */
     .ltTrang input[type="text"],
     .math-exercise input[type="text"],
     .vc-exercise input[type="text"],
     .fraction-exercise input[type="text"],
-    .word-problem textarea {
-        font-size: 1.125rem !important; /* ~18px */
+    .word-problem textarea,
+    .ltTrang textarea {
+        font-size: 1.05rem !important; /* ~16px-17px gọn gàng */
         padding: 0.375rem 0.5rem !important;
         height: auto !important;
         min-height: unset !important;
+        border-radius: 0.75rem !important;
+    }
+
+    /* Tự động co giãn tối thiểu cho ô nhập trong bảng */
+    table input[type="text"],
+    table textarea {
+        min-width: 70px !important;
+    }
+
+    /* Hiệu ứng Focus viền xanh dương đồng bộ của Stitch */
+    input[type="text"]:focus,
+    textarea:focus {
+        border-color: #0058be !important;
+        box-shadow: 0 0 0 3px rgba(0, 88, 190, 0.15) !important;
+        outline: none !important;
+        background-color: #ffffff !important;
     }
 
     /* 4. Tự động co giãn nút bấm E w-24 h-24 xuống w-16 h-16 trên di động */

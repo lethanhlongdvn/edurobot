@@ -136,7 +136,7 @@ export const lesson32 = {
                                         </tr>
                                         <tr class="border-b border-indigo-100">
                                             <td class="p-4 border-r-2 border-indigo-700">
-                                                <input id="ans-32-1-3" type="text" class="w-full h-12 border-2 border-indigo-700 rounded-xl px-4 font-black text-indigo-800 md:text-3xl" placeholder="Nhập cách đọc...">
+                                                <textarea id="ans-32-1-3" rows="2" class="w-full border-2 border-indigo-700 rounded-xl px-4 py-2 font-black text-indigo-800 md:text-3xl resize-none overflow-hidden" placeholder="Nhập cách đọc..."></textarea>
                                             </td>
                                             <td class="p-4 text-slate-700 bg-indigo-50/10">728,6 km²</td>
                                         </tr>

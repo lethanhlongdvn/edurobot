@@ -73,17 +73,17 @@ const lesson153Practice = `
                         <div class="p-6 bg-blue-50 rounded-3xl border-2 border-blue-100 shadow-sm space-y-3">
                             <p class="text-xl md:text-2xl font-black text-blue-900">a) Đọc số tiền điện tháng Hai của các công ty (điền cách đọc):</p>
                             <div class="space-y-3">
-                                <div class="flex items-center gap-3 flex-nowrap whitespace-nowrap overflow-x-auto text-xl md:text-2xl font-bold text-slate-800">
+                                <div class="flex flex-col md:flex-row md:items-center gap-2 text-xl md:text-2xl font-bold text-slate-800">
                                     <span>• Công ty A (105 362 480 đồng):</span>
-                                    <input type="text" id="ans-153-1aa" class="w-full md:w-auto h-12 border-2 border-blue-600 rounded-xl px-4 text-xl md:text-2xl font-black text-blue-600 outline-none" placeholder="Viết cách đọc...">
+                                    <textarea id="ans-153-1aa" rows="2" class="w-full md:w-[350px] border-2 border-blue-600 rounded-xl px-4 py-1.5 text-xl font-bold text-blue-600 outline-none resize-none overflow-hidden" placeholder="Viết cách đọc..."></textarea>
                                 </div>
-                                <div class="flex items-center gap-3 flex-nowrap whitespace-nowrap overflow-x-auto text-xl md:text-2xl font-bold text-slate-800">
+                                <div class="flex flex-col md:flex-row md:items-center gap-2 text-xl md:text-2xl font-bold text-slate-800">
                                     <span>• Công ty B (83 965 724 đồng):</span>
-                                    <input type="text" id="ans-153-1ab" class="w-full md:w-auto h-12 border-2 border-blue-600 rounded-xl px-4 text-xl md:text-2xl font-black text-blue-600 outline-none" placeholder="Viết cách đọc...">
+                                    <textarea id="ans-153-1ab" rows="2" class="w-full md:w-[350px] border-2 border-blue-600 rounded-xl px-4 py-1.5 text-xl font-bold text-blue-600 outline-none resize-none overflow-hidden" placeholder="Viết cách đọc..."></textarea>
                                 </div>
-                                <div class="flex items-center gap-3 flex-nowrap whitespace-nowrap overflow-x-auto text-xl md:text-2xl font-bold text-slate-800">
+                                <div class="flex flex-col md:flex-row md:items-center gap-2 text-xl md:text-2xl font-bold text-slate-800">
                                     <span>• Công ty C (121 783 907 đồng):</span>
-                                    <input type="text" id="ans-153-1ac" class="w-full md:w-auto h-12 border-2 border-blue-600 rounded-xl px-4 text-xl md:text-2xl font-black text-blue-600 outline-none" placeholder="Viết cách đọc...">
+                                    <textarea id="ans-153-1ac" rows="2" class="w-full md:w-[350px] border-2 border-blue-600 rounded-xl px-4 py-1.5 text-xl font-bold text-blue-600 outline-none resize-none overflow-hidden" placeholder="Viết cách đọc..."></textarea>
                                 </div>
                             </div>
                         </div>
