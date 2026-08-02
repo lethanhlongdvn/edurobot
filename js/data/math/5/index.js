@@ -130,7 +130,7 @@ export const lesson5 = {
                                             <div class="w-12 h-0.5 bg-slate-600 my-1"></div>
                                             <input type="text" id="mau-5-1a" class="w-10 h-10 md:w-12 md:h-12 border-2 border-blue-300 rounded-lg text-center font-black text-3xl md:text-5xl text-blue-600 outline-none focus:border-blue-500 shadow-inner" placeholder="" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;">
                                         </div>
-                                        <input type="text" id="read-5-1a" class="w-full p-2 border-2 border-blue-200 rounded-lg text-center text-2xl md:text-3xl font-bold text-slate-700 italic" placeholder="Đọc phân số...">
+                                        <textarea id="read-5-1a" rows="2" class="w-full p-2 border-2 border-blue-200 rounded-lg text-center text-xl md:text-2xl font-bold text-slate-700 italic resize-none overflow-hidden" placeholder="Đọc phân số..."></textarea>
                                     </div>
                                 </div>
 
@@ -166,7 +166,7 @@ export const lesson5 = {
                                             <div class="w-12 h-0.5 bg-slate-600 my-1"></div>
                                             <input type="text" id="mau-5-1b" class="w-10 h-10 md:w-12 md:h-12 border-2 border-blue-300 rounded-lg text-center font-black text-3xl md:text-5xl text-blue-600 outline-none focus:border-blue-500 shadow-inner" placeholder="" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;">
                                         </div>
-                                        <input type="text" id="read-5-1b" class="w-full p-2 border-2 border-blue-200 rounded-lg text-center text-2xl md:text-3xl font-bold text-slate-700 italic" placeholder="Đọc phân số...">
+                                        <textarea id="read-5-1b" rows="2" class="w-full p-2 border-2 border-blue-200 rounded-lg text-center text-xl md:text-2xl font-bold text-slate-700 italic resize-none overflow-hidden" placeholder="Đọc phân số..."></textarea>
                                     </div>
                                 </div>
 
@@ -195,7 +195,7 @@ export const lesson5 = {
                                             <div class="w-12 h-0.5 bg-slate-600 my-1"></div>
                                             <input type="text" id="mau-5-1c" class="w-10 h-10 md:w-12 md:h-12 border-2 border-blue-300 rounded-lg text-center font-black text-3xl md:text-5xl text-blue-600 outline-none focus:border-blue-500 shadow-inner" placeholder="" style="padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important;">
                                         </div>
-                                        <input type="text" id="read-5-1c" class="w-full p-2 border-2 border-blue-200 rounded-lg text-center text-2xl md:text-3xl font-bold text-slate-700 italic" placeholder="Đọc phân số...">
+                                        <textarea id="read-5-1c" rows="2" class="w-full p-2 border-2 border-blue-200 rounded-lg text-center text-xl md:text-2xl font-bold text-slate-700 italic resize-none overflow-hidden" placeholder="Đọc phân số..."></textarea>
                                     </div>
                                 </div>
                             </div>

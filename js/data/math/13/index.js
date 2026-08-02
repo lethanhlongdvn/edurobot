@@ -478,7 +478,7 @@ export const lesson13 = {
                                         <!-- Đọc -->
                                         <div class="w-full">
                                             <span class="text-sm font-bold text-slate-500 block mb-1">Đọc là:</span>
-                                            <input type="text" id="ans-13-1a-doc" class="w-full p-2 border border-teal-300 rounded-xl text-center font-bold md:text-lg text-teal-700 outline-none focus:border-teal-500 bg-teal-50/10" placeholder="Viết cách đọc bằng chữ">
+                                            <textarea id="ans-13-1a-doc" rows="2" class="w-full p-2 border border-teal-300 rounded-xl text-center font-bold md:text-lg text-teal-700 outline-none focus:border-teal-500 bg-teal-50/10 resize-none overflow-hidden" placeholder="Viết cách đọc bằng chữ"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -530,7 +530,7 @@ export const lesson13 = {
                                         <!-- Đọc -->
                                         <div class="w-full">
                                             <span class="text-sm font-bold text-slate-500 block mb-1">Đọc là:</span>
-                                            <input type="text" id="ans-13-1b-doc" class="w-full p-2 border border-teal-300 rounded-xl text-center font-bold md:text-lg text-teal-700 outline-none focus:border-teal-500 bg-teal-50/10" placeholder="Viết cách đọc bằng chữ">
+                                            <textarea id="ans-13-1b-doc" rows="2" class="w-full p-2 border border-teal-300 rounded-xl text-center font-bold md:text-lg text-teal-700 outline-none focus:border-teal-500 bg-teal-50/10 resize-none overflow-hidden" placeholder="Viết cách đọc bằng chữ"></textarea>
                                         </div>
                                     </div>
                                 </div>

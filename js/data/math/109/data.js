@@ -118,7 +118,7 @@ export const lesson109Data = {
                                             </tr>
                                             <tr class="border-b border-blue-200">
                                                 <td class="p-4 border-r border-blue-200 text-left pl-6">
-                                                    <input id="109-1-2" type="text" class="w-full h-11 text-left px-4 font-bold border-2 border-blue-300 rounded-xl outline-none focus:border-blue-600 bg-white" placeholder="Viết chữ đọc số đo..." style="font-size: 1.15rem !important;">
+                                                    <textarea id="109-1-2" rows="2" class="w-full border-2 border-blue-300 rounded-xl px-4 py-2 font-bold outline-none focus:border-blue-600 bg-white resize-none overflow-hidden" placeholder="Viết chữ đọc số đo..." style="font-size: 1.15rem !important;"></textarea>
                                                 </td>
                                                 <td class="p-4 font-extrabold text-slate-900">1 000 dm³</td>
                                             </tr>

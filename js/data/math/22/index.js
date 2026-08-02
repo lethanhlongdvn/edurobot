@@ -243,9 +243,9 @@ export const lesson22 = {
                                         <span class="text-2xl md:text-3xl">=</span>
                                         <input id="ans-22-3-1-dec" type="text" class="border-2 border-blue-700 rounded-xl text-center font-black text-blue-800" placeholder="" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; outline: none; transition: width 0.1s ease;" />
                                     </div>
-                                    <div class="flex items-center gap-2">
+                                    <div class="flex flex-col gap-1 w-full">
                                         <span class="text-lg font-bold text-slate-600">Đọc là:</span>
-                                        <input id="ans-22-3-1-read" type="text" class="border-2 border-blue-700 rounded-xl px-3 font-bold text-blue-800" placeholder="Viết cách đọc số bằng chữ..." oninput="this.style.width = (Math.max(this.value.length, 10) * 12 + 45) + 'px';" style="width: 240px; padding: 0px 10px !important; font-size: 1.25rem !important; line-height: 38px !important; outline: none; transition: width 0.1s ease;" />
+                                        <textarea id="ans-22-3-1-read" rows="2" class="w-full border-2 border-blue-700 rounded-xl px-3 py-1 font-bold text-blue-800 bg-white/50 focus:border-blue-500 outline-none resize-none overflow-hidden text-lg" placeholder="Viết cách đọc số bằng chữ..."></textarea>
                                     </div>
                                 </div>
 
@@ -260,9 +260,9 @@ export const lesson22 = {
                                         <span class="text-2xl md:text-3xl">=</span>
                                         <input id="ans-22-3-2-dec" type="text" class="border-2 border-blue-700 rounded-xl text-center font-black text-blue-800" placeholder="" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; outline: none; transition: width 0.1s ease;" />
                                     </div>
-                                    <div class="flex items-center gap-2">
+                                    <div class="flex flex-col gap-1 w-full">
                                         <span class="text-lg font-bold text-slate-600">Đọc là:</span>
-                                        <input id="ans-22-3-2-read" type="text" class="border-2 border-blue-700 rounded-xl px-3 font-bold text-blue-800" placeholder="Viết cách đọc số bằng chữ..." oninput="this.style.width = (Math.max(this.value.length, 10) * 12 + 45) + 'px';" style="width: 240px; padding: 0px 10px !important; font-size: 1.25rem !important; line-height: 38px !important; outline: none; transition: width 0.1s ease;" />
+                                        <textarea id="ans-22-3-2-read" rows="2" class="w-full border-2 border-blue-700 rounded-xl px-3 py-1 font-bold text-blue-800 bg-white/50 focus:border-blue-500 outline-none resize-none overflow-hidden text-lg" placeholder="Viết cách đọc số bằng chữ..."></textarea>
                                     </div>
                                 </div>
 
@@ -277,9 +277,9 @@ export const lesson22 = {
                                         <span class="text-2xl md:text-3xl">=</span>
                                         <input id="ans-22-3-3-dec" type="text" class="border-2 border-blue-700 rounded-xl text-center font-black text-blue-800" placeholder="" oninput="this.style.width = (Math.max(this.value.length, 3) * 12 + 30) + 'px';" style="width: 80px; padding: 0px !important; font-size: 1.25rem !important; line-height: 38px !important; outline: none; transition: width 0.1s ease;" />
                                     </div>
-                                    <div class="flex items-center gap-2">
+                                    <div class="flex flex-col gap-1 w-full">
                                         <span class="text-lg font-bold text-slate-600">Đọc là:</span>
-                                        <input id="ans-22-3-3-read" type="text" class="border-2 border-blue-700 rounded-xl px-3 font-bold text-blue-800" placeholder="Viết cách đọc số bằng chữ..." oninput="this.style.width = (Math.max(this.value.length, 10) * 12 + 45) + 'px';" style="width: 240px; padding: 0px 10px !important; font-size: 1.25rem !important; line-height: 38px !important; outline: none; transition: width 0.1s ease;" />
+                                        <textarea id="ans-22-3-3-read" rows="2" class="w-full border-2 border-blue-700 rounded-xl px-3 py-1 font-bold text-blue-800 bg-white/50 focus:border-blue-500 outline-none resize-none overflow-hidden text-lg" placeholder="Viết cách đọc số bằng chữ..."></textarea>
                                     </div>
                                 </div>
                             </div>

@@ -58,7 +58,7 @@ export const lesson113Data = {
                                     <!-- Câu b -->
                                     <div class="bg-white p-5 rounded-2xl border border-blue-200 space-y-3">
                                         <p class="text-slate-500 font-bold uppercase tracking-wider italic text-sm">b) Đọc số đo: 0,015 m³</p>
-                                        <input id="ans-113-1-2" type="text" class="w-full p-4 rounded-xl border-2 border-blue-300 text-xl font-bold text-slate-700 focus:border-blue-500 outline-none" placeholder="Đọc số đo bằng chữ..." style="padding: 0.75rem !important;">
+                                        <textarea id="ans-113-1-2" rows="2" class="w-full p-4 rounded-xl border-2 border-blue-300 text-xl font-bold text-slate-700 focus:border-blue-500 outline-none resize-none overflow-hidden" placeholder="Đọc số đo bằng chữ..." style="padding: 0.75rem !important;"></textarea>
                                     </div>
 
                                     <!-- Câu c -->
@@ -73,7 +73,7 @@ export const lesson113Data = {
                                     <!-- Câu d -->
                                     <div class="bg-white p-5 rounded-2xl border border-blue-200 space-y-3">
                                         <p class="text-slate-500 font-bold uppercase tracking-wider italic text-sm">d) Đọc số đo: 100,2 cm³</p>
-                                        <input id="ans-113-1-4" type="text" class="w-full p-4 rounded-xl border-2 border-blue-300 text-xl font-bold text-slate-700 focus:border-blue-500 outline-none" placeholder="Đọc số đo bằng chữ..." style="padding: 0.75rem !important;">
+                                        <textarea id="ans-113-1-4" rows="2" class="w-full p-4 rounded-xl border-2 border-blue-300 text-xl font-bold text-slate-700 focus:border-blue-500 outline-none resize-none overflow-hidden" placeholder="Đọc số đo bằng chữ..." style="padding: 0.75rem !important;"></textarea>
                                     </div>
                                 </div>
                             </div>
