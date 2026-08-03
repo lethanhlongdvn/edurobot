@@ -43,7 +43,7 @@ if (fs.existsSync('js/data')) {
 }
 
 // Also copy students_data.json and other root JSON if needed
-const filesToCopy = ['students_data.json', 'CNAME'];
+const filesToCopy = ['students_data.json', 'CNAME', 'robots.txt'];
 filesToCopy.forEach(file => {
     if (fs.existsSync(file)) {
         console.log(`Copying "${file}" to "dist/${file}"...`);

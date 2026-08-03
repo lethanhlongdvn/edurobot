@@ -1,9 +1,9 @@
 export default {
   content: [
     "./index.html",
-    "./teacher.html",
-    "./teacher-dashboard.html",
-    "./js/**/*.js"
+    "./pages/**/*.html",
+    "./games/**/*.html",
+    "./js/**/*.js",
   ],
   theme: {
     extend: {

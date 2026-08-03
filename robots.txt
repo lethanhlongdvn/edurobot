@@ -1,0 +1,5 @@
+# EduRobot 5.0 — robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://edurobot5.vn/sitemap.xml
