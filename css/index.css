@@ -944,7 +944,8 @@ body.presentation-mode header,
 body.presentation-mode footer,
 body.presentation-mode aside,
 body.presentation-mode .text-center.mb-6.animate-slide-down, /* Ẩn tiêu đề Tiết 1 bài học khi chiếu */
-body.presentation-mode .bg-indigo-950\/5 { /* Ẩn slogan banner */
+body.presentation-mode .bg-indigo-950\/5, /* Ẩn slogan banner ở dev server */
+body.presentation-mode .bg-indigo-950 { /* Ẩn slogan banner ở build/live server */
     display: none !important;
 }
 
