@@ -1104,11 +1104,11 @@ export const router = {
     },
 
     detectAndApplyDeviceMode() {
-        // 1. Kiểm tra tham số trên URL (?mode=tv hoặc ?mode=mobile)
+        // 1. Kiểm tra tham số trên URL (?mode=tv hoặc ?mode=mobile hoặc ?mode=desktop)
         const urlParams = new URLSearchParams(window.location.search);
         let mode = urlParams.get('mode');
 
-        if (mode === 'tv' || mode === 'mobile') {
+        if (mode === 'tv' || mode === 'mobile' || mode === 'desktop') {
             localStorage.setItem('preferred_mode', mode);
         } else {
             // 2. Kiểm tra cấu hình đã lưu trong localStorage
@@ -1122,7 +1122,8 @@ export const router = {
                 if (isMobileUA || isSmallScreen) {
                     mode = 'mobile';
                 } else {
-                    mode = 'tv';
+                    // Mặc định cho máy tính để bàn/laptop là giao diện desktop bình thường
+                    mode = 'desktop';
                 }
             }
         }
@@ -1140,7 +1141,7 @@ export const router = {
                 if (tvBtn) tvBtn.style.display = 'block';
                 if (mobileBtn) mobileBtn.style.display = 'none';
             }, 100);
-        } else {
+        } else if (mode === 'tv') {
             document.body.classList.add('presentation-mode');
             document.body.classList.remove('mobile-mode');
             console.log('[Device Mode] Tự động kích hoạt chế độ TV/Trình chiếu');
@@ -1152,11 +1153,24 @@ export const router = {
                 if (tvBtn) tvBtn.style.display = 'none';
                 if (mobileBtn) mobileBtn.style.display = 'block';
             }, 100);
+        } else {
+            // Chế độ desktop thường
+            document.body.classList.remove('presentation-mode');
+            document.body.classList.remove('mobile-mode');
+            console.log('[Device Mode] Kích hoạt giao diện Desktop Giáo viên/Soạn bài');
+
+            // Cập nhật hiển thị nút trên giao diện
+            setTimeout(() => {
+                const tvBtn = document.getElementById('desktop-toggle-tv-btn');
+                const mobileBtn = document.getElementById('desktop-toggle-mobile-btn');
+                if (tvBtn) tvBtn.style.display = 'block';
+                if (mobileBtn) mobileBtn.style.display = 'block';
+            }, 100);
         }
     },
 
     switchDeviceMode(mode) {
-        if (mode === 'tv' || mode === 'mobile') {
+        if (mode === 'tv' || mode === 'mobile' || mode === 'desktop') {
             localStorage.setItem('preferred_mode', mode);
             this.detectAndApplyDeviceMode();
             // Tải lại trang để áp dụng giao diện tối ưu nhất
