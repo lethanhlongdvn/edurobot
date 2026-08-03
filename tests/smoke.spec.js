@@ -13,8 +13,8 @@ test.describe('EduRobot Smoke Tests', () => {
 
   test('should display major subjects navigation', async ({ page }) => {
     // Wait for the dashboard/main subjects to render
-    const mainGrid = page.locator('#main-grid');
-    await expect(mainGrid).toBeVisible();
+    const appContent = page.locator('#app-content');
+    await expect(appContent).toBeVisible();
 
     // Check elements are visible or at least loaded in DOM
     const buttonsCount = await page.locator('button').count();
