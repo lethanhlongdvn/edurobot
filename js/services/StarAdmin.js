@@ -313,9 +313,9 @@ export const StarAdmin = {
                             <td class="px-6 py-4">
                                 <div class="flex items-center gap-3">
                                     <div class="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-100 to-white dark:from-slate-700 dark:to-slate-900 flex items-center justify-center text-xs font-black text-indigo-600 border border-indigo-50 dark:border-white/10">
-                                        ${s.name.split(' ').pop().charAt(0)}
+                                        ${(s.name.split(' ').pop() || '').charAt(0)}
                                     </div>
-                                    <span class="font-bold text-sm text-indigo-950 dark:text-slate-200">${s.name}</span>
+                                    <span class="font-bold text-sm text-indigo-950 dark:text-slate-200">${window.escapeHTML ? window.escapeHTML(s.name) : s.name}</span>
                                 </div>
                             </td>
                             <td class="px-6 py-4 text-center">

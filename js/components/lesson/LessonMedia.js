@@ -346,6 +346,7 @@ export const LessonMedia = {
         // Hiện Overlay
         overlay.classList.add('active');
         document.body.style.overflow = 'hidden'; // Khoá cuộn trang nền
+        document.body.classList.add('presentation-mode'); // Kích hoạt chế độ TV Presentation
 
         // Đảm bảo nút điều hướng luôn hiển thị đúng text
         const navBtns = overlay.querySelectorAll('.nav-controls button');
@@ -382,6 +383,7 @@ export const LessonMedia = {
             overlay.classList.remove('active');
         }
         document.body.style.overflow = ''; // Mở lại cuộn trang nền
+        document.body.classList.remove('presentation-mode'); // Tắt chế độ TV Presentation
     },
 
     moveSlide(step) {
