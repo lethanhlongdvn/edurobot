@@ -974,21 +974,30 @@ body.presentation-mode .ltTrang {
 }
 
 body.presentation-mode .tab-btn {
-    font-size: 1rem !important; /* Thu nhỏ chữ nhẹ để vừa vặn hơn nữa */
-    padding: 0.25rem 0.75rem !important; /* Giảm padding xuống 40% chỉ vừa đủ chứa chữ */
+    font-size: 0.9rem !important; /* Chữ nhỏ gọn */
+    padding: 0.15rem 0.5rem !important; /* Padding cực tiểu chỉ vừa ôm khít text */
     min-height: 0px !important;
+    border-radius: 9999px !important;
 }
 
 body.presentation-mode .tab-btn span {
-    font-size: 1.15rem !important; /* Thu nhỏ icon tương ứng */
+    font-size: 1rem !important; /* Icon nhỏ gọn */
     margin: 0px !important;
 }
 
 body.presentation-mode .sticky {
     top: 0px !important;
     margin-top: 0px !important;
-    padding: 0.15rem !important; /* Giảm padding tối đa */
-    margin-bottom: 0.25rem !important;
+    padding: 0px !important; /* Triệt tiêu hoàn toàn padding của container */
+    margin-bottom: 0.15rem !important;
+}
+
+body.presentation-mode .sticky > div {
+    padding: 0.1rem 0.25rem !important; /* Làm mỏng tối đa container trong suốt */
+    border-radius: 0.5rem !important; /* Bo nhẹ gọn gàng */
+    box-shadow: none !important; /* Tắt bóng đổ để thanh xẹp xuống */
+    border: none !important; /* Tắt viền dày */
+    background: rgba(255, 255, 255, 0.9) !important;
 }
 
 body.presentation-mode #app-content {
