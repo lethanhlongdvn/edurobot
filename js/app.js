@@ -64,5 +64,15 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Đảm bảo cập nhật badge học sinh khi khởi động
     if (window.showStudentBadge) window.showStudentBadge();
+
+    // Lắng nghe sự kiện ESC để thoát nhanh TV Presentation Mode toàn cục
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            if (document.body.classList.contains('presentation-mode')) {
+                document.body.classList.remove('presentation-mode');
+                console.log('[TV Mode] Đã thoát qua phím ESC');
+            }
+        }
+    });
 });
 
