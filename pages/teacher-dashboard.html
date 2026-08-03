@@ -11,6 +11,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <!-- SheetJS for Excel Export -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="/js/core/firebase-config.js"></script>
     <style>
         body {
             font-family: 'Nunito', sans-serif;
@@ -215,15 +216,7 @@
             window.location.reload();
         }
 
-        // Placeholder - Update with your credentials
-        const firebaseConfig = {
-            apiKey: "AIzaSyC6zlWn8BKYU7P6A2-PYq6IIWOzaqJWFhc",
-            authDomain: "gamhoctap.firebaseapp.com",
-            projectId: "gamhoctap",
-            storageBucket: "gamhoctap.firebasestorage.app",
-            messagingSenderId: "833329613932",
-            appId: "1:833329613932:web:0d8574827bcfe50b535c49"
-        };
+        const firebaseConfig = window.__FIREBASE_CONFIG;
 
         if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
         const db = firebase.firestore();

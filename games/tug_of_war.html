@@ -14,16 +14,10 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
 
+    <script src="/js/core/firebase-config.js"></script>
     <!-- Initialize Firebase for standalone mode -->
     <script>
-        const firebaseConfig = {
-            apiKey: "AIzaSyC6zlWn8BKYU7P6A2-PYq6IIWOzaqJWFhc",
-            authDomain: "gamhoctap.firebaseapp.com",
-            projectId: "gamhoctap",
-            storageBucket: "gamhoctap.firebasestorage.app",
-            messagingSenderId: "833329613932",
-            appId: "1:833329613932:web:0d8574827bcfe50b535c49"
-        };
+        const firebaseConfig = window.__FIREBASE_CONFIG;
         try {
             if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
             window.db = firebase.firestore();

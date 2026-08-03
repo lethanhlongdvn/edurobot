@@ -3,15 +3,8 @@
  * Handles Firestore data saving and Storage uploads
  */
 
-// Placeholder Configuration - PLEASE UPDATE WITH REAL CREDENTIALS IN NETLIFY/LOCAL
-const firebaseConfig = {
-    apiKey: "AIzaSyC6zlWn8BKYU7P6A2-PYq6IIWOzaqJWFhc",
-    authDomain: "gamhoctap.firebaseapp.com",
-    projectId: "gamhoctap",
-    storageBucket: "gamhoctap.firebasestorage.app",
-    messagingSenderId: "833329613932",
-    appId: "1:833329613932:web:0d8574827bcfe50b535c49"
-};
+// Firebase config loaded from js/core/firebase-config.js (Single Source of Truth)
+const firebaseConfig = window.__FIREBASE_CONFIG || {};
 
 /**
  * XSS Mitigation helper to escape HTML
@@ -26,6 +19,15 @@ window.escapeHTML = function (str) {
         .replace(/'/g, "&#039;");
 };
 
+/**
+ * Sanitize student input — strip dangerous chars, limit length
+ * @param {string} value - Raw input value
+ * @returns {string} Cleaned value safe for comparison and display
+ */
+window.sanitizeInput = function (value) {
+    if (typeof value !== 'string') return '';
+    return value.trim().replace(/[<>'"&]/g, '').substring(0, 50);
+};
 
 // Initialize Firebase safely
 function initFirebase() {
@@ -359,6 +361,14 @@ async function submitEssay(event) {
  * Submit Math Lesson to Firestore (reuses essays_v2)
  */
 window.submitMathLesson = async function (content, score, btnId, timeTaken = 0, totalQuestions = 0, correctCount = 0) {
+    // ====== Debounce: Chặn spam submit (2 giây cooldown) ======
+    const now = Date.now();
+    if (window.__lastSubmitTime && (now - window.__lastSubmitTime < 2000)) {
+        console.warn('⏳ Vui lòng đợi trước khi kiểm tra lại.');
+        return;
+    }
+    window.__lastSubmitTime = now;
+
     // ====== Guard: Chặn Khách và tài khoản chưa duyệt ======
     const userRole = localStorage.getItem('userRole');
     const userApproved = localStorage.getItem('userApproved');
