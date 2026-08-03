@@ -941,17 +941,13 @@ body.presentation-mode {
 }
 
 body.presentation-mode footer,
-body.presentation-mode aside,
 body.presentation-mode .text-center.mb-6.animate-slide-down, /* Ẩn tiêu đề Tiết 1 bài học khi chiếu */
 body.presentation-mode .bg-indigo-950\/5, /* Ẩn slogan banner ở dev server */
 body.presentation-mode .bg-indigo-950 { /* Ẩn slogan banner ở build/live server */
     display: none !important;
 }
 
-body.presentation-mode .lg\:col-span-9 {
-    grid-column: span 12 / span 12 !important;
-    width: 100% !important;
-}
+/* Không ép rộng full 12 cột trang chủ ở presentation-mode để giữ sidebar chọn môn */
 
 /* Force elements styling under presentation mode on TV */
 body.presentation-mode .web-slide {
