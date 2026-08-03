@@ -4634,4 +4634,4 @@ DANH SÁCH PHÉP TÍNH (120C):
                         <p class="text-sm font-bold opacity-80 mb-4">${e.message}</p>
                         <button onclick="location.reload()" class="w-full py-3 bg-red-600 text-white rounded-xl font-black uppercase">Thử lại (F5)</button>
                     </div>
-                `)}},300),window.showStudentBadge&&window.showStudentBadge()});
+                `)}},300),window.showStudentBadge&&window.showStudentBadge(),document.addEventListener("keydown",e=>{e.key==="Escape"&&document.body.classList.contains("presentation-mode")&&(document.body.classList.remove("presentation-mode"),console.log("[TV Mode] Đã thoát qua phím ESC"))})});
