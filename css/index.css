@@ -973,21 +973,21 @@ body.presentation-mode .ltTrang {
 }
 
 body.presentation-mode .tab-btn {
-    font-size: 1.15rem !important; /* Thu nhỏ chữ nhẹ để vừa vặn */
-    padding: 0.5rem 1rem !important; /* Giảm padding xuống 60% chỉ vừa đủ chứa chữ */
+    font-size: 1rem !important; /* Thu nhỏ chữ nhẹ để vừa vặn hơn nữa */
+    padding: 0.25rem 0.75rem !important; /* Giảm padding xuống 40% chỉ vừa đủ chứa chữ */
     min-height: 0px !important;
 }
 
 body.presentation-mode .tab-btn span {
-    font-size: 1.5rem !important; /* Giảm kích thước icon bên cạnh text */
+    font-size: 1.15rem !important; /* Thu nhỏ icon tương ứng */
     margin: 0px !important;
 }
 
 body.presentation-mode .sticky {
     top: 0px !important;
     margin-top: 0px !important;
-    padding: 0.25rem !important; /* Giảm padding xung quanh khung bao quanh tab */
-    margin-bottom: 0.5rem !important;
+    padding: 0.15rem !important; /* Giảm padding tối đa */
+    margin-bottom: 0.25rem !important;
 }
 
 body.presentation-mode #app-content {
