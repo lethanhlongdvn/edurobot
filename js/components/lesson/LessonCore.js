@@ -83,16 +83,19 @@ Nhiệm vụ của em là:
             isTeacher = role === 'teacher' || role === 'admin';
         } catch (e) { }
 
+        // Kiểm tra chế độ hiển thị di động để ẩn nút Trình chiếu
+        const isMobileMode = document.body.classList.contains('mobile-mode');
+
         return `
             <div class="max-w-full mx-auto pb-10 px-1 pt-1">
                 <div class="text-center mb-6 animate-slide-down flex flex-col md:flex-row items-center justify-center gap-4 relative">
                     <h1 class="${lesson.title.length > 60 ? 'text-xl md:text-2xl' : lesson.title.length > 35 ? 'text-2xl md:text-3xl' : 'text-3xl md:text-5xl'} font-black text-blue-600 dark:text-blue-400 leading-tight tracking-tight uppercase">${lesson.title}</h1>
                     <div class="hidden md:flex absolute right-0 -top-6 flex-col items-end gap-2 z-[100]">
-                        ${(isTeacher && Array.isArray(lesson.presentation) && lesson.presentation.length > 0) ? `
+                        ${(isTeacher && !isMobileMode && Array.isArray(lesson.presentation) && lesson.presentation.length > 0) ? `
                         <button onclick="if(window.Lesson && window.Lesson.startPresentation) window.Lesson.startPresentation('${lesson.id || lesson.key || ''}')" class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest shadow-sm transition-all active:scale-95 flex items-center justify-center gap-1 border border-blue-700 w-full min-w-[120px]">
                             <span class="text-xs">🖥️</span> Trình chiếu
                         </button>` : ''}
-                        ${isTeacher ? `
+                        ${(isTeacher && !isMobileMode) ? `
                         <a href="${({math:'teacher-toan.html',vietnamese:'teacher-tiengviet.html',history:'teacher-lichsu.html'})[router.currentSubject] || 'teacher-tiengviet.html'}?week=${lesson.week || ''}&period=${lesson.period || lesson.id || ''}${(lesson.period === '141' || lesson.id === '141') ? '&export=practice' : ''}" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest shadow-sm transition-all active:scale-95 flex items-center justify-center gap-1 border border-emerald-700 decoration-none w-full min-w-[120px]">
                             <span class="text-xs">${(lesson.period === '141' || lesson.id === '141') ? '📥' : '📊'}</span> ${(lesson.period === '141' || lesson.id === '141') ? 'Tải báo cáo thực hành' : 'Xem kết quả'}
                         </a>` : ''}

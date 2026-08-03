@@ -28,6 +28,9 @@ export const router = {
         window.lessons = lessons;
         if (!window.__lessonCache) window.__lessonCache = new Map();
 
+        // 1. Tự động nhận diện thiết bị & áp dụng cấu hình lưu trữ
+        this.detectAndApplyDeviceMode();
+
         // Tải trạng thái khóa từ Firestore
         this.fetchLocks().finally(() => {
             if (window.location.hash === '#/' || window.location.hash === '') {
@@ -1098,6 +1101,67 @@ export const router = {
         // Click close button
         const _closeBtn = document.getElementById('math-modal-close-btn');
         if (_closeBtn) _closeBtn.addEventListener('click', window.closeMathModal);
+    },
+
+    detectAndApplyDeviceMode() {
+        // 1. Kiểm tra tham số trên URL (?mode=tv hoặc ?mode=mobile)
+        const urlParams = new URLSearchParams(window.location.search);
+        let mode = urlParams.get('mode');
+
+        if (mode === 'tv' || mode === 'mobile') {
+            localStorage.setItem('preferred_mode', mode);
+        } else {
+            // 2. Kiểm tra cấu hình đã lưu trong localStorage
+            mode = localStorage.getItem('preferred_mode');
+
+            if (!mode) {
+                // 3. Tự động phát hiện dựa trên kích thước màn hình và User Agent
+                const isMobileUA = /Mobi|Android|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+                const isSmallScreen = window.innerWidth < 768;
+
+                if (isMobileUA || isSmallScreen) {
+                    mode = 'mobile';
+                } else {
+                    mode = 'tv';
+                }
+            }
+        }
+
+        // Áp dụng lớp CSS tương ứng lên thẻ body
+        if (mode === 'mobile') {
+            document.body.classList.remove('presentation-mode');
+            document.body.classList.add('mobile-mode');
+            console.log('[Device Mode] Tự động kích hoạt chế độ Điện thoại (Mobile)');
+            
+            // Cập nhật hiển thị nút trên giao diện
+            setTimeout(() => {
+                const tvBtn = document.getElementById('desktop-toggle-tv-btn');
+                const mobileBtn = document.getElementById('desktop-toggle-mobile-btn');
+                if (tvBtn) tvBtn.style.display = 'block';
+                if (mobileBtn) mobileBtn.style.display = 'none';
+            }, 100);
+        } else {
+            document.body.classList.add('presentation-mode');
+            document.body.classList.remove('mobile-mode');
+            console.log('[Device Mode] Tự động kích hoạt chế độ TV/Trình chiếu');
+
+            // Cập nhật hiển thị nút trên giao diện
+            setTimeout(() => {
+                const tvBtn = document.getElementById('desktop-toggle-tv-btn');
+                const mobileBtn = document.getElementById('desktop-toggle-mobile-btn');
+                if (tvBtn) tvBtn.style.display = 'none';
+                if (mobileBtn) mobileBtn.style.display = 'block';
+            }, 100);
+        }
+    },
+
+    switchDeviceMode(mode) {
+        if (mode === 'tv' || mode === 'mobile') {
+            localStorage.setItem('preferred_mode', mode);
+            this.detectAndApplyDeviceMode();
+            // Tải lại trang để áp dụng giao diện tối ưu nhất
+            window.location.reload();
+        }
     }
 };
 

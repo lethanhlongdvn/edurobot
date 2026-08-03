@@ -1025,6 +1025,40 @@ span.text-\[10px\], label.text-\[10px\], p.text-\[10px\], div.text-\[10px\] {
 }
 
 /* =========================================
+   MOBILE MODE STYLING FOR STUDENTS
+   ========================================= */
+body.mobile-mode {
+    font-size: 1rem !important;
+}
+
+body.mobile-mode .bento-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+}
+
+body.mobile-mode .clay-card,
+body.mobile-mode .subject-card {
+    padding: 16px !important;
+}
+
+body.mobile-mode input,
+body.mobile-mode select {
+    font-size: 1.1rem !important;
+    padding: 10px 12px !important;
+    height: 44px !important;
+}
+
+body.mobile-mode button {
+    min-height: 44px !important;
+    padding: 8px 16px !important;
+}
+
+body.mobile-mode #app-content {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+/* =========================================
    MOBILE RESPONSIVE OVERRIDES (max-width: 640px)
    ========================================= */
 @media (max-width: 640px) {
