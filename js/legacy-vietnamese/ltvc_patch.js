@@ -66,8 +66,11 @@ window.submitLesson221VietData = async function (nameClient, clsClient, schoolCl
         const docId = `${slug(name)}_${slug(cls)}_${Date.now()}`;
 
         const db = window.db || firebase.firestore();
+        const currentUser = firebase.auth().currentUser;
+        const currentUid = currentUser ? currentUser.uid : "unknown";
 
         await db.collection("essays_v2").doc(docId).set({
+            uid: currentUid,
             studentName: name,
             studentClass: cls,
             studentSchool: school,

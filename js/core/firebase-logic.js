@@ -325,8 +325,11 @@ async function submitEssay(event) {
     }
 
     try {
+        const currentUser = firebase.auth().currentUser;
+        const currentUid = currentUser ? currentUser.uid : "unknown";
         const docId = window.getSlug(`${name}_${cls}_${school}_${lessonTitle}`);
         await db.collection("essays_v2").doc(docId).set({
+            uid: currentUid,
             studentName: name,
             studentClass: cls,
             studentSchool: school,
@@ -474,8 +477,11 @@ window.submitMathLesson = async function (content, score, btnId, timeTaken = 0, 
             if (finalScore >= existingScore) {
                 const finalTotal = totalQuestions || 10;
                 const finalCorrect = correctCount || Math.round(finalScore * finalTotal / 100);
+                const currentUser = firebase.auth().currentUser;
+                const currentUid = currentUser ? currentUser.uid : "unknown";
 
                 await db.collection("diem_tieng_viet_lop5").doc(baseDocId).set({
+                    uid: currentUid,
                     studentName: name,
                     studentClass: cls,
                     studentSchool: school,
@@ -521,7 +527,10 @@ window.submitMathLesson = async function (content, score, btnId, timeTaken = 0, 
             if (essayDoc.exists) existingAIScore = parseInt(essayDoc.data().aiScore) || 0;
 
             if (parseInt(score) >= existingAIScore) {
+                const currentUser = firebase.auth().currentUser;
+                const currentUid = currentUser ? currentUser.uid : "unknown";
                 await db.collection("essays_v2").doc(essayDocId).set({
+                    uid: currentUid,
                     studentName: name,
                     studentClass: cls,
                     studentSchool: school,
@@ -616,8 +625,12 @@ window.syncRealtimeProgress = async function (data, forceAuth = false) {
             console.warn("Could not fetch existing data, proceeding with merge:", err);
         }
 
+        const currentUser = firebase.auth().currentUser;
+        const currentUid = currentUser ? currentUser.uid : "unknown";
+
         // Prepare payload with highest score logic and cap at 100
         const payload = {
+            uid: currentUid,
             studentName: name,
             studentClass: cls,
             studentSchool: school,
