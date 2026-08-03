@@ -942,7 +942,9 @@ body.presentation-mode {
 
 body.presentation-mode header,
 body.presentation-mode footer,
-body.presentation-mode aside {
+body.presentation-mode aside,
+body.presentation-mode .text-center.mb-6.animate-slide-down, /* Ẩn tiêu đề Tiết 1 bài học khi chiếu */
+body.presentation-mode .bg-indigo-950\/5 { /* Ẩn slogan banner */
     display: none !important;
 }
 
@@ -973,6 +975,23 @@ body.presentation-mode .ltTrang {
 body.presentation-mode .tab-btn {
     font-size: 1.5rem !important;
     padding: 1.25rem !important;
+}
+
+/* Đẩy thanh chọn tab Tìm hiểu bài / Luyện tập / Củng cố sát lên mép trên cùng */
+body.presentation-mode .sticky {
+    top: 0px !important;
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+}
+
+body.presentation-mode #app-content {
+    padding-top: 0px !important;
+    margin-top: 0px !important;
+}
+
+body.presentation-mode .max-w-full {
+    padding-top: 0px !important;
+    margin-top: 0px !important;
 }
 
 /* Global Font Overrides to secure minimum readability of text-[7px] to text-[10px] */
