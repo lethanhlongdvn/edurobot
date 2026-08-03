@@ -1,0 +1,30 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // Helper function to check if the user is authenticated
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // Helper to check user roles in Firestore database
+    function isTeacherOrAdmin() {
+      return isAuthenticated() && 
+        (firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.role == 'teacher' || 
+         firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.role == 'admin' || 
+         firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.role == 'teacher-admin');
+    }
+
+    // Match static assets and materials (read-only for all, write for admin/teacher)
+    match /materials/{allPaths=**} {
+      allow read: if true;
+      allow write: if isTeacherOrAdmin();
+    }
+
+    // Match student submissions/uploads (e.g. photos of hand-written math tasks)
+    match /submissions/{userId}/{allPaths=**} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && request.auth.uid == userId;
+    }
+  }
+}

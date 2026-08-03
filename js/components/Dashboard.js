@@ -112,8 +112,7 @@ export const Dashboard = {
                                 }).join('')}
                             </nav>
                         </div>
-
-                        <!-- Progress Bento Card -->
+                        
                         <!-- Star Stats Bento Card -->
                         <div class="glass-card-premium p-3 bg-gradient-to-br from-yellow-400 to-orange-500 text-white shadow-xl shadow-orange-200/20 group cursor-pointer" onclick="window.location.hash = (window.router && window.router.isAdmin()) ? '#/star-admin' : '#/honors'">
                             <h3 class="text-[8px] font-black text-white/50 uppercase tracking-[0.2em] mb-1.5 flex justify-between items-center">
@@ -130,23 +129,26 @@ export const Dashboard = {
                                             <p class="text-[7px] font-bold text-white/70 uppercase">Tổng số Sao chăm ngoan</p>
                                         </div>
                                     </div>
-                                    <div class="flex justify-between items-center text-[8px] font-bold border-t border-white/20 pt-1.5">
+                                    <div class="flex justify-between items-center text-[8px] font-bold border-t border-white/20 pt-1.5" onclick="event.stopPropagation()">
                                         <span>Tuần này: +${stats.week}</span>
-                                        <span class="bg-white/20 px-1.5 py-0.5 rounded cursor-pointer hover:bg-white/40">
+                                        <span onclick="document.getElementById('dashboard-leaderboard-card').classList.toggle('hidden')" class="bg-white/20 px-1.5 py-0.5 rounded cursor-pointer hover:bg-white/40 active:scale-95 transition-transform select-none">
                                             Vinh danh 🏆
                                         </span>
                                     </div>
                                 `;
                             })()}
                         </div>
-
-                        <!-- Leaderboard Bento Card (Top 30%) -->
-                        <div class="glass-card-premium p-3 shadow-xl shadow-indigo-500/5">
-                            <h3 class="flex justify-between items-center mb-3">
+ 
+                        <!-- Leaderboard Bento Card (Top 30%) - Mặc định ẩn, bấm Vinh danh mới hiện -->
+                        <div id="dashboard-leaderboard-card" class="glass-card-premium p-3 shadow-xl shadow-indigo-500/5 hidden transition-all" onclick="event.stopPropagation()">
+                            <h3 class="flex justify-between items-center mb-3 cursor-pointer select-none" onclick="document.getElementById('dashboard-leaderboard-card').classList.add('hidden')">
                                 <span class="text-[8px] font-black text-indigo-400 uppercase tracking-[0.2em]">Bảng Vàng Tuần</span>
-                                <select id="dashboard-class-filter" class="bg-indigo-50/50 dark:bg-slate-800 border border-indigo-100 dark:border-slate-700 text-[8px] font-bold text-indigo-600 px-1 py-0.5 rounded outline-none w-[60px]" onchange="window.DashboardUtils && window.DashboardUtils.loadLeaderboard(this.value)">
-                                    <option value="">Lớp...</option>
-                                </select>
+                                <div class="flex items-center gap-1.5">
+                                    <select id="dashboard-class-filter" onclick="event.stopPropagation()" class="bg-indigo-50/50 dark:bg-slate-800 border border-indigo-100 dark:border-slate-700 text-[8px] font-bold text-indigo-600 px-1 py-0.5 rounded outline-none w-[60px]" onchange="window.DashboardUtils && window.DashboardUtils.loadLeaderboard(this.value)">
+                                        <option value="">Lớp...</option>
+                                    </select>
+                                    <span class="text-gray-400 text-xs hover:text-indigo-600 transition-colors">✕</span>
+                                </div>
                             </h3>
                             <div id="dashboard-leaderboard-list" class="space-y-2 min-h-[120px] relative">
                                 <div class="absolute inset-0 flex items-center justify-center text-[10px] italic text-indigo-300">Đang tải...</div>
@@ -268,9 +270,13 @@ export const Dashboard = {
                             } else {
                                 select.innerHTML = classes.map(c => `<option value="${c}">Lớp ${c}</option>`).join('');
                                 
-                                // Lấy lớp đã lưu hoặc lớp đầu tiên
+                                // Ưu tiên chọn lớp của Giáo viên hoặc lớp của Học sinh đang đăng nhập
+                                const studentClass = localStorage.getItem('eduMathClass');
                                 const savedClass = localStorage.getItem('edurobot_board_class');
-                                if (savedClass && classes.includes(savedClass)) {
+                                
+                                if (studentClass && classes.includes(studentClass)) {
+                                    window.DashboardUtils.currentClass = studentClass;
+                                } else if (savedClass && classes.includes(savedClass)) {
                                     window.DashboardUtils.currentClass = savedClass;
                                 } else {
                                     window.DashboardUtils.currentClass = classes[0];

@@ -379,8 +379,8 @@ export const Quiz = {
                                                 } text-[10px] font-black">${idx + 1}</div>
                                             </td>
                                             <td class="px-3 py-3.5">
-                                                <div class="text-xs font-black text-slate-800 dark:text-slate-100 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">${r.studentName || 'Học sinh'}</div>
-                                                <div class="text-[10px] font-bold text-slate-500 dark:text-slate-400">${r.studentSchool || 'Trường'} - ${r.studentClass || 'Lớp'}</div>
+                                                <div class="text-xs font-black text-slate-800 dark:text-slate-100 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">${window.escapeHTML ? window.escapeHTML(r.studentName || 'Học sinh') : (r.studentName || 'Học sinh')}</div>
+                                                <div class="text-[10px] font-bold text-slate-500 dark:text-slate-400">${window.escapeHTML ? window.escapeHTML(r.studentSchool || 'Trường') : (r.studentSchool || 'Trường')} - ${window.escapeHTML ? window.escapeHTML(r.studentClass || 'Lớp') : (r.studentClass || 'Lớp')}</div>
                                             </td>
                                             ${scores.map(s => `
                                                 <td class="px-2 py-3.5 text-center text-sm">${getIcon(s)}</td>
@@ -437,7 +437,9 @@ export const Quiz = {
                 g.gain.exponentialRampToValueAtTime(0.01, now + 0.4);
                 o.start(now); o.stop(now + 0.4);
             }
-        } catch(e) {}
+        } catch(e) {
+            console.warn("Audio feedback error:", e);
+        }
     },
 
     showLottieFeedback(correct) {

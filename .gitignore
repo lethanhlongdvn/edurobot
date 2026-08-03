@@ -124,3 +124,9 @@ students_import.json
 
 # Local Netlify folder
 .netlify
+
+# Heavy textbook PDFs in docs directory (DO NOT COMMIT to git repository)
+docs/**/*.pdf
+docs/*.pdf
+docs/reference/
+

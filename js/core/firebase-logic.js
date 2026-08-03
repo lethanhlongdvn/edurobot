@@ -13,6 +13,20 @@ const firebaseConfig = {
     appId: "1:833329613932:web:0d8574827bcfe50b535c49"
 };
 
+/**
+ * XSS Mitigation helper to escape HTML
+ */
+window.escapeHTML = function (str) {
+    if (!str) return '';
+    return str.toString()
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+};
+
+
 // Initialize Firebase safely
 function initFirebase() {
     try {
