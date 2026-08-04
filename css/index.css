@@ -980,6 +980,37 @@ body.presentation-mode .tab-btn span {
     margin: 0px !important;
 }
 
+body.presentation-mode header {
+    padding: 0.15rem 0.5rem !important;
+}
+
+body.presentation-mode header nav {
+    padding: 0.15rem 0.5rem !important;
+    min-height: unset !important;
+    height: auto !important;
+}
+
+body.presentation-mode header .w-11, 
+body.presentation-mode header .h-11 {
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+    font-size: 1.25rem !important;
+}
+
+body.presentation-mode header span.text-xl {
+    font-size: 1.25rem !important;
+}
+
+body.presentation-mode header svg {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+}
+
+body.presentation-mode #student-badge-li > div {
+    padding: 0.1rem 0.4rem !important;
+    border-radius: 0.5rem !important;
+}
+
 body.presentation-mode .sticky {
     top: 0px !important;
     margin-top: 0px !important;
@@ -1003,6 +1034,29 @@ body.presentation-mode #app-content {
 body.presentation-mode .max-w-full {
     padding-top: 0px !important;
     margin-top: 0px !important;
+}
+
+/* Làm mỏng tối đa thanh điều khiển trang dưới chân (bottom bar) */
+body.presentation-mode #ltNav {
+    padding: 0.15rem 0.5rem !important;
+    gap: 0.75rem !important;
+}
+
+body.presentation-mode .ltMuiTen,
+body.presentation-mode #ltBtnTrai,
+body.presentation-mode #ltBtnPhai {
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+    font-size: 1.1rem !important;
+}
+
+body.presentation-mode #ltChiSoTrang {
+    font-size: 0.85rem !important;
+}
+
+body.presentation-mode .ltCham {
+    width: 8px !important;
+    height: 8px !important;
 }
 
 /* Global Font Overrides to secure minimum readability of text-[7px] to text-[10px] */
