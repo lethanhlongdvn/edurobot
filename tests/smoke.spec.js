@@ -2,8 +2,8 @@ import { test, expect } from '@playwright/test';
 
 test.describe('EduRobot Smoke Tests', () => {
   test.beforeEach(async ({ page }) => {
-    // Navigate to local development server (Vite default port is 5173)
-    await page.goto('http://localhost:5173/');
+    // Navigate to local development server using baseURL
+    await page.goto('/');
   });
 
   test('should load home page and have correct title', async ({ page }) => {
@@ -24,7 +24,7 @@ test.describe('EduRobot Smoke Tests', () => {
   test('should default to mobile-mode on small screens', async ({ page }) => {
     // Resize viewport to mobile screen size
     await page.setViewportSize({ width: 375, height: 667 });
-    await page.goto('http://localhost:5173/');
+    await page.goto('/');
 
     // Body should contain mobile-mode class
     await expect(page.locator('body')).toHaveClass(/mobile-mode/);
@@ -34,7 +34,7 @@ test.describe('EduRobot Smoke Tests', () => {
   test('should default to standard desktop interface on large screens', async ({ page }) => {
     // Resize viewport to standard desktop size
     await page.setViewportSize({ width: 1280, height: 800 });
-    await page.goto('http://localhost:5173/');
+    await page.goto('/');
 
     // Body should not have presentation-mode (TV) or mobile-mode by default
     await expect(page.locator('body')).not.toHaveClass(/presentation-mode/);
@@ -42,7 +42,7 @@ test.describe('EduRobot Smoke Tests', () => {
   });
 
   test('should remember TV mode preference from localStorage on reload', async ({ page }) => {
-    await page.goto('http://localhost:5173/');
+    await page.goto('/');
     
     // Evaluate script to simulate preferred_mode as tv and reload
     await page.evaluate(() => {
