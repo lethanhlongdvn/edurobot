@@ -409,33 +409,42 @@ window.submitMathLesson = async function (content, score, btnId, timeTaken = 0, 
         return;
     }
 
-    const { name, cls, school } = getStudentInfo();
+    let { name, cls, school } = getStudentInfo();
 
-    // If info is missing, prompt user
-    if (!name || !cls || !school) {
-        pendingSubmission = { content, score, btnId, timeTaken };
-        window.openStudentModal();
-        return;
+    // Nếu là giáo viên hoặc admin, tự động gán thông tin kiểm thử để không hiển thị Modal bắt buộc điền của Học sinh
+    if (userRole === 'teacher' || userRole === 'admin') {
+        name = name || "Giáo viên (Test)";
+        cls = cls || "GV";
+        school = school || "Hệ thống";
+    } else {
+        // If info is missing, prompt user
+        if (!name || !cls || !school) {
+            pendingSubmission = { content, score, btnId, timeTaken };
+            window.openStudentModal();
+            return;
+        }
     }
 
-    // Verify name
-    const check = window.isValidStudentName(name);
-    if (!check.valid) {
-        pendingSubmission = { content, score, btnId, timeTaken };
-        if (typeof window.showMathFeedback === 'function') {
-            window.showMathFeedback(
-                "⚠️ THÔNG TIN CHƯA HỢP LỆ",
-                "✍️",
-                `<div class="text-center p-4">
-                    <p class="text-lg md:text-xl font-bold text-red-600 mb-6" style="line-height: 1.6;">${check.msg}</p>
-                    <button onclick="window.closeMathModal(); window.openStudentModal();" class="bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-2.5 rounded-xl shadow-md transition-all active:scale-95 text-sm md:text-base">Cập nhật thông tin</button>
-                </div>`
-            );
-        } else {
-            alert(check.msg);
-            window.openStudentModal();
+    // Verify name (Chỉ kiểm tra tính hợp lệ đối với Học sinh)
+    if (userRole !== 'teacher' && userRole !== 'admin') {
+        const check = window.isValidStudentName(name);
+        if (!check.valid) {
+            pendingSubmission = { content, score, btnId, timeTaken };
+            if (typeof window.showMathFeedback === 'function') {
+                window.showMathFeedback(
+                    "⚠️ THÔNG TIN CHƯA HỢP LỆ",
+                    "✍️",
+                    `<div class="text-center p-4">
+                        <p class="text-lg md:text-xl font-bold text-red-600 mb-6" style="line-height: 1.6;">${check.msg}</p>
+                        <button onclick="window.closeMathModal(); window.openStudentModal();" class="bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-2.5 rounded-xl shadow-md transition-all active:scale-95 text-sm md:text-base">Cập nhật thông tin</button>
+                    </div>`
+                );
+            } else {
+                alert(check.msg);
+                window.openStudentModal();
+            }
+            return;
         }
-        return;
     }
 
     // Blacklist Note
