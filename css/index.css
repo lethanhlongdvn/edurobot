@@ -981,34 +981,52 @@ body.presentation-mode .tab-btn span {
 }
 
 body.presentation-mode header {
-    padding: 0.15rem 0.5rem !important;
+    padding: 0.1rem 0.5rem !important;
 }
 
 body.presentation-mode header nav {
-    padding: 0.15rem 0.5rem !important;
+    padding: 0.1rem 0.5rem !important;
     min-height: unset !important;
     height: auto !important;
 }
 
+/* Ẩn bớt mô tả slogan dưới logo để đưa logo về 1 dòng đơn */
+body.presentation-mode header span.text-\[9px\] {
+    display: none !important;
+}
+
+/* Ẩn thanh Metadata (Chủ điểm, Tuần) ở giữa để dồn diện tích, chống xuống hàng */
+body.presentation-mode #navbar-metadata {
+    display: none !important;
+}
+
 body.presentation-mode header .w-11, 
 body.presentation-mode header .h-11 {
-    width: 2.25rem !important;
-    height: 2.25rem !important;
-    font-size: 1.25rem !important;
+    width: 2rem !important;
+    height: 2rem !important;
+    font-size: 1.15rem !important;
 }
 
 body.presentation-mode header span.text-xl {
-    font-size: 1.25rem !important;
+    font-size: 1.15rem !important;
 }
 
 body.presentation-mode header svg {
-    width: 1.25rem !important;
-    height: 1.25rem !important;
+    width: 1.15rem !important;
+    height: 1.15rem !important;
 }
 
 body.presentation-mode #student-badge-li > div {
     padding: 0.1rem 0.4rem !important;
     border-radius: 0.5rem !important;
+    font-size: 0.75rem !important;
+}
+
+body.presentation-mode #student-badge-li button {
+    width: 1.1rem !important;
+    height: 1.1rem !important;
+    font-size: 0.65rem !important;
+    margin-left: 0.25rem !important;
 }
 
 body.presentation-mode .sticky {
