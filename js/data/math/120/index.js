@@ -221,35 +221,51 @@ export const lesson120 = {
     "metadata": metadata
 };
 
-window.check_120_1 = function() {
-    const v1a_xq = document.getElementById('ans-120-1a-xq').value.trim();
-    const v1a_tp = document.getElementById('ans-120-1a-tp').value.trim();
-    const v1b_xq = document.getElementById('ans-120-1b-xq').value.trim().replace(',', '.');
-    const v1b_tp = document.getElementById('ans-120-1b-tp').value.trim().replace(',', '.');
+// === Lesson 120 — Check functions (powered by ExerciseUtils) ===
 
-    const isCorrect = (v1a_xq==='576' && v1a_tp==='864' && v1b_xq==='9' && v1b_tp==='13.5');
-    window.showMathFeedback(isCorrect, "a) 576, 864; b) 9, 13.5", `${v1a_xq}, ${v1a_tp}, ${v1b_xq}, ${v1b_tp}`, 
-        "Sxq = Diện tích một mặt nhân với 4.<br>Stp = Diện tích một mặt nhân với 6.",
-        `<div class="text-left space-y-4">
+window.check_120_1 = function() {
+    ExerciseUtils.checkAndSubmit({
+        'ans-120-1a-xq': '576',
+        'ans-120-1a-tp': '864',
+        'ans-120-1b-xq': '9',
+        'ans-120-1b-tp': '13.5'
+    }, {
+        taskName: 'Tiết 120 - Bài 1',
+        commaAsDot: true,
+        btnId: 'btn-submit-120-1',
+        guidance: 'Sxq = Diện tích một mặt nhân với 4.<br>Stp = Diện tích một mặt nhân với 6.',
+        solution: `<div class="text-left space-y-4">
             <p class="text-2xl md:text-3xl font-bold text-emerald-600">Lời giải chi tiết:</p>
             <p class="text-xl md:text-2xl">a) Hình lập phương cạnh 12 cm:<br>Diện tích xung quanh: 12 x 12 x 4 = 576 (cm²)<br>Diện tích toàn phần: 12 x 12 x 6 = 864 (cm²)</p>
             <p class="text-xl md:text-2xl">b) Hình lập phương cạnh 1,5 m:<br>Diện tích xung quanh: 1,5 x 1,5 x 4 = 9 (m²)<br>Diện tích toàn phần: 1,5 x 1,5 x 6 = 13,5 (m²)</p>
         </div>`
-    );
-    window.submitMathLesson("Tiết 120 - Bài 1", isCorrect ? 100 : 0, "ans-120-1a-xq", 0, 4, isCorrect ? 4 : 0);
+    });
 };
 
 window.check_120_2 = function() {
-    const v = document.getElementById('ans-120-2').value.trim();
-    const isCorrect = (v === '324');
-    window.showMathFeedback(isCorrect, "324", v, "Quấn giấy bóng quanh bánh là tính diện tích xung quanh (diện tích 4 mặt bên). Sxq = 9 x 9 x 4.", 
-        `<div class="text-left space-y-4">
+    ExerciseUtils.checkAndSubmit({
+        'ans-120-2': '324'
+    }, {
+        taskName: 'Tiết 120 - Bài 2',
+        btnId: 'btn-submit-120-2',
+        guidance: 'Quấn giấy bóng quanh bánh là tính diện tích xung quanh (diện tích 4 mặt bên). Sxq = 9 x 9 x 4.',
+        solution: `<div class="text-left space-y-4">
             <p class="text-2xl md:text-3xl font-bold text-emerald-600">Lời giải chi tiết:</p>
             <p class="text-xl md:text-2xl">Chiếc bánh ngọt có dạng hình lập phương cạnh 9 cm. Quấn giấy bóng quanh chiếc bánh tức là quấn quanh 4 mặt xung quanh của chiếc bánh (không quấn hai mặt đáy).</p>
             <p class="text-xl md:text-2xl">Diện tích phần giấy bóng cần sử dụng là:<br>9 x 9 x 4 = 324 (cm²).<br>Đáp số: 324 cm².</p>
         </div>`
-    );
-    window.submitMathLesson("Tiết 120 - Bài 2", isCorrect ? 100 : 0, "ans-120-2", 0, 1, isCorrect ? 1 : 0);
+    });
+};
+
+// Dispatcher: nút E gọi submitEx120() — phát hiện slide đang hiện và gọi check tương ứng
+window.submitEx120 = function() {
+    const slides = document.querySelectorAll('#ltTrack .ltTrang');
+    let activeIndex = 0;
+    slides.forEach((slide, i) => {
+        if (!slide.classList.contains('hidden') && slide.offsetParent !== null) activeIndex = i;
+    });
+    if (activeIndex === 0) window.check_120_1();
+    else window.check_120_2();
 };
 
 /* --- MATH_BUILDER_METADATA ---

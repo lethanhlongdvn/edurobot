@@ -12,7 +12,6 @@ const placeholders = Array.from({ length: 110 }, (_, i) => {
 });
 
 const mathManifestRaw = [
-  { period: "0", week: "1", title: "⚡ BÀI HỌC MẪU (TEMPLATE)", topic: "Hướng dẫn", modulePath: "./standard_template/index.js", exportName: "lessonTemplate" },
   { period: "1", week: "1", title: "BÀI 1: ÔN TẬP SỐ TỰ NHIÊN", topic: "Số tự nhiên", modulePath: "./1/index.js", exportName: "lesson1" },
   { period: "2", week: "1", title: "BÀI 1: ÔN TẬP SỐ TỰ NHIÊN (TIẾT 2)", topic: "Số tự nhiên", modulePath: "./2/index.js", exportName: "lesson2" },
   { period: "3", week: "1", title: "BÀI 2: ÔN TẬP CÁC PHÉP TÍNH VỚI SỐ TỰ NHIÊN", topic: "Số tự nhiên", modulePath: "./3/index.js", exportName: "lesson3" },

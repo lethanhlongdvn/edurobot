@@ -210,6 +210,5 @@ const placeholders = [
   {"id": "vn-245", "period": "245", "week": "35", "title": "KIỂM TRA ĐỌC HIỂU - VIẾT (TIẾT 7)", "topic": "Viết", "modulePath": "./245/index.js", "exportName": "lesson245"},
 ];
 export const vietnameseManifest = [
-  { id: "standard-vn-template", period: "0", week: "1", title: "⚡ BÀI HỌC MẪU (BẢN GỐC)", topic: "Mẫu", modulePath: "./standard_template/index.js", exportName: "vnLessonTemplate" },
   ...placeholders,
 ];

@@ -20,16 +20,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
 
+    <script src="/js/core/firebase-config.js"></script>
     <!-- Initialize Firebase for standalone mode (same config as firebase-logic.js) -->
     <script>
-        const firebaseConfig = {
-            apiKey: "AIzaSyC6zlWn8BKYU7P6A2-PYq6IIWOzaqJWFhc",
-            authDomain: "gamhoctap.firebaseapp.com",
-            projectId: "gamhoctap",
-            storageBucket: "gamhoctap.firebasestorage.app",
-            messagingSenderId: "833329613932",
-            appId: "1:833329613932:web:0d8574827bcfe50b535c49"
-        };
+        const firebaseConfig = window.__FIREBASE_CONFIG;
         try {
             if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
             window.db = firebase.firestore();

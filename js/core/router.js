@@ -53,6 +53,42 @@ export const router = {
 
         window.addEventListener('hashchange', () => this.handleHashChange());
 
+        window.adjustInputWidth = function(target) {
+            if (target && target.tagName === 'INPUT' && target.type === 'text') {
+                const isExerciseInput = target.closest('.ltTrang, .math-exercise, .vc-exercise') || 
+                                        target.id.startsWith('ans-') || 
+                                        target.id.startsWith('study-');
+                if (isExerciseInput && target.id !== 'lesson-search') {
+                    const len = target.value.length;
+                    const hasPlaceholder = target.placeholder && target.placeholder.trim().length > 0;
+                    
+                    if (len === 0 && hasPlaceholder) {
+                        target.style.removeProperty('width');
+                        target.style.removeProperty('min-width');
+                        return;
+                    }
+
+                    const threshold = 2; // All short exercise inputs start at 2 characters wide (48px)
+                    if (len > threshold) {
+                        const displayLen = Math.min(12, len);
+                        const targetWidth = (displayLen + 1.5) + 'ch';
+                        target.style.setProperty('width', targetWidth, 'important');
+                        target.style.setProperty('min-width', targetWidth, 'important');
+                    } else {
+                        target.style.setProperty('width', '48px', 'important');
+                        target.style.setProperty('min-width', '48px', 'important');
+                    }
+                }
+            }
+        };
+
+        // Global input listener for auto-expanding input widths to prevent overflow/cutting of text
+        document.addEventListener('input', function(e) {
+            if (window.adjustInputWidth) {
+                window.adjustInputWidth(e.target);
+            }
+        });
+
         window.normalizeVN = (s) => (s || "").toLowerCase().trim()
             .replace(/\s+/g, ' ')
             .replace(/linh/g, 'lẻ')
@@ -976,6 +1012,11 @@ export const router = {
             });
         };
         normalizeButtons(container);
+
+        // Adjust all input widths inside the container on initial render
+        container.querySelectorAll('input[type="text"]').forEach(input => {
+            if (window.adjustInputWidth) window.adjustInputWidth(input);
+        });
 
         if (tabId === 'quiz') UI.initQuiz(lesson);
 

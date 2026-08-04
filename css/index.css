@@ -1506,9 +1506,6 @@ body.mobile-mode #app-content {
 .math-exercise .flex.flex-wrap.items-center:has(input[type="text"]) > input[type="text"] {
     display: inline-block !important;
     vertical-align: middle;
-    width: auto !important;
-    min-width: 80px;
-    max-width: 220px;
     margin: 2px 6px !important;
     text-align: center;
 }
@@ -1630,6 +1627,7 @@ body.mobile-mode #app-content {
         height: auto !important;
         min-height: unset !important;
         border-radius: 0.75rem !important;
+        transition: width 0.15s ease-out, min-width 0.15s ease-out, border-color 0.15s, box-shadow 0.15s !important;
     }
 
     /* Tự động co giãn tối thiểu cho ô nhập trong bảng */
