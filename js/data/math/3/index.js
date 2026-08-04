@@ -2366,7 +2366,7 @@ const metadata = {
 
 
 
-            "solution": "Dựa vào các tính chất: a+b=b+a, (a+<br>b)+c=a+(b+<br>c), a*b=b*a, a*b+a*c=a*(b+<br>c)."
+            "solution": "Dựa vào các tính chất: a + b = b + a, (a +<br>b) + c = a + (b +<br>c), a x b = b x a, a x b + a x c = a x (b +<br>c)."
 
 
 
