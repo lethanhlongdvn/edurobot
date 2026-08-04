@@ -1,4 +1,4 @@
-const CACHE_NAME = 'edurobot-v35';
+const CACHE_NAME = 'edurobot-v38';
 const ASSET_EXTENSIONS = ['.js', '.css', '.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.mp3', '.wav', '.json'];
 
 self.addEventListener('install', (event) => {
