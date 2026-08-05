@@ -60,16 +60,18 @@ canvas {
 
 /* Buttons */
 .toolbar-btn {
-  width: 42px;
-  height: 42px;
-  border: none;
+  width: 42px !important;
+  height: 42px !important;
+  min-height: 0px !important;
+  padding: 0 !important;
+  border: none !important;
   background: transparent;
   border-radius: 10px;
   color: #475569;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   transition: all 0.2s ease;
   position: relative;
 }
