@@ -478,6 +478,7 @@
 
         function appendToBody() {
             if (!document.getElementById(GROUP_ID)) document.body.appendChild(group);
+            if (!document.getElementById(MENU_ID)) document.body.appendChild(menu);
             if (!document.getElementById(CANVAS_CONTAINER_ID)) document.body.appendChild(drawContainer);
         }
 
