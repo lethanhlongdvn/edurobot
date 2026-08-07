@@ -28,7 +28,7 @@ export const lesson193 = {
             <div class="w-full overflow-hidden rounded-3xl shadow-2xl border-8 border-white group">
                 <img src="assets/images/nguoithaycuamuondoi.webp" alt="Người thầy của muôn đời" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-1000">
             </div>
-            <p class="text-lg md:text-2xl text-center text-gray-500 mt-4 font-black italic">Hình ảnh học trò mừng thọ thầy Chu Văn An</p>
+            
         </div>
     </section>
 
@@ -235,9 +235,7 @@ export const lesson193 = {
                     <span>(4) Cụ dẫn học trò đi về cuối làng, đến một ngôi nhà tranh đơn sơ nhưng sáng sủa, ấm cúng.</span>
                 </label>
             </div>
-            <div class="flex justify-center pt-4">
-                <button onclick="check193Q2a()" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl shadow-md active:scale-95 transition-all text-xl">🔍 Kiểm tra câu ghép</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="check193Q2a();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-193-q2a" class="text-xl md:text-2xl font-black text-center hidden"></div>
         </div>
 
@@ -284,9 +282,7 @@ export const lesson193 = {
                 </div>
             </div>
 
-            <div class="flex justify-center">
-                <button onclick="check193Q2b()" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl shadow-md active:scale-95 transition-all text-xl">🔍 Kiểm tra cách nối</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="check193Q2b();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-193-q2b" class="text-xl md:text-2xl font-black text-center hidden"></div>
         </div>
 
@@ -295,12 +291,7 @@ export const lesson193 = {
             <p class="text-2xl md:text-3xl font-black text-slate-800">c) Đặt một câu ghép nói về tình cảm của em đối với thầy cô giáo (EduRobot AI chấm điểm):</p>
             <div class="p-6 bg-amber-50/30 border-2 border-amber-100 rounded-[32px] space-y-6">
                 <textarea id="essay-193" rows="3" class="w-full p-6 rounded-2xl border-2 border-slate-250 focus:ring-4 focus:ring-blue-100 outline-none text-2xl md:text-3xl font-bold leading-relaxed" placeholder="Ví dụ: Thầy cô luôn tận tụy dạy dỗ chúng em, nên em luôn kính trọng và biết ơn thầy cô."></textarea>
-                <div class="flex justify-center">
-                    <button onclick="check193EssayAI()" class="px-10 py-5 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-3 text-xl md:text-2xl uppercase tracking-wider">
-                        <span>🤖</span> 
-                        <span>Gửi cho EduRobot AI nhận xét</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="check193EssayAI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-193-essay-ai" class="w-full hidden mt-4"></div>
             </div>
         </div>

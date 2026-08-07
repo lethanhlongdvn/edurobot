@@ -60,9 +60,7 @@ export const lesson79 = {
                     <span>Dấu hai chấm</span>
                 </label>
             </div>
-            <div class="flex justify-center">
-                <button onclick="kiemTraKhoiDong79()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md active:scale-95">GỬI SUY NGHĨ ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraKhoiDong79();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn79-kd" class="hidden p-4 rounded-xl text-sm font-bold text-center mt-2"></div>
         </div>
     </div>
@@ -82,7 +80,7 @@ export const lesson79 = {
             <!-- Ngữ liệu câu 1 và 2 -->
             <div class="space-y-4 max-w-4xl mx-auto font-sans text-xl leading-relaxed text-gray-800 font-bold bg-amber-50 bg-opacity-35 p-6 rounded-3xl border border-amber-100">
                 <p>• "Ngày Sách và Văn hóa đọc Việt Nam <span class="text-emerald-900 font-black">– sự kiện văn hóa quan trọng đối với người yêu thích sách –</span> được tổ chức vào ngày 21 tháng 4 hằng năm."</p>
-                <p class="mt-4">• "Ha-ri Pót-tơ <span class="text-emerald-900 font-black">– bộ truyện của nhà văn Giô-an Rô-linh –</span> có sức hấp dẫn kì lạ với nhiều trẻ em trên thế giới."</p>
+                
             </div>
 
             <!-- Trắc nghiệm chọn công dụng -->
@@ -108,9 +106,7 @@ export const lesson79 = {
                 </div>
             </div>
 
-            <div class="flex justify-center">
-                <button onclick="kiemTraCauHoi1_79()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md active:scale-95">XÁC NHẬN CHỌN ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraCauHoi1_79();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn79-bt1" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2"></div>
         </div>
     </div>
@@ -185,9 +181,7 @@ export const lesson79 = {
             </div>
         </div>
 
-        <div class="flex justify-center">
-            <button onclick="kiemTraCauHoi2_79()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md active:scale-95">KIỂM TRA ĐÁP ÁN ✓</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraCauHoi2_79();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn79-bt2" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2"></div>
     </section>
 
@@ -241,10 +235,7 @@ export const lesson79 = {
             </div>
         </div>
 
-        <div class="flex justify-center gap-4 mt-4">
-            <button onclick="kiemTraCauHoi3_79()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md active:scale-95">XÁC NHẬN LỰA CHỌN ✓</button>
-            <button onclick="lamLaiCauHoi3_79()" class="px-8 py-3 bg-amber-500 text-white font-black rounded-xl hover:bg-amber-500 transition-all text-base shadow-md active:scale-95">MẶC ĐỊNH LẠI ↺</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraCauHoi3_79();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn79-bt3" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2 max-w-4xl mx-auto"></div>
     </section>
 

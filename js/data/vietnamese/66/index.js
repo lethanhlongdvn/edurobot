@@ -41,9 +41,7 @@ export const lesson66 = {
         
         <div class="space-y-4">
             <textarea id="ans-vn66-kd" rows="3" placeholder="Ví dụ: Em rất ấn tượng với nhân vật Dế Mèn trong cuốn Dế Mèn phiêu lưu ký vì dũng cảm, biết sửa chữa sai lầm và luôn mong ước thế giới đại đồng..." class="w-full p-4 border-2 border-teal-100 rounded-2xl outline-none focus:border-teal-500 font-bold bg-teal-50/10 text-xl md:text-2xl"></textarea>
-            <div class="flex justify-center">
-                <button onclick="kiemTraKhoiDong66()" class="px-8 py-3 bg-teal-600 text-white font-black rounded-xl hover:bg-teal-600 transition-all text-base shadow-md">GỬI CẢM NGHĨ ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraKhoiDong66();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn66-kd" class="hidden p-4 rounded-xl text-sm font-bold text-center mt-2"></div>
         </div>
     </div>
@@ -114,9 +112,7 @@ export const lesson66 = {
                 </div>
             </div>
 
-            <div class="flex justify-center">
-                <button onclick="kiemTraCauHoiAB_66()" class="px-8 py-3 bg-teal-600 text-white font-black rounded-xl hover:bg-teal-600 transition-all text-base shadow-md">NỘP CÂU TRẢ LỜI ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraCauHoiAB_66();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn66-bt1" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2"></div>
         </div>
     </div>
@@ -217,10 +213,7 @@ export const lesson66 = {
             </div>
 
             <!-- Các nút kiểm tra -->
-            <div class="flex justify-center gap-4 mt-6">
-                <button onclick="kiemTraSoDo66()" class="px-8 py-3 bg-teal-600 text-white font-black rounded-xl hover:bg-teal-600 transition-all text-base shadow-md">KIỂM TRA SƠ ĐỒ ✓</button>
-                <button onclick="lamLaiSoDo66()" class="px-8 py-3 bg-amber-500 text-white font-black rounded-xl hover:bg-amber-500 transition-all text-base shadow-md">LÀM LẠI ↺</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraSoDo66();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             
             <div id="fb-vn66-bt2" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2"></div>
         </div>
@@ -278,10 +271,7 @@ export const lesson66 = {
                         <button id="wp-kivi" onclick="chonTuXep66('kivi', 'kì vĩ')" class="px-4 py-2 bg-white hover:bg-teal-50 border border-gray-100 hover:border-teal-400 rounded-xl font-bold text-base md:text-lg transition-all shadow-sm">kì vĩ</button>
                     </div>
 
-                    <div class="flex justify-start gap-2 pt-2">
-                        <button onclick="kiemTraTuDien66()" class="px-6 py-2 bg-teal-600 text-white font-black rounded-lg hover:bg-teal-600 text-sm shadow-sm transition-all">KIỂM TRA ✓</button>
-                        <button onclick="lamLaiTuDien66()" class="px-6 py-2 bg-amber-500 text-white font-black rounded-lg hover:bg-amber-500 text-sm shadow-sm transition-all">LÀM LẠI ↺</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="kiemTraTuDien66();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                     <div id="fb-vn66-bt3" class="hidden p-3 rounded-lg text-sm font-bold text-center"></div>
                 </div>
 

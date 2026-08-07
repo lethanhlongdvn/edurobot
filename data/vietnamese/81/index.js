@@ -41,9 +41,7 @@ export const lesson81 = {
         
         <div class="space-y-4">
             <textarea id="ans-vn81-kd" rows="3" placeholder="Ví dụ: Hồi nhỏ, em thường được bà ngoại kể cho nghe truyện Tấm Cám và Sự tích trầu cau vào mỗi tối trước khi đi ngủ..." class="w-full p-4 border-2 border-blue-100 rounded-2xl outline-none focus:border-blue-500 font-bold bg-blue-50/10 text-xl md:text-2xl"></textarea>
-            <div class="flex justify-center">
-                <button onclick="kiemTraKhoiDong81()" class="px-8 py-3 bg-blue-600 text-white font-black rounded-xl hover:bg-blue-600 transition-all text-base shadow-md active:scale-95">GỬI Ý KIẾN ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraKhoiDong81();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn81-kd" class="hidden p-4 rounded-xl text-sm font-bold text-center mt-2"></div>
         </div>
     </div>
@@ -78,7 +76,7 @@ export const lesson81 = {
                     <p class="indent-10">Tôi khóc cười qua những trang sách, ngạc nhiên thấy mình trải qua những cảm xúc mà trên thực tế, tôi chưa đủ lớn để trải nghiệm ngoài đời. Sách đã bồi đắp tâm hồn, làm giàu có và làm trưởng thành tình cảm một đứa bé và đặc biệt mở rộng đến vô biên bờ cõi của trí tưởng tượng.</p>
                     <p class="indent-10">Rồi tới lượt mấy đứa em nhỏ của tôi lại tranh nhau nằm gần tôi vào mỗi buổi tối, nhao nhao: "Anh Hai kể chuyện đi, anh Hai!".</p>
                     <p class="indent-10">Tôi vẫn luôn biết ơn cả nhà đã tạo cho tôi thói quen đọc sách một cách tự nhiên như vậy. Nhờ thói quen ấy, nhu cầu đọc sách đã nảy mầm và trở thành một khát khao trong tôi, như cỏ cây khát ánh sáng và khí trời.</p>
-                    <p class="text-right text-gray-500 font-bold text-lg md:text-xl mt-4">(Theo Nguyễn Nhật Ánh)</p>
+                    
                 </div>
             </div>
 
@@ -218,13 +216,7 @@ export const lesson81 = {
                 
                 <textarea id="ans-vn81-writing" rows="4" placeholder="Ví dụ: Đọc sách giúp em mở rộng trí tưởng tượng và thấu hiểu nhiều cảm xúc trong cuộc sống. Những cuốn sách hay cũng nuôi dưỡng lòng nhân ái, giúp em học hỏi được nhiều bài học làm người bổ ích giống như bạn nhỏ trong câu chuyện..." class="w-full p-4 md:p-6 text-xl md:text-2xl rounded-2xl border-2 border-amber-100 focus:border-amber-500 outline-none shadow-sm bg-amber-50/10 mb-6 font-medium leading-relaxed"></textarea>
                 
-                <div class="flex flex-wrap items-center gap-4">
-                    <button onclick="checkWritingVn81()" class="px-8 py-3 bg-amber-500 text-white font-black text-lg rounded-2xl shadow-md hover:bg-amber-500 active:scale-95 transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-amber-900 font-black text-xs shadow-sm">E</div> 
-                        <span>CHẤM BÀI</span>
-                    </button>
-                    <button onclick="resetWritingVn81()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetWritingVn81()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkWritingVn81();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 
                 <div id="fb-vn81-writing" class="hidden mt-6 p-6 bg-blue-600 text-white rounded-2xl shadow-xl animate-in slide-in-from-top-10 duration-500">
                     <!-- AI Feedback will show here -->

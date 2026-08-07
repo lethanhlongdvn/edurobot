@@ -25,7 +25,7 @@ export const template = {
             <div class="w-full overflow-hidden rounded-3xl shadow-2xl border-8 border-white group">
                 <img src="assets/images/khoidong.jpg" alt="Ảnh khởi động" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-1000">
             </div>
-            <p class="text-xl text-center text-gray-500 mt-4 font-medium italic">[Chú thích ảnh khởi động]</p>
+            
         </div>
     </section>
 

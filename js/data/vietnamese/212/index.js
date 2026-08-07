@@ -105,9 +105,7 @@ export const lesson212 = {
                         </div>
                     </div>
 
-                    <div class="flex justify-end pt-2">
-                        <button id="btn-check-212-1" onclick="window.checkEx1_212()" class="w-12 h-12 md:w-16 md:h-16 bg-blue-600 text-white rounded-2xl font-black text-2xl md:text-3xl shadow-lg transition-all active:scale-95 flex items-center justify-center">E</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="window.checkEx1_212();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                     <div id="fb-ex1-212" class="hidden p-4 rounded-xl font-bold text-lg"></div>
                 </div>
             </div>
@@ -192,9 +190,7 @@ export const lesson212 = {
                     </div>
                 </div>
 
-                <div class="flex justify-end pt-2">
-                    <button id="btn-check-212-3" onclick="window.checkEx3_212()" class="w-12 h-12 md:w-16 md:h-16 bg-blue-600 text-white rounded-2xl font-black text-2xl md:text-3xl shadow-lg transition-all active:scale-95 flex items-center justify-center">E</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="window.checkEx3_212();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-ex3-212" class="hidden p-4 rounded-xl font-bold text-lg"></div>
             </div>
         </section>

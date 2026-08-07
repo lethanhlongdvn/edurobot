@@ -36,9 +36,7 @@ export const lesson53 = {
             
             <div class="space-y-4">
                 <textarea id="ans-vn53-kd" rows="3" placeholder="Ví dụ: Theo em biết, sa mạc là nơi vô cùng khô hạn, nắng nóng gay gắt vào ban ngày nhưng ban đêm lại rất lạnh. Ở đây có cát trải dài mênh mông, loài động vật đặc trưng là lạc đà và thực vật chủ yếu là cây xương rồng..." class="w-full p-4 border-2 border-sky-100 rounded-2xl outline-none focus:border-sky-500 font-bold bg-sky-50/10 text-xl md:text-2xl text-gray-800"></textarea>
-                <div class="flex justify-center">
-                    <button onclick="checkKD53()" class="px-8 py-3 bg-sky-600 text-white font-black rounded-xl hover:bg-sky-600 transition-all text-base shadow-md">GỬI SUY NGHĨ ✓</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="checkKD53();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn53-kd" class="hidden p-4 rounded-xl text-sm font-bold text-center mt-2"></div>
             </div>
         </div>
@@ -86,7 +84,7 @@ export const lesson53 = {
                         <p class="indent-8 text-justify">
                             Năm giờ sáng, trời hửng. Những cồn cát óng vàng vây quanh những căn lều vuông vắn. Bầu trời nhu nhú ánh bình minh rồi rải nắng non lóng lánh lên những hạt cát mịn. Đàn lạc đà lại đưa chúng tôi ra xe. Sa mạc hai triệu năm tuổi và những cồn cát lùi dần lại phía sau. Bỗng trên xe có người nói chưa biết quốc tịch của người bên cạnh. Mọi người cười phá lên. Phải rồi, việc mang quốc tịch gì đâu có quan trọng, khi mà ở giữa hoang mạc, ai cũng trở nên nhỏ bé như một hạt cát.
                         </p>
-                        <p class="text-right font-bold text-gray-800 text-lg md:text-xl mt-4 italic">(Theo Di Li)</p>
+                        
                     </div>
 
                     <!-- Các khối thông tin bổ trợ đặt bên dưới dạng lưới thích ứng -->
@@ -262,9 +260,7 @@ export const lesson53 = {
                                     <span>C. Thiên nhiên giúp xoá nhoà khoảng cách giữa người với người.</span>
                                 </label>
                             </div>
-                            <div class="flex justify-start pt-2">
-                                <button onclick="checkQ5_53()" class="px-6 py-2.5 bg-sky-600 text-white font-bold rounded-lg text-sm">Xác nhận lựa chọn</button>
-                            </div>
+                            <div class="flex justify-end items-center gap-4"><button onclick="checkQ5_53();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                             <div id="fb-vn53-q5" class="hidden p-3 rounded-lg text-sm font-bold text-gray-800 bg-emerald-50 border border-emerald-100"></div>
                         </div>
                     </details>
@@ -351,9 +347,7 @@ export const lesson53 = {
                     </table>
                 </div>
 
-                <div class="flex justify-start">
-                    <button onclick="checkEx1_53()" class="px-8 py-3 bg-amber-500 text-white font-black rounded-xl hover:bg-amber-500 transition-all text-base shadow-md">KIỂM TRA ĐÁP ÁN ✓</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="checkEx1_53();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn53-ex1" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2 shadow-md"></div>
             </div>
         </section>
@@ -378,7 +372,7 @@ export const lesson53 = {
                         <!-- Từ tối -->
                         <div class="bg-amber-50/20 p-5 rounded-2xl border border-amber-100 space-y-3">
                             <span class="text-base font-black text-amber-600 block">Từ **tối** trong câu được dùng với:</span>
-                            <div class="flex gap-4">
+                            <div class="flex justify-end items-center gap-4">
                                 <label class="flex items-center gap-2 font-bold cursor-pointer text-lg text-gray-800">
                                     <input type="radio" name="vn53-ex2-toi" value="goc" class="w-5 h-5 accent-amber-600"> Nghĩa gốc
                                 </label>
@@ -392,7 +386,7 @@ export const lesson53 = {
                         <!-- Từ lạnh -->
                         <div class="bg-amber-50/20 p-5 rounded-2xl border border-amber-100 space-y-3">
                             <span class="text-base font-black text-amber-600 block">Từ **lạnh** trong câu được dùng với:</span>
-                            <div class="flex gap-4">
+                            <div class="flex justify-end items-center gap-4">
                                 <label class="flex items-center gap-2 font-bold cursor-pointer text-lg text-gray-800">
                                     <input type="radio" name="vn53-ex2-lanh" value="goc" class="w-5 h-5 accent-amber-600"> Nghĩa gốc
                                 </label>
@@ -405,9 +399,7 @@ export const lesson53 = {
                     </div>
                 </div>
 
-                <div class="flex justify-start">
-                    <button onclick="checkEx2_53()" class="px-8 py-3 bg-amber-500 text-white font-black rounded-xl hover:bg-amber-500 transition-all text-base shadow-md">KIỂM TRA BÀI 2 ✓</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="checkEx2_53();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn53-ex2" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2 shadow-md"></div>
             </div>
         </section>
@@ -441,7 +433,7 @@ export const lesson53 = {
                         <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-amber-900 font-black text-xs shadow-sm">E</div> 
                         <span>CHẤM BÀI ĐẶT CÂU</span>
                     </button>
-                    <button onclick="resetWritingVn53()" class="px-6 py-3 bg-gray-800 text-gray-900 font-black text-lg rounded-2xl shadow-sm hover:bg-gray-800 active:scale-95 transition-all">LÀM LẠI</button>
+                    <button onclick="resetWritingVn53()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
                     <div id="fb-vn53-writing" class="hidden p-4 rounded-xl font-bold text-base flex-1"></div>
                 </div>
             </div>

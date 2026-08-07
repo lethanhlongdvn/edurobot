@@ -155,18 +155,14 @@ export const lesson28 = {
             <div class="bg-white p-5 rounded-2xl border border-gray-100 space-y-2">
                 <label class="text-gray-800 block text-sm">✍️ Phác thảo bài phát biểu nháp của em dựa trên phiếu chuẩn bị:</label>
                 <textarea id="p28-speech-draft" rows="5" placeholder="Kính chào thầy cô và các bạn! Hôm nay mình xin giới thiệu về khu vui chơi..." class="w-full p-3 border border-gray-100 rounded-xl bg-white text-sm font-semibold"></textarea>
-                <div class="flex justify-end">
-                    <button onclick="submitSpeechDraft28()" class="px-5 py-2 bg-sky-600 text-white font-black rounded-lg text-sm shadow-md transition-all active:scale-95">Nộp bản nháp bài nói</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="submitSpeechDraft28();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             </div>
 
             <!-- Ghi chép khi lắng nghe bạn -->
             <div class="bg-white p-5 rounded-2xl border border-gray-100 space-y-2">
                 <label class="text-gray-800 block text-sm">👂 Ghi chép nhanh những điều thú vị em học tập được khi lắng nghe bạn khác giới thiệu:</label>
                 <textarea id="p28-listen-note" rows="5" placeholder="Ví dụ: Bạn Nam dùng cử chỉ vẫy tay rất tự tin, giọng bạn kể về trò chơi tàu lượn vô cùng hồi hộp..." class="w-full p-3 border border-gray-100 rounded-xl bg-white text-sm font-semibold"></textarea>
-                <div class="flex justify-end">
-                    <button onclick="submitListenNote28()" class="px-5 py-2 bg-sky-600 text-white font-black rounded-lg text-sm shadow-md transition-all active:scale-95">Lưu ghi chép lắng nghe</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="submitListenNote28();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             </div>
         </div>
     </div>
@@ -252,9 +248,7 @@ export const lesson28 = {
                 <label class="font-black text-gray-800 text-sm block">🪐 Ghi chép một điều thú vị về hành tinh em sưu tầm được để chia sẻ với người thân:</label>
                 <textarea id="p28-planet-note" rows="3" placeholder="Ví dụ: Sao Thổ có một vành đai đá bụi vô cùng tráng lệ bao quanh..." class="w-full p-3 border border-gray-100 rounded-xl font-bold bg-white text-xl md:text-2xl mt-1"></textarea>
             </div>
-            <div class="flex justify-center">
-                <button onclick="submitPlanetNote28()" class="px-8 py-3 bg-sky-600 hover:bg-sky-600 text-white font-black rounded-xl transition-all shadow-md">NỘP BÀI VẬN DỤNG ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="submitPlanetNote28();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         </div>
     </div>
 

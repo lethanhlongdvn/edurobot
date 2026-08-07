@@ -84,8 +84,8 @@ export const lesson80 = {
                     <div class="bg-amber-50 bg-opacity-35 p-6 md:p-8 rounded-[32px] border border-amber-100 font-sans text-xl md:text-2xl text-gray-800 leading-relaxed font-medium">
                         <h4 class="text-2xl md:text-3xl font-black text-center text-amber-900 mb-4">Không nên phá tổ chim</h4>
                         <p class="indent-8">Thấy trên cành cây có một tổ chim chích choè, ba con chim non mới nở, tôi liền trèo lên cây, bắt chim non xuống để chơi. Chị tôi thấy vậy, nhẹ nhàng bảo: “Chim non đang sống với mẹ, sao em nỡ bắt nó? Lát nữa chim mẹ về, không thấy con, sẽ buồn lắm đấy. Còn lũ chim non xa mẹ, chúng sẽ chết. Hãy đặt lại chim vào tổ. Sau này chim lớn, chim sẽ hát ca, bay lượn, ăn sâu bọ giúp ích con người.”</p>
-                        <p class="indent-8 mt-4">Nghe lời chị, tôi đem những chú chim non đặt lại vào tổ.</p>
-                        <p class="text-right text-base text-gray-800 font-bold italic mt-4">(Theo Quốc văn giáo khoa thư)</p>
+                        
+                        
                     </div>
                 </div>
 
@@ -127,9 +127,7 @@ export const lesson80 = {
                             </select>
                         </div>
 
-                        <div class="flex justify-center pt-2">
-                            <button id="btn-check-81-1" onclick="kiemTraCau1_80()" class="w-full py-2.5 bg-blue-600 text-white font-black rounded-xl hover:bg-blue-600 active:scale-95 transition-all text-sm shadow">KIỂM TRA ĐỌC HIỂU ✓</button>
-                        </div>
+                        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraCau1_80();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                         <div id="fb-vn80-bt1" class="hidden p-3 rounded-xl text-xs font-bold text-center"></div>
                     </div>
                 </div>
@@ -183,12 +181,7 @@ export const lesson80 = {
             <h4 class="font-black text-blue-600 text-xl md:text-2xl">b. Nhấp chuột khám phá cấu trúc và nội dung tương ứng của mỗi phần:</h4>
             <p class="text-base font-bold text-gray-800 italic">👉 Hướng dẫn: Bấm vào 3 nút bên dưới để xem vị trí nổi bật tương ứng trong đoạn văn và nội dung cốt lõi của từng phần.</p>
             
-            <div class="flex flex-wrap gap-3">
-                <button onclick="highlightPhan80('mo-dau')" class="px-6 py-3 bg-sky-600 text-white font-black rounded-2xl text-lg hover:bg-sky-600 transition-all shadow-sm">📘 MỞ ĐẦU</button>
-                <button onclick="highlightPhan80('trien-khai')" class="px-6 py-3 bg-emerald-600 text-white font-black rounded-2xl text-lg hover:bg-emerald-600 transition-all shadow-sm">🟢 TRIỂN KHAI</button>
-                <button onclick="highlightPhan80('ket-thuc')" class="px-6 py-3 bg-amber-500 text-white font-black rounded-2xl text-lg hover:bg-amber-500 transition-all shadow-sm">📙 KẾT THÚC</button>
-                <button onclick="resetHighlight80()" class="px-6 py-3 bg-gray-800 text-white font-black rounded-2xl text-lg hover:bg-gray-800 transition-all shadow-sm">↺ RESET MẶC ĐỊNH</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="resetHighlight80()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button></div>
 
             <!-- Khung phản hồi thông tin chi tiết của phần được bấm -->
             <div id="h-info-box" class="hidden p-6 rounded-[2.5rem] border-2 transition-all duration-380">
@@ -215,10 +208,7 @@ export const lesson80 = {
                 <button id="w80-10" onclick="selectWord80(10)" class="px-3 py-1.5 bg-white border border-gray-100 rounded-xl hover:bg-blue-50/30 transition-all select-none">in đậm trong tâm trí tôi</button>
             </div>
 
-            <div class="flex justify-center gap-3 pt-3">
-                <button id="btn-check-81-2" onclick="kiemTraCau2_80()" class="w-14 h-14 bg-blue-600 hover:bg-blue-600 text-white rounded-[1.5rem] font-black text-xl md:text-3xl shadow-lg transition-all active:scale-95 flex items-center justify-center">E</button>
-                <button onclick="resetWord80()" class="px-6 py-3 bg-amber-500 text-white font-black rounded-[1.5rem] text-base hover:bg-amber-500 transition-all active:scale-95 shadow">LÀM LẠI ↺</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="resetWord80()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="kiemTraCau2_80();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn80-bt2" class="hidden p-4 rounded-2xl text-base font-bold text-center mt-2 max-w-3xl mx-auto font-bold"></div>
         </div>
     </section>
@@ -301,9 +291,7 @@ export const lesson80 = {
                 </div>
             </div>
 
-            <div class="flex justify-center gap-3 pt-3">
-                <button id="btn-check-81-3" onclick="kiemTraGhiNho80()" class="w-14 h-14 bg-blue-600 hover:bg-blue-600 text-white rounded-[1.5rem] font-black text-xl md:text-3xl shadow-lg transition-all active:scale-95 flex items-center justify-center">E</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraGhiNho80();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn80-gnh" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2"></div>
         </div>
     </section>

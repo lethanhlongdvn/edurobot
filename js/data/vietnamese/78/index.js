@@ -41,9 +41,7 @@ export const lesson78 = {
         
         <div class="space-y-4">
             <textarea id="ans-vn78-kd" rows="3" placeholder="Ví dụ: Đọc cuốn Dế Mèn phiêu lưu ký, em học được bài học bổ ích về sự trượng nghĩa bênh vực kẻ yếu và tinh thần kiên cường, dũng cảm khám phá thế giới của Dế Mèn..." class="w-full p-4 border-2 border-emerald-100 rounded-2xl outline-none focus:border-emerald-500 font-bold bg-emerald-50/10 text-xl md:text-2xl"></textarea>
-            <div class="flex justify-center">
-                <button onclick="kiemTraKhoiDong78()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md active:scale-95">GỬI CHIA SẺ ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraKhoiDong78();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn78-kd" class="hidden p-4 rounded-xl text-sm font-bold text-center mt-2"></div>
         </div>
     </div>
@@ -117,7 +115,7 @@ export const lesson78 = {
                         <p>Lớn khôn rồi vẫn nhớ tiếng <span class="hide-word transition-all duration-378">mẹ ru</span>.</p>
                     </div>
 
-                    <p class="text-right text-gray-500 font-bold text-lg md:text-xl mt-4">(Huệ Triệu)</p>
+                    
                 </div>
             </div>
 
@@ -249,13 +247,7 @@ export const lesson78 = {
                 
                 <textarea id="ans-vn78-writing" rows="4" placeholder="Ví dụ: Em thích nhất là khổ thơ đầu tiên. Các từ ngữ như 'vì sao lấp lánh', 'buồm nâu', 'cầu vồng' hiện lên rất sinh động, vẽ nên một thế giới thiên nhiên tự nhiên vô cùng kỳ diệu, rực rỡ sắc màu chứa đựng trong trang sách..." class="w-full p-4 md:p-6 text-xl md:text-2xl rounded-2xl border-2 border-amber-100 focus:border-amber-500 outline-none shadow-sm bg-amber-50/10 mb-6 font-medium leading-relaxed"></textarea>
                 
-                <div class="flex flex-wrap items-center gap-4">
-                    <button onclick="checkWritingVn78()" class="px-8 py-3 bg-amber-500 text-white font-black text-lg rounded-2xl shadow-md hover:bg-amber-500 active:scale-95 transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-amber-900 font-black text-xs shadow-sm">E</div> 
-                        <span>CHẤM BÀI</span>
-                    </button>
-                    <button onclick="resetWritingVn78()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetWritingVn78()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkWritingVn78();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 
                 <div id="fb-vn78-writing" class="hidden mt-6 p-6 bg-emerald-600 text-white rounded-2xl shadow-xl animate-in slide-in-from-top-10 duration-500">
                     <!-- AI Feedback will show here -->

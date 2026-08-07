@@ -1751,14 +1751,21 @@ body.mobile-mode #app-content {
     .sticky.top-\[92px\],
     .sticky.top-\[96px\],
     #app-content .sticky {
-        position: relative !important;
-        top: 0 !important;
+        position: sticky !important;
+        top: 52px !important;
         margin-bottom: 1.25rem !important;
-        padding: 0 !important;
-        background: transparent !important;
-        border: none !important;
-        box-shadow: none !important;
-        z-index: 30 !important;
+        padding: 0.25rem 0.5rem !important;
+        background: rgba(255, 255, 255, 0.95) !important;
+        backdrop-filter: blur(12px) !important;
+        border-bottom: 1px solid rgba(226, 232, 240, 0.8) !important;
+        z-index: 40 !important;
+    }
+
+    .dark .sticky.top-\[92px\],
+    .dark .sticky.top-\[96px\],
+    .dark #app-content .sticky {
+        background: rgba(15, 23, 42, 0.95) !important;
+        border-bottom: 1px solid rgba(51, 65, 85, 0.8) !important;
     }
 
     .sticky div.bg-white\/95,

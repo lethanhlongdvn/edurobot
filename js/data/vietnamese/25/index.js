@@ -45,10 +45,7 @@ export const lesson25 = {
                 <span class="text-xs text-sky-900 font-black uppercase">Gợi ý: Vật thể khổng lồ quay quanh ngôi sao (ví dụ: Trái Đất)</span>
             </div>
             
-            <div class="flex gap-3">
-                <input type="text" id="ans-vn25-kd" placeholder="Nhập đáp án của em..." class="w-full p-4 border-2 border-sky-100 rounded-2xl outline-none focus:border-sky-500 font-bold text-center text-xl md:text-2xl bg-white shadow-sm" />
-                <button onclick="checkKD25()" class="px-8 py-3 bg-sky-600 text-white font-black rounded-2xl hover:bg-sky-600 transition-all text-base shadow-md">KIỂM TRA ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkKD25();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn25-kd" class="hidden p-4 rounded-2xl text-base font-bold text-center"></div>
         </div>
     </div>
@@ -87,7 +84,7 @@ export const lesson25 = {
                     <p class="indent-4 font-semibold text-sky-800">– Mỗi ngày mười giờ, một tuần mười ngày, mỗi tháng mười tuần, một năm mười tháng. Thế là dài hơn hay ngắn hơn ở Trái Đất nhỉ?</p>
                     <p class="indent-8 font-medium">Tôi thì mải mê với máy móc dọc đường đi. Tất cả các việc đều do máy làm, từ xây dựng đến cắt tóc, tẩm quất,... Tôi thích nhất những chiếc ô tô vừa chạy vừa bay. Chúng hoạt động theo yêu cầu bằng giọng nói của chủ nhân. Tất nhiên, tôi chẳng ra lệnh được cho xe nào vì không cái nào thuộc sở hữu của tôi.</p>
                     <p class="indent-8 font-medium">Cái gì cũng hấp dẫn cho tới khi chúng tôi thấy quá nóng bức. Ở Trái Đất, 30 độ chưa nóng lắm, nhưng ở đây oi bức lạ thường mặc dù có rất nhiều cây. Tôi lại gần một cây đại thụ. Thân to đồ sộ, gốc rễ xù xì, cành lá xanh tươi, nhưng càng lại gần càng nóng ran. Tôi sờ vào thân cây và chợt phát hiện ra đây cũng chỉ là cái máy mang hình cây. Chao ôi, tôi bỗng nhớ Trái Đất của tôi làm sao! Tôi thèm bóng cây râm mát với tiếng chim hót ríu ran làm sao! Bao giờ tôi mới được trở về?</p>
-                    <p class="text-right font-bold text-gray-800 mt-4 text-xl md:text-2xl">(Theo Viết Linh)</p>
+                    
                 </div>
 
                 <!-- Các khối thông tin bổ trợ đặt bên dưới dạng xếp chồng dọc để hiển thị rộng rãi hơn -->
@@ -290,9 +287,7 @@ export const lesson25 = {
                     <button onclick="toggleVocabCard(this, true)" class="px-5 py-3 border-2 border-gray-100 bg-gray-50 rounded-2xl font-bold text-lg hover:border-emerald-100 transition-all text-gray-800">🌌 hành tinh</button>
                     <button onclick="toggleVocabCard(this, false)" class="px-5 py-3 border-2 border-gray-100 bg-gray-50 rounded-2xl font-bold text-lg hover:border-emerald-100 transition-all text-gray-800">🌳 cây đại thụ</button>
                 </div>
-                <div class="flex justify-start pt-2">
-                    <button onclick="checkVocabCards()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md">KIỂM TRA CARD ✓</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="checkVocabCards();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn25-vocab" class="hidden p-4 rounded-xl font-bold text-base text-center"></div>
             </div>
 
@@ -325,9 +320,7 @@ export const lesson25 = {
                         </select>
                     </div>
                 </div>
-                <div class="flex justify-start pt-2">
-                    <button onclick="checkPronounSelects()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md">KIỂM TRA ĐẠI TỪ ✓</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="checkPronounSelects();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn25-pronoun" class="hidden p-4 rounded-xl font-bold text-base text-center"></div>
             </div>
 

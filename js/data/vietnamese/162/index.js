@@ -332,12 +332,12 @@ export const lesson162 = {
                 </div>
 
                 <!-- Nút bấm kiểm tra -->
-                <div class="flex flex-wrap items-center gap-4">
+                <div class="flex justify-end items-center gap-4">
                     <button onclick="window.checkHanhTrinhCom()" class="px-10 py-4 bg-emerald-600 text-white font-black text-xl rounded-2xl shadow-lg hover:bg-emerald-700 active:scale-95 transition-all flex items-center gap-3">
                         <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-emerald-600 font-black text-sm shadow-sm">E</div>
                         <span>KIỂM TRA KẾT QUẢ</span>
                     </button>
-                    <button onclick="window.resetHanhTrinhCom()" class="px-6 py-4 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
+                    <button onclick="window.resetHanhTrinhCom()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
                 </div>
 
                 <!-- Chỗ hiện thông báo chấm điểm -->

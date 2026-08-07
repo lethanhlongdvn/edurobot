@@ -44,7 +44,7 @@ export const lesson_302_bo_doi_ve_lang = {
                                     <p>Bát nước chè xanh</p>
                                     <p>Ngồi vui kể chuyện tâm tình bên nhau.</p>
                                 </div>
-                                <p class="text-right italic mt-4">HOÀNG TRUNG THÔNG</p>
+                                
                             </div>
                         </div>
 

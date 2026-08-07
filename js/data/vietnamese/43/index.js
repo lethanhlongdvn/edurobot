@@ -233,10 +233,7 @@ export const lesson43 = {
             <h4 class="font-black text-sky-800 text-lg md:text-xl">✍️ Thực hành: Chép lại một đoạn thơ em thích nhất</h4>
             <p class="font-bold text-gray-800 text-sm">Chép lại ít nhất 4 câu thơ trong bài và nêu lí do em yêu thích đoạn đó:</p>
             <textarea id="ans-vn43-writing" rows="5" placeholder="Ví dụ: Em thích khổ đầu: 'Dưới vỏ một cành bàng / Còn một vài lá đỏ / Một mầm non nho nhỏ / Còn nằm nép lặng im...' vì hình ảnh mầm non nho nhỏ nằm nép lặng im thật đáng yêu và gợi lên sức sống tiềm ẩn..." class="w-full p-4 border border-gray-100 rounded-2xl bg-white text-xl md:text-2xl font-semibold focus:border-sky-500 outline-none shadow-sm"></textarea>
-            <div class="flex justify-center gap-4">
-                <button onclick="checkWritingVn43()" class="px-8 py-3.5 bg-sky-600 text-white font-black text-lg rounded-2xl shadow-md hover:bg-sky-600 active:scale-95 transition-all">NỘP BÀI GỬI THẦY E</button>
-                <button onclick="resetWritingVn43()" class="px-6 py-3.5 bg-gray-800 hover:bg-gray-800 text-gray-900 font-black text-lg rounded-2xl transition-all active:scale-95">LÀM LẠI</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="resetWritingVn43()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkWritingVn43();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn43-chep" class="hidden p-5 rounded-2xl text-base font-bold shadow-md transition-all duration-343"></div>
         </div>
     </section>
@@ -413,9 +410,7 @@ export const lesson43 = {
             </div>
         </div>
 
-        <div class="flex justify-center">
-            <button onclick="kiemTraDienTuVn43()" class="px-8 py-3 bg-sky-600 hover:bg-sky-600 text-white rounded-xl font-bold shadow-md transition-all active:scale-95 text-lg">Kiểm tra đáp án</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDienTuVn43();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn43-dien-tu" class="hidden p-4 rounded-xl text-center text-lg font-black transition-all"></div>
     </section>
 

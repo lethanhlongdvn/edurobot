@@ -37,9 +37,7 @@ export const lesson29 = {
         
         <div class="space-y-4">
             <textarea id="ans-vn29-kd" rows="3" placeholder="Ví dụ: Em nghĩ cảnh vật được gọi là cổng trời vì đó là khoảng trống mở ra giữa hai bên vách đá dựng đứng trên đỉnh núi cao, làm ta có cảm giác như chiếc cổng dẫn lên bầu trời..." class="w-full p-4 border-2 border-sky-100 rounded-2xl outline-none focus:border-sky-500 font-bold bg-sky-50/10 text-xl md:text-2xl"></textarea>
-            <div class="flex justify-center">
-                <button onclick="checkKD29()" class="px-8 py-3 bg-sky-600 text-white font-black rounded-xl hover:bg-sky-600 transition-all text-base shadow-md">GỬI SUY NGHĨ ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkKD29();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn29-kd" class="hidden p-4 rounded-xl text-sm font-bold text-center mt-2"></div>
         </div>
     </div>
@@ -283,12 +281,7 @@ export const lesson29 = {
                 </h4>
                 <textarea id="ans-vn29-writing" rows="5" placeholder="Ví dụ: Đứng trước cổng trời kiêu hãnh giữa hai vách đá dựng đứng, em vô cùng kinh ngạc trước vẻ đẹp kì vĩ nơi đây. Những làn mây trắng lơ lửng trôi như thể ta chỉ cần với tay là chạm được..." class="w-full p-4 md:p-6 text-xl md:text-2xl rounded-2xl border-2 border-amber-100 focus:border-amber-500 outline-none shadow-sm bg-amber-50/10 font-medium leading-relaxed"></textarea>
                 
-                <div class="flex justify-start gap-3">
-                    <button onclick="checkWritingVn29()" class="px-8 py-3 bg-amber-500 text-white font-black text-lg rounded-2xl shadow-md hover:bg-amber-500 active:scale-95 transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-amber-900 font-black text-xs shadow-sm">E</div> 
-                        <span>CHẤM BÀI TỰ LUẬN</span>
-                    </button>
-                    <div id="fb-vn29-writing" class="hidden p-4 rounded-xl font-bold text-base flex-1"></div>
+                <div class="flex justify-end items-center gap-4"><button onclick="checkWritingVn29();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 </div>
             </div>
         </div>

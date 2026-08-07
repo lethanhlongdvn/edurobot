@@ -43,10 +43,7 @@ export const lesson51 = {
             <div class="text-center font-bold text-lg md:text-2xl text-sky-800 py-2">
                 "Bố em sửa **chân** bàn bị gãy."
             </div>
-            <div class="flex justify-center gap-4">
-                <button onclick="checkKD51('goc')" class="px-6 py-3 bg-white hover:bg-sky-600 border-2 border-sky-100 rounded-xl font-black text-lg text-sky-800 shadow-sm transition-all">Nghĩa gốc</button>
-                <button onclick="checkKD51('chuyen')" class="px-6 py-3 bg-white hover:bg-sky-600 border-2 border-sky-100 rounded-xl font-black text-lg text-sky-800 shadow-sm transition-all">Nghĩa chuyển</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkKD51(;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn51-kd" class="hidden p-4 rounded-xl text-sm font-bold text-center mt-2"></div>
         </div>
     </div>
@@ -114,7 +111,7 @@ export const lesson51 = {
             <!-- Xác định nghĩa gốc -->
             <div class="bg-sky-55/35 p-6 rounded-3xl border border-sky-100 space-y-3">
                 <span class="text-base font-extrabold text-sky-800">Từ "hạt" trong đoạn thơ nào được dùng với nghĩa gốc?</span>
-                <div class="flex gap-4">
+                <div class="flex justify-end items-center gap-4">
                     <label class="flex items-center gap-2 font-bold text-lg text-gray-800 cursor-pointer">
                         <input type="radio" name="vn51-ex1-goc" value="a" class="w-5 h-5 accent-sky-600"> Đoạn thơ A
                     </label>
@@ -124,9 +121,7 @@ export const lesson51 = {
                 </div>
             </div>
 
-            <div class="flex justify-start">
-                <button onclick="checkEx1_51()" class="px-8 py-3 bg-sky-600 text-white font-black rounded-xl hover:bg-sky-600 transition-all text-base shadow-md">KIỂM TRA BÀI 1 ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkEx1_51();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn51-ex1" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2 shadow-md"></div>
         </div>
     </section>
@@ -210,9 +205,7 @@ export const lesson51 = {
                 </div>
             </div>
 
-            <div class="flex justify-start">
-                <button onclick="checkEx2_51()" class="px-8 py-3 bg-sky-600 text-white font-black rounded-xl hover:bg-sky-600 transition-all text-base shadow-md">KIỂM TRA BÀI 2 ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkEx2_51();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn51-ex2" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2 shadow-md"></div>
         </div>
     </section>
@@ -262,12 +255,7 @@ export const lesson51 = {
                 </div>
             </div>
 
-            <div class="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
-                <button onclick="checkWritingVn51()" class="px-8 py-3 bg-amber-500 text-white font-black text-lg rounded-2xl shadow-md hover:bg-amber-500 active:scale-95 transition-all flex items-center gap-2">
-                    <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-amber-900 font-black text-xs shadow-sm">E</div> 
-                    <span>CHẤM BÀI TỰ LUẬN</span>
-                </button>
-                <div id="fb-vn51-writing" class="hidden p-4 rounded-xl font-bold text-base flex-1"></div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkWritingVn51();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             </div>
         </div>
     </section>

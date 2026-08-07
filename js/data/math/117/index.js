@@ -62,14 +62,14 @@ export const lesson117 = {
                         <div class="bg-white p-6 rounded-2xl shadow-sm italic text-3xl md:text-3xl text-center font-bold text-blue-600">
                             Sxq = Chu vi đáy x Chiều cao
                         </div>
-                        <p class="mt-4 text-xl text-slate-600 font-bold">= (a + b) x 2 x h</p>
+                        
                     </div>
                     <div class="p-8 bg-blue-50 rounded-3xl border-2 border-blue-100">
                         <p class="text-2xl md:text-2xl font-black text-blue-800 mb-4 uppercase">2. Diện tích toàn phần (Stp)</p>
                         <div class="bg-white p-6 rounded-2xl shadow-sm italic text-3xl md:text-3xl text-center font-bold text-blue-600">
                             Stp = Sxq + S(2 đáy)
                         </div>
-                        <p class="mt-4 text-xl text-slate-600 font-bold">= Sxq + a x b x 2</p>
+                        
                     </div>
                 </div>
             </div>

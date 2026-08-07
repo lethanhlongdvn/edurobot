@@ -595,14 +595,31 @@ window.syncRealtimeProgress = async function (data, forceAuth = false) {
 
     if (!userRole || !userApproved || userRole !== 'student') {
         if (forceAuth) {
-            // Hiển thị thông báo yêu cầu đăng nhập nếu là hành động nộp bài
-            const shouldRedirect = confirm(
-                '⚠️ Bạn cần đăng nhập bằng TÀI KHOẢN HỌC SINH đã được duyệt để nộp bài và cập nhật điểm.\n\n' +
-                '• Bấm OK để chuyển đến trang đăng nhập học sinh.'
-            );
-            if (shouldRedirect) {
-                window.location.href = 'auth.html';
+            // Hiển thị thông báo yêu cầu đăng nhập bằng Toast tự biến mất
+            let container = document.getElementById('edurobot-toast-container');
+            if (!container) {
+                container = document.createElement('div');
+                container.id = 'edurobot-toast-container';
+                container.style.cssText = 'position:fixed; top:20px; right:20px; z-index:2147483647; display:flex; flex-direction:column; gap:10px; pointer-events:none;';
+                document.body.appendChild(container);
             }
+            
+            const toast = document.createElement('div');
+            toast.style.cssText = 'pointer-events:auto; background:#fffbeb; border-left:6px solid #f59e0b; color:#b45309; padding:12px 18px; border-radius:16px; box-shadow:0 10px 25px rgba(0,0,0,0.1); font-family:\'Be Vietnam Pro\', sans-serif; font-weight:700; font-size:13px; min-width:280px; max-width:360px; transform:translateX(120%); transition:all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); opacity:0; box-sizing:border-box; border: 1px solid #fef3c7;';
+            toast.innerHTML = `<div style="display:flex; align-items:center; gap:10px;"><span style="font-size: 18px;">⚠️</span><div>Bạn cần đăng nhập bằng TÀI KHOẢN HỌC SINH đã được duyệt để nộp bài và cập nhật điểm.</div></div>`;
+            
+            container.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.style.transform = 'translateX(0)';
+                toast.style.opacity = '1';
+            }, 50);
+            
+            setTimeout(() => {
+                toast.style.transform = 'translateX(120%)';
+                toast.style.opacity = '0';
+                setTimeout(() => toast.remove(), 300);
+            }, 5000);
         }
         return; // Silent skip for guests / non-students unless forced
     }

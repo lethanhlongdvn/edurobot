@@ -77,7 +77,7 @@ export const lesson39 = {
         <!-- Nội dung văn bản đọc mẫu -->
         <div class="bg-sky-50/10 p-6 md:p-10 rounded-3xl border border-sky-100 max-w-4xl mx-auto space-y-6">
             <h4 class="text-2xl md:text-5xl font-black text-center text-gray-800 font-sans">NHỮNG HÒN ĐẢO TRÊN VỊNH HẠ LONG</h4>
-            <p class="text-center text-sm font-semibold text-gray-800 -mt-4">(Trích)</p>
+            
             <div class="serif-font text-gray-800 leading-relaxed text-justify space-y-4 text-xl md:text-4xl">
                 <!-- Minh họa SGK (Góc trên bên phải, bấm vào phóng to) -->
                 <div onclick="window.showMathFeedback('Vịnh Hạ Long', '🌊', '&lt;div class=&quot;text-center p-4 bg-gradient-to-br from-sky-50 to-blue-50 rounded-[32px] border-4 border-white shadow-xl&quot;&gt;&lt;img src=&quot;assets/images/tiengviet_5_1/39-40/39-40.jpg&quot; class=&quot;max-h-[70vh] mx-auto rounded-2xl shadow-md object-contain&quot; alt=&quot;Vịnh Hạ Long&quot;&gt;&lt;p class=&quot;text-2xl font-bold text-sky-800 mt-4&quot;&gt;Vẻ đẹp kì vĩ của các hòn đảo nhấp nhô trên vịnh Hạ Long.&lt;/p&gt;&lt;/div&gt;')" class="float-none md:float-right mx-auto md:mx-0 md:ml-8 mb-6 w-full md:w-80 bg-gradient-to-br from-sky-50 to-blue-50 rounded-[32px] border-4 border-white shadow-lg cursor-pointer hover:scale-105 active:scale-95 transition-all overflow-hidden relative group">
@@ -108,7 +108,7 @@ export const lesson39 = {
             <h4 class="font-black text-gray-800 text-xl md:text-2xl flex items-center gap-2">
                 <span>🖼️</span> Bản đồ khám phá các hòn đảo độc đáo:
             </h4>
-            <p class="text-gray-800 font-bold text-sm md:text-base -mt-4 italic">Nhấp vào tên từng hòn đảo dưới đây để xem phác họa tranh phong cảnh và mô tả chi tiết:</p>
+            
             
             <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
                 <button onclick="xemChiTietDaoVn39('gachoi')" class="p-3 bg-white hover:bg-sky-50 border border-sky-100 rounded-xl font-black text-sky-800 text-sm md:text-base shadow-sm">🐔 Hòn Gà Chọi</button>
@@ -301,9 +301,7 @@ export const lesson39 = {
             </table>
         </div>
         
-        <div class="flex justify-center">
-            <button onclick="kiemTraLtv1Vn39()" class="px-8 py-3 bg-sky-600 hover:bg-sky-600 text-white rounded-xl font-bold shadow-md transition-all active:scale-95 text-lg">Kiểm tra tác dụng từ gợi tả</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraLtv1Vn39();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn39-lt1" class="hidden p-4 rounded-xl text-center text-lg font-bold"></div>
     </section>
 
@@ -351,10 +349,7 @@ export const lesson39 = {
                 <textarea id="ans-vn39-writing" rows="4" placeholder="Ví dụ: Du khách bốn phương đổ về đây để ngắm nhìn và chiêm ngưỡng vẻ đẹp hùng vĩ của Vịnh Hạ Long..." class="w-full p-4 border border-gray-100 rounded-2xl bg-white text-xl md:text-2xl font-semibold focus:border-sky-500 outline-none shadow-sm"></textarea>
             </div>
             
-            <div class="flex justify-center gap-4">
-                <button onclick="checkWritingVn39()" class="px-8 py-3.5 bg-sky-600 text-white font-black text-lg rounded-2xl shadow-md hover:bg-sky-600 active:scale-95 transition-all">NỘP BÀI GỬI THẦY E</button>
-                <button onclick="resetWritingVn39()" class="px-6 py-3.5 bg-gray-800 hover:bg-gray-800 text-gray-900 font-black text-lg rounded-2xl transition-all active:scale-95">LÀM LẠI</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="resetWritingVn39()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkWritingVn39();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn39-datcau" class="hidden p-5 rounded-2xl text-base font-bold shadow-md transition-all duration-339"></div>
         </div>
     </section>

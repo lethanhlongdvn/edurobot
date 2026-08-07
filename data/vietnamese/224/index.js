@@ -35,7 +35,7 @@ export const lesson224 = {
         <!-- 📖 Tài liệu gợi ý đọc -->
         <section class="w-full">
             <div class="bg-white rounded-[40px] p-6 md:p-10 shadow-xl border border-blue-100 relative overflow-hidden space-y-8">
-                <div class="flex items-center gap-4">
+                <div class="flex justify-end items-center gap-4">
                     <span class="w-12 h-12 md:w-14 md:h-14 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-2xl md:text-3xl shrink-0">1</span>
                     <h4 class="text-2xl md:text-3xl font-black text-blue-600 leading-tight">Gợi ý tác phẩm đọc rộng</h4>
                 </div>

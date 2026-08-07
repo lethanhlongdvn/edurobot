@@ -14,7 +14,7 @@ export const lesson159 = {
                         <p class="text-center bg-blue-50 p-6 rounded-2xl border-2 border-dashed border-blue-200 italic">
                             Số bị chia = Số chia × Thương + Số dư
                         </p>
-                        <p class="mt-4 text-rose-600 text-xl md:text-2xl">* Lưu ý: Số dư luôn nhỏ hơn số chia.</p>
+                        
                     </div>
                     <div class="bg-white p-8 rounded-3xl shadow-sm border-l-8 border-emerald-500">
                         <p class="text-emerald-600 mb-4 underline">2. Tính nhẩm nhanh:</p>

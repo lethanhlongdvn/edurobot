@@ -168,7 +168,7 @@ export const lesson122Presentation = [
                             <div class="mt-6 bg-rose-600 p-6 rounded-3xl text-white text-center shadow-lg">
                                 <p class="text-4xl md:text-6xl font-black tracking-wide italic drop-shadow-md uppercase">V = a &times; b &times; c</p>
                             </div>
-                            <p class="text-center mt-4 text-slate-500 font-bold">(a, b, c cùng đơn vị đo)</p>
+                            
                         </div>
                     </div>
                 </div>

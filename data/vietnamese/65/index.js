@@ -41,9 +41,7 @@ export const lesson65 = {
         
         <div class="space-y-4">
             <textarea id="ans-vn65-kd" rows="3" placeholder="Em nghĩ từ điển giúp chúng ta hiểu nghĩa chính xác của từ, biết từ đó là danh từ, động từ hay tính từ, và cho ví dụ đặt câu. Cách tìm nhanh là tra theo bảng chữ cái..." class="w-full p-4 border-2 border-emerald-100 rounded-2xl outline-none focus:border-emerald-500 font-bold bg-emerald-50/10 text-xl md:text-2xl"></textarea>
-            <div class="flex justify-center">
-                <button onclick="window.kiemTraKhoiDong65()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md">GỬI SUY NGHĨ ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="window.kiemTraKhoiDong65();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn65-kd" class="hidden p-4 rounded-xl text-sm font-bold text-center mt-2"></div>
         </div>
     </div>
@@ -88,10 +86,7 @@ export const lesson65 = {
             </div>
 
             <!-- Các nút hành động -->
-            <div class="flex justify-center gap-4 mt-6">
-                <button onclick="window.kiemTraBuoc65()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md">KIỂM TRA ĐÁP ÁN ✓</button>
-                <button onclick="window.lamLaiBuoc65()" class="px-8 py-3 bg-amber-500 text-white font-black rounded-xl hover:bg-amber-500 transition-all text-base shadow-md">LÀM LẠI ↺</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="window.kiemTraBuoc65();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             
             <div id="fb-vn65-bt1" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2"></div>
         </div>
@@ -144,7 +139,7 @@ export const lesson65 = {
                     <!-- Câu a -->
                     <div class="bg-gray-50 p-5 rounded-2xl border border-gray-100 space-y-2">
                         <p class="font-bold text-gray-800 text-lg md:text-xl">a. Từ <span class="italic">đọc</span> là danh từ, động từ hay tính từ?</p>
-                        <div class="flex gap-4">
+                        <div class="flex justify-end items-center gap-4">
                             <label class="flex items-center gap-2 font-bold cursor-pointer text-lg md:text-xl"><input type="radio" name="q2-a" value="danh-tu" class="w-5 h-5 text-emerald-800 focus:ring-emerald-600"> Danh từ</label>
                             <label class="flex items-center gap-2 font-bold cursor-pointer text-lg md:text-xl"><input type="radio" name="q2-a" value="dong-tu" class="w-5 h-5 text-emerald-800 focus:ring-emerald-600"> Động từ</label>
                             <label class="flex items-center gap-2 font-bold cursor-pointer text-lg md:text-xl"><input type="radio" name="q2-a" value="tinh-tu" class="w-5 h-5 text-emerald-800 focus:ring-emerald-600"> Tính từ</label>
@@ -154,7 +149,7 @@ export const lesson65 = {
                     <!-- Câu b -->
                     <div class="bg-gray-50 p-5 rounded-2xl border border-gray-100 space-y-2">
                         <p class="font-bold text-gray-800 text-lg md:text-xl">b. Nghĩa gốc của từ <span class="italic">đọc</span> là nghĩa số mấy?</p>
-                        <div class="flex gap-4">
+                        <div class="flex justify-end items-center gap-4">
                             <label class="flex items-center gap-2 font-bold cursor-pointer text-lg md:text-xl"><input type="radio" name="q2-b" value="1" class="w-5 h-5 text-emerald-800 focus:ring-emerald-600"> Nghĩa 1</label>
                             <label class="flex items-center gap-2 font-bold cursor-pointer text-lg md:text-xl"><input type="radio" name="q2-b" value="2" class="w-5 h-5 text-emerald-800 focus:ring-emerald-600"> Nghĩa 2</label>
                             <label class="flex items-center gap-2 font-bold cursor-pointer text-lg md:text-xl"><input type="radio" name="q2-b" value="3" class="w-5 h-5 text-emerald-800 focus:ring-emerald-600"> Nghĩa 3</label>
@@ -164,7 +159,7 @@ export const lesson65 = {
                     <!-- Câu c -->
                     <div class="bg-gray-50 p-5 rounded-2xl border border-gray-100 space-y-2">
                         <p class="font-bold text-gray-800 text-lg md:text-xl">c. Từ <span class="italic">đọc</span> có mấy nghĩa chuyển?</p>
-                        <div class="flex gap-4">
+                        <div class="flex justify-end items-center gap-4">
                             <label class="flex items-center gap-2 font-bold cursor-pointer text-lg md:text-xl"><input type="radio" name="q2-c" value="2" class="w-5 h-5 text-emerald-800 focus:ring-emerald-600"> 2 nghĩa</label>
                             <label class="flex items-center gap-2 font-bold cursor-pointer text-lg md:text-xl"><input type="radio" name="q2-c" value="3" class="w-5 h-5 text-emerald-800 focus:ring-emerald-600"> 3 nghĩa (nghĩa 2, 3, 4)</label>
                             <label class="flex items-center gap-2 font-bold cursor-pointer text-lg md:text-xl"><input type="radio" name="q2-c" value="4" class="w-5 h-5 text-emerald-800 focus:ring-emerald-600"> 4 nghĩa</label>
@@ -182,9 +177,7 @@ export const lesson65 = {
                         </select>
                     </div>
 
-                    <div class="flex justify-center pt-2">
-                        <button onclick="window.kiemTraCauHoi2_65()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md">NỘP ĐÁP ÁN ✓</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="window.kiemTraCauHoi2_65();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                     <div id="fb-vn65-bt2" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2"></div>
                 </div>
             </div>
@@ -246,12 +239,7 @@ export const lesson65 = {
                     <input type="text" id="ans-vn65-writing-troichay" placeholder="Ví dụ: Bạn Lan đã trình bày bài thuyết trình vô cùng trôi chảy và mạch lạc." class="w-full p-4 text-lg md:text-xl rounded-xl border border-emerald-100 outline-none focus:border-emerald-500 font-medium">
                 </div>
 
-                <div class="flex justify-center gap-3">
-                    <button onclick="window.kiemTraTuLuan65()" class="px-8 py-3 bg-amber-500 text-white font-black text-lg rounded-2xl shadow-md hover:bg-amber-500 active:scale-95 transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-amber-900 font-black text-xs shadow-sm">E</div> 
-                        <span>CHẤM BÀI TỰ LUẬN</span>
-                    </button>
-                    <div id="fb-vn65-writing" class="hidden p-4 rounded-xl font-bold text-base flex-1"></div>
+                <div class="flex justify-end items-center gap-4"><button onclick="window.kiemTraTuLuan65();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 </div>
             </div>
         </div>

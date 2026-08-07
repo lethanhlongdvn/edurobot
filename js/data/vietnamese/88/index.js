@@ -91,7 +91,7 @@ export const lesson88 = {
                     <p class="indent-10">– Phi-lít! – Cha nói. – Con mang bản đồ thế giới ra đây, chúng ta cùng xem vị trí địa lí của Nê-pan nhé!</p>
                     <p class="indent-10">Tấm bản đồ được trải ra nền nhà. Cả nhà xúm lại tìm xem Nê-pan ở đâu.</p>
                     <p class="indent-10">Thời thơ ấu, Phi-lít chưa thấy được lợi ích của phương pháp học tập đó. Sau này, Phi-lít thi đỗ đại học. Cậu theo học một số vị giáo sư nổi tiếng. Điều khiến cậu thấy thú vị là có những kiến thức các giáo sư dạy khá giống với thứ cha từng yêu cầu cậu học, chỉ là phát triển hơn lên mà thôi.</p>
-                    <p class="text-right text-gray-500 font-bold text-lg md:text-xl mt-4">(Theo Trương Cẩn)</p>
+                    
                 </div>
             </div>
         </div>
@@ -152,9 +152,7 @@ export const lesson88 = {
                     </select>
                 </div>
             </div>
-            <div class="flex justify-center pt-2">
-                <button onclick="checkC1Vn88()" class="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl shadow active:scale-95 transition-all">NỘP BÀI ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkC1Vn88();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-c1" class="hidden p-4 rounded-2xl text-center font-bold text-base mt-2 shadow-inner"></div>
         </div>
 
@@ -178,9 +176,7 @@ export const lesson88 = {
                     <span class="font-bold text-gray-700 text-lg md:text-3xl">Yêu cầu mỗi ngày phải vẽ một tấm bản đồ thế giới, vì ông muốn rèn luyện kỹ năng hội họa và địa lý cho các con.</span>
                 </label>
             </div>
-            <div class="flex justify-center pt-2">
-                <button onclick="checkC2Vn88()" class="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl shadow active:scale-95 transition-all">NỘP BÀI ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkC2Vn88();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-c2" class="hidden p-4 rounded-2xl text-center font-bold text-base mt-2 shadow-inner"></div>
         </div>
 
@@ -204,9 +200,7 @@ export const lesson88 = {
                     <span class="font-bold text-gray-700 text-lg md:text-3xl">Chỉ có người cha hào hứng học, còn mẹ và Phi-lít chỉ tham gia vì bị bắt buộc.</span>
                 </label>
             </div>
-            <div class="flex justify-center pt-2">
-                <button onclick="checkC3Vn88()" class="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl shadow active:scale-95 transition-all">NỘP BÀI ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkC3Vn88();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-c3" class="hidden p-4 rounded-2xl text-center font-bold text-base mt-2 shadow-inner"></div>
         </div>
 
@@ -230,9 +224,7 @@ export const lesson88 = {
                     <span class="font-bold text-gray-700 text-lg md:text-3xl">Giúp Phi-lít có thể đi du lịch và sinh sống dễ dàng tại Nê-pan.</span>
                 </label>
             </div>
-            <div class="flex justify-center pt-2">
-                <button onclick="checkC4Vn88()" class="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl shadow active:scale-95 transition-all">NỘP BÀI ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkC4Vn88();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-c4-res" class="hidden p-4 rounded-2xl text-center font-bold text-base mt-2 shadow-inner"></div>
         </div>
 
@@ -245,12 +237,7 @@ export const lesson88 = {
             <div class="space-y-4 max-w-4xl mx-auto">
                 <textarea id="vn88-essay-input" rows="4" placeholder="Nhập suy nghĩ của em (khoảng 3-5 câu)... Gợi ý: Em có muốn đặt mục tiêu tự học mỗi ngày một kiến thức mới không? Em sẽ làm cách nào để tích lũy kiến thức?..." class="w-full p-4 border-2 border-emerald-100 rounded-3xl outline-none focus:border-emerald-500 font-bold bg-emerald-50/10 text-lg md:text-xl shadow-inner"></textarea>
                 
-                <div class="flex justify-center gap-3">
-                    <button onclick="checkWritingVn88()" class="px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-lg rounded-2xl shadow-lg hover:shadow-xl active:scale-95 transition-all flex items-center gap-2">
-                        <span>🎓</span> CHẤM ĐIỂM AI THẦY E
-                    </button>
-                    <button onclick="resetVn88()" class="px-6 py-4 bg-gray-200 hover:bg-gray-300 text-gray-700 font-black text-lg rounded-2xl active:scale-95 transition-all">LÀM LẠI</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetVn88()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkWritingVn88();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="vn88-essay-fb" class="hidden p-5 rounded-3xl border-2 font-bold text-lg text-center shadow-lg transition-all"></div>
             </div>
         </div>
@@ -302,9 +289,7 @@ export const lesson88 = {
                     </select>
                 </div>
             </div>
-            <div class="flex justify-center pt-2">
-                <button onclick="checkPronounsVn88()" class="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl shadow active:scale-95 transition-all">NỘP BÀI ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkPronounsVn88();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-pronouns-88" class="hidden p-4 rounded-2xl text-center font-bold text-base mt-2 shadow-inner"></div>
         </div>
 
@@ -354,9 +339,7 @@ export const lesson88 = {
                     <span class="font-bold text-gray-700 text-left w-full text-lg md:text-3xl">là khả năng giữ lại và tái hiện ra trong trí óc những điều đã biết, đã trải qua.</span>
                 </div>
             </div>
-            <div class="flex justify-center pt-2">
-                <button onclick="checkVocabVn88()" class="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl shadow active:scale-95 transition-all">NỘP BÀI ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkVocabVn88();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vocab-88" class="hidden p-4 rounded-2xl text-center font-bold text-base mt-2 shadow-inner"></div>
         </div>
     </div>

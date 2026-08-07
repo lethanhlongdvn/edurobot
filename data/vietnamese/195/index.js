@@ -28,7 +28,7 @@ export const lesson195 = {
             <div class="w-full overflow-hidden rounded-3xl shadow-2xl border-8 border-white group">
                 <img src="assets/images/tim_y_y_kien_tan_thanh.png" alt="Tìm ý kiến tán thành" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-1000">
             </div>
-            <p class="text-lg md:text-2xl text-center text-gray-500 mt-4 font-black italic">Lập dàn ý giúp đoạn văn mạch lạc và giàu sức thuyết phục</p>
+            
         </div>
     </section>
 
@@ -150,12 +150,7 @@ export const lesson195 = {
             </div>
 
             <!-- Nút gửi AI chấm -->
-            <div class="flex justify-center pt-2">
-                <button onclick="check195OutlineAI()" class="px-10 py-5 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-3 text-xl md:text-2xl uppercase tracking-wider">
-                    <span>🤖</span> 
-                    <span>Gửi dàn ý cho EduRobot AI góp ý</span>
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="check195OutlineAI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-195-outline-ai" class="w-full hidden mt-4"></div>
         </div>
     </section>

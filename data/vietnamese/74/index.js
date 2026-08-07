@@ -41,9 +41,7 @@ export const lesson74 = {
         
         <div class="space-y-4">
             <textarea id="ans-vn74-kd" rows="3" placeholder="Nhan đề 'Khổ luyện thành tài' gợi cho em suy nghĩ rằng muốn đạt được thành công, trở thành người tài giỏi thì con người phải trải qua quá trình rèn luyện gian khổ, vất vả và kiên trì bền bỉ..." class="w-full p-4 border-2 border-emerald-100 rounded-2xl outline-none focus:border-emerald-500 font-bold bg-emerald-50/10 text-xl md:text-2xl"></textarea>
-            <div class="flex justify-center">
-                <button onclick="kiemTraKhoiDong74()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md active:scale-95">GỬI SUY NGHĨ ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraKhoiDong74();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn74-kd" class="hidden p-4 rounded-xl text-sm font-bold text-center mt-2"></div>
         </div>
     </div>
@@ -80,7 +78,7 @@ export const lesson74 = {
                     <p class="indent-10">Ngừng một lát, thầy nói tiếp: "Trong quá trình vẽ, em chú ý đến những điều gì? Thầy muốn luyện tầm nhìn cho em, đây là bước đi đầu tiên dẫn đến thành công của hội họa. Chỉ có vẽ tốt quả trứng gà đơn giản này, mới có thể vẽ được những sự vật phức tạp."</p>
                     <p class="indent-10">Nghe những lời nói đó, Lê-ô-nác-đô bỗng hiểu ra mọi điều và cảm nhận được sự khổ công của thầy.</p>
                     <p class="indent-10">Từ đó về sau, Lê-ô-nác-đô luôn nhớ lời thầy, khổ luyện vẽ tranh. Một năm... hai năm..., trình độ của Lê-ô-nác-đô ngày càng được nâng cao, cuối cùng đã xuất sắc hơn thầy của mình. Lê-ô-nác-đô đa Vin-xi trở thành họa sĩ Ý nổi tiếng thế giới.</p>
-                    <p class="text-right text-gray-500 font-bold text-lg md:text-xl mt-4">(Theo 174 câu chuyện học sinh cần đọc giúp các em trở thành nhà khoa học tương lai)</p>
+                    
                 </div>
             </div>
 
@@ -149,13 +147,7 @@ export const lesson74 = {
             <div class="bg-gray-50 p-6 rounded-3xl border border-gray-100 space-y-3">
                 <p class="font-bold text-gray-800 text-lg md:text-xl"><span class="text-emerald-800">Câu 4:</span> Em học hỏi được điều gì từ câu chuyện của Lê-ô-nác-đô?</p>
                 <textarea id="ans-vn74-cau4" rows="3" placeholder="Ví dụ: Em học hỏi được rằng muốn thành công trong bất cứ việc gì, chúng ta phải kiên trì, không ngại gian khổ và rèn luyện từ những điều đơn giản nhất..." class="w-full p-4 border border-gray-100 rounded-2xl outline-none focus:border-emerald-500 font-bold bg-white text-lg"></textarea>
-                <div class="flex justify-center pt-2 gap-3">
-                    <button onclick="checkWritingVn74()" class="px-6 py-2.5 bg-amber-500 text-white font-black rounded-xl hover:bg-amber-500 transition-all text-base shadow-sm active:scale-95 flex items-center gap-2">
-                        <div class="w-5 h-5 bg-white rounded-lg flex items-center justify-center text-amber-900 font-black text-xs shadow-sm">E</div>
-                        <span>CHẤM BÀI</span>
-                    </button>
-                    <button onclick="resetWritingVn74()" class="px-6 py-2.5 bg-gray-200 text-gray-700 font-bold rounded-xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetWritingVn74()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkWritingVn74();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn74-bt4" class="hidden p-6 bg-emerald-600 text-white rounded-2xl shadow-xl animate-in slide-in-from-top-10 duration-500 mt-4"></div>
             </div>
 
@@ -182,9 +174,7 @@ export const lesson74 = {
                 </div>
             </div>
 
-            <div class="flex justify-center pt-4">
-                <button onclick="kiemTraDocHieu74()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md active:scale-95">NỘP BÀI ĐỌC HIỂU ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDocHieu74();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn74-dochieu" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2"></div>
         </div>
     </section>
@@ -230,10 +220,7 @@ export const lesson74 = {
                 </div>
             </div>
 
-            <div class="flex justify-center gap-4 mt-2">
-                <button onclick="kiemTraNoiLuc74()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md active:scale-95">KIỂM TRA TỪ VỰNG ✓</button>
-                <button onclick="lamLaiNoiLuc74()" class="px-8 py-3 bg-amber-500 text-white font-black rounded-xl hover:bg-amber-500 transition-all text-base shadow-md active:scale-95">LÀM LẠI ↺</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraNoiLuc74();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn74-noiluc" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2"></div>
         </div>
 
@@ -262,9 +249,7 @@ export const lesson74 = {
                 của chính bản thân mình.
             </div>
 
-            <div class="flex justify-center pt-2">
-                <button onclick="kiemTraDienTu74()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md active:scale-95">XÁC NHẬN ĐIỀN TỪ ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDienTu74();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn74-dientu" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2"></div>
         </div>
     </section>

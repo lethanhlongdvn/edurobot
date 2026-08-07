@@ -51,7 +51,7 @@ export const lesson6 = {
                 <div class="serif-font text-gray-800 text-lg md:text-2xl leading-relaxed text-justify space-y-4 overflow-hidden">
                     
                     <!-- Ảnh minh họa Chuột xù kể chuyện -->
-                    <div onclick="window.showMathFeedback('Ảnh minh họa Chuột Xù', '📖', '&lt;div class=&quot;text-center p-4 rounded-[32px] border-4 border-white shadow-xl&quot;&gt;&lt;img src=&quot;assets/images/tiengviet_5_1/6/1.png&quot; class=&quot;max-h-[70vh] mx-auto rounded-2xl shadow-md&quot;&gt;&lt;p class=&quot;text-2xl font-bold text-sky-800 mt-4&quot;&gt;Hình ảnh minh họa trong Sách giáo khoa trang 15&lt;/p&gt;&lt;/div&gt;')" class="float-none md:float-right mx-auto md:mx-0 md:ml-8 mb-6 w-full md:w-80 border-4 border-sky-100 bg-white rounded-[32px] shadow-lg cursor-pointer hover:scale-105 active:scale-95 transition-all p-2 flex flex-col items-center justify-center select-none text-center">
+                    <div onclick="window.showMathFeedback('Ảnh minh họa Chuột Xù', '📖', '&lt;div class=&quot;text-center p-4 rounded-[32px] border-4 border-white shadow-xl&quot;&gt;&lt;img src=&quot;assets/images/tiengviet_5_1/6/1.png&quot; class=&quot;max-h-[70vh] mx-auto rounded-2xl shadow-md&quot;&gt;&lt;/div&gt;')" class="float-none md:float-right mx-auto md:mx-0 md:ml-8 mb-6 w-full md:w-80 border-4 border-sky-100 bg-white rounded-[32px] shadow-lg cursor-pointer hover:scale-105 active:scale-95 transition-all p-2 flex flex-col items-center justify-center select-none text-center">
                         <img src="assets/images/tiengviet_5_1/6/1.png" class="w-full h-auto rounded-[24px] object-cover shadow-sm">
                         <p class="text-xs text-sky-800 mt-2 font-medium">Bấm vào để xem phóng to 🔍</p>
                     </div>
@@ -99,16 +99,14 @@ export const lesson6 = {
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-base md:text-xl">
                     <div class="flex flex-col gap-2 p-4 bg-sky-50/30 border border-sky-100 rounded-2xl">
                         <span class="font-bold text-sky-800">Từ gọi mình:</span>
-                        <input type="text" id="ans-vn6-b-tu-minh" placeholder="Ví dụ: tôi, chúng tôi..." class="p-3 border-2 border-gray-100 rounded-xl outline-none focus:border-sky-500 font-bold">
+                        <input type="text" id="ans-vn6-b-tu-minh" placeholder="" class="p-3 border-2 border-gray-100 rounded-xl outline-none focus:border-sky-500 font-bold">
                     </div>
                     <div class="flex flex-col gap-2 p-4 bg-sky-50/30 border border-sky-100 rounded-2xl">
                         <span class="font-bold text-sky-800">Từ gọi nhân vật khác:</span>
-                        <input type="text" id="ans-vn6-b-tu-khac" placeholder="Ví dụ: mèo nhép, bác ngựa, cậu bạn..." class="p-3 border-2 border-gray-100 rounded-xl outline-none focus:border-sky-500 font-bold">
+                        <input type="text" id="ans-vn6-b-tu-khac" placeholder="" class="p-3 border-2 border-gray-100 rounded-xl outline-none focus:border-sky-500 font-bold">
                     </div>
                 </div>
-                <div class="flex justify-end mt-2">
-                    <button onclick="checkQuestionB()" class="px-6 py-2.5 bg-sky-600 hover:bg-sky-600 text-white font-black rounded-xl shadow-sm transition-all text-base">KIỂM TRA CÂU B</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="checkQuestionB();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn6-b" class="hidden text-lg font-bold p-3 rounded-xl"></div>
             </div>
 
@@ -166,20 +164,12 @@ export const lesson6 = {
                     </div>
                 </div>
 
-                <div class="flex justify-end gap-3 mt-4">
-                    <button onclick="resetMatchingVn6()" class="px-6 py-2.5 bg-gray-200 text-gray-700 font-bold rounded-xl hover:bg-gray-300 transition-all text-base">ĐẶT LẠI</button>
-                    <button onclick="checkMatchingVn6()" class="px-6 py-2.5 bg-sky-600 hover:bg-sky-600 text-white font-black rounded-xl shadow-md transition-all text-base">KIỂM TRA CÂU D</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetMatchingVn6()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkMatchingVn6(); submitVn6Ex1();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn6-d" class="hidden text-lg font-bold p-3 rounded-xl"></div>
             </div>
 
             <!-- Nộp bài tập 1 -->
-            <div class="pt-6 border-t border-sky-100 flex justify-end">
-                <button onclick="submitVn6Ex1()" class="px-8 py-3 bg-gray-800 text-white font-black text-lg rounded-2xl shadow-md hover:bg-black transition-all flex items-center gap-2">
-                    <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-gray-900 font-black text-xs shadow-sm">E</div>
-                    <span>NỘP BÀI TẬP 1</span>
-                </button>
-            </div>
+            
         </div>
     </section>
 
@@ -201,13 +191,7 @@ export const lesson6 = {
                     <textarea id="ans-vn6-ex2-b" rows="2" placeholder="Nhập câu trả lời của em ở đây..." class="w-full p-4 rounded-xl border-2 border-gray-100 focus:border-sky-500 outline-none font-bold"></textarea>
                 </div>
 
-                <div class="flex justify-end gap-3 pt-4">
-                    <button onclick="resetEx2()" class="px-6 py-2.5 bg-gray-200 text-gray-700 font-bold rounded-xl hover:bg-gray-300 transition-all text-base">LÀM LẠI</button>
-                    <button onclick="submitVn6Ex2()" class="px-8 py-3 bg-gray-800 text-white font-black text-lg rounded-2xl shadow-md hover:bg-black transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-gray-900 font-black text-xs shadow-sm">E</div>
-                        <span>NỘP BÀI TẬP 2</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetEx2()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="submitVn6Ex2();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn6-ex2" class="hidden text-lg font-bold p-3 rounded-xl"></div>
             </div>
         </div>
@@ -249,17 +233,7 @@ export const lesson6 = {
 
                 <textarea id="ans-vn6-writing" rows="5" placeholder="Chào các bạn bè muôn nơi, tôi là Mèo nhép nghịch ngợm đây! Tôi vốn rất ham vui và thích khám phá những vùng đất lạ. Hôm đó, bầu trời trong xanh lộng gió, tôi nhìn sang phía bên kia bờ sông..." class="w-full p-4 md:p-6 text-xl md:text-2xl rounded-2xl border-2 border-amber-100 focus:border-amber-500 outline-none shadow-sm bg-amber-50/10 font-medium leading-relaxed"></textarea>
                 
-                <div class="flex flex-wrap items-center gap-4">
-                    <button onclick="checkWritingVn6()" class="px-8 py-3 bg-amber-500 text-white font-black text-lg rounded-2xl shadow-md hover:bg-amber-500 active:scale-95 transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-amber-900 font-black text-xs shadow-sm">E</div> 
-                        <span>CHẤM BÀI VỚI AI</span>
-                    </button>
-                    <button onclick="resetWritingVn6()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
-                    <button onclick="submitVn6Writing()" class="px-8 py-3 bg-gray-800 text-white font-black rounded-2xl shadow-md hover:bg-black transition-all ml-auto flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-gray-900 font-black text-xs shadow-sm">E</div>
-                        <span>NỘP BÀI VIẾT</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetWritingVn6()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkWritingVn6(); submitVn6Writing();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 
                 <div id="fb-vn6-writing" class="hidden mt-6 p-6 bg-amber-500 text-white rounded-2xl shadow-xl animate-in slide-in-from-top-10 duration-500">
                     <!-- AI Feedback -->

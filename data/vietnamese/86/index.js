@@ -60,9 +60,7 @@ export const lesson086 = {
                     <span>5 công dụng</span>
                 </label>
             </div>
-            <div class="flex justify-center">
-                <button onclick="kiemTraKhoiDong86()" class="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl transition-all text-lg shadow-md active:scale-95">GỬI SUY NGHĨ ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraKhoiDong86();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn86-kd" class="hidden p-4 rounded-xl text-lg font-bold text-center mt-2"></div>
         </div>
     </div>
@@ -169,9 +167,7 @@ export const lesson086 = {
                 </div>
             </div>
 
-            <div class="flex justify-center pt-4">
-                <button onclick="kiemTraBai1_86()" class="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl transition-all text-lg shadow-md active:scale-95">KIỂM TRA ĐÁP ÁN ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraBai1_86();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn86-bt1" class="hidden p-4 rounded-xl text-lg font-bold text-center mt-2 max-w-4xl mx-auto"></div>
         </div>
     </div>
@@ -201,10 +197,7 @@ export const lesson086 = {
             <!-- Nơi render tự động -->
         </div>
 
-        <div class="flex justify-center gap-4">
-            <button onclick="kiemTraBai2_86()" class="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl transition-all text-lg shadow-md active:scale-95">KIỂM TRA KẾT QUẢ ✓</button>
-            <button onclick="lamLaiBai2_86()" class="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-white font-black rounded-xl transition-all text-lg shadow-md active:scale-95">MẶC ĐỊNH LẠI ↺</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraBai2_86();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn86-bt2" class="hidden p-4 rounded-xl text-lg font-bold text-center mt-2 max-w-4xl mx-auto"></div>
     </section>
 
@@ -239,12 +232,7 @@ export const lesson086 = {
 
             <textarea id="ans-vn86-vietvan" rows="4" placeholder="Nhập câu văn của em tại đây..." class="w-full p-4 text-xl rounded-2xl border-2 border-emerald-100 outline-none focus:border-emerald-500 font-bold bg-white text-gray-800"></textarea>
             
-            <div class="flex justify-center">
-                <button onclick="kiemTraBai3_86()" class="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-white font-black text-lg rounded-2xl shadow-md active:scale-95 transition-all flex items-center gap-2">
-                    <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-amber-900 font-black text-xs shadow-sm">E</div> 
-                    <span>CHẤM BÀI TỰ LUẬN</span>
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraBai3_86();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn86-writing" class="hidden p-5 rounded-2xl font-bold text-lg"></div>
         </div>
     </section>

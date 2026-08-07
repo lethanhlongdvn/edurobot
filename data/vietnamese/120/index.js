@@ -107,9 +107,7 @@ export const lesson120 = {
             </div>
         </div>
 
-        <div class="flex justify-center pt-2">
-            <button onclick="kiemTraChuDiem120()" class="px-8 py-3 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-xl transition-all text-lg shadow-md active:scale-95">KIỂM TRA CHỦ ĐIỂM ✓</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraChuDiem120();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn120-chudiem" class="hidden p-4 rounded-xl text-lg font-bold text-center max-w-xl mx-auto"></div>
     </div>
 </div>
@@ -146,11 +144,7 @@ export const lesson120 = {
                 <textarea id="ans-vn120-bt2-antuong" rows="3" placeholder="Chia sẻ hình ảnh thơ, chi tiết câu chuyện hoặc nhân vật làm em ấn tượng nhất..." class="w-full p-3 rounded-xl border border-gray-200 focus:border-sky-500 font-bold bg-white text-gray-800 outline-none text-lg leading-relaxed"></textarea>
             </div>
 
-            <div class="flex justify-center pt-2">
-                <button onclick="kiemTraBaiDoc120()" class="px-8 py-3.5 bg-amber-500 hover:bg-amber-600 text-white font-black text-lg rounded-2xl shadow-md active:scale-95 transition-all">
-                    👨‍🏫 THẦY E ĐÁNH GIÁ CẢM NHẬN
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraBaiDoc120();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn120-baidoc" class="hidden p-5 rounded-2xl font-bold text-lg"></div>
         </div>
     </div>
@@ -185,9 +179,7 @@ export const lesson120 = {
             <div class="text-right text-base font-bold text-gray-500 mt-4 font-sans">(Theo Xuân Quỳnh)</div>
         </div>
 
-        <div class="flex justify-center pt-2">
-            <button onclick="kiemTraKetTu120()" class="px-8 py-3 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-xl transition-all text-lg shadow-md active:scale-95">KIỂM TRA ĐOẠN VĂN ✓</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraKetTu120();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn120-kettu" class="hidden p-4 rounded-xl text-lg font-bold text-center max-w-xl mx-auto"></div>
     </div>
 

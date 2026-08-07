@@ -223,9 +223,7 @@ export const lesson57 = {
                 </div>
             </div>
 
-            <div class="flex justify-start pt-2">
-                <button onclick="window.resetPhanLoaiVn57()" class="px-8 py-3 bg-gray-800 text-white font-black rounded-xl hover:bg-gray-800 transition-all text-base shadow-md">ĐẶT LẠI ↺</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="window.resetPhanLoaiVn57()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button></div>
             <div id="fb-vn57-odd" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2 shadow-md"></div>
         </div>
     </section>
@@ -268,10 +266,7 @@ export const lesson57 = {
                 </div>
             </div>
 
-            <div class="flex justify-between items-center bg-amber-50 p-4 rounded-2xl border border-amber-100">
-                <span class="font-bold text-amber-600 text-lg md:text-3xl">Số từ chỉ màu sắc đã chọn đúng: <span id="mau-sac-count" class="text-xl md:text-2xl font-black">0</span> / 14</span>
-                <button onclick="resetClickMauSac()" class="px-5 py-2 bg-amber-500 text-white font-bold rounded-lg hover:bg-amber-500 transition-all text-sm shadow">Chọn lại ↺</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="resetClickMauSac()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button></div>
 
             <!-- Phần b: Nhận xét -->
             <div class="bg-white p-6 rounded-3xl border border-amber-100 shadow-inner space-y-3">

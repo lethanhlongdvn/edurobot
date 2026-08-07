@@ -132,12 +132,7 @@ export const lesson202 = {
         <div class="p-6 bg-slate-50 border border-slate-200 rounded-3xl space-y-4">
             <textarea id="essay-202" rows="5" class="w-full p-4 rounded-xl border border-slate-250 focus:ring-4 focus:ring-blue-100 outline-none text-lg md:text-2xl font-bold leading-relaxed" placeholder="Nhập câu văn hoặc phần đoạn văn em đã chỉnh sửa..."></textarea>
             
-            <div class="flex justify-center">
-                <button onclick="check202EssayAI()" class="px-8 py-4 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-3 text-lg uppercase tracking-wider cursor-pointer">
-                    <span>🤖</span>
-                    <span>Nộp cho Thầy E AI nhận xét bản sửa</span>
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="check202EssayAI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-202-ai" class="w-full hidden mt-4"></div>
         </div>
     </section>
@@ -162,9 +157,7 @@ export const lesson202 = {
             <span>một hoạt động bổ ích như vậy sẽ được nhân rộng ở nhiều trường học trên cả nước.</span>
         </div>
 
-        <div class="flex justify-center pt-2">
-            <button onclick="check202Link()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all shadow-md text-lg uppercase">Kiểm tra từ nối</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="check202Link();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-202-link" class="text-lg md:text-2xl font-black text-center hidden"></div>
     </section>
 </div>

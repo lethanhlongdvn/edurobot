@@ -224,7 +224,7 @@ export const lesson161 = {
                         <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-sky-600 font-black text-sm shadow-sm">E</div>
                         <span>NHẬN XÉT PHIẾU</span>
                     </button>
-                    <button onclick="window.lamLaiPhieu161()" class="px-6 py-4 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
+                    <button onclick="window.lamLaiPhieu161()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
                 </div>
 
                 <div id="fb-161-phieu" class="hidden mt-8 p-8 bg-sky-900 text-white rounded-[28px] shadow-2xl animate-in slide-in-from-top-10 duration-500"></div>

@@ -203,9 +203,7 @@ export const lesson132 = {
 
             <!-- Nút kiểm tra bài 1 -->
             <div class="mt-8 flex justify-center">
-                <button onclick="kiemTraPhanLoai132()" class="px-8 py-4 bg-blue-600 text-white font-black text-xl rounded-2xl hover:bg-blue-700 shadow-lg shadow-blue-200 active:scale-95 transition-all">
-                    Kiểm tra đáp án
-                </button>
+                <button onclick="kiemTraPhanLoai132()" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
             </div>
             <div id="result-phanloai-132" class="mt-4 text-center font-bold text-xl md:text-2xl hidden"></div>
         </div>
@@ -235,12 +233,7 @@ export const lesson132 = {
             <div class="space-y-4">
                 <textarea id="dt-vn132-vietvan" rows="6" placeholder="Nhập đoạn văn của em tại đây (ít nhất 20 từ)..." class="w-full p-6 bg-white border-2 border-orange-100 rounded-3xl outline-none focus:border-orange-500 font-medium text-xl md:text-2xl text-gray-800 shadow-inner"></textarea>
                 
-                <div class="flex justify-between items-center flex-wrap gap-4">
-                    <span id="char-count-132" class="text-lg md:text-xl text-gray-500 font-bold">Số từ: 0</span>
-                    <button onclick="nopBaiViet132()" class="px-8 py-4 bg-orange-600 text-white font-black text-xl rounded-2xl hover:bg-orange-700 shadow-lg shadow-orange-200 active:scale-95 transition-all">
-                        Nộp bài viết
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="nopBaiViet132();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             </div>
             <div id="result-vietvan-132" class="mt-6 p-6 bg-white rounded-2xl border border-gray-150 font-bold text-xl md:text-2xl hidden text-gray-800"></div>
         </div>

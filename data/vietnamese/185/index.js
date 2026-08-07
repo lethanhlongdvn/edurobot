@@ -127,11 +127,7 @@ export const lesson185 = {
                 </div>
             </div>
 
-            <div class="flex justify-center mt-4">
-                <button onclick="check185Poems()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-lg active:scale-95 transition-all text-lg">
-                    🔍 Kiểm tra kết quả
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="check185Poems();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="poems-feedback" class="text-lg font-black text-center hidden mt-2"></div>
 
             <hr class="border-slate-100 my-6">
@@ -140,12 +136,7 @@ export const lesson185 = {
             <div class="p-6 bg-blue-50/50 rounded-3xl border border-blue-150 space-y-4">
                 <label class="text-lg md:text-xl font-bold text-blue-600 block">📝 Câu hỏi cảm thụ: Trong mỗi bài thơ ở trên, em thích hình ảnh nào nhất? Vì sao? Hãy chia sẻ ý kiến của em nhé:</label>
                 <textarea id="poem-feeling-text" rows="3" class="w-full p-4 rounded-xl border border-slate-200 focus:ring-4 focus:ring-blue-100 outline-none text-lg" placeholder="Nhập cảm nhận của em về hình ảnh thơ yêu thích..."></textarea>
-                <div class="flex justify-center">
-                    <button onclick="check185FeelingAI()" class="px-8 py-4 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-3 text-lg md:text-xl uppercase tracking-wider">
-                        <span>🤖</span> 
-                        <span>EduRobot nhận xét cảm nghĩ</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="check185FeelingAI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-poem-feeling-ai" class="w-full hidden mt-4"></div>
             </div>
         </div>
@@ -202,12 +193,7 @@ export const lesson185 = {
                     </div>
                 </div>
 
-                <div class="flex justify-center mt-6">
-                    <button onclick="check185QuatMoAI()" class="px-8 py-4 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-3 text-lg md:text-xl uppercase tracking-wider">
-                        <span>🤖</span> 
-                        <span>Gửi câu trả lời cho EduRobot AI</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="check185QuatMoAI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-quat-mo-ai" class="w-full hidden mt-4"></div>
             </div>
         </div>
@@ -232,14 +218,7 @@ export const lesson185 = {
                         <p class="text-sm font-bold text-slate-400">Vị trí hiện tại của bạn:</p>
                         <h4 id="game-status-position" class="text-xl md:text-2xl font-black text-yellow-400">🚩 Ô số 0: Bắt đầu</h4>
                     </div>
-                    <div class="flex gap-3">
-                        <button onclick="rollDice()" id="roll-button" class="px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-black text-lg rounded-xl shadow-lg transition-all active:scale-[0.95]">
-                            🎲 Lắc xúc xắc
-                        </button>
-                        <button onclick="resetGame()" class="px-4 py-3 bg-slate-700 hover:bg-slate-600 text-slate-200 font-bold rounded-xl active:scale-[0.95]">
-                            Chơi lại
-                        </button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="resetGame()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button></div>
                 </div>
 
                 <!-- Bảng ô cờ -->
@@ -326,11 +305,7 @@ export const lesson185 = {
                 </div>
             </div>
 
-            <div class="flex justify-center">
-                <button onclick="check185Linking4()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-lg active:scale-95 transition-all text-lg">
-                    🔍 Kiểm tra liên kết
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="check185Linking4();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="linking-4-feedback" class="text-lg font-black text-center hidden mt-2"></div>
         </div>
     </section>
@@ -357,12 +332,7 @@ export const lesson185 = {
                     <textarea id="replace-words-5" rows="2" class="w-full p-4 rounded-xl border border-slate-200 focus:ring-4 focus:ring-sky-100 outline-none text-lg font-semibold" placeholder="Thế cho 'Nhưng': tuy nhiên; thế cho 'Và': đồng thời; thế cho 'Vì thế': do đó..."></textarea>
                 </div>
 
-                <div class="flex justify-center mt-6">
-                    <button onclick="check185Linking5AI()" class="px-8 py-4 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-3 text-lg md:text-xl uppercase tracking-wider">
-                        <span>🤖</span> 
-                        <span>EduRobot nhận xét câu trả lời</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="check185Linking5AI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-linking-5-ai" class="w-full hidden mt-4"></div>
             </div>
         </div>
@@ -424,11 +394,7 @@ export const lesson185 = {
                     </p>
                 </div>
 
-                <div class="flex justify-center mt-4">
-                    <button onclick="check185Blank6()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-lg active:scale-95 transition-all text-lg">
-                        🔍 Kiểm tra kết quả
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="check185Blank6();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="blank-6-feedback" class="text-lg font-black text-center hidden mt-2"></div>
             </div>
         </div>
@@ -649,10 +615,7 @@ export const lesson185 = {
                     <h4 class="text-xl font-black text-blue-600">✍️ Thử thách tại ô số \${finalPos} [\${finalCell.label}]</h4>
                     <p class="text-lg font-bold text-blue-950">Em hãy viết một câu ghép sử dụng từ/cặp từ nối: <span class="text-red-600 font-extrabold">\${window.currentGameConjunction}</span></p>
                     <textarea id="game-sentence-input" rows="2" class="w-full p-3 rounded-xl border border-slate-200 focus:ring-4 focus:ring-blue-100 outline-none text-lg font-semibold" placeholder="Nhập câu ghép của em tại đây..."></textarea>
-                    <div class="flex justify-center gap-3">
-                        <button onclick="check185GameSentenceAI()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-md active:scale-95 transition-all">🤖 Nhận xét bằng AI</button>
-                        <button onclick="skipGameQuestion()" class="px-6 py-3 bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold rounded-xl active:scale-95 transition-all">Bỏ qua thử thách</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="check185GameSentenceAI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                     <div id="fb-game-sentence-ai" class="hidden mt-3"></div>
                 </div>
             \`;

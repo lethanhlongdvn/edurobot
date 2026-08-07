@@ -110,9 +110,7 @@ export const lesson191 = {
                         <span class="font-black text-slate-700 w-24">Giải đố:</span>
                         <input id="input-q1a-dap-an" type="text" class="flex-grow p-2 rounded-xl border border-amber-250 font-black outline-none" placeholder="Tên vị anh hùng...">
                     </div>
-                    <div class="flex justify-center pt-2">
-                        <button onclick="check191Q1a()" class="px-5 py-2.5 bg-amber-600 hover:bg-amber-700 text-white font-bold rounded-xl transition-all shadow-md text-sm uppercase">Kiểm tra a</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="check191Q1a();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                     <div id="fb-191-q1a" class="text-sm font-black text-center hidden"></div>
                 </div>
             </div>
@@ -138,9 +136,7 @@ export const lesson191 = {
                         <span class="font-black text-slate-700 w-24">Giải đố:</span>
                         <input id="input-q1b-dap-an" type="text" class="flex-grow p-2 rounded-xl border border-sky-250 font-black outline-none" placeholder="Tên loại bánh...">
                     </div>
-                    <div class="flex justify-center pt-2">
-                        <button onclick="check191Q1b()" class="px-5 py-2.5 bg-sky-600 hover:bg-sky-700 text-white font-bold rounded-xl transition-all shadow-md text-sm uppercase">Kiểm tra b</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="check191Q1b();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                     <div id="fb-191-q1b" class="text-sm font-black text-center hidden"></div>
                 </div>
             </div>
@@ -179,10 +175,7 @@ export const lesson191 = {
             </div>
         </div>
 
-        <div class="flex items-center gap-3 mt-4">
-            <button onclick="Lesson.clearSlots('191-q2')" class="px-5 py-2.5 bg-white border-2 border-gray-200 text-gray-500 font-bold rounded-xl hover:bg-gray-50 transition-all text-sm">Làm lại</button>
-            <button onclick="check191Q2()" class="px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-md active:scale-95 transition-all text-sm">Kiểm tra</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="Lesson.clearSlots(" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="check191Q2();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-191-q2" class="text-sm font-black text-center hidden"></div>
     </section>
 
@@ -232,9 +225,7 @@ export const lesson191 = {
             </div>
         </div>
 
-        <div class="flex justify-center pt-4">
-            <button onclick="check191Q3()" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl shadow-md active:scale-95 transition-all text-xl">🔍 Kiểm tra</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="check191Q3();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-191-q3" class="text-xl md:text-2xl font-black text-center hidden"></div>
     </section>
 
@@ -254,12 +245,7 @@ export const lesson191 = {
 
         <div class="p-6 bg-amber-50/30 border-2 border-amber-100 rounded-[32px] space-y-6">
             <textarea id="essay-191" rows="5" class="w-full p-6 rounded-2xl border-2 border-slate-250 focus:ring-4 focus:ring-blue-100 outline-none text-2xl md:text-3xl font-bold leading-relaxed" placeholder="Nhập đoạn văn của em tại đây..."></textarea>
-            <div class="flex justify-center">
-                <button onclick="check191Q4AI()" class="px-10 py-5 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-3 text-xl md:text-2xl uppercase tracking-wider">
-                    <span>🤖</span> 
-                    <span>Nộp cho Thầy E AI nhận xét</span>
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="check191Q4AI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-191-q4-ai" class="w-full hidden mt-4"></div>
         </div>
     </section>

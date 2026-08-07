@@ -61,9 +61,7 @@ export const lesson95 = {
             <div class="space-y-4">
                 <span class="font-black text-blue-600 text-lg">Em đoán đây là tác phẩm nào:</span>
                 <input type="text" id="warmup-input-vn95" placeholder="Nhập tên bộ truyện hoặc nhân vật chính..." class="w-full p-3.5 border-2 border-blue-200 rounded-xl outline-none focus:border-blue-700 font-bold bg-blue-50/10 text-center text-lg md:text-3xl">
-                <div class="flex justify-center">
-                    <button onclick="checkWarmupVn95()" class="px-6 py-2.5 bg-blue-700 hover:bg-blue-800 text-white font-black rounded-xl text-base shadow active:scale-95 transition-all">KIỂM TRA ✉️</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="checkWarmupVn95();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="warmup-fb-vn95" class="hidden p-4 rounded-xl text-center font-bold text-base border"></div>
             </div>
         </div>
@@ -230,9 +228,7 @@ export const lesson95 = {
             </div>
         </div>
 
-        <div class="flex justify-center pt-2">
-            <button onclick="checkComprehensionVn95()" class="w-14 h-14 md:w-20 md:h-20 bg-blue-700 hover:bg-blue-800 text-white rounded-[2rem] font-black text-xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="checkComprehensionVn95();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-comprehension" class="hidden p-5 rounded-3xl border-2 font-bold text-lg text-center max-w-4xl mx-auto shadow-inner"></div>
     </div>
 
@@ -328,9 +324,7 @@ export const lesson95 = {
                 </div>
             </div>
 
-            <div class="flex justify-center pt-2">
-                <button onclick="checkVocabVn95()" class="w-14 h-14 md:w-20 md:h-20 bg-blue-700 hover:bg-blue-800 text-white rounded-[2rem] font-black text-xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkVocabVn95();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vocab" class="hidden p-5 rounded-3xl border-2 font-bold text-lg text-center max-w-4xl mx-auto shadow-inner"></div>
         </div>
 
@@ -403,9 +397,7 @@ export const lesson95 = {
                 </div>
             </div>
 
-            <div class="flex justify-center pt-2">
-                <button onclick="checkBlanksVn95()" class="w-14 h-14 md:w-20 md:h-20 bg-blue-700 hover:bg-blue-800 text-white rounded-[2rem] font-black text-xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkBlanksVn95();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-blanks" class="hidden p-5 rounded-3xl border-2 font-bold text-lg text-center max-w-4xl mx-auto shadow-inner"></div>
         </div>
     </div>

@@ -94,10 +94,7 @@ export const lesson108 = {
             </div>
 
             <!-- Nút kiểm tra -->
-            <div class="flex items-center gap-4">
-                <button id="btn-check-108-1" onclick="window.checkParagraphHighlight()" class="w-12 h-12 md:w-16 md:h-16 bg-emerald-600 hover:bg-emerald-700 text-white rounded-[1.2rem] font-black text-xl md:text-3xl shadow-lg transition-all active:scale-95 flex items-center justify-center">E</button>
-                <button onclick="window.resetHighlights()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all text-lg">LÀM LẠI</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="window.resetHighlights()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="window.checkParagraphHighlight();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="highlight-feedback" class="hidden mt-4 p-4 rounded-xl font-bold text-lg text-center animate-in fade-in duration-300"></div>
         </div>
     </section>
@@ -148,7 +145,7 @@ export const lesson108 = {
             <!-- Nút kiểm tra kéo thả sơ đồ -->
             <div class="mt-8 flex justify-center gap-4">
                 <button id="btn-check-108-2" onclick="window.checkMindmapVn108()" class="w-14 h-14 md:w-24 md:h-24 bg-emerald-600 hover:bg-emerald-700 text-white rounded-[1.5rem] md:rounded-[2rem] font-black text-2xl md:text-5xl shadow-xl transition-all active:scale-95 flex items-center justify-center">E</button>
-                <button onclick="window.resetMindmapVn108()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all text-lg">LÀM LẠI</button>
+                <button onclick="window.resetMindmapVn108()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
             </div>
             <div id="mindmap-feedback" class="hidden mt-6 p-4 rounded-xl font-bold text-lg text-center animate-in fade-in duration-300"></div>
         </div>
@@ -244,13 +241,7 @@ export const lesson108 = {
                 
                 <textarea id="ans-vn108-writing" rows="4" placeholder="Ví dụ: Em rất thích chú mèo máy Doraemon trong bộ phim hoạt hình cùng tên. Chú mèo máy có thân hình tròn mập mạp, màu xanh dương và không có tai..." class="w-full p-4 md:p-6 text-xl md:text-2xl rounded-2xl border-2 border-yellow-100 focus:border-yellow-500 outline-none shadow-sm bg-yellow-50/10 mb-6 font-medium leading-relaxed"></textarea>
                 
-                <div class="flex flex-wrap items-center gap-4">
-                    <button onclick="window.checkWritingVn108()" class="px-8 py-3 bg-yellow-500 text-white font-black text-lg rounded-2xl shadow-md hover:bg-yellow-600 active:scale-95 transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-yellow-900 font-black text-xs shadow-sm">E</div> 
-                        <span>CHẤM BÀI</span>
-                    </button>
-                    <button onclick="window.resetWritingVn108()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="window.resetWritingVn108()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="window.checkWritingVn108();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 
                 <div id="fb-vn108-writing" class="hidden mt-6 p-6 bg-emerald-600 text-white rounded-2xl shadow-xl animate-in slide-in-from-top-10 duration-500">
                     <!-- AI Feedback -->

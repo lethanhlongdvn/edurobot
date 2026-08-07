@@ -87,9 +87,7 @@ export const lesson104 = {
             </label>
         </div>
 
-        <div class="flex justify-center">
-            <button onclick="kiemTraTieuChi104()" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl transition-all text-lg shadow-md active:scale-95">XÁC NHẬN ĐÁNH GIÁ ✓</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraTieuChi104();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn104-tc" class="hidden p-4 rounded-xl text-lg font-bold text-center max-w-xl mx-auto"></div>
     </div>
 </div>
@@ -127,11 +125,7 @@ export const lesson104 = {
                     <textarea id="ans-vn104-chinhsua" rows="8" placeholder="Viết lại đoạn văn thể hiện tình cảm, cảm xúc về bài thơ sau khi đã chỉnh sửa theo góp ý..." class="w-full p-4 text-xl rounded-2xl border border-gray-200 outline-none focus:border-blue-500 font-bold bg-white text-gray-800 leading-relaxed"></textarea>
                 </div>
 
-                <div class="flex justify-center">
-                    <button onclick="kiemTraChinhSua104()" class="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-white font-black text-lg rounded-2xl shadow-md active:scale-95 transition-all flex items-center gap-2">
-                        <span>👨‍🏫 THẦY E CHẤM BÀI CHỈNH SỬA</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="kiemTraChinhSua104();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn104-chinhsua" class="hidden p-5 rounded-2xl font-bold text-lg"></div>
             </div>
         </div>
@@ -165,9 +159,7 @@ export const lesson104 = {
             </label>
         </div>
 
-        <div class="flex justify-center pt-2">
-            <button onclick="kiemTraSauChinhSua104()" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl transition-all text-lg shadow-md active:scale-95">XÁC NHẬN HOÀN TẤT ✓</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraSauChinhSua104();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn104-sau" class="hidden p-4 rounded-xl text-lg font-bold text-center max-w-xl mx-auto"></div>
     </section>
 

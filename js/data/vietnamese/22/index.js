@@ -37,9 +37,7 @@ export const lesson22 = {
         
         <div class="space-y-4">
             <textarea id="ans-vn22-kd" rows="3" placeholder="Nhập dự đoán của em tại đây (Ví dụ: Em đoán các bạn nhỏ sẽ cùng nhau mang đến lớp những bộ sưu tập đồ chơi hoặc những món đồ tự làm có ý nghĩa...)" class="w-full p-4 border-2 border-sky-100 rounded-2xl outline-none focus:border-sky-500 font-bold bg-sky-50/10 text-2xl md:text-3xl"></textarea>
-            <div class="flex justify-center">
-                <button onclick="checkKD22()" class="px-8 py-3 bg-sky-600 text-white font-black rounded-xl hover:bg-sky-600 transition-all text-base shadow-md">GỬI DỰ ĐOÁN ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkKD22();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn22-kd" class="hidden p-4 rounded-xl text-sm font-bold text-center"></div>
         </div>
     </div>
@@ -83,7 +81,7 @@ export const lesson22 = {
                 <p class="indent-4 font-semibold text-amber-600">– Chúc ai có tật thì sửa, không có thì bỏ qua.</p>
                 <p class="indent-8 font-medium">Cả lớp cười lăn. Long – chủ nhân của giọng nói liền thoắng vừa vang lên – cũng ôm bụng cười. Cứ thế, mỗi giọng nói cất lên đều thật thân thương và quen thuộc. Ai đi qua lớp Loan cũng ngạc nhiên vì những tiếng vỗ tay liên tiếp vọng ra. Thỉnh thoảng, lại có tràng cười lớn, xen lẫn tiếng thầy Dương:</p>
                 <p class="indent-4 font-black text-emerald-800">– Độc đáo quá, ý nghĩa quá!</p>
-                <p class="text-right font-bold text-gray-800 mt-4 text-2xl md:text-3xl">(Theo Trương Chi Lộ, Ngọc Khánh dịch)</p>
+                
             </div>
 
             <!-- Từ ngữ khó -->
@@ -229,9 +227,7 @@ export const lesson22 = {
                 </div>
             </div>
 
-            <div class="flex justify-center pt-2">
-                <button onclick="checkSteps22()" class="px-8 py-3 bg-sky-600 text-white font-black rounded-xl hover:bg-sky-600 transition-all text-base shadow-md">KIỂM TRA BƯỚC ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkSteps22();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn22-steps" class="hidden text-sm font-bold px-3 py-1.5 rounded-lg text-center"></div>
         </div>
     </section>
@@ -327,13 +323,7 @@ export const lesson22 = {
 
                 <textarea id="ans-vn22-writing" rows="4" placeholder="Nhập cảm nhận của em..." class="w-full p-4 md:p-6 text-2xl md:text-3xl rounded-2xl border-2 border-amber-100 focus:border-amber-500 outline-none shadow-sm bg-amber-50/10 font-medium leading-relaxed"></textarea>
                 
-                <div class="flex flex-wrap items-center gap-4">
-                    <button onclick="checkWritingVn22()" class="px-8 py-3 bg-amber-500 text-white font-black text-lg rounded-2xl shadow-md hover:bg-amber-500 active:scale-95 transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-amber-900 font-black text-xs shadow-sm">E</div> 
-                        <span>CHẤM BÀI VỚI AI</span>
-                    </button>
-                    <button onclick="resetWritingVn22()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all text-base">LÀM LẠI</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetWritingVn22()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkWritingVn22();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 
                 <div id="fb-vn22-writing" class="hidden mt-6 p-6 bg-amber-500 text-white rounded-2xl shadow-xl animate-in slide-in-from-top-10 duration-500">
                     <!-- AI Feedback -->

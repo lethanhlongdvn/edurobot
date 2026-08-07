@@ -64,7 +64,7 @@ export const lesson128 = {
                     
                     <div class="bg-amber-50/50 p-6 rounded-2xl border border-amber-100 space-y-3 font-semibold text-gray-800 text-2xl md:text-3xl leading-relaxed italic">
                         "(1) Những cánh buồm chung thuỷ cùng con người vượt qua bao nhiêu sóng nước, thời gian. (2) Đến nay, con người đã có những con tàu to lớn vượt biển khơi, nhưng những cánh buồm vẫn sống mãi cùng sông nước và con người."
-                        <p class="text-right not-italic text-lg text-gray-500 font-bold mt-4">(Theo Băng Sơn)</p>
+                        
                     </div>
 
                     <div class="p-6 bg-emerald-50 rounded-2xl border border-emerald-100 text-xl md:text-2xl text-emerald-900 font-medium space-y-2">
@@ -142,9 +142,7 @@ export const lesson128 = {
                         Câu (3)
                     </button>
                 </div>
-                <div class="flex justify-center mt-6">
-                    <button onclick="checkQuestion3aVn128()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-md transition-all active:scale-95">Kiểm tra kết quả</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="checkQuestion3aVn128();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn128-3a" class="hidden mt-4 p-4 rounded-xl font-bold text-lg text-center"></div>
             </div>
 
@@ -185,9 +183,7 @@ export const lesson128 = {
                     </div>
                 </div>
 
-                <div class="flex justify-center">
-                    <button onclick="checkQuestion3bVn128()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-md transition-all active:scale-95">Kiểm tra phân tích</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="checkQuestion3bVn128();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn128-3b" class="hidden mt-4 p-4 rounded-xl font-bold text-lg text-center"></div>
             </div>
         </div>
@@ -212,13 +208,7 @@ export const lesson128 = {
 
                 <textarea id="ans-vn128-writing" rows="4" placeholder="Ví dụ: Vì Nai Ngọc cất tiếng hát nhân hậu nên quân giặc sững sờ buông vũ khí tháo chạy. hoặc Tuy Nai Ngọc đã trở lại thành đá xanh nhưng người dân vẫn luôn nhớ về em..." class="w-full p-4 md:p-6 text-xl md:text-2xl rounded-2xl border-2 border-amber-100 focus:border-amber-500 outline-none shadow-sm bg-amber-50/10 mb-6 font-medium leading-relaxed"></textarea>
 
-                <div class="flex flex-wrap items-center gap-4">
-                    <button onclick="checkWritingVn128()" class="px-8 py-3 bg-amber-500 text-white font-black text-lg rounded-2xl shadow-md hover:bg-amber-600 active:scale-95 transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-amber-950 font-black text-xs shadow-sm">E</div> 
-                        <span>CHẤM BÀI</span>
-                    </button>
-                    <button onclick="resetWritingVn128()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetWritingVn128()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkWritingVn128();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
 
                 <div id="fb-vn128-writing" class="hidden mt-6 p-6 rounded-2xl shadow-xl animate-in slide-in-from-top-10 duration-500 text-lg">
                     <!-- Feedback from AI will be shown here -->

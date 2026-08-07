@@ -133,9 +133,7 @@ export const lesson198 = {
             <p class="text-right text-base md:text-xl font-normal text-slate-500">(Theo Vũ Ngọc Khánh)</p>
         </div>
 
-        <div class="flex justify-center pt-2">
-            <button onclick="check198Q1()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all shadow-md text-lg uppercase">Kiểm tra bài 1</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="check198Q1();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-198-q1" class="text-lg md:text-2xl font-black text-center hidden"></div>
     </section>
 
@@ -183,9 +181,7 @@ export const lesson198 = {
             </div>
         </div>
 
-        <div class="flex justify-center pt-2">
-            <button onclick="check198Q2()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all shadow-md text-lg uppercase">Kiểm tra bài 2</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="check198Q2();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-198-q2" class="text-lg md:text-2xl font-black text-center hidden"></div>
     </section>
 
@@ -209,7 +205,7 @@ export const lesson198 = {
         <!-- Câu hỏi a -->
         <div class="space-y-3">
             <p class="text-lg md:text-2xl font-bold text-slate-700">a. Mỗi từ in đậm (<em>chân, cánh, lá, ngọn</em>) trong đoạn thơ được dùng với nghĩa nào?</p>
-            <div class="flex gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <label class="flex items-center gap-2 cursor-pointer text-lg md:text-2xl font-bold text-slate-800">
                     <input type="radio" name="q3a-answer" value="goc" class="w-5 h-5"> Nghĩa gốc
                 </label>
@@ -225,9 +221,7 @@ export const lesson198 = {
             <textarea id="essay-198-3" rows="3" class="w-full p-4 rounded-xl border border-slate-250 focus:ring-4 focus:ring-blue-100 outline-none text-lg md:text-2xl font-bold leading-relaxed" placeholder="Ví dụ: Rừng là lá phổi xanh của Trái Đất."></textarea>
         </div>
 
-        <div class="flex justify-center pt-2">
-            <button onclick="check198Q3()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all shadow-md text-lg uppercase">Kiểm tra bài 3</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="check198Q3();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-198-q3" class="text-lg md:text-2xl font-black text-center hidden"></div>
     </section>
 
@@ -255,12 +249,7 @@ export const lesson198 = {
 
         <div class="p-6 bg-amber-50/30 border border-amber-100 rounded-3xl space-y-4">
             <textarea id="essay-198-5" rows="4" class="w-full p-4 rounded-xl border border-slate-250 focus:ring-4 focus:ring-blue-100 outline-none text-lg md:text-2xl font-bold leading-relaxed" placeholder="Nhập đoạn văn của em tại đây..."></textarea>
-            <div class="flex justify-center">
-                <button onclick="check198Q5AI()" class="px-8 py-4 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-3 text-lg uppercase tracking-wider cursor-pointer">
-                    <span>🤖</span>
-                    <span>Nộp cho Thầy E AI nhận xét</span>
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="check198Q5AI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-198-q5-ai" class="w-full hidden mt-4"></div>
         </div>
     </section>

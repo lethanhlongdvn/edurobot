@@ -78,7 +78,7 @@ export const lesson210 = {
                                 <p>Thiên thu bền vững thủ đô Lạc Hồng."</p>
                             </div>
                         </div>
-                        <p class="text-right font-black text-blue-600 text-lg mt-4">— Ca dao Việt Nam</p>
+                        
                     </div>
 
                     <!-- Tác phẩm 2: Quê hương -->
@@ -96,7 +96,7 @@ export const lesson210 = {
                                 <p>Rướn thân trắng bao la thâu góp gió..."</p>
                             </div>
                         </div>
-                        <p class="text-right font-black text-amber-800 text-lg mt-4">— Tế Hanh</p>
+                        
                     </div>
                 </div>
             </div>

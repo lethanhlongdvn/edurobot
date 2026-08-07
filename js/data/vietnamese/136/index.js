@@ -207,7 +207,7 @@ export const lesson136 = {
     <!-- PHIẾU QUAN SÁT TƯƠNG TÁC -->
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-blue-50">
         <div class="p-6 md:p-8 bg-blue-50/30 rounded-[32px] space-y-6">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl md:text-2xl font-black shadow-md">📋</div>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Phiếu ghi chép kết quả quan sát</h3>
             </div>
@@ -275,7 +275,7 @@ export const lesson136 = {
     <!-- HOẠT ĐỘNG CHIA SẺ -->
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-emerald-50">
         <div class="p-6 md:p-8 bg-emerald-50/30 rounded-[32px] space-y-6">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <div class="w-12 h-12 bg-emerald-600 text-white rounded-xl flex items-center justify-center text-xl md:text-2xl font-black shadow-md">🗣️</div>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Trao đổi với bạn bè</h3>
             </div>

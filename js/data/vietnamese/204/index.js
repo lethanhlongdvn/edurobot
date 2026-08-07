@@ -193,12 +193,7 @@ export const lesson204 = {
 
         <div class="p-6 bg-amber-50/30 border border-amber-100 rounded-3xl space-y-4">
             <textarea id="essay-204" rows="3" class="w-full p-4 rounded-xl border border-slate-250 focus:ring-4 focus:ring-blue-100 outline-none text-lg md:text-2xl font-bold leading-relaxed" placeholder="Ví dụ: Em rất khâm phục tài năng và tinh thần yêu nước của ông Trần Đại Nghĩa..."></textarea>
-            <div class="flex justify-center">
-                <button onclick="check204EssayAI()" class="px-8 py-4 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-3 text-lg uppercase tracking-wider cursor-pointer">
-                    <span>🤖</span>
-                    <span>Nộp câu cho Thầy E AI nhận xét</span>
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="check204EssayAI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-204-ai" class="w-full hidden mt-4"></div>
         </div>
     </section>

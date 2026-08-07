@@ -171,9 +171,7 @@ export const lesson38 = {
                 <textarea id="vn38-input-kb" rows="4" placeholder="Ví dụ gợi ý: Từng ánh nước của hồ Hoàn Kiếm đã đi vào lòng biết bao thế hệ người dân Hà Nội và du khách bốn phương. Mỗi chúng ta cần chung tay giữ gìn vẻ đẹp tự nhiên, trong lành của hồ. Để rồi mai này, dù đi đâu xa, hình ảnh rùa vàng lung linh cùng Tháp Rùa cổ kính vẫn mãi vẹn nguyên trong ký ức. Bạn có muốn một lần được ngắm nhìn ánh nước ấy dưới làn sương thu se lạnh không?..." class="w-full p-4 border border-gray-100 rounded-2xl bg-white text-xl md:text-2xl font-semibold focus:border-sky-500 focus:ring-1 focus:ring-sky-600 outline-none shadow-sm"></textarea>
             </div>
             
-            <div class="flex justify-center">
-                <button onclick="nopBaiTapLamVan38()" class="px-8 py-3.5 bg-sky-600 text-white font-black text-lg rounded-2xl shadow-md hover:bg-sky-600 active:scale-95 transition-all">NỘP BÀI GỬI THẦY E</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="nopBaiTapLamVan38();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn38-lamvan" class="hidden p-5 rounded-2xl text-base font-bold shadow-md transition-all duration-338"></div>
         </div>
     </section>

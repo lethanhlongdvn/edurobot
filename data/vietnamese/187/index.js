@@ -76,11 +76,7 @@ export const lesson187 = {
                 <label id="pic-input-label" class="text-lg font-bold text-slate-800 block">Hãy nhấp vào một bức tranh ở trên hoặc tự chọn một sự việc đáng nhớ để chia sẻ:</label>
                 <textarea id="pic-discussion-text" rows="3" class="w-full p-4 rounded-xl border border-slate-200 focus:ring-4 focus:ring-blue-100 outline-none text-lg" placeholder="Em nghĩ gì về sự việc diễn ra và cảm xúc của những người trong cuộc lúc đó? Hãy tưởng tượng thêm và chia sẻ nhé..."></textarea>
                 
-                <div class="flex justify-center">
-                    <button onclick="check187DiscussionAI()" class="px-6 py-3 bg-sky-600 hover:bg-sky-700 text-white font-bold rounded-xl shadow-md active:scale-95 transition-all text-base uppercase">
-                        🤖 Nhận xét bằng AI
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="check187DiscussionAI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-pic-discussion-ai" class="w-full hidden mt-3"></div>
             </div>
         </div>
@@ -158,12 +154,7 @@ export const lesson187 = {
                     <textarea id="essay-text" rows="8" class="w-full p-4 rounded-xl border border-slate-200 focus:ring-4 focus:ring-blue-100 outline-none text-lg" placeholder="Bắt đầu viết đoạn văn thể hiện tình cảm, cảm xúc của em về sự việc tại đây..."></textarea>
                 </div>
 
-                <div class="flex justify-center">
-                    <button onclick="check187EssayAI()" class="px-8 py-4 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-3 text-lg md:text-xl uppercase tracking-wider">
-                        <span>🤖</span> 
-                        <span>Chấm điểm & Nhận xét bài viết bằng AI</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="check187EssayAI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-essay-ai" class="w-full hidden mt-4"></div>
             </div>
         </div>

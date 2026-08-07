@@ -200,9 +200,7 @@ export const lesson207 = {
             <button onclick="toggleSynonym207('dongnghia', this)" class="syn-btn px-6 py-3 bg-white border-2 border-slate-200 hover:border-blue-400 rounded-xl font-bold text-lg md:text-2xl text-slate-800 cursor-pointer transition-all">giản dị</button>
         </div>
 
-        <div class="flex justify-center pt-2">
-            <button onclick="check207Q1()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all shadow-md text-lg uppercase">Kiểm tra từ chọn</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="check207Q1();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-207-q1" class="text-lg md:text-2xl font-black text-center hidden"></div>
     </section>
 
@@ -217,12 +215,7 @@ export const lesson207 = {
 
         <div class="p-6 bg-amber-50/30 border border-amber-100 rounded-3xl space-y-4">
             <textarea id="essay-207" rows="3" class="w-full p-4 rounded-xl border border-slate-250 focus:ring-4 focus:ring-blue-100 outline-none text-lg md:text-2xl font-bold leading-relaxed" placeholder="Ví dụ: Lối sống của Bác Hồ rất giản dị. / Căn nhà tranh mộc mạc nép bên hàng tre..."></textarea>
-            <div class="flex justify-center">
-                <button onclick="check207EssayAI()" class="px-8 py-4 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-3 text-lg uppercase tracking-wider cursor-pointer">
-                    <span>🤖</span>
-                    <span>Chấm câu bằng Thầy E AI</span>
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="check207EssayAI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-207-ai" class="w-full hidden mt-4"></div>
         </div>
     </section>

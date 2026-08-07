@@ -110,17 +110,7 @@ export const lesson203 = {
 
         <!-- Khung soạn thảo bài nói và nhận xét AI -->
         <div class="p-6 bg-slate-50 border border-slate-200 rounded-3xl space-y-4">
-            <div class="flex flex-col lg:flex-row gap-6 items-center">
-                <div class="w-full lg:w-2/3 space-y-4">
-                    <p class="text-base md:text-xl font-black text-slate-600" id="topic-label">Chủ đề: Chưa chọn chủ đề</p>
-                    <textarea id="essay-203" rows="6" class="w-full p-4 rounded-xl border border-slate-250 focus:ring-4 focus:ring-blue-100 outline-none text-lg md:text-2xl font-bold leading-relaxed" placeholder="Nhập tóm tắt dàn ý bài nói của em (ví dụ: Tên hoạt động là gì? Thời gian địa điểm? Ai tham gia? Cảm nhận của em)..."></textarea>
-                    
-                    <div class="flex justify-center">
-                        <button onclick="check203SpeechAI()" class="px-8 py-4 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-3 text-lg uppercase tracking-wider cursor-pointer">
-                            <span>🤖</span>
-                            <span>Đưa dàn ý cho Thầy E AI góp ý</span>
-                        </button>
-                    </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="check203SpeechAI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 </div>
                 <div class="w-full lg:w-1/3 text-center shrink-0">
                     <img src="assets/images/tiengviet_5_2/203/203-1.png" alt="Thiếu nhi chăm sóc nghĩa trang liệt sĩ" class="rounded-2xl border-4 border-white shadow-md max-w-full h-auto mx-auto">
@@ -155,9 +145,7 @@ export const lesson203 = {
             </label>
         </div>
 
-        <div class="flex justify-center pt-2">
-            <button onclick="check203Evaluation()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all shadow-md text-lg uppercase">Xác nhận tiêu chí</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="check203Evaluation();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-203-eval" class="text-lg md:text-2xl font-black text-center hidden"></div>
     </section>
 </div>

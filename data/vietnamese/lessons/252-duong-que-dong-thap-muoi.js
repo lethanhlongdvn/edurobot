@@ -182,12 +182,7 @@ export const lesson_252_duong_que_dong_thap_muoi = {
                                                 </div>
                                             </div>
 
-                                            <div class="flex justify-center flex-col items-center gap-6">
-                                                <button onclick="check252ExtendAll()" class="px-12 py-5 md:px-16 md:py-6 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-[32px] shadow-2xl transition-all active:scale-[0.95] flex items-center justify-center gap-4 text-xl md:text-3xl uppercase tracking-widest">
-                                                    <span>🤖</span> 
-                                                    <span>Gửi bài cho EduRobot</span>
-                                                </button>
-                                                <div id="fb-252-extend-all" class="w-full hidden"></div>
+                                            <div class="flex justify-end items-center gap-4"><button onclick="check252ExtendAll();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                                             </div>
                                          </div>
                                     </div>

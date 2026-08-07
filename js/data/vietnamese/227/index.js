@@ -99,7 +99,7 @@ export const lesson227 = {
     <div class="space-y-8 md:space-y-12 animate-in fade-in duration-700 max-w-4xl mx-auto pb-12">
         <!-- BÀI TẬP 1: TÌM HIỂU ĐOẠN VĂN MẪU (ACCORDION) -->
         <section class="bg-white p-6 md:p-10 rounded-[40px] shadow-xl border border-blue-100 space-y-6">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <span class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-black">2</span>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Hoạt động phân tích câu hỏi SGK</h3>
             </div>
@@ -161,7 +161,7 @@ export const lesson227 = {
         <!-- BÀI TẬP 2: GHÉP NỐI NỘI DUNG CẤU TRÚC (TƯƠNG TÁC) -->
         <section class="bg-white p-4 rounded-[40px] shadow-xl border border-emerald-100" id="ex-227-match">
             <div class="p-6 md:p-8 bg-emerald-50/30 rounded-[32px] space-y-6">
-                <div class="flex items-center gap-4">
+                <div class="flex justify-end items-center gap-4">
                     <span class="w-10 h-10 bg-emerald-600 text-white rounded-full flex items-center justify-center font-black">3</span>
                     <h3 class="text-2xl md:text-3xl font-black text-gray-800">Luyện tập: Ghép nối chức năng bố cục</h3>
                 </div>
@@ -202,10 +202,7 @@ export const lesson227 = {
                     </div>
                 </div>
 
-                <div class="flex items-center justify-between pt-6">
-                    <button onclick="window.resetLt227()" class="px-6 py-2.5 bg-gray-200 text-gray-700 font-bold rounded-xl hover:bg-gray-300">LÀM LẠI</button>
-                    <button id="btn-check-227" onclick="window.checkLt227()" class="w-12 h-12 md:w-16 md:h-16 bg-blue-600 text-white rounded-2xl font-black text-2xl md:text-3xl shadow-lg transition-all active:scale-95 flex items-center justify-center">E</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="window.resetLt227()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="window.checkLt227();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-lt-227" class="hidden p-4 rounded-xl font-bold text-lg mt-4 animate-in fade-in"></div>
             </div>
         </section>

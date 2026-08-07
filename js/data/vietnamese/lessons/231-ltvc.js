@@ -211,10 +211,7 @@ export const lesson_231_ltvc = {
                                     </p>
                                     <textarea id="ai-231-q4" rows="2" placeholder="Ví dụ: Hội Lim rất vui. Hội Lim diễn ra vào mùa xuân..." class="w-full p-4 serif-font text-lg rounded-xl border-2 border-rose-100 focus:border-rose-400 outline-none shadow-inner bg-rose-50/20"></textarea>
                                     <div class="mt-3 flex gap-3">
-                                        <button onclick="checkLTVC231_Q4()" class="px-5 py-2 bg-rose-600 text-white text-sm font-bold rounded-xl shadow-md hover:bg-rose-700 active:scale-95 transition-all flex items-center gap-2">
-                                            <div class="w-5 h-5 bg-white rounded flex items-center justify-center text-rose-600 font-black text-[10px] shadow-sm">E</div>
-                                            <span>CHẤM BÀI</span>
-                                        </button>
+                                        <button onclick="checkLTVC231_Q4()" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
                                         <button onclick="resetLTVC('ai-231-q4'); document.getElementById('fb-231-q4').classList.add('hidden');" class="px-4 py-2 bg-gray-200 text-gray-700 text-sm font-bold rounded-xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
                                         <button onclick="submitLTVCUnified('231-q4')" class="px-5 py-2 bg-gray-800 text-white text-sm font-bold rounded-xl shadow-md hover:bg-black transition-all flex items-center gap-2">
                                             <div class="w-5 h-5 bg-white rounded flex items-center justify-center text-gray-800 font-black text-[10px] shadow-sm">E</div>

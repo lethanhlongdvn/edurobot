@@ -43,9 +43,7 @@ export const lesson82 = {
             <p class="text-xl md:text-2xl font-bold leading-relaxed text-gray-800">
                 "Nhờ thói quen ấy, nhu cầu đọc sách đã <span class="text-blue-600 underline">nảy mầm</span> và trở thành một <input type="text" id="kd-83-input" placeholder="......" class="px-2 py-1 border-b-2 border-blue-100 outline-none w-28 text-center text-blue-600 bg-white rounded-md"> trong tôi, như cỏ cây khát ánh sáng và khí trời."
             </p>
-            <div class="flex justify-center mt-3">
-                <button onclick="kiemTraKhoiDong82()" class="px-6 py-2 bg-blue-600 text-white font-black rounded-lg hover:bg-blue-600 transition-all text-sm shadow">KIỂM TRA CHỮ ĐIỀN ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraKhoiDong82();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn82-kd" class="hidden p-3 rounded-lg text-sm font-bold text-center mt-2"></div>
         </div>
     </div>
@@ -123,11 +121,7 @@ export const lesson82 = {
             </div>
 
             <!-- Nút gửi bài -->
-            <div class="flex justify-center pt-4">
-                <button onclick="kiemTraDocHieu82()" class="px-10 py-4 bg-blue-600 hover:bg-blue-600 text-white font-black rounded-xl transition-all shadow-md active:scale-95 text-lg">
-                    XÁC NHẬN ĐÁP ÁN ✓
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDocHieu82();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             
             <div id="fb-vn82-comprehension" class="hidden p-5 rounded-2xl font-bold text-center mt-2 shadow-lg"></div>
         </div>

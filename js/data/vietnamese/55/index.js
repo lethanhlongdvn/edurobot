@@ -66,9 +66,7 @@ export const lesson55 = {
             </label>
         </div>
 
-        <div class="flex justify-center">
-            <button onclick="checkKD55()" class="px-8 py-3 bg-amber-500 text-white font-black rounded-xl hover:bg-amber-500 transition-all text-base shadow-md">KIỂM TRA TIÊU CHÍ ✓</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="checkKD55();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn55-kd" class="hidden p-4 rounded-xl text-sm font-bold text-center mt-2"></div>
     </div>
 

@@ -41,9 +41,7 @@ export const lesson72 = {
         
         <div class="space-y-4">
             <textarea id="ans-vn72-kd" rows="3" placeholder="Em nghĩ việc tra cứu từ điển giúp chúng ta hiểu đúng, hiểu sâu nghĩa của từ, biết cách phát âm, loại từ và cách dùng từ đó trong câu, từ đó làm phong phú thêm vốn từ của bản thân..." class="w-full p-4 border-2 border-emerald-100 rounded-2xl outline-none focus:border-emerald-500 font-bold bg-emerald-50/10 text-xl md:text-2xl"></textarea>
-            <div class="flex justify-center">
-                <button onclick="kiemTraKhoiDong72()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md active:scale-95">GỬI Ý KIẾN ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraKhoiDong72();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn72-kd" class="hidden p-4 rounded-xl text-sm font-bold text-center mt-2"></div>
         </div>
     </div>
@@ -110,9 +108,7 @@ export const lesson72 = {
                 </div>
             </div>
 
-            <div class="flex justify-center gap-4 mt-6">
-                <button onclick="kiemTraTraCuu72()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md active:scale-95">KIỂM TRA NGHĨA ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraTraCuu72();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn72-bt1" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2"></div>
         </div>
     </div>
@@ -218,9 +214,7 @@ export const lesson72 = {
                     </div>
                 </div>
 
-                <div class="flex justify-center">
-                    <button onclick="kiemTraTuDien72()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md active:scale-95">XÁC NHẬN CHỌN TỪ ĐIỂN ✓</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="kiemTraTuDien72();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn72-bt2" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2"></div>
             </div>
         </div>
@@ -266,10 +260,7 @@ export const lesson72 = {
                 </button>
             </div>
 
-            <div class="flex justify-center gap-4 mt-2">
-                <button onclick="kiemTraBuoc72()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md active:scale-95">KIỂM TRA BƯỚC ✓</button>
-                <button onclick="lamLaiBuoc72()" class="px-8 py-3 bg-amber-500 text-white font-black rounded-xl hover:bg-amber-500 transition-all text-base shadow-md active:scale-95">SẮP XẾP LẠI ↺</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraBuoc72();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn72-steps" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2"></div>
 
             <div class="border-t border-gray-100 pt-6 mt-8 space-y-4">
@@ -289,9 +280,7 @@ export const lesson72 = {
                     </label>
                 </div>
 
-                <div class="flex justify-center pt-2">
-                    <button onclick="kiemTraNghiaThanhNgu72()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md active:scale-95">XÁC NHẬN ĐÁP ÁN ✓</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="kiemTraNghiaThanhNgu72();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn72-bt3-nghia" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2"></div>
             </div>
         </div>

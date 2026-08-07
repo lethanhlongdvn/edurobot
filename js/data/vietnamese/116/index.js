@@ -225,10 +225,7 @@ export const lesson116 = {
                         </label>
                     </div>
                     
-                    <div class="flex gap-4 items-center">
-                        <button id="btn-check-116-c3" onclick="window.checkC3Vn116()" class="w-12 h-12 bg-sky-600 hover:bg-sky-700 text-white rounded-xl font-black text-xl shadow-md transition-all active:scale-95 flex items-center justify-center">E</button>
-                        <button onclick="window.resetC3Vn116()" class="px-5 py-2.5 bg-gray-200 text-gray-700 font-bold rounded-xl hover:bg-gray-300 transition-all text-sm">LÀM LẠI</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="window.resetC3Vn116()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="window.checkC3Vn116();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                     <div id="c3-feedback" class="hidden p-4 rounded-xl font-bold text-base md:text-lg text-center animate-in fade-in duration-300"></div>
                 </div>
 
@@ -315,8 +312,8 @@ export const lesson116 = {
 
             <!-- Nút kiểm tra kéo thả LTVC -->
             <div class="mt-8 flex justify-center gap-4">
-                <button id="btn-check-116-ltvc" onclick="window.checkTamSortingVn116()" class="w-14 h-14 md:w-20 md:h-20 bg-sky-600 hover:bg-sky-700 text-white rounded-[1.5rem] font-black text-2xl md:text-4xl shadow-xl transition-all active:scale-95 flex items-center justify-center shrink-0">E</button>
-                <button onclick="window.resetTamSortingVn116()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all text-base md:text-lg">LÀM LẠI</button>
+                <button id="btn-check-116-ltvc" onclick="window.checkTamSortingVn116()" class="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
+                <button onclick="window.resetTamSortingVn116()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
             </div>
             <div id="ltvc-feedback" class="hidden mt-6 p-4 rounded-xl font-bold text-lg text-center animate-in fade-in duration-300"></div>
         </div>
@@ -358,8 +355,8 @@ export const lesson116 = {
 
             <!-- Nút kiểm tra bài đặt câu -->
             <div class="mt-8 flex justify-center gap-4">
-                <button id="btn-check-116-writing" onclick="window.checkSentenceVn116()" class="w-14 h-14 md:w-20 md:h-20 bg-sky-600 hover:bg-sky-700 text-white rounded-[1.5rem] font-black text-2xl md:text-4xl shadow-xl transition-all active:scale-95 flex items-center justify-center shrink-0">E</button>
-                <button onclick="window.resetSentenceVn116()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all text-base md:text-lg">LÀM LẠI</button>
+                <button id="btn-check-116-writing" onclick="window.checkSentenceVn116()" class="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
+                <button onclick="window.resetSentenceVn116()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
             </div>
             <div id="writing-feedback" class="hidden mt-6 p-6 bg-sky-600 text-white rounded-3xl shadow-xl animate-in slide-in-from-top-10 duration-500">
                 <!-- Phản hồi tự động -->

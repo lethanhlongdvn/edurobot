@@ -232,15 +232,7 @@ export const lesson179 = {
                                             </div>
                                         </div>
 
-                                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                                            <button onclick="check262LuyenTapAI()" class="px-8 py-3 rounded-2xl bg-gradient-to-r from-blue-500 to-blue-600 text-white font-black shadow-lg hover:scale-105 transition-all flex items-center gap-3">
-                                                <span class="text-lg md:text-2xl">🤖</span>
-                                                <span>XEM NHẬN XÉT CỦA EDUROBOT</span>
-                                            </button>
-                                            <button onclick="submit262LuyenTap()" class="px-8 py-3 bg-gray-800 text-white font-black rounded-2xl shadow-lg hover:bg-black transition-all flex items-center gap-2">
-                                                <span>NỘP BÀI</span>
-                                            </button>
-                                        </div>
+                                        <div class="flex justify-end items-center gap-4"><button onclick="check262LuyenTapAI(); submit262LuyenTap();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                                         <div id="fb-262-lt" class="hidden mt-6 p-8 rounded-[32px] bg-white border-4 border-blue-100 text-gray-800 shadow-xl animate-in fade-in slide-in-from-top-4"></div>
                                     </div>
                                 </section>

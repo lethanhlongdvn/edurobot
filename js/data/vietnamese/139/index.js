@@ -132,7 +132,7 @@ export const lesson139 = {
     <!-- DÀN Ý TƯƠNG TÁC -->
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-blue-50">
         <div class="p-6 md:p-8 bg-blue-50/30 rounded-[32px] space-y-6">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl md:text-2xl font-black shadow-md">📝</div>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Luyện lập dàn ý bài văn tả người</h3>
             </div>
@@ -198,11 +198,7 @@ export const lesson139 = {
             </div>
 
             <!-- Nút hoàn thành -->
-            <div class="flex justify-center">
-                <button onclick="nopDanY139()" class="px-10 py-4 bg-blue-600 text-white font-black text-xl rounded-2xl hover:bg-blue-700 shadow-md transition-all">
-                    ✅ Kiểm tra dàn ý
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="nopDanY139();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="result-dan-y-139" class="hidden mt-2 p-6 rounded-2xl text-xl font-bold text-center"></div>
         </div>
     </section>
@@ -210,7 +206,7 @@ export const lesson139 = {
     <!-- LUYỆN TẬP GÓP Ý DÀN Ý -->
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-orange-50">
         <div class="p-6 md:p-8 bg-orange-50/30 rounded-[32px] space-y-6">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <div class="w-12 h-12 bg-orange-600 text-white rounded-xl flex items-center justify-center text-xl md:text-2xl font-black shadow-md">✏️</div>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Luyện tập: Đánh giá dàn ý mẫu</h3>
             </div>

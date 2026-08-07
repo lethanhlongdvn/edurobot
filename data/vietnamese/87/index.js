@@ -56,9 +56,7 @@ export const lesson087 = {
                     <span>Phần Kết thúc</span>
                 </label>
             </div>
-            <div class="flex justify-center">
-                <button onclick="kiemTraKhoiDong87()" class="px-8 py-3 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-xl transition-all text-lg shadow-md active:scale-95">GỬI SUY NGHĨ ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraKhoiDong87();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn87-kd" class="hidden p-4 rounded-xl text-lg font-bold text-center mt-2"></div>
         </div>
     </div>
@@ -103,12 +101,7 @@ export const lesson087 = {
             <div class="bg-amber-50/15 p-6 md:p-8 rounded-[32px] border-2 border-amber-100 shadow-inner max-w-4xl mx-auto space-y-4">
                 <textarea id="ans-vn87-writing" rows="8" placeholder="Em hãy bắt đầu viết đoạn văn tại đây (Lùi đầu dòng từ chữ đầu tiên, viết liên tục không tự ý xuống dòng)..." class="w-full p-4 text-xl rounded-2xl border border-amber-200 outline-none focus:border-sky-500 font-bold bg-white text-gray-800 leading-relaxed shadow-sm"></textarea>
                 
-                <div class="flex justify-center">
-                    <button onclick="checkVn87Writing()" class="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-white font-black text-lg rounded-2xl shadow-md active:scale-95 transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-amber-900 font-black text-xs shadow-sm">E</div> 
-                        <span>CHẤM BÀI VỚI THẦY E</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="checkVn87Writing();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn87-writing" class="hidden p-5 rounded-2xl font-bold text-lg"></div>
             </div>
         </div>
@@ -192,9 +185,7 @@ export const lesson087 = {
             </div>
         </div>
 
-        <div class="flex justify-center pt-2">
-            <button onclick="checkVn87Checklist()" class="px-8 py-3 bg-sky-600 hover:bg-sky-700 text-white font-black text-lg rounded-xl shadow-md transition-all active:scale-95">HOÀN TẤT ĐỌC SOÁT ✓</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="checkVn87Checklist();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn87-checklist" class="hidden p-4 rounded-xl text-lg font-bold text-center mt-2 max-w-4xl mx-auto"></div>
     </section>
 
@@ -215,9 +206,7 @@ export const lesson087 = {
                 <textarea id="p87-home-share" rows="3" placeholder="Ví dụ: Em và bố mẹ đã cùng thảo luận về sự trưởng thành của Dế Mèn, từ một chú dế kiêu căng trở thành người bạn tốt dũng cảm bênh vực kẻ yếu..." class="w-full p-3 border border-sky-100 rounded-xl font-bold bg-white text-base"></textarea>
             </div>
             
-            <div class="flex justify-center">
-                <button onclick="submitVn87Home()" class="px-6 py-2.5 bg-amber-500 hover:bg-amber-600 text-white font-black rounded-xl text-base shadow transition-all active:scale-95">NỘP CHIA SẺ GIA ĐÌNH ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="submitVn87Home();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         </div>
     </section>
 

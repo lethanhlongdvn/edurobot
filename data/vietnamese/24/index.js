@@ -260,9 +260,7 @@ export const lesson24 = {
                     </div>
                 </div>
 
-                <div class="flex justify-center pt-2">
-                    <button onclick="submitHomeTraoDoi24()" class="px-8 py-3 bg-sky-600 hover:bg-sky-600 text-white font-black rounded-xl transition-all text-base shadow-md">NỘP BÀI TRAO ĐỔI ✓</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="submitHomeTraoDoi24();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             </div>
         </div>
     </section>

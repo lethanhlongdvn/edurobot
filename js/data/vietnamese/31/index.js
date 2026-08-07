@@ -139,7 +139,7 @@ export const lesson31 = {
                     <div class="min-w-[731px] space-y-6 font-bold text-gray-800 text-lg md:text-xl">
                         
                         <!-- Root -->
-                        <div class="flex items-center gap-4">
+                        <div class="flex justify-end items-center gap-4">
                             <div class="px-6 py-3 bg-sky-600 text-white rounded-2xl shadow-md text-xl font-black">Phong cảnh Đà Lạt</div>
                             <div class="w-10 h-0.5 bg-sky-600"></div>
                             <div class="space-y-6">
@@ -371,9 +371,7 @@ export const lesson31 = {
             <textarea id="vn31-input-dongvat" rows="3" placeholder="Ví dụ: Báo săn (Cheetah) là loài động vật chạy nhanh nhất trên mặt đất với tốc độ tối đa lên tới 131 km/h..." class="w-full p-4 border border-gray-100 rounded-2xl bg-white text-xl md:text-2xl"></textarea>
         </div>
 
-        <div class="flex justify-center">
-            <button onclick="nopLuyenTapVn31()" class="px-8 py-3.5 bg-sky-600 text-white font-black text-lg rounded-2xl shadow-md hover:bg-sky-600 active:scale-95 transition-all">NỘP BÀI LUYỆN TẬP</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="nopLuyenTapVn31();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn31-lt" class="hidden p-5 rounded-2xl text-base font-bold shadow-md transition-all duration-331"></div>
     </section>
 

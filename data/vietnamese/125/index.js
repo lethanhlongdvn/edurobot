@@ -48,7 +48,7 @@ export const lesson125 = {
                 
                 <!-- Hiển thị tranh minh họa -->
                 <div class="w-full bg-white rounded-2xl shadow-md overflow-hidden border border-sky-100 cursor-pointer" 
-                     onclick="window.showMathFeedback('Bố đứng nhìn biển cả', '🌊', '<div class=\'text-center p-4\'><img src=\'assets/images/tiengviet_5_1/162-164/162.png\' class=\'max-h-[75vh] mx-auto rounded-2xl shadow-md object-contain\' alt=\'Bố đứng nhìn biển cả\'><p class=\'text-xl font-bold text-sky-850 mt-4\'>Hình ảnh bố và con ngắm biển cát vàng yên bình</p></div>')">
+                     onclick="window.showMathFeedback('Bố đứng nhìn biển cả', '🌊', '<div class=\'text-center p-4\'><img src=\'assets/images/tiengviet_5_1/162-164/162.png\' class=\'max-h-[75vh] mx-auto rounded-2xl shadow-md object-contain\' alt=\'Bố đứng nhìn biển cả\'></div>')">
                     <img src="assets/images/tiengviet_5_1/162-164/162.png" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500" alt="Bố đứng nhìn biển cả">
                     <div class="p-2 text-center text-xs font-bold text-sky-700">🔍 Click để xem toàn màn hình SGK trang 162</div>
                 </div>
@@ -127,7 +127,7 @@ export const lesson125 = {
                                 <span>Lái tàu biển khổng lồ ra khơi</span>
                             </label>
                         </div>
-                        <button onclick="kiemTraCauHoi1Vn125()" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white font-bold rounded-lg text-sm transition-all">Kiểm tra kết quả</button>
+                        <button onclick="kiemTraCauHoi1Vn125()" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
                         <div id="fb-vn125-c1" class="hidden p-3 rounded-xl text-sm font-bold text-center"></div>
                     </div>
 
@@ -163,7 +163,7 @@ export const lesson125 = {
 
                 <!-- Hiển thị tranh minh họa -->
                 <div class="w-full bg-white rounded-2xl shadow-md overflow-hidden border border-sky-100 cursor-pointer" 
-                     onclick="window.showMathFeedback('Những điều thú vị về chim di cư', '🦅', '<div class=\'text-center p-4\'><img src=\'assets/images/tiengviet_5_1/162-164/163.png\' class=\'max-h-[75vh] mx-auto rounded-2xl shadow-md object-contain\' alt=\'Những điều thú vị về chim di cư\'><p class=\'text-xl font-bold text-sky-850 mt-4\'>Văn bản về chim di cư cùng đàn chim bay lượn tránh rét</p></div>')">
+                     onclick="window.showMathFeedback('Những điều thú vị về chim di cư', '🦅', '<div class=\'text-center p-4\'><img src=\'assets/images/tiengviet_5_1/162-164/163.png\' class=\'max-h-[75vh] mx-auto rounded-2xl shadow-md object-contain\' alt=\'Những điều thú vị về chim di cư\'></div>')">
                     <img src="assets/images/tiengviet_5_1/162-164/163.png" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500" alt="Những điều thú vị về chim di cư">
                     <div class="p-2 text-center text-xs font-bold text-sky-700">🔍 Click để xem toàn màn hình SGK trang 163</div>
                 </div>
@@ -189,7 +189,7 @@ export const lesson125 = {
                 <div class="bg-sky-50/30 p-5 rounded-2xl border border-sky-100 space-y-3">
                     <p class="font-black text-lg text-sky-950">1. Theo bài đọc, chim di cư có tập tính gì?</p>
                     <input id="ans-vn125-dh1" type="text" placeholder="Gợi ý: di chuyển nơi ở đều đặn..." class="w-full p-3 rounded-xl border border-sky-200 focus:border-sky-500 font-bold bg-white text-gray-800 text-base outline-none">
-                    <button onclick="kiemTraCauHoi1Dh125()" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white font-bold rounded-lg text-sm transition-all">Kiểm tra</button>
+                    <button onclick="kiemTraCauHoi1Dh125()" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
                     <div id="fb-vn125-dh1" class="hidden p-3 rounded-xl text-sm font-bold"></div>
                 </div>
 
@@ -197,7 +197,7 @@ export const lesson125 = {
                 <div class="bg-sky-50/30 p-5 rounded-2xl border border-sky-100 space-y-3">
                     <p class="font-black text-lg text-sky-950">2. Kể tên một số loài chim di cư được nhắc tới trong bài:</p>
                     <input id="ans-vn125-dh2" type="text" placeholder="Ví dụ: diều hâu, bồ nông..." class="w-full p-3 rounded-xl border border-sky-200 focus:border-sky-500 font-bold bg-white text-gray-800 text-base outline-none">
-                    <button onclick="kiemTraCauHoi2Dh125()" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white font-bold rounded-lg text-sm transition-all">Kiểm tra</button>
+                    <button onclick="kiemTraCauHoi2Dh125()" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
                     <div id="fb-vn125-dh2" class="hidden p-3 rounded-xl text-sm font-bold"></div>
                 </div>
 
@@ -222,7 +222,7 @@ export const lesson125 = {
                             <span>Đi tham quan thế giới</span>
                         </label>
                     </div>
-                    <button onclick="kiemTraCauHoi3Dh125()" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white font-bold rounded-lg text-sm transition-all">Kiểm tra</button>
+                    <button onclick="kiemTraCauHoi3Dh125()" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
                     <div id="fb-vn125-dh3" class="hidden p-3 rounded-xl text-sm font-bold text-center"></div>
                 </div>
 
@@ -230,7 +230,7 @@ export const lesson125 = {
                 <div class="bg-sky-50/30 p-5 rounded-2xl border border-sky-100 space-y-3">
                     <p class="font-black text-lg text-sky-950">4. Vì sao chim di cư bay rất xa nhưng vẫn tìm được đường về đúng nhà?</p>
                     <textarea id="ans-vn125-dh4" rows="3" placeholder="Ví dụ: Quan sát Mặt Trời, các vì sao và các mốc lớn..." class="w-full p-3 rounded-xl border border-sky-200 focus:border-sky-500 font-bold bg-white text-gray-800 text-base outline-none leading-relaxed"></textarea>
-                    <button onclick="kiemTraCauHoi4Dh125()" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white font-bold rounded-lg text-sm transition-all">Kiểm tra</button>
+                    <button onclick="kiemTraCauHoi4Dh125()" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
                     <div id="fb-vn125-dh4" class="hidden p-3 rounded-xl text-sm font-bold"></div>
                 </div>
             </div>

@@ -78,7 +78,7 @@ export const lesson24 = {
 <p>🔹 <strong>Quy tắc 1 (Viết thêm 0):</strong></p>
 <p class="text-slate-600 pl-4">Nếu viết thêm chữ số 0 vào bên phải phần thập phân của một số thập phân thì được một số thập phân bằng nó.</p>
 <p class="text-emerald-700 pl-4 font-mono">Ví dụ: 0,7 = 0,70 = 0,700</p>
-<p class="mt-4">🔹 <strong>Quy tắc 2 (Bỏ 0):</strong></p>
+
 <p class="text-slate-600 pl-4">Nếu một số thập phân có chữ số 0 ở tận cùng bên phải phần thập phân thì khi bỏ chữ số 0 đó đi, ta được một số thập phân bằng nó.</p>
 <p class="text-emerald-700 pl-4 font-mono">Ví dụ: 0,70 = 0,7 ; 2,500 = 2,5</p>
 </div>

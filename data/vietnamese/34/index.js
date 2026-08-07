@@ -194,9 +194,7 @@ export const lesson34 = {
             </div>
         </div>
 
-        <div class="flex justify-center">
-            <button onclick="checkCloudArtVn34()" class="px-6 py-2 bg-sky-600 hover:bg-sky-600 text-white rounded-xl font-bold shadow-md transition-all active:scale-95 text-lg">Kiểm tra đám mây 3</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="checkCloudArtVn34();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn34-cloud" class="hidden p-4 rounded-xl text-center text-lg font-bold"></div>
     </div>
 
@@ -243,9 +241,7 @@ export const lesson34 = {
             </table>
         </div>
 
-        <div class="flex justify-center">
-            <button onclick="checkCompareVn34()" class="px-8 py-3 bg-emerald-600 hover:bg-emerald-600 text-white rounded-xl shadow font-black text-lg active:scale-95 transition-all">KIỂM TRA SO SÁNH ✓</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="checkCompareVn34();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn34-compare" class="hidden p-4 rounded-xl text-center text-lg font-bold"></div>
 
         <!-- Khung Ghi nhớ Vàng -->
@@ -278,9 +274,7 @@ export const lesson34 = {
                 <textarea id="vn34-para" rows="6" placeholder="Ví dụ: Cánh đồng quê em đẹp nhất là vào những buổi sáng bình minh. Khi ông mặt trời mới thức dậy rải những tia nắng ấm áp đầu tiên, sương sớm vẫn còn đọng lác đác trên ngọn cỏ..." class="w-full p-4 border border-gray-100 rounded-2xl bg-white text-xl md:text-2xl font-semibold focus:border-sky-500 focus:ring-1 focus:ring-sky-600 outline-none shadow-sm"></textarea>
             </div>
             
-            <div class="flex justify-center">
-                <button onclick="submitParaVn34()" class="px-8 py-3.5 bg-sky-600 text-white font-black text-lg rounded-2xl shadow-md hover:bg-sky-600 active:scale-95 transition-all">NỘP BÀI TẬP LÀM VĂN</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="submitParaVn34();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn34-para" class="hidden p-5 rounded-2xl text-base font-bold shadow-md transition-all duration-334"></div>
         </div>
     </section>

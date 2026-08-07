@@ -216,11 +216,7 @@ export const lesson155 = {
                 </div>
 
                 <!-- Nút điều khiển E -->
-                <div class="flex flex-wrap items-center gap-4 justify-between">
-                    <button onclick="window.resetEx4_155()" class="px-8 py-3 bg-gray-200 text-gray-700 font-black text-lg rounded-2xl hover:bg-gray-300 transition-all active:scale-95">LÀM LẠI</button>
-                    <div class="flex items-center gap-4">
-                        <button id="btn-check-155-4" onclick="window.checkEx4_155()" class="w-14 h-14 md:w-20 md:h-20 bg-amber-500 text-white rounded-[2rem] font-black text-3xl md:text-5xl shadow-lg transition-all active:scale-95 flex items-center justify-center">E</button>
-                    </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="window.resetEx4_155()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="window.checkEx4_155();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 </div>
 
                 <!-- Phản hồi -->
@@ -255,11 +251,7 @@ export const lesson155 = {
                 </div>
 
                 <!-- Nút điều khiển E -->
-                <div class="flex flex-wrap items-center gap-4 justify-between">
-                    <button onclick="window.resetEx5_155()" class="px-8 py-3 bg-gray-200 text-gray-700 font-black text-lg rounded-2xl hover:bg-gray-300 transition-all active:scale-95">LÀM LẠI</button>
-                    <div class="flex items-center gap-4">
-                        <button id="btn-check-155-5" onclick="window.checkEx5_155()" class="w-14 h-14 md:w-20 md:h-20 bg-blue-600 text-white rounded-[2rem] font-black text-3xl md:text-5xl shadow-lg transition-all active:scale-95 flex items-center justify-center">E</button>
-                    </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="window.resetEx5_155()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="window.checkEx5_155();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 </div>
 
                 <!-- Phản hồi -->

@@ -137,7 +137,7 @@ export const lesson182 = {
                 <div id="recording-timer" class="text-3xl md:text-4xl font-mono font-black text-gray-800">00:00</div>
 
                 <!-- Action Buttons -->
-                <div class="flex gap-4">
+                <div class="flex justify-end items-center gap-4">
                     <button id="btn-start-record" onclick="startSpeechRecording()" class="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl shadow-lg active:scale-95 transition-all flex items-center gap-2">
                         🎤 Bắt đầu thu
                     </button>

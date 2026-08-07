@@ -140,9 +140,7 @@ export const lesson23 = {
                 </div>
             </div>
 
-            <div class="flex justify-center">
-                <button onclick="checkHoiThoai23()" class="px-8 py-3 bg-sky-600 text-white font-black rounded-xl hover:bg-sky-600 transition-all text-base shadow-md">KIỂM TRA HỘI THOẠI ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkHoiThoai23();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn23-ht" class="hidden text-sm font-bold px-3 py-1.5 rounded-lg text-center"></div>
         </div>
     </div>
@@ -185,9 +183,7 @@ export const lesson23 = {
                 </div>
             </div>
 
-            <div class="flex justify-center">
-                <button onclick="checkCauHoiPhanTich23()" class="px-8 py-3 bg-sky-600 text-white font-black rounded-xl hover:bg-sky-600 transition-all text-base shadow-md">KIỂM TRA PHÂN TÍCH ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkCauHoiPhanTich23();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn23-pt" class="hidden text-base font-bold px-4 py-2 rounded-xl text-center"></div>
         </div>
     </section>
@@ -243,9 +239,7 @@ export const lesson23 = {
                 </div>
             </div>
 
-            <div class="flex justify-center">
-                <button onclick="checkTranhLap23()" class="px-8 py-3 bg-sky-600 text-white font-black rounded-xl hover:bg-sky-600 transition-all text-base shadow-md">KIỂM TRA TRÁNH LẶP TỪ ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkTranhLap23();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn23-tl" class="hidden text-base font-bold px-4 py-2 rounded-xl text-center"></div>
         </div>
     </section>
@@ -270,9 +264,7 @@ export const lesson23 = {
                     <textarea id="ans-vn23-oatxon" rows="3" placeholder="Ví dụ: Ôi trời đất ơi, anh nói đúng thế! Hoặc: Trời ơi, vậy mà tôi lại không nhận ra điều đó!..." class="w-full p-4 border-2 border-sky-100 rounded-2xl outline-none focus:border-sky-500 font-bold bg-sky-50/10 mt-1 text-2xl md:text-3xl"></textarea>
                 </div>
 
-                <div class="flex justify-center pt-2">
-                    <button onclick="checkOatxon23()" class="px-8 py-3 bg-sky-600 text-white font-black rounded-xl hover:bg-sky-600 transition-all text-base shadow-md">NỘP CÂU ĐÁP LẠI ✓</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="checkOatxon23();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn23-ox" class="hidden text-base font-bold px-4 py-2 rounded-xl text-center"></div>
             </div>
         </div>

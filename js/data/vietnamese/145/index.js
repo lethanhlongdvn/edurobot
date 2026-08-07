@@ -319,9 +319,7 @@ export const lesson145 = {
                             <span id="char-count-145">Độ dài: 0 ký tự (Đảm bảo tối thiểu 15 ký tự cho 1 câu ghép hoàn chỉnh)</span>
                         </div>
                         
-                        <div class="flex justify-center pt-2">
-                            <button onclick="nopCauGhep145()" class="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl active:scale-95 transition-all text-xl shadow-md">Nộp câu ghép</button>
-                        </div>
+                        <div class="flex justify-end items-center gap-4"><button onclick="nopCauGhep145();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                     </div>
                 </div>
             </details>

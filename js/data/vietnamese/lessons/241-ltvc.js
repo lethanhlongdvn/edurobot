@@ -105,7 +105,7 @@ export const lesson_241_ltvc = {
                                                 (4) <select id="ex241-2-3" class="px-3 py-1 bg-amber-50 border-2 border-amber-300 rounded-2xl text-rose-600 font-bold outline-none focus:ring-4 focus:ring-amber-200 transition-all"><option value="">🌼</option><option value="Đầu tiên">Đầu tiên</option><option value="Sau đó">Sau đó</option><option value="Tiếp theo">Tiếp theo</option><option value="Cuối cùng">Cuối cùng</option></select>, hạt lúa được rang và giã thành cốm. 
                                                 (5) <select id="ex241-2-4" class="px-3 py-1 bg-amber-50 border-2 border-amber-300 rounded-2xl text-rose-600 font-bold outline-none focus:ring-4 focus:ring-amber-200 transition-all"><option value="">🌼</option><option value="Đầu tiên">Đầu tiên</option><option value="Sau đó">Sau đó</option><option value="Tiếp theo">Tiếp theo</option><option value="Cuối cùng">Cuối cùng</option></select>, người ta sàng sẩy cốm thật kĩ và để trong những chiếc thúng nhỏ lót lá sen.
                                             </p>
-                                            <p class="text-right text-base italic text-gray-500 mt-4">(Theo Ngọc Hà)</p>
+                                            
                                         </div>
                                     </div>
                                     <div class="mt-6 flex items-center gap-4">
@@ -113,7 +113,7 @@ export const lesson_241_ltvc = {
                                             <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-green-600 font-black text-xs shadow-sm">E</div>
                                             KIỂM TRA
                                         </button>
-                                        <button onclick="resetEx241_2()" class="px-6 py-3 bg-gray-200 text-gray-700 text-lg font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
+                                        <button onclick="resetEx241_2()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
                                         <div id="fb-241-ltvc-ex2" class="hidden text-lg md:text-2xl font-black"></div>
                                     </div>
                                 </div>
@@ -154,7 +154,7 @@ export const lesson_241_ltvc = {
                                             <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-green-600 font-black text-xs shadow-sm">E</div>
                                             KIỂM TRA
                                         </button>
-                                        <button onclick="resetEx241_3()" class="px-6 py-3 bg-gray-200 text-gray-700 text-lg font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
+                                        <button onclick="resetEx241_3()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
                                         <div id="fb-241-ltvc-ex3" class="hidden text-lg md:text-2xl font-black"></div>
                                     </div>
                                 </div>

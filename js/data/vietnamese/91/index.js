@@ -76,9 +76,7 @@ export const lesson91 = {
             </div>
         </div>
 
-        <div class="flex justify-center pt-2">
-            <button onclick="checkStartVn91()" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-black text-lg rounded-2xl shadow active:scale-95 transition-all">KIỂM TRA GHÉP NỐI</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="checkStartVn91();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-start-91" class="hidden p-4 rounded-2xl text-center font-bold text-base mt-2 shadow-inner"></div>
     </div>
 

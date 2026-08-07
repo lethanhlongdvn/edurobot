@@ -41,33 +41,15 @@ export const lesson45 = {
         
         <div class="space-y-4 font-bold text-amber-600 text-lg md:text-xl">
             <!-- Ý 1 -->
-            <div class="flex flex-wrap items-center justify-between gap-3 p-4 bg-amber-50/30 rounded-2xl border border-amber-100">
-                <span class="text-gray-800">1. Nêu những ý giới thiệu bao quát về phong cảnh (trực tiếp hoặc gián tiếp):</span>
-                <div class="flex gap-2">
-                    <button onclick="checkKdVn45(1, this, 'MB')" class="px-4 py-2 bg-white hover:bg-amber-500 border-2 border-gray-100 rounded-xl transition-all active:scale-95 text-base">Mở bài</button>
-                    <button onclick="checkKdVn45(1, this, 'TB')" class="px-4 py-2 bg-white hover:bg-amber-500 border-2 border-gray-100 rounded-xl transition-all active:scale-95 text-base">Thân bài</button>
-                    <button onclick="checkKdVn45(1, this, 'KB')" class="px-4 py-2 bg-white hover:bg-amber-500 border-2 border-gray-100 rounded-xl transition-all active:scale-95 text-base">Kết bài</button>
-                </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkKdVn45(1, this,;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             </div>
 
             <!-- Ý 2 -->
-            <div class="flex flex-wrap items-center justify-between gap-3 p-4 bg-amber-50/30 rounded-2xl border border-amber-100">
-                <span class="text-gray-800">2. Liệt kê các cảnh vật chi tiết theo trình tự không gian hoặc thời gian:</span>
-                <div class="flex gap-2">
-                    <button onclick="checkKdVn45(2, this, 'MB')" class="px-4 py-2 bg-white hover:bg-amber-500 border-2 border-gray-100 rounded-xl transition-all active:scale-95 text-base">Mở bài</button>
-                    <button onclick="checkKdVn45(2, this, 'TB')" class="px-4 py-2 bg-white hover:bg-amber-500 border-2 border-gray-100 rounded-xl transition-all active:scale-95 text-base">Thân bài</button>
-                    <button onclick="checkKdVn45(2, this, 'KB')" class="px-4 py-2 bg-white hover:bg-amber-500 border-2 border-gray-100 rounded-xl transition-all active:scale-95 text-base">Kết bài</button>
-                </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkKdVn45(2, this,;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             </div>
 
             <!-- Ý 3 -->
-            <div class="flex flex-wrap items-center justify-between gap-3 p-4 bg-amber-50/30 rounded-2xl border border-amber-100">
-                <span class="text-gray-800">3. Nêu cảm nghĩ, tình cảm, cảm xúc đối với phong cảnh được miêu tả:</span>
-                <div class="flex gap-2">
-                    <button onclick="checkKdVn45(3, this, 'MB')" class="px-4 py-2 bg-white hover:bg-amber-500 border-2 border-gray-100 rounded-xl transition-all active:scale-95 text-base">Mở bài</button>
-                    <button onclick="checkKdVn45(3, this, 'TB')" class="px-4 py-2 bg-white hover:bg-amber-500 border-2 border-gray-100 rounded-xl transition-all active:scale-95 text-base">Thân bài</button>
-                    <button onclick="checkKdVn45(3, this, 'KB')" class="px-4 py-2 bg-white hover:bg-amber-500 border-2 border-gray-100 rounded-xl transition-all active:scale-95 text-base">Kết bài</button>
-                </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkKdVn45(3, this,;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             </div>
         </div>
         <div id="fb-vn45-kd" class="hidden p-4 rounded-xl text-center text-lg font-black bg-emerald-50 text-emerald-800 border border-emerald-100 transition-all"></div>
@@ -188,9 +170,7 @@ export const lesson45 = {
             </div>
 
             <!-- Nộp bài -->
-            <div class="flex justify-center">
-                <button onclick="nopBaiDanY45()" class="px-8 py-4 bg-amber-500 text-white font-black text-lg rounded-2xl shadow-md hover:bg-amber-500 active:scale-95 transition-all">NỘP DÀN Ý GỬI THẦY E</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="nopBaiDanY45();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn45-dany" class="hidden p-5 rounded-2xl text-base font-bold shadow-md transition-all duration-345"></div>
         </div>
     </section>

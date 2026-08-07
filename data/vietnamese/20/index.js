@@ -238,9 +238,7 @@ export const lesson20 = {
                 </div>
             </div>
 
-            <div class="flex justify-center">
-                <button onclick="checkCauHoiVn20()" class="px-8 py-3 bg-sky-600 text-white font-black rounded-xl hover:bg-sky-600 transition-all text-base shadow-md">KIỂM TRA CÂU TRẢ LỜI ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkCauHoiVn20();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn20-ch" class="hidden text-base font-bold px-4 py-2 rounded-xl text-center"></div>
         </div>
     </section>
@@ -318,7 +316,7 @@ export const lesson20 = {
                 <li><strong class="text-yellow-800">Phần chính:</strong> tiêu đề, người nhận, nội dung báo cáo (các công việc đã thực hiện).</li>
                 <li><strong class="text-yellow-800">Phần cuối:</strong> người viết báo cáo (chữ ký, họ và tên).</li>
             </ul>
-            <p class="italic text-yellow-800 mt-4">👉 Nội dung báo cáo trình bày theo mục để dễ theo dõi.</p>
+            
         </div>
     </section>
 

@@ -157,9 +157,7 @@ export const lesson94 = {
             </div>
 
             <!-- Nút kiểm tra phần a -->
-            <div class="flex justify-center pt-2">
-                <button onclick="checkPartA_Vn94()" class="w-14 h-14 md:w-20 md:h-20 bg-blue-700 hover:bg-blue-800 text-white rounded-[2rem] font-black text-xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkPartA_Vn94();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-parta" class="hidden p-5 rounded-3xl border-2 font-bold text-lg text-center max-w-4xl mx-auto shadow-inner"></div>
         </div>
 
@@ -189,9 +187,7 @@ export const lesson94 = {
             </div>
 
             <!-- Nút kiểm tra phần b -->
-            <div class="flex justify-center pt-2">
-                <button onclick="checkPartB_Vn94()" class="w-14 h-14 md:w-20 md:h-20 bg-blue-700 hover:bg-blue-800 text-white rounded-[2rem] font-black text-xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkPartB_Vn94();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-partb" class="hidden p-5 rounded-3xl border-2 font-bold text-lg text-center max-w-4xl mx-auto shadow-inner"></div>
         </div>
 
@@ -231,9 +227,7 @@ export const lesson94 = {
             </div>
 
             <!-- Nút kiểm tra phần c -->
-            <div class="flex justify-center pt-2">
-                <button onclick="checkPartC_Vn94()" class="w-14 h-14 md:w-20 md:h-20 bg-blue-700 hover:bg-blue-800 text-white rounded-[2rem] font-black text-xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkPartC_Vn94();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-partc" class="hidden p-5 rounded-3xl border-2 font-bold text-lg text-center max-w-4xl mx-auto shadow-inner"></div>
         </div>
     </div>
@@ -266,9 +260,7 @@ export const lesson94 = {
             </ul>
         </div>
 
-        <div class="flex justify-center pt-2">
-            <button onclick="checkPart2_Vn94()" class="w-14 h-14 md:w-20 md:h-20 bg-blue-700 hover:bg-blue-800 text-white rounded-[2rem] font-black text-xl md:text-3xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="checkPart2_Vn94();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-part2" class="hidden p-5 rounded-3xl border-2 font-bold text-lg text-center max-w-4xl mx-auto shadow-inner"></div>
 
         <!-- 💡 Ghi nhớ -->

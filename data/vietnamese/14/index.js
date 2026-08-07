@@ -86,10 +86,7 @@ export const lesson14 = {
                 </div>
             </div>
             
-            <div class="flex justify-end gap-3">
-                <button onclick="xoaFormChuanBiVn14()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-xl hover:bg-gray-300 transition-all text-xl md:text-2xl">XOÁ DỮ LIỆU</button>
-                <button onclick="luuFormChuanBiVn14()" class="px-8 py-3 bg-sky-600 text-white font-black rounded-xl hover:bg-sky-600 transition-all text-xl md:text-2xl shadow-md">LƯU PHIẾU CHUẨN BỊ ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="xoaFormChuanBiVn14()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button></div>
             <div id="fb-vn14-chuanbi" class="hidden text-2xl md:text-3xl font-bold px-4 py-2 rounded-xl"></div>
         </div>
     </div>
@@ -172,13 +169,7 @@ export const lesson14 = {
                         <p class="font-black text-emerald-900 text-2xl md:text-3xl">Người có ý kiến hay</p>
                         <p class="text-xl md:text-2xl text-gray-800 font-medium">Bạn có phát hiện độc đáo, chi tiết phân tích sâu sắc, hấp dẫn.</p>
                     </div>
-                    <select id="vn14-vote-y-kien" class="w-full p-2.5 text-xl md:text-2xl border-2 border-emerald-100 rounded-lg outline-none focus:border-emerald-500 font-semibold text-gray-800">
-                        <option value="">Chọn một bạn...</option>
-                        <option value="Nam">Nam</option>
-                        <option value="Hoa">Hoa</option>
-                        <option value="Lan">Lan</option>
-                        <option value="Em">Chính em</option>
-                    </select>
+                    <input type="text" id="vn14-vote-y-kien" placeholder="Nhập tên bạn..." class="w-full p-2.5 text-xl md:text-2xl border-2 border-emerald-100 rounded-lg outline-none focus:border-emerald-500 font-semibold text-gray-800 focus:ring-2 focus:ring-emerald-200">
                 </div>
 
                 <!-- Tiêu chí 2 -->
@@ -188,49 +179,22 @@ export const lesson14 = {
                         <p class="font-black text-emerald-900 text-2xl md:text-3xl">Người trình bày hấp dẫn</p>
                         <p class="text-xl md:text-2xl text-gray-800 font-medium">Bạn phát biểu to, rõ ràng, diễn cảm, cuốn hút người nghe.</p>
                     </div>
-                    <select id="vn14-vote-trinh-bay" class="w-full p-2.5 text-xl md:text-2xl border-2 border-emerald-100 rounded-lg outline-none focus:border-emerald-500 font-semibold text-gray-800">
-                        <option value="">Chọn một bạn...</option>
-                        <option value="Nam">Nam</option>
-                        <option value="Hoa">Hoa</option>
-                        <option value="Lan">Lan</option>
-                        <option value="Em">Chính em</option>
-                    </select>
+                    <input type="text" id="vn14-vote-trinh-bay" placeholder="Nhập tên bạn..." class="w-full p-2.5 text-xl md:text-2xl border-2 border-emerald-100 rounded-lg outline-none focus:border-emerald-500 font-semibold text-gray-800 focus:ring-2 focus:ring-emerald-200">
                 </div>
 
-                <!-- Tiêu chí 3 -->class="space-y-1">
-                        <p class="text-xl md:text-3xl">🗣️</p>
-                        <p class="font-black text-emerald-800 text-base">Người trình bày hấp dẫn</p>
-                        <p class="text-xs text-gray-800 font-medium">Bạn phát biểu to, rõ ràng, diễn cảm, cuốn hút người nghe.</p>
-                    </div>
-                    <select id="vn14-vote-trinh-bay" class="w-full p-2.5 text-xl md:text-2xl border-2 border-emerald-100 rounded-lg outline-none focus:border-emerald-500 font-semibold text-gray-800">
-                        <option value="">Chọn một bạn...</option>
-                        <option value="Nam">Nam</option>
-                        <option value="Hoa">Hoa</option>
-                        <option value="Lan">Lan</option>
-                        <option value="Em">Chính em</option>
-                    </select>
-                </div>
 
                 <!-- Tiêu chí 3 -->
                 <div class="bg-white p-5 rounded-2xl border border-emerald-100 shadow-sm space-y-3 flex flex-col justify-between">
                     <div class="space-y-1">
                         <p class="text-xl md:text-3xl">🤝</p>
-                        <p class="font-black text-emerald-800 text-base">Người tham gia tích cực</p>
-                        <p class="text-xs text-gray-800 font-medium">Bạn chăm chú lắng nghe, ghi chép nhanh và tôn trọng ý kiến bạn khác.</p>
+                        <p class="font-black text-emerald-900 text-2xl md:text-3xl">Người tham gia tích cực</p>
+                        <p class="text-xl md:text-2xl text-gray-800 font-medium">Bạn chăm chú lắng nghe, ghi chép nhanh và tôn trọng ý kiến bạn khác.</p>
                     </div>
-                    <select id="vn14-vote-tich-cuc" class="w-full p-2.5 text-xl md:text-2xl border-2 border-emerald-100 rounded-lg outline-none focus:border-emerald-500 font-semibold text-gray-800">
-                        <option value="">Chọn một bạn...</option>
-                        <option value="Nam">Nam</option>
-                        <option value="Hoa">Hoa</option>
-                        <option value="Lan">Lan</option>
-                        <option value="Em">Chính em</option>
-                    </select>
+                    <input type="text" id="vn14-vote-tich-cuc" placeholder="Nhập tên bạn..." class="w-full p-2.5 text-xl md:text-2xl border-2 border-emerald-100 rounded-lg outline-none focus:border-emerald-500 font-semibold text-gray-800 focus:ring-2 focus:ring-emerald-200">
                 </div>
             </div>
 
-            <div class="flex justify-center pt-2">
-                <button onclick="nopBinhChonVn14()" class="px-8 py-3.5 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md active:scale-95">NỘP BẢNG ĐÁNH GIÁ ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="nopBinhChonVn14();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn14-evaluation" class="hidden text-base font-bold px-4 py-3 rounded-xl text-center"></div>
 
             <div class="bg-sky-50/60 p-5 rounded-2xl border border-sky-100 flex items-start gap-3">
@@ -533,8 +497,8 @@ window.nopBinhChonVn14 = function() {
 
     fb.classList.remove('hidden');
 
-    if (!yKien || !trinhBay || !tichCuc) {
-        fb.innerHTML = "⚠️ Em hãy lựa chọn bình chọn cho cả 3 tiêu chí nhé!";
+    if (!yKien.trim() || !trinhBay.trim() || !tichCuc.trim()) {
+        fb.innerHTML = "⚠️ Em hãy điền đầy đủ bình chọn cho cả 3 tiêu chí nhé!";
         fb.className = "text-2xl md:text-3xl font-bold px-4 py-3 rounded-xl bg-amber-500 text-white";
         return;
     }

@@ -35,7 +35,7 @@ export const lesson239 = {
         <!-- 🌸 Hoạt động 1: Tranh vẽ và Chủ điểm -->
         <!-- Bài 1 -->
         <section class="bg-white rounded-[40px] p-6 md:p-10 shadow-xl border border-blue-100 space-y-6">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <span class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-xl">1</span>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Chủ điểm và Ý nghĩa bức tranh</h3>
             </div>
@@ -90,7 +90,7 @@ export const lesson239 = {
         <!-- 📖 Hoạt động 2: Tóm tắt truyện đọc -->
         <!-- Bài 2 -->
         <section class="bg-white p-6 md:p-10 rounded-[40px] shadow-xl border border-blue-100 space-y-6">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <span class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-xl">2</span>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Tóm tắt câu chuyện và Cảm nhận tâm đắc</h3>
             </div>
@@ -117,9 +117,7 @@ export const lesson239 = {
                     </div>
                 </div>
 
-                <div class="flex justify-end pt-2">
-                    <button onclick="window.submitStoryReview239()" class="px-6 py-2.5 bg-blue-600 text-white font-black rounded-xl hover:bg-blue-700 transition-all">Lưu tóm tắt truyện</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="window.submitStoryReview239();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-story-239" class="hidden p-4 rounded-xl font-bold text-lg"></div>
             </div>
         </section>
@@ -127,7 +125,7 @@ export const lesson239 = {
         <!-- 🌸 Hoạt động 3: Chọn từ điền bông hoa -->
         <!-- Bài 3 -->
         <section class="bg-white p-6 md:p-10 rounded-[40px] shadow-xl border border-emerald-100 space-y-6" id="ex-239-fill">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <span class="w-10 h-10 bg-emerald-600 text-white rounded-full flex items-center justify-center font-black text-xl">3</span>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Điền từ thích hợp thay cho bông hoa</h3>
             </div>
@@ -182,17 +180,14 @@ export const lesson239 = {
                 </div>
             </div>
 
-            <div class="flex items-center justify-between pt-4">
-                <button onclick="window.resetFill239()" class="px-6 py-2.5 bg-gray-200 text-gray-700 font-bold rounded-xl hover:bg-gray-300">LÀM LẠI</button>
-                <button id="btn-check-fill" onclick="window.checkFill239()" class="w-12 h-12 md:w-16 md:h-16 bg-blue-600 text-white rounded-2xl font-black text-2xl md:text-3xl shadow-lg transition-all active:scale-95 flex items-center justify-center">E</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="window.resetFill239()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="window.checkFill239();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-fill-239" class="hidden p-4 rounded-xl font-bold text-lg mt-4 animate-in fade-in"></div>
         </section>
 
         <!-- 🌸 Hoạt động 4: Phân biệt từ gần nghĩa -->
         <!-- Bài 4 -->
         <section class="bg-white p-6 md:p-10 rounded-[40px] shadow-xl border border-sky-100 space-y-6">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <span class="w-10 h-10 bg-sky-600 text-white rounded-full flex items-center justify-center font-black text-xl">4</span>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Đặt câu phân biệt từ: ít, thưa, vắng</h3>
             </div>
@@ -215,16 +210,14 @@ export const lesson239 = {
                 </div>
             </div>
 
-            <div class="flex justify-end pt-2">
-                <button onclick="window.submitPhrase239()" class="px-6 py-2.5 bg-blue-600 text-white font-black rounded-xl hover:bg-blue-700 transition-all">Nộp câu phân biệt</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="window.submitPhrase239();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-phrase-239" class="hidden p-4 rounded-xl font-bold text-lg"></div>
         </section>
 
         <!-- 🌸 Hoạt động 5: Biện pháp liên kết câu trong đoạn văn -->
         <!-- Bài 5 -->
         <section class="bg-white p-6 md:p-10 rounded-[40px] shadow-xl border border-orange-100 space-y-6" id="ex-239-link">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <span class="w-10 h-10 bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl">5</span>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Biện pháp liên kết câu trong đoạn văn mẫu</h3>
             </div>
@@ -286,17 +279,14 @@ export const lesson239 = {
                 </div>
             </div>
 
-            <div class="flex items-center justify-between pt-4">
-                <button onclick="window.resetLink239()" class="px-6 py-2.5 bg-gray-200 text-gray-700 font-bold rounded-xl hover:bg-gray-300">LÀM LẠI</button>
-                <button id="btn-check-link" onclick="window.checkLink239()" class="w-12 h-12 md:w-16 md:h-16 bg-blue-600 text-white rounded-2xl font-black text-2xl md:text-3xl shadow-lg transition-all active:scale-95 flex items-center justify-center">E</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="window.resetLink239()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="window.checkLink239();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-link-239" class="hidden p-4 rounded-xl font-bold text-lg mt-4 animate-in fade-in"></div>
         </section>
 
         <!-- 🌸 Hoạt động 6: Viết đoạn văn tả cảnh và tự nhận xét liên kết câu -->
         <!-- Bài 6 -->
         <section class="bg-white p-6 md:p-10 rounded-[40px] shadow-xl border border-blue-100 space-y-6">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <span class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-xl">6</span>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Thực hành viết đoạn văn tả cảnh ngắn</h3>
             </div>
@@ -312,9 +302,7 @@ export const lesson239 = {
                     <input type="text" id="txt-weather-link" class="w-full p-3 border border-emerald-200 rounded-xl font-bold focus:outline-none focus:border-emerald-500 text-base" placeholder="Ví dụ: Phép lặp từ 'nắng', phép nối 'Nhờ đó'...">
                 </div>
 
-                <div class="flex justify-end pt-2">
-                    <button onclick="window.submitWeatherScene239()" class="px-6 py-2.5 bg-blue-600 text-white font-black rounded-xl hover:bg-blue-700 transition-all">Nộp bài viết tả cảnh</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="window.submitWeatherScene239();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-weather-239" class="hidden p-4 rounded-xl font-bold text-lg"></div>
             </div>
         </section>

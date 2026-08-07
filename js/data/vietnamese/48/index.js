@@ -41,33 +41,15 @@ export const lesson48 = {
         
         <div class="space-y-4 font-bold text-amber-600 text-lg md:text-xl">
             <!-- Câu 1 -->
-            <div class="flex flex-wrap items-center justify-between gap-3 p-4 bg-amber-50/30 rounded-2xl border border-amber-100">
-                <span class="text-gray-800">1. "những cây trúc vàng óng, vút cao" cảm nhận bằng:</span>
-                <div class="flex gap-2">
-                    <button onclick="checkKdVn48(1, this, 'TG')" class="px-4 py-2 bg-white hover:bg-amber-500 border-2 border-gray-100 rounded-xl transition-all active:scale-95 text-base">Thị giác (mắt)</button>
-                    <button onclick="checkKdVn48(1, this, 'ThG')" class="px-4 py-2 bg-white hover:bg-amber-500 border-2 border-gray-100 rounded-xl transition-all active:scale-95 text-base">Thính giác (tai)</button>
-                    <button onclick="checkKdVn48(1, this, 'KG')" class="px-4 py-2 bg-white hover:bg-amber-500 border-2 border-gray-100 rounded-xl transition-all active:scale-95 text-base">Khứu giác (mũi)</button>
-                </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkKdVn48(1, this,;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             </div>
 
             <!-- Câu 2 -->
-            <div class="flex flex-wrap items-center justify-between gap-3 p-4 bg-amber-50/30 rounded-2xl border border-amber-100">
-                <span class="text-gray-800">2. "gần như không có một tiếng động nào" cảm nhận bằng:</span>
-                <div class="flex gap-2">
-                    <button onclick="checkKdVn48(2, this, 'TG')" class="px-4 py-2 bg-white hover:bg-amber-500 border-2 border-gray-100 rounded-xl transition-all active:scale-95 text-base">Thị giác</button>
-                    <button onclick="checkKdVn48(2, this, 'ThG')" class="px-4 py-2 bg-white hover:bg-amber-500 border-2 border-gray-100 rounded-xl transition-all active:scale-95 text-base">Thính giác</button>
-                    <button onclick="checkKdVn48(2, this, 'KG')" class="px-4 py-2 bg-white hover:bg-amber-500 border-2 border-gray-100 rounded-xl transition-all active:scale-95 text-base">Khứu giác</button>
-                </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkKdVn48(2, this,;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             </div>
 
             <!-- Câu 3 -->
-            <div class="flex flex-wrap items-center justify-between gap-3 p-4 bg-amber-50/30 rounded-2xl border border-amber-100">
-                <span class="text-gray-800">3. "vẫn thoảng một mùi thơm nhẹ nhõm, xa ngái" cảm nhận bằng:</span>
-                <div class="flex gap-2">
-                    <button onclick="checkKdVn48(3, this, 'TG')" class="px-4 py-2 bg-white hover:bg-amber-500 border-2 border-gray-100 rounded-xl transition-all active:scale-95 text-base">Thị giác</button>
-                    <button onclick="checkKdVn48(3, this, 'ThG')" class="px-4 py-2 bg-white hover:bg-amber-500 border-2 border-gray-100 rounded-xl transition-all active:scale-95 text-base">Thính giác</button>
-                    <button onclick="checkKdVn48(3, this, 'KG')" class="px-4 py-2 bg-white hover:bg-amber-500 border-2 border-gray-100 rounded-xl transition-all active:scale-95 text-base">Khứu giác</button>
-                </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkKdVn48(3, this,;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             </div>
         </div>
         <div id="fb-vn48-kd" class="hidden p-4 rounded-xl text-center text-lg font-black bg-emerald-50 text-emerald-800 border border-emerald-100 transition-all"></div>
@@ -232,9 +214,7 @@ export const lesson48 = {
             <label id="lbl-textarea-viet" class="font-black text-amber-600 text-base md:text-lg block">📝 Viết đoạn văn của em (tối thiểu 40 từ, nên có câu chủ đề và từ ngữ gợi tả):</label>
             <textarea id="vn48-textarea-doanvan" rows="6" placeholder="Ví dụ tả sông nước: Dòng sông quê em hiền hòa uốn lượn như một dải lụa mềm ôm lấy xóm làng. Vào những buổi sáng bình minh, mặt nước sông phẳng lặng, khoác chiếc áo sương mờ dịu nhẹ. Ánh nắng ban mai le lói chiếu xuống làm dòng sông lấp lánh như dát bạc. Hàng tre xanh mát hai bên bờ khẽ đung đưa lá đón gió sớm rầm rì..." class="w-full p-4 border border-gray-100 rounded-2xl bg-white text-lg md:text-xl font-semibold focus:border-amber-500 outline-none shadow-sm"></textarea>
             
-            <div class="flex justify-center">
-                <button onclick="nopDoanVanTiet48()" class="px-8 py-3.5 bg-amber-500 text-white font-black text-lg rounded-2xl shadow-md hover:bg-amber-500 active:scale-95 transition-all">NỘP ĐOẠN VĂN GỬI THẦY E</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="nopDoanVanTiet48();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn48-doanvan" class="hidden p-5 rounded-2xl text-base font-bold shadow-md transition-all duration-348"></div>
         </div>
     </section>

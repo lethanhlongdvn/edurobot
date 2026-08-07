@@ -150,9 +150,7 @@ window.selectDe153 = function(idx) {
                 <span id="char-count-153">Độ dài: 0 ký tự (Bài văn tối thiểu cần đạt 100 ký tự)</span>
             </div>
 
-            <div class="flex justify-center pt-2">
-                <button onclick="nopBaiViet153()" class="px-8 py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl text-xl shadow-md transition-all active:scale-95">Nộp bài văn</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="nopBaiViet153();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         </div>
     </section>
 
@@ -182,9 +180,7 @@ window.selectDe153 = function(idx) {
                 </div>
             </div>
 
-            <div class="flex justify-center pt-2">
-                <button onclick="nopGopY153()" class="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl text-xl shadow-md transition-all active:scale-95">Lưu góp ý</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="nopGopY153();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         </div>
     </section>
 </div>

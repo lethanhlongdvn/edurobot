@@ -45,9 +45,7 @@ export const lesson70 = {
         </div>
         <div class="space-y-4 max-w-md mx-auto">
             <input type="text" id="ans-vn70-kd" placeholder="Gõ câu trả lời của em (Ví dụ: Mùa hè và mùa thu)..." class="w-full p-4 border-2 border-emerald-100 rounded-2xl outline-none focus:border-emerald-500 font-bold text-center text-xl md:text-2xl" />
-            <div class="flex justify-center">
-                <button onclick="kiemTraKhoiDong70()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md">KIỂM TRA ĐÁP ÁN ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraKhoiDong70();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn70-kd" class="hidden p-4 rounded-xl text-sm font-bold text-center mt-2"></div>
         </div>
     </div>

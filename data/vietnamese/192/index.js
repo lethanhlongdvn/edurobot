@@ -28,7 +28,7 @@ export const lesson192 = {
             <div class="w-full overflow-hidden rounded-3xl shadow-2xl border-8 border-white group">
                 <img src="assets/images/viet_y_kien_tan_thanh.png" alt="Viết ý kiến tán thành" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-1000">
             </div>
-            <p class="text-lg md:text-2xl text-center text-gray-500 mt-4 font-black italic">Trao đổi và bày tỏ ý kiến trong học tập</p>
+            
         </div>
     </section>
 
@@ -122,7 +122,7 @@ export const lesson192 = {
             <!-- Khối 1 -->
             <div class="p-6 bg-slate-50 border-2 border-slate-200 rounded-2xl space-y-4">
                 <p class="text-xl md:text-2xl text-slate-800 font-black leading-relaxed">"Hôm nay, lớp tôi thảo luận về chủ điểm 'Tiếp bước cha ông'. Một trong những ý kiến các bạn nêu ra là cần bảo vệ di sản của cha ông để lại. Tôi rất tán thành ý kiến này."</p>
-                <div class="flex items-center gap-4">
+                <div class="flex justify-end items-center gap-4">
                     <span class="text-lg md:text-xl font-black text-slate-600">Phần này thuộc về:</span>
                     <select id="part-q2-1" class="p-3 border-2 rounded-xl bg-white font-black text-blue-600 outline-none text-lg md:text-xl w-60">
                         <option value="">-- Chọn phần --</option>
@@ -136,7 +136,7 @@ export const lesson192 = {
             <!-- Khối 2 -->
             <div class="p-6 bg-slate-50 border-2 border-slate-200 rounded-2xl space-y-4">
                 <p class="text-xl md:text-2xl text-slate-800 font-black leading-relaxed">"Di sản là tài sản quý báu của cha ông, được trao truyền từ thế hệ này sang thế hệ khác. Tôi và bạn nhìn thấy di sản qua di tích lịch sử... Những giá trị ấy đã nối kết quá khứ với hiện tại."</p>
-                <div class="flex items-center gap-4">
+                <div class="flex justify-end items-center gap-4">
                     <span class="text-lg md:text-xl font-black text-slate-600">Phần này thuộc về:</span>
                     <select id="part-q2-2" class="p-3 border-2 rounded-xl bg-white font-black text-blue-600 outline-none text-lg md:text-xl w-60">
                         <option value="">-- Chọn phần --</option>
@@ -150,7 +150,7 @@ export const lesson192 = {
             <!-- Khối 3 -->
             <div class="p-6 bg-slate-50 border-2 border-slate-200 rounded-2xl space-y-4">
                 <p class="text-xl md:text-2xl text-slate-800 font-black leading-relaxed">"Tôi nghĩ bảo vệ di sản của cha ông để lại là trách nhiệm của thế hệ trẻ, trong đó có tôi và các bạn."</p>
-                <div class="flex items-center gap-4">
+                <div class="flex justify-end items-center gap-4">
                     <span class="text-lg md:text-xl font-black text-slate-600">Phần này thuộc về:</span>
                     <select id="part-q2-3" class="p-3 border-2 rounded-xl bg-white font-black text-blue-600 outline-none text-lg md:text-xl w-60">
                         <option value="">-- Chọn phần --</option>
@@ -162,9 +162,7 @@ export const lesson192 = {
             </div>
         </div>
 
-        <div class="flex justify-center pt-4">
-            <button onclick="check192Parts()" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl shadow-md active:scale-95 transition-all text-xl font-black">🔍 Kiểm tra</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="check192Parts();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-192-parts" class="text-xl md:text-2xl font-black text-center hidden"></div>
     </section>
 
@@ -188,9 +186,7 @@ export const lesson192 = {
             </div>
         </div>
 
-        <div class="flex justify-center">
-            <button onclick="check192Blanks()" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl shadow-md active:scale-95 transition-all text-xl font-black">🔍 Kiểm tra</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="check192Blanks();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-192-blanks" class="text-xl md:text-2xl font-black text-center hidden"></div>
     </section>
 
@@ -204,12 +200,7 @@ export const lesson192 = {
         
         <div class="p-6 bg-amber-50/30 border-2 border-amber-100 rounded-[32px] space-y-6">
             <textarea id="essay-192" rows="4" class="w-full p-6 rounded-2xl border-2 border-slate-250 focus:ring-4 focus:ring-blue-100 outline-none text-2xl md:text-3xl font-bold leading-relaxed" placeholder="Ví dụ: Em rất tán thành việc giữ gìn vệ sinh trường học. Bởi vì trường học sạch đẹp sẽ giúp..."></textarea>
-            <div class="flex justify-center">
-                <button onclick="check192EssayAI()" class="px-10 py-5 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-3 text-xl md:text-2xl uppercase tracking-wider">
-                    <span>🤖</span> 
-                    <span>Gửi cho EduRobot AI nhận xét</span>
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="check192EssayAI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-192-essay-ai" class="w-full hidden mt-4"></div>
         </div>
     </section>

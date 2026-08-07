@@ -170,14 +170,9 @@ export const lesson112 = {
 
                 <!-- Nút chấm điểm từ AI Thầy E -->
                 <div class="pt-6 border-t-2 border-dashed border-sky-200 flex flex-wrap items-center justify-between gap-4">
-                    <div class="flex items-center gap-4">
-                        <button id="btn-check-112" onclick="window.checkBookLogVn112()" class="w-14 h-14 md:w-20 md:h-20 bg-sky-600 hover:bg-sky-700 text-white rounded-[1.5rem] font-black text-2xl md:text-4xl shadow-xl transition-all active:scale-95 flex items-center justify-center shrink-0">E</button>
-                        <div>
-                            <span class="block font-bold text-gray-700 text-base md:text-lg">Nhấn nút "E" để chấm điểm phiếu đọc sách!</span>
-                            <span class="text-xs font-semibold text-gray-500">Thầy E sẽ giúp con nhận xét phiếu thu hoạch thật chi tiết.</span>
-                        </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="window.checkBookLogVn112();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                     </div>
-                    <button onclick="window.resetBookLogVn112()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all text-base md:text-lg">LÀM LẠI</button>
+                    <button onclick="window.resetBookLogVn112()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
                 </div>
             </div>
 

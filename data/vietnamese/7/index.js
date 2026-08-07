@@ -89,7 +89,7 @@ export const lesson7 = {
                     (Nếu chưa chuẩn bị sẵn truyện, em có thể chọn đọc một trong hai trích đoạn câu chuyện tuổi thơ dưới đây để làm phiếu đọc sách)
                 </p>
                 
-                <div class="flex gap-4">
+                <div class="flex justify-end items-center gap-4">
                     <button onclick="switchStory(1)" id="btn-story-1" class="px-6 py-3 bg-sky-600 text-white font-black rounded-2xl shadow-md hover:bg-sky-600 active:scale-95 transition-all text-base">Trích đoạn 1: Nhóc Ni-cô-lai</button>
                     <button onclick="switchStory(2)" id="btn-story-2" class="px-6 py-3 bg-white border-2 border-sky-100 text-sky-900 font-black rounded-2xl shadow-sm hover:bg-sky-50 active:scale-95 transition-all text-base">Trích đoạn 2: Miền quê thơ ấu</button>
                 </div>
@@ -132,9 +132,18 @@ export const lesson7 = {
 `,
     "practice": `
 <div class="space-y-12 animate-in fade-in duration-700 max-w-6xl mx-auto">
-    <!-- PHẦN 1: PHIẾU ĐỌC SÁCH TƯƠNG TÁC (CÂU 2 SGK) -->
-    <section class="bg-white p-4 rounded-[40px] shadow-lg border border-sky-50">
-        <div class="p-6 md:p-8 bg-sky-50/30 rounded-[32px] space-y-8">
+    <!-- Thanh điều hướng tab phụ -->
+    <div class="flex justify-center mb-8">
+        <div class="inline-flex bg-sky-50/50 p-1.5 rounded-2xl border border-sky-100/50 shadow-xs">
+            <button onclick="switchPracticeTab(1)" id="btn-prac-tab-1" class="px-6 py-2.5 rounded-xl text-lg font-black transition-all bg-sky-600 text-white shadow">Bài tập 1</button>
+            <button onclick="switchPracticeTab(2)" id="btn-prac-tab-2" class="px-6 py-2.5 rounded-xl text-lg font-black transition-all text-sky-800 hover:bg-sky-100/50">Bài tập 2</button>
+        </div>
+    </div>
+
+    <!-- BÀI TẬP 1 PANEL -->
+    <div id="prac-tab-panel-1" class="prac-tab-panel space-y-8 animate-in fade-in duration-300">
+        <section class="bg-white p-4 rounded-[40px] shadow-lg border border-sky-50">
+            <div class="p-6 md:p-8 bg-sky-50/30 rounded-[32px] space-y-8">
             <div class="flex items-center gap-4 mb-4">
                 <div class="w-12 h-12 bg-sky-600 text-white rounded-full flex items-center justify-center text-xl md:text-2xl font-black shadow-md">2</div>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">2. Viết phiếu đọc sách theo mẫu</h3>
@@ -189,16 +198,7 @@ export const lesson7 = {
                     </div>
                 </div>
 
-                <div class="flex flex-wrap items-center gap-4 pt-4 border-t border-sky-100">
-                    <button onclick="checkPdsWithAI()" class="px-8 py-3.5 bg-amber-500 text-white font-black text-lg rounded-2xl shadow-md hover:bg-amber-500 active:scale-95 transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-amber-900 font-black text-xs shadow-sm">E</div> 
-                        <span>CHẤM BÀI VỚI THẦY E</span>
-                    </button>
-                    <button onclick="resetPds()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all text-base">ĐẶT LẠI PHIẾU</button>
-                    <button onclick="submitPdsGlobal()" class="px-8 py-3.5 bg-sky-600 text-white font-black text-lg rounded-2xl shadow-md hover:bg-sky-600 transition-all ml-auto flex items-center gap-2">
-                        <span>NỘP PHIẾU ĐỌC SÁCH</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetPds()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkPdsWithAI(); submitPdsGlobal();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 
                 <div id="fb-vn7-pds" class="hidden mt-6 p-6 bg-amber-500 text-white rounded-2xl shadow-xl animate-in slide-in-from-top-10 duration-500">
                     <!-- AI Feedback -->
@@ -206,8 +206,10 @@ export const lesson7 = {
             </div>
         </div>
     </section>
+</div>
 
-    <!-- PHẦN 2: TRAO ĐỔI VỚI BẠN (CÂU 3 SGK) -->
+<!-- BÀI TẬP 2 PANEL -->
+<div id="prac-tab-panel-2" class="prac-tab-panel hidden space-y-8 animate-in fade-in duration-300">
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-sky-50">
         <div class="p-6 md:p-8 bg-sky-50/30 rounded-[32px] space-y-6">
             <div class="flex items-center gap-4 mb-4">
@@ -231,16 +233,11 @@ export const lesson7 = {
                 </h4>
                 <textarea id="ans-vn7-trao-doi" rows="3" placeholder="Ví dụ: Em muốn chia sẻ với các bạn truyện Nhóc Ni-cô-lai. Điều thú vị nhất là tinh thần đoàn kết giúp cả nhóm khều được bóng da rơi trên cây cao..." class="w-full p-4 rounded-xl border-2 border-gray-100 focus:border-sky-500 outline-none font-bold bg-sky-50/10 text-lg"></textarea>
                 
-                <div class="flex justify-end gap-3 pt-2">
-                    <button onclick="resetTraoDoi()" class="px-6 py-2.5 bg-gray-200 text-gray-700 font-bold rounded-xl hover:bg-gray-300 transition-all text-base">LÀM LẠI</button>
-                    <button onclick="submitTraoDoi()" class="px-8 py-3 bg-gray-800 text-white font-black text-lg rounded-2xl shadow-md hover:bg-black transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-gray-900 font-black text-xs shadow-sm">E</div>
-                        <span>NỘP BÀI THẢO LUẬN</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetTraoDoi()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="submitTraoDoi();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             </div>
         </div>
     </section>
+</div>
 
     <!-- NỘP BÀI HOÀN THÀNH TOÀN BỘ -->
     <div class="pt-6 flex justify-center">
@@ -551,6 +548,27 @@ window.submitTraoDoi = function() {
         return;
     }
     window.showMathFeedback("Nộp bài thảo luận thành công", "🌟", "Nội dung thảo luận của em đã được lưu lại để chia sẻ với cả lớp!");
+};
+
+window.switchPracticeTab = function(tabNum) {
+    document.querySelectorAll('.prac-tab-panel').forEach((el, index) => {
+        if (index + 1 === tabNum) {
+            el.classList.remove('hidden');
+        } else {
+            el.classList.add('hidden');
+        }
+    });
+
+    ['1', '2'].forEach(num => {
+        const btn = document.getElementById(`btn-prac-tab-${num}`);
+        if (btn) {
+            if (parseInt(num) === tabNum) {
+                btn.className = "px-6 py-2.5 rounded-xl text-lg font-black transition-all bg-sky-600 text-white shadow";
+            } else {
+                btn.className = "px-6 py-2.5 rounded-xl text-lg font-black transition-all text-sky-800 hover:bg-sky-100/50";
+            }
+        }
+    });
 };
 
 // --- HOÀN THÀNH TOÀN BỘ TIẾT HỌC ---

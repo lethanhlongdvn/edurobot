@@ -102,9 +102,7 @@ export const lesson119 = {
                         <label class="text-sm font-bold text-rose-800">Tranh ảnh minh họa hoặc sơ đồ mang theo:</label>
                         <input id="mindmap-vn119-phuongtien" type="text" placeholder="Ví dụ: Bức ảnh chụp Simba cùng những người bạn Hakuna Matata..." class="w-full p-2 rounded-xl border border-gray-200 focus:border-rose-500 font-bold bg-white text-gray-800 outline-none text-base">
                     </div>
-                    <div class="flex justify-center pt-2">
-                        <button onclick="kiemTraSoDo119()" class="px-5 py-2 bg-sky-600 hover:bg-sky-700 text-white text-sm font-black rounded-xl active:scale-95 transition-all">LƯU SƠ ĐỒ ✓</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="kiemTraSoDo119();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 </div>
             </div>
             <div id="fb-vn119-sodo" class="hidden mt-4 p-4 rounded-xl text-base font-bold text-center max-w-xl mx-auto"></div>
@@ -144,11 +142,7 @@ export const lesson119 = {
                 <div id="status-vn119-record" class="text-sm font-bold text-rose-500 mt-2 hidden">Đang thu âm giọng nói của em...</div>
             </div>
 
-            <div class="flex justify-center pt-2">
-                <button onclick="kiemTraTrinhBay119()" class="px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white font-black text-lg rounded-2xl shadow-md active:scale-95 transition-all flex items-center gap-2">
-                    <span>👨‍🏫 THẦY E ĐÁNH GIÁ BÀI NÓI</span>
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraTrinhBay119();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn119-trinhbay" class="hidden p-5 rounded-2xl font-bold text-lg"></div>
         </div>
     </div>
@@ -200,9 +194,7 @@ export const lesson119 = {
             </label>
         </div>
 
-        <div class="flex justify-center pt-2">
-            <button onclick="kiemTraDanhGia119()" class="px-8 py-3 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-xl transition-all text-lg shadow-md active:scale-95">XÁC NHẬN HOÀN TẤT ✓</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDanhGia119();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn119-danhgia" class="hidden p-4 rounded-xl text-lg font-bold text-center max-w-xl mx-auto"></div>
     </div>
 

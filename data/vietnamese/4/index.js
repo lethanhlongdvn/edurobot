@@ -284,10 +284,7 @@ export const lesson4 = {
                     </div>
                 </div>
 
-                <div class="flex justify-end gap-3 mt-4">
-                    <button onclick="resetWordTypes()" class="px-6 py-2.5 bg-gray-200 text-gray-700 font-bold rounded-xl hover:bg-gray-300 transition-all text-base">ĐẶT LẠI</button>
-                    <button onclick="checkWordTypes()" class="px-8 py-3 bg-blue-600 text-white font-black text-lg rounded-2xl hover:bg-blue-600 transition-all shadow-md">KIỂM TRA BÀI 1</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetWordTypes()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkWordTypes();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-word-types" class="hidden text-lg font-bold p-3 rounded-xl"></div>
             </div>
 
@@ -317,10 +314,7 @@ export const lesson4 = {
                     </div>
                 </div>
 
-                <div class="flex justify-end gap-3 mt-4">
-                    <button onclick="resetSynonyms()" class="px-6 py-2.5 bg-gray-200 text-gray-700 font-bold rounded-xl hover:bg-gray-300 transition-all text-base">ĐẶT LẠI</button>
-                    <button onclick="checkSynonyms()" class="px-8 py-3 bg-blue-600 text-white font-black text-lg rounded-2xl hover:bg-blue-600 transition-all shadow-md">KIỂM TRA BÀI 2</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetSynonyms()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkSynonyms();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-synonyms" class="hidden text-lg font-bold p-3 rounded-xl"></div>
             </div>
         </div>
@@ -375,16 +369,10 @@ export const lesson4 = {
                 </div>
             </div>
 
-            <div class="mt-8 flex flex-wrap gap-4 justify-between items-center">
-                <button onclick="resetMatchingVn4()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
+            <div class="mt-8 flex flex-wrap gap-4 justify-end items-center">
+                <button onclick="resetMatchingVn4()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
                 <div id="matching-feedback-vn4" class="hidden text-xl font-bold rounded-2xl px-6 py-3"></div>
-                <div class="flex gap-4">
-                    <button onclick="checkMatchingVn4()" class="px-8 py-3 bg-emerald-600 text-white font-black text-lg rounded-2xl hover:bg-emerald-600 transition-all shadow-md">KIỂM TRA</button>
-                    <button onclick="submitVn4Ex1()" id="btn-submit-vn4-ex1" class="px-8 py-3 bg-gray-800 text-white font-black text-lg rounded-2xl shadow-md hover:bg-black active:scale-95 transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-gray-900 font-black text-xs shadow-sm">E</div>
-                        <span>NỘP BÀI 3</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="checkMatchingVn4(); submitVn4Ex1();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             </div>
         </div>
     </section>
@@ -407,17 +395,7 @@ export const lesson4 = {
 
                 <textarea id="ans-vn4-writing" rows="4" placeholder="Ví dụ: Qua câu chuyện này, em nhận ra bảo vệ môi trường là trách nhiệm chung của tất cả mọi người. Thay vì chỉ lo lắng hay than thở trước sự ô nhiễm, chúng ta cần cùng nhau chung tay thực hiện những hành động nhỏ nhưng thiết thực..." class="w-full p-4 md:p-6 text-xl md:text-3xl rounded-2xl border-2 border-amber-100 focus:border-amber-500 outline-none shadow-sm bg-amber-50/10 font-medium leading-relaxed"></textarea>
                 
-                <div class="flex flex-wrap items-center gap-4">
-                    <button onclick="checkWritingVn4()" class="px-8 py-3 bg-amber-500 text-white font-black text-lg rounded-2xl shadow-md hover:bg-amber-500 active:scale-95 transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-amber-900 font-black text-xs shadow-sm">E</div> 
-                        <span>CHẤM BÀI</span>
-                    </button>
-                    <button onclick="resetWritingVn4()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
-                    <button onclick="submitVn4Ex2()" class="px-8 py-3 bg-gray-800 text-white font-black rounded-2xl shadow-md hover:bg-black transition-all ml-auto flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-gray-900 font-black text-xs shadow-sm">E</div>
-                        <span>NỘP BÀI 4</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetWritingVn4()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkWritingVn4(); submitVn4Ex2();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 
                 <div id="fb-vn4-writing" class="hidden mt-6 p-6 bg-amber-500 text-white rounded-2xl shadow-xl animate-in slide-in-from-top-10 duration-500">
                     <!-- AI Feedback dynamically injected -->

@@ -42,11 +42,7 @@ export const lesson176 = {
                 </p>
                 <div class="space-y-2">
                     <p class="text-lg md:text-xl font-bold text-slate-700">Chọn cách liên kết của đoạn văn:</p>
-                    <div class="flex flex-wrap gap-3">
-                        <button onclick="checkQ1(1, 'a', this)" class="px-4 py-2 rounded-xl border border-slate-350 hover:bg-slate-100 font-bold text-base md:text-lg transition-all">Lặp từ ngữ</button>
-                        <button onclick="checkQ1(2, 'a', this)" class="px-4 py-2 rounded-xl border border-slate-350 hover:bg-slate-100 font-bold text-base md:text-lg transition-all">Thay thế từ ngữ</button>
-                        <button onclick="checkQ1(3, 'a', this)" class="px-4 py-2 rounded-xl border border-slate-350 hover:bg-slate-100 font-bold text-base md:text-lg transition-all">Dùng từ ngữ nối ("Thế mà")</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="checkQ1(1,; checkQ1(2,; checkQ1(3,;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                     <div id="fb-q1-a" class="hidden text-base md:text-lg font-bold mt-2"></div>
                 </div>
             </div>
@@ -58,11 +54,7 @@ export const lesson176 = {
                 </p>
                 <div class="space-y-2">
                     <p class="text-lg md:text-xl font-bold text-slate-700">Chọn các cách liên kết được sử dụng (Có thể chọn nhiều đáp án):</p>
-                    <div class="flex flex-wrap gap-3">
-                        <button onclick="checkQ1(1, 'b', this)" class="px-4 py-2 rounded-xl border border-slate-350 hover:bg-slate-100 font-bold text-base md:text-lg transition-all">Lặp từ ngữ ("miếng võ", "đười ươi và khỉ", "sư tử")</button>
-                        <button onclick="checkQ1(2, 'b', this)" class="px-4 py-2 rounded-xl border border-slate-350 hover:bg-slate-100 font-bold text-base md:text-lg transition-all">Thay thế từ ngữ ("con thú dữ" thay cho "sư tử", "những con vật này" thay cho "đười ươi và khỉ")</button>
-                        <button onclick="checkQ1(3, 'b', this)" class="px-4 py-2 rounded-xl border border-slate-350 hover:bg-slate-100 font-bold text-base md:text-lg transition-all">Dùng từ ngữ nối</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="checkQ1(1,; checkQ1(2,; checkQ1(3,;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                     <div id="fb-q1-b" class="hidden text-base md:text-lg font-bold mt-2"></div>
                 </div>
             </div>
@@ -74,11 +66,7 @@ export const lesson176 = {
                 </p>
                 <div class="space-y-2">
                     <p class="text-lg md:text-xl font-bold text-slate-700">Chọn các cách liên kết của đoạn văn:</p>
-                    <div class="flex flex-wrap gap-3">
-                        <button onclick="checkQ1(1, 'c', this)" class="px-4 py-2 rounded-xl border border-slate-350 hover:bg-slate-100 font-bold text-base md:text-lg transition-all">Lặp từ ngữ ("nhà rông")</button>
-                        <button onclick="checkQ1(2, 'c', this)" class="px-4 py-2 rounded-xl border border-slate-350 hover:bg-slate-100 font-bold text-base md:text-lg transition-all">Thay thế từ ngữ</button>
-                        <button onclick="checkQ1(3, 'c', this)" class="px-4 py-2 rounded-xl border border-slate-350 hover:bg-slate-100 font-bold text-base md:text-lg transition-all">Dùng từ ngữ nối ("Vì vậy")</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="checkQ1(1,; checkQ1(2,; checkQ1(3,;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                     <div id="fb-q1-c" class="hidden text-base md:text-lg font-bold mt-2"></div>
                 </div>
             </div>
@@ -140,14 +128,10 @@ export const lesson176 = {
                     </select>
                     sợ em tranh công, liền bàn với vợ cho hai vợ chồng người em ra ở riêng.
                 </p>
-                <p class="text-right text-base text-gray-500 italic mt-4 font-sans">(Truyện Cây khế)</p>
+                
             </div>
 
-            <div class="flex justify-center flex-col items-center gap-4">
-                <button onclick="checkQ2()" class="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-md transition-all text-lg">
-                    ✔️ Kiểm tra kết quả
-                </button>
-                <div id="fb-q2" class="hidden text-lg font-bold text-center"></div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkQ2();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             </div>
         </div>
     </section>
@@ -170,12 +154,7 @@ export const lesson176 = {
             </div>
 
             <!-- Nút gửi và Phản hồi AI -->
-            <div class="flex justify-center flex-col items-center gap-6 pt-4">
-                <button onclick="check176Extend()" class="px-8 py-4 md:px-12 md:py-5 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-3 text-lg md:text-xl uppercase tracking-wider">
-                    <span>🤖</span> 
-                    <span>Gửi đoạn văn cho EduRobot</span>
-                </button>
-                <div id="fb-176-extend" class="w-full hidden mt-4"></div>
+            <div class="flex justify-end items-center gap-4"><button onclick="check176Extend();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             </div>
         </div>
     </section>

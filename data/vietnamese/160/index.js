@@ -174,7 +174,7 @@ export const lesson160 = {
                         <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-blue-600 font-black text-sm shadow-sm">E</div>
                         <span>NHẬN XÉT DÀN Ý</span>
                     </button>
-                    <button onclick="window.lamLaiTimY160()" class="px-6 py-4 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
+                    <button onclick="window.lamLaiTimY160()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
                 </div>
 
                 <div id="fb-160-timY" class="hidden mt-8 p-8 bg-blue-900 text-white rounded-[28px] shadow-2xl animate-in slide-in-from-top-10 duration-500">
@@ -222,12 +222,12 @@ export const lesson160 = {
 
                 <textarea id="ans-160-doanvan" rows="8" placeholder="Viết đoạn văn hoàn chỉnh tại đây. Nhớ viết thành một đoạn văn liền mạch, có đủ 3 phần: Mở đầu – Triển khai – Kết thúc..." class="w-full p-6 text-xl md:text-2xl rounded-2xl border-2 border-blue-100 focus:border-blue-500 outline-none shadow-sm bg-blue-50/5 mb-6 font-medium leading-relaxed serif-font"></textarea>
 
-                <div class="flex flex-wrap items-center gap-4">
+                <div class="flex justify-end items-center gap-4">
                     <button onclick="window.chamDoanVan160()" class="px-8 py-4 bg-blue-600 text-white font-black text-lg rounded-2xl shadow-md hover:bg-blue-700 active:scale-95 transition-all flex items-center gap-2">
                         <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-blue-600 font-black text-xs shadow-sm">E</div>
                         <span>NHẬN XÉT CHI TIẾT</span>
                     </button>
-                    <button onclick="window.lamLaiDoanVan160()" class="px-6 py-4 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
+                    <button onclick="window.lamLaiDoanVan160()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
                 </div>
 
                 <div id="fb-160-doanvan" class="hidden mt-6 p-6 bg-white border-2 border-blue-100 rounded-2xl shadow-xl animate-in slide-in-from-top-10 duration-500"></div>

@@ -79,7 +79,7 @@ export const lesson226 = {
         <!-- BÀI TẬP 1: THAY THẾ DẤU PHÙ HỢP (LỄ HỘI HANAMI) -->
         <section class="bg-white p-4 rounded-[40px] shadow-xl border border-blue-100" id="ex-226-fill">
             <div class="p-6 md:p-8 bg-blue-50/30 rounded-[32px] space-y-6">
-                <div class="flex items-center gap-4">
+                <div class="flex justify-end items-center gap-4">
                     <span class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-black">2</span>
                     <h3 class="text-2xl md:text-3xl font-black text-gray-800">Luyện tập: Điền dấu thích hợp</h3>
                 </div>
@@ -140,10 +140,7 @@ export const lesson226 = {
                     </div>
                 </div>
 
-                <div class="flex items-center justify-between pt-4">
-                    <button onclick="window.resetLt1_226()" class="px-6 py-2.5 bg-gray-200 text-gray-700 font-bold rounded-xl hover:bg-gray-300">LÀM LẠI</button>
-                    <button id="btn-check-226-1" onclick="window.checkLt1_226()" class="w-12 h-12 md:w-16 md:h-16 bg-blue-600 text-white rounded-2xl font-black text-2xl md:text-3xl shadow-lg transition-all active:scale-95 flex items-center justify-center">E</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="window.resetLt1_226()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="window.checkLt1_226();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-lt1-226" class="hidden p-4 rounded-xl font-bold text-lg mt-4 animate-in fade-in"></div>
             </div>
         </section>
@@ -151,7 +148,7 @@ export const lesson226 = {
         <!-- BÀI TẬP 2: VIẾT ĐOẠN VĂN GIỚI THIỆU THẮNG CẢNH -->
         <section class="bg-white p-4 rounded-[40px] shadow-xl border border-emerald-100" id="ex-226-write">
             <div class="p-6 md:p-8 bg-emerald-50/30 rounded-[32px] space-y-6">
-                <div class="flex items-center gap-4">
+                <div class="flex justify-end items-center gap-4">
                     <span class="w-10 h-10 bg-emerald-600 text-white rounded-full flex items-center justify-center font-black">3</span>
                     <h3 class="text-2xl md:text-3xl font-black text-gray-800">Luyện viết đoạn văn</h3>
                 </div>
@@ -163,10 +160,7 @@ export const lesson226 = {
                     <textarea id="ipt-226-paragraph" rows="4" placeholder="Ví dụ: Vịnh Hạ Long – một trong bảy kỳ quan thiên nhiên mới của thế giới – là niềm tự hào của đất nước Việt Nam. Nơi đây thu hút du khách bởi vẻ đẹp kỳ vĩ của hàng nghìn hòn đảo đá vôi lớn nhỏ..."
                         class="w-full p-4 border-2 border-emerald-100 rounded-2xl outline-none focus:border-emerald-500 text-xl font-medium bg-white"></textarea>
                     
-                    <div class="flex items-center justify-between">
-                        <button onclick="document.getElementById('ipt-226-paragraph').value = ''" class="px-6 py-2.5 bg-gray-250 text-gray-700 font-bold rounded-xl hover:bg-gray-300">XÓA TRẮNG</button>
-                        <button onclick="window.checkLt2_226()" class="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-lg rounded-2xl shadow-md transition-all active:scale-95">NỘP BÀI TẬP</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="window.checkLt2_226();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                     <div id="fb-lt2-226" class="hidden p-4 rounded-xl font-bold text-lg mt-4 animate-in fade-in"></div>
                 </div>
             </div>

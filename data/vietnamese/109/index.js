@@ -89,7 +89,7 @@ export const lesson109 = {
                     <p class="indent-10">Những vở ba lê nổi tiếng thế giới có thể kể đến như <em>Hồ thiên nga</em>, <em>Người đẹp ngủ trong rừng</em>, <em>Lọ Lem</em>,... Mỗi vở kịch là một câu chuyện ca ngợi tình yêu, sự thánh thiện và ước mơ vươn tới những điều tốt đẹp của con người trong cuộc sống.</p>
                     <p class="indent-10">Trong các vở ba lê, người diễn viên dùng động tác múa để thể hiện nội dung thay cho lời nói. Như trong vở <em>Hồ thiên nga</em>, các diễn viên thực hiện những cú xoay người đẹp mắt và chuẩn xác, những bước đi nhẹ như cánh hoa hé mở khiến khán giả có cảm giác được ngắm nhìn một đàn thiên nga đang lướt trên mặt hồ. Khi diễn viên chính đứng một chân xoay liên tục tới 32 vòng trên đầu mũi chân, khán giả cũng cảm nhận được nhân vật đang mong muốn thể hiện sức mạnh một cách mãnh liệt. Để thực hiện được những kĩ thuật rất khó này, người diễn viên phải dày công khổ luyện trong một thời gian dài.</p>
                     <p class="indent-10">Hiện nay, ba lê là môn nghệ thuật được nhiều người yêu thích và được dạy ở các trường múa trên khắp thế giới.</p>
-                    <p class="text-right font-bold text-gray-500 mt-4 md:text-xl">(Tuệ Nhi tổng hợp)</p>
+                    
                 </div>
             </div>
         </div>
@@ -234,7 +234,7 @@ export const lesson109 = {
             <!-- Nút E chấm điểm sắp xếp -->
             <div class="mt-8 flex justify-center gap-4">
                 <button id="btn-check-109-1" onclick="window.checkOrderVn109()" class="w-14 h-14 md:w-24 md:h-24 bg-sky-600 hover:bg-sky-700 text-white rounded-[1.5rem] md:rounded-[2rem] font-black text-2xl md:text-5xl shadow-xl transition-all active:scale-95 flex items-center justify-center">E</button>
-                <button onclick="window.resetOrderVn109()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all text-lg">LÀM LẠI</button>
+                <button onclick="window.resetOrderVn109()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
             </div>
             <div id="order-feedback" class="hidden mt-6 p-4 rounded-xl font-bold text-lg text-center animate-in fade-in duration-300"></div>
         </div>
@@ -330,8 +330,8 @@ export const lesson109 = {
 
                 <!-- Nút check Dropdown Luyện tập 2 -->
                 <div class="mt-8 flex items-center gap-4">
-                    <button id="btn-check-109-2" onclick="window.checkDropdownVn109()" class="w-12 h-12 md:w-16 md:h-16 bg-emerald-600 hover:bg-emerald-700 text-white rounded-[1.2rem] font-black text-xl md:text-3xl shadow-lg transition-all active:scale-95 flex items-center justify-center">E</button>
-                    <button onclick="window.resetDropdownVn109()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all text-lg">LÀM LẠI</button>
+                    <button id="btn-check-109-2" onclick="window.checkDropdownVn109()" class="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
+                    <button onclick="window.resetDropdownVn109()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
                 </div>
                 <div id="dropdown-feedback" class="hidden mt-4 p-4 rounded-xl font-bold text-lg text-center animate-in fade-in duration-300"></div>
             </div>

@@ -263,7 +263,7 @@ export const lesson165 = {
                         <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-red-600 font-black text-sm shadow-sm">E</div>
                         <span>KIỂM TRA ĐOẠN VĂN</span>
                     </button>
-                    <button onclick="window.resetPractice165()" class="px-6 py-4 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
+                    <button onclick="window.resetPractice165()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
                 </div>
                 <div id="fb-165-hdt2" class="hidden mt-6 p-6 rounded-2xl shadow-xl animate-in slide-in-from-top-10 duration-500 text-xl font-bold"></div>
             </div>

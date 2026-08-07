@@ -136,14 +136,12 @@ export const lesson_232_viet = {
                                         
                                         <div class="mt-8 p-6 bg-white rounded-[32px] shadow-xl border border-blue-100">
                                             <p class="text-xl font-bold text-gray-800 mb-4 font-merriweather italic">Em hãy nhấn nút bên dưới để hệ thống hỗ trợ em tìm ý và hoàn thiện đoạn văn nhé!</p>
-                                            <div class="flex flex-wrap gap-4">
+                                            <div class="flex justify-end items-center gap-4">
                                                 <button onclick="checkAI_232Viet()" class="px-8 py-3 bg-rose-600 text-white text-lg font-black rounded-2xl shadow-lg hover:bg-rose-700 active:scale-95 flex items-center gap-2">
                                                     <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-rose-600 font-black text-xs shadow-sm">E</div>
                                                     CHẤM BÀI
                                                 </button>
-                                                <button onclick="reset232Viet()" class="px-6 py-4 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all flex items-center gap-2">
-                                                    LÀM LẠI
-                                                </button>
+                                                <button onclick="reset232Viet()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
                                                 <button onclick="submitV232() " class="px-10 py-4 bg-gray-900 text-white font-black text-xl rounded-2xl shadow-lg hover:bg-black active:scale-95 transition-all ml-auto flex items-center gap-2">
                                                     <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-gray-900 font-black text-xs shadow-sm">E</div>
                                                     <span>NỘP BÀI TÌM Ý</span>
@@ -232,7 +230,7 @@ window.checkAI_232Viet = async function () {
 
     const fb = document.getElementById('fb-232-viet');
     fb.classList.remove('hidden');
-    fb.innerHTML = `<div class="flex items-center gap-4"><div class="animate-spin rounded-full h-8 w-8 border-4 border-white border-t-transparent"></div><p class="text-xl font-bold italic">Hệ thống đang xem qua các ý của em...</p></div>`;
+    fb.innerHTML = `<div class="flex justify-end items-center gap-4"><div class="animate-spin rounded-full h-8 w-8 border-4 border-white border-t-transparent"></div><p class="text-xl font-bold italic">Hệ thống đang xem qua các ý của em...</p></div>`;
 
     if (typeof askAI === 'function') {
         const prompt = `Em hãy nhận xét các ý tưởng cho đoạn văn của học sinh. 

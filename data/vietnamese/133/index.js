@@ -88,7 +88,7 @@ export const lesson133 = {
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-blue-50">
         <div class="p-6 md:p-8 bg-blue-50/30 rounded-[32px] space-y-6">
             <div class="flex items-center justify-between flex-wrap gap-4 border-b border-blue-100 pb-4">
-                <div class="flex items-center gap-4">
+                <div class="flex justify-end items-center gap-4">
                     <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl md:text-2xl font-black shadow-md">1</div>
                     <h3 class="text-2xl md:text-3xl font-black text-gray-800">Ghi chép Phiếu đọc sách tương tác</h3>
                 </div>
@@ -174,7 +174,7 @@ export const lesson133 = {
     <!-- BÀI TẬP 2: CHIA SẺ VỚI NGƯỜI THÂN -->
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-blue-50">
         <div class="p-6 md:p-8 bg-amber-50/30 rounded-[32px] space-y-6">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <div class="w-12 h-12 bg-amber-600 text-white rounded-xl flex items-center justify-center text-xl md:text-2xl font-black shadow-md">2</div>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Chia sẻ việc tốt em đã làm hoặc mong muốn làm</h3>
             </div>
@@ -185,11 +185,7 @@ export const lesson133 = {
 
             <textarea id="dt-vn133-chiase" rows="4" placeholder="Nhập chia sẻ của em tại đây (ít nhất 15 từ)..." class="w-full p-6 bg-white border-2 border-amber-100 rounded-3xl outline-none focus:border-amber-500 font-medium text-xl md:text-2xl text-gray-800 shadow-inner"></textarea>
             
-            <div class="flex justify-end">
-                <button onclick="nopChiaSe133()" class="px-8 py-4 bg-amber-600 text-white font-black text-xl rounded-2xl hover:bg-amber-700 shadow-lg shadow-amber-200 active:scale-95 transition-all">
-                    Gửi chia sẻ
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="nopChiaSe133();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="result-chiase-133" class="mt-4 p-6 bg-white rounded-2xl border border-emerald-250 font-bold text-xl md:text-2xl hidden text-emerald-800"></div>
         </div>
     </section>

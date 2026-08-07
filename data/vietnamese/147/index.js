@@ -36,7 +36,7 @@ export const lesson147 = {
         </div>
 
         <!-- Tab Headers -->
-        <div class="flex flex-wrap gap-4">
+        <div class="flex justify-end items-center gap-4">
             <button onclick="switchTabVn147(0)" id="vn147-tab-0" class="px-6 py-4 rounded-2xl font-black text-xl md:text-2xl transition-all bg-blue-600 text-white shadow-md">
                 Bài thơ 1: Chú đi tuần
             </button>

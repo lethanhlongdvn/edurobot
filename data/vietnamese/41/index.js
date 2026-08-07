@@ -253,9 +253,7 @@ export const lesson41 = {
                 <textarea id="vn41-textarea-cau" rows="4" placeholder="Ví dụ: Quan sát dòng sông quê em vào buổi sáng bình minh: dòng sông phẳng lặng như một dải lụa mềm vắt qua đồng ruộng. Nước sông đùng đục đỏ ngầu phù sa. Hai bên bờ sông, hàng tre xanh mát rì rào vẫy lá đón gió sớm..." class="w-full p-4 border border-gray-100 rounded-2xl bg-white text-xl md:text-2xl font-semibold focus:border-sky-500 outline-none shadow-sm"></textarea>
             </div>
             
-            <div class="flex justify-center">
-                <button onclick="nopBaiTapQuanSat41()" class="px-8 py-3.5 bg-sky-600 text-white font-black text-lg rounded-2xl shadow-md hover:bg-sky-600 active:scale-95 transition-all">NỘP BÀI GỬI THẦY E</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="nopBaiTapQuanSat41();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn41-lamvan" class="hidden p-5 rounded-2xl text-base font-bold shadow-md transition-all duration-341"></div>
         </div>
     </section>

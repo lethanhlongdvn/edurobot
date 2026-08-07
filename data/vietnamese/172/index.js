@@ -252,12 +252,7 @@ export const lesson172 = {
                 </div>
 
                 <!-- Nút gửi và Phản hồi AI -->
-                <div class="flex justify-center flex-col items-center gap-6 pt-4">
-                    <button onclick="check172ExtendAll()" class="px-8 py-4 md:px-12 md:py-5 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-3 text-lg md:text-xl uppercase tracking-wider">
-                        <span>🤖</span> 
-                        <span>Gửi bài cho EduRobot</span>
-                    </button>
-                    <div id="fb-172-extend-all" class="w-full hidden mt-4"></div>
+                <div class="flex justify-end items-center gap-4"><button onclick="check172ExtendAll();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 </div>
              </div>
         </div>

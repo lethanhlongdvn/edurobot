@@ -170,10 +170,7 @@ export const lesson16 = {
                     </div>
                     <p class="text-xs text-gray-800 text-right italic">(Theo Vũ Tú Nam)</p>
                     
-                    <div class="flex gap-2 justify-end my-2">
-                        <button onclick="datLaiTuXungHoVn16('a')" class="px-5 py-2.5 bg-gray-200 text-gray-700 font-bold rounded-xl hover:bg-gray-300 transition-all text-xl md:text-2xl">Đặt lại</button>
-                        <button onclick="kiemTraTuXungHoVn16('a')" class="px-6 py-2.5 bg-sky-600 text-white font-black rounded-xl hover:bg-sky-600 transition-all text-xl md:text-2xl shadow-md">Kiểm tra từ xưng hô ✓</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="datLaiTuXungHoVn16(" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="kiemTraTuXungHoVn16(;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                     <div id="fb-vn16-txh-a" class="hidden text-2xl md:text-3xl font-bold px-3 py-1.5 rounded-lg text-center"></div>
 
                     <p class="text-sm font-bold text-sky-800">👉 Nhận xét thái độ của người bà đối với cháu:</p>
@@ -337,9 +334,7 @@ export const lesson16 = {
                 </div>
             </div>
 
-            <div class="flex justify-center pt-2">
-                <button onclick="kiemTraBai2Vn16()" class="px-8 py-3 bg-sky-600 text-white font-black rounded-xl hover:bg-sky-600 transition-all text-base shadow-md">KIỂM TRA ĐẠI TỪ THAY THẾ ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraBai2Vn16();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn16-b2" class="hidden text-base font-bold px-4 py-2 rounded-xl text-center"></div>
         </div>
     </section>
@@ -436,9 +431,7 @@ export const lesson16 = {
                 </div>
             </div>
 
-            <div class="flex justify-center pt-2">
-                <button onclick="kiemTraBai3Vn16()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md">KIỂM TRA MỤC ĐÍCH HỎI ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraBai3Vn16();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn16-b3" class="hidden text-base font-bold px-4 py-2 rounded-xl text-center"></div>
         </div>
     </section>

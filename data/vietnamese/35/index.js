@@ -103,7 +103,7 @@ export const lesson35 = {
     <!-- 📝 PHIẾU ĐỌC SÁCH TƯƠNG TÁC -->
     <div class="bg-white p-6 md:p-8 rounded-[36px] border border-sky-100 shadow-xl space-y-6">
         <div class="flex items-center justify-between border-b border-sky-100 pb-4">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <div class="w-12 h-12 bg-sky-600 text-white rounded-xl flex items-center justify-center text-2xl md:text-3xl font-black shadow-md">📝</div>
                 <div>
                     <h3 class="text-2xl md:text-3xl font-black text-gray-800">2. Viết phiếu đọc sách theo mẫu</h3>
@@ -159,9 +159,7 @@ export const lesson35 = {
                 </div>
             </div>
 
-            <div class="flex justify-center pt-2">
-                <button onclick="nopPhieuDoc35()" class="px-8 py-3 bg-emerald-600 hover:bg-emerald-600 text-white rounded-xl shadow-md font-black text-lg active:scale-95 transition-all">NỘP PHIẾU ĐỌC SÁCH ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="nopPhieuDoc35();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn35-phieu" class="hidden p-5 rounded-2xl text-base font-bold shadow-md transition-all duration-335"></div>
         </div>
     </div>
@@ -199,9 +197,7 @@ export const lesson35 = {
             </div>
         </div>
 
-        <div class="flex justify-center">
-            <button onclick="checkDiscussVn35()" class="px-6 py-2 bg-sky-600 hover:bg-sky-600 text-white rounded-xl font-bold shadow-md transition-all active:scale-95 text-lg">Kiểm tra đám mây 3</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="checkDiscussVn35();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn35-discuss" class="hidden p-4 rounded-xl text-center text-lg font-bold"></div>
     </div>
 
@@ -256,9 +252,7 @@ export const lesson35 = {
             <label class="text-gray-800 text-sm block">📓 Sổ tay ghi chép thông tin động vật Sách đỏ Việt Nam của em:</label>
             <textarea id="vn35-sachdo" rows="4" placeholder="Nhấp chọn Ghi chép nhanh ở trên hoặc tự gõ thông tin ghi chép về loài thú Sách đỏ mà em đã tìm hiểu..." class="w-full p-4 border border-gray-100 rounded-2xl bg-white text-xl md:text-2xl focus:border-sky-500 focus:ring-1 focus:ring-sky-600 outline-none shadow-sm"></textarea>
             
-            <div class="flex justify-center pt-2">
-                <button onclick="nopGhiChepSdVn35()" class="px-8 py-3.5 bg-sky-600 text-white font-black text-lg rounded-2xl shadow-md hover:bg-sky-600 active:scale-95 transition-all">NỘP SỔ TAY GHI CHÉP</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="nopGhiChepSdVn35();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn35-sachdo" class="hidden p-5 rounded-2xl text-base font-bold shadow-md transition-all duration-335"></div>
         </div>
 

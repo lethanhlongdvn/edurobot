@@ -198,14 +198,7 @@ export const lesson_232_nhung_bup_che_tren_cay_co_thu = {
                                             
                                             <textarea id="ai-232-lt2" rows="3" placeholder="Ví dụ: Chè Tà Xùa khi uống vào hơi chát nhưng vị ngọt của nó luôn đọng lại mãi trong lòng người thưởng thức." class="w-full p-6 serif-font text-lg md:text-2xl rounded-2xl border-2 border-blue-100 focus:border-blue-400 outline-none shadow-sm bg-blue-50/20 mb-6"></textarea>
                                             
-                                            <div class="flex flex-wrap items-center gap-4">
-                                                <button onclick="checkCauGhep232()" class="px-10 py-4 bg-blue-600 text-white font-black text-xl rounded-2xl shadow-lg hover:bg-blue-700 active:scale-95 transition-all flex items-center gap-3">
-                                                    <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-blue-600 font-black text-sm shadow-sm">E</div> 
-                                                    <span>CHẤM BÀI</span>
-                                                </button>
-                                                <button onclick="resetLTVC('ai-232-lt2'); document.getElementById('fb-ai-232-lt2').classList.add('hidden');" class="px-6 py-4 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
-                                                <button onclick="submitLTVCUnified('232-doc-lt')" class="px-8 py-4 bg-gray-800 text-white font-black rounded-2xl shadow-lg hover:bg-black transition-all ml-auto flex items-center gap-2">
-                                                    <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-gray-800 font-black text-xs shadow-sm">E</div>
+                                            <div class="flex justify-end items-center gap-4"><button onclick="resetLTVC(" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkCauGhep232();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                                                     <span>NỘP BÀI</span>
                                                 </button>
                                             </div>
