@@ -34,7 +34,7 @@ export const lesson235 = {
 
         <!-- 🧩 Khởi động (Warmup) -->
         <section class="bg-white rounded-[40px] p-6 md:p-10 shadow-xl border border-blue-100 space-y-6">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <span class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-black">1</span>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Khởi động: So sánh hai bức tranh</h3>
             </div>
@@ -57,9 +57,7 @@ export const lesson235 = {
 
             <div class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100 space-y-4">
                 <textarea id="warmup-response-235" class="w-full p-4 border-2 border-blue-200 rounded-xl font-medium focus:outline-none focus:border-blue-500 text-lg" rows="3" placeholder="Em hãy chia sẻ bức tranh mình thích và lý do tại sao nhé..."></textarea>
-                <div class="flex justify-end">
-                    <button onclick="window.checkWarmup235()" class="px-6 py-2.5 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition-colors">Gửi chia sẻ</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="window.checkWarmup235();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-warmup-235" class="hidden p-4 rounded-xl font-bold text-lg mt-2"></div>
             </div>
         </section>
@@ -130,7 +128,7 @@ export const lesson235 = {
     <div class="space-y-8 md:space-y-12 animate-in fade-in duration-700 max-w-4xl mx-auto pb-12">
         <!-- 📖 Hoạt động 1: Trả lời câu hỏi (Accordion) -->
         <section class="bg-white p-6 md:p-10 rounded-[40px] shadow-xl border border-blue-100 space-y-6">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <span class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-black">2</span>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Đọc hiểu: Trả lời câu hỏi tìm hiểu bài</h3>
             </div>
@@ -220,7 +218,7 @@ export const lesson235 = {
         <!-- 📚 Luyện tập ngữ pháp - Bài 1: Chỉ ra biện pháp liên kết (Tương tác) -->
         <section class="bg-white p-6 md:p-10 rounded-[40px] shadow-xl border border-emerald-100" id="ex-235-link">
             <div class="space-y-6">
-                <div class="flex items-center gap-4">
+                <div class="flex justify-end items-center gap-4">
                     <span class="w-10 h-10 bg-emerald-600 text-white rounded-full flex items-center justify-center font-black">3</span>
                     <h3 class="text-2xl md:text-3xl font-black text-gray-800">Luyện tập 1: Phép liên kết trong đoạn văn</h3>
                 </div>
@@ -251,10 +249,7 @@ export const lesson235 = {
                     </div>
                 </div>
 
-                <div class="flex items-center justify-between pt-4">
-                    <button onclick="window.resetLink235()" class="px-6 py-2.5 bg-gray-200 text-gray-700 font-bold rounded-xl hover:bg-gray-300">LÀM LẠI</button>
-                    <button id="btn-check-link" onclick="window.checkLink235()" class="w-12 h-12 md:w-16 md:h-16 bg-blue-600 text-white rounded-2xl font-black text-2xl md:text-3xl shadow-lg transition-all active:scale-95 flex items-center justify-center">E</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="window.resetLink235()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="window.checkLink235();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-link-235" class="hidden p-4 rounded-xl font-bold text-lg mt-4 animate-in fade-in"></div>
             </div>
         </section>
@@ -262,7 +257,7 @@ export const lesson235 = {
         <!-- 📚 Luyện tập ngữ pháp - Bài 2: Tạo câu ghép (Tương tác) -->
         <section class="bg-white p-6 md:p-10 rounded-[40px] shadow-xl border border-sky-100" id="ex-235-comp">
             <div class="space-y-6">
-                <div class="flex items-center gap-4">
+                <div class="flex justify-end items-center gap-4">
                     <span class="w-10 h-10 bg-sky-600 text-white rounded-full flex items-center justify-center font-black">4</span>
                     <h3 class="text-2xl md:text-3xl font-black text-gray-800">Luyện tập 2: Hoàn thành câu ghép</h3>
                 </div>
@@ -303,10 +298,7 @@ export const lesson235 = {
                     </div>
                 </div>
 
-                <div class="flex items-center justify-between pt-4">
-                    <button onclick="window.resetComp235()" class="px-6 py-2.5 bg-gray-200 text-gray-700 font-bold rounded-xl hover:bg-gray-300">LÀM LẠI</button>
-                    <button id="btn-check-comp" onclick="window.checkComp235()" class="w-12 h-12 md:w-16 md:h-16 bg-blue-600 text-white rounded-2xl font-black text-2xl md:text-3xl shadow-lg transition-all active:scale-95 flex items-center justify-center">E</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="window.resetComp235()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="window.checkComp235();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-comp-235" class="hidden p-4 rounded-xl font-bold text-lg mt-4 animate-in fade-in"></div>
             </div>
         </section>
@@ -314,7 +306,7 @@ export const lesson235 = {
         <!-- 📚 Luyện tập ngữ pháp - Bài 3: Phân loại tên riêng nước ngoài (Tương tác) -->
         <section class="bg-white p-6 md:p-10 rounded-[40px] shadow-xl border border-orange-100" id="ex-235-name">
             <div class="space-y-6">
-                <div class="flex items-center gap-4">
+                <div class="flex justify-end items-center gap-4">
                     <span class="w-10 h-10 bg-orange-600 text-white rounded-full flex items-center justify-center font-black">5</span>
                     <h3 class="text-2xl md:text-3xl font-black text-gray-800">Luyện tập 3: Phân loại cách viết tên riêng nước ngoài</h3>
                 </div>
@@ -362,10 +354,7 @@ export const lesson235 = {
                     </div>
                 </div>
 
-                <div class="flex items-center justify-between pt-6">
-                    <button onclick="window.resetName235()" class="px-6 py-2.5 bg-gray-200 text-gray-700 font-bold rounded-xl hover:bg-gray-300">LÀM LẠI</button>
-                    <button id="btn-check-name" onclick="window.checkName235()" class="w-12 h-12 md:w-16 md:h-16 bg-blue-600 text-white rounded-2xl font-black text-2xl md:text-3xl shadow-lg transition-all active:scale-95 flex items-center justify-center">E</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="window.resetName235()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="window.checkName235();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-name-235" class="hidden p-4 rounded-xl font-bold text-lg mt-4 animate-in fade-in"></div>
             </div>
         </section>

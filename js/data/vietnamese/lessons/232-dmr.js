@@ -147,7 +147,7 @@ export const lesson_232_dmr = {
                                     </div>
 
                                     <div class="mt-8 pt-8 border-t-2 border-dashed border-blue-100 flex flex-col md:flex-row items-center justify-between gap-6">
-                                        <div class="flex items-center gap-4">
+                                        <div class="flex justify-end items-center gap-4">
                                             <span class="font-black text-blue-600 uppercase">Mức độ yêu thích:</span>
                                             <div class="flex gap-2">
                                                 <button onclick="setFavorite(1)" class="fav-star text-xl md:text-3xl text-gray-300 hover:scale-110 transition-transform">★</button>
@@ -157,11 +157,11 @@ export const lesson_232_dmr = {
                                                 <button onclick="setFavorite(5)" class="fav-star text-xl md:text-3xl text-gray-300 hover:scale-110 transition-transform">★</button>
                                             </div>
                                         </div>
-                                        <div class="flex gap-4">
+                                        <div class="flex justify-end items-center gap-4">
                                             <button onclick="check232DMR()" class="px-10 py-4 bg-blue-600 text-white font-black text-xl rounded-2xl shadow-lg hover:bg-blue-700 active:scale-95 transition-all flex items-center gap-3">
                                                 <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-blue-600 font-black text-sm shadow-sm">E</div> KIỂM TRA
                                             </button>
-                                            <button onclick="reset232DMR()" class="px-6 py-4 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
+                                            <button onclick="reset232DMR()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
                                         </div>
                                     </div>
                                 </div>
@@ -269,7 +269,7 @@ window.check232DMR = async function () {
 
     const fb = document.getElementById('fb-232-dmr');
     fb.classList.remove('hidden');
-    fb.innerHTML = `<div class="flex items-center gap-4"><div class="animate-spin rounded-full h-8 w-8 border-4 border-blue-600 border-t-transparent"></div><p class="text-xl font-bold italic text-blue-600">Hệ thống đang xem qua phiếu của em...</p></div>`;
+    fb.innerHTML = `<div class="flex justify-end items-center gap-4"><div class="animate-spin rounded-full h-8 w-8 border-4 border-blue-600 border-t-transparent"></div><p class="text-xl font-bold italic text-blue-600">Hệ thống đang xem qua phiếu của em...</p></div>`;
 
     if (typeof askAI === 'function') {
         const prompt = `Em hãy nhận xét phiếu đọc sách của học sinh. 

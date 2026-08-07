@@ -243,11 +243,7 @@ export const lesson190 = {
                 Từ năm 1075, khoa thi <input type="text" id="blank-3" class="w-32 p-1.5 border rounded-lg text-center text-blue-600 font-bold outline-none border-slate-300" placeholder="..."> đầu tiên bắt đầu mở. Qua nhiều thế kỷ, lịch sử khoa cử nước nhà đã ghi dấu <input type="text" id="blank-4" class="w-20 p-1.5 border rounded-lg text-center text-blue-600 font-bold outline-none border-slate-300" placeholder="..."> khoa thi, lấy đỗ <input type="text" id="blank-5" class="w-28 p-1.5 border rounded-lg text-center text-blue-600 font-bold outline-none border-slate-300" placeholder="..."> tiến sĩ. 
                 Đến nay, tại Văn Miếu vẫn còn lưu giữ 82 tấm <input type="text" id="blank-6" class="w-32 p-1.5 border rounded-lg text-center text-blue-600 font-bold outline-none border-slate-300" placeholder="..."> như một chứng tích văn hiến quý báu.
             </div>
-            <div class="flex justify-center">
-                <button onclick="check190FillBlanks()" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-md active:scale-95 transition-all text-lg">
-                    🔍 Kiểm tra đáp án
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="check190FillBlanks();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-190-blanks" class="text-base font-black text-center hidden"></div>
         </div>
     </section>
@@ -262,12 +258,7 @@ export const lesson190 = {
         
         <div class="p-6 bg-amber-50/30 border border-amber-100 rounded-3xl space-y-4">
             <textarea id="essay-190" rows="4" class="w-full p-4 rounded-xl border border-slate-250 focus:ring-4 focus:ring-blue-100 outline-none text-xl md:text-2xl font-semibold" placeholder="Nhập đoạn văn của em tại đây..."></textarea>
-            <div class="flex justify-center">
-                <button onclick="check190EssayAI()" class="px-8 py-4 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-3 text-lg uppercase tracking-wider">
-                    <span>🤖</span> 
-                    <span>Nộp cho EduRobot AI nhận xét</span>
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="check190EssayAI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-190-essay-ai" class="w-full hidden mt-4"></div>
         </div>
     </section>

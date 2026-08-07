@@ -183,9 +183,7 @@ export const lesson30 = {
                 </div>
             </div>
 
-            <div class="flex justify-start pt-2">
-                <button onclick="checkOddWords()" class="px-8 py-3 bg-sky-600 text-white font-black rounded-xl hover:bg-sky-600 transition-all text-base shadow-md">KIỂM TRA ĐÁP ÁN ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkOddWords();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn30-odd" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2 shadow-md"></div>
         </div>
     </section>
@@ -222,9 +220,7 @@ export const lesson30 = {
                 </button>
             </div>
 
-            <div class="flex justify-start pt-2">
-                <button onclick="checkIdiomCards()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md">KIỂM TRA THÀNH NGỮ ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkIdiomCards();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn30-idiom" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2 shadow-md"></div>
         </div>
     </section>
@@ -268,12 +264,10 @@ export const lesson30 = {
                     </select>
                     của mùa thu. Vì thế, bầy voi cứ theo sau những cơn mưa mà đi. Đó là luật lệ của rừng.
                 </p>
-                <p class="text-right text-gray-800 font-bold mt-4 text-xl md:text-2xl">(Theo Vũ Hùng)</p>
+                
             </div>
 
-            <div class="flex justify-start pt-2">
-                <button onclick="checkParagraphSelects()" class="px-8 py-3 bg-amber-500 text-white font-black rounded-xl hover:bg-amber-500 transition-all text-base shadow-md">KIỂM TRA ĐOẠN VĂN ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkParagraphSelects();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn30-para" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2 shadow-md"></div>
         </div>
     </section>

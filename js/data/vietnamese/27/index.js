@@ -199,9 +199,7 @@ export const lesson27 = {
             </div>
         </div>
 
-        <div class="flex justify-center gap-4">
-            <button onclick="nopBaoCaoChinhSua27()" class="px-8 py-3.5 bg-sky-600 text-white font-black text-lg rounded-2xl shadow-md hover:bg-sky-600 active:scale-95 transition-all">NỘP BẢN BÁO CÁO ĐÃ SỬA</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="nopBaoCaoChinhSua27();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn27-chinhsua" class="hidden p-5 rounded-2xl text-base font-bold shadow-md bg-emerald-600 text-white transition-all duration-327"></div>
     </div>
 

@@ -83,7 +83,7 @@ export const lesson119 = {
                     <p class="text-2xl md:text-3xl font-bold text-emerald-900 leading-relaxed italic">
                         "Khi tính diện tích vật dụng không nắp (như bể cá, hộp hở), em chỉ tính diện tích xung quanh cộng với diện tích một mặt đáy."
                     </p>
-                    <p class="mt-4 text-3xl md:text-4xl font-black text-center text-emerald-600">S = Sxq + S(1 đáy)</p>
+                    
                 </div>
             </div>
         </div>

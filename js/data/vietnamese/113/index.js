@@ -113,7 +113,7 @@ export const lesson113 = {
                     <p class="indent-10">Tên chùa đã gợi ra nét kiến trúc độc nhất vô nhị: Chùa ngự trên một cột đá tròn. Tám thanh gỗ bao quanh trụ đá giống hình đài sen, tạo thành giá đỡ vững chãi cho ngôi chùa. Nhìn từ xa, chùa Một Cột tựa đoá sen khổng lồ vươn lên từ mặt nước, bình yên đón ánh mặt trời. Vì thế, ban đầu chùa có tên gọi là Liên Hoa Đài.</p>
                     <p class="indent-10">Bên cạnh nét độc đáo kể trên, chùa Một Cột còn mang nét đẹp cổ kính của kiến trúc Á Đông. Nóc chùa được trang trí hai con rồng chầu mặt nguyệt. Chùa có bốn mái cong cong mềm mại. Ngôi chùa càng thêm nổi bật giữa khung cảnh cây cối xanh tươi và hồ nước yên bình.</p>
                     <p class="indent-10">Chùa Một Cột – di tích văn hoá vô giá – đã trở thành một biểu tượng của Thủ đô Hà Nội. Năm 2012, chùa được Tổ chức Kỉ lục châu Á xác nhận là “Ngôi chùa có kiến trúc độc đáo nhất châu Á”.</p>
-                    <p class="text-right font-bold text-gray-500 mt-4 md:text-xl">(Theo Hiển Vũ)</p>
+                    
                 </div>
             </div>
 
@@ -262,8 +262,8 @@ export const lesson113 = {
 
             <!-- Nút kiểm tra kéo thả -->
             <div class="mt-8 flex justify-center gap-4">
-                <button id="btn-check-113-drag" onclick="window.checkSummaryVn113()" class="w-14 h-14 md:w-20 md:h-20 bg-sky-600 hover:bg-sky-700 text-white rounded-[1.5rem] font-black text-2xl md:text-4xl shadow-xl transition-all active:scale-95 flex items-center justify-center shrink-0">E</button>
-                <button onclick="window.resetSummaryVn113()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all text-lg">LÀM LẠI</button>
+                <button id="btn-check-113-drag" onclick="window.checkSummaryVn113()" class="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
+                <button onclick="window.resetSummaryVn113()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
             </div>
             <div id="drag-feedback" class="hidden mt-6 p-4 rounded-xl font-bold text-lg text-center animate-in fade-in duration-300"></div>
         </div>
@@ -298,8 +298,8 @@ export const lesson113 = {
 
             <!-- Nút kiểm tra đáp án -->
             <div class="mt-8 flex justify-center gap-4">
-                <button id="btn-check-113-choice" onclick="window.checkChoiceVn113()" class="w-14 h-14 md:w-20 md:h-20 bg-sky-600 hover:bg-sky-700 text-white rounded-[1.5rem] font-black text-2xl md:text-4xl shadow-xl transition-all active:scale-95 flex items-center justify-center shrink-0">E</button>
-                <button onclick="window.resetChoiceVn113()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all text-lg">LÀM LẠI</button>
+                <button id="btn-check-113-choice" onclick="window.checkChoiceVn113()" class="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
+                <button onclick="window.resetChoiceVn113()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
             </div>
             <div id="choice-feedback" class="hidden mt-6 p-4 rounded-xl font-bold text-lg text-center animate-in fade-in duration-300"></div>
         </div>

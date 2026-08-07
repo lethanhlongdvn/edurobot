@@ -194,7 +194,7 @@ export const lesson106 = {
                         <p class="text-xl font-black text-yellow-300">Giá vé: 0 đồng (5 tập đầu)</p>
                     </div>
                     <!-- Nút E lớn check kết quả vé phim -->
-                    <button id="btn-check-106-1" onclick="window.checkMovieTicket()" class="w-12 h-12 md:w-16 md:h-16 bg-yellow-400 hover:bg-yellow-500 text-emerald-900 rounded-[1.2rem] font-black text-xl md:text-2xl shadow-lg transition-all active:scale-95 flex items-center justify-center">E</button>
+                    <button id="btn-check-106-1" onclick="window.checkMovieTicket()" class="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
                 </div>
             </div>
             <div id="ticket-feedback" class="hidden mt-6 p-6 rounded-2xl font-bold text-lg text-center animate-in fade-in duration-300"></div>
@@ -296,13 +296,7 @@ export const lesson106 = {
                 
                 <textarea id="ans-vn106-writing" rows="4" placeholder="Ví dụ: Em rất muốn đi xem bộ phim này vì em tò mò làm thế nào một chú ốc sên chậm chạp lại có thể bay vút như tia chớp. Hơn thế nữa, công nghệ phim 3D hiện đại chắc chắn sẽ giúp em có trải nghiệm chân thực..." class="w-full p-4 md:p-6 text-xl md:text-2xl rounded-2xl border-2 border-yellow-100 focus:border-yellow-500 outline-none shadow-sm bg-yellow-50/10 mb-6 font-medium leading-relaxed"></textarea>
                 
-                <div class="flex flex-wrap items-center gap-4">
-                    <button onclick="window.checkWritingVn106()" class="px-8 py-3 bg-yellow-500 text-white font-black text-lg rounded-2xl shadow-md hover:bg-yellow-600 active:scale-95 transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-yellow-900 font-black text-xs shadow-sm">E</div> 
-                        <span>CHẤM BÀI</span>
-                    </button>
-                    <button onclick="window.resetWritingVn106()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="window.resetWritingVn106()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="window.checkWritingVn106();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 
                 <div id="fb-vn106-writing" class="hidden mt-6 p-6 bg-emerald-600 text-white rounded-2xl shadow-xl animate-in slide-in-from-top-10 duration-500">
                     <!-- AI Feedback -->

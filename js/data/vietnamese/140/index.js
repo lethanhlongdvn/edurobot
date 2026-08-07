@@ -157,7 +157,7 @@ export const lesson140 = {
     <!-- HOẠT ĐỘNG 1: CHUẨN BỊ Ý KIẾN -->
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-blue-50">
         <div class="p-6 md:p-8 bg-blue-50/30 rounded-[32px] space-y-6">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl md:text-2xl font-black shadow-md">1</div>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Chuẩn bị ý kiến thảo luận</h3>
             </div>
@@ -232,7 +232,7 @@ export const lesson140 = {
     <!-- HOẠT ĐỘNG 2: TỰ NHẬN XÉT -->
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-emerald-50">
         <div class="p-6 md:p-8 bg-emerald-50/30 rounded-[32px] space-y-6">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <div class="w-12 h-12 bg-emerald-600 text-white rounded-xl flex items-center justify-center text-xl md:text-2xl font-black shadow-md">2</div>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Tự nhận xét, đánh giá bản thân</h3>
             </div>
@@ -289,7 +289,7 @@ export const lesson140 = {
     <!-- HOẠT ĐỘNG 3: BÀY TỎ Ý KIẾN -->
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-orange-50">
         <div class="p-6 md:p-8 bg-orange-50/30 rounded-[32px] space-y-6">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <div class="w-12 h-12 bg-orange-600 text-white rounded-xl flex items-center justify-center text-xl md:text-2xl font-black shadow-md">3</div>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Bày tỏ ý kiến: Tán thành hay không tán thành?</h3>
             </div>

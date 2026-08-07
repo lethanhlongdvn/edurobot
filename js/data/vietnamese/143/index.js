@@ -180,9 +180,7 @@ export const lesson143 = {
                 <span id="char-count-143">Số ký tự: 0 (Đoạn văn cần đạt tối thiểu 50 ký tự)</span>
             </div>
             
-            <div class="flex justify-center pt-2">
-                <button id="btn-check-143" onclick="nopBaiViet143()" class="w-14 h-14 md:w-20 md:h-20 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-[2rem] active:scale-95 transition-all text-2xl md:text-4xl flex items-center justify-center shadow-lg">E</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="nopBaiViet143();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         </div>
     </section>
 

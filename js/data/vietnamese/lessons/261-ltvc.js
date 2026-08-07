@@ -99,7 +99,7 @@ export const lesson_261_ltvc = {
                                             <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-blue-600 font-black text-xs shadow-sm">E</div>
                                             KIỂM TRA
                                         </button>
-                                        <button onclick="resetEx261_1()" class="px-6 py-3 bg-gray-200 text-gray-700 text-lg font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
+                                        <button onclick="resetEx261_1()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
                                         <div id="fb-261-ltvc-ex1" class="hidden text-lg md:text-2xl font-black mt-2"></div>
                                     </div>
                                 </div>
@@ -138,7 +138,7 @@ export const lesson_261_ltvc = {
                                                 <select id="ex261-2-4" class="px-2 py-0 border-b-2 border-green-500 bg-transparent text-blue-700 font-bold outline-none focus:bg-green-50 transition-all min-w-[120px] text-center"><option value="">🌸</option><option value="người anh">người anh</option><option value="hai anh em">hai anh em</option><option value="hai vợ chồng người em">hai vợ chồng người em</option><option value="nhưng">nhưng</option></select> 
                                                 sợ em tranh công, liền bàn với vợ cho hai vợ chồng người em ra ở riêng.
                                             </p>
-                                            <p class="text-right text-base italic text-gray-500 mt-4">(Truyện Cây khế)</p>
+                                            
                                         </div>
                                     </div>
                                     
@@ -147,7 +147,7 @@ export const lesson_261_ltvc = {
                                             <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-green-600 font-black text-xs shadow-sm">E</div>
                                             KIỂM TRA
                                         </button>
-                                        <button onclick="resetEx261_2()" class="px-6 py-3 bg-gray-200 text-gray-700 text-lg font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
+                                        <button onclick="resetEx261_2()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
                                         <div id="fb-261-ltvc-ex2" class="hidden text-lg md:text-2xl font-black mt-2"></div>
                                     </div>
                                 </div>

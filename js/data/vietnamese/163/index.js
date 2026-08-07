@@ -45,7 +45,7 @@ export const lesson163 = {
                     <p>
                         Trên con đường từ nhà đến trường, tôi phải đi qua Hồ Gươm. Lúc có bạn thì chuyện trò tíu tít, có khi đuổi nhau suốt dọc đường. <span class="bg-amber-100 text-amber-950 font-black px-2 py-1 rounded">Nhưng</span> khi đi một mình, tôi thích ôm cặp vào ngực, nhìn lên các vòm cây, vừa đi vừa lẩm nhẩm ôn bài. <span class="bg-amber-100 text-amber-950 font-black px-2 py-1 rounded">Vì thế</span>, tôi thường là đứa phát hiện ra bông hoa đầu tiên nở trên cây gạo trước đền Ngọc Sơn. <span class="bg-amber-100 text-amber-950 font-black px-2 py-1 rounded">Rồi</span> bông nọ gọi bông kia, bông nọ ganh bông kia, chỉ vài hôm sau, cây gạo đã như một cây đuốc lớn cháy rừng rực giữa trời.
                     </p>
-                    <p class="text-right italic font-black text-gray-500 mt-4 text-lg md:text-xl">(Theo Vân Long)</p>
+                    
                 </div>
 
                 <!-- Accordion yêu cầu a, b -->
@@ -212,7 +212,7 @@ export const lesson163 = {
                         <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-blue-600 font-black text-sm shadow-sm">E</div>
                         <span>NỘP BÀI TẬP 2 & 3</span>
                     </button>
-                    <button onclick="window.resetPractice163()" class="px-6 py-4 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
+                    <button onclick="window.resetPractice163()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
                 </div>
                 <div id="fb-163-practice-1" class="hidden mt-6 p-6 rounded-2xl shadow-xl animate-in slide-in-from-top-10 duration-500 text-xl font-bold"></div>
             </div>

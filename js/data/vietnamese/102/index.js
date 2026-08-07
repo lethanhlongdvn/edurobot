@@ -118,9 +118,7 @@ export const lesson102 = {
                     <span>Trên cánh đồng lúa chín vàng, gió mùa thu lành lạnh.</span>
                 </label>
             </div>
-            <div class="flex justify-center">
-                <button onclick="kiemTraCau102(1)" class="px-6 py-2 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-xl transition-all text-base shadow-md active:scale-95">Kiểm tra ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraCau102(1);" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn102-c1" class="hidden p-4 rounded-xl text-lg font-bold text-center"></div>
         </div>
 
@@ -144,9 +142,7 @@ export const lesson102 = {
                     <span>Ngồi quanh bàn tròn, vừa ăn trái cây vừa hát.</span>
                 </label>
             </div>
-            <div class="flex justify-center">
-                <button onclick="kiemTraCau102(2)" class="px-6 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl transition-all text-base shadow-md active:scale-95">Kiểm tra ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraCau102(2);" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn102-c2" class="hidden p-4 rounded-xl text-lg font-bold text-center"></div>
         </div>
 
@@ -175,9 +171,7 @@ export const lesson102 = {
                 </div>
             </div>
             <div id="fb-vn102-c3-pairs" class="space-y-2 max-w-3xl mx-auto"></div>
-            <div class="flex justify-center">
-                <button onclick="kiemTraCau3_102()" class="px-6 py-2 bg-amber-600 hover:bg-amber-700 text-white font-black rounded-xl transition-all text-base shadow-md active:scale-95">Kiểm tra ghép đôi ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraCau3_102();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn102-c3" class="hidden p-4 rounded-xl text-lg font-bold text-center"></div>
         </div>
 
@@ -206,9 +200,7 @@ export const lesson102 = {
                     <span>Nhân vật "tôi" buồn bã vì không có khả năng hát quan họ.</span>
                 </label>
             </div>
-            <div class="flex justify-center">
-                <button onclick="kiemTraCau102(4)" class="px-6 py-2 bg-rose-600 hover:bg-rose-700 text-white font-black rounded-xl transition-all text-base shadow-md active:scale-95">Kiểm tra ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraCau102(4);" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn102-c4" class="hidden p-4 rounded-xl text-lg font-bold text-center"></div>
         </div>
 
@@ -220,11 +212,7 @@ export const lesson102 = {
             </div>
             <div class="max-w-2xl mx-auto space-y-3">
                 <textarea id="ans-vn102-c5" rows="4" placeholder="Ví dụ: Theo em, nghệ thuật hát quan họ là một nét đẹp văn hoá truyền thống rất đáng tự hào vì..." class="w-full p-4 text-xl rounded-2xl border border-gray-200 outline-none focus:border-teal-500 font-bold bg-white text-gray-800 leading-relaxed"></textarea>
-                <div class="flex justify-center">
-                    <button onclick="kiemTraCau5_102()" class="px-8 py-3 bg-teal-600 hover:bg-teal-700 text-white font-black text-lg rounded-2xl shadow-md active:scale-95 transition-all flex items-center gap-2">
-                        <span>👨‍🏫 THẦY E CHẤM BÀI</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="kiemTraCau5_102();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn102-c5" class="hidden p-5 rounded-2xl font-bold text-lg"></div>
             </div>
         </div>
@@ -282,9 +270,7 @@ export const lesson102 = {
             </div>
         </div>
 
-        <div class="flex justify-center">
-            <button onclick="kiemTraBT1_102()" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl transition-all text-lg shadow-md active:scale-95">Kiểm tra phân loại ✓</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraBT1_102();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn102-bt1" class="hidden p-4 rounded-xl text-lg font-bold text-center"></div>
     </section>
 
@@ -298,11 +284,7 @@ export const lesson102 = {
         </div>
         <div class="max-w-3xl mx-auto space-y-4">
             <textarea id="ans-vn102-bt2" rows="3" placeholder="Ví dụ: Ca trù là một môn nghệ thuật truyền thống đặc sắc, trong đó ca nương vừa hát vừa gõ phách tạo nên âm thanh quyến rũ." class="w-full p-4 text-xl rounded-2xl border border-gray-200 outline-none focus:border-blue-500 font-bold bg-white text-gray-800 leading-relaxed"></textarea>
-            <div class="flex justify-center">
-                <button onclick="kiemTraBT2_102()" class="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-white font-black text-lg rounded-2xl shadow-md active:scale-95 transition-all flex items-center gap-2">
-                    <span>👨‍🏫 THẦY E CHẤM CÂU</span>
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraBT2_102();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn102-bt2" class="hidden p-5 rounded-2xl font-bold text-lg"></div>
         </div>
     </section>

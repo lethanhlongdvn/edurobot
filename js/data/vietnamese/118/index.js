@@ -105,9 +105,7 @@ export const lesson118 = {
             </div>
         </div>
 
-        <div class="flex justify-center pt-4">
-            <button onclick="kiemTraTieuChi118()" class="px-8 py-3 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-xl transition-all text-lg shadow-md active:scale-95">XÁC NHẬN ĐÁNH GIÁ ✓</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraTieuChi118();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn118-tc" class="hidden p-4 rounded-xl text-lg font-bold text-center max-w-xl mx-auto"></div>
     </div>
 </div>
@@ -176,11 +174,7 @@ export const lesson118 = {
                 <div id="status-vn118-record" class="text-sm font-bold text-rose-500 mt-2 hidden">Đang thu âm giọng nói của em...</div>
             </div>
 
-            <div class="flex justify-center pt-2">
-                <button onclick="kiemTraChinhSua118()" class="px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white font-black text-lg rounded-2xl shadow-md active:scale-95 transition-all flex items-center gap-2">
-                    <span>👨‍🏫 THẦY E CHẤM BÀI CHỈNH SỬA</span>
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraChinhSua118();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn118-chinhsua" class="hidden p-5 rounded-2xl font-bold text-lg"></div>
         </div>
     </div>
@@ -211,9 +205,7 @@ export const lesson118 = {
             </label>
         </div>
 
-        <div class="flex justify-center pt-2">
-            <button onclick="kiemTraSauChinhSua118()" class="px-8 py-3 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-xl transition-all text-lg shadow-md active:scale-95">XÁC NHẬN HOÀN TẤT ✓</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraSauChinhSua118();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn118-sau" class="hidden p-4 rounded-xl text-lg font-bold text-center max-w-xl mx-auto"></div>
     </div>
 

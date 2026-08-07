@@ -147,11 +147,7 @@ export const lesson183 = {
                     </div>
                 </div>
 
-                <div class="flex justify-center flex-col items-center gap-4">
-                    <button onclick="check183Matching()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-lg active:scale-95 transition-all text-lg">
-                        🔍 Kiểm tra kết quả
-                    </button>
-                    <div id="matching-feedback" class="text-lg font-black text-center hidden"></div>
+                <div class="flex justify-end items-center gap-4"><button onclick="check183Matching();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 </div>
             </div>
         </div>
@@ -178,12 +174,7 @@ export const lesson183 = {
 
                 <textarea id="story-summary-text" rows="4" class="w-full p-4 rounded-xl border border-slate-200 focus:ring-4 focus:ring-blue-100 outline-none text-lg" placeholder="Nhập tóm tắt nội dung chính của câu chuyện tại đây..."></textarea>
                 
-                <div class="flex justify-center">
-                    <button onclick="check183SummaryAI()" class="px-8 py-4 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-3 text-lg md:text-xl uppercase tracking-wider">
-                        <span>🤖</span> 
-                        <span>Nhận xét tóm tắt bằng AI</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="check183SummaryAI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-183-summary-ai" class="w-full hidden mt-4"></div>
             </div>
         </div>
@@ -332,11 +323,7 @@ export const lesson183 = {
                     </div>
                 </div>
 
-                <div class="flex justify-center mt-4">
-                    <button onclick="check184Combinations()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-lg active:scale-95 transition-all text-lg">
-                        🔍 Kiểm tra kết nối
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="check184Combinations();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="combinations-feedback" class="text-lg font-black text-center hidden mt-2"></div>
             </div>
         </div>
@@ -366,12 +353,7 @@ export const lesson183 = {
                     </div>
                 </div>
 
-                <div class="flex justify-center mt-6">
-                    <button onclick="check184SentenceAI()" class="px-8 py-4 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-3 text-lg md:text-xl uppercase tracking-wider">
-                        <span>🤖</span> 
-                        <span>Nộp bài cho EduRobot đánh giá</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="check184SentenceAI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-184-sentence-ai" class="w-full hidden mt-4"></div>
             </div>
         </div>

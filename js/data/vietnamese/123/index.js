@@ -56,9 +56,7 @@ export const lesson123 = {
                 </div>
             </div>
 
-            <div class="flex justify-center">
-                <button onclick="kiemTraDiepTu123()" class="px-8 py-3 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-xl transition-all text-lg shadow-md active:scale-95">KIỂM TRA ĐÁP ÁN ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDiepTu123();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn123-dieptu" class="hidden p-4 rounded-xl text-lg font-bold text-center max-w-xl mx-auto"></div>
         </div>
     </div>
@@ -111,11 +109,7 @@ export const lesson123 = {
             <div class="relative bg-amber-50/20 border-2 border-sky-300 rounded-[32px] p-6 shadow-inner">
                 <textarea id="ans-vn123-doanvan" rows="5" placeholder="Em hãy tả một cảnh vật tự nhiên (cánh đồng, bãi biển, dòng sông...) có lặp từ tu từ để tạo nhịp điệu sinh động..." class="w-full p-3 text-lg rounded-2xl border border-gray-200 focus:border-sky-500 font-bold bg-white text-gray-800 outline-none leading-relaxed"></textarea>
             </div>
-            <div class="flex justify-center">
-                <button onclick="kiemTraDoanVan123()" class="px-8 py-3.5 bg-amber-500 hover:bg-amber-600 text-white font-black text-lg rounded-xl shadow-md active:scale-95 transition-all">
-                    👨‍🏫 THẦY E ĐÁNH GIÁ ĐOẠN VĂN
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDoanVan123();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn123-doanvan" class="hidden p-5 rounded-2xl font-bold text-lg"></div>
         </div>
     </div>
@@ -135,11 +129,7 @@ export const lesson123 = {
                 <label class="text-base font-bold text-sky-900">✏️ Câu 2: Sử dụng cặp kết từ "vì... nên...":</label>
                 <input id="ans-vn123-cau2" type="text" placeholder="Ví dụ: Vì em chăm chỉ nên thầy cô rất yêu mến." class="w-full p-3 rounded-xl border border-gray-200 focus:border-sky-500 font-bold bg-white text-gray-800 outline-none text-lg">
             </div>
-            <div class="flex justify-center">
-                <button onclick="kiemTraDatCau123()" class="px-8 py-3.5 bg-amber-500 hover:bg-amber-600 text-white font-black text-lg rounded-xl shadow-md active:scale-95 transition-all">
-                    👨‍🏫 THẦY E ĐÁNH GIÁ CÂU GHẾP
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDatCau123();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn123-cau" class="hidden p-5 rounded-2xl font-bold text-lg"></div>
         </div>
     </div>
@@ -164,11 +154,7 @@ export const lesson123 = {
                 <div id="status-vn123-record" class="text-sm font-bold text-rose-500 mt-2 hidden">Đang thu âm giọng nói của em...</div>
             </div>
 
-            <div class="flex justify-center">
-                <button onclick="kiemTraNhanVatTaiNang123()" class="px-8 py-3.5 bg-amber-500 hover:bg-amber-600 text-white font-black text-lg rounded-xl shadow-md active:scale-95 transition-all flex items-center gap-2">
-                    <span>👨‍🏫 THẦY E CHẤM BÀI TIẾT 5</span>
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraNhanVatTaiNang123();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn123-nhanvat" class="hidden p-5 rounded-2xl font-bold text-lg"></div>
         </div>
     </div>
@@ -199,9 +185,7 @@ export const lesson123 = {
             </label>
         </div>
 
-        <div class="flex justify-center pt-2">
-            <button onclick="kiemTraCheckList123()" class="px-8 py-3 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-xl transition-all text-lg shadow-md active:scale-95">XÁC NHẬN HOÀN TẤT ✓</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraCheckList123();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn123-checklist" class="hidden p-4 rounded-xl text-lg font-bold text-center max-w-xl mx-auto"></div>
     </div>
 

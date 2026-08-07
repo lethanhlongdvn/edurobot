@@ -28,7 +28,7 @@ export const lesson_292_cu_do_chieu = {
                                 <p>Năm 1843, Nguyễn Đình Chiểu trở về quê mẹ, đỗ tú tài tại trường thi Gia Định. Hai năm sau, ông lại trở ra Huế học tập, chờ kì thi năm Kỷ Dậu, 1849. Nhưng cuối năm 1848, mẹ mất, Nguyễn Đình Chiểu phải bỏ thi về Nam chịu tang mẹ. Trên đường về, ông bị ốm nặng, mù cả hai mắt, chạy chữa mãi không khỏi. Cuối năm 1849, Nguyễn Đình Chiểu mới về đến Gia Định “lỡ bề báo hiếu, lỡ đường lập thân”.</p>
                                 <p>Không gục ngã trước những thử thách nặng nề liên tiếp của số phận, sau thời gian chịu tang mẹ, ông mở trường dạy học và làm thuốc chữa bệnh cho dân. Học trò gần xa nghe danh, mến đức xin học rất đông. Tiếng thơ chan chứa tinh thần nghĩa hiệp của Đồ Chiểu cũng bắt đầu vang khắp miền Lục tỉnh.</p>
                                 <p>Năm 1858, giặc Pháp xâm lược nước ta. Nguyễn Đình Chiểu cùng các lãnh tụ nghĩa quân bàn mưu tính kế đánh giặc. Ông sáng tác thơ văn bày tỏ niềm tiếc thương, cảm phục đối với những người đã hi sinh vì đất nước; khích lệ mạnh mẽ tinh thần chiến đấu của nhân dân. Trái tim nhân hậu của ông luôn gắn bó sắt son với vận mệnh của đất nước. Ông được nhân dân Lục tỉnh gọi bằng cái tên trìu mến “cụ Đỗ Chiểu” như một cách tri ân với người thầy đáng kính của “lòng dân”.</p>
-                                <p class="text-right italic mt-4">(Theo Trần Thị Hoa Lê)</p>
+                                
                             </div>
                         </div>
 

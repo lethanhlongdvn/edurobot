@@ -105,9 +105,7 @@ export const lesson205 = {
             </div>
         </div>
 
-        <div class="flex justify-center pt-2">
-            <button onclick="check205Q1()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all shadow-md text-lg uppercase">Kiểm tra bài 1</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="check205Q1();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-205-q1" class="text-lg md:text-2xl font-black text-center hidden"></div>
     </section>
 
@@ -192,9 +190,7 @@ export const lesson205 = {
             </div>
         </div>
 
-        <div class="flex justify-center pt-2">
-            <button onclick="check205Q2()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all shadow-md text-lg uppercase">Kiểm tra phân loại</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="check205Q2();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-205-q2" class="text-lg md:text-2xl font-black text-center hidden"></div>
     </section>
 
@@ -209,12 +205,7 @@ export const lesson205 = {
 
         <div class="p-6 bg-amber-50/30 border border-amber-100 rounded-3xl space-y-4">
             <textarea id="essay-205" rows="3" class="w-full p-4 rounded-xl border border-slate-250 focus:ring-4 focus:ring-blue-100 outline-none text-lg md:text-2xl font-bold leading-relaxed" placeholder="Ví dụ: Nếu chúng ta cùng nhau quét dọn lớp học mỗi ngày thì lớp học sẽ luôn sạch sẽ và thơm tho..."></textarea>
-            <div class="flex justify-center">
-                <button onclick="check205EssayAI()" class="px-8 py-4 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-3 text-lg uppercase tracking-wider cursor-pointer">
-                    <span>🤖</span>
-                    <span>Nộp câu cho Thầy E AI kiểm tra vế câu</span>
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="check205EssayAI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-205-ai" class="w-full hidden mt-4"></div>
         </div>
     </section>

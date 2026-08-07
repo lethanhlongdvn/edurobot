@@ -62,11 +62,7 @@ export const lesson122 = {
             <div class="relative bg-amber-50/20 border-2 border-sky-300 rounded-[32px] p-6 shadow-inner">
                 <textarea id="ans-vn122-camnghi" rows="4" placeholder="Ví dụ: Bài đọc giúp em hiểu được lòng biết ơn sâu sắc đối với nghệ sĩ làng Hồ..." class="w-full p-3 text-lg rounded-2xl border border-gray-200 focus:border-sky-500 font-bold bg-white text-gray-800 outline-none leading-relaxed"></textarea>
             </div>
-            <div class="flex justify-center">
-                <button onclick="kiemTraCamNghi122()" class="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-white font-black text-lg rounded-xl shadow-md active:scale-95 transition-all">
-                    👨‍🏫 THẦY E ĐÁNH GIÁ CẢM NGHĨ
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraCamNghi122();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn122-camnghi" class="hidden p-5 rounded-2xl font-bold text-lg"></div>
         </div>
     </div>

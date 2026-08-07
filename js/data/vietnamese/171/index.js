@@ -210,7 +210,7 @@ export const lesson171 = {
 <div class="max-w-5xl mx-auto space-y-8 animate-in fade-in duration-700">
     <div class="bg-gradient-to-r from-blue-600 to-sky-500 p-6 md:p-8 rounded-[32px] text-white shadow-xl relative overflow-hidden">
         <div class="absolute -right-10 -top-10 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
-        <div class="flex items-center gap-4">
+        <div class="flex justify-end items-center gap-4">
             <span class="p-3 bg-white/20 rounded-2xl text-2xl md:text-3xl shadow-inner">✍️</span>
             <div>
                 <h3 class="text-2xl md:text-3xl font-black uppercase tracking-tight">LUYỆN TẬP PHÂN TÍCH CHƯƠNG TRÌNH</h3>
@@ -231,12 +231,7 @@ export const lesson171 = {
         <!-- Feedback Box -->
         <div id="fb-viet171-writing" class="hidden p-6 rounded-2xl bg-blue-50 border-2 border-blue-200 text-lg md:text-xl font-bold text-blue-600 shadow-inner"></div>
 
-        <div class="flex justify-center">
-            <button onclick="checkViet171AI()" class="bg-[#ff7b29] hover:brightness-110 text-white font-black px-8 py-5 rounded-2xl shadow-xl hover:scale-105 active:scale-95 transition-all flex items-center gap-3 text-lg md:text-2xl">
-                <span class="w-8 h-8 bg-white rounded-xl flex items-center justify-center text-[#ff7b29] font-black text-sm shadow-sm">E</span>
-                <span>NHẬN XÉT CỦA THẦY GIÁO AI</span>
-            </button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="checkViet171AI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
     </div>
 
     <!-- Submit Action -->

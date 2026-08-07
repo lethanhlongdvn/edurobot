@@ -137,7 +137,7 @@ export const lesson154 = {
 <div class="max-w-5xl mx-auto space-y-8 animate-in fade-in duration-700">
     <div class="bg-gradient-to-r from-blue-600 to-sky-500 p-6 md:p-8 rounded-[32px] text-white shadow-xl relative overflow-hidden">
         <div class="absolute -right-10 -top-10 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
-        <div class="flex items-center gap-4">
+        <div class="flex justify-end items-center gap-4">
             <span class="p-3 bg-white/20 rounded-2xl text-2xl md:text-3xl shadow-inner">💬</span>
             <div>
                 <h3 class="text-2xl md:text-3xl font-black uppercase tracking-tight">GÓC TRANH BIỆN MINH TRÍ_EDUROBOT</h3>
@@ -172,10 +172,7 @@ export const lesson154 = {
                         placeholder="Nhập ý kiến của cậu... (Ví dụ: Tớ nghĩ nên giữ tiền riêng vì...)"
                         onkeydown="if(event.key === 'Enter') nvn222_send()">
                 </div>
-                <button onclick="nvn222_send()" 
-                    class="w-14 h-14 md:w-20 md:h-20 bg-blue-600 hover:bg-blue-700 text-white rounded-[1.5rem] font-black text-3xl md:text-5xl shadow-xl transition-all active:scale-95 flex items-center justify-center flex-shrink-0">
-                    E
-                </button>
+                <button onclick="nvn222_send()" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
             </div>
             
             <div class="flex flex-col sm:flex-row justify-between items-center gap-4">

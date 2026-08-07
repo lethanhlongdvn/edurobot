@@ -235,9 +235,7 @@ export const lesson42 = {
             <h4 class="font-black text-emerald-800 text-lg md:text-xl">✍️ Em sẽ làm gì để bảo vệ động vật hoang dã?</h4>
             <p class="font-bold text-gray-800 text-sm">Chia sẻ ít nhất 2 việc em có thể làm ngay bây giờ:</p>
             <textarea id="vn42-textarea-camket" rows="4" placeholder="Ví dụ: Em sẽ không mua và sử dụng sản phẩm từ động vật hoang dã. Em sẽ tuyên truyền với bạn bè và gia đình về tầm quan trọng của việc bảo vệ rừng và các loài động vật..." class="w-full p-4 border border-gray-100 rounded-2xl bg-white text-xl md:text-2xl font-semibold focus:border-emerald-500 outline-none shadow-sm"></textarea>
-            <div class="flex justify-center">
-                <button onclick="nopCamKetVn42()" class="px-8 py-3.5 bg-emerald-600 text-white font-black text-lg rounded-2xl shadow-md hover:bg-emerald-600 active:scale-95 transition-all">NỘP BÀI GỬI THẦY E</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="nopCamKetVn42();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn42-camket" class="hidden p-5 rounded-2xl text-base font-bold shadow-md transition-all duration-342"></div>
         </div>
     </section>

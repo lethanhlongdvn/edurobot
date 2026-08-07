@@ -28,7 +28,7 @@ export const lesson196 = {
             <div class="w-full overflow-hidden rounded-3xl shadow-2xl border-8 border-white group">
                 <img src="assets/images/den_hung_phu_tho.png" alt="Đền Hùng Phú Thọ" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-1000">
             </div>
-            <p class="text-lg md:text-2xl text-center text-gray-500 mt-4 font-black italic">Khu di tích lịch sử Đền Hùng - cội nguồn dân tộc</p>
+            
         </div>
     </section>
 
@@ -199,12 +199,7 @@ export const lesson196 = {
             </div>
 
             <!-- Nút nộp phiếu -->
-            <div class="flex justify-center pt-2">
-                <button onclick="check196BookReportAI()" class="px-10 py-5 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-2 text-xl md:text-2xl uppercase tracking-wider">
-                    <span>🤖</span> 
-                    <span>Lưu phiếu & Nhận xét của EduRobot AI</span>
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="check196BookReportAI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-196-report-ai" class="w-full hidden mt-4"></div>
         </div>
     </section>
@@ -219,12 +214,7 @@ export const lesson196 = {
         
         <div class="p-6 bg-amber-50/30 border-2 border-amber-100 rounded-[32px] space-y-6">
             <textarea id="essay-196" rows="4" class="w-full p-6 rounded-2xl border-2 border-slate-250 focus:ring-4 focus:ring-blue-100 outline-none text-2xl md:text-3xl font-bold leading-relaxed" placeholder="Ví dụ: Lê Quý Đôn là một nhà bác học lỗi lạc của nước ta vào thế kỷ XVIII. Từ nhỏ, ông đã nổi tiếng thông minh..."></textarea>
-            <div class="flex justify-center">
-                <button onclick="check196EssayAI()" class="px-10 py-5 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-2xl shadow-xl transition-all active:scale-[0.95] flex items-center justify-center gap-3 text-xl md:text-2xl uppercase tracking-wider">
-                    <span>🤖</span> 
-                    <span>Gửi bài giới thiệu cho EduRobot AI</span>
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="check196EssayAI();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-196-essay-ai" class="w-full hidden mt-4"></div>
         </div>
     </section>

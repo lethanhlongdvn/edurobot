@@ -45,9 +45,7 @@ export const lesson93 = {
         </div>
         <div class="max-w-md mx-auto space-y-4 pt-2">
             <input type="text" id="warmup-repetition-input" placeholder="Nhập từ được lặp lại nhiều nhất..." class="w-full p-4 border-2 border-blue-100 rounded-2xl outline-none focus:border-blue-500 font-bold bg-blue-50/10 text-lg md:text-xl shadow-inner text-center">
-            <div class="flex justify-center">
-                <button onclick="startWarmupVn93()" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-black text-lg rounded-2xl shadow active:scale-95 transition-all">KIỂM TRA ✉️</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="startWarmupVn93();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="warmup-feedback-93" class="hidden p-4 rounded-2xl text-center font-bold text-base mt-2 shadow-inner"></div>
         </div>
     </div>
@@ -104,9 +102,7 @@ export const lesson93 = {
                     </select>
                 </div>
             </div>
-            <div class="flex justify-center pt-2">
-                <button onclick="checkC1Vn93()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl shadow active:scale-95 transition-all">NỘP BÀI ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkC1Vn93();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-c1" class="hidden p-4 rounded-2xl text-center font-bold text-base mt-2 shadow-inner"></div>
         </div>
 
@@ -134,9 +130,7 @@ export const lesson93 = {
                     </select>
                 </div>
             </div>
-            <div class="flex justify-center pt-2">
-                <button onclick="checkC2Vn93()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl shadow active:scale-95 transition-all">NỘP BÀI ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkC2Vn93();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-c2" class="hidden p-4 rounded-2xl text-center font-bold text-base mt-2 shadow-inner"></div>
         </div>
 
@@ -179,9 +173,7 @@ export const lesson93 = {
                     </label>
                 </div>
             </div>
-            <div class="flex justify-center pt-2">
-                <button onclick="checkC3Vn93()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl shadow active:scale-95 transition-all">NỘP BÀI ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkC3Vn93();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-c3" class="hidden p-4 rounded-2xl text-center font-bold text-base mt-2 shadow-inner"></div>
         </div>
 
@@ -212,9 +204,7 @@ export const lesson93 = {
                     </select>
                 </div>
             </div>
-            <div class="flex justify-center pt-2">
-                <button onclick="checkC4Vn93()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl shadow active:scale-95 transition-all">NỘP BÀI ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkC4Vn93();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-c4" class="hidden p-4 rounded-2xl text-center font-bold text-base mt-2 shadow-inner"></div>
         </div>
     </div>
@@ -232,12 +222,7 @@ export const lesson93 = {
         <div class="space-y-4 max-w-4xl mx-auto pt-2">
             <textarea id="vn93-essay-input" rows="4" placeholder="Ví dụ: Em yêu cánh đồng quê, yêu hàng tre xanh mát, yêu cả những buổi chiều hoàng hôn tĩnh lặng..." class="w-full p-4 border-2 border-blue-100 rounded-3xl outline-none focus:border-blue-500 font-bold bg-blue-50/10 text-lg md:text-xl shadow-inner"></textarea>
             
-            <div class="flex justify-center gap-3">
-                <button onclick="checkWritingVn93()" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-black text-lg rounded-2xl shadow-lg hover:shadow-xl active:scale-95 transition-all flex items-center gap-2">
-                    <span>🎓</span> CHẤM ĐIỂM AI THẦY E
-                </button>
-                <button onclick="resetVn93()" class="px-6 py-4 bg-gray-200 hover:bg-gray-300 text-gray-700 font-black text-lg rounded-2xl active:scale-95 transition-all">LÀM LẠI</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="resetVn93()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkWritingVn93();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="vn93-essay-fb" class="hidden p-5 rounded-3xl border-2 font-bold text-lg text-center shadow-lg transition-all"></div>
         </div>
     </div>

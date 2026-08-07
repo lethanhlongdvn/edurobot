@@ -84,11 +84,7 @@ export const lesson50 = {
 
             <textarea id="ans-vn50-kd" rows="3" placeholder="Ví dụ: Mỗi lần ngắm bình minh trên biển, em cảm thấy vô cùng khoan khoái và tràn đầy năng lượng. Vầng mặt trời đỏ rực từ từ nhô lên từ phía chân trời, nhuộm hồng cả mặt nước tạo nên một bức tranh thiên nhiên tuyệt đẹp..." class="w-full p-4 border-2 border-amber-100 rounded-2xl outline-none focus:border-amber-500 font-bold bg-amber-50/10 text-xl md:text-2xl text-gray-800"></textarea>
 
-            <div class="flex justify-center">
-
-                <button onclick="checkKD50()" class="px-8 py-3 bg-amber-500 text-white font-black rounded-xl hover:bg-amber-500 transition-all text-base shadow-md">GỬI SUY NGHĨ ✓</button>
-
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkKD50();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
 
             <div id="fb-vn50-kd" class="hidden p-4 rounded-xl text-sm font-bold text-center mt-2"></div>
 
@@ -205,7 +201,7 @@ export const lesson50 = {
                         </div>
                     </div>
 
-                    <p class="text-right font-bold text-gray-800 text-lg md:text-xl mt-4 italic">(Theo Nguyễn Trọng Tạo)</p>
+                    
                 </div>
 
                 <!-- Các khối thông tin bổ trợ -->
@@ -553,19 +549,7 @@ export const lesson50 = {
 
                 
 
-                <div class="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
-
-                    <button onclick="checkWritingVn50()" class="px-8 py-3 bg-amber-500 text-white font-black text-lg rounded-2xl shadow-md hover:bg-amber-500 active:scale-95 transition-all flex items-center gap-2">
-
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-amber-900 font-black text-xs shadow-sm">E</div> 
-
-                        <span>CHẤM BÀI TỰ LUẬN</span>
-
-                    </button>
-
-                    <button onclick="resetWritingVn50()" class="px-6 py-3 bg-gray-800 text-gray-900 font-black text-lg rounded-2xl shadow-sm hover:bg-gray-800 active:scale-95 transition-all">LÀM LẠI</button>
-
-                    <div id="fb-vn50-writing" class="hidden p-4 rounded-xl font-bold text-base flex-1"></div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetWritingVn50()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkWritingVn50();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
 
                 </div>
 

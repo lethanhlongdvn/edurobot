@@ -41,9 +41,7 @@ export const lesson77 = {
         
         <div class="space-y-4">
             <textarea id="ans-vn77-kd" rows="3" placeholder="Ví dụ: Cuốn sách em yêu thích nhất là 'Không gia đình' của Héc-to Ma-lô. Cuốn sách kể về cuộc phiêu lưu đầy nghị lực của cậu bé Rê-mi..." class="w-full p-4 border-2 border-blue-100 rounded-2xl outline-none focus:border-blue-500 font-bold bg-blue-50/10 text-xl md:text-2xl"></textarea>
-            <div class="flex justify-center">
-                <button onclick="kiemTraKhoiDong77()" class="px-8 py-3 bg-blue-600 text-white font-black rounded-xl hover:bg-blue-600 transition-all text-base shadow-md active:scale-95">GỬI Ý KIẾN ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraKhoiDong77();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn77-kd" class="hidden p-4 rounded-xl text-sm font-bold text-center mt-2"></div>
         </div>
     </div>
@@ -121,9 +119,7 @@ export const lesson77 = {
                     </div>
                 </div>
 
-                <div class="flex justify-center pt-2">
-                    <button onclick="kiemTraDanY77()" class="px-8 py-3 bg-blue-600 text-white font-black rounded-xl hover:bg-blue-600 transition-all text-base shadow-md active:scale-95">GỬI DÀN Ý ✓</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDanY77();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn77-dany" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2"></div>
             </div>
         </div>

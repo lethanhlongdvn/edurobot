@@ -85,9 +85,7 @@ export const lesson146 = {
                 <span id="char-count-146">Độ dài: 0 ký tự (Bài văn tối thiểu đạt 150 ký tự)</span>
             </div>
             
-            <div class="flex justify-center pt-2">
-                <button onclick="nopBaiViet146()" class="px-10 py-4 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-[2rem] active:scale-95 transition-all text-xl md:text-2xl shadow-lg">Nộp bài viết</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="nopBaiViet146();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         </div>
     </div>
 </div>
@@ -170,9 +168,7 @@ window.nopBaiViet146 = function() {
             </div>
         </div>
 
-        <div class="flex justify-center pt-2">
-            <button onclick="nopGocSuaLoi146()" class="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl active:scale-95 transition-all text-xl shadow-md">Lưu ghi nhận</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="nopGocSuaLoi146();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
     </section>
 </div>
 

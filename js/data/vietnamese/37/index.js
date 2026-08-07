@@ -71,7 +71,7 @@ export const lesson37 = {
     
     <!-- 📚 BÀI TẬP 1 -->
     <section class="bg-white p-6 md:p-8 rounded-[36px] border border-sky-100 shadow-xl space-y-6">
-        <div class="flex items-center gap-4">
+        <div class="flex justify-end items-center gap-4">
             <div class="w-12 h-12 bg-sky-600 text-white rounded-xl flex items-center justify-center text-2xl md:text-3xl font-black shadow-md">1</div>
             <div>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Bài tập 1: Điền thành ngữ thích hợp</h3>
@@ -143,16 +143,13 @@ export const lesson37 = {
             </div>
         </div>
 
-        <div class="flex flex-col items-center gap-2 pt-4">
-            <button onclick="checkIdioms37()" class="w-16 h-16 bg-sky-600 text-white rounded-2xl font-black text-xl md:text-3xl flex items-center justify-center shadow-lg hover:scale-105 active:scale-95 transition-all">E</button>
-            <span class="text-xs font-bold text-sky-800 uppercase tracking-widest">Đánh giá</span>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="checkIdioms37();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn37-ex1" class="hidden p-4 rounded-xl text-lg font-bold text-center mt-2 shadow-sm"></div>
     </section>
 
     <!-- 📚 BÀI TẬP 2 -->
     <section class="bg-white p-6 md:p-8 rounded-[36px] border border-sky-100 shadow-xl space-y-6">
-        <div class="flex items-center gap-4">
+        <div class="flex justify-end items-center gap-4">
             <div class="w-12 h-12 bg-sky-600 text-white rounded-xl flex items-center justify-center text-2xl md:text-3xl font-black shadow-md">2</div>
             <div>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Bài tập 2: Tìm từ đồng nghĩa trong đoạn thơ</h3>
@@ -169,7 +166,7 @@ export const lesson37 = {
                     <p><strong class="text-emerald-800 not-italic border-b-2 border-dashed border-emerald-100">Trông</strong> ra ngõ mênh mông</p>
                     <p>Thấy rực màu hoa đỏ.</p>
                 </div>
-                <p class="text-right font-sans text-sm text-gray-800 mt-4 italic mr-4">Trần Đăng Khoa</p>
+                
             </div>
 
             <!-- Câu hỏi lựa chọn từ đồng nghĩa -->
@@ -209,16 +206,13 @@ export const lesson37 = {
             </div>
         </div>
 
-        <div class="flex flex-col items-center gap-2 pt-4">
-            <button onclick="checkPoetrySynonyms37()" class="w-16 h-16 bg-sky-600 text-white rounded-2xl font-black text-xl md:text-3xl flex items-center justify-center shadow-lg hover:scale-105 active:scale-95 transition-all">E</button>
-            <span class="text-xs font-bold text-sky-800 uppercase tracking-widest">Đánh giá</span>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="checkPoetrySynonyms37();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn37-ex2" class="hidden p-4 rounded-xl text-lg font-bold text-center mt-2 shadow-sm"></div>
     </section>
 
     <!-- 📚 BÀI TẬP 3 -->
     <section class="bg-white p-6 md:p-8 rounded-[36px] border border-sky-100 shadow-xl space-y-6">
-        <div class="flex items-center gap-4">
+        <div class="flex justify-end items-center gap-4">
             <div class="w-12 h-12 bg-sky-600 text-white rounded-xl flex items-center justify-center text-2xl md:text-3xl font-black shadow-md">3</div>
             <div>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Bài tập 3: Hoàn thành đoạn văn</h3>
@@ -277,19 +271,16 @@ export const lesson37 = {
                 
                 <span>dạt dào của vạn vật khi mùa xuân về.</span>
             </p>
-            <p class="text-right font-sans text-sm text-gray-800 mt-4 italic">(Theo Nguyễn Thị Thu Trang)</p>
+            
         </div>
 
-        <div class="flex flex-col items-center gap-2 pt-4">
-            <button onclick="checkSpringRain37()" class="w-16 h-16 bg-sky-600 text-white rounded-2xl font-black text-xl md:text-3xl flex items-center justify-center shadow-lg hover:scale-105 active:scale-95 transition-all">E</button>
-            <span class="text-xs font-bold text-sky-800 uppercase tracking-widest">Đánh giá</span>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="checkSpringRain37();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn37-ex3" class="hidden p-4 rounded-xl text-lg font-bold text-center mt-2 shadow-sm"></div>
     </section>
 
     <!-- 📚 BÀI TẬP 4 -->
     <section class="bg-gradient-to-br from-sky-600 to-sky-500 text-white p-6 md:p-8 rounded-[36px] shadow-xl space-y-6">
-        <div class="flex items-center gap-4">
+        <div class="flex justify-end items-center gap-4">
             <div class="w-12 h-12 bg-white text-sky-800 rounded-xl flex items-center justify-center text-2xl md:text-3xl font-black shadow-md">4</div>
             <div>
                 <h3 class="text-2xl md:text-3xl font-black text-white">Bài tập 4: Thực hành viết đoạn văn tả cảnh đẹp thiên nhiên</h3>
@@ -306,10 +297,7 @@ export const lesson37 = {
             </div>
 
             <!-- E button -->
-            <div class="flex flex-col items-center gap-2 pt-2">
-                <button onclick="gradeParagraph37()" class="w-20 h-20 bg-white text-sky-800 rounded-[2rem] font-black text-2xl md:text-4xl flex items-center justify-center shadow-lg hover:scale-105 active:scale-95 transition-all ring-4 ring-white/10">E</button>
-                <span class="text-xs font-bold text-sky-800 uppercase tracking-widest">AI Thầy E nhận xét & Chấm điểm</span>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="gradeParagraph37();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn37-ex4" class="hidden p-5 rounded-2xl text-base font-bold shadow-md transition-all duration-337"></div>
         </div>
 

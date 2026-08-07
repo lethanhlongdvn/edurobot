@@ -74,7 +74,7 @@ export const lesson21 = {
                         <p>Cho nên mẹ sinh ra</p>
                         <p>Để bế bồng chăm sóc...</p>
                     </div>
-                    <p class="text-right font-bold text-gray-900 text-2xl md:text-3xl mt-4">— Xuân Quỳnh —</p>
+                    
                 </div>
 
                 <!-- Bài thơ 2 (Ẩn) -->
@@ -88,7 +88,7 @@ export const lesson21 = {
                         <p>Tớ có một giấc mơ</p>
                         <p>Dưới nắng vàng êm dịu...</p>
                     </div>
-                    <p class="text-right font-bold text-gray-900 text-2xl md:text-3xl mt-4">— Nguyễn Quỳnh Mai —</p>
+                    
                 </div>
 
                 <!-- Bài thơ 3 (Ẩn) -->
@@ -100,7 +100,7 @@ export const lesson21 = {
                         <p>Mà sao chân bước bối rối</p>
                         <p>Nghe trong thầm lặng bao lời thân yêu.</p>
                     </div>
-                    <p class="text-right font-bold text-gray-900 text-2xl md:text-3xl mt-4">— Nguyễn Trong Hoàn —</p>
+                    
                 </div>
             </div>
         </div>
@@ -166,16 +166,7 @@ export const lesson21 = {
                     </div>
                 </div>
 
-                <div class="flex flex-wrap items-center gap-4 pt-4 border-t border-sky-100">
-                    <button onclick="checkPdsWithAI21()" class="px-8 py-3.5 bg-amber-500 text-white font-black text-lg rounded-2xl shadow-md hover:bg-amber-500 active:scale-95 transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-amber-900 font-black text-xs shadow-sm">E</div> 
-                        <span>CHẤM BÀI VỚI THẦY E</span>
-                    </button>
-                    <button onclick="resetPds21()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all text-base">ĐẶT LẠI PHIẾU</button>
-                    <button onclick="submitPdsGlobal21()" class="px-8 py-3.5 bg-sky-600 text-white font-black text-lg rounded-2xl shadow-md hover:bg-sky-600 transition-all ml-auto flex items-center gap-2">
-                        <span>NỘP PHIẾU ĐỌC SÁCH</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetPds21()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkPdsWithAI21(); submitPdsGlobal21();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
 
                 <div id="fb-vn21-pds" class="hidden p-5 rounded-2xl text-base font-bold shadow-md bg-sky-600 text-white transition-all duration-321"></div>
             </div>
@@ -203,10 +194,7 @@ export const lesson21 = {
                     </div>
                 </div>
 
-                <div class="flex gap-3 pt-2">
-                    <button onclick="submitTraoDoi21()" class="px-6 py-2.5 bg-sky-600 hover:bg-sky-600 text-white font-black rounded-xl transition-all text-sm shadow-md">NỘP BÀI THẢO LUẬN ✓</button>
-                    <button onclick="resetTraoDoi21()" class="px-4 py-2.5 bg-gray-200 text-gray-700 font-bold rounded-xl hover:bg-gray-300 transition-all text-sm">Xóa</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetTraoDoi21()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="submitTraoDoi21();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             </div>
         </div>
     </section>
@@ -237,9 +225,7 @@ export const lesson21 = {
                     <label class="text-sm font-black text-emerald-800">💬 Điều em học hỏi hoặc ngưỡng mộ nhất ở vận động viên đó:</label>
                     <textarea id="vd-vn21-story" rows="2" placeholder="Ví dụ: Ngưỡng mộ tinh thần kiên trì luyện tập không ngừng nghỉ và sự quyết tâm thi đấu vì màu cờ sắc áo..." class="w-full p-3 border border-gray-100 rounded-xl font-bold bg-emerald-50/10 text-xl md:text-2xl"></textarea>
                 </div>
-                <div class="flex justify-center pt-2">
-                    <button onclick="submitVanDung21()" class="px-8 py-3 bg-emerald-600 hover:bg-emerald-600 text-white font-black rounded-xl transition-all text-base shadow-md">NỘP BÀI VẬN DỤNG ✓</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="submitVanDung21();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             </div>
         </div>
     </section>

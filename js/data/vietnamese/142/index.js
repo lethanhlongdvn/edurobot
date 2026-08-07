@@ -107,7 +107,7 @@ window.chonKhoiDong142 = function(btn, isCorrect) {
     <!-- BÀI TẬP 1: TÌM CẶP KẾT TỪ (CÂU 1 SGK) -->
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-blue-50">
         <div class="p-6 md:p-8 bg-blue-50/30 rounded-[32px] space-y-6">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-2xl md:text-3xl font-black shadow-md">1</div>
                 <h3 class="text-3xl md:text-4xl font-black text-gray-800">Bài tập 1: Tìm cặp kết từ nối các vế câu trong mỗi câu ghép</h3>
             </div>
@@ -122,16 +122,7 @@ window.chonKhoiDong142 = function(btn, isCorrect) {
                     <p class="text-2xl md:text-3xl text-gray-800 font-bold leading-relaxed bg-gray-50 p-6 rounded-2xl italic border border-gray-150">
                         a) "Bởi tôi ăn uống điều độ và làm việc có chừng mực nên tôi chóng lớn lắm." <span class="font-sans text-lg text-gray-500 font-normal">(Tô Hoài)</span>
                     </p>
-                    <div class="flex flex-wrap items-center gap-4">
-                        <label class="text-2xl md:text-3xl font-bold text-gray-700">Cặp kết từ nối là:</label>
-                        <select id="sel-142-1a" class="p-3 bg-blue-50 border-2 border-blue-200 rounded-xl outline-none font-bold text-blue-600 text-xl md:text-2xl min-w-[240px]">
-                            <option value="">-- Chọn cặp từ --</option>
-                            <option value="bởi... nên...">bởi ... nên ...</option>
-                            <option value="và... có...">và ... có ...</option>
-                            <option value="nên... lắm...">nên ... lắm ...</option>
-                        </select>
-                        <button id="btn-check-142-1a" onclick="checkBt1a()" class="w-12 h-12 md:w-16 md:h-16 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl active:scale-95 transition-all text-xl md:text-3xl flex items-center justify-center">E</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="checkBt1a();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 </div>
 
                 <!-- Câu b -->
@@ -139,16 +130,7 @@ window.chonKhoiDong142 = function(btn, isCorrect) {
                     <p class="text-2xl md:text-3xl text-gray-800 font-bold leading-relaxed bg-gray-50 p-6 rounded-2xl italic border border-gray-150">
                         b) "Mặc dù chúng tôi vẫn chơi với nhau nhưng thời gian Pam dành cho tôi không còn nhiều như trước." <span class="font-sans text-lg text-gray-500 font-normal">(Theo Minh Hương)</span>
                     </p>
-                    <div class="flex flex-wrap items-center gap-4">
-                        <label class="text-2xl md:text-3xl font-bold text-gray-700">Cặp kết từ nối là:</label>
-                        <select id="sel-142-1b" class="p-3 bg-blue-50 border-2 border-blue-200 rounded-xl outline-none font-bold text-blue-600 text-xl md:text-2xl min-w-[240px]">
-                            <option value="">-- Chọn cặp từ --</option>
-                            <option value="mặc dù... vẫn...">mặc dù ... vẫn ...</option>
-                            <option value="mặc dù... nhưng...">mặc dù ... nhưng ...</option>
-                            <option value="vẫn... không...">vẫn ... không ...</option>
-                        </select>
-                        <button id="btn-check-142-1b" onclick="checkBt1b()" class="w-12 h-12 md:w-16 md:h-16 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl active:scale-95 transition-all text-xl md:text-3xl flex items-center justify-center">E</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="checkBt1b();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 </div>
 
                 <!-- Câu c -->
@@ -156,16 +138,7 @@ window.chonKhoiDong142 = function(btn, isCorrect) {
                     <p class="text-2xl md:text-3xl text-gray-800 font-bold leading-relaxed bg-gray-50 p-6 rounded-2xl italic border border-gray-150">
                         c) "Nếu hoa mua có màu tím hồng thì hoa sim tím nhạt, phơn phớt như má con gái." <span class="font-sans text-lg text-gray-500 font-normal">(Băng Sơn)</span>
                     </p>
-                    <div class="flex flex-wrap items-center gap-4">
-                        <label class="text-2xl md:text-3xl font-bold text-gray-700">Cặp kết từ nối là:</label>
-                        <select id="sel-142-1c" class="p-3 bg-blue-50 border-2 border-blue-200 rounded-xl outline-none font-bold text-blue-600 text-xl md:text-2xl min-w-[240px]">
-                            <option value="">-- Chọn cặp từ --</option>
-                            <option value="có... thì...">có ... thì ...</option>
-                            <option value="nếu... thì...">nếu ... thì ...</option>
-                            <option value="thì... như...">thì ... như ...</option>
-                        </select>
-                        <button id="btn-check-142-1c" onclick="checkBt1c()" class="w-12 h-12 md:w-16 md:h-16 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl active:scale-95 transition-all text-xl md:text-3xl flex items-center justify-center">E</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="checkBt1c();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 </div>
             </div>
         </div>
@@ -174,7 +147,7 @@ window.chonKhoiDong142 = function(btn, isCorrect) {
     <!-- BÀI TẬP 2: CHỌN CẶP TỪ HÔ ỨNG THAY CHO BÔNG HOA (CÂU 2 SGK) -->
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-blue-50">
         <div class="p-6 md:p-8 bg-blue-50/30 rounded-[32px] space-y-6">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-2xl md:text-3xl font-black shadow-md">2</div>
                 <h3 class="text-3xl md:text-4xl font-black text-gray-800">Bài tập 2: Chọn cặp từ hô ứng thích hợp điền vào chỗ trống</h3>
             </div>
@@ -188,15 +161,7 @@ window.chonKhoiDong142 = function(btn, isCorrect) {
                     <p class="text-2xl md:text-3xl text-gray-800 font-bold leading-relaxed">
                         a) Ngày <span class="text-blue-600">🌸 (1)</span> tắt hẳn, trăng <span class="text-blue-600">🌸 (2)</span> lên rồi. <span class="font-sans text-lg text-gray-500 font-normal">(Theo Thạch Lam)</span>
                     </p>
-                    <div class="flex flex-wrap items-center gap-4">
-                        <select id="sel-142-2a" class="p-3 bg-blue-50 border-2 border-blue-200 rounded-xl outline-none font-bold text-blue-600 text-xl md:text-2xl">
-                            <option value="">-- Chọn cặp từ hô ứng --</option>
-                            <option value="chưa... đã...">chưa ... đã ...</option>
-                            <option value="đâu... đó...">đâu ... đó ...</option>
-                            <option value="bao nhiêu... bấy nhiêu...">bao nhiêu ... bấy nhiêu ...</option>
-                        </select>
-                        <button id="btn-check-142-2a" onclick="checkBt2a()" class="w-12 h-12 md:w-16 md:h-16 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl active:scale-95 transition-all text-xl md:text-3xl flex items-center justify-center">E</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="checkBt2a();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 </div>
 
                 <!-- Câu b -->
@@ -204,15 +169,7 @@ window.chonKhoiDong142 = function(btn, isCorrect) {
                     <p class="text-2xl md:text-3xl text-gray-800 font-bold leading-relaxed">
                         b) Trăng đi đến <span class="text-blue-600">🌸 (1)</span>, luỹ tre được tắm đẫm màu sữa đến <span class="text-blue-600">🌸 (2)</span>. <span class="font-sans text-lg text-gray-500 font-normal">(Theo Phan Sĩ Châu)</span>
                     </p>
-                    <div class="flex flex-wrap items-center gap-4">
-                        <select id="sel-142-2b" class="p-3 bg-blue-50 border-2 border-blue-200 rounded-xl outline-none font-bold text-blue-600 text-xl md:text-2xl">
-                            <option value="">-- Chọn cặp từ hô ứng --</option>
-                            <option value="chưa... đã...">chưa ... đã ...</option>
-                            <option value="đâu... đó...">đâu ... đó ...</option>
-                            <option value="bao nhiêu... bấy nhiêu...">bao nhiêu ... bấy nhiêu ...</option>
-                        </select>
-                        <button id="btn-check-142-2b" onclick="checkBt2b()" class="w-12 h-12 md:w-16 md:h-16 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl active:scale-95 transition-all text-xl md:text-3xl flex items-center justify-center">E</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="checkBt2b();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 </div>
 
                 <!-- Câu c -->
@@ -220,15 +177,7 @@ window.chonKhoiDong142 = function(btn, isCorrect) {
                     <p class="text-2xl md:text-3xl text-gray-800 font-bold leading-relaxed">
                         c) Nước dâng lên cao <span class="text-blue-600">🌸 (1)</span>, Sơn Tinh lại làm cho đồi, núi mọc cao lên <span class="text-blue-600">🌸 (2)</span>. <span class="font-sans text-lg text-gray-500 font-normal">(Truyện Sơn Tinh, Thuỷ Tinh)</span>
                     </p>
-                    <div class="flex flex-wrap items-center gap-4">
-                        <select id="sel-142-2c" class="p-3 bg-blue-50 border-2 border-blue-200 rounded-xl outline-none font-bold text-blue-600 text-xl md:text-2xl">
-                            <option value="">-- Chọn cặp từ hô ứng --</option>
-                            <option value="chưa... đã...">chưa ... đã ...</option>
-                            <option value="đâu... đó...">đâu ... đó ...</option>
-                            <option value="bao nhiêu... bấy nhiêu...">bao nhiêu ... bấy nhiêu ...</option>
-                        </select>
-                        <button id="btn-check-142-2c" onclick="checkBt2c()" class="w-12 h-12 md:w-16 md:h-16 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl active:scale-95 transition-all text-xl md:text-3xl flex items-center justify-center">E</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="checkBt2c();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 </div>
             </div>
         </div>
@@ -237,7 +186,7 @@ window.chonKhoiDong142 = function(btn, isCorrect) {
     <!-- BÀI TẬP 3: THÊM VẾ CÂU GHÉP (CÂU 3 SGK) -->
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-blue-50">
         <div class="p-6 md:p-8 bg-blue-50/30 rounded-[32px] space-y-6">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-2xl md:text-3xl font-black shadow-md">3</div>
                 <h3 class="text-3xl md:text-4xl font-black text-gray-800">Bài tập 3: Tìm vế câu thích hợp thay cho bông hoa để tạo câu ghép</h3>
             </div>
@@ -252,9 +201,7 @@ window.chonKhoiDong142 = function(btn, isCorrect) {
                         a) Vào dịp lễ Mừng xuân, chẳng những trẻ em được vui đùa thoả thích mà <span class="text-blue-600">🌸</span>.
                     </p>
                     <input type="text" id="inp-142-3a" placeholder="Ví dụ: người lớn cũng vô cùng háo hức tham gia." class="w-full p-4 border border-gray-300 rounded-xl font-bold bg-white text-gray-800 focus:border-blue-500 outline-none text-xl md:text-2xl">
-                    <div class="flex justify-end pt-2">
-                        <button id="btn-check-142-3a" onclick="checkBt3a()" class="w-14 h-14 md:w-20 md:h-20 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-2xl active:scale-95 transition-all text-2xl md:text-4xl flex items-center justify-center">E</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="checkBt3a();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 </div>
 
                 <!-- Câu b -->
@@ -263,9 +210,7 @@ window.chonKhoiDong142 = function(btn, isCorrect) {
                         b) Mặc dù thiên nhiên khắc nghiệt nhưng <span class="text-blue-600">🌸</span>.
                     </p>
                     <input type="text" id="inp-142-3b" placeholder="Ví dụ: cây cối ở đây vẫn luôn xanh tốt." class="w-full p-4 border border-gray-300 rounded-xl font-bold bg-white text-gray-800 focus:border-blue-500 outline-none text-xl md:text-2xl">
-                    <div class="flex justify-end pt-2">
-                        <button id="btn-check-142-3b" onclick="checkBt3b()" class="w-14 h-14 md:w-20 md:h-20 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-2xl active:scale-95 transition-all text-2xl md:text-4xl flex items-center justify-center">E</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="checkBt3b();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 </div>
 
                 <!-- Câu c -->
@@ -274,9 +219,7 @@ window.chonKhoiDong142 = function(btn, isCorrect) {
                         c) Nhờ bố kể những câu chuyện cổ tích mà <span class="text-blue-600">🌸</span>.
                     </p>
                     <input type="text" id="inp-142-3c" placeholder="Ví dụ: em hiểu thêm được nhiều bài học sâu sắc." class="w-full p-4 border border-gray-300 rounded-xl font-bold bg-white text-gray-800 focus:border-blue-500 outline-none text-xl md:text-2xl">
-                    <div class="flex justify-end pt-2">
-                        <button id="btn-check-142-3c" onclick="checkBt3c()" class="w-14 h-14 md:w-20 md:h-20 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-2xl active:scale-95 transition-all text-2xl md:text-4xl flex items-center justify-center">E</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="checkBt3c();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 </div>
             </div>
         </div>
@@ -285,7 +228,7 @@ window.chonKhoiDong142 = function(btn, isCorrect) {
     <!-- BÀI TẬP 4: ĐẶT CÂU GHÉP (CÂU 4 SGK) -->
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-blue-50">
         <div class="p-6 md:p-8 bg-blue-50/30 rounded-[32px] space-y-6">
-            <div class="flex items-center gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-2xl md:text-3xl font-black shadow-md">4</div>
                 <h3 class="text-3xl md:text-4xl font-black text-gray-800">Bài tập 4: Đặt câu ghép theo yêu cầu</h3>
             </div>
@@ -300,9 +243,7 @@ window.chonKhoiDong142 = function(btn, isCorrect) {
                         a) Một câu ghép sử dụng một trong các cặp kết từ: <strong class="text-blue-600">vì ... nên ..., bởi ... nên ..., nhờ ... nên (mà) ...</strong>
                     </p>
                     <textarea id="txt-142-4a" rows="2" placeholder="Ví dụ: Nhờ bạn Nam giúp đỡ nhiệt tình nên em đã tiến bộ hơn trong học tập." class="w-full p-4 border border-gray-300 rounded-xl font-bold bg-white text-gray-800 focus:border-blue-500 outline-none text-xl md:text-2xl resize-none"></textarea>
-                    <div class="flex justify-end pt-2">
-                        <button id="btn-check-142-4a" onclick="checkBt4a()" class="w-14 h-14 md:w-20 md:h-20 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-2xl active:scale-95 transition-all text-2xl md:text-4xl flex items-center justify-center">E</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="checkBt4a();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 </div>
 
                 <!-- Câu b -->
@@ -311,9 +252,7 @@ window.chonKhoiDong142 = function(btn, isCorrect) {
                         b) Một câu ghép sử dụng một trong các cặp kết từ: <strong class="text-blue-600">nếu ... thì ..., hễ ... thì ..., giá ... thì ...</strong>
                     </p>
                     <textarea id="txt-142-4b" rows="2" placeholder="Ví dụ: Nếu cuối tuần trời nắng đẹp thì chúng em sẽ đi cắm trại ở công viên." class="w-full p-4 border border-gray-300 rounded-xl font-bold bg-white text-gray-800 focus:border-blue-500 outline-none text-xl md:text-2xl resize-none"></textarea>
-                    <div class="flex justify-end pt-2">
-                        <button id="btn-check-142-4b" onclick="checkBt4b()" class="w-14 h-14 md:w-20 md:h-20 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-2xl active:scale-95 transition-all text-2xl md:text-4xl flex items-center justify-center">E</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="checkBt4b();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 </div>
 
                 <!-- Câu c -->
@@ -322,9 +261,7 @@ window.chonKhoiDong142 = function(btn, isCorrect) {
                         c) Một câu ghép sử dụng một trong các cặp từ hô ứng: <strong class="text-blue-600">vừa ... đã ..., càng ... càng ...</strong>
                     </p>
                     <textarea id="txt-142-4c" rows="2" placeholder="Ví dụ: Gió càng thổi mạnh, những cánh diều trên bầu trời càng bay cao." class="w-full p-4 border border-gray-300 rounded-xl font-bold bg-white text-gray-800 focus:border-blue-500 outline-none text-xl md:text-2xl resize-none"></textarea>
-                    <div class="flex justify-end pt-2">
-                        <button id="btn-check-142-4c" onclick="checkBt4c()" class="w-14 h-14 md:w-20 md:h-20 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-2xl active:scale-95 transition-all text-2xl md:text-4xl flex items-center justify-center">E</button>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="checkBt4c();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 </div>
             </div>
         </div>

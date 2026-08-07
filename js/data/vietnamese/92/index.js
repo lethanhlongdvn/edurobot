@@ -153,9 +153,7 @@ export const lesson92 = {
                     <span class="font-bold text-gray-700 text-lg md:text-3xl">Được miêu tả mộc mạc như tiếng suối chảy, lúc ẩn lúc hiện trong không gian tĩnh lặng.</span>
                 </label>
             </div>
-            <div class="flex justify-center pt-2">
-                <button onclick="checkC1Vn92()" class="px-6 py-3 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-xl shadow active:scale-95 transition-all">NỘP BÀI ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkC1Vn92();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-c1" class="hidden p-4 rounded-2xl text-center font-bold text-base mt-2 shadow-inner"></div>
         </div>
 
@@ -179,9 +177,7 @@ export const lesson92 = {
                     <span class="font-bold text-gray-700 text-lg md:text-3xl">Trong không khí nhộn nhịp, rực rỡ cờ hoa mừng ngày khánh thành đập thủy điện sông Đà.</span>
                 </label>
             </div>
-            <div class="flex justify-center pt-2">
-                <button onclick="checkC2Vn92()" class="px-6 py-3 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-xl shadow active:scale-95 transition-all">NỘP BÀI ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkC2Vn92();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-c2" class="hidden p-4 rounded-2xl text-center font-bold text-base mt-2 shadow-inner"></div>
         </div>
 
@@ -205,9 +201,7 @@ export const lesson92 = {
                     <span class="font-bold text-gray-700 text-lg md:text-3xl">Hình dung ra cảnh xe ben, xe ủi đang nối đuôi nhau làm việc dưới đêm trăng.</span>
                 </label>
             </div>
-            <div class="flex justify-center pt-2">
-                <button onclick="checkC3Vn92()" class="px-6 py-3 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-xl shadow active:scale-95 transition-all">NỘP BÀI ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkC3Vn92();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-c3" class="hidden p-4 rounded-2xl text-center font-bold text-base mt-2 shadow-inner"></div>
         </div>
 
@@ -220,12 +214,7 @@ export const lesson92 = {
             <div class="space-y-4 max-w-4xl mx-auto">
                 <textarea id="vn92-essay-input" rows="4" placeholder="Nhập cảm nghĩ của em (khoảng 3-5 câu)... Gợi ý: Hình ảnh cô gái Nga hiện lên thế nào? Nó thể hiện điều gì về tình hữu nghị Việt - Xô?..." class="w-full p-4 border-2 border-sky-100 rounded-3xl outline-none focus:border-sky-500 font-bold bg-sky-50/10 text-lg md:text-xl shadow-inner"></textarea>
                 
-                <div class="flex justify-center gap-3">
-                    <button onclick="checkWritingVn92()" class="px-8 py-4 bg-sky-600 hover:bg-sky-700 text-white font-black text-lg rounded-2xl shadow-lg hover:shadow-xl active:scale-95 transition-all flex items-center gap-2">
-                        <span>🎓</span> CHẤM ĐIỂM AI THẦY E
-                    </button>
-                    <button onclick="resetVn92()" class="px-6 py-4 bg-gray-200 hover:bg-gray-300 text-gray-700 font-black text-lg rounded-2xl active:scale-95 transition-all">LÀM LẠI</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetVn92()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkWritingVn92();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="vn92-essay-fb" class="hidden p-5 rounded-3xl border-2 font-bold text-lg text-center shadow-lg transition-all"></div>
             </div>
         </div>

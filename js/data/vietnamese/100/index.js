@@ -56,9 +56,7 @@ export const lesson100 = {
                     <span>Sử dụng những từ có nghĩa giống hoặc gần giống nhau để diễn tả cảm xúc.</span>
                 </label>
             </div>
-            <div class="flex justify-center">
-                <button onclick="kiemTraKhoiDong100()" class="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl transition-all text-lg shadow-md active:scale-95">GỬI ĐÁP ÁN ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraKhoiDong100();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn100-kd" class="hidden p-4 rounded-xl text-lg font-bold text-center mt-2"></div>
         </div>
     </div>
@@ -112,9 +110,7 @@ export const lesson100 = {
             </div>
         </div>
 
-        <div class="flex justify-center gap-4 pt-4">
-            <button onclick="resetMatch100()" class="px-8 py-3 bg-gray-500 hover:bg-gray-600 text-white font-black rounded-xl text-lg shadow transition-all active:scale-95">LÀM LẠI ↺</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="resetMatch100()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button></div>
         <div id="fb-vn100-bt1" class="hidden p-4 rounded-xl text-lg font-bold text-center mt-2 max-w-5xl mx-auto"></div>
     </section>
 
@@ -162,9 +158,7 @@ export const lesson100 = {
             </div>
         </div>
 
-        <div class="flex justify-center pt-4 border-t border-emerald-100">
-            <button onclick="kiemTraBai2_100()" class="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl transition-all text-lg shadow-md active:scale-95">KIỂM TRA BÀI 2 ✓</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraBai2_100();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn100-bt2" class="hidden p-4 rounded-xl text-lg font-bold text-center mt-2 max-w-5xl mx-auto"></div>
     </section>
 
@@ -181,11 +175,7 @@ export const lesson100 = {
             <p class="text-base font-bold text-gray-500">👉 Gợi ý: Em có thể lặp lại các từ biểu lộ tình cảm như: *yêu biết mấy, yêu thương, thoắt cái...* hoặc cụm từ như *Đoạn thơ gợi..., Đoạn thơ cho em...* để làm nổi bật cảm xúc của mình.</p>
             <textarea id="ans-vn100-vietvan" rows="4" placeholder="Nhập câu văn của em tại đây..." class="w-full p-4 text-xl rounded-2xl border-2 border-emerald-100 outline-none focus:border-emerald-500 font-bold bg-white text-gray-800"></textarea>
             
-            <div class="flex justify-center">
-                <button onclick="kiemTraBai3_100()" class="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-white font-black text-lg rounded-2xl shadow-md active:scale-95 transition-all flex items-center gap-2">
-                    <span>E CHẤM BÀI TỰ LUẬN</span>
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraBai3_100();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn100-writing" class="hidden p-5 rounded-2xl font-bold text-lg"></div>
         </div>
     </section>

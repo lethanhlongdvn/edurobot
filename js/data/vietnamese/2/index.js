@@ -32,7 +32,7 @@ export const lesson2 = {
     </div>
 
     <!-- 💡 Bảng ôn tập kiến thức -->
-    <div class="flex flex-col gap-6 max-w-4xl mx-auto">
+    <div class="flex flex-col gap-6 max-w-6xl mx-auto">
         <!-- Danh từ Card -->
         <div class="bg-white p-6 rounded-[36px] border-2 border-emerald-100 shadow-xl hover:scale-[1.01] transition-transform duration-32 flex flex-col md:flex-row items-start md:items-center gap-6">
             <div class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center text-white text-xl md:text-2xl font-black shadow-md shrink-0">DT</div>
@@ -70,9 +70,18 @@ export const lesson2 = {
 `,
     "practice": `
 <div class="space-y-12 animate-in fade-in duration-700 max-w-6xl mx-auto">
-    <!-- BÀI TẬP 1: NỐI Ý CỘT A VÀ B -->
-    <section class="bg-white p-4 rounded-[40px] shadow-lg border border-blue-50">
-        <div class="p-6 md:p-8 bg-blue-50/30 rounded-[32px]">
+    <!-- Thanh điều hướng tab phụ -->
+    <div class="flex justify-center mb-8">
+        <div class="inline-flex bg-blue-50/50 p-1.5 rounded-2xl border border-blue-100/50 shadow-xs">
+            <button onclick="switchPracticeTab(1)" id="btn-prac-tab-1" class="px-6 py-2.5 rounded-xl text-lg font-black transition-all bg-blue-600 text-white shadow">Bài tập 1</button>
+            <button onclick="switchPracticeTab(2)" id="btn-prac-tab-2" class="px-6 py-2.5 rounded-xl text-lg font-black transition-all text-blue-600 hover:bg-blue-100/50">Bài tập 2</button>
+        </div>
+    </div>
+
+    <!-- BÀI TẬP 1 PANEL -->
+    <div id="prac-tab-panel-1" class="prac-tab-panel space-y-8 animate-in fade-in duration-300">
+        <section class="bg-white p-4 rounded-[40px] shadow-lg border border-blue-50">
+            <div class="p-6 md:p-8 bg-blue-50/30 rounded-[32px]">
             <div class="flex items-center gap-4 mb-6">
                 <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl md:text-2xl font-black shadow-md">1</div>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Mỗi ý ở cột B nói về danh từ, động từ hay tính từ?</h3>
@@ -112,22 +121,17 @@ export const lesson2 = {
                 </div>
             </div>
 
-            <div class="mt-8 flex flex-wrap gap-4 justify-between items-center">
-                <button onclick="resetMatching()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 active:scale-95 transition-all">LÀM LẠI</button>
+            <div class="mt-8 flex flex-wrap gap-4 justify-end items-center">
                 <div id="matching-feedback" class="hidden text-xl font-bold rounded-2xl px-6 py-3"></div>
-                <div class="flex gap-4">
-                    <button onclick="checkMatching()" class="px-8 py-3 bg-blue-600 text-white font-black text-lg rounded-2xl shadow-md hover:bg-blue-600 active:scale-95 transition-all">KIỂM TRA</button>
-                    <button onclick="submitEx1()" id="btn-submit-ex1" class="px-8 py-3 bg-gray-800 text-white font-black text-lg rounded-2xl shadow-md hover:bg-black active:scale-95 transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-gray-900 font-black text-xs shadow-sm">E</div>
-                        <span>NỘP BÀI</span>
-                    </button>
-                </div>
+                <button onclick="resetMatching()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
+                <button id="btn-submit-ex1" onclick="submitEx1(); checkMatching();" class="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <!-- BÀI TẬP 2: TRÒ CHƠI 4 VÒNG -->
-    <section class="bg-white p-4 rounded-[40px] shadow-lg border border-amber-50">
+    <!-- BÀI TẬP 2 PANEL -->
+    <div id="prac-tab-panel-2" class="prac-tab-panel hidden space-y-8 animate-in fade-in duration-300">
+        <section class="bg-white p-4 rounded-[40px] shadow-lg border border-amber-50">
         <div class="p-6 md:p-8 bg-amber-50/30 rounded-[32px]">
             <div class="flex items-center gap-4 mb-6">
                 <div class="w-12 h-12 bg-amber-500 text-white rounded-full flex items-center justify-center text-xl md:text-2xl font-black shadow-md">2</div>
@@ -174,14 +178,7 @@ export const lesson2 = {
                         <input type="text" id="v1-c" placeholder="Nhập câu trả lời..." class="p-3 border-2 border-gray-100 rounded-xl text-lg font-bold text-gray-800 focus:border-amber-500 outline-none">
                     </div>
                 </div>
-                <div class="flex justify-end gap-4">
-                    <button onclick="resetVong1()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300">LÀM LẠI</button>
-                    <button onclick="checkVong1()" class="px-8 py-3 bg-amber-500 text-white font-black text-lg rounded-2xl hover:bg-amber-500 shadow-md">KIỂM TRA</button>
-                    <button onclick="submitVong1()" class="px-8 py-3 bg-gray-800 text-white font-black text-lg rounded-2xl shadow-md hover:bg-black active:scale-95 transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-gray-900 font-black text-xs shadow-sm">E</div>
-                        <span>NỘP BÀI</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetVong1()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="submitVong1();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="vong1-feedback" class="hidden text-xl font-bold rounded-2xl p-4"></div>
             </div>
 
@@ -194,14 +191,7 @@ export const lesson2 = {
                     <input type="text" id="v2-3" placeholder="Động từ 3" class="p-4 border-2 border-gray-100 rounded-xl text-lg font-bold text-center text-gray-800 focus:border-amber-500 outline-none">
                     <input type="text" id="v2-4" placeholder="Động từ 4" class="p-4 border-2 border-gray-100 rounded-xl text-lg font-bold text-center text-gray-800 focus:border-amber-500 outline-none">
                 </div>
-                <div class="flex justify-end gap-4">
-                    <button onclick="resetVong2()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300">LÀM LẠI</button>
-                    <button onclick="checkVong2()" class="px-8 py-3 bg-amber-500 text-white font-black text-lg rounded-2xl hover:bg-amber-500 shadow-md">KIỂM TRA</button>
-                    <button onclick="submitVong2()" class="px-8 py-3 bg-gray-800 text-white font-black text-lg rounded-2xl shadow-md hover:bg-black active:scale-95 transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-gray-900 font-black text-xs shadow-sm">E</div>
-                        <span>NỘP BÀI</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetVong2()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="submitVong2();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="v2-feedback" class="hidden text-xl font-bold rounded-2xl p-4"></div>
             </div>
 
@@ -226,14 +216,7 @@ export const lesson2 = {
                         <input type="text" id="v3-cat" placeholder="Nhập từ..." class="p-3 border-2 border-gray-100 rounded-xl text-lg font-bold text-center text-gray-800 focus:border-amber-500 outline-none">
                     </div>
                 </div>
-                <div class="flex justify-end gap-4">
-                    <button onclick="resetVong3()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300">LÀM LẠI</button>
-                    <button onclick="checkVong3()" class="px-8 py-3 bg-amber-500 text-white font-black text-lg rounded-2xl hover:bg-amber-500 shadow-md">KIỂM TRA</button>
-                    <button onclick="submitVong3()" class="px-8 py-3 bg-gray-800 text-white font-black text-lg rounded-2xl shadow-md hover:bg-black active:scale-95 transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-gray-900 font-black text-xs shadow-sm">E</div>
-                        <span>NỘP BÀI</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetVong3()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="submitVong3();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="v3-feedback" class="hidden text-xl font-bold rounded-2xl p-4"></div>
             </div>
 
@@ -246,17 +229,7 @@ export const lesson2 = {
                 
                 <textarea id="ans-vn2-writing" rows="4" placeholder="Nhập câu của em ở đây..." class="w-full p-4 md:p-6 text-xl md:text-2xl rounded-2xl border-2 border-amber-100 focus:border-amber-500 outline-none shadow-sm bg-white font-medium leading-relaxed"></textarea>
                 
-                <div class="flex flex-wrap items-center gap-4">
-                    <button onclick="checkWritingVn2()" class="px-8 py-3 bg-amber-500 text-white font-black text-lg rounded-2xl shadow-md hover:bg-amber-500 active:scale-95 transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-amber-900 font-black text-xs shadow-sm">E</div> 
-                        <span>CHẤM BÀI</span>
-                    </button>
-                    <button onclick="resetWritingVn2()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
-                    <button onclick="submitVn2Progress()" class="px-8 py-3 bg-gray-800 text-white font-black rounded-2xl shadow-md hover:bg-black transition-all ml-auto flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-gray-900 font-black text-xs shadow-sm">E</div>
-                        <span>NỘP BÀI</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetWritingVn2()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkWritingVn2(); submitVn2Progress();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 
                 <div id="fb-vn2-writing" class="hidden mt-6 p-6 bg-amber-500 text-white rounded-2xl shadow-xl animate-in slide-in-from-top-10 duration-500">
                     <!-- AI Feedback will show here -->
@@ -264,6 +237,7 @@ export const lesson2 = {
             </div>
         </div>
     </section>
+</div>
 
     <!-- NỘP BÀI HOÀN THÀNH TOÀN BỘ -->
     <div class="pt-6 flex justify-center">
@@ -856,6 +830,32 @@ window.submitVn2Global = function() {
         window.syncRealtimeProgress({ scorePractice: 12 }, true);
     } else {
         alert("Lỗi: Hệ thống lưu điểm chưa sẵn sàng.");
+    }
+};
+
+window.switchPracticeTab = function(tabNum) {
+    document.querySelectorAll('.prac-tab-panel').forEach((el, index) => {
+        if (index + 1 === tabNum) {
+            el.classList.remove('hidden');
+        } else {
+            el.classList.add('hidden');
+        }
+    });
+
+    const btn1 = document.getElementById('btn-prac-tab-1');
+    const btn2 = document.getElementById('btn-prac-tab-2');
+    
+    if (tabNum === 1) {
+        if (btn1) btn1.className = "px-6 py-2.5 rounded-xl text-lg font-black transition-all bg-blue-600 text-white shadow";
+        if (btn2) btn2.className = "px-6 py-2.5 rounded-xl text-lg font-black transition-all text-blue-600 hover:bg-blue-100/50";
+        if (typeof window.drawConnections === 'function') {
+            setTimeout(() => {
+                window.drawConnections();
+            }, 100);
+        }
+    } else {
+        if (btn1) btn1.className = "px-6 py-2.5 rounded-xl text-lg font-black transition-all text-blue-600 hover:bg-blue-100/50";
+        if (btn2) btn2.className = "px-6 py-2.5 rounded-xl text-lg font-black transition-all bg-blue-600 text-white shadow";
     }
 };
 

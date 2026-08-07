@@ -148,10 +148,19 @@ export const lesson3 = {
 `,
     "practice": `
 <div class="space-y-12 animate-in fade-in duration-700 max-w-6xl mx-auto">
-    
-    <!-- PHẦN 1: BÀI TẬP TƯƠNG TÁC (CÂU 1 SGK) -->
-    <section class="bg-white p-4 rounded-[40px] shadow-lg border border-emerald-50">
-        <div class="p-6 md:p-8 bg-emerald-50/20 rounded-[32px] space-y-8">
+    <!-- Thanh điều hướng tab phụ -->
+    <div class="flex justify-center mb-8">
+        <div class="inline-flex bg-emerald-50/50 p-1.5 rounded-2xl border border-emerald-100/50 shadow-xs">
+            <button onclick="switchPracticeTab(1)" id="btn-prac-tab-1" class="px-6 py-2.5 rounded-xl text-lg font-black transition-all bg-emerald-600 text-white shadow">Bài tập 1</button>
+            <button onclick="switchPracticeTab(2)" id="btn-prac-tab-2" class="px-6 py-2.5 rounded-xl text-lg font-black transition-all text-emerald-800 hover:bg-emerald-100/50">Bài tập 2</button>
+            <button onclick="switchPracticeTab(3)" id="btn-prac-tab-3" class="px-6 py-2.5 rounded-xl text-lg font-black transition-all text-emerald-800 hover:bg-emerald-100/50">Bài tập 3</button>
+        </div>
+    </div>
+
+    <!-- BÀI TẬP 1 PANEL -->
+    <div id="prac-tab-panel-1" class="prac-tab-panel space-y-8 animate-in fade-in duration-300">
+        <section class="bg-white p-4 rounded-[40px] shadow-lg border border-emerald-50">
+            <div class="p-6 md:p-8 bg-emerald-50/20 rounded-[32px] space-y-8">
             <div class="flex items-center gap-4 mb-6">
                 <div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center text-xl md:text-2xl font-black shadow-md">1</div>
                 <h3 class="text-2xl md:text-3xl font-black text-gray-800">Thực hiện yêu cầu về bài văn mẫu</h3>
@@ -159,8 +168,8 @@ export const lesson3 = {
 
             <!-- Câu a: Bài văn trên kể lại câu chuyện gì? -->
             <div class="bg-white p-6 rounded-2xl border-2 border-emerald-100 shadow-sm space-y-4">
-                <h4 class="text-xl font-bold text-gray-800 flex items-start gap-2">
-                    <span class="p-1 bg-emerald-600 text-emerald-800 rounded text-sm font-black">a</span>
+                <h4 class="text-xl md:text-3xl font-black text-gray-900 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center text-lg md:text-xl font-black shrink-0 shadow-sm">a</span>
                     Bài văn trên kể lại câu chuyện nào?
                 </h4>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-base md:text-lg">
@@ -179,8 +188,8 @@ export const lesson3 = {
 
             <!-- Câu b: Tìm các phần của bài văn và nêu ý chính -->
             <div class="bg-white p-6 rounded-2xl border-2 border-emerald-100 shadow-sm space-y-4">
-                <h4 class="text-xl font-bold text-gray-800 flex items-start gap-2">
-                    <span class="p-1 bg-emerald-600 text-emerald-800 rounded text-sm font-black">b</span>
+                <h4 class="text-xl md:text-3xl font-black text-gray-900 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center text-lg md:text-xl font-black shrink-0 shadow-sm">b</span>
                     Ghép phần của bài văn với ý chính tương ứng:
                 </h4>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -215,16 +224,14 @@ export const lesson3 = {
                         </select>
                     </div>
                 </div>
-                <div class="flex justify-end mt-2">
-                    <button onclick="checkPartMatches()" class="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-600 text-white font-black rounded-xl shadow-sm transition-all text-base">KIỂM TRA CÂU B</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="checkPartMatches();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="feedback-vn3-b" class="hidden text-lg font-bold p-3 rounded-xl"></div>
             </div>
 
             <!-- Câu c: Các chi tiết sáng tạo A, B được bổ sung vào phần nào? -->
             <div class="bg-white p-6 rounded-2xl border-2 border-emerald-100 shadow-sm space-y-4">
-                <h4 class="text-xl font-bold text-gray-800 flex items-start gap-2">
-                    <span class="p-1 bg-emerald-600 text-emerald-800 rounded text-sm font-black">c</span>
+                <h4 class="text-xl md:text-3xl font-black text-gray-900 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center text-lg md:text-xl font-black shrink-0 shadow-sm">c</span>
                     Các chi tiết sáng tạo A, B được bổ sung vào phần nào của bài văn?
                 </h4>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-base md:text-lg">
@@ -243,8 +250,8 @@ export const lesson3 = {
 
             <!-- Câu d: Nối chi tiết sáng tạo A, B với hình thức phù hợp -->
             <div class="bg-white p-6 rounded-2xl border-2 border-emerald-100 shadow-sm space-y-4">
-                <h4 class="text-xl font-bold text-gray-800 flex items-start gap-2">
-                    <span class="p-1 bg-emerald-600 text-emerald-800 rounded text-sm font-black">d</span>
+                <h4 class="text-xl md:text-3xl font-black text-gray-900 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center text-lg md:text-xl font-black shrink-0 shadow-sm">d</span>
                     Tìm hình thức phù hợp với mỗi chi tiết sáng tạo A, B:
                 </h4>
                 <p class="text-base text-gray-800 italic">👉 Hướng dẫn: Nhấp chọn một ô ở cột A rồi nhấp chọn định nghĩa đúng ở cột B để kết nối.</p>
@@ -274,25 +281,18 @@ export const lesson3 = {
                     </div>
                 </div>
 
-                <div class="flex justify-end gap-3 mt-4">
-                    <button onclick="resetMatchingVn3()" class="px-6 py-2.5 bg-gray-200 text-gray-700 font-bold rounded-xl hover:bg-gray-300 transition-all text-base">ĐẶT LẠI</button>
-                    <button onclick="checkMatchingVn3()" class="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-600 text-white font-black rounded-xl shadow-md transition-all text-base">KIỂM TRA CÂU D</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetMatchingVn3()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button> <button onclick="checkMatchingVn3(); submitVn3Ex1();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="feedback-vn3-d" class="hidden text-lg font-bold p-3 rounded-xl"></div>
             </div>
 
             <!-- Tổng kết & Nộp bài 1 -->
-            <div class="pt-6 border-t border-emerald-100 flex justify-between items-center">
-                <span class="text-sm font-bold text-gray-800">Hoàn thành bài tập 1 để nộp điểm</span>
-                <button onclick="submitVn3Ex1()" class="px-8 py-3 bg-gray-800 text-white font-black rounded-2xl shadow-md hover:bg-black transition-all flex items-center gap-2">
-                    <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-gray-900 font-black text-xs shadow-sm">E</div>
-                    <span>NỘP BÀI 1</span>
-                </button>
-            </div>
+            
         </div>
     </section>
+</div>
 
-    <!-- PHẦN 2: BÀI TẬP 2 SGK (THAY ĐOẠN ĐOẠN NÀO) -->
+<!-- BÀI TẬP 2 PANEL -->
+<div id="prac-tab-panel-2" class="prac-tab-panel hidden space-y-8 animate-in fade-in duration-300">
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-emerald-50">
         <div class="p-6 md:p-8 bg-emerald-50/20 rounded-[32px] space-y-6">
             <div class="flex items-center gap-4 mb-4">
@@ -324,16 +324,13 @@ export const lesson3 = {
                 <div id="feedback-vn3-ex2" class="hidden text-lg font-bold p-3 rounded-xl"></div>
             </div>
 
-            <div class="flex justify-end pt-4">
-                <button onclick="submitVn3Ex2()" class="px-8 py-3 bg-gray-800 text-white font-black rounded-2xl shadow-md hover:bg-black transition-all flex items-center gap-2">
-                    <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-gray-900 font-black text-xs shadow-sm">E</div>
-                    <span>NỘP BÀI 2</span>
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="submitVn3Ex2();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         </div>
     </section>
+</div>
 
-    <!-- PHẦN 3: BÀI TẬP 3 SGK (CÁC CÁCH VẬN DỤNG) -->
+<!-- BÀI TẬP 3 PANEL -->
+<div id="prac-tab-panel-3" class="prac-tab-panel hidden space-y-8 animate-in fade-in duration-300">
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-emerald-50">
         <div class="p-6 md:p-8 bg-emerald-50/20 rounded-[32px] space-y-6">
             <div class="flex items-center gap-4 mb-4">
@@ -363,17 +360,12 @@ export const lesson3 = {
                     </label>
                 </div>
                 
-                <div class="flex justify-end gap-3 pt-4">
-                    <button onclick="checkVong3Ex3()" class="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-600 text-white font-black rounded-xl shadow-sm transition-all text-base">KIỂM TRA CÂU 3</button>
-                    <button onclick="submitVn3Ex3()" class="px-8 py-3 bg-gray-800 text-white font-black rounded-2xl shadow-md hover:bg-black transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-gray-900 font-black text-xs shadow-sm">E</div>
-                        <span>NỘP BÀI 3</span>
-                    </button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="checkVong3Ex3(); submitVn3Ex3();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="feedback-vn3-ex3" class="hidden text-lg font-bold p-3 rounded-xl"></div>
             </div>
         </div>
     </section>
+</div>
 
     <!-- HOÀN THÀNH TOÀN BỘ BÀI HỌC -->
     <div class="pt-6 flex justify-center">
@@ -839,6 +831,35 @@ window.submitVn3Global = function() {
         window.syncRealtimeProgress({ scorePractice: 13 }, true);
     } else {
         alert("Lỗi: Hệ thống lưu điểm chưa sẵn sàng.");
+    }
+};
+
+window.switchPracticeTab = function(tabNum) {
+    document.querySelectorAll('.prac-tab-panel').forEach((el, index) => {
+        if (index + 1 === tabNum) {
+            el.classList.remove('hidden');
+        } else {
+            el.classList.add('hidden');
+        }
+    });
+
+    ['1', '2', '3'].forEach(num => {
+        const btn = document.getElementById(`btn-prac-tab-${num}`);
+        if (btn) {
+            if (parseInt(num) === tabNum) {
+                btn.className = "px-6 py-2.5 rounded-xl text-lg font-black transition-all bg-emerald-600 text-white shadow";
+            } else {
+                btn.className = "px-6 py-2.5 rounded-xl text-lg font-black transition-all text-emerald-800 hover:bg-emerald-100/50";
+            }
+        }
+    });
+
+    if (tabNum === 1) {
+        if (typeof window.drawConnectionsVn3 === 'function') {
+            setTimeout(() => {
+                window.drawConnectionsVn3();
+            }, 100);
+        }
     }
 };
 

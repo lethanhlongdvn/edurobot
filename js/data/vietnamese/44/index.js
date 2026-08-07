@@ -58,7 +58,7 @@ export const lesson44 = {
 
     <!-- 📝 BÀI 1 -->
     <div class="bg-white p-6 md:p-8 rounded-[36px] border border-teal-100 shadow-xl space-y-6">
-        <div class="flex items-center gap-4">
+        <div class="flex justify-end items-center gap-4">
             <div class="w-12 h-12 bg-teal-600 text-white rounded-xl flex items-center justify-center text-2xl md:text-3xl font-black shadow-md shrink-0">1</div>
             <h3 class="text-xl md:text-2xl font-black text-gray-800">Đọc đoạn thơ và các nghĩa của từ <em>mắt</em> rồi trả lời câu hỏi.</h3>
         </div>
@@ -158,7 +158,7 @@ export const lesson44 = {
 
     <!-- 📝 BÀI 2 -->
     <div class="bg-white p-6 md:p-8 rounded-[36px] border border-teal-100 shadow-xl space-y-6">
-        <div class="flex items-center gap-4">
+        <div class="flex justify-end items-center gap-4">
             <div class="w-12 h-12 bg-teal-600 text-white rounded-xl flex items-center justify-center text-2xl md:text-3xl font-black shadow-md shrink-0">2</div>
             <h3 class="text-xl md:text-2xl font-black text-gray-800">Xác định nghĩa của từ <em>biển</em> trong các câu thơ, câu ca dao – cho biết nghĩa gốc, nghĩa chuyển.</h3>
         </div>
@@ -167,28 +167,19 @@ export const lesson44 = {
             <!-- Câu a -->
             <div class="p-5 bg-teal-50/30 rounded-2xl border border-teal-100 space-y-3">
                 <p class="font-black text-gray-800 text-lg md:text-xl">a. <em>"Việt Nam đất nước ta ơi / Mênh mông <strong>biển</strong> lúa đầu trời đẹp hơn."</em> <span class="text-sm text-gray-800">(Nguyễn Đình Thi)</span></p>
-                <div class="flex flex-wrap gap-2">
-                    <button onclick="kiemTraBien(this, 'a', 'chuyen')" class="px-4 py-2 border-2 border-teal-100 rounded-xl bg-white hover:bg-teal-50 font-black text-base transition-all active:scale-95">Nghĩa chuyển</button>
-                    <button onclick="kiemTraBien(this, 'a', 'goc')" class="px-4 py-2 border-2 border-teal-100 rounded-xl bg-white hover:bg-teal-50 font-black text-base transition-all active:scale-95">Nghĩa gốc</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="kiemTraBien(this,;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-bien-a" class="hidden p-3 rounded-xl text-base font-bold transition-all"></div>
             </div>
             <!-- Câu b -->
             <div class="p-5 bg-teal-50/30 rounded-2xl border border-teal-100 space-y-3">
                 <p class="font-black text-gray-800 text-lg md:text-xl">b. <em>"Mặt trời xuống <strong>biển</strong> như hòn lửa / Sóng đã cài then, đêm sập cửa."</em> <span class="text-sm text-gray-800">(Huy Cận)</span></p>
-                <div class="flex flex-wrap gap-2">
-                    <button onclick="kiemTraBien(this, 'b', 'goc')" class="px-4 py-2 border-2 border-teal-100 rounded-xl bg-white hover:bg-teal-50 font-black text-base transition-all active:scale-95">Nghĩa gốc</button>
-                    <button onclick="kiemTraBien(this, 'b', 'chuyen')" class="px-4 py-2 border-2 border-teal-100 rounded-xl bg-white hover:bg-teal-50 font-black text-base transition-all active:scale-95">Nghĩa chuyển</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="kiemTraBien(this,;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-bien-b" class="hidden p-3 rounded-xl text-base font-bold transition-all"></div>
             </div>
             <!-- Câu c -->
             <div class="p-5 bg-teal-50/30 rounded-2xl border border-teal-100 space-y-3">
                 <p class="font-black text-gray-800 text-lg md:text-xl">c. <em>"Công cha như núi ngất trời / Nghĩa mẹ như nước ngời ngời <strong>Biển</strong> Đông."</em> <span class="text-sm text-gray-800">(Ca dao)</span></p>
-                <div class="flex flex-wrap gap-2">
-                    <button onclick="kiemTraBien(this, 'c', 'goc')" class="px-4 py-2 border-2 border-teal-100 rounded-xl bg-white hover:bg-teal-50 font-black text-base transition-all active:scale-95">Nghĩa gốc</button>
-                    <button onclick="kiemTraBien(this, 'c', 'chuyen')" class="px-4 py-2 border-2 border-teal-100 rounded-xl bg-white hover:bg-teal-50 font-black text-base transition-all active:scale-95">Nghĩa chuyển</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="kiemTraBien(this,;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-bien-c" class="hidden p-3 rounded-xl text-base font-bold transition-all"></div>
             </div>
         </div>
@@ -196,7 +187,7 @@ export const lesson44 = {
 
     <!-- 📝 BÀI 3 -->
     <div class="bg-white p-6 md:p-8 rounded-[36px] border border-teal-100 shadow-xl space-y-6">
-        <div class="flex items-center gap-4">
+        <div class="flex justify-end items-center gap-4">
             <div class="w-12 h-12 bg-teal-600 text-white rounded-xl flex items-center justify-center text-2xl md:text-3xl font-black shadow-md shrink-0">3</div>
             <h3 class="text-xl md:text-2xl font-black text-gray-800">Từ <em>lưng</em> trong mỗi đoạn thơ dưới đây được dùng với nghĩa gốc hay nghĩa chuyển? Nêu các nghĩa đó.</h3>
         </div>
@@ -205,31 +196,19 @@ export const lesson44 = {
             <!-- Đoạn a -->
             <div class="p-5 bg-teal-50/30 rounded-2xl border border-teal-100 space-y-3">
                 <p class="font-black text-gray-800">a. <em>"Trăng tròn như quả bóng / Lơ lửng treo <strong>lưng</strong> trời."</em> <span class="text-sm text-gray-800">(Nguyễn Ngọc Hưng)</span></p>
-                <div class="flex flex-wrap gap-2">
-                    <button onclick="kiemTraLung(this, 'a', 'chuyen')" class="px-4 py-2 border-2 border-teal-100 rounded-xl bg-white hover:bg-teal-50 font-black text-base transition-all active:scale-95">Nghĩa chuyển</button>
-                    <button onclick="kiemTraLung(this, 'a', 'goc')" class="px-4 py-2 border-2 border-teal-100 rounded-xl bg-white hover:bg-teal-50 font-black text-base transition-all active:scale-95">Nghĩa gốc</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="kiemTraLung(this,;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-lung-a" class="hidden p-4 rounded-xl text-base font-bold transition-all"></div>
             </div>
 
             <!-- Đoạn b -->
             <div class="p-5 bg-teal-50/30 rounded-2xl border border-teal-100 space-y-3">
                 <p class="font-black text-gray-800">b. <em>"<sup class="text-teal-800">(1)</sup><strong>Lưng</strong> núi thì to mà <sup class="text-teal-800">(2)</sup><strong>lưng</strong> mẹ nhỏ / Em ngủ ngoan em đừng làm mẹ mỏi / Mặt trời của bắp thì nằm trên đồi / Mặt trời của mẹ, em nằm trên <sup class="text-teal-800">(3)</sup><strong>lưng</strong>."</em> <span class="text-sm text-gray-800">(Nguyễn Khoa Điềm)</span></p>
-                <div class="flex flex-wrap gap-3">
-                    <div class="space-y-2 w-full">
-                        <p class="text-base font-black text-gray-800">Lưng <sup>(1)</sup> (lưng núi):</p>
-                        <div class="flex gap-2">
-                            <button onclick="kiemTraLungB(this, '1', 'chuyen')" class="px-4 py-2 border-2 border-teal-100 rounded-xl bg-white hover:bg-teal-50 font-black text-base transition-all active:scale-95">Nghĩa chuyển</button>
-                            <button onclick="kiemTraLungB(this, '1', 'goc')" class="px-4 py-2 border-2 border-teal-100 rounded-xl bg-white hover:bg-teal-50 font-black text-base transition-all active:scale-95">Nghĩa gốc</button>
-                        </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="kiemTraLungB(this,;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                         <div id="fb-lung-b1" class="hidden p-3 rounded-xl text-sm font-bold transition-all"></div>
                     </div>
                     <div class="space-y-2 w-full">
                         <p class="text-base font-black text-gray-800">Lưng <sup>(2)</sup> (lưng mẹ) & lưng <sup>(3)</sup> (nằm trên lưng):</p>
-                        <div class="flex gap-2">
-                            <button onclick="kiemTraLungB(this, '23', 'goc')" class="px-4 py-2 border-2 border-teal-100 rounded-xl bg-white hover:bg-teal-50 font-black text-base transition-all active:scale-95">Nghĩa gốc</button>
-                            <button onclick="kiemTraLungB(this, '23', 'chuyen')" class="px-4 py-2 border-2 border-teal-100 rounded-xl bg-white hover:bg-teal-50 font-black text-base transition-all active:scale-95">Nghĩa chuyển</button>
-                        </div>
+                        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraLungB(this,;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                         <div id="fb-lung-b44" class="hidden p-3 rounded-xl text-sm font-bold transition-all"></div>
                     </div>
                 </div>
@@ -307,9 +286,7 @@ export const lesson44 = {
             </div>
         </div>
 
-        <div class="flex justify-center">
-            <button onclick="nopDatCau44()" class="px-8 py-3.5 bg-teal-600 text-white font-black text-lg rounded-2xl shadow-md hover:bg-teal-600 active:scale-95 transition-all">Nộp bài đặt câu</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="nopDatCau44();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn44-dat-cau" class="hidden p-5 rounded-2xl text-base font-bold shadow-md transition-all duration-344"></div>
     </section>
 

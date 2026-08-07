@@ -205,7 +205,7 @@ export const lesson59 = {
                                         <li>Tam giác 3: $(4 \times 4) : 2 = 8$ ($m^2$)</li>
                                         <li>Tam giác 4: $(20 \times 10) : 2 = 100$ ($cm^2$)</li>
                                     </ul>
-                                    <p class="mt-4"><strong>b) Đổi đơn vị đo:</strong> 2 dm = 20 cm.</p>
+                                    
                                     <p>Diện tích của hình tam giác là: $(20 \times 20) : 2 = 200$ ($cm^2$).</p>
                                     <p>Đổi: 200 $cm^2$ = 2 $dm^2$. Vậy đáp số đúng là <strong>D. 2 dm²</strong>.</p>
                                 </div>
@@ -394,7 +394,7 @@ export const lesson59 = {
                                         <li><strong>Lá cam (dưới cùng):</strong> đáy 10 cm, cao 4 cm. Diện tích = $(10 \times 4) : 2 = 20$ ($cm^2$).</li>
                                         <li><strong>Thân cây (hình chữ nhật):</strong> rộng 2 cm, cao 2 cm. Diện tích = $2 \times 2 = 4$ ($cm^2$).</li>
                                     </ul>
-                                    <p class="mt-4">Tổng diện tích cây thông là:</p>
+                                    
                                     <p class="text-blue-700 font-mono text-lg md:text-xl pl-4">6 + 12 + 20 + 4 = 42 (cm²)</p>
                                     <p>Đáp số: <strong>42 cm²</strong>.</p>
                                 </div>

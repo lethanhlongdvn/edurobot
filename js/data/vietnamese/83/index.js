@@ -117,9 +117,7 @@ export const lesson83 = {
             </div>
 
             <!-- Nút xác nhận -->
-            <div class="flex justify-center pt-2">
-                <button onclick="kiemTraDanY83()" class="px-8 py-3 bg-blue-600 text-white font-black rounded-xl hover:bg-blue-600 transition-all text-base shadow active:scale-95">KIỂM TRA DÀN Ý ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDanY83();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             
             <div id="fb-vn83-dany" class="hidden p-5 rounded-2xl font-bold text-center mt-2 shadow-lg"></div>
         </div>

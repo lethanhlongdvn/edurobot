@@ -178,7 +178,7 @@ export const lesson_251_ltvc = {
                                             <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-green-600 font-black text-xs shadow-sm">E</div>
                                             KIỂM TRA
                                         </button>
-                                        <button onclick="resetEx251_3()" class="px-6 py-3 bg-gray-200 text-gray-700 text-lg font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
+                                        <button onclick="resetEx251_3()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
                                         <div id="fb-251-ltvc-ex3" class="hidden text-lg md:text-2xl font-black"></div>
                                     </div>
                                 </div>
@@ -204,7 +204,7 @@ export const lesson_251_ltvc = {
                                                 <select id="ex251-4-3" class="px-2 py-0 border-b-2 border-green-400 bg-transparent text-green-700 font-bold outline-none focus:bg-green-50 transition-all"><option value="">...</option><option value="thành phố ngàn hoa">thành phố ngàn hoa</option><option value="thành phố du lịch">thành phố du lịch</option><option value="thiên đường du lịch">thiên đường du lịch</option></select> 
                                                 vừa truyền thống vừa hiện đại, giàu sức hút đối với du khách trong nước và quốc tế.
                                             </p>
-                                            <p class="text-right text-base italic text-gray-500 mt-4">(Theo Lâm Anh)</p>
+                                            
                                         </div>
                                     </div>
                                     <div class="mt-8 flex items-center gap-4">
@@ -212,7 +212,7 @@ export const lesson_251_ltvc = {
                                             <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-green-600 font-black text-xs shadow-sm">E</div>
                                             HOÀN THÀNH
                                         </button>
-                                        <button onclick="resetEx251_4()" class="px-6 py-3 bg-gray-200 text-gray-700 text-lg font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
+                                        <button onclick="resetEx251_4()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
                                         <button onclick="submitLTVCUnified('251-ltvc-ex4')" class="px-8 py-3 bg-gray-800 text-white text-lg font-black rounded-2xl shadow-lg hover:bg-black transition-all flex items-center gap-2">
                                             <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-gray-800 font-black text-xs shadow-sm">E</div>
                                             <span>NỘP BÀI</span>

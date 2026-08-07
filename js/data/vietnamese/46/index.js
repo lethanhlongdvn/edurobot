@@ -332,21 +332,10 @@ export const lesson46 = {
             <!-- Cặp a -->
             <div class="p-5 bg-sky-50/30 rounded-2xl border border-sky-100 space-y-3 font-bold text-base md:text-lg">
                 <p class="text-sky-800">a. Phân biệt nghĩa của từ <strong>quả</strong>:</p>
-                <div class="flex flex-col gap-3">
-                    <div class="flex flex-wrap items-center gap-3">
-                        <span>• <strong>Quả</strong> núi</span>
-                        <div class="flex gap-2">
-                            <button onclick="checkNghiaGocChuyen(this, 'quanui', 'chuyen')" class="px-4 py-1.5 border-2 border-sky-100 rounded-xl bg-white hover:bg-sky-50 text-sm font-black transition-all">Nghĩa chuyển</button>
-                            <button onclick="checkNghiaGocChuyen(this, 'quanui', 'goc')" class="px-4 py-1.5 border-2 border-sky-100 rounded-xl bg-white hover:bg-sky-50 text-sm font-black transition-all">Nghĩa gốc</button>
-                        </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="checkNghiaGocChuyen(this,;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                         <span id="fb-quanui" class="hidden text-xs font-black"></span>
                     </div>
-                    <div class="flex flex-wrap items-center gap-3">
-                        <span>• <strong>Quả</strong> cam</span>
-                        <div class="flex gap-2">
-                            <button onclick="checkNghiaGocChuyen(this, 'quacam', 'goc')" class="px-4 py-1.5 border-2 border-sky-100 rounded-xl bg-white hover:bg-sky-50 text-sm font-black transition-all">Nghĩa gốc</button>
-                            <button onclick="checkNghiaGocChuyen(this, 'quacam', 'chuyen')" class="px-4 py-1.5 border-2 border-sky-100 rounded-xl bg-white hover:bg-sky-50 text-sm font-black transition-all">Nghĩa chuyển</button>
-                        </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="checkNghiaGocChuyen(this,;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                         <span id="fb-quacam" class="hidden text-xs font-black"></span>
                     </div>
                 </div>
@@ -355,21 +344,10 @@ export const lesson46 = {
             <!-- Cặp b -->
             <div class="p-5 bg-sky-50/30 rounded-2xl border border-sky-100 space-y-3 font-bold text-base md:text-lg">
                 <p class="text-sky-800">b. Phân biệt nghĩa của từ <strong>lửa</strong>:</p>
-                <div class="flex flex-col gap-3">
-                    <div class="flex flex-wrap items-center gap-3">
-                        <span>• Phun <strong>lửa</strong></span>
-                        <div class="flex gap-2">
-                            <button onclick="checkNghiaGocChuyen(this, 'phunlua', 'goc')" class="px-4 py-1.5 border-2 border-sky-100 rounded-xl bg-white hover:bg-sky-50 text-sm font-black transition-all">Nghĩa gốc</button>
-                            <button onclick="checkNghiaGocChuyen(this, 'phunlua', 'chuyen')" class="px-4 py-1.5 border-2 border-sky-100 rounded-xl bg-white hover:bg-sky-50 text-sm font-black transition-all">Nghĩa chuyển</button>
-                        </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="checkNghiaGocChuyen(this,;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                         <span id="fb-phunlua" class="hidden text-xs font-black"></span>
                     </div>
-                    <div class="flex flex-wrap items-center gap-3">
-                        <span>• Ngọn <strong>lửa</strong> ước mơ</span>
-                        <div class="flex gap-2">
-                            <button onclick="checkNghiaGocChuyen(this, 'uocmo', 'chuyen')" class="px-4 py-1.5 border-2 border-sky-100 rounded-xl bg-white hover:bg-sky-50 text-sm font-black transition-all">Nghĩa chuyển</button>
-                            <button onclick="checkNghiaGocChuyen(this, 'uocmo', 'goc')" class="px-4 py-1.5 border-2 border-sky-100 rounded-xl bg-white hover:bg-sky-50 text-sm font-black transition-all">Nghĩa gốc</button>
-                        </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="checkNghiaGocChuyen(this,;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                         <span id="fb-uocmo" class="hidden text-xs font-black"></span>
                     </div>
                 </div>
@@ -395,10 +373,7 @@ export const lesson46 = {
 - Câu nghĩa chuyển: Con đường phía trước là cả quả đồi cao hiểm trở..." class="w-full p-4 border border-gray-100 rounded-2xl bg-white text-xl md:text-2xl font-semibold focus:border-sky-500 outline-none shadow-sm"></textarea>
             </div>
             
-            <div class="flex justify-center gap-4">
-                <button onclick="checkWritingVn46()" class="px-8 py-3.5 bg-sky-600 text-white font-black text-lg rounded-2xl shadow-md hover:bg-sky-600 active:scale-95 transition-all">NỘP BÀI GỬI THẦY E</button>
-                <button onclick="resetWritingVn46()" class="px-6 py-3.5 bg-gray-800 hover:bg-gray-800 text-gray-900 font-black text-lg rounded-2xl transition-all active:scale-95">LÀM LẠI</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="resetWritingVn46()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkWritingVn46();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn46-writing" class="hidden p-5 rounded-2xl text-base font-bold shadow-md transition-all duration-346"></div>
         </div>
     </section>

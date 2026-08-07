@@ -85,9 +85,7 @@ export const lesson73 = {
             </div>
         </div>
 
-        <div class="flex justify-center">
-            <button onclick="kiemTraKhoiDong73()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md active:scale-95">KIỂM TRA GHÉP CẶP ✓</button>
-        </div>
+        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraKhoiDong73();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
         <div id="fb-vn73-kd" class="hidden p-4 rounded-xl text-sm font-bold text-center mt-2"></div>
     </div>
 
@@ -223,9 +221,7 @@ export const lesson73 = {
                 </label>
             </div>
 
-            <div class="flex justify-center">
-                <button onclick="kiemTraChecklist73()" class="px-8 py-3 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-base shadow-md active:scale-95">HOÀN TẤT ĐỌC SOÁT ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraChecklist73();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn73-chk" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2"></div>
         </div>
     </section>
@@ -244,9 +240,7 @@ export const lesson73 = {
             
             <div class="space-y-4 max-w-4xl mx-auto">
                 <textarea id="ans-vn73-vandung" rows="3" placeholder="Ví dụ: Bố khen đoạn văn của em viết cảm xúc, làm bố cũng muốn tìm đọc cuốn sách này..." class="w-full p-4 text-lg md:text-xl rounded-2xl border-2 border-sky-100 outline-none focus:border-sky-500 font-bold bg-sky-50 bg-opacity-100"></textarea>
-                <div class="flex justify-center">
-                    <button onclick="kiemTraVanDung73()" class="px-8 py-3 bg-sky-600 text-white font-black rounded-xl hover:bg-sky-600 transition-all text-base shadow-md active:scale-95">GỬI CHIA SẺ ✓</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="kiemTraVanDung73();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn73-vd" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2"></div>
             </div>
         </div>

@@ -190,7 +190,7 @@ export const lesson167 = {
                             <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-amber-600 font-black text-sm shadow-sm">E</div>
                             <span>AI CHẤM BÀI VIẾT</span>
                         </button>
-                        <button onclick="window.resetPractice167()" class="px-6 py-4 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all">LÀM LẠI</button>
+                        <button onclick="window.resetPractice167()" class="w-12 h-12 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại">🔄</button>
                     </div>
                     <div id="fb-167-ai" class="hidden mt-6 p-8 bg-amber-900 text-white rounded-[28px] shadow-2xl animate-in slide-in-from-top-10 duration-500"></div>
                 </div>
@@ -391,7 +391,7 @@ window.nhanXetCauVietLai167 = async function(type) {
     const fb = document.getElementById(targetFbId);
     fb.classList.remove("hidden");
     fb.innerHTML = `
-        <div class="flex items-center gap-4">
+        <div class="flex justify-end items-center gap-4">
             <div class="animate-spin rounded-full h-6 w-6 border-4 border-white border-t-transparent"></div>
             <p class="text-base font-bold italic">AI đang nhận xét câu viết lại của em...</p>
         </div>

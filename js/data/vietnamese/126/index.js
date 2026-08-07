@@ -40,7 +40,7 @@ export const lesson126 = {
 
         <!-- Ảnh minh họa SGK trang 164 -->
         <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-md overflow-hidden border border-sky-100 cursor-pointer" 
-             onclick="window.showMathFeedback('Đọc hiểu & Viết', '📝', '<div class=\'text-center p-4\'><img src=\'assets/images/tiengviet_5_1/162-164/164.png\' class=\'max-h-[75vh] mx-auto rounded-2xl shadow-md object-contain\' alt=\'Đọc hiểu & Viết\'><p class=\'text-xl font-bold text-sky-850 mt-4\'>Các câu hỏi từ 5 đến 10 và đề bài Viết tự chọn</p></div>')">
+             onclick="window.showMathFeedback('Đọc hiểu & Viết', '📝', '<div class=\'text-center p-4\'><img src=\'assets/images/tiengviet_5_1/162-164/164.png\' class=\'max-h-[75vh] mx-auto rounded-2xl shadow-md object-contain\' alt=\'Đọc hiểu & Viết\'></div>')">
             <img src="assets/images/tiengviet_5_1/162-164/164.png" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500" alt="Đọc hiểu & Viết">
             <div class="p-2 text-center text-xs font-bold text-sky-700">🔍 Click để xem toàn màn hình SGK trang 164</div>
         </div>
@@ -67,7 +67,7 @@ export const lesson126 = {
                         <span>D. tránh rét</span>
                     </label>
                 </div>
-                <button onclick="kiemTraCauHoi5Vn126()" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white font-bold rounded-lg text-sm transition-all">Kiểm tra</button>
+                <button onclick="kiemTraCauHoi5Vn126()" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
                 <div id="fb-vn126-c5" class="hidden p-3 rounded-xl text-sm font-bold text-center"></div>
             </div>
 
@@ -104,9 +104,7 @@ export const lesson126 = {
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center">
-                    <button onclick="kiemTraCauHoi6Vn126()" class="px-5 py-2 bg-sky-600 hover:bg-sky-700 text-white font-bold rounded-lg text-sm transition-all">Kiểm tra sơ đồ</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="kiemTraCauHoi6Vn126();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn126-c6" class="hidden p-3 rounded-xl text-sm font-bold text-center"></div>
             </div>
 
@@ -114,7 +112,7 @@ export const lesson126 = {
             <div class="bg-sky-50/30 p-5 rounded-2xl border border-sky-100 space-y-3">
                 <p class="font-black text-lg text-sky-950">7. Những từ ngữ nào được dùng để đánh dấu việc trình bày các lí do chim di cư ở Đoạn 2?</p>
                 <input id="ans-vn126-c7" type="text" placeholder="Ví dụ: trước hết, thứ hai..." class="w-full p-3 rounded-xl border border-sky-200 focus:border-sky-500 font-bold bg-white text-gray-800 text-base outline-none">
-                <button onclick="kiemTraCauHoi7Vn126()" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white font-bold rounded-lg text-sm transition-all">Kiểm tra</button>
+                <button onclick="kiemTraCauHoi7Vn126()" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
                 <div id="fb-vn126-c7" class="hidden p-3 rounded-xl text-sm font-bold"></div>
             </div>
 
@@ -139,7 +137,7 @@ export const lesson126 = {
                         <span>D. Dùng để nối các từ ngữ trong một liên danh.</span>
                     </label>
                 </div>
-                <button onclick="kiemTraCauHoi8Vn126()" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white font-bold rounded-lg text-sm transition-all">Kiểm tra</button>
+                <button onclick="kiemTraCauHoi8Vn126()" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
                 <div id="fb-vn126-c8" class="hidden p-3 rounded-xl text-sm font-bold text-center"></div>
             </div>
 
@@ -147,7 +145,7 @@ export const lesson126 = {
             <div class="bg-sky-50/30 p-5 rounded-2xl border border-sky-100 space-y-3">
                 <p class="font-black text-lg text-sky-950">9. Có thể dùng từ ngữ nào để thay thế cho từ "nhà" trong câu văn cuối bài đọc?</p>
                 <input id="ans-vn126-c9" type="text" placeholder="Ví dụ: tổ ấm, nơi ở, tổ..." class="w-full p-3 rounded-xl border border-sky-200 focus:border-sky-500 font-bold bg-white text-gray-800 text-base outline-none">
-                <button onclick="kiemTraCauHoi9Vn126()" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white font-bold rounded-lg text-sm transition-all">Kiểm tra</button>
+                <button onclick="kiemTraCauHoi9Vn126()" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
                 <div id="fb-vn126-c9" class="hidden p-3 rounded-xl text-sm font-bold"></div>
             </div>
 
@@ -155,7 +153,7 @@ export const lesson126 = {
             <div class="bg-sky-50/30 p-5 rounded-2xl border border-sky-100 space-y-3">
                 <p class="font-black text-lg text-sky-950">10. Viết một câu về chim di cư, trong câu có sử dụng 1 kết từ (Gợi ý: nhưng, và, vì, nên...):</p>
                 <input id="ans-vn126-c10" type="text" placeholder="Ví dụ: Chim di cư bay rất xa nhưng chúng vẫn nhớ đường về nhà." class="w-full p-3 rounded-xl border border-sky-200 focus:border-sky-500 font-bold bg-white text-gray-800 text-base outline-none">
-                <button onclick="kiemTraCauHoi10Vn126()" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white font-bold rounded-lg text-sm transition-all">Kiểm tra câu</button>
+                <button onclick="kiemTraCauHoi10Vn126()" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
                 <div id="fb-vn126-c10" class="hidden p-3 rounded-xl text-sm font-bold"></div>
             </div>
         </div>
@@ -181,7 +179,7 @@ export const lesson126 = {
             </div>
 
             <!-- Chọn đề -->
-            <div class="flex gap-4">
+            <div class="flex justify-end items-center gap-4">
                 <button onclick="selectDeVn126(1)" id="btn-vn126-de1" class="flex-1 py-3 bg-sky-600 hover:bg-sky-700 text-white font-black rounded-xl text-base shadow-sm border border-sky-300 transition-all">CHỌN ĐỀ 1</button>
                 <button onclick="selectDeVn126(2)" id="btn-vn126-de2" class="flex-1 py-3 bg-gray-100 hover:bg-gray-200 text-gray-800 font-black rounded-xl text-base shadow-sm border border-gray-200 transition-all">CHỌN ĐỀ 2</button>
             </div>
@@ -204,11 +202,7 @@ export const lesson126 = {
             </div>
 
             <!-- Nút nộp chấm bài -->
-            <div class="flex justify-center">
-                <button onclick="kiemTraBaiVietVn126()" class="px-8 py-3.5 bg-amber-500 hover:bg-amber-600 text-white font-black text-lg rounded-xl shadow-md active:scale-95 transition-all">
-                    👨‍🏫 AI THẦY E CHẤM ĐIỂM BÀI VIẾT
-                </button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraBaiVietVn126();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             
             <div id="fb-vn126-viet" class="hidden p-5 rounded-2xl font-bold text-lg shadow-sm"></div>
 

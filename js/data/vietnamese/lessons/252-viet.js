@@ -75,10 +75,10 @@ export const lesson_252_viet = {
                                     <div class="bg-white p-8 md:p-12 rounded-[50px] shadow-sm border-2 border-teal-100 mb-10 relative">
                                         <h5 class="text-center text-teal-600 text-3xl md:text-4xl font-black mb-10 uppercase tracking-tighter">Gợi ý mẫu bản chương trình</h5>
                                         <div class="space-y-10 text-2xl md:text-4xl text-gray-500 italic font-bold">
-                                            <div class="flex items-center gap-4"><span class="w-14 h-14 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center font-black shrink-0">1</span> (1) Mục đích</div>
-                                            <div class="flex items-center gap-4"><span class="w-14 h-14 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center font-black shrink-0">2</span> (2) Thời gian và địa điểm</div>
-                                            <div class="flex items-center gap-4"><span class="w-14 h-14 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center font-black shrink-0">3</span> (3) Chuẩn bị</div>
-                                            <div class="flex items-center gap-4"><span class="w-14 h-14 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center font-black shrink-0">4</span> (4) Kế hoạch thực hiện</div>
+                                            <div class="flex justify-end items-center gap-4"><span class="w-14 h-14 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center font-black shrink-0">1</span> (1) Mục đích</div>
+                                            <div class="flex justify-end items-center gap-4"><span class="w-14 h-14 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center font-black shrink-0">2</span> (2) Thời gian và địa điểm</div>
+                                            <div class="flex justify-end items-center gap-4"><span class="w-14 h-14 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center font-black shrink-0">3</span> (3) Chuẩn bị</div>
+                                            <div class="flex justify-end items-center gap-4"><span class="w-14 h-14 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center font-black shrink-0">4</span> (4) Kế hoạch thực hiện</div>
                                         </div>
                                     <div class="mt-8 overflow-x-auto rounded-3xl border-2 border-teal-50">
                                         <table class="w-full text-xl border-collapse">

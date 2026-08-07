@@ -73,7 +73,7 @@ export const lesson11 = {
 
                 <p class="indent-8">Mỗi lần đi đâu xa nhà, tôi lại nhớ bến sông quê có hàng bần nở hoa tím cho gió thổi qua. Khi đó, tôi tưởng đâu như có hương thơm của những trái bần chín và mùi vị của canh cá bống sao nấu với trái bần chua. Những cây bần con bên sông vẫn cứ tiếp tục mọc lên để duy trì màu xanh bờ bãi cù lao quê hương tôi.</p>
 
-                <p class="text-right font-bold text-gray-800 mt-4 text-2xl md:text-3xl">(Theo Lê Văn Trường)</p>
+                
             </div>
 
             <!-- Từ ngữ cần nhớ -->
@@ -264,44 +264,28 @@ export const lesson11 = {
                     <!-- Từ "rớt" -->
                     <div class="bg-white p-4 rounded-xl border border-amber-100 space-y-2">
                         <p class="text-2xl md:text-3xl text-gray-800 font-medium">Trái bần chín <strong class="text-amber-600 underline decoration-2">rớt</strong> tõm xuống sông.</p>
-                        <div class="flex items-center gap-2">
-                            <label class="text-xl md:text-2xl font-black text-amber-600 shrink-0">Từ đồng nghĩa:</label>
-                            <input type="text" id="vn11-dn-rot" class="flex-1 p-2 text-xl md:text-2xl border-2 border-amber-100 rounded-lg focus:border-amber-500 outline-none transition-all font-medium" placeholder="Gõ từ có nghĩa giống 'rớt'...">
-                            <button onclick="kiemTraDongNghia('rot')" class="w-12 h-12 bg-orange-600 hover:bg-orange-700 text-white rounded-full font-black text-xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
-                        </div>
+                        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDongNghia(;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                         <div id="fb-vn11-dn-rot" class="hidden text-xl md:text-2xl font-bold px-3 py-1.5 rounded-lg"></div>
                     </div>
 
                     <!-- Từ "âm thanh" -->
                     <div class="bg-white p-4 rounded-xl border border-amber-100 space-y-2">
                         <p class="text-2xl md:text-3xl text-gray-800 font-medium"><strong class="text-amber-600 underline decoration-2">Âm thanh</strong> rất đỗi quen thuộc.</p>
-                        <div class="flex items-center gap-2">
-                            <label class="text-xl md:text-2xl font-black text-amber-600 shrink-0">Từ đồng nghĩa:</label>
-                            <input type="text" id="vn11-dn-amthanh" class="flex-1 p-2 text-xl md:text-2xl border-2 border-amber-100 rounded-lg focus:border-amber-500 outline-none transition-all font-medium" placeholder="Gõ từ có nghĩa giống 'âm thanh'...">
-                            <button onclick="kiemTraDongNghia('amthanh')" class="w-12 h-12 bg-orange-600 hover:bg-orange-700 text-white rounded-full font-black text-xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
-                        </div>
+                        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDongNghia(;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                         <div id="fb-vn11-dn-amthanh" class="hidden text-xl md:text-2xl font-bold px-3 py-1.5 rounded-lg"></div>
                     </div>
 
                     <!-- Từ "con nít" -->
                     <div class="bg-white p-4 rounded-xl border border-amber-100 space-y-2">
                         <p class="text-2xl md:text-3xl text-gray-800 font-medium">Vui đùa đủ các trò của tuổi <strong class="text-amber-600 underline decoration-2">con nít</strong>.</p>
-                        <div class="flex items-center gap-2">
-                            <label class="text-xl md:text-2xl font-black text-amber-600 shrink-0">Từ đồng nghĩa:</label>
-                            <input type="text" id="vn11-dn-connit" class="flex-1 p-2 text-xl md:text-2xl border-2 border-amber-100 rounded-lg focus:border-amber-500 outline-none transition-all font-medium" placeholder="Gõ từ có nghĩa giống 'con nít'...">
-                            <button onclick="kiemTraDongNghia('connit')" class="w-12 h-12 bg-orange-600 hover:bg-orange-700 text-white rounded-full font-black text-xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
-                        </div>
+                        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDongNghia(;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                         <div id="fb-vn11-dn-connit" class="hidden text-xl md:text-2xl font-bold px-3 py-1.5 rounded-lg"></div>
                     </div>
 
                     <!-- Từ "trái bần chua" -->
                     <div class="bg-white p-4 rounded-xl border border-amber-100 space-y-2">
                         <p class="text-2xl md:text-3xl text-gray-800 font-medium"><strong class="text-amber-600 underline decoration-2">Trái bần chua</strong> cũng là một đặc sản.</p>
-                        <div class="flex items-center gap-2">
-                            <label class="text-xl md:text-2xl font-black text-amber-600 shrink-0">Từ đồng nghĩa:</label>
-                            <input type="text" id="vn11-dn-traiban" class="flex-1 p-2 text-xl md:text-2xl border-2 border-amber-100 rounded-lg focus:border-amber-500 outline-none transition-all font-medium" placeholder="Gõ từ có nghĩa giống 'trái bần chua'...">
-                            <button onclick="kiemTraDongNghia('traiban')" class="w-12 h-12 bg-orange-600 hover:bg-orange-700 text-white rounded-full font-black text-xl flex items-center justify-center shadow-lg active:scale-95 transition-all">E</button>
-                        </div>
+                        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDongNghia(;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                         <div id="fb-vn11-dn-traiban" class="hidden text-xl md:text-2xl font-bold px-3 py-1.5 rounded-lg"></div>
                     </div>
                 </div>
@@ -342,13 +326,7 @@ export const lesson11 = {
 
                 <textarea id="ans-vn11-writing" rows="4" placeholder="Kỉ niệm tuổi thơ bên bến sông quê hiện lên vô cùng sống động và gần gũi. Bọn trẻ cùng tụ tập vui chơi những trò nghịch tinh nghịch, cùng ăn trái bần chua chấm muối ớt cay hít hà, lội sông bắt cá bống sao nấu canh chua... Đó là những kỉ niệm giản dị nhưng đọng lại sâu sắc trong tâm hồn..." class="w-full p-4 md:p-6 text-2xl md:text-3xl rounded-2xl border-2 border-amber-100 focus:border-amber-500 outline-none shadow-sm bg-amber-50/10 font-medium leading-relaxed"></textarea>
                 
-                <div class="flex flex-wrap items-center gap-4">
-                    <button onclick="checkWritingVn11()" class="px-8 py-3 bg-amber-500 text-white font-black text-lg rounded-2xl shadow-md hover:bg-amber-500 active:scale-95 transition-all flex items-center gap-2">
-                        <div class="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-amber-900 font-black text-xs shadow-sm">E</div> 
-                        <span>CHẤM BÀI VỚI AI</span>
-                    </button>
-                    <button onclick="resetWritingVn11()" class="px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-2xl hover:bg-gray-300 transition-all text-base">LÀM LẠI</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetWritingVn11()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkWritingVn11();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 
                 <div id="fb-vn11-writing" class="hidden mt-6 p-6 bg-amber-500 text-white rounded-2xl shadow-xl animate-in slide-in-from-top-10 duration-500">
                     <!-- AI Feedback -->

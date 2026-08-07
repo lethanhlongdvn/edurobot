@@ -215,9 +215,7 @@ export const lesson49 = {
                         <option value="normal">⭐ Bình thường</option>
                     </select>
                 </div>
-                <div class="flex justify-end pt-4">
-                    <button onclick="nopPhieuDoc49()" class="w-full md:w-auto px-8 py-3.5 bg-sky-600 text-white font-black text-lg rounded-2xl shadow-md hover:bg-sky-600 active:scale-95 transition-all">NỘP PHIẾU ĐỌC SÁCH</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="nopPhieuDoc49();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             </div>
             <div id="fb-vn49-phieu" class="hidden p-5 rounded-2xl text-base font-bold shadow-md transition-all duration-349"></div>
         </div>

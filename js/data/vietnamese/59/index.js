@@ -241,9 +241,7 @@ export const lesson59 = {
                 </div>
             </div>
             
-            <div class="flex justify-start pt-2">
-                <button onclick="kiemTraNghiaVn59()" class="px-8 py-3 bg-teal-600 text-white font-black rounded-xl hover:bg-teal-600 transition-all text-base shadow-md">KIỂM TRA ĐÁP ÁN ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraNghiaVn59();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn59-nghia" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2 shadow-md"></div>
         </div>
     </section>
@@ -335,10 +333,7 @@ export const lesson59 = {
             <!-- Câu b -->
             <div class="bg-white p-6 rounded-3xl border border-amber-100 shadow-inner space-y-4">
                 <label class="block font-black text-gray-800 text-xl md:text-2xl">b. Trong đoạn văn trên, còn danh từ nào cũng được dùng để xưng hô?</label>
-                <div class="flex gap-3">
-                    <input type="text" id="ans-vn59-writing-b4" placeholder="Nhập đáp án..." class="w-full p-4 border-2 border-amber-100 rounded-2xl outline-none focus:border-amber-500 font-bold bg-amber-50/10 text-xl md:text-2xl" />
-                    <button onclick="checkCau4b()" class="px-8 py-3 bg-amber-500 text-white font-black text-lg rounded-2xl shadow-md hover:bg-amber-500 active:scale-95 transition-all">KIỂM TRA</button>
-                </div>
+                <div class="flex justify-end items-center gap-4"><button onclick="checkCau4b();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 <div id="fb-vn59-b4" class="hidden p-4 rounded-xl font-bold text-base text-center"></div>
             </div>
         </div>
@@ -365,12 +360,10 @@ export const lesson59 = {
                     <input type="text" id="flower-3" class="w-36 mx-1 p-2 border-2 border-amber-100 rounded-xl font-bold bg-amber-50/20 text-center text-xl md:text-2xl focus:border-amber-500 outline-none" placeholder="🌸 3" /> 
                     là làng Hươu.
                 </p>
-                <p class="text-right text-gray-800 font-bold mt-4 text-xl md:text-2xl">(Theo Vũ Hùng)</p>
+                
             </div>
 
-            <div class="flex justify-start pt-2">
-                <button onclick="checkFlowers()" class="px-8 py-3 bg-amber-500 text-white font-black rounded-xl hover:bg-amber-500 transition-all text-base shadow-md">KIỂM TRA BÔNG HOA ✓</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkFlowers();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
             <div id="fb-vn59-flower" class="hidden p-4 rounded-xl text-base font-bold text-center mt-2 shadow-md"></div>
         </div>
     </section>
