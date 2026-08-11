@@ -80,12 +80,7 @@ export const lesson169 = {
     <!-- ❓ TÌM HIỂU BÀI -->
     <section class="w-full">
         <div class="glass-card rounded-[32px] p-6 md:p-8 shadow-xl border-t-4 border-amber-400 bg-amber-50/30 space-y-6">
-            <div class="flex items-center space-x-4 mb-4">
-                <div class="w-12 h-12 bg-amber-500 rounded-xl flex items-center justify-center shadow-lg text-white text-xl md:text-2xl">❓</div>
-                <h2 class="text-2xl md:text-5xl font-black text-gray-800 uppercase tracking-tight">Tìm hiểu bài</h2>
-            </div>
-            
-            <div class="space-y-6">
+<div class="space-y-6">
                 <!-- Câu 1 (Tương tác trực quan 1 cột) -->
                 <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm space-y-4">
                     <p class="text-xl md:text-2xl font-black text-slate-800">

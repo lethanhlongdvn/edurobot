@@ -54,16 +54,7 @@ export const lesson127 = {
     "practice": `<div class="space-y-8 animate-in fade-in duration-700 max-w-6xl mx-auto">
     <div class="bg-white p-6 md:p-10 rounded-[48px] border border-blue-100 shadow-xl space-y-8">
         <div class="bg-yellow-50/50 rounded-[30px] p-6 border border-yellow-100/70 font-nunito">
-            <div class="flex items-center space-x-4 mb-6">
-                <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg shadow-amber-200">
-                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                </div>
-                <h2 class="text-lg md:text-2xl font-black text-gray-800 tracking-tight">Tìm hiểu bài</h2>
-            </div>
-            
-            <div class="space-y-4">
+<div class="space-y-4">
                 <!-- Câu 1 -->
                 <details class="group bg-white rounded-[24px] border border-white shadow-sm transition-all hover:shadow-md overflow-hidden">
                     <summary class="w-full p-5 text-left flex justify-between items-center cursor-pointer list-none">

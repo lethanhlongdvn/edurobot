@@ -783,18 +783,22 @@ export const router = {
         // Render nội dung tùy theo Tab
         let html = '';
         if (tabId === 'study') {
-            const rawContent = typeof lesson.content === 'function' ? lesson.content(UI) : lesson.content;
-            const studyContent = rawContent ||
-                (lesson.tabs?.study?.blocks?.find(b => b.type === 'html')?.content) ||
-                (lesson.tabs?.lesson?.blocks?.find(b => b.type === 'html')?.content) ||
-                (lesson.blocks?.find(b => b.type === 'html')?.content) ||
-                UI.renderEmptyContent();
+            if (this.currentSubject === 'history') {
+                html = UI.renderBookReader(lesson);
+            } else {
+                const rawContent = typeof lesson.content === 'function' ? lesson.content(UI) : lesson.content;
+                const studyContent = rawContent ||
+                    (lesson.tabs?.study?.blocks?.find(b => b.type === 'html')?.content) ||
+                    (lesson.tabs?.lesson?.blocks?.find(b => b.type === 'html')?.content) ||
+                    (lesson.blocks?.find(b => b.type === 'html')?.content) ||
+                    UI.renderEmptyContent();
 
-            html = `
-                <div class="glass-card rounded-[40px] p-8 md:p-12 bg-white dark:bg-slate-900 min-h-[200px] animate-fade-in text-gray-700 dark:text-slate-200">
-                    <div id="lesson-study-container" class="lesson-body">${UI.parseTutor(studyContent)}</div>
-                </div>
-            `;
+                html = `
+                    <div class="glass-card rounded-[40px] p-8 md:p-12 bg-white dark:bg-slate-900 min-h-[200px] animate-fade-in text-gray-700 dark:text-slate-200">
+                        <div id="lesson-study-container" class="lesson-body">${UI.parseTutor(studyContent)}</div>
+                    </div>
+                `;
+            }
         } else if (tabId === 'practice') {
             const rawPractice = typeof lesson.practice === 'function' ? lesson.practice(UI) : lesson.practice;
             const practiceContent = rawPractice ||
@@ -863,6 +867,12 @@ export const router = {
         }
 
         container.innerHTML = html;
+
+        if (tabId === 'study' && this.currentSubject === 'history') {
+            if (UI && typeof UI.initBookReader === 'function') {
+                UI.initBookReader(lesson);
+            }
+        }
 
         // Auto pagination injection for slides
         if (tabId === 'practice' || tabId === 'study') {

@@ -153,12 +153,7 @@ export const lesson85 = {
 <div class="space-y-8 animate-in fade-in duration-700 max-w-6xl mx-auto">
     <!-- 📖 Tìm hiểu bài -->
     <div class="bg-white p-6 md:p-10 rounded-[48px] border border-emerald-100 shadow-xl space-y-8">
-        <div class="flex items-center gap-3 border-b border-emerald-100 pb-4">
-            <span class="w-12 h-12 rounded-2xl bg-emerald-600 text-white font-black flex items-center justify-center text-lg md:text-2xl shadow-md">❓</span>
-            <h3 class="text-2xl md:text-5xl font-black text-emerald-800">Tìm hiểu bài học</h3>
-        </div>
-
-        <!-- Câu hỏi 1: Ghép cặp thông tin bằng Dropdown -->
+<!-- Câu hỏi 1: Ghép cặp thông tin bằng Dropdown -->
         <div class="space-y-4">
             <h4 class="text-xl font-black text-gray-800 flex items-start gap-2">
                 <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-sm shrink-0 mt-0.5">1</span>
