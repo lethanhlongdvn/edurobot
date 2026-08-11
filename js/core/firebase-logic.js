@@ -1015,8 +1015,36 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Auth state observer
     if (window.firebase && firebase.auth) {
-        firebase.auth().onAuthStateChanged((user) => {
+        firebase.auth().onAuthStateChanged(async (user) => {
             console.log("Auth state changed:", user ? user.email : "Logged out");
+            if (user) {
+                // Auto-restore login metadata if localStorage is cleared or out of sync
+                const userRole = localStorage.getItem('userRole');
+                const studentName = localStorage.getItem('eduMathName');
+                const teacherName = localStorage.getItem('teacherName');
+                
+                if (!userRole || (userRole === 'student' && !studentName) || ((userRole === 'teacher' || userRole === 'admin') && !teacherName)) {
+                    try {
+                        const db = window.db || firebase.firestore();
+                        const doc = await db.collection('users').doc(user.uid).get();
+                        if (doc.exists) {
+                            const data = doc.data();
+                            localStorage.setItem('userRole', data.role || 'student');
+                            localStorage.setItem('userApproved', data.approved ? 'true' : 'false');
+                            if (data.role === 'teacher' || data.role === 'admin') {
+                                localStorage.setItem('teacherName', data.displayName || data.name || user.email);
+                            } else {
+                                localStorage.setItem('eduMathName', data.name || data.displayName || user.email.split('@')[0]);
+                                localStorage.setItem('eduMathSchool', data.school || "");
+                                localStorage.setItem('eduMathClass', data.studentClass || "");
+                            }
+                            console.log("Đã tự động khôi phục thông tin đăng nhập từ Firestore.");
+                        }
+                    } catch (e) {
+                        console.error("Lỗi tự động khôi phục thông tin đăng nhập:", e);
+                    }
+                }
+            }
             window.showStudentBadge();
         });
     }
