@@ -108,127 +108,149 @@ export const lesson21 = {
 </div>
 `,
     "practice": `
-<div class="space-y-12 animate-in fade-in duration-700 max-w-6xl mx-auto">
-    <!-- PHIẾU ĐỌC SÁCH TƯƠNG TÁC (CÂU 2 SGK) -->
-    <section class="bg-white p-4 rounded-[40px] shadow-lg border border-sky-50">
-        <div class="p-6 md:p-8 bg-sky-50/30 rounded-[32px] space-y-8">
-            <div class="flex items-center gap-4 mb-4">
-                <div class="w-12 h-12 bg-sky-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow-md">2</div>
-                <h3 class="text-2xl md:text-3xl font-black text-gray-800">2. Viết phiếu đọc sách theo mẫu</h3>
-            </div>
+<div class="space-y-6 animate-in fade-in duration-700 max-w-6xl mx-auto">
+    <!-- Tab Headers phụ cho Luyện tập -->
+    <div class="flex flex-wrap justify-center md:justify-end gap-2 border-b border-gray-100 pb-3">
+        <button onclick="switchPracTabVn21(0)" id="vn21-prac-tab-0" class="px-4 py-2 rounded-xl font-black text-lg md:text-xl transition-all bg-sky-600 text-white shadow-sm">
+            📝 Phiếu đọc sách (Câu 2)
+        </button>
+        <button onclick="switchPracTabVn21(1)" id="vn21-prac-tab-1" class="px-4 py-2 rounded-xl font-bold text-lg md:text-xl transition-all bg-gray-200 text-gray-700 hover:bg-gray-300">
+            💬 Thảo luận (Câu 3)
+        </button>
+        <button onclick="switchPracTabVn21(2)" id="vn21-prac-tab-2" class="px-4 py-2 rounded-xl font-bold text-lg md:text-xl transition-all bg-gray-200 text-gray-700 hover:bg-gray-300">
+            ⚽ Vận dụng (Câu 4)
+        </button>
+    </div>
 
-            <!-- Form Phiếu đọc sách Premium -->
-            <div class="bg-white p-6 md:p-10 rounded-[36px] border-4 border-double border-sky-100 shadow-lg space-y-6">
-                <p class="text-center font-black text-2xl md:text-4xl text-sky-800 tracking-wider mb-8">📖 PHIẾU ĐỌC SÁCH 📖</p>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="flex flex-col gap-2">
-                        <label class="font-black text-sky-900 text-2xl md:text-3xl">Tên bài thơ: <span class="text-red-800">*</span></label>
-                        <input type="text" id="pds21-ten" placeholder="Nhập tên bài thơ..." class="p-3 border-2 border-sky-100 rounded-xl outline-none focus:border-sky-500 font-bold bg-sky-50/20 text-lg">
+    <!-- Vùng nội dung các tab phụ -->
+    <div class="space-y-6">
+        <!-- TAB PHỤ 1: PHIẾU ĐỌC SÁCH -->
+        <div id="vn21-prac-content-0" class="block space-y-6 animate-in fade-in duration-300">
+            <section class="bg-white p-4 rounded-[40px] shadow-lg border border-sky-50">
+                <div class="p-6 md:p-8 bg-sky-50/30 rounded-[32px] space-y-8">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-sky-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow-md">2</div>
+                        <h3 class="text-2xl md:text-3xl font-black text-gray-800">2. Viết phiếu đọc sách theo mẫu</h3>
                     </div>
-                    <div class="flex flex-col gap-2">
-                        <label class="font-black text-sky-900 text-2xl md:text-3xl">Tác giả: <span class="text-red-800">*</span></label>
-                        <input type="text" id="pds21-tac-gia" placeholder="Nhập tên tác giả..." class="p-3 border-2 border-sky-100 rounded-xl outline-none focus:border-sky-500 font-bold bg-sky-50/20 text-lg">
-                    </div>
-                    <div class="flex flex-col gap-2">
-                        <label class="font-black text-sky-900 text-2xl md:text-3xl">Ngày đọc: <span class="text-red-800">*</span></label>
-                        <input type="date" id="pds21-ngay" class="p-3 border-2 border-sky-100 rounded-xl outline-none focus:border-sky-500 font-bold bg-sky-50/20 text-lg">
+
+                    <!-- Form Phiếu đọc sách Premium -->
+                    <div class="bg-white p-6 md:p-10 rounded-[36px] border-4 border-double border-sky-100 shadow-lg space-y-6">
+                        <p class="text-center font-black text-2xl md:text-4xl text-sky-800 tracking-wider mb-8">📖 PHIẾU ĐỌC SÁCH 📖</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="flex flex-col gap-2">
+                                <label class="font-black text-sky-900 text-2xl md:text-3xl">Tên bài thơ: <span class="text-red-800">*</span></label>
+                                <input type="text" id="pds21-ten" placeholder="Nhập tên bài thơ..." class="p-3 border-2 border-sky-100 rounded-xl outline-none focus:border-sky-500 font-bold bg-sky-50/20 text-lg">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="font-black text-sky-900 text-2xl md:text-3xl">Tác giả: <span class="text-red-800">*</span></label>
+                                <input type="text" id="pds21-tac-gia" placeholder="Nhập tên tác giả..." class="p-3 border-2 border-sky-100 rounded-xl outline-none focus:border-sky-500 font-bold bg-sky-50/20 text-lg">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="font-black text-sky-900 text-2xl md:text-3xl">Ngày đọc: <span class="text-red-800">*</span></label>
+                                <input type="date" id="pds21-ngay" class="p-3 border-2 border-sky-100 rounded-xl outline-none focus:border-sky-500 font-bold bg-sky-50/20 text-lg">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="flex flex-col gap-2">
+                                <label class="font-black text-sky-900 text-2xl md:text-3xl">Nội dung chính của bài thơ: <span class="text-red-800">*</span></label>
+                                <textarea id="pds21-noi-dung" rows="3" placeholder="Nhập tóm tắt nội dung chính ngắn gọn..." class="p-4 border-2 border-sky-100 rounded-xl outline-none focus:border-sky-500 font-bold bg-sky-50/20 text-lg"></textarea>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="font-black text-sky-900 text-2xl md:text-3xl">Những câu thơ hay hoặc hình ảnh thơ đẹp: <span class="text-red-800">*</span></label>
+                                <textarea id="pds21-nhan-vat" rows="3" placeholder="Nhập những câu thơ hay hoặc hình ảnh thơ đẹp em thích nhất..." class="p-4 border-2 border-sky-100 rounded-xl outline-none focus:border-sky-500 font-bold bg-sky-50/20 text-lg"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-end">
+                            <div class="flex flex-col gap-2">
+                                <label class="font-black text-sky-900 text-2xl md:text-3xl">Suy nghĩ, cảm xúc sau khi đọc bài thơ: <span class="text-red-800">*</span></label>
+                                <textarea id="pds21-chi-tiet" rows="3" placeholder="Nhập suy nghĩ, cảm xúc của em về bài thơ..." class="p-4 border-2 border-sky-100 rounded-xl outline-none focus:border-sky-500 font-bold bg-sky-50/20 text-lg"></textarea>
+                            </div>
+                            
+                            <!-- Đánh giá sao -->
+                            <div class="flex flex-col gap-2 p-4 bg-sky-50/50 rounded-2xl border border-sky-100/50">
+                                <label class="font-black text-sky-900 text-2xl md:text-3xl">Mức độ yêu thích của em:</label>
+                                <div class="flex gap-3 text-3xl md:text-4xl justify-center py-2 select-none">
+                                    <span onclick="setRating21(1)" id="star21-1" class="cursor-pointer text-gray-800 transition-all hover:scale-105">★</span>
+                                    <span onclick="setRating21(2)" id="star21-2" class="cursor-pointer text-gray-800 transition-all hover:scale-105">★</span>
+                                    <span onclick="setRating21(3)" id="star21-3" class="cursor-pointer text-gray-800 transition-all hover:scale-105">★</span>
+                                    <span onclick="setRating21(4)" id="star21-4" class="cursor-pointer text-gray-800 transition-all hover:scale-105">★</span>
+                                    <span onclick="setRating21(5)" id="star21-5" class="cursor-pointer text-gray-800 transition-all hover:scale-105">★</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end items-center gap-4"><button onclick="resetPds21()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkPdsWithAI21(); submitPdsGlobal21();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
+
+                        <div id="fb-vn21-pds" class="hidden p-5 rounded-2xl text-base font-bold shadow-md bg-sky-600 text-white transition-all duration-321"></div>
                     </div>
                 </div>
+            </section>
+        </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="flex flex-col gap-2">
-                        <label class="font-black text-sky-900 text-2xl md:text-3xl">Nội dung chính của bài thơ: <span class="text-red-800">*</span></label>
-                        <textarea id="pds21-noi-dung" rows="3" placeholder="Nhập tóm tắt nội dung chính ngắn gọn..." class="p-4 border-2 border-sky-100 rounded-xl outline-none focus:border-sky-500 font-bold bg-sky-50/20 text-lg"></textarea>
+        <!-- TAB PHỤ 2: THẢO LUẬN -->
+        <div id="vn21-prac-content-1" class="hidden space-y-6 animate-in fade-in duration-300">
+            <section class="bg-white p-4 rounded-[40px] shadow-lg border border-sky-50">
+                <div class="p-6 md:p-8 bg-sky-50/30 rounded-[32px] space-y-6">
+                    <div class="flex items-center gap-4 mb-2">
+                        <div class="w-12 h-12 bg-sky-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow-md">3</div>
+                        <h3 class="text-2xl md:text-3xl font-black text-gray-800">3. Trao đổi với bạn về bài thơ đã đọc</h3>
                     </div>
-                    <div class="flex flex-col gap-2">
-                        <label class="font-black text-sky-900 text-2xl md:text-3xl">Những câu thơ hay hoặc hình ảnh thơ đẹp: <span class="text-red-800">*</span></label>
-                        <textarea id="pds21-nhan-vat" rows="3" placeholder="Nhập những câu thơ hay hoặc hình ảnh thơ đẹp em thích nhất..." class="p-4 border-2 border-sky-100 rounded-xl outline-none focus:border-sky-500 font-bold bg-sky-50/20 text-lg"></textarea>
+
+                    <div class="bg-white p-6 rounded-3xl border border-sky-100 shadow-sm space-y-4">
+                        <p class="font-bold text-gray-900 text-2xl md:text-3xl">Chia sẻ ý kiến thảo luận của em về bài thơ:</p>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="text-sm font-black text-sky-800">💬 Câu thơ/đoạn thơ em yêu thích nhất và lý do:</label>
+                                <textarea id="ans-vn21-fav" rows="2" placeholder="Ví dụ: Thích đoạn thơ trong 'Con đường tới lớp' vì thể hiện tình cảm thân quen ấm áp..." class="w-full p-3 border border-gray-100 rounded-xl font-bold bg-sky-50/10 mt-1 text-xl md:text-2xl"></textarea>
+                            </div>
+                            <div>
+                                <label class="text-sm font-black text-sky-800">💬 Tình cảm, cảm xúc của nhà thơ đối với trẻ em được thể hiện thế nào?</label>
+                                <textarea id="ans-vn21-feeling" rows="2" placeholder="Ví dụ: Tác giả thể hiện sự thương yêu, che chở và thấu hiểu thế giới trẻ thơ..." class="w-full p-3 border border-gray-100 rounded-xl font-bold bg-sky-50/10 mt-1 text-xl md:text-2xl"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end items-center gap-4"><button onclick="resetTraoDoi21()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="submitTraoDoi21();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                     </div>
                 </div>
+            </section>
+        </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-end">
-                    <div class="flex flex-col gap-2">
-                        <label class="font-black text-sky-900 text-2xl md:text-3xl">Suy nghĩ, cảm xúc sau khi đọc bài thơ: <span class="text-red-800">*</span></label>
-                        <textarea id="pds21-chi-tiet" rows="3" placeholder="Nhập suy nghĩ, cảm xúc của em về bài thơ..." class="p-4 border-2 border-sky-100 rounded-xl outline-none focus:border-sky-500 font-bold bg-sky-50/20 text-lg"></textarea>
-                    </div>
-                    
-                    <!-- Đánh giá sao -->
-                    <div class="flex flex-col gap-2 p-4 bg-sky-50/50 rounded-2xl border border-sky-100/50">
-                        <label class="font-black text-sky-900 text-2xl md:text-3xl">Mức độ yêu thích của em:</label>
-                        <div class="flex gap-3 text-3xl md:text-4xl justify-center py-2 select-none">
-                            <span onclick="setRating21(1)" id="star21-1" class="cursor-pointer text-gray-800 transition-all hover:scale-105">★</span>
-                            <span onclick="setRating21(2)" id="star21-2" class="cursor-pointer text-gray-800 transition-all hover:scale-105">★</span>
-                            <span onclick="setRating21(3)" id="star21-3" class="cursor-pointer text-gray-800 transition-all hover:scale-105">★</span>
-                            <span onclick="setRating21(4)" id="star21-4" class="cursor-pointer text-gray-800 transition-all hover:scale-105">★</span>
-                            <span onclick="setRating21(5)" id="star21-5" class="cursor-pointer text-gray-800 transition-all hover:scale-105">★</span>
+        <!-- TAB PHỤ 3: VẬN DỤNG -->
+        <div id="vn21-prac-content-2" class="hidden space-y-6 animate-in fade-in duration-300">
+            <section class="bg-white p-4 rounded-[40px] shadow-lg border border-emerald-50">
+                <div class="p-6 md:p-8 bg-emerald-50/30 rounded-[32px] space-y-6">
+                    <div class="flex items-center gap-4 mb-2">
+                        <div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow-md">⚽</div>
+                        <div>
+                            <h3 class="text-2xl md:text-3xl font-black text-gray-800">4. Vận dụng</h3>
+                            <p class="text-xs font-bold text-gray-800 mt-1">Tìm đọc câu chuyện hoặc bài báo về một môn thể thao hoặc vận động viên em yêu thích</p>
                         </div>
                     </div>
+
+                    <div class="bg-white p-6 rounded-3xl border border-emerald-100 shadow-sm space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="space-y-1">
+                                <label class="text-sm font-black text-emerald-800">👤 Tên vận động viên / Môn thể thao:</label>
+                                <input type="text" id="vd-vn21-name" placeholder="Ví dụ: Nguyễn Thị Ánh Viên / Bơi lội..." class="w-full p-3 border border-gray-100 rounded-xl font-bold bg-emerald-50/10 text-sm">
+                            </div>
+                            <div class="space-y-1">
+                                <label class="text-sm font-black text-emerald-800">📰 Tên bài báo / Câu chuyện:</label>
+                                <input type="text" id="vd-vn21-title" placeholder="Ví dụ: Cô gái vàng của bơi lội Việt Nam..." class="w-full p-3 border border-gray-100 rounded-xl font-bold bg-emerald-50/10 text-sm">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="text-sm font-black text-emerald-800">💬 Điều em học hỏi hoặc ngưỡng mộ nhất ở vận động viên đó:</label>
+                            <textarea id="vd-vn21-story" rows="2" placeholder="Ví dụ: Ngưỡng mộ tinh thần kiên trì luyện tập không ngừng nghỉ và sự quyết tâm thi đấu vì màu cờ sắc áo..." class="w-full p-3 border border-gray-100 rounded-xl font-bold bg-emerald-50/10 text-xl md:text-2xl"></textarea>
+                        </div>
+                        <div class="flex justify-end items-center gap-4"><button onclick="submitVanDung21();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
+                    </div>
                 </div>
-
-                <div class="flex justify-end items-center gap-4"><button onclick="resetPds21()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkPdsWithAI21(); submitPdsGlobal21();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
-
-                <div id="fb-vn21-pds" class="hidden p-5 rounded-2xl text-base font-bold shadow-md bg-sky-600 text-white transition-all duration-321"></div>
-            </div>
+            </section>
         </div>
-    </section>
-
-    <!-- TRAO ĐỔI VỚI BẠN (CÂU 3 SGK) -->
-    <section class="bg-white p-4 rounded-[40px] shadow-lg border border-sky-50">
-        <div class="p-6 md:p-8 bg-sky-50/30 rounded-[32px] space-y-6">
-            <div class="flex items-center gap-4 mb-2">
-                <div class="w-12 h-12 bg-sky-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow-md">3</div>
-                <h3 class="text-2xl md:text-3xl font-black text-gray-800">3. Trao đổi với bạn về bài thơ đã đọc</h3>
-            </div>
-
-            <div class="bg-white p-6 rounded-3xl border border-sky-100 shadow-sm space-y-4">
-                <p class="font-bold text-gray-900 text-2xl md:text-3xl">Chia sẻ ý kiến thảo luận của em về bài thơ:</p>
-                <div class="space-y-4">
-                    <div>
-                        <label class="text-sm font-black text-sky-800">💬 Câu thơ/đoạn thơ em yêu thích nhất và lý do:</label>
-                        <textarea id="ans-vn21-fav" rows="2" placeholder="Ví dụ: Thích đoạn thơ trong 'Con đường tới lớp' vì thể hiện tình cảm thân quen ấm áp..." class="w-full p-3 border border-gray-100 rounded-xl font-bold bg-sky-50/10 mt-1 text-xl md:text-2xl"></textarea>
-                    </div>
-                    <div>
-                        <label class="text-sm font-black text-sky-800">💬 Tình cảm, cảm xúc của nhà thơ đối với trẻ em được thể hiện thế nào?</label>
-                        <textarea id="ans-vn21-feeling" rows="2" placeholder="Ví dụ: Tác giả thể hiện sự thương yêu, che chở và thấu hiểu thế giới trẻ thơ..." class="w-full p-3 border border-gray-100 rounded-xl font-bold bg-sky-50/10 mt-1 text-xl md:text-2xl"></textarea>
-                    </div>
-                </div>
-
-                <div class="flex justify-end items-center gap-4"><button onclick="resetTraoDoi21()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="submitTraoDoi21();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PHẦN VẬN DỤNG THỂ THAO -->
-    <section class="bg-white p-4 rounded-[40px] shadow-lg border border-emerald-50">
-        <div class="p-6 md:p-8 bg-emerald-50/30 rounded-[32px] space-y-6">
-            <div class="flex items-center gap-4 mb-2">
-                <div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow-md">⚽</div>
-                <div>
-                    <h3 class="text-2xl md:text-3xl font-black text-gray-800">4. Vận dụng</h3>
-                    <p class="text-xs font-bold text-gray-800 mt-1">Tìm đọc câu chuyện hoặc bài báo về một môn thể thao hoặc vận động viên em yêu thích</p>
-                </div>
-            </div>
-
-            <div class="bg-white p-6 rounded-3xl border border-emerald-100 shadow-sm space-y-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="space-y-1">
-                        <label class="text-sm font-black text-emerald-800">👤 Tên vận động viên / Môn thể thao:</label>
-                        <input type="text" id="vd-vn21-name" placeholder="Ví dụ: Nguyễn Thị Ánh Viên / Bơi lội..." class="w-full p-3 border border-gray-100 rounded-xl font-bold bg-emerald-50/10 text-sm">
-                    </div>
-                    <div class="space-y-1">
-                        <label class="text-sm font-black text-emerald-800">📰 Tên bài báo / Câu chuyện:</label>
-                        <input type="text" id="vd-vn21-title" placeholder="Ví dụ: Cô gái vàng của bơi lội Việt Nam..." class="w-full p-3 border border-gray-100 rounded-xl font-bold bg-emerald-50/10 text-sm">
-                    </div>
-                </div>
-                <div>
-                    <label class="text-sm font-black text-emerald-800">💬 Điều em học hỏi hoặc ngưỡng mộ nhất ở vận động viên đó:</label>
-                    <textarea id="vd-vn21-story" rows="2" placeholder="Ví dụ: Ngưỡng mộ tinh thần kiên trì luyện tập không ngừng nghỉ và sự quyết tâm thi đấu vì màu cờ sắc áo..." class="w-full p-3 border border-gray-100 rounded-xl font-bold bg-emerald-50/10 text-xl md:text-2xl"></textarea>
-                </div>
-                <div class="flex justify-end items-center gap-4"><button onclick="submitVanDung21();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <!-- NỘP BÀI HOÀN THÀNH -->
     <div class="pt-6 flex justify-center">
@@ -580,5 +602,27 @@ window.submitVn21Global = function() {
             '📜',
             '<div class="text-center p-6"><span class="text-7xl block mb-4">📜</span><p class="text-lg md:text-2xl font-bold text-sky-800">Chúc mừng em đã hoàn thành xuất sắc bài học Đọc mở rộng!</p><p class="text-2xl md:text-3xl text-gray-800 mt-3">Đọc nhiều sách, cảm nhận vẻ đẹp thơ ca viết về trẻ em và yêu thích các môn thể thao sẽ giúp em phát triển toàn diện cả thể chất lẫn tâm hồn.</p></div>'
         );
+    }
+};
+
+// --- LOGIC CHUYỂN TAB PHỤ LUYỆN TẬP ---
+window.switchPracTabVn21 = function(tabIdx) {
+    for (let i = 0; i < 3; i++) {
+        const tabBtn = document.getElementById(`vn21-prac-tab-${i}`);
+        const tabContent = document.getElementById(`vn21-prac-content-${i}`);
+        if (tabBtn) {
+            if (i === tabIdx) {
+                tabBtn.className = "px-4 py-2 rounded-xl font-black text-lg md:text-xl transition-all bg-sky-600 text-white shadow-sm";
+            } else {
+                tabBtn.className = "px-4 py-2 rounded-xl font-bold text-lg md:text-xl transition-all bg-gray-200 text-gray-700 hover:bg-gray-300";
+            }
+        }
+        if (tabContent) {
+            if (i === tabIdx) {
+                tabContent.className = "block space-y-6 animate-in fade-in duration-300";
+            } else {
+                tabContent.className = "hidden";
+            }
+        }
     }
 };

@@ -233,208 +233,238 @@ export const lesson16 = {
                             <button onclick="chonTuXungHoVn16('b', 'sao', this)" class="vn16-text-btn vn16-text-btn-b vn16-btn-xungho-b" data-correct="false">sao</button>?
                         </p>
                     </div>
-                    <p class="text-xs text-gray-800 text-right italic">(Vũ Tú Nam)</p>
+                    <p class="text-xs text-gray-800 text-right italic">(Theo Vũ Tú Nam)</p>
+                    
+                    <div class="flex justify-end items-center gap-4"><button onclick="datLaiTuXungHoVn16('b')" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="kiemTraTuXungHoVn16('b');" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
+                    <div id="fb-vn16-txh-b" class="hidden text-2xl md:text-3xl font-bold px-3 py-1.5 rounded-lg text-center"></div>
+
+                    <p class="text-sm font-bold text-sky-800">👉 Nhận xét thái độ của Chuột cống đối với Cánh cam:</p>
+                    <div class="space-y-2">
+                        <button onclick="chonThaiDoVn16('b', 0)" id="vn16-tdb-0" class="w-full text-left p-3 bg-white border-2 border-gray-100 rounded-xl font-bold text-xl md:text-2xl text-gray-800 hover:border-sky-100 transition-all">A. Thái độ kiêu căng, ngạo mạn, hống hách.</button>
+                        <button onclick="chonThaiDoVn16('b', 1)" id="vn16-tdb-1" class="w-full text-left p-3 bg-white border-2 border-gray-100 rounded-xl font-bold text-xl md:text-2xl text-gray-800 hover:border-sky-100 transition-all">B. Thái độ ôn hòa, lịch sự, tôn trọng đối phương.</button>
+                    </div>
+                    <div id="fb-vn16-tdb" class="hidden text-sm font-bold px-3 py-1.5 rounded-lg"></div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 `,
     "practice": `
-<div class="space-y-12 animate-in fade-in duration-700 max-w-6xl mx-auto">
-    <!-- 📝 BÀI 2: ĐIỀN ĐẠI TỪ THAY THẾ CHO BÔNG HOA -->
-    <section class="bg-white p-4 rounded-[40px] shadow-lg border border-sky-50">
-        <div class="p-6 md:p-8 bg-sky-50/30 rounded-[32px] space-y-6">
-            <div class="flex items-center gap-4 mb-2">
-                <div class="w-12 h-12 bg-sky-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow-md">2</div>
-                <h3 class="text-2xl md:text-3xl font-black text-gray-800">Chọn đại từ thích hợp điền vào chỗ bông hoa và xác định từ ngữ được thay thế</h3>
-            </div>
+<div class="space-y-6 animate-in fade-in duration-700 max-w-6xl mx-auto">
+    <!-- Tab Headers phụ cho Luyện tập -->
+    <div class="flex justify-center md:justify-end gap-2 border-b border-gray-100 pb-3">
+        <button onclick="switchPracTabVn16(0)" id="vn16-prac-tab-0" class="px-5 py-2.5 rounded-xl font-black text-xl md:text-2xl transition-all bg-sky-600 text-white shadow-sm">
+            📝 Bài tập 2 (Đại từ thay thế)
+        </button>
+        <button onclick="switchPracTabVn16(1)" id="vn16-prac-tab-1" class="px-5 py-2.5 rounded-xl font-bold text-xl md:text-2xl transition-all bg-gray-200 text-gray-700 hover:bg-gray-300">
+            📝 Bài tập 3 (Đại từ nghi vấn)
+        </button>
+    </div>
 
-            <!-- List các từ gợi ý -->
-            <div class="flex flex-wrap gap-2 justify-center p-3 bg-white rounded-2xl border border-sky-100 shadow-sm">
-                <span class="px-4 py-2 bg-amber-500 text-amber-900 font-black rounded-lg text-base">đó</span>
-                <span class="px-4 py-2 bg-amber-500 text-amber-900 font-black rounded-lg text-base">ấy</span>
-                <span class="px-4 py-2 bg-amber-500 text-amber-900 font-black rounded-lg text-base">thế</span>
-                <span class="px-4 py-2 bg-amber-500 text-amber-900 font-black rounded-lg text-base">vậy</span>
-                <span class="px-4 py-2 bg-amber-500 text-amber-900 font-black rounded-lg text-base">này</span>
-            </div>
-
-            <!-- Câu hỏi điền bông hoa -->
-            <div class="space-y-4">
-                <!-- Câu a -->
-                <div class="bg-white p-5 rounded-2xl border border-sky-100 space-y-3">
-                    <p class="text-2xl md:text-3xl text-gray-800 font-medium leading-relaxed">
-                        <strong>a.</strong> Cô dạy mình động tác bơi ếch. Động tác 
-                        <select id="vn16-b2-a" class="mx-1 p-1 bg-amber-50 border-2 border-amber-100 rounded font-bold text-amber-600">
-                            <option value="">...</option>
-                            <option value="đó">đó</option>
-                            <option value="ấy">ấy</option>
-                            <option value="thế">thế</option>
-                            <option value="vậy">vậy</option>
-                            <option value="này">này</option>
-                        </select>
-                        thật lạ.
-                    </p>
-                    <div class="flex flex-col md:flex-row gap-2 items-start md:items-center">
-                        <label class="text-sm font-bold text-gray-800">👉 Đại từ trên thay thế cho cụm từ nào ở câu trước?</label>
-                        <select id="vn16-b2-a-ref" class="p-1 border border-gray-100 rounded font-bold text-gray-800 text-sm">
-                            <option value="">Chọn cụm từ...</option>
-                            <option value="cô dạy">cô dạy</option>
-                            <option value="động tác bơi ếch">động tác bơi ếch</option>
-                            <option value="thật lạ">thật lạ</option>
-                        </select>
+    <!-- Vùng nội dung các tab phụ -->
+    <div class="space-y-6">
+        <!-- TAB PHỤ 1: BÀI TẬP 2 -->
+        <div id="vn16-prac-content-0" class="block space-y-6 animate-in fade-in duration-300">
+            <section class="bg-white p-4 rounded-[40px] shadow-lg border border-sky-50">
+                <div class="p-6 md:p-8 bg-sky-50/30 rounded-[32px] space-y-6">
+                    <div class="flex items-center gap-4 mb-2">
+                        <div class="w-12 h-12 bg-sky-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow-md">2</div>
+                        <h3 class="text-2xl md:text-3xl font-black text-gray-800">Chọn đại từ thích hợp điền vào chỗ bông hoa và xác định từ ngữ được thay thế</h3>
                     </div>
-                </div>
 
-                <!-- Câu b -->
-                <div class="bg-white p-5 rounded-2xl border border-sky-100 space-y-3">
-                    <p class="text-2xl md:text-3xl text-gray-800 font-medium leading-relaxed">
-                        <strong>b.</strong> Cây lạc tiên ra quả quanh năm. Vì 
-                        <select id="vn16-b2-b" class="mx-1 p-1 bg-amber-50 border-2 border-amber-100 rounded font-bold text-amber-600">
-                            <option value="">...</option>
-                            <option value="đó">đó</option>
-                            <option value="ấy">ấy</option>
-                            <option value="thế">thế</option>
-                            <option value="vậy">vậy</option>
-                            <option value="này">này</option>
-                        </select>
-                        , con đường luôn phảng phất mùi lạc tiên chín.
-                    </p>
-                    <div class="flex flex-col md:flex-row gap-2 items-start md:items-center">
-                        <label class="text-sm font-bold text-gray-800">👉 Đại từ trên thay thế cho từ ngữ/câu nào ở câu trước?</label>
-                        <select id="vn16-b2-b-ref" class="p-1 border border-gray-100 rounded font-bold text-gray-800 text-sm">
-                            <option value="">Chọn từ ngữ/câu...</option>
-                            <option value="Cây lạc tiên ra quả quanh năm">Cây lạc tiên ra quả quanh năm</option>
-                            <option value="Cây lạc tiên">Cây lạc tiên</option>
-                            <option value="quanh năm">quanh năm</option>
-                        </select>
+                    <!-- List các từ gợi ý -->
+                    <div class="flex flex-wrap gap-2 justify-center p-3 bg-white rounded-2xl border border-sky-100 shadow-sm">
+                        <span class="px-4 py-2 bg-amber-500 text-amber-900 font-black rounded-lg text-base">đó</span>
+                        <span class="px-4 py-2 bg-amber-500 text-amber-900 font-black rounded-lg text-base">ấy</span>
+                        <span class="px-4 py-2 bg-amber-500 text-amber-900 font-black rounded-lg text-base">thế</span>
+                        <span class="px-4 py-2 bg-amber-500 text-amber-900 font-black rounded-lg text-base">vậy</span>
+                        <span class="px-4 py-2 bg-amber-500 text-amber-900 font-black rounded-lg text-base">này</span>
                     </div>
-                </div>
 
-                <!-- Câu c -->
-                <div class="bg-white p-5 rounded-2xl border border-sky-100 space-y-3">
-                    <p class="text-2xl md:text-3xl text-gray-800 font-medium leading-relaxed">
-                        <strong>c.</strong> Mây đen đã kéo đến đầy trời. Nhưng bọn trẻ chẳng chú ý đến điều 
-                        <select id="vn16-b2-c" class="mx-1 p-1 bg-amber-50 border-2 border-amber-100 rounded font-bold text-amber-600">
-                            <option value="">...</option>
-                            <option value="đó">đó</option>
-                            <option value="ấy">ấy</option>
-                            <option value="thế">thế</option>
-                            <option value="vậy">vậy</option>
-                            <option value="này">này</option>
-                        </select>
-                        .
-                    </p>
-                    <div class="flex flex-col md:flex-row gap-2 items-start md:items-center">
-                        <label class="text-sm font-bold text-gray-800">👉 Đại từ trên thay thế cho điều nào ở câu trước?</label>
-                        <select id="vn16-b2-c-ref" class="p-1 border border-gray-100 rounded font-bold text-gray-800 text-sm">
-                            <option value="">Chọn nội dung...</option>
-                            <option value="bọn trẻ chẳng chú ý">bọn trẻ chẳng chú ý</option>
-                            <option value="Mây đen đã kéo đến đầy trời">Mây đen đã kéo đến đầy trời</option>
-                            <option value="Mây đen">Mây đen</option>
-                        </select>
+                    <!-- Câu hỏi điền bông hoa -->
+                    <div class="space-y-4">
+                        <!-- Câu a -->
+                        <div class="bg-white p-5 rounded-2xl border border-sky-100 space-y-3">
+                            <p class="text-2xl md:text-3xl text-gray-800 font-medium leading-relaxed">
+                                <strong>a.</strong> Cô dạy mình động tác bơi ếch. Động tác 
+                                <select id="vn16-b2-a" class="mx-1 p-1 bg-amber-50 border-2 border-amber-100 rounded font-bold text-amber-600">
+                                    <option value="">...</option>
+                                    <option value="đó">đó</option>
+                                    <option value="ấy">ấy</option>
+                                    <option value="thế">thế</option>
+                                    <option value="vậy">vậy</option>
+                                    <option value="này">này</option>
+                                </select>
+                                thật lạ.
+                            </p>
+                            <div class="flex flex-col md:flex-row gap-2 items-start md:items-center">
+                                <label class="text-lg md:text-2xl font-bold text-gray-800">👉 Đại từ trên thay thế cho cụm từ nào ở câu trước?</label>
+                                <select id="vn16-b2-a-ref" class="p-1 border border-gray-100 rounded font-bold text-gray-800 text-base md:text-2xl max-w-full">
+                                    <option value="">Chọn cụm từ...</option>
+                                    <option value="cô dạy">cô dạy</option>
+                                    <option value="động tác bơi ếch">động tác bơi ếch</option>
+                                    <option value="thật lạ">thật lạ</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Câu b -->
+                        <div class="bg-white p-5 rounded-2xl border border-sky-100 space-y-3">
+                            <p class="text-2xl md:text-3xl text-gray-800 font-medium leading-relaxed">
+                                <strong>b.</strong> Cây lạc tiên ra quả quanh năm. Vì 
+                                <select id="vn16-b2-b" class="mx-1 p-1 bg-amber-50 border-2 border-amber-100 rounded font-bold text-amber-600">
+                                    <option value="">...</option>
+                                    <option value="đó">đó</option>
+                                    <option value="ấy">ấy</option>
+                                    <option value="thế">thế</option>
+                                    <option value="vậy">vậy</option>
+                                    <option value="này">này</option>
+                                </select>
+                                , con đường luôn phảng phất mùi lạc tiên chín.
+                            </p>
+                            <div class="flex flex-col md:flex-row gap-2 items-start md:items-center">
+                                <label class="text-lg md:text-2xl font-bold text-gray-800">👉 Đại từ trên thay thế cho từ ngữ/câu nào ở câu trước?</label>
+                                <select id="vn16-b2-b-ref" class="p-1 border border-gray-100 rounded font-bold text-gray-800 text-base md:text-2xl max-w-full">
+                                    <option value="">Chọn từ ngữ/câu...</option>
+                                    <option value="Cây lạc tiên ra quả quanh năm">Cây lạc tiên ra quả quanh năm</option>
+                                    <option value="Cây lạc tiên">Cây lạc tiên</option>
+                                    <option value="quanh năm">quanh năm</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Câu c -->
+                        <div class="bg-white p-5 rounded-2xl border border-sky-100 space-y-3">
+                            <p class="text-2xl md:text-3xl text-gray-800 font-medium leading-relaxed">
+                                <strong>c.</strong> Mây đen đã kéo đến đầy trời. Nhưng bọn trẻ chẳng chú ý đến điều 
+                                <select id="vn16-b2-c" class="mx-1 p-1 bg-amber-50 border-2 border-amber-100 rounded font-bold text-amber-600">
+                                    <option value="">...</option>
+                                    <option value="đó">đó</option>
+                                    <option value="ấy">ấy</option>
+                                    <option value="thế">thế</option>
+                                    <option value="vậy">vậy</option>
+                                    <option value="này">này</option>
+                                </select>
+                                .
+                            </p>
+                            <div class="flex flex-col md:flex-row gap-2 items-start md:items-center">
+                                <label class="text-lg md:text-2xl font-bold text-gray-800">👉 Đại từ trên thay thế cho điều nào ở câu trước?</label>
+                                <select id="vn16-b2-c-ref" class="p-1 border border-gray-100 rounded font-bold text-gray-800 text-base md:text-2xl max-w-full">
+                                    <option value="">Chọn nội dung...</option>
+                                    <option value="bọn trẻ chẳng chú ý">bọn trẻ chẳng chú ý</option>
+                                    <option value="Mây đen đã kéo đến đầy trời">Mây đen đã kéo đến đầy trời</option>
+                                    <option value="Mây đen">Mây đen</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraBai2Vn16();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
-            <div id="fb-vn16-b2" class="hidden text-base font-bold px-4 py-2 rounded-xl text-center"></div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="kiemTraBai2Vn16();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
+                    <div id="fb-vn16-b2" class="hidden text-base font-bold px-4 py-2 rounded-xl text-center"></div>
+                </div>
+            </section>
         </div>
-    </section>
 
-    <!-- 📝 BÀI 3: NỐI ĐẠI TỪ NGHI VẤN VỚI MỤC ĐÍCH HỎI -->
-    <section class="bg-white p-4 rounded-[40px] shadow-lg border border-emerald-50">
-        <div class="p-6 md:p-8 bg-emerald-50/30 rounded-[32px] space-y-6">
-            <div class="flex items-center gap-4 mb-2">
-                <div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow-md">3</div>
-                <h3 class="text-2xl md:text-3xl font-black text-gray-800">Tìm đại từ nghi vấn trong các câu sau và xác định mục đích sử dụng tương ứng</h3>
-            </div>
-
-            <p class="text-xl md:text-2xl text-gray-800 font-bold italic">👉 Hãy chọn mục đích sử dụng chính xác ở mỗi câu hỏi dưới đây:</p>
-
-            <div class="space-y-4">
-                <!-- Câu a -->
-                <div class="bg-white p-4 rounded-xl border border-emerald-100 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
-                    <p class="text-2xl md:text-3xl text-gray-800 font-medium">a. Anh muốn gặp <strong class="text-emerald-800">ai</strong>?</p>
-                    <div class="flex items-center gap-2 select-none">
-                        <label class="text-xs font-bold text-gray-800">Mục đích:</label>
-                        <select id="vn16-b3-a" class="p-1.5 border border-emerald-100 rounded font-bold text-emerald-800 text-sm bg-emerald-50/30 outline-none">
-                            <option value="">Chọn mục đích...</option>
-                            <option value="1">Hỏi về số lượng</option>
-                            <option value="2">Hỏi về người</option>
-                            <option value="3">Hỏi về thời gian</option>
-                            <option value="4">Hỏi về địa điểm</option>
-                            <option value="5">Hỏi về nguyên nhân</option>
-                        </select>
+        <!-- TAB PHỤ 2: BÀI TẬP 3 -->
+        <div id="vn16-prac-content-1" class="hidden space-y-6 animate-in fade-in duration-300">
+            <section class="bg-white p-4 rounded-[40px] shadow-lg border border-emerald-50">
+                <div class="p-6 md:p-8 bg-emerald-50/30 rounded-[32px] space-y-6">
+                    <div class="flex items-center gap-4 mb-2">
+                        <div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-black shadow-md">3</div>
+                        <h3 class="text-2xl md:text-3xl font-black text-gray-800">Tìm đại từ nghi vấn trong các câu sau và xác định mục đích sử dụng tương ứng</h3>
                     </div>
-                </div>
 
-                <!-- Câu b -->
-                <div class="bg-white p-4 rounded-xl border border-emerald-100 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
-                    <p class="text-2xl md:text-3xl text-gray-800 font-medium">b. <strong class="text-emerald-800">Sao</strong> con về muộn thế?</p>
-                    <div class="flex items-center gap-2 select-none">
-                        <label class="text-xs font-bold text-gray-800">Mục đích:</label>
-                        <select id="vn16-b3-b" class="p-1.5 border border-emerald-100 rounded font-bold text-emerald-800 text-sm bg-emerald-50/30 outline-none">
-                            <option value="">Chọn mục đích...</option>
-                            <option value="1">Hỏi về số lượng</option>
-                            <option value="2">Hỏi về người</option>
-                            <option value="3">Hỏi về thời gian</option>
-                            <option value="4">Hỏi về địa điểm</option>
-                            <option value="5">Hỏi về nguyên nhân</option>
-                        </select>
+                    <p class="text-xl md:text-2xl text-gray-800 font-bold italic">👉 Hãy chọn mục đích sử dụng chính xác ở mỗi câu hỏi dưới đây:</p>
+
+                    <div class="space-y-4">
+                        <!-- Câu a -->
+                        <div class="bg-white p-4 rounded-xl border border-emerald-100 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+                            <p class="text-2xl md:text-3xl text-gray-800 font-medium">a. Anh muốn gặp <strong class="text-emerald-800">ai</strong>?</p>
+                            <div class="flex items-center gap-2 select-none">
+                                <label class="text-base md:text-xl font-bold text-gray-800">Mục đích:</label>
+                                <select id="vn16-b3-a" class="p-2 border border-emerald-100 rounded-xl font-bold text-emerald-800 text-lg md:text-2xl bg-emerald-50/30 outline-none max-w-full">
+                                    <option value="">Chọn mục đích...</option>
+                                    <option value="1">Hỏi về số lượng</option>
+                                    <option value="2">Hỏi về người</option>
+                                    <option value="3">Hỏi về thời gian</option>
+                                    <option value="4">Hỏi về địa điểm</option>
+                                    <option value="5">Hỏi về nguyên nhân</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Câu b -->
+                        <div class="bg-white p-4 rounded-xl border border-emerald-100 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+                            <p class="text-2xl md:text-3xl text-gray-800 font-medium">b. <strong class="text-emerald-800">Sao</strong> con về muộn thế?</p>
+                            <div class="flex items-center gap-2 select-none">
+                                <label class="text-base md:text-xl font-bold text-gray-800">Mục đích:</label>
+                                <select id="vn16-b3-b" class="p-2 border border-emerald-100 rounded-xl font-bold text-emerald-800 text-lg md:text-2xl bg-emerald-50/30 outline-none max-w-full">
+                                    <option value="">Chọn mục đích...</option>
+                                    <option value="1">Hỏi về số lượng</option>
+                                    <option value="2">Hỏi về người</option>
+                                    <option value="3">Hỏi về thời gian</option>
+                                    <option value="4">Hỏi về địa điểm</option>
+                                    <option value="5">Hỏi về nguyên nhân</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Câu c -->
+                        <div class="bg-white p-4 rounded-xl border border-emerald-100 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+                            <p class="text-2xl md:text-3xl text-gray-800 font-medium">c. Bạn làm được <strong class="text-emerald-800">mấy</strong> bài tập rồi?</p>
+                            <div class="flex items-center gap-2 select-none">
+                                <label class="text-base md:text-xl font-bold text-gray-800">Mục đích:</label>
+                                <select id="vn16-b3-c" class="p-2 border border-emerald-100 rounded-xl font-bold text-emerald-800 text-lg md:text-2xl bg-emerald-50/30 outline-none max-w-full">
+                                    <option value="">Chọn mục đích...</option>
+                                    <option value="1">Hỏi về số lượng</option>
+                                    <option value="2">Hỏi về người</option>
+                                    <option value="3">Hỏi về thời gian</option>
+                                    <option value="4">Hỏi về địa điểm</option>
+                                    <option value="5">Hỏi về nguyên nhân</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Câu d -->
+                        <div class="bg-white p-4 rounded-xl border border-emerald-100 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+                            <p class="text-2xl md:text-3xl text-gray-800 font-medium">d. <strong class="text-emerald-800">Bao giờ</strong> cháu về quê?</p>
+                            <div class="flex items-center gap-2 select-none">
+                                <label class="text-base md:text-xl font-bold text-gray-800">Mục đích:</label>
+                                <select id="vn16-b3-d" class="p-2 border border-emerald-100 rounded-xl font-bold text-emerald-800 text-lg md:text-2xl bg-emerald-50/30 outline-none max-w-full">
+                                    <option value="">Chọn mục đích...</option>
+                                    <option value="1">Hỏi về số lượng</option>
+                                    <option value="2">Hỏi về người</option>
+                                    <option value="3">Hỏi về thời gian</option>
+                                    <option value="4">Hỏi về địa điểm</option>
+                                    <option value="5">Hỏi về nguyên nhân</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Câu e -->
+                        <div class="bg-white p-4 rounded-xl border border-emerald-100 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+                            <p class="text-2xl md:text-3xl text-gray-800 font-medium">e. Nó ngồi ở <strong class="text-emerald-800">đâu</strong>?</p>
+                            <div class="flex items-center gap-2 select-none">
+                                <label class="text-base md:text-xl font-bold text-gray-800">Mục đích:</label>
+                                <select id="vn16-b3-e" class="p-2 border border-emerald-100 rounded-xl font-bold text-emerald-800 text-lg md:text-2xl bg-emerald-50/30 outline-none max-w-full">
+                                    <option value="">Chọn mục đích...</option>
+                                    <option value="1">Hỏi về số lượng</option>
+                                    <option value="2">Hỏi về người</option>
+                                    <option value="3">Hỏi về thời gian</option>
+                                    <option value="4">Hỏi về địa điểm</option>
+                                    <option value="5">Hỏi về nguyên nhân</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Câu c -->
-                <div class="bg-white p-4 rounded-xl border border-emerald-100 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
-                    <p class="text-2xl md:text-3xl text-gray-800 font-medium">c. Bạn làm được <strong class="text-emerald-800">mấy</strong> bài tập rồi?</p>
-                    <div class="flex items-center gap-2 select-none">
-                        <label class="text-xs font-bold text-gray-800">Mục đích:</label>
-                        <select id="vn16-b3-c" class="p-1.5 border border-emerald-100 rounded font-bold text-emerald-800 text-sm bg-emerald-50/30 outline-none">
-                            <option value="">Chọn mục đích...</option>
-                            <option value="1">Hỏi về số lượng</option>
-                            <option value="2">Hỏi về người</option>
-                            <option value="3">Hỏi về thời gian</option>
-                            <option value="4">Hỏi về địa điểm</option>
-                            <option value="5">Hỏi về nguyên nhân</option>
-                        </select>
-                    </div>
+                    <div class="flex justify-end items-center gap-4"><button onclick="kiemTraBai3Vn16();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
+                    <div id="fb-vn16-b3" class="hidden text-base font-bold px-4 py-2 rounded-xl text-center"></div>
                 </div>
-
-                <!-- Câu d -->
-                <div class="bg-white p-4 rounded-xl border border-emerald-100 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
-                    <p class="text-2xl md:text-3xl text-gray-800 font-medium">d. <strong class="text-emerald-800">Bao giờ</strong> cháu về quê?</p>
-                    <div class="flex items-center gap-2 select-none">
-                        <label class="text-xs font-bold text-gray-800">Mục đích:</label>
-                        <select id="vn16-b3-d" class="p-1.5 border border-emerald-100 rounded font-bold text-emerald-800 text-sm bg-emerald-50/30 outline-none">
-                            <option value="">Chọn mục đích...</option>
-                            <option value="1">Hỏi về số lượng</option>
-                            <option value="2">Hỏi về người</option>
-                            <option value="3">Hỏi về thời gian</option>
-                            <option value="4">Hỏi về địa điểm</option>
-                            <option value="5">Hỏi về nguyên nhân</option>
-                        </select>
-                    </div>
-                </div>
-
-                <!-- Câu e -->
-                <div class="bg-white p-4 rounded-xl border border-emerald-100 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
-                    <p class="text-2xl md:text-3xl text-gray-800 font-medium">e. Nó ngồi ở <strong class="text-emerald-800">đâu</strong>?</p>
-                    <div class="flex items-center gap-2 select-none">
-                        <label class="text-xs font-bold text-gray-800">Mục đích:</label>
-                        <select id="vn16-b3-e" class="p-1.5 border border-emerald-100 rounded font-bold text-emerald-800 text-sm bg-emerald-50/30 outline-none">
-                            <option value="">Chọn mục đích...</option>
-                            <option value="1">Hỏi về số lượng</option>
-                            <option value="2">Hỏi về người</option>
-                            <option value="3">Hỏi về thời gian</option>
-                            <option value="4">Hỏi về địa điểm</option>
-                            <option value="5">Hỏi về nguyên nhân</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex justify-end items-center gap-4"><button onclick="kiemTraBai3Vn16();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
-            <div id="fb-vn16-b3" class="hidden text-base font-bold px-4 py-2 rounded-xl text-center"></div>
+            </section>
         </div>
-    </section>
+    </div>
 
     <!-- NỘP BÀI HOÀN THÀNH -->
     <div class="pt-6 flex justify-center">
@@ -824,5 +854,27 @@ window.nopBaiVn16 = function() {
             '🎓',
             '<div class="text-center p-6"><span class="text-7xl block mb-4">🎓</span><p class="text-2xl md:text-3xl font-bold text-sky-800">Chúc mừng em đã hoàn thành bài Luyện tập về đại từ!</p><p class="text-lg text-gray-800 mt-3">Em đã làm chủ các loại đại từ xưng hô, thay thế và nghi vấn trong tiếng Việt.</p></div>'
         );
+    }
+};
+
+// --- LOGIC CHUYỂN TAB PHỤ LUYỆN TẬP ---
+window.switchPracTabVn16 = function(tabIdx) {
+    for (let i = 0; i < 2; i++) {
+        const tabBtn = document.getElementById(`vn16-prac-tab-${i}`);
+        const tabContent = document.getElementById(`vn16-prac-content-${i}`);
+        if (tabBtn) {
+            if (i === tabIdx) {
+                tabBtn.className = "px-5 py-2.5 rounded-xl font-black text-xl md:text-2xl transition-all bg-sky-600 text-white shadow-sm";
+            } else {
+                tabBtn.className = "px-5 py-2.5 rounded-xl font-bold text-xl md:text-2xl transition-all bg-gray-200 text-gray-700 hover:bg-gray-300";
+            }
+        }
+        if (tabContent) {
+            if (i === tabIdx) {
+                tabContent.className = "block space-y-6 animate-in fade-in duration-300";
+            } else {
+                tabContent.className = "hidden";
+            }
+        }
     }
 };

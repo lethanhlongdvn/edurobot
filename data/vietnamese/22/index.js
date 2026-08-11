@@ -77,7 +77,7 @@ export const lesson22 = {
                 <p class="indent-8 font-medium">Thế là mỗi bạn một câu. Trong vài ngày, Loan đã ghi âm xong.</p>
                 <p class="indent-8 font-medium">Ngày triển lãm, lớp học như một cửa hiệu tạp hoá vui nhộn. Đến lượt mình, Loan trịnh trọng cắm máy ghi âm vào loa rồi hồi hộp bật lên. Cả lớp tò mò nhìn chiếc loa.</p>
                 <p class="indent-4 font-semibold text-sky-800">– Chúc tình bạn của chúng mình thật lâu bền!</p>
-                <p class="indent-8 font-medium">Phượng giật mình. Chính là giọng của bạn ấy. Giọng Phượng mềm mại như phát thanh viên. Cả lớp vỗ tay như pháo ran. Vài bạn chổm hẳn người lên. Ai cũng háo hức chờ đến mình.</p>
+                <p class="indent-8 font-medium">Phượng giật mình. Chính là giọng của bạn ấy. Giọng Phượng mềm mại như phát thanh viên. Cả lớp vỗ tay như pháo ran. Vài bạn chồm hẳn người lên. Ai cũng háo hức chờ đến mình.</p>
                 <p class="indent-4 font-semibold text-amber-600">– Chúc ai có tật thì sửa, không có thì bỏ qua.</p>
                 <p class="indent-8 font-medium">Cả lớp cười lăn. Long – chủ nhân của giọng nói liền thoắng vừa vang lên – cũng ôm bụng cười. Cứ thế, mỗi giọng nói cất lên đều thật thân thương và quen thuộc. Ai đi qua lớp Loan cũng ngạc nhiên vì những tiếng vỗ tay liên tiếp vọng ra. Thỉnh thoảng, lại có tràng cười lớn, xen lẫn tiếng thầy Dương:</p>
                 <p class="indent-4 font-black text-emerald-800">– Độc đáo quá, ý nghĩa quá!</p>
@@ -268,7 +268,7 @@ export const lesson22 = {
                         </div>
                     </summary>
                     <div class="px-8 pb-6 text-gray-800 leading-relaxed border-t border-sky-50 pt-4 bg-sky-50/10 font-medium space-y-2 text-lg md:text-3xl">
-                        <p>Các bạn trong lớp cảm thấy vô cùng tò mò, háo hức, bất ngờ và thích thú. Mọi người vỗ tay như pháo ran, chổm hẳn người lên chờ đợi giọng nói của mình vang lên, có lúc cười lăn và ngập tràn xúc động ấm áp khi nghe lại giọng nói thân thương của nhau.</p>
+                        <p>Các bạn trong lớp cảm thấy vô cùng tò mò, háo hức, bất ngờ và thích thú. Mọi người vỗ tay như pháo ran, chồm hẳn người lên chờ đợi giọng nói của mình vang lên, có lúc cười lăn và ngập tràn xúc động ấm áp khi nghe lại giọng nói thân thương của nhau.</p>
                     </div>
                 </details>
 

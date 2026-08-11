@@ -70,7 +70,10 @@ export const lesson10 = {
                             <!-- Nhánh: Lựa chọn câu chuyện -->
                             <div class="bg-sky-100/70 p-4 rounded-2xl border border-sky-100">
                                 <p class="font-black text-sky-900 text-2xl md:text-3xl mb-2">📖 Lựa chọn câu chuyện (theo yêu cầu của đề bài)</p>
-                                <input type="text" id="vn10-ten-chuyen" class="w-full p-3 text-2xl md:text-3xl border-2 border-sky-100 rounded-xl focus:border-sky-500 focus:ring-2 focus:ring-sky-600 outline-none transition-all font-medium" placeholder="Em chọn kể câu chuyện gì? (VD: Thanh âm của gió)">
+                                <div class="relative">
+                                    <input type="text" id="vn10-ten-chuyen" class="w-full p-3 pr-14 text-2xl md:text-3xl border-2 border-sky-100 rounded-xl focus:border-sky-500 focus:ring-2 focus:ring-sky-600 outline-none transition-all font-medium" placeholder="Em chọn kể câu chuyện gì? (VD: Thanh âm của gió)">
+                                    <button onclick="toggleMicVn10('vn10-ten-chuyen')" id="btn-mic-vn10-ten-chuyen" class="absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-rose-500 hover:bg-rose-600 text-white rounded-full shadow-md hover:scale-105 active:scale-95 transition-all" title="Nói để nhập văn bản"><span class="text-lg">🎤</span></button>
+                                </div>
                             </div>
 
                             <!-- Nhánh: Nhớ lại câu chuyện -->
@@ -79,15 +82,24 @@ export const lesson10 = {
                                 <div class="grid grid-cols-1 gap-4">
                                     <div class="space-y-1">
                                         <label class="text-xl md:text-2xl font-black text-amber-600">🌄 Bối cảnh</label>
-                                        <textarea id="vn10-boi-canh" rows="3" class="w-full p-3 text-2xl md:text-3xl border-2 border-amber-100 rounded-xl focus:border-amber-500 outline-none transition-all font-medium resize-none" placeholder="Câu chuyện xảy ra ở đâu, khi nào?"></textarea>
+                                        <div class="relative">
+                                            <textarea id="vn10-boi-canh" rows="3" class="w-full p-3 pr-14 text-2xl md:text-3xl border-2 border-amber-100 rounded-xl focus:border-amber-500 outline-none transition-all font-medium resize-none" placeholder="Câu chuyện xảy ra ở đâu, khi nào?"></textarea>
+                                            <button onclick="toggleMicVn10('vn10-boi-canh')" id="btn-mic-vn10-boi-canh" class="absolute right-3 top-3 p-2 bg-rose-500 hover:bg-rose-600 text-white rounded-full shadow-md hover:scale-105 active:scale-95 transition-all" title="Nói để nhập văn bản"><span class="text-lg">🎤</span></button>
+                                        </div>
                                     </div>
                                     <div class="space-y-1">
                                         <label class="text-xl md:text-2xl font-black text-amber-600">👤 Nhân vật</label>
-                                        <textarea id="vn10-nhan-vat" rows="3" class="w-full p-3 text-2xl md:text-3xl border-2 border-amber-100 rounded-xl focus:border-amber-500 outline-none transition-all font-medium resize-none" placeholder="Có những nhân vật nào?"></textarea>
+                                        <div class="relative">
+                                            <textarea id="vn10-nhan-vat" rows="3" class="w-full p-3 pr-14 text-2xl md:text-3xl border-2 border-amber-100 rounded-xl focus:border-amber-500 outline-none transition-all font-medium resize-none" placeholder="Có những nhân vật nào?"></textarea>
+                                            <button onclick="toggleMicVn10('vn10-nhan-vat')" id="btn-mic-vn10-nhan-vat" class="absolute right-3 top-3 p-2 bg-rose-500 hover:bg-rose-600 text-white rounded-full shadow-md hover:scale-105 active:scale-95 transition-all" title="Nói để nhập văn bản"><span class="text-lg">🎤</span></button>
+                                        </div>
                                     </div>
                                     <div class="space-y-1">
                                         <label class="text-xl md:text-2xl font-black text-amber-600">📜 Diễn biến</label>
-                                        <textarea id="vn10-dien-bien" rows="3" class="w-full p-3 text-2xl md:text-3xl border-2 border-amber-100 rounded-xl focus:border-amber-500 outline-none transition-all font-medium resize-none" placeholder="Sự việc chính diễn ra thế nào?"></textarea>
+                                        <div class="relative">
+                                            <textarea id="vn10-dien-bien" rows="3" class="w-full p-3 pr-14 text-2xl md:text-3xl border-2 border-amber-100 rounded-xl focus:border-amber-500 outline-none transition-all font-medium resize-none" placeholder="Sự việc chính diễn ra thế nào?"></textarea>
+                                            <button onclick="toggleMicVn10('vn10-dien-bien')" id="btn-mic-vn10-dien-bien" class="absolute right-3 top-3 p-2 bg-rose-500 hover:bg-rose-600 text-white rounded-full shadow-md hover:scale-105 active:scale-95 transition-all" title="Nói để nhập văn bản"><span class="text-lg">🎤</span></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -141,7 +153,10 @@ export const lesson10 = {
                     <div class="px-4 py-2 bg-sky-600 text-white font-black rounded-xl text-xl md:text-2xl shadow-sm">Mở bài</div>
                     <p class="text-2xl md:text-3xl text-gray-800 font-medium italic">Giới thiệu tên câu chuyện, tên tác giả,... (Nếu đóng vai nhân vật, em cần giới thiệu mình là nhân vật nào.)</p>
                 </div>
-                <textarea id="vn10-mo-bai" rows="3" class="w-full p-4 text-2xl md:text-3xl border-2 border-sky-100 rounded-2xl focus:border-sky-500 focus:ring-2 focus:ring-sky-600 outline-none transition-all resize-none font-medium" placeholder="VD: Em xin kể lại câu chuyện 'Thanh âm của gió' của tác giả..."></textarea>
+                <div class="relative">
+                    <textarea id="vn10-mo-bai" rows="3" class="w-full p-4 pr-14 text-2xl md:text-3xl border-2 border-sky-100 rounded-2xl focus:border-sky-500 focus:ring-2 focus:ring-sky-600 outline-none transition-all resize-none font-medium" placeholder="VD: Em xin kể lại câu chuyện 'Thanh âm của gió' của tác giả..."></textarea>
+                    <button onclick="toggleMicVn10('vn10-mo-bai')" id="btn-mic-vn10-mo-bai" class="absolute right-3 top-3 p-2 bg-rose-500 hover:bg-rose-600 text-white rounded-full shadow-md hover:scale-105 active:scale-95 transition-all" title="Nói để nhập văn bản"><span class="text-lg">🎤</span></button>
+                </div>
             </div>
 
             <!-- THÂN BÀI -->
@@ -170,7 +185,10 @@ export const lesson10 = {
                     </ul>
                 </div>
 
-                <textarea id="vn10-than-bai" rows="6" class="w-full p-4 text-2xl md:text-3xl border-2 border-emerald-100 rounded-2xl focus:border-emerald-500 focus:ring-2 focus:ring-emerald-600 outline-none transition-all resize-none font-medium" placeholder="Liệt kê các ý chính của thân bài:&#10;- Sự việc 1: ...&#10;- Sự việc 2: ...&#10;- Chi tiết sáng tạo: ..."></textarea>
+                <div class="relative">
+                    <textarea id="vn10-than-bai" rows="6" class="w-full p-4 pr-14 text-2xl md:text-3xl border-2 border-emerald-100 rounded-2xl focus:border-emerald-500 focus:ring-2 focus:ring-emerald-600 outline-none transition-all resize-none font-medium" placeholder="Liệt kê các ý chính của thân bài:&#10;- Sự việc 1: ...&#10;- Sự việc 2: ...&#10;- Chi tiết sáng tạo: ..."></textarea>
+                    <button onclick="toggleMicVn10('vn10-than-bai')" id="btn-mic-vn10-than-bai" class="absolute right-3 top-3 p-2 bg-rose-500 hover:bg-rose-600 text-white rounded-full shadow-md hover:scale-105 active:scale-95 transition-all" title="Nói để nhập văn bản"><span class="text-lg">🎤</span></button>
+                </div>
             </div>
 
             <!-- KẾT BÀI -->
@@ -179,7 +197,10 @@ export const lesson10 = {
                     <div class="px-4 py-2 bg-amber-500 text-white font-black rounded-xl text-xl md:text-2xl shadow-sm">Kết bài</div>
                     <p class="text-2xl md:text-3xl text-gray-800 font-medium italic">Nêu suy nghĩ, cảm xúc,... về câu chuyện hoặc nêu kết thúc dưới góc nhìn nhân vật (nếu đóng vai kể chuyện).</p>
                 </div>
-                <textarea id="vn10-ket-bai" rows="3" class="w-full p-4 text-2xl md:text-3xl border-2 border-amber-100 rounded-2xl focus:border-amber-500 focus:ring-2 focus:ring-amber-600 outline-none transition-all resize-none font-medium" placeholder="VD: Câu chuyện giúp em hiểu rằng..."></textarea>
+                <div class="relative">
+                    <textarea id="vn10-ket-bai" rows="3" class="w-full p-4 pr-14 text-2xl md:text-3xl border-2 border-amber-100 rounded-2xl focus:border-amber-500 focus:ring-2 focus:ring-amber-600 outline-none transition-all resize-none font-medium" placeholder="VD: Câu chuyện giúp em hiểu rằng..."></textarea>
+                    <button onclick="toggleMicVn10('vn10-ket-bai')" id="btn-mic-vn10-ket-bai" class="absolute right-3 top-3 p-2 bg-rose-500 hover:bg-rose-600 text-white rounded-full shadow-md hover:scale-105 active:scale-95 transition-all" title="Nói để nhập văn bản"><span class="text-lg">🎤</span></button>
+                </div>
             </div>
         </div>
     </section>
@@ -594,4 +615,73 @@ window.nopPhanChuanBiVn10 = function() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     }, 1510);
+};
+
+// --- SPEECH TO TEXT (GIỌNG NÓI THÀNH VĂN BẢN) ---
+let boGhiAmVn10 = null;
+window.toggleMicVn10 = function(targetId) {
+    const input = document.getElementById(targetId);
+    const micBtn = document.getElementById(`btn-mic-${targetId}`);
+    if (!input) return;
+
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+        alert('Trình duyệt của em không hỗ trợ nhận diện giọng nói. Hãy dùng Google Chrome nhé!');
+        return;
+    }
+
+    // Nếu đang ghi âm -> dừng lại
+    if (boGhiAmVn10) {
+        boGhiAmVn10.stop();
+        boGhiAmVn10 = null;
+        if (micBtn) {
+            micBtn.classList.remove('animate-pulse', 'bg-red-500');
+            micBtn.classList.add('bg-rose-500');
+            micBtn.querySelector('span').innerText = '🎤';
+        }
+        return;
+    }
+
+    try {
+        boGhiAmVn10 = new SpeechRecognition();
+        boGhiAmVn10.lang = 'vi-VN';
+        boGhiAmVn10.interimResults = false;
+        boGhiAmVn10.maxAlternatives = 1;
+
+        boGhiAmVn10.onstart = function() {
+            if (micBtn) {
+                micBtn.classList.add('animate-pulse', 'bg-red-500');
+                micBtn.classList.remove('bg-rose-500');
+                micBtn.querySelector('span').innerText = '🛑';
+            }
+        };
+
+        boGhiAmVn10.onresult = function(event) {
+            const resultText = event.results[0][0].transcript;
+            if (input.tagName === 'TEXTAREA') {
+                input.value = input.value ? input.value + ' ' + resultText : resultText;
+            } else {
+                input.value = input.value ? input.value + ' ' + resultText : resultText;
+            }
+            input.dispatchEvent(new Event('input'));
+        };
+
+        boGhiAmVn10.onerror = function(event) {
+            console.error('Lỗi nhận diện giọng nói:', event.error);
+        };
+
+        boGhiAmVn10.onend = function() {
+            if (micBtn) {
+                micBtn.classList.remove('animate-pulse', 'bg-red-500');
+                micBtn.classList.add('bg-rose-500');
+                micBtn.querySelector('span').innerText = '🎤';
+            }
+            boGhiAmVn10 = null;
+        };
+
+        boGhiAmVn10.start();
+    } catch (e) {
+        console.error('Không thể khởi động thu âm:', e);
+        boGhiAmVn10 = null;
+    }
 };

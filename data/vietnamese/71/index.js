@@ -133,12 +133,7 @@ export const lesson71 = {
     <!-- CÂU HỎI ĐỌC HIỂU (ACCORDION DETAILS) -->
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-emerald-50">
         <div class="p-6 md:p-8 bg-emerald-50/30 rounded-[32px]">
-            <div class="flex items-center gap-4 mb-8">
-                <div class="w-12 h-12 bg-emerald-600 text-white rounded-xl flex items-center justify-center text-xl md:text-2xl font-black shadow-md">📖</div>
-                <h3 class="text-2xl md:text-5xl font-black text-gray-800">Tìm hiểu bài</h3>
-            </div>
-
-            <div class="space-y-4">
+<div class="space-y-4">
                 <!-- Câu 1 -->
                 <details class="group bg-white rounded-2xl border border-emerald-100 shadow-sm transition-all hover:shadow-md overflow-hidden">
                     <summary class="w-full p-6 text-left flex justify-between items-center cursor-pointer list-none hover:bg-emerald-50/50 transition-colors">

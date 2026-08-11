@@ -108,12 +108,7 @@ export const lesson11 = {
     <!-- PHẦN 1: TÌM HIỂU BÀI (5 câu hỏi accordion) -->
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-sky-50">
         <div class="p-6 md:p-8 bg-sky-50/30 rounded-[32px]">
-            <div class="flex items-center gap-4 mb-8">
-                <div class="w-12 h-12 bg-sky-600 text-white rounded-xl flex items-center justify-center text-2xl md:text-5xl font-black shadow-md">📖</div>
-                <h3 class="text-2xl md:text-5xl font-black text-gray-800">Tìm hiểu nội dung bài đọc</h3>
-            </div>
-
-            <div class="space-y-4">
+<div class="space-y-4">
                 <!-- Câu 1 -->
                 <details class="group bg-white rounded-2xl border border-sky-100 shadow-sm transition-all hover:shadow-md overflow-hidden">
                     <summary class="w-full p-6 text-left flex justify-between items-center cursor-pointer list-none hover:bg-sky-50/50 transition-colors">
@@ -261,32 +256,56 @@ export const lesson11 = {
                 </div>
 
                 <div class="space-y-4">
-                    <!-- Từ "rớt" -->
-                    <div class="bg-white p-4 rounded-xl border border-amber-100 space-y-2">
-                        <p class="text-2xl md:text-3xl text-gray-800 font-medium">Trái bần chín <strong class="text-amber-600 underline decoration-2">rớt</strong> tõm xuống sông.</p>
-                        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDongNghia(;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
+                    <!-- Câu 1: 2 từ in đậm (rớt, cù lao) -->
+                    <div class="bg-white p-4 rounded-xl border border-amber-100 space-y-3">
+                        <p class="text-2xl md:text-3xl text-gray-800 font-medium leading-relaxed">Thỉnh thoảng lại nghe những trái bần chín <strong class="text-amber-600 underline decoration-2">rớt</strong> tõm xuống sông, âm thanh rất đỗi quen thuộc và gần gũi với bọn trẻ sống ở xứ <strong class="text-amber-600 underline decoration-2">cù lao</strong> này.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div class="space-y-1">
+                                <label class="text-lg md:text-xl font-black text-amber-700">Từ đồng nghĩa với "rớt":</label>
+                                <div class="relative">
+                                    <input type="text" id="vn11-dn-rot" class="w-full p-3 pr-14 text-2xl md:text-3xl border-2 border-amber-100 rounded-xl focus:border-amber-500 outline-none transition-all font-medium" placeholder="VD: rơi, rụng...">
+                                    <button onclick="toggleMicVn11('vn11-dn-rot')" id="btn-mic-vn11-dn-rot" class="absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-rose-500 hover:bg-rose-600 text-white rounded-full shadow-md hover:scale-105 active:scale-95 transition-all" title="Nói để nhập văn bản"><span class="text-lg">🎤</span></button>
+                                </div>
+                            </div>
+                            <div class="space-y-1">
+                                <label class="text-lg md:text-xl font-black text-amber-700">Từ đồng nghĩa với "cù lao":</label>
+                                <div class="relative">
+                                    <input type="text" id="vn11-dn-culao" class="w-full p-3 pr-14 text-2xl md:text-3xl border-2 border-amber-100 rounded-xl focus:border-amber-500 outline-none transition-all font-medium" placeholder="VD: đảo, cồn...">
+                                    <button onclick="toggleMicVn11('vn11-dn-culao')" id="btn-mic-vn11-dn-culao" class="absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-rose-500 hover:bg-rose-600 text-white rounded-full shadow-md hover:scale-105 active:scale-95 transition-all" title="Nói để nhập văn bản"><span class="text-lg">🎤</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDongNghia('rot'); kiemTraDongNghia('culao');" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                         <div id="fb-vn11-dn-rot" class="hidden text-xl md:text-2xl font-bold px-3 py-1.5 rounded-lg"></div>
+                        <div id="fb-vn11-dn-culao" class="hidden text-xl md:text-2xl font-bold px-3 py-1.5 rounded-lg"></div>
                     </div>
 
-                    <!-- Từ "âm thanh" -->
-                    <div class="bg-white p-4 rounded-xl border border-amber-100 space-y-2">
-                        <p class="text-2xl md:text-3xl text-gray-800 font-medium"><strong class="text-amber-600 underline decoration-2">Âm thanh</strong> rất đỗi quen thuộc.</p>
-                        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDongNghia(;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
-                        <div id="fb-vn11-dn-amthanh" class="hidden text-xl md:text-2xl font-bold px-3 py-1.5 rounded-lg"></div>
-                    </div>
-
-                    <!-- Từ "con nít" -->
-                    <div class="bg-white p-4 rounded-xl border border-amber-100 space-y-2">
-                        <p class="text-2xl md:text-3xl text-gray-800 font-medium">Vui đùa đủ các trò của tuổi <strong class="text-amber-600 underline decoration-2">con nít</strong>.</p>
-                        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDongNghia(;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
+                    <!-- Câu 2: từ "con nít" -->
+                    <div class="bg-white p-4 rounded-xl border border-amber-100 space-y-3">
+                        <p class="text-2xl md:text-3xl text-gray-800 font-medium leading-relaxed">Mỗi chiều, bọn trẻ chúng tôi tự năm tự bảy ở bến sông, vui đùa đủ các trò của tuổi <strong class="text-amber-600 underline decoration-2">con nít</strong>.</p>
+                        <div class="space-y-1">
+                            <label class="text-lg md:text-xl font-black text-amber-700">Từ đồng nghĩa với "con nít":</label>
+                            <div class="relative">
+                                <input type="text" id="vn11-dn-connit" class="w-full p-3 pr-14 text-2xl md:text-3xl border-2 border-amber-100 rounded-xl focus:border-amber-500 outline-none transition-all font-medium" placeholder="VD: trẻ con, trẻ em...">
+                                <button onclick="toggleMicVn11('vn11-dn-connit')" id="btn-mic-vn11-dn-connit" class="absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-rose-500 hover:bg-rose-600 text-white rounded-full shadow-md hover:scale-105 active:scale-95 transition-all" title="Nói để nhập văn bản"><span class="text-lg">🎤</span></button>
+                            </div>
+                        </div>
+                        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDongNghia('connit')" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                         <div id="fb-vn11-dn-connit" class="hidden text-xl md:text-2xl font-bold px-3 py-1.5 rounded-lg"></div>
                     </div>
 
-                    <!-- Từ "trái bần chua" -->
-                    <div class="bg-white p-4 rounded-xl border border-amber-100 space-y-2">
-                        <p class="text-2xl md:text-3xl text-gray-800 font-medium"><strong class="text-amber-600 underline decoration-2">Trái bần chua</strong> cũng là một đặc sản.</p>
-                        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDongNghia(;" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
-                        <div id="fb-vn11-dn-traiban" class="hidden text-xl md:text-2xl font-bold px-3 py-1.5 rounded-lg"></div>
+                    <!-- Câu 3: từ "Trái" -->
+                    <div class="bg-white p-4 rounded-xl border border-amber-100 space-y-3">
+                        <p class="text-2xl md:text-3xl text-gray-800 font-medium leading-relaxed"><strong class="text-amber-600 underline decoration-2">Trái</strong> bần chua cũng là một đặc sản của quê tôi.</p>
+                        <div class="space-y-1">
+                            <label class="text-lg md:text-xl font-black text-amber-700">Từ đồng nghĩa với "trái":</label>
+                            <div class="relative">
+                                <input type="text" id="vn11-dn-trai" class="w-full p-3 pr-14 text-2xl md:text-3xl border-2 border-amber-100 rounded-xl focus:border-amber-500 outline-none transition-all font-medium" placeholder="VD: quả...">
+                                <button onclick="toggleMicVn11('vn11-dn-trai')" id="btn-mic-vn11-dn-trai" class="absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-rose-500 hover:bg-rose-600 text-white rounded-full shadow-md hover:scale-105 active:scale-95 transition-all" title="Nói để nhập văn bản"><span class="text-lg">🎤</span></button>
+                            </div>
+                        </div>
+                        <div class="flex justify-end items-center gap-4"><button onclick="kiemTraDongNghia('trai')" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
+                        <div id="fb-vn11-dn-trai" class="hidden text-xl md:text-2xl font-bold px-3 py-1.5 rounded-lg"></div>
                     </div>
                 </div>
             </div>
@@ -326,7 +345,7 @@ export const lesson11 = {
 
                 <textarea id="ans-vn11-writing" rows="4" placeholder="Kỉ niệm tuổi thơ bên bến sông quê hiện lên vô cùng sống động và gần gũi. Bọn trẻ cùng tụ tập vui chơi những trò nghịch tinh nghịch, cùng ăn trái bần chua chấm muối ớt cay hít hà, lội sông bắt cá bống sao nấu canh chua... Đó là những kỉ niệm giản dị nhưng đọng lại sâu sắc trong tâm hồn..." class="w-full p-4 md:p-6 text-2xl md:text-3xl rounded-2xl border-2 border-amber-100 focus:border-amber-500 outline-none shadow-sm bg-amber-50/10 font-medium leading-relaxed"></textarea>
                 
-                <div class="flex justify-end items-center gap-4"><button onclick="resetWritingVn11()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkWritingVn11();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetWritingVn11()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="toggleMicVn11('ans-vn11-writing')" id="btn-mic-ans-vn11-writing" class="w-12 h-12 bg-rose-500 hover:bg-rose-600 text-white rounded-full flex items-center justify-center shadow-md hover:scale-105 active:scale-95 transition-all shrink-0" title="Nói để nhập văn bản"><span class="text-lg">🎤</span></button> <button onclick="checkWritingVn11();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 
                 <div id="fb-vn11-writing" class="hidden mt-6 p-6 bg-amber-500 text-white rounded-2xl shadow-xl animate-in slide-in-from-top-10 duration-500">
                     <!-- AI Feedback -->
@@ -536,10 +555,10 @@ window.chonDaiTuVn11 = function(tu, idx) {
 
 // --- LOGIC BÀI 2a: TÌM TỪ ĐỒNG NGHĨA ---
 const dongNghiaVn11 = {
-    rot: ['rơi', 'rớt xuống', 'rụng', 'roi'],
-    amthanh: ['tiếng', 'tiếng động', 'âm vang', 'thanh âm'],
+    rot: ['rơi', 'rớt xuống', 'rụng', 'roi', 'ngã'],
+    culao: ['đảo', 'cồn', 'đảo nhỏ', 'hòn đảo', 'cù lao sông'],
     connit: ['trẻ con', 'trẻ em', 'con trẻ', 'trẻ nhỏ', 'nhi đồng', 'thiếu nhi', 'bé con'],
-    traiban: ['quả bần chua', 'trái bần', 'quả bần']
+    trai: ['quả', 'quả bần']
 };
 
 window.kiemTraDongNghia = function(tu) {
@@ -592,7 +611,7 @@ window.chonNhanXetVn11 = function(idx) {
 
     fb.classList.remove('hidden');
     if (dung) {
-        fb.innerHTML = "🎉 Chính xác! Các từ <strong>rớt, con nít, trái bần chua</strong> đều là từ ngữ đậm màu sắc Nam Bộ.";
+        fb.innerHTML = "🎉 Chính xác! Các từ <strong>rớt, cù lao, con nít, trái</strong> đều là từ ngữ đậm màu sắc Nam Bộ.";
         fb.className = "text-2xl md:text-3xl font-bold px-4 py-2 rounded-xl bg-emerald-600 text-white";
     } else {
         fb.innerHTML = "⚠️ Chưa đúng. Em hãy đọc lại các từ in đậm và suy nghĩ xem chúng đặc trưng cho vùng miền nào.";
@@ -634,5 +653,73 @@ window.resetWritingVn11 = function() {
 window.nopBaiVn11 = function() {
     if (typeof window.showMathFeedback === 'function') {
         window.showMathFeedback('Hoàn thành Tiết 11-12', '🌿', '<div class="text-center p-6"><span class="text-7xl block mb-4">🌿</span><p class="text-lg md:text-2xl font-bold text-sky-800">Chúc mừng em đã hoàn thành bài đọc Bến sông tuổi thơ!</p><p class="text-lg text-gray-800 mt-3">Em đã cảm nhận được vẻ đẹp bình dị của quê hương cù lao và tình yêu sâu nặng với nơi mình sinh ra.</p></div>');
+    }
+};
+
+// --- SPEECH TO TEXT (GIỌNG NÓI THÀNH VĂN BẢN) ---
+let boGhiAmVn11 = null;
+window.toggleMicVn11 = function(targetId) {
+    const input = document.getElementById(targetId);
+    const micBtn = document.getElementById(`btn-mic-${targetId}`);
+    if (!input) return;
+
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+        alert('Trình duyệt của em không hỗ trợ nhận diện giọng nói. Hãy dùng Google Chrome nhé!');
+        return;
+    }
+
+    if (boGhiAmVn11) {
+        boGhiAmVn11.stop();
+        boGhiAmVn11 = null;
+        if (micBtn) {
+            micBtn.classList.remove('animate-pulse', 'bg-red-500');
+            micBtn.classList.add('bg-rose-500');
+            micBtn.querySelector('span').innerText = '🎤';
+        }
+        return;
+    }
+
+    try {
+        boGhiAmVn11 = new SpeechRecognition();
+        boGhiAmVn11.lang = 'vi-VN';
+        boGhiAmVn11.interimResults = false;
+        boGhiAmVn11.maxAlternatives = 1;
+
+        boGhiAmVn11.onstart = function() {
+            if (micBtn) {
+                micBtn.classList.add('animate-pulse', 'bg-red-500');
+                micBtn.classList.remove('bg-rose-500');
+                micBtn.querySelector('span').innerText = '🛑';
+            }
+        };
+
+        boGhiAmVn11.onresult = function(event) {
+            const resultText = event.results[0][0].transcript;
+            if (input.tagName === 'TEXTAREA') {
+                input.value = input.value ? input.value + ' ' + resultText : resultText;
+            } else {
+                input.value = resultText;
+            }
+            input.dispatchEvent(new Event('input'));
+        };
+
+        boGhiAmVn11.onerror = function(event) {
+            console.error('Lỗi nhận diện giọng nói:', event.error);
+        };
+
+        boGhiAmVn11.onend = function() {
+            if (micBtn) {
+                micBtn.classList.remove('animate-pulse', 'bg-red-500');
+                micBtn.classList.add('bg-rose-500');
+                micBtn.querySelector('span').innerText = '🎤';
+            }
+            boGhiAmVn11 = null;
+        };
+
+        boGhiAmVn11.start();
+    } catch (e) {
+        console.error('Không thể khởi động thu âm:', e);
+        boGhiAmVn11 = null;
     }
 };

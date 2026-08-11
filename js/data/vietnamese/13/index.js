@@ -122,7 +122,13 @@ export const lesson13 = {
     </div>
 </div>
 `,
-    "practice": `
+    "practice": function() {
+        const _deTitle = deChonVn13
+            ? (deChonVn13 === 1
+                ? '📝 Đang chọn: <strong>Đề 1: Kể sáng tạo chuyện Thanh âm của gió hoặc Cánh đồng hoa.</strong>'
+                : '📝 Đang chọn: <strong>Đề 2: Kể sáng tạo chuyện có nhân vật chính là con vật hoặc đồ vật.</strong>')
+            : 'Chưa chọn đề bài';
+        return `
 <div class="space-y-12 animate-in fade-in duration-700 max-w-6xl mx-auto">
     <!-- ✍️ THỰC HÀNH VIẾT BÀI VĂN -->
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-sky-50">
@@ -134,7 +140,7 @@ export const lesson13 = {
 
             <div class="space-y-4">
                 <div class="flex justify-between items-center flex-wrap gap-2">
-                    <span id="vn13-chosen-de-title" class="text-2xl md:text-3xl font-bold text-sky-800">Chưa chọn đề bài</span>
+                    <span id="vn13-chosen-de-title" class="text-2xl md:text-3xl font-bold text-sky-800">${_deTitle}</span>
                     <span id="vn13-word-count" class="text-sm font-bold text-gray-800">Số từ: 0 từ (Tối thiểu 50 từ)</span>
                 </div>
                 
@@ -197,7 +203,7 @@ export const lesson13 = {
         </button>
     </div>
 </div>
-`,
+`; },
     "quizPool": [
         {
             "question": "Khi viết bài văn kể chuyện sáng tạo, ta có thể áp dụng cách sáng tạo nào?",

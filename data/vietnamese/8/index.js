@@ -56,9 +56,7 @@ export const lesson8 = {
                 <button onclick="selectKdNode('animal', 'khỉ')" id="kd-animal-khỉ" class="px-5 py-3 bg-gray-50 border-2 border-gray-100 rounded-xl font-black text-2xl md:text-3xl text-gray-800 hover:border-sky-400 active:scale-95 transition-all">Khỉ</button>
             </div>
             
-            <div class="flex justify-end items-center gap-4"><button onclick="resetKd()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button></div>
-                <button onclick="checkKd()" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button>
-            </div>
+            <div class="flex justify-end items-center gap-4"><button onclick="checkKd()" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button><button onclick="resetKd()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button></div>
         </div>
     </div>
 
@@ -152,10 +150,6 @@ export const lesson8 = {
     <!-- PHẦN 1: TÌM HIỂU BÀI (ACCORDION CÂU 1, 3, 4) -->
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-sky-50">
         <div class="p-6 md:p-8 bg-sky-50/30 rounded-[32px]">
-            <div class="flex items-center gap-4 mb-8">
-                <div class="w-12 h-12 bg-sky-600 text-white rounded-xl flex items-center justify-center text-2xl md:text-5xl font-black shadow-md">📖</div>
-                <h3 class="text-2xl md:text-5xl font-black text-gray-800">Tìm hiểu nội dung bài thơ</h3>
-            </div>
 
             <div class="space-y-4">
                 <!-- Câu 1 -->

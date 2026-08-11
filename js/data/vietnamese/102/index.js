@@ -64,41 +64,7 @@ export const lesson102 = {
 
     <!-- 📖 BÀI ĐỌC -->
     <div class="bg-white p-6 md:p-10 rounded-[48px] border border-blue-100 shadow-xl space-y-6">
-        <div class="flex items-center gap-3 border-b border-blue-100 pb-4">
-            <span class="w-10 h-10 rounded-full bg-blue-600 text-white font-black flex items-center justify-center text-xl md:text-2xl shadow-md shrink-0">📖</span>
-            <h3 class="text-2xl md:text-5xl font-black text-blue-600">TẬP HÁT QUAN HỌ</h3>
-        </div>
-
-        <div class="prose max-w-none text-xl md:text-2xl leading-relaxed font-serif text-gray-800 space-y-5 px-2 md:px-6">
-            <p class="indent-8">Dạo ấy, chúng tôi ngày nào cũng đến nhà bà Trưởng. Trước đây, bà là trưởng bè quan họ nữ nổi tiếng, nên lâu dần người ta gọi bà là bà Trưởng. Đường vào nhà bà cong như cổ ngỗng, hai bên trồng hoa tầm xuân. Trước nhà có hồ rộng thả sen, có vườn trồng táo. Táo có thứ um tùm rợp bóng, táo chín vỏ thơm nức trên những phiến đá xanh xếp như bộ xa lông đỡ sở ngoài trời. Trong khung cảnh thơ mộng ấy, chúng tôi được nghe các cô gái tập hát quan họ dưới sự chỉ dẫn của bà Trưởng.</p>
-
-            <p class="indent-8">Tôi vẫn nhớ những buổi tập hát trong vườn táo mùa xuân. Trời se se, nắng ấm xuyên qua tàng cây rơi lỗ đỗ xuống thảm lá khô. Các liền chị chít khăn đen, má đỏ hồng, ngồi trên những phiến đá xanh, ngân rung nhả chữ tròn vành rõ tiếng. Đầu tiên, bà Trưởng cho các chị tập điệu <em class="text-blue-700 font-bold not-italic">Ngỏ lời</em>. Điệu <em class="text-blue-700 font-bold not-italic">Ngỏ lời</em> phải hát với giọng thẹn thùng, e ấp, tiếng hát phải như nước suối thượng nguồn, róc rách, từ từ, nhưng trong vắt, tình khối và hứa hẹn một dòng cuồn cuộn.</p>
-
-            <p class="indent-8">Sang hè, đêm trăng, gió lùa từ hồ sen trước nhà thổi lên mát rượi. Các chị lại tập điệu <em class="text-blue-700 font-bold not-italic">Thương nhau</em>. Điệu <em class="text-blue-700 font-bold not-italic">Thương nhau</em> phải hát nồng cháy, thiết tha. Bà Trưởng dạy các chị từ cách lấy hơi, nhả chữ tròn vành rõ tiếng, đến cách ngân rung luyện lẫy âm thanh. Sau hè đến thu là lúc các chị tập được nhiều điệu nhất. Điệu cuối cùng là <em class="text-blue-700 font-bold not-italic">Giã bạn</em>. Đây là điệu kết thúc hội hát, để mọi người ai về quê ấy. Điệu <em class="text-blue-700 font-bold not-italic">Giã bạn</em> được các chị hát với giọng lưu luyến, dùng dằng, đau đáu, nghe buồn biết chừng nào!</p>
-
-            <p class="indent-8">Từ nhà bà Trưởng ra về, tâm trí tôi vẫn cứ ngân nga điệp khúc da diết "Quan họ nghỉ, chúng em ra về..." của điệu <em class="text-blue-700 font-bold not-italic">Giã bạn</em>. Tôi vẫn mong ngóng đến ngày, điệp khúc đó sẽ được ngân lên bằng giọng hát của chính tôi, chứ không chỉ vang lên trong tâm trí như khi ấy.</p>
-
-            <p class="text-right text-lg italic text-gray-500 font-sans">(Theo Nguyễn Phan Hách)</p>
-        </div>
-
-        <!-- Từ ngữ -->
-        <div class="bg-amber-50/50 p-5 rounded-2xl border border-amber-100 max-w-3xl mx-auto space-y-2">
-            <h4 class="font-black text-lg text-amber-900">📝 Từ ngữ</h4>
-            <ul class="space-y-1 font-bold text-base text-amber-800">
-                <li>– <strong>Tàng cây</strong>: bóng mát của cây hoặc tán là xum xuê của cây.</li>
-                <li>– <strong>Liền chị</strong>: người nữ hát quan họ.</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- ❓ TÌM HIỂU BÀI -->
-    <div class="bg-white p-6 md:p-10 rounded-[48px] border border-blue-100 shadow-xl space-y-8">
-        <div class="flex items-center gap-3 border-b border-blue-100 pb-4">
-            <span class="w-10 h-10 rounded-full bg-blue-600 text-white font-black flex items-center justify-center text-xl md:text-2xl shadow-md shrink-0">❓</span>
-            <h3 class="text-2xl md:text-5xl font-black text-blue-600">Tìm hiểu bài</h3>
-        </div>
-
-        <!-- Câu 1 -->
+<!-- Câu 1 -->
         <div class="space-y-4 bg-sky-50/30 p-5 rounded-3xl border border-sky-100">
             <div class="flex items-start gap-3">
                 <span class="w-9 h-9 rounded-full bg-sky-600 text-white font-black flex items-center justify-center text-lg shrink-0">1</span>

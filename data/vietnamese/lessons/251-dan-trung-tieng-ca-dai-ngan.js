@@ -42,14 +42,7 @@ export const lesson_251_dan_trung_tieng_ca_dai_ngan = {
                                 <!-- 2. QUESTIONS (TÌM HIỂU BÀI) -->
                                 <section class="w-full">
                                     <div class="glass-card rounded-[32px] p-8 shadow-xl border-t-4 border-amber-400 bg-amber-50/30">
-                                        <div class="flex items-center space-x-4 mb-6">
-                                            <div class="w-12 h-12 bg-amber-500 rounded-xl flex items-center justify-center shadow-lg text-white">
-                                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                            </div>
-                                            <h2 class="text-xl md:text-3xl font-black text-gray-800 uppercase tracking-tight">Tìm hiểu bài</h2>
-                                        </div>
-                                        
-                                        <div class="space-y-4">
+<div class="space-y-4">
                                             <!-- Q1 -->
                                             <div class="accordion-item bg-white/80 rounded-2xl shadow-sm hover:shadow-md transition-all overflow-hidden">
                                                 <button onclick="toggleAccordion(this)" class="w-full p-5 text-left flex justify-between items-start group">

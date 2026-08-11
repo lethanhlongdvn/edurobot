@@ -69,16 +69,26 @@ export const lesson15 = {
         <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-sky-50 rounded-full blur-3xl opacity-60"></div>
 
         <div class="relative z-10 space-y-6">
-            <div class="flex justify-between items-center border-b border-sky-100 pb-4">
+            <div class="flex flex-wrap justify-between items-center border-b border-sky-100 pb-4 gap-4">
                 <span class="text-sky-900 font-black text-xl md:text-3xl flex items-center gap-2">
                     <span>📖</span> Tiếng hạt nảy mầm
                 </span>
-                <button onclick="playSegmentAudio('assets/audio/tiengviet/15/tieng_hat_nay_mam.mp3')" class="p-2.5 bg-sky-600 hover:bg-sky-600 text-white rounded-full transition-all flex items-center justify-center shadow-md animate-bounce" title="Nghe đọc thơ diễn cảm">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
-                    </svg>
-                </button>
+                
+                <!-- Nhóm nút Học thuộc lòng cùng hàng tựa bài -->
+                <div class="flex items-center gap-2 flex-wrap">
+                    <button onclick="cheChuVn15('all')" class="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white font-black rounded-xl transition-all text-base shadow-sm" title="Ẩn toàn bộ chữ trong dòng (chỉ giữ chữ cái đầu)">Ẩn toàn bộ</button>
+                    <button onclick="cheChuVn15('words')" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white font-black rounded-xl transition-all text-base shadow-sm" title="Ẩn 50% số từ ngẫu nhiên">Ẩn 50%</button>
+                    <button onclick="cheChuVn15('none')" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl transition-all text-base shadow-sm" title="Hiện lại toàn bộ văn bản">Hiện đầy đủ</button>
+                    
+                    <button onclick="playSegmentAudio('assets/audio/tiengviet/15/tieng_hat_nay_mam.mp3')" class="p-2.5 bg-sky-600 hover:bg-sky-700 text-white rounded-full transition-all flex items-center justify-center shadow-md ml-2" title="Nghe đọc thơ diễn cảm">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
+            
+            <div id="fb-vn15-htl" class="hidden text-base font-bold px-4 py-2 rounded-xl text-center"></div>
 
             <!-- Nội dung bài thơ + Minh họa -->
             <div class="flex flex-col lg:flex-row gap-8 items-start">
@@ -181,12 +191,7 @@ export const lesson15 = {
     <!-- TÌM HIỂU BÀI (ACCORDION CÂU HỎI) -->
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-sky-50">
         <div class="p-6 md:p-8 bg-sky-50/30 rounded-[32px]">
-            <div class="flex items-center gap-4 mb-8">
-                <div class="w-12 h-12 bg-sky-600 text-white rounded-xl flex items-center justify-center text-2xl md:text-5xl font-black shadow-md">📖</div>
-                <h3 class="text-2xl md:text-5xl font-black text-gray-800">Tìm hiểu nội dung bài thơ</h3>
-            </div>
-
-            <div class="space-y-4">
+<div class="space-y-4">
                 <!-- Câu 1 -->
                 <details class="group bg-white rounded-2xl border border-sky-100 shadow-sm transition-all hover:shadow-md overflow-hidden">
                     <summary class="w-full p-6 text-left flex justify-between items-center cursor-pointer list-none hover:bg-sky-50/50 transition-colors">
@@ -274,23 +279,6 @@ export const lesson15 = {
         </div>
     </section>
 
-    <!-- ⚡ TƯƠNG TÁC HỌC THUỘC LÒNG BÀI THƠ -->
-    <section class="bg-white p-4 rounded-[40px] shadow-lg border border-emerald-50">
-        <div class="p-6 md:p-8 bg-emerald-50/30 rounded-[32px] space-y-6">
-            <div class="flex items-center gap-4 mb-2">
-                <div class="w-12 h-12 bg-emerald-600 text-white rounded-xl flex items-center justify-center text-2xl md:text-5xl font-black shadow-md">⚡</div>
-                <h3 class="text-2xl md:text-5xl font-black text-gray-800">Thử thách: Học thuộc lòng bài thơ</h3>
-            </div>
-            
-            <p class="text-xl md:text-2xl text-gray-800 font-bold italic">👉 Sử dụng các chế độ ẩn bớt từ ngữ để rèn luyện trí nhớ và nhẩm thuộc bài thơ nhé!</p>
-
-            <div class="flex flex-wrap gap-3 justify-center pb-2">
-                <button onclick="cheChuVn15('all')" class="px-5 py-2.5 bg-rose-600 text-white font-black rounded-xl hover:bg-rose-600 transition-all text-sm shadow-sm">ẨN TOÀN BỘ CHỮ</button>
-                <button onclick="cheChuVn15('words')" class="px-5 py-2.5 bg-amber-500 text-white font-black rounded-xl hover:bg-amber-500 transition-all text-sm shadow-sm">ẨN 50% TỪ NGẪU NHIÊN</button>
-                <button onclick="cheChuVn15('none')" class="px-5 py-2.5 bg-emerald-600 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-sm shadow-sm">HIỆN LẠI TOÀN BỘ</button>
-            </div>
-            <div id="fb-vn15-htl" class="hidden text-base font-bold px-4 py-2 rounded-xl text-center"></div>
-        </div>
     <!-- PHẦN 3: LUYỆN VIẾT CẢM THỤ (AI THẦY E) -->
     <section class="bg-white p-4 rounded-[40px] shadow-lg border border-amber-50">
         <div class="p-6 md:p-8 bg-amber-50/30 rounded-[32px] space-y-6">
@@ -306,7 +294,7 @@ export const lesson15 = {
 
                 <textarea id="ans-vn15-writing" rows="4" placeholder="Lớp học của các em nhỏ khiếm thính thật đặc biệt và ấm áp tình người. Dù không thể nghe thấy những âm thanh kì diệu của cuộc sống như tiếng chim hót hay tiếng hạt nảy mầm, các em vẫn lặng chăm nhìn theo chuyển động đôi tay đầy kiên nhẫn của cô giáo. Tấm lòng tận tụy, bao nghĩ suy vất vả của cô đã sưởi ấm tâm hồn các em..." class="w-full p-4 md:p-6 text-2xl md:text-3xl rounded-2xl border-2 border-amber-100 focus:border-amber-500 outline-none shadow-sm bg-amber-50/10 font-medium leading-relaxed"></textarea>
                 
-                <div class="flex justify-end items-center gap-4"><button onclick="resetWritingVn15()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="checkWritingVn15();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
+                <div class="flex justify-end items-center gap-4"><button onclick="resetWritingVn15()" class="w-12 h-12 bg-gray-200 text-gray-700 hover:bg-gray-300 rounded-full flex items-center justify-center font-black text-lg shadow-md transition-all active:scale-95 shrink-0" title="Làm lại"><svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"></path></svg></button> <button onclick="toggleMicVn15('ans-vn15-writing')" id="btn-mic-ans-vn15-writing" class="w-12 h-12 bg-rose-500 hover:bg-rose-600 text-white rounded-full flex items-center justify-center shadow-md hover:scale-105 active:scale-95 transition-all shrink-0" title="Nói để nhập văn bản"><span class="text-lg">🎤</span></button> <button onclick="checkWritingVn15();" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-md transition-all active:scale-95 shrink-0">E</button></div>
                 
                 <div id="fb-vn15-writing" class="hidden mt-6 p-6 bg-amber-500 text-white rounded-2xl shadow-xl animate-in slide-in-from-top-10 duration-500">
                     <!-- AI Feedback -->
@@ -605,5 +593,73 @@ window.resetWritingVn15 = function() {
 window.nopBaiVn15 = function() {
     if (typeof window.showMathFeedback === 'function') {
         window.showMathFeedback('Hoàn thành Tiết 15', '🌱', '<div class="text-center p-6"><span class="text-7xl block mb-4">🌱</span><p class="text-lg md:text-2xl font-bold text-sky-800">Chúc mừng em đã hoàn thành bài thơ Tiếng hạt nảy mầm!</p><p class="text-lg text-gray-800 mt-3">Lớp học đặc biệt và người cô tận tuỵ mang thế giới âm thanh đến cho trẻ khiếm thính sẽ đọng lại sâu sắc trong lòng em.</p></div>');
+    }
+};
+
+// --- SPEECH TO TEXT ---
+let boGhiAmVn15 = null;
+window.toggleMicVn15 = function(targetId) {
+    const input = document.getElementById(targetId);
+    const micBtn = document.getElementById(`btn-mic-${targetId}`);
+    if (!input) return;
+
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+        alert('Trình duyệt của em không hỗ trợ nhận diện giọng nói. Hãy dùng Google Chrome nhé!');
+        return;
+    }
+
+    if (boGhiAmVn15) {
+        boGhiAmVn15.stop();
+        boGhiAmVn15 = null;
+        if (micBtn) {
+            micBtn.classList.remove('animate-pulse', 'bg-red-500');
+            micBtn.classList.add('bg-rose-500');
+            micBtn.querySelector('span').innerText = '🎤';
+        }
+        return;
+    }
+
+    try {
+        boGhiAmVn15 = new SpeechRecognition();
+        boGhiAmVn15.lang = 'vi-VN';
+        boGhiAmVn15.interimResults = false;
+        boGhiAmVn15.maxAlternatives = 1;
+
+        boGhiAmVn15.onstart = function() {
+            if (micBtn) {
+                micBtn.classList.add('animate-pulse', 'bg-red-500');
+                micBtn.classList.remove('bg-rose-500');
+                micBtn.querySelector('span').innerText = '🛑';
+            }
+        };
+
+        boGhiAmVn15.onresult = function(event) {
+            const resultText = event.results[0][0].transcript;
+            if (input.tagName === 'TEXTAREA') {
+                input.value = input.value ? input.value + ' ' + resultText : resultText;
+            } else {
+                input.value = resultText;
+            }
+            input.dispatchEvent(new Event('input'));
+        };
+
+        boGhiAmVn15.onerror = function(event) {
+            console.error('Lỗi nhận diện giọng nói:', event.error);
+        };
+
+        boGhiAmVn15.onend = function() {
+            if (micBtn) {
+                micBtn.classList.remove('animate-pulse', 'bg-red-500');
+                micBtn.classList.add('bg-rose-500');
+                micBtn.querySelector('span').innerText = '🎤';
+            }
+            boGhiAmVn15 = null;
+        };
+
+        boGhiAmVn15.start();
+    } catch (e) {
+        console.error('Không thể khởi động thu âm:', e);
+        boGhiAmVn15 = null;
     }
 };

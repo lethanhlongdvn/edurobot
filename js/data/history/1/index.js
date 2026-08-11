@@ -4,6 +4,7 @@ export const lesson001 = {
     topic: 'Địa lí Việt Nam',
     week: '1',
     period: '1',
+    startPage: 7,
     title: 'Bài 1: Vị trí địa lí, lãnh thổ, đơn vị hành chính, Quốc kì, Quốc huy, Quốc ca (Tiết 1)',
     description: 'Khám phá vị trí địa lí, lãnh thổ và đơn vị hành chính đặc thù của Việt Nam theo số liệu sách giáo khoa mới.',
 
