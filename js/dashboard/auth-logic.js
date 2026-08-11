@@ -10,6 +10,8 @@ import { getVietnameseError, generateStudentEmail } from './utils.js';
 export async function loginTeacher(email, password) {
     if (!email || !password) throw new Error("Vui lòng nhập đầy đủ email và mật khẩu.");
     try {
+        // Set explicit persistence to LOCAL so user stays logged in after closing the browser
+        await firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL);
         const userCredential = await firebase.auth().signInWithEmailAndPassword(email, password);
         const user = userCredential.user;
         
@@ -50,6 +52,8 @@ export async function loginStudent(username, password) {
     if (!username || !password) throw new Error("Vui lòng nhập tên đăng nhập và mật khẩu.");
     const email = generateStudentEmail(username);
     try {
+        // Set explicit persistence to LOCAL so user stays logged in after closing the browser
+        await firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL);
         const userCredential = await firebase.auth().signInWithEmailAndPassword(email, password);
         const user = userCredential.user;
 
