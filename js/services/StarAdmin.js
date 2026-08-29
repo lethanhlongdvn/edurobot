@@ -14,6 +14,9 @@ export const StarAdmin = {
                         <p class="text-[11px] font-black text-indigo-900/40 dark:text-indigo-200/40 uppercase tracking-[0.3em]">Bảng điều khiển dành cho Giáo viên</p>
                     </div>
                     <div class="flex items-center gap-3">
+                        <button onclick="window.AcademicCalendar && window.AcademicCalendar.openModal()" class="px-4 py-3 rounded-2xl bg-white dark:bg-slate-800 shadow-xl border border-indigo-50 dark:border-white/10 font-bold text-sm text-indigo-600 hover:-translate-y-1 transition-all flex items-center gap-2">
+                            <span>📅</span> <span class="hidden md:inline">Lịch năm học (35 tuần)</span>
+                        </button>
                         ${(localStorage.getItem('userRole') !== 'teacher') ? `
                             <button onclick="StarAdmin.openClassSettings()" class="px-4 py-3 rounded-2xl bg-white dark:bg-slate-800 shadow-xl border border-indigo-50 dark:border-white/10 font-bold text-sm text-indigo-600 hover:-translate-y-1 transition-all flex items-center gap-2">
                                 <span>⚙️</span> <span class="hidden md:inline">Phân công lớp</span>

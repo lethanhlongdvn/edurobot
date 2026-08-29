@@ -2,6 +2,7 @@
 import { subjects, lessons } from '../data.js';
 import { UI } from '../components/ui-components.js';
 import { QuestionBankManager } from '../services/QuestionBankManager.js';
+import { AcademicCalendar } from '../services/AcademicCalendar.js';
 
 export const router = {
     currentSubject: 'math',
@@ -21,15 +22,26 @@ export const router = {
         return role === 'admin' || role === 'teacher' || role === 'teacher-admin';
     },
 
-    init() {
+    async init() {
         window.router = this; // Phải gán trước khi renderHome vì renderHome gọi các UI component dùng router toàn cục
         window.UI = UI;
         window.subjects = subjects;
         window.lessons = lessons;
+        window.AcademicCalendar = AcademicCalendar;
         if (!window.__lessonCache) window.__lessonCache = new Map();
 
         // 1. Tự động nhận diện thiết bị & áp dụng cấu hình lưu trữ
         this.detectAndApplyDeviceMode();
+
+        // 2. Khởi tạo lịch năm học và tính tuần thực học hiện tại
+        try {
+            await AcademicCalendar.init();
+            const calResult = AcademicCalendar.calculateCurrentWeek();
+            this.currentWeek = calResult.currentWeek;
+            this.currentPeriod = calResult.currentPeriod;
+        } catch (e) {
+            console.warn('[Router] Lỗi tính tuần thực học từ lịch năm học:', e);
+        }
 
         // Tải trạng thái khóa từ Firestore
         this.fetchLocks().finally(() => {
@@ -38,7 +50,7 @@ export const router = {
             }
         });
 
-        // Phục hồi trạng thái (kỳ, tuần) nếu có
+        // Phục hồi trạng thái (kỳ, tuần) nếu người dùng đã chủ động chọn trong phiên làm việc
         try {
             const savedState = sessionStorage.getItem('edurobot_router_state');
             if (savedState) {

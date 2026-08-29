@@ -46,8 +46,12 @@
                     <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">Admin Dashboard</p>
                 </div>
             </div>
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-3 flex-wrap">
                 <span id="admin-name" class="text-sm font-bold text-slate-400"></span>
+                <button onclick="openAcademicSettingsModal()"
+                    class="bg-indigo-500/20 text-indigo-300 font-bold px-4 py-2 rounded-xl border border-indigo-500/30 hover:bg-indigo-500/30 transition-all text-sm flex items-center gap-2">
+                    📅 Lịch năm học
+                </button>
                 <a href="lop5-chon.html"
                     class="bg-yellow-500/20 text-yellow-400 font-bold px-4 py-2 rounded-xl border border-yellow-500/30 hover:bg-yellow-500/30 transition-all text-sm flex items-center gap-2">
                     ⭐ Lớp 5 Chọn
@@ -139,12 +143,17 @@
 
     <script type="module">
         import { subjects, lessons } from '../js/data.js';
+        import { AcademicCalendar } from '../js/services/AcademicCalendar.js';
 
         const firebaseConfig = window.__FIREBASE_CONFIG;
 
         if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
         const auth = firebase.auth();
         const db = firebase.firestore();
+
+        window.db = db;
+        window.AcademicCalendar = AcademicCalendar;
+        AcademicCalendar.init();
 
         let allUsers = [];
         let currentFilter = 'pending';
@@ -160,6 +169,7 @@
         window.toggleSubjectLock = toggleSubjectLock;
         window.toggleLessonLock = toggleLessonLock;
         window.saveAllLocks = saveAllLocks;
+        window.openAcademicSettingsModal = () => AcademicCalendar.openModal();
 
         // ====== Auth Guard: Chỉ Admin mới vào được ======
         auth.onAuthStateChanged(async (user) => {
