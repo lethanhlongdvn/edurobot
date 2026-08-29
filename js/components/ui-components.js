@@ -53,7 +53,7 @@ export const UI = {
                 <svg class="w-3 h-3 group-hover:rotate-180 transition-transform ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             <div class="absolute right-0 mt-2 w-48 bg-white rounded-2xl shadow-2xl border border-gray-50 p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-50">
-                ${allSubjects.map(s => {
+                ${allSubjects.filter(s => isAdmin || !s.hidden).map(s => {
             const isLocked = s.locked && !isAdmin;
             return `
                     <button onclick="router.navigateSubject('${s.id}')" 

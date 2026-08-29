@@ -92,9 +92,8 @@ export const Dashboard = {
                         <div class="glass-card-premium p-3 shadow-xl shadow-indigo-500/5">
                             <h3 class="text-[8px] font-black text-indigo-400 uppercase tracking-[0.2em] mb-3">Môn học</h3>
                             <nav class="space-y-1">
-                                ${subjects.filter(s => !s.externalUrl).map(s => {
+                                ${subjects.filter(s => !s.externalUrl && (isAdmin || !s.hidden)).map(s => {
                                     const isActive = activeSubject === s.id;
-                                    const isAdmin = window.router && window.router.isAdmin();
                                     const isLocked = (s.locked || (window.router && window.router.contentLocks && window.router.contentLocks.subjects[s.id])) && !isAdmin;
                     
                                     return `
@@ -217,9 +216,8 @@ export const Dashboard = {
 
             <!-- Bottom Tab Bar (Mobile Only) -->
             <nav class="fixed bottom-0 left-0 right-0 md:hidden glass-card-premium !rounded-t-xl !rounded-b-none border-t border-white/20 px-2 py-1.5 flex justify-around items-center z-50 shadow-[0_-8px_32px_rgba(79,70,229,0.15)]">
-                ${subjects.filter(s => !s.externalUrl).map(s => {
+                ${subjects.filter(s => !s.externalUrl && (isAdmin || !s.hidden)).map(s => {
                     const isActive = activeSubject === s.id;
-                    const isAdmin = window.router && window.router.isAdmin();
                     const isLocked = (s.locked || (window.router && window.router.contentLocks && window.router.contentLocks.subjects[s.id])) && !isAdmin;
                     return `
                         <button onclick="${isLocked ? `alert('Môn học này hiện đang bị khóa!')` : `router.navigateSubject('${s.id}')`}" 

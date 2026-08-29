@@ -55,7 +55,12 @@ export const router = {
             const savedState = sessionStorage.getItem('edurobot_router_state');
             if (savedState) {
                 const state = JSON.parse(savedState);
-                if (state.currentSubject) this.currentSubject = state.currentSubject;
+                if (state.currentSubject) {
+                    const subObj = subjects.find(s => s.id === state.currentSubject);
+                    if (this.isAdmin() || (subObj && !subObj.hidden)) {
+                        this.currentSubject = state.currentSubject;
+                    }
+                }
                 if (state.currentWeek) this.currentWeek = state.currentWeek;
                 if (state.currentPeriod) this.currentPeriod = state.currentPeriod;
             }
@@ -279,10 +284,10 @@ export const router = {
         if (!sub) return;
 
         const isAdmin = this.isAdmin();
-        const isLocked = (sub.locked || this.contentLocks.subjects[subId]) && !isAdmin;
+        const isLocked = ((sub.locked || sub.hidden || this.contentLocks.subjects[subId])) && !isAdmin;
 
         if (isLocked) {
-            alert('Môn học này đang tạm khóa hoặc đang trong quá trình phát triển. Vui lòng quay lại sau!');
+            alert('Môn học này đang tạm khóa hoặc không khả dụng.');
             return;
         }
 
@@ -318,6 +323,12 @@ export const router = {
         const container = document.getElementById('app-content');
         if (!container) return;
 
+        const isAdmin = this.isAdmin();
+        const currentSubObj = subjects.find(s => s.id === this.currentSubject);
+        if (!isAdmin && (!currentSubObj || currentSubObj.hidden)) {
+            this.currentSubject = 'math';
+        }
+
         // Lấy dữ liệu cho Dashboard
         const currentLessons = lessons[this.currentSubject] || [];
         const range = this.periodRanges[this.currentPeriod];
@@ -335,7 +346,6 @@ export const router = {
             this.currentWeek = weekNum; // Đảm bảo luôn là kiểu number
         }
 
-        const isAdmin = this.isAdmin();
         const filteredLessons = currentLessons.filter(l => parseInt(l.week) === this.currentWeek && (isAdmin || !l.hidden));
 
         // Lấy bài học cuối cùng (Continue Learning)
@@ -380,6 +390,13 @@ export const router = {
         const subject = subjects.find(s => s.id === subId);
         if (!subject) return;
 
+        const isAdmin = this.isAdmin();
+        if ((subject.locked || subject.hidden || this.contentLocks.subjects[subId]) && !isAdmin) {
+            alert('Môn học này hiện không khả dụng.');
+            this.goHome();
+            return;
+        }
+
         this.currentSubject = subId;
         this.saveState();
 
@@ -396,7 +413,6 @@ export const router = {
         const container = document.getElementById('app-content');
         if (!container) return;
 
-        const isAdmin = this.isAdmin();
         const subjectLessons = (lessons[subId] || []).filter(l => isAdmin || !l.hidden);
 
         let html = `
@@ -467,13 +483,14 @@ export const router = {
         }
 
         const isAdmin = this.isAdmin();
+        const isSubjectLocked = (subject?.locked || subject?.hidden || this.contentLocks.subjects[subId]) && !isAdmin;
         const lessonId = `${subId}_${lesson?.period || period}`;
-        const isLocked = (lesson?.hidden || this.contentLocks.lessons[lessonId]) && !isAdmin;
+        const isLocked = (isSubjectLocked || lesson?.hidden || this.contentLocks.lessons[lessonId]) && !isAdmin;
 
         if (!subject || !lesson || isLocked) {
             console.error(`[Router] Error: Access denied or lesson not found ${subId}/${period}`);
             if (isLocked) {
-                alert('Bài học này hiện đang bị khóa. Vui lòng quay lại sau!');
+                alert('Bài học này hiện đang bị khóa hoặc không khả dụng.');
                 this.goHome();
             } else {
                 // Thử render thông tin cơ bản nếu không tìm thấy trong manifest (trường hợp link cũ)
