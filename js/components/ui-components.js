@@ -17,6 +17,7 @@ import { QuestionBankManager } from '../services/QuestionBankManager.js';
 import { QuestionBankAdmin } from '../services/QuestionBankAdmin.js';
 import { DashboardUI } from '../dashboard/dashboard-ui.js';
 import { LessonBookReader } from './lesson/LessonBookReader.js';
+import { AcademicCalendar } from '../services/AcademicCalendar.js';
 
 // Register specific games
 GameLibrary.registerGame('HeadTiltGame', HeadTiltGame);
@@ -34,6 +35,7 @@ export const UI = {
     ...Honors,
     ...StarAdmin,
     ...LessonBookReader,
+    AcademicCalendar,
     DashboardUI,
 
     // Quiz redirects to ensure single state management

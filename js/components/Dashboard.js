@@ -188,12 +188,22 @@ export const Dashboard = {
                                 }).join('')}
                             </div>
                             
-                            <div class="flex items-center gap-2 border-t border-indigo-50 dark:border-white/5 pt-2">
-                                <div class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center text-xs">📅</div>
-                                <div>
-                                    <h4 class="text-[8px] font-black text-indigo-900/40 dark:text-indigo-200/40 uppercase tracking-widest leading-none">Đang học</h4>
-                                    <p class="text-sm font-black text-indigo-950 dark:text-white capitalize">${subject.name} - Tuần ${router.currentWeek}</p>
+                            <div class="flex items-center justify-between border-t border-indigo-50 dark:border-white/5 pt-2">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-6 h-6 rounded-md bg-orange-100 dark:bg-orange-950/40 flex items-center justify-center text-xs">📅</div>
+                                    <div>
+                                        <h4 class="text-[8px] font-black text-indigo-900/40 dark:text-indigo-200/40 uppercase tracking-widest leading-none">Tuần thực học</h4>
+                                        <p class="text-sm font-black text-indigo-950 dark:text-white capitalize">${subject.name} - Tuần ${router.currentWeek}</p>
+                                    </div>
                                 </div>
+                                ${isAdmin ? `
+                                    <button onclick="window.AcademicCalendar && window.AcademicCalendar.openModal()" 
+                                        class="px-2.5 py-1 rounded-lg bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 font-bold text-[10px] flex items-center gap-1.5 transition-all shadow-sm border border-indigo-100 dark:border-slate-700" 
+                                        title="Cài đặt thời gian năm học">
+                                        <span>⚙️</span>
+                                        <span class="hidden sm:inline">Lịch năm học</span>
+                                    </button>
+                                ` : ''}
                             </div>
                         </div>
 
