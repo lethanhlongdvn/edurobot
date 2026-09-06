@@ -60,6 +60,14 @@
                     class="bg-blue-500/20 text-blue-400 font-bold px-4 py-2 rounded-xl border border-blue-500/30 hover:bg-blue-500/30 transition-all text-sm flex items-center gap-2">
                     🎒 Nhập Học Sinh
                 </a>
+                <a href="print-cards.html"
+                    class="bg-purple-500/20 text-purple-400 font-bold px-4 py-2 rounded-xl border border-purple-500/30 hover:bg-purple-500/30 transition-all text-sm flex items-center gap-2">
+                    🎴 In Thẻ EduCard
+                </a>
+                <button onclick="clearAllStudentsFromFirebase()"
+                    class="bg-rose-500/20 text-rose-400 font-bold px-4 py-2 rounded-xl border border-rose-500/30 hover:bg-rose-500/30 transition-all text-sm flex items-center gap-2">
+                    🧹 Xóa sạch HS trên Firebase
+                </button>
                 <button onclick="handleAdminLogout()" class="bg-red-500/10 text-red-400 font-bold px-4 py-2 rounded-xl border border-red-500/20 hover:bg-red-500/20 transition-all text-sm">Đăng xuất</button>
             </div>
         </div>
@@ -169,6 +177,7 @@
         window.toggleSubjectLock = toggleSubjectLock;
         window.toggleLessonLock = toggleLessonLock;
         window.saveAllLocks = saveAllLocks;
+        window.clearAllStudentsFromFirebase = clearAllStudentsFromFirebase;
         window.openAcademicSettingsModal = () => AcademicCalendar.openModal();
 
         // ====== Auth Guard: Chỉ Admin mới vào được ======
@@ -456,6 +465,85 @@
             } catch (e) {
                 console.error('Lỗi reset:', e);
                 showToast('❌ Có lỗi xảy ra khi reset mật khẩu.');
+            }
+        }
+
+        // ====== Xóa sạch toàn bộ học sinh trên Firebase ======
+        async function clearAllStudentsFromFirebase() {
+            const confirmation = prompt('⚠️ CẢNH BÁO NGUY HIỂM:\n\nHành động này sẽ XÓA TOÀN BỘ dữ liệu học sinh cũ trên Firebase bao gồm:\n- Tài khoản học sinh trong users\n- Điểm sao trong stars\n- Lịch sử bài nộp submissions\n- Điểm Tiếng Việt & điểm bài tập\n- Bài viết văn essays_v2\n- Danh sách lớp chọn lop5chon\n\n(Tài khoản Giáo viên và Admin sẽ được GIỮ NGUYÊN AN TOÀN).\n\nNhập "XOA HOC SINH" để xác nhận thực hiện:');
+            
+            if (confirmation !== 'XOA HOC SINH') {
+                if (confirmation !== null) alert('Xác nhận không chính xác. Đã hủy thao tác.');
+                return;
+            }
+
+            const toast = document.createElement('div');
+            toast.className = 'bg-slate-800 border-2 border-rose-500 text-white px-6 py-4 rounded-2xl font-bold text-sm shadow-2xl fixed bottom-6 right-6 z-50 flex items-center gap-3';
+            toast.innerHTML = '<span class="animate-spin text-xl">⏳</span> <span>Đang xóa sạch dữ liệu học sinh trên Firebase... Vui lòng không đóng trang.</span>';
+            document.body.appendChild(toast);
+
+            try {
+                const stats = { students: 0, stars: 0, submissions: 0, scores: 0, essays: 0, lop5chon: 0 };
+
+                // 1. Xóa users (chỉ xóa role === 'student' hoặc không phải teacher/admin)
+                const userSnap = await db.collection('users').get();
+                let batch = db.batch();
+                let bCount = 0;
+                for (const doc of userSnap.docs) {
+                    const data = doc.data();
+                    const isStaff = data.role === 'admin' || data.role === 'teacher' || data.role === 'teacher-admin';
+                    if (!isStaff) {
+                        batch.delete(doc.ref);
+                        bCount++;
+                        stats.students++;
+                        if (bCount >= 400) {
+                            await batch.commit();
+                            batch = db.batch();
+                            bCount = 0;
+                        }
+                    }
+                }
+                if (bCount > 0) await batch.commit();
+
+                // Helper hàm xóa collection theo lô
+                async function wipeCollection(colName) {
+                    let count = 0;
+                    const snap = await db.collection(colName).get();
+                    let b = db.batch();
+                    let bc = 0;
+                    for (const doc of snap.docs) {
+                        b.delete(doc.ref);
+                        bc++;
+                        count++;
+                        if (bc >= 400) {
+                            await b.commit();
+                            b = db.batch();
+                            bc = 0;
+                        }
+                    }
+                    if (bc > 0) await b.commit();
+                    return count;
+                }
+
+                // 2. Xóa stars
+                stats.stars = await wipeCollection('stars');
+                // 3. Xóa submissions
+                stats.submissions = await wipeCollection('submissions');
+                // 4. Xóa diem_tieng_viet_lop5
+                stats.scores = await wipeCollection('diem_tieng_viet_lop5');
+                // 5. Xóa essays_v2
+                stats.essays = await wipeCollection('essays_v2');
+                // 6. Xóa lop5chon
+                stats.lop5chon = await wipeCollection('lop5chon');
+
+                toast.remove();
+                alert(`🎉 ĐÃ XÓA SẠCH DỮ LIỆU HỌC SINH TRÊN FIREBASE THÀNH CÔNG!\n\nChi tiết kết quả:\n- Tài khoản học sinh: Đã xóa ${stats.students}\n- Điểm sao: Đã xóa ${stats.stars}\n- Bài nộp: Đã xóa ${stats.submissions}\n- Điểm số bài tập: Đã xóa ${stats.scores}\n- Bài viết văn: Đã xóa ${stats.essays}\n- Dữ liệu lớp chọn: Đã xóa ${stats.lop5chon}\n\nToàn bộ tài khoản Giáo viên & Admin được bảo toàn nguyên vẹn.`);
+                
+                await loadUsers();
+            } catch (err) {
+                console.error('Lỗi khi xóa sạch dữ liệu trên Firebase:', err);
+                toast.remove();
+                alert('❌ Có lỗi xảy ra khi xóa dữ liệu trên Firebase: ' + err.message);
             }
         }
 

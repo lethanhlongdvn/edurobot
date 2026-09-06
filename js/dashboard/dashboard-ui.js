@@ -28,7 +28,7 @@ export const DashboardUI = {
                     </div>
                 </div>
                 <div class="flex flex-wrap justify-center gap-3">
-                    <a href="index.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-black px-6 py-4 rounded-2xl shadow-xl shadow-indigo-200 flex items-center gap-3 transition-all transform hover:-translate-y-1 active:scale-95 text-xs uppercase tracking-widest">
+                    <a href="../index.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-black px-6 py-4 rounded-2xl shadow-xl shadow-indigo-200 flex items-center gap-3 transition-all transform hover:-translate-y-1 active:scale-95 text-xs uppercase tracking-widest">
                         Trang chủ
                     </a>
                     ${config.extraButtonsHtml || ''}
@@ -82,7 +82,7 @@ export const DashboardUI = {
                         Vào hệ thống
                     </button>
                 </div>
-                <a href="index.html"
+                <a href="../index.html"
                     class="inline-block mt-8 text-sm font-bold text-gray-400 hover:${iconText} transition-colors uppercase tracking-widest border-b-2 border-transparent hover:border-current">
                     Quay lại trang chủ
                 </a>

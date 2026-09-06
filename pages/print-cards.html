@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Thẻ Trắc Nghiệm Thông Minh EduCard - EduRobot 5.0</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #f1f5f9;
+        }
+
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background: white !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            .page-container {
+                padding: 0 !important;
+                margin: 0 !important;
+                max-width: 100% !important;
+                box-shadow: none !important;
+            }
+            .card-wrapper {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+        }
+
+        .educard-square {
+            aspect-ratio: 1 / 1;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 text-slate-800">
+
+    <!-- Top Bar Control (Hidden on Print) -->
+    <div class="no-print max-w-6xl mx-auto mb-8 bg-white p-6 rounded-3xl shadow-xl border border-slate-200">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4 pb-6 border-b border-slate-100">
+            <div class="flex items-center gap-3">
+                <a href="../index.html" class="w-10 h-10 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-2xl flex items-center justify-center font-black transition">
+                    ←
+                </a>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-black text-blue-700 flex items-center gap-2">
+                        <span>🎴</span> In Thẻ Trắc Nghiệm Thông Minh EduCard
+                    </h1>
+                    <p class="text-xs text-slate-500 font-semibold">Tự động sinh mã nhận diện chống nhìn trộm cho từng học sinh</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <button onclick="window.print()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-black text-sm shadow-lg shadow-blue-500/30 transition flex items-center gap-2 active:scale-95">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+                    <span>IN BỘ THẺ NGAY</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Filter & Layout options -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+            <div>
+                <label class="block text-xs font-black text-slate-500 uppercase tracking-wider mb-2">Chọn Lớp học:</label>
+                <select id="classFilter" onchange="renderCards()" class="w-full bg-slate-50 border-2 border-slate-200 rounded-2xl p-3 text-sm font-bold text-slate-700 focus:border-blue-500 outline-none">
+                    <option value="all">Tất cả các lớp (108 học sinh)</option>
+                    <option value="5/1">Lớp 5/1 (15 học sinh)</option>
+                    <option value="5/2">Lớp 5/2 (33 học sinh)</option>
+                    <option value="5/3">Lớp 5/3 (34 học sinh)</option>
+                    <option value="5/4">Lớp 5/4 (26 học sinh)</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="block text-xs font-black text-slate-500 uppercase tracking-wider mb-2">Kích thước In:</label>
+                <select id="sizeFilter" onchange="renderCards()" class="w-full bg-slate-50 border-2 border-slate-200 rounded-2xl p-3 text-sm font-bold text-slate-700 focus:border-blue-500 outline-none">
+                    <option value="a5">Khổ A5 (2 Thẻ / 1 Trang A4) - Khuyên dùng</option>
+                    <option value="a6">Khổ A6 (4 Thẻ / 1 Trang A4) - Tiết kiệm giấy</option>
+                </select>
+            </div>
+
+            <div class="flex items-end">
+                <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-2xl w-full flex items-center gap-3">
+                    <span class="text-2xl">💡</span>
+                    <span class="text-xs font-bold text-emerald-800">
+                        In ra giấy bìa cứng hoặc ép plastic để học sinh dùng suốt cả năm học!
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Printable Cards Container -->
+    <div id="cardsGrid" class="page-container max-w-6xl mx-auto">
+        <!-- Rendered dynamically -->
+    </div>
+
+    <script type="module">
+        import { Aruco } from '../js/components/educard/aruco.js';
+
+        let studentsList = [];
+
+        async function init() {
+            try {
+                const res = await fetch('../students_data.json');
+                studentsList = await res.json();
+            } catch (e) {
+                console.error("Không nạp được students_data.json", e);
+            }
+            renderCards();
+        }
+
+        window.renderCards = function() {
+            const container = document.getElementById('cardsGrid');
+            const classFilter = document.getElementById('classFilter').value;
+            const sizeFilter = document.getElementById('sizeFilter').value;
+
+            let filtered = studentsList;
+            if (classFilter !== 'all') {
+                filtered = studentsList.filter(s => s.studentClass === classFilter);
+            }
+
+            if (filtered.length === 0) {
+                container.innerHTML = '<div class="text-center py-20 text-slate-400 font-bold">Không tìm thấy học sinh nào.</div>';
+                return;
+            }
+
+            const isA5 = sizeFilter === 'a5';
+            const gridColsClass = isA5 ? 'grid grid-cols-1 md:grid-cols-2 gap-8' : 'grid grid-cols-2 md:grid-cols-2 gap-4';
+
+            let html = `<div class="${gridColsClass}">`;
+
+            filtered.forEach((st, idx) => {
+                // ArUco ID = (st.stt - 1) % 50
+                const markerId = (st.stt - 1) % 50;
+                const svgMarker = Aruco.generateSVG(markerId, 220);
+
+                html += `
+                    <div class="card-wrapper bg-white border-4 border-slate-900 rounded-3xl p-4 md:p-6 flex flex-col justify-between items-center relative shadow-sm educard-square">
+                        
+                        <!-- Top Edge: Answer A -->
+                        <div class="w-full flex justify-between items-center text-slate-900">
+                            <span class="text-xs font-black text-slate-500 uppercase tracking-wider">LỚP ${st.studentClass}</span>
+                            <div class="flex items-center gap-1.5 bg-slate-900 text-white px-4 py-1 rounded-xl shadow">
+                                <span class="text-xs font-bold">▲</span>
+                                <span class="text-base font-black">A</span>
+                            </div>
+                            <span class="text-xs font-black text-slate-500">STT: ${String(st.stt).padStart(2, '0')}</span>
+                        </div>
+
+                        <!-- Left & Right Edges: D (Left) & B (Right) -->
+                        <div class="w-full flex items-center justify-between my-auto relative">
+                            <!-- Left: D -->
+                            <div class="flex flex-col items-center gap-1 bg-slate-900 text-white py-3 px-1.5 rounded-xl shadow">
+                                <span class="text-[10px] font-bold">◄</span>
+                                <span class="text-base font-black">D</span>
+                            </div>
+
+                            <!-- Center: ArUco Marker SVG -->
+                            <div class="flex flex-col items-center justify-center p-2 bg-slate-100 rounded-2xl border-2 border-slate-300">
+                                <div class="w-36 h-36 md:w-44 md:h-44 flex items-center justify-center">
+                                    ${svgMarker}
+                                </div>
+                                <div class="mt-2 text-center">
+                                    <div class="text-sm md:text-base font-black text-slate-900 uppercase tracking-tight">${st.name}</div>
+                                    <div class="text-[10px] font-bold text-slate-500">${st.school || 'Tiểu học Đỗ Văn Nại'}</div>
+                                </div>
+                            </div>
+
+                            <!-- Right: B -->
+                            <div class="flex flex-col items-center gap-1 bg-slate-900 text-white py-3 px-1.5 rounded-xl shadow">
+                                <span class="text-base font-black">B</span>
+                                <span class="text-[10px] font-bold">►</span>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Edge: Answer C -->
+                        <div class="w-full flex justify-center items-center text-slate-900">
+                            <div class="flex items-center gap-1.5 bg-slate-900 text-white px-4 py-1 rounded-xl shadow">
+                                <span class="text-base font-black">C</span>
+                                <span class="text-xs font-bold">▼</span>
+                            </div>
+                        </div>
+
+                    </div>
+                `;
+            });
+
+            html += `</div>`;
+            container.innerHTML = html;
+        };
+
+        init();
+    </script>
+</body>
+</html>

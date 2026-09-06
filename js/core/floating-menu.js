@@ -337,70 +337,80 @@
         // Cập nhật HTML menu để tự động đóng khi chọn game
         const closeMenu = "document.getElementById('" + MENU_ID + "').style.display='none'; document.getElementById('" + BTN_G_ID + "').classList.remove('active');";
         
-        const role = localStorage.getItem('userRole') || '';
-        const isTeacher = role === 'teacher' || role === 'admin' || role === 'teacher-admin';
-        
-        menu.innerHTML = `
-            <div class="edurobot-menu-header">
-                <span style="font-size: 16px;">🏆</span> Kho Trò Chơi EduRobot
-            </div>
-            <button class="edurobot-menu-item" onclick="${closeMenu} GameLibrary.play('LuckyWheel')">
-                <div class="edurobot-menu-item-icon bg-yellow-100 text-yellow-600">🎡</div>
-                <div class="edurobot-menu-item-text">
-                    <span class="edurobot-menu-item-title text-yellow-700">Vòng quay may mắn</span>
-                    <span class="edurobot-menu-item-desc text-yellow-400">Chọn ngẫu nhiên học sinh từ lớp học</span>
+        function updateMenuHTML() {
+            const role = localStorage.getItem('userRole') || '';
+            const isAdmin = role === 'admin' || role === 'teacher-admin';
+            const closeMenu = "document.getElementById('" + MENU_ID + "').style.display='none'; document.getElementById('" + BTN_G_ID + "').classList.remove('active');";
+
+            menu.innerHTML = `
+                <div class="edurobot-menu-header">
+                    <span style="font-size: 16px;">🏆</span> Kho Trò Chơi EduRobot
                 </div>
-            </button>
-            <button class="edurobot-menu-item" onclick="${closeMenu} GameLibrary.play('HeadTiltGame')">
-                <div class="edurobot-menu-item-icon bg-blue-100 text-blue-600">🤳</div>
-                <div class="edurobot-menu-item-text">
-                    <span class="edurobot-menu-item-title text-blue-700">Game Nghiêng Đầu</span>
-                    <span class="edurobot-menu-item-desc text-blue-400">Nghiêng đầu để chọn đáp án qua Camera AI</span>
+                <button class="edurobot-menu-item" onclick="${closeMenu} GameLibrary.play('LuckyWheel')">
+                    <div class="edurobot-menu-item-icon bg-yellow-100 text-yellow-600">🎡</div>
+                    <div class="edurobot-menu-item-text">
+                        <span class="edurobot-menu-item-title text-yellow-700">Vòng quay may mắn</span>
+                        <span class="edurobot-menu-item-desc text-yellow-400">Chọn ngẫu nhiên học sinh từ lớp học</span>
+                    </div>
+                </button>
+                <button class="edurobot-menu-item" onclick="${closeMenu} GameLibrary.play('HeadTiltGame')">
+                    <div class="edurobot-menu-item-icon bg-blue-100 text-blue-600">🤳</div>
+                    <div class="edurobot-menu-item-text">
+                        <span class="edurobot-menu-item-title text-blue-700">Game Nghiêng Đầu</span>
+                        <span class="edurobot-menu-item-desc text-blue-400">Nghiêng đầu để chọn đáp án qua Camera AI</span>
+                    </div>
+                </button>
+                <button class="edurobot-menu-item" onclick="${closeMenu} GameLibrary.play('GroupDivider')">
+                    <div class="edurobot-menu-item-icon bg-emerald-100 text-emerald-600">👥</div>
+                    <div class="edurobot-menu-item-text">
+                        <span class="edurobot-menu-item-title text-emerald-700">Chia nhóm hoạt động</span>
+                        <span class="edurobot-menu-item-desc text-emerald-400">Phân chia học sinh ngẫu nhiên</span>
+                    </div>
+                </button>
+                <button class="edurobot-menu-item" onclick="${closeMenu} GameLibrary.play('EduCardScanner')">
+                    <div class="edurobot-menu-item-icon bg-indigo-100 text-indigo-600">🎴</div>
+                    <div class="edurobot-menu-item-text">
+                        <span class="edurobot-menu-item-title text-indigo-700">Đấu Trường Quét Thẻ</span>
+                        <span class="edurobot-menu-item-desc text-indigo-400">Quét thẻ trả lời trắc nghiệm cả lớp</span>
+                    </div>
+                </button>
+                ${isAdmin ? `
+                <button class="edurobot-menu-item" onclick="${closeMenu} GameLibrary.play('tug_of_war')">
+                    <div class="edurobot-menu-item-icon bg-rose-100 text-rose-600">🚩</div>
+                    <div class="edurobot-menu-item-text">
+                        <span class="edurobot-menu-item-title text-rose-700">Cuộc chiến Kéo co</span>
+                        <span class="edurobot-menu-item-desc text-rose-400">Thi đấu trả lời câu hỏi đồng đội</span>
+                    </div>
+                </button>
+                <button class="edurobot-menu-item" onclick="${closeMenu} GameLibrary.play('choice_game')">
+                    <div class="edurobot-menu-item-icon bg-amber-100 text-amber-600">🎯</div>
+                    <div class="edurobot-menu-item-text">
+                        <span class="edurobot-menu-item-title text-amber-700">Game trắc nghiệm</span>
+                        <span class="edurobot-menu-item-desc text-amber-400">Tùy biến câu hỏi và theo dõi kết quả</span>
+                    </div>
+                </button>
+                <button class="edurobot-menu-item" onclick="${closeMenu} GameLibrary.openMatchingGame()">
+                    <div class="edurobot-menu-item-icon bg-purple-100 text-purple-600">🧩</div>
+                    <div class="edurobot-menu-item-text">
+                        <span class="edurobot-menu-item-title text-purple-700">Ghép Đôi Pro</span>
+                        <span class="edurobot-menu-item-desc text-purple-400">Trò chơi ghép hình, chữ đa môn học</span>
+                    </div>
+                </button>
+                <button class="edurobot-menu-item" onclick="${closeMenu} if(window.QuestionBankAdmin) window.QuestionBankAdmin.renderModal(); else alert('Đang tải dữ liệu. Bạn thử lại nhé.')">
+                    <div class="edurobot-menu-item-icon bg-indigo-100 text-indigo-600">🏦</div>
+                    <div class="edurobot-menu-item-text">
+                        <span class="edurobot-menu-item-title text-indigo-700">Ngân hàng Đề</span>
+                        <span class="edurobot-menu-item-desc text-indigo-400">Tạo đề thi & Import Excel</span>
+                    </div>
+                </button>
+                ` : ''}
+                <div style="padding: 12px; background: #f8fafc; border-top: 1px solid #f1f5f9; text-align: center;">
+                     <p style="font-size: 9px; font-weight: 800; color: #94a3b8; text-transform: uppercase;">Phiên bản EduRobot 5.2</p>
                 </div>
-            </button>
-            <button class="edurobot-menu-item" onclick="${closeMenu} GameLibrary.play('GroupDivider')">
-                <div class="edurobot-menu-item-icon bg-emerald-100 text-emerald-600">👥</div>
-                <div class="edurobot-menu-item-text">
-                    <span class="edurobot-menu-item-title text-emerald-700">Chia nhóm hoạt động</span>
-                    <span class="edurobot-menu-item-desc text-emerald-400">Phân chia học sinh ngẫu nhiên</span>
-                </div>
-            </button>
-            ${isTeacher ? `
-            <button class="edurobot-menu-item" onclick="${closeMenu} GameLibrary.play('tug_of_war')">
-                <div class="edurobot-menu-item-icon bg-rose-100 text-rose-600">🚩</div>
-                <div class="edurobot-menu-item-text">
-                    <span class="edurobot-menu-item-title text-rose-700">Cuộc chiến Kéo co</span>
-                    <span class="edurobot-menu-item-desc text-rose-400">Thi đấu trả lời câu hỏi đồng đội</span>
-                </div>
-            </button>
-            ` : ''}
-            <button class="edurobot-menu-item" onclick="${closeMenu} GameLibrary.play('choice_game')">
-                <div class="edurobot-menu-item-icon bg-amber-100 text-amber-600">🎯</div>
-                <div class="edurobot-menu-item-text">
-                    <span class="edurobot-menu-item-title text-amber-700">Game trắc nghiệm</span>
-                    <span class="edurobot-menu-item-desc text-amber-400">Tùy biến câu hỏi và theo dõi kết quả</span>
-                </div>
-            </button>
-            <button class="edurobot-menu-item" onclick="${closeMenu} GameLibrary.openMatchingGame()">
-                <div class="edurobot-menu-item-icon bg-purple-100 text-purple-600">🧩</div>
-                <div class="edurobot-menu-item-text">
-                    <span class="edurobot-menu-item-title text-purple-700">Ghép Đôi Pro</span>
-                    <span class="edurobot-menu-item-desc text-purple-400">Trò chơi ghép hình, chữ đa môn học</span>
-                </div>
-            </button>
-            ${isTeacher ? `
-            <button class="edurobot-menu-item" onclick="${closeMenu} if(window.QuestionBankAdmin) window.QuestionBankAdmin.renderModal(); else alert('Đang tải dữ liệu. Bạn thử lại nhé.')">
-                <div class="edurobot-menu-item-icon bg-indigo-100 text-indigo-600">🏦</div>
-                <div class="edurobot-menu-item-text">
-                    <span class="edurobot-menu-item-title text-indigo-700">Ngân hàng Đề</span>
-                    <span class="edurobot-menu-item-desc text-indigo-400">Tạo đề thi & Import Excel</span>
-                </div>
-            </button>
-            ` : ''}
-            <div style="padding: 12px; background: #f8fafc; border-top: 1px solid #f1f5f9; text-align: center;">
-                 <p style="font-size: 9px; font-weight: 800; color: #94a3b8; text-transform: uppercase;">Phiên bản EduRobot 5.2</p>
-            </div>
-        `;
+            `;
+        }
+
+        updateMenuHTML();
 
         // Tạo sẵn Container vẽ nhưng ẩn đi
         const drawContainer = document.createElement('div');
@@ -764,6 +774,7 @@
                 menu.style.display = 'none';
                 btnG.classList.remove('active');
             } else {
+                updateMenuHTML();
                 menu.style.display = 'flex';
                 btnG.classList.add('active');
                 if (window.AIInteraction && typeof window.AIInteraction.closeChat === 'function') {
