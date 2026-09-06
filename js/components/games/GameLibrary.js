@@ -15,7 +15,8 @@ export const GameLibrary = {
         'LuckyWheel': 'games/lucky_wheel.html',
         'tug_of_war': 'games/tug_of_war.html',
         'HeadTiltGame': 'games/head_tilt.html',
-        'GroupDivider': 'games/group_divider.html'
+        'GroupDivider': 'games/group_divider.html',
+        'EduCardScanner': 'games/card_scanner.html'
     },
 
     registerGame(gameName, gameModule) {

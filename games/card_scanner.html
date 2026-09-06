@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đấu Trường Quét Thẻ EduCard - EduRobot 5.0</title>
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <!-- Firebase SDK (v8) -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+    <script src="/js/core/firebase-config.js"></script>
+    <script>
+        const firebaseConfig = window.__FIREBASE_CONFIG;
+        try {
+            if (firebaseConfig && !firebase.apps.length) firebase.initializeApp(firebaseConfig);
+            window.db = firebase.firestore();
+        } catch(e) { console.warn('Firebase init:', e); }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            margin: 0;
+            overflow: hidden;
+            background: #020617;
+        }
+        #game-container {
+            width: 100vw;
+            height: 100vh;
+        }
+        .custom-scroll::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scroll::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        .custom-scroll::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="game-container"></div>
+
+    <script type="module">
+        import { EduCardScanner } from '../js/components/games/EduCardScanner.js';
+        import { QuestionBankManager } from '../js/services/QuestionBankManager.js';
+
+        window.QuestionBankManager = QuestionBankManager;
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            if (window.QuestionBankManager) {
+                await window.QuestionBankManager.init();
+            }
+
+            const gameDataRaw = localStorage.getItem('edurobot_current_game_data');
+            let questions = [];
+            let lessonId = '';
+
+            if (gameDataRaw) {
+                try {
+                    const gameData = JSON.parse(gameDataRaw);
+                    questions = gameData.questions || [];
+                    lessonId = gameData.lessonId || '';
+                    window.router = { currentLessonPeriod: lessonId };
+                    window.currentLessonData = { period: lessonId, id: lessonId };
+                } catch(e) {}
+            }
+
+            const container = document.getElementById('game-container');
+            EduCardScanner.start(container, questions, () => window.close());
+        });
+    </script>
+</body>
+</html>

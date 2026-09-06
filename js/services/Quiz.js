@@ -8,10 +8,21 @@ export const Quiz = {
                 <div class="absolute -top-10 -right-10 w-40 h-40 bg-orange-50 dark:bg-orange-900/10 rounded-full blur-3xl opacity-50 border-orange-200 dark:border-orange-800/30"></div>
                 <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-50 dark:bg-blue-900/10 rounded-full blur-3xl opacity-50 border-blue-200 dark:border-blue-800/30"></div>
                 
-                <div id="quiz-header-stubs" class="relative z-10">
-                    <div class="flex items-center gap-2 mb-4 bg-orange-50 dark:bg-orange-900/20 px-4 py-2 rounded-2xl border border-orange-100 dark:border-orange-800/30 w-fit mx-auto">
-                        <span class="text-orange-500">ℹ️</span>
-                        <span id="quiz-pool-info" class="text-[10px] md:text-sm font-black text-orange-700 dark:text-orange-300 uppercase tracking-tight">Đang chuẩn bị thử thách...</span>
+                <div id="quiz-header-stubs" class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-4 mb-6">
+                    <div class="flex items-center gap-2 bg-orange-50 dark:bg-orange-900/20 px-4 py-2.5 rounded-2xl border border-orange-100 dark:border-orange-800/30">
+                        <span class="text-orange-500 text-base">ℹ️</span>
+                        <span id="quiz-pool-info" class="text-xs md:text-sm font-black text-orange-700 dark:text-orange-300 uppercase tracking-tight">Đang chuẩn bị thử thách...</span>
+                    </div>
+
+                    <div class="flex items-center gap-2.5 flex-wrap justify-center">
+                        <button onclick="GameLibrary.play('EduCardScanner')" class="group flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white rounded-2xl font-black text-xs md:text-sm shadow-lg shadow-indigo-500/25 transition-all transform hover:-translate-y-0.5 active:scale-95 border border-white/20">
+                            <span class="text-base group-hover:scale-125 transition-transform">🎴</span>
+                            <span>ĐẤU TRƯỜNG QUÉT THẺ (EDUCARD)</span>
+                        </button>
+                        <a href="pages/print-cards.html" target="_blank" class="px-3.5 py-2.5 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-2xl font-bold text-xs flex items-center gap-1.5 transition border border-slate-200 dark:border-slate-700">
+                            <span>🖨️</span>
+                            <span>In bộ thẻ</span>
+                        </a>
                     </div>
                 </div>
 
